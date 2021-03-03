@@ -313,6 +313,8 @@ screen navigation():
 
         textbutton _("CG") action ShowMenu("cg")
 
+        textbutton _("Endings") action ShowMenu("ed")
+
         textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
@@ -1587,6 +1589,85 @@ screen cg():
                     textbutton "[page]" action CGPage(page)
 
                 textbutton ">" action CGPageNext(2)
+
+################################################################################
+## End List
+################################################################################
+
+init python:
+    class EDPage(Action):
+        def __init__(self, page):
+            self.page = page
+
+        def __call__(self):
+            if not self.get_sensitive():
+                return
+
+            persistent.ed_page = self.page
+            renpy.restart_interaction()
+
+        def get_sensitive(self):
+            return self.page is not None and self.page != persistent.ed_page
+
+    class EDPagePrevious(EDPage):
+        def __init__(self):
+            super(EDPagePrevious, self).__init__(persistent.ed_page - 1 if persistent.ed_page and persistent.ed_page > 1 else None)
+
+    class EDPageNext(EDPage):
+        def __init__(self, mx):
+            super(EDPageNext, self).__init__(persistent.ed_page + 1 if persistent.ed_page and persistent.ed_page < mx else None)
+
+screen ed():
+
+    tag menu
+    use game_menu(_("Endings")):
+
+        fixed:
+            order_reverse True
+
+            $ page = int(persistent.ed_page or 1) - 1
+            $ rows = 2
+            $ cols = (3 if page == 0 else 2)
+
+            grid cols rows:
+                style_prefix "slot"
+
+                xalign 0.5
+                yalign 0.5
+
+                spacing gui.slot_spacing
+
+                for i in range(cols * rows):
+                    $ slot = page * 6 + i + 1
+                    $ s = "ed %d thumbnail" % slot
+                    button:
+                        action Replay('end_%d' % slot, locked=not getattr(persistent, 'ed_unlocked_%d' % slot))
+                        has vbox
+
+                        if getattr(persistent, 'ed_unlocked_%d' % slot):
+                            add ImageReference(s) xalign 0.5
+                            text globals()['ed_title_%d' % slot] style "slot_time_text"
+                        else:
+                            add ImageReference("ed locked") xalign 0.5
+                            text _("???") style "slot_time_text"
+
+                for i in range(cols * rows):
+                    $ slot = page * 6 + i + 1
+
+            hbox:
+                style_prefix "page"
+
+                xalign 0.5
+                yalign 1.0
+
+                spacing gui.page_spacing
+
+                textbutton "<" action EDPagePrevious()
+
+                for page in range(1, 2):
+                    textbutton "[page]" action EDPage(page)
+
+                textbutton ">" action EDPageNext(1)
 
 ################################################################################
 ## Map

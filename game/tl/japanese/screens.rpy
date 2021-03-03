@@ -42,7 +42,7 @@
 
     # game/screens.rpy:314
     old "CG"
-    new "CG"
+    new "ＣＧ"
 
     # game/screens.rpy:316
     old "Preferences"
@@ -283,4 +283,16 @@
     # game/screens.rpy:1435
     old "Menu"
     new "メニュー"
+
+    # game/screens.rpy:316
+    old "Endings"
+    new "ＥＮＤリスト"
+
+    # game/screens.rpy:754
+    old "Language"
+    new "言語"
+
+    # game/screens.rpy:1652
+    old "???"
+    new "？？？"
 
