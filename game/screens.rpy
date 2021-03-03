@@ -295,7 +295,7 @@ screen navigation():
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
-        yalign 0.5
+        yalign 0.75
 
         spacing gui.navigation_spacing
 
@@ -310,6 +310,8 @@ screen navigation():
             textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
+
+        textbutton _("CG") action ShowMenu("cg")
 
         textbutton _("Preferences") action ShowMenu("preferences")
 
@@ -1512,3 +1514,51 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 900
+
+
+################################################################################
+## CG
+################################################################################
+
+screen cg():
+
+    tag menu
+    use game_menu(_("CG")):
+
+        fixed:
+            order_reverse True
+
+            $ page = int(persistent._file_page) - 1
+            $ rows = 2
+            $ cols = (3 if page == 0 else 2)
+
+            grid cols rows:
+                style_prefix "slot"
+
+                xalign 0.5
+                yalign 0.5
+
+                spacing gui.slot_spacing
+
+                for i in range(cols * rows):
+                    $ slot = page * 6 + i + 1
+                    $ s = "cg %d" % slot
+                    add g.make_button(s, s + " thumbnail", "cg locked", xalign=0.5, style="slot_button")
+
+                for i in range(cols * rows):
+                    $ slot = page * 6 + i + 1
+
+            hbox:
+                style_prefix "page"
+
+                xalign 0.5
+                yalign 1.0
+
+                spacing gui.page_spacing
+
+                textbutton _("<") action FilePagePrevious(auto=False, quick=False)
+
+                for page in range(1, 3):
+                    textbutton "[page]" action FilePage(page)
+
+                textbutton _(">") action FilePageNext(auto=False, quick=False, max=2)
