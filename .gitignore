@@ -8,8 +8,9 @@
 *.ttf
 
 # compiled files
-.py[cod]
-.rpy[codb]
+*.py[cod]
+*.rpy[codb]
+*.rpymc
 
 # logs
 /errors.txt
