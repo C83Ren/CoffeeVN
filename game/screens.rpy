@@ -1562,3 +1562,24 @@ screen cg():
                     textbutton "[page]" action FilePage(page)
 
                 textbutton _(">") action FilePageNext(auto=False, quick=False, max=2)
+
+################################################################################
+## Map
+################################################################################
+screen map_buttons:
+    vbox xalign 0.5 yalign 0.1:
+        imagebutton auto 'images/stamp %s.png':
+            if map_active:
+                action Jump("map_choice1")
+
+    vbox xalign 0.2 yalign 0.8:
+        imagebutton auto 'images/stamp %s.png':
+            if map_active:
+                action Jump("map_choice2")
+
+    vbox xalign 0.8 yalign 0.8:
+        imagebutton auto 'images/stamp %s.png':
+            if map_active:
+                action Jump("map_choice3")
+
+default map_active = False
