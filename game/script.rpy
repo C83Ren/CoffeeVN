@@ -39,8 +39,7 @@ label utawaku_quiz_example:
     hc "Correct"
 
 label map_example:
-    scene bg map:
-        zoom 1.0
+    scene bg conbini
     show screen map_buttons
 
     player "This is a map."

@@ -39,7 +39,6 @@ define gui.about = _p("""
 
 define build.name = "CoffeeVN"
 
-
 ## Sounds and music ############################################################
 
 ## These three variables control which mixers are shown to the player by

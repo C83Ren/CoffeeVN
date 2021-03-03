@@ -747,6 +747,12 @@ screen preferences():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
+                vbox:
+                    style_prefix "radio"
+                    label _("Language")
+                    textbutton "{font=DejaVuSans.ttf}English{/font}" action Language(None)
+                    textbutton "{font=tl/japanese/HonyaJi-Re.ttf}日本語{/font}" action Language("japanese")
+
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
@@ -1562,7 +1568,7 @@ screen cg():
 ################################################################################
 ## Map
 ################################################################################
-screen map_buttons:
+screen map_buttons():
     vbox xalign 0.5 yalign 0.1:
         imagebutton auto 'images/stamp %s.png':
             if map_active:

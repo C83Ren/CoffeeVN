@@ -1,2 +1,2 @@
-image bg combini = Transform(Image("images/bg combini.png"), zoom=0.5)
+image bg conbini = Transform(Image("images/bg conbini.png"), zoom=0.5)
 
