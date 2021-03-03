@@ -1,0 +1,19 @@
+/game/saves
+/game/audio
+/game/cache
+/game/gui
+/game/images
+
+# fonts
+*.ttf
+
+# compiled files
+.py[cod]
+.rpy[codb]
+
+# logs
+/errors.txt
+/log.txt
+/traceback.txt
+/progressive_download.txt
+
