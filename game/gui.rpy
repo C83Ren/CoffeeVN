@@ -470,5 +470,16 @@ init python:
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
 
+################################################################################
+## Furigana
+################################################################################
+
+style ruby_style is default:
+    size 14
+    yoffset -30
+
+style say_dialogue:
+    line_leading 12
+    ruby_style style.ruby_style
 
 
