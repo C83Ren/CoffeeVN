@@ -1522,6 +1522,29 @@ style slider_pref_slider:
 ## CG
 ################################################################################
 
+init python:
+    class CGPage(Action):
+        def __init__(self, page):
+            self.page = page
+
+        def __call__(self):
+            if not self.get_sensitive():
+                return
+
+            persistent.cg_page = self.page
+            renpy.restart_interaction()
+
+        def get_sensitive(self):
+            return self.page is not None and self.page != persistent.cg_page
+
+    class CGPagePrevious(CGPage):
+        def __init__(self):
+            super(CGPagePrevious, self).__init__(persistent.cg_page - 1 if persistent.cg_page and persistent.cg_page > 1 else None)
+
+    class CGPageNext(CGPage):
+        def __init__(self, mx):
+            super(CGPageNext, self).__init__(persistent.cg_page + 1 if persistent.cg_page and persistent.cg_page < mx else None)
+
 screen cg():
 
     tag menu
@@ -1530,7 +1553,7 @@ screen cg():
         fixed:
             order_reverse True
 
-            $ page = int(persistent._file_page) - 1
+            $ page = int(persistent.cg_page or 1) - 1
             $ rows = 2
             $ cols = (3 if page == 0 else 2)
 
@@ -1558,12 +1581,12 @@ screen cg():
 
                 spacing gui.page_spacing
 
-                textbutton "<" action FilePagePrevious(auto=False, quick=False)
+                textbutton "<" action CGPagePrevious()
 
                 for page in range(1, 3):
-                    textbutton "[page]" action FilePage(page)
+                    textbutton "[page]" action CGPage(page)
 
-                textbutton ">" action FilePageNext(auto=False, quick=False, max=2)
+                textbutton ">" action CGPageNext(2)
 
 ################################################################################
 ## Map
