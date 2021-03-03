@@ -4,9 +4,6 @@
 /game/gui
 /game/images
 
-# fonts
-*.ttf
-
 # compiled files
 *.py[cod]
 *.rpy[codb]
