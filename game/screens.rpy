@@ -660,19 +660,19 @@ screen file_slots(title):
 
                 spacing gui.page_spacing
 
-                textbutton _("<") action FilePagePrevious()
+                textbutton "<" action FilePagePrevious()
 
                 if config.has_autosave:
-                    textbutton _("{#auto_page}A") action FilePage("auto")
+                    textbutton "{#auto_page}A" action FilePage("auto")
 
                 if config.has_quicksave:
-                    textbutton _("{#quick_page}Q") action FilePage("quick")
+                    textbutton "{#quick_page}Q" action FilePage("quick")
 
                 ## range(1, 10) gives the numbers from 1 to 9.
                 for page in range(1, 10):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
+                textbutton ">" action FilePageNext()
 
 
 style page_label is gui_label
@@ -1041,10 +1041,6 @@ screen keyboard_help():
     hbox:
         label "S"
         text _("Takes a screenshot.")
-
-    hbox:
-        label "V"
-        text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
 
 
 screen mouse_help():
@@ -1556,12 +1552,12 @@ screen cg():
 
                 spacing gui.page_spacing
 
-                textbutton _("<") action FilePagePrevious(auto=False, quick=False)
+                textbutton "<" action FilePagePrevious(auto=False, quick=False)
 
                 for page in range(1, 3):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext(auto=False, quick=False, max=2)
+                textbutton ">" action FilePageNext(auto=False, quick=False, max=2)
 
 ################################################################################
 ## Map
