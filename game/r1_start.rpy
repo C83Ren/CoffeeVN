@@ -30,6 +30,7 @@ label r1_start:
     #########################################################################################
     # Music: Happy excited, doesn’t loop, > 3 minutes (same as before)
     # Background: Game Center
+    #
     # They arrived at the game center, then Shiraishi let go Hitona’s hand walked around the game center.
     # She seemed very excited. She walked around the game center and she just realized she left Hitona behind.
     #
@@ -51,4 +52,4 @@ label r1_start:
         "yes":
             jump r1_purikuri
         "no":
-            jump r1_food_choice
+            jump r1_food_choice_no_purikuri
