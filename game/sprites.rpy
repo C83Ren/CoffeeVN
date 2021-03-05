@@ -1,3 +1,7 @@
+#KohiActual (hitona0)
+
+
+#KohiLO (hitona1)
 image hitona1 bliss1 = Transform(Image("images/kohi_r1/bliss/KohiLO_bliss.png"), zoom=0.5, xanchor=193, yanchor=810)
 image hitona1 bliss2 = Transform(Image("images/kohi_r1/bliss/KohiLO_bliss2.png"), zoom=0.5, xanchor=193, yanchor=810)
 image hitona1 bliss3 = Transform(Image("images/kohi_r1/bliss/KohiLO_bliss3.png"), zoom=0.5, xanchor=193, yanchor=810)
@@ -33,4 +37,9 @@ image hitona1 stareyes1 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stare
 image hitona1 stareyes2 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes2.png"), zoom=0.5, xanchor=193, yanchor=840)
 image hitona1 stareyes3 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes3.png"), zoom=0.5, xanchor=193, yanchor=840)
 image hitona1 stareyes4 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes4.png"), zoom=0.5, xanchor=193, yanchor=840)
+
+#KohiC2 (hitona2)
+
+
+#KohiSh (hitona3)
 
