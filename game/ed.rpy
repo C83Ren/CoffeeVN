@@ -13,9 +13,11 @@ init 0:
     define ed_title_5 = _("Bad End 1")
     image ed 6 = "ed Placeholder"
     define ed_title_6 = _("Bad End 2")
+    image ed 7 = "ed Placeholder"
+    define ed_title_7 = _("Bad End 3")
 
 init +1 python:
-    for i in range(6):
+    for i in range(7):
         print(i)
         renpy.image("ed %d thumbnail" % (i + 1), im.Scale(ImageReference("ed %d" % (i + 1)), 384, 216))
     renpy.image("ed locked", im.Scale(Image("cg locked.png"), 384, 216))
