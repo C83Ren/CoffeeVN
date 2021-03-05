@@ -23,7 +23,7 @@ label start:
 
     p "What’s this...I don’t remember even having this."
 
-    if persistent.ed_unlocked_1 and persistent.ed_unlocked_2 and persistent.ed_unlocked_3:
+    if persistent.ed_unlocked_1 and persistent.ed_unlocked_5 and persistent.ed_unlocked_8:
         menu:
             "Try opening the box?"
             "Yes":

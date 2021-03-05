@@ -1,5 +1,5 @@
 label r1_home_bad_end:
-label end_6:
+label end_3:
     "bad end"
-    $ persistent.ed_unlocked_6 = True
+    $ persistent.ed_unlocked_3 = True
     return
