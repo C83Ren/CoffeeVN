@@ -1,4 +1,5 @@
 label r1_purikuri:
+    $ purikuri_flag = True
     menu:
         "look at purikuri?"
         "yes":
