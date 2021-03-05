@@ -4,4 +4,4 @@ label r1_purikuri:
         "yes":
             jump r1_purikuri_bad_end
         "no":
-            jump r1_food_choice
+            jump r1_food_choice_purikuri
