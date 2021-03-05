@@ -1626,8 +1626,8 @@ screen ed():
             order_reverse True
 
             $ page = int(persistent.ed_page or 1) - 1
-            $ rows = 2
-            $ cols = (3 if page == 0 else 2)
+            $ rows = (1 if page == 2 else 2)
+            $ cols = (2 if page == 2 else 3)
 
             grid cols rows:
                 style_prefix "slot"
@@ -1664,10 +1664,10 @@ screen ed():
 
                 textbutton "<" action EDPagePrevious()
 
-                for page in range(1, 2):
+                for page in range(1, 4):
                     textbutton "[page]" action EDPage(page)
 
-                textbutton ">" action EDPageNext(1)
+                textbutton ">" action EDPageNext(3)
 
 ################################################################################
 ## Map

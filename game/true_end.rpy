@@ -1,6 +1,6 @@
 label true_end:
-label end_4:
+label end_14:
     "true end"
 
-    $ persistent.ed_unlocked_4 = True
+    $ persistent.ed_unlocked_14 = True
     return
