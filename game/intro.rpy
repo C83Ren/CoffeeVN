@@ -1,7 +1,16 @@
 label start:
-    narrator """
-    Hitona doing a rare afternoon stream. Finished the stream and talks how it was fun and she is hungry, what she'd like for dinner.
+    scene bg room with dissolve
+    play music room_bgm fadein 1.0
 
+    # disable save until after questionnaire
+    $ quick_menu = False
+
+    "Hitona doing a rare afternoon stream. Finished the stream and talks how it was fun and she is hungry, what she'd like for dinner."
+
+    play audio doorbell noloop
+    pause 1.0
+
+    """
     Then her bell rangs, turns out it was from the delivery guy. He brought up a huge box.
 
     The sender was her senpai/friend.
@@ -27,6 +36,7 @@ label start:
         menu:
             "Try opening the box?"
             "Yes":
+                $ quick_menu = True
                 jump true_end
             "No":
                 pass
@@ -113,6 +123,11 @@ label start:
     Hitona felt sleepy and tucked in for the night.
     """
 
+    stop music fadeout 1.5
+    play sound ["<silence 5.0 loop 5.0>", alarm] loop
+    scene bg room with Fade(2.0, 4.0, 3.0)
+    $ quick_menu = True
+
     """
     Hitona got woken up by a call from someone.
 
@@ -120,6 +135,9 @@ label start:
 
     Hitona still half awoke answered the phone.
     """
+
+    stop sound
+    play music ["<silence 1.0 loop 1.0>", room_bgm] fadein 3.0
 
     p "Morning..."
 
