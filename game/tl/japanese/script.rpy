@@ -55,26 +55,26 @@ translate japanese utawaku_quiz_example_df5ef78d:
 # game/script.rpy:46
 translate japanese map_example_12ac129a:
 
-    # player "This is a map."
-    player ""
+    # p "This is a map."
+    p ""
 
 # game/script.rpy:57
 translate japanese map_choice1_cba8e1ad:
 
-    # player "1"
-    player ""
+    # p "1"
+    p ""
 
 # game/script.rpy:64
 translate japanese map_choice2_3c01f24c:
 
-    # player "2"
-    player ""
+    # p "2"
+    p ""
 
 # game/script.rpy:71
 translate japanese map_choice3_55d8ab87:
 
-    # player "3"
-    player ""
+    # p "3"
+    p ""
 
 # game/script.rpy:86
 translate japanese map_final_0ae9bcd0:
