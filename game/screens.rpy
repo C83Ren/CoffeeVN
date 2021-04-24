@@ -116,6 +116,7 @@ screen say(who, what):
     if not renpy.variant("small"):
         add SideImage() xalign 0.0 yalign 1.0
 
+    use quick_menu
 
 ## Make the namebox available for styling through the Character object.
 init python:
@@ -251,22 +252,14 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 1.0
+            yalign 0.97
 
-            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Load") action ShowMenu('load')
             textbutton _("Prefs") action ShowMenu('preferences')
-
-
-## This code ensures that the quick_menu screen is displayed in-game, whenever
-## the player has not explicitly hidden the interface.
-init python:
-    config.overlay_screens.append("quick_menu")
 
 default quick_menu = True
 

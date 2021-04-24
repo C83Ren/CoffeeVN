@@ -30,7 +30,7 @@
 
     # game/screens.rpy:263
     old "Prefs"
-    new "設定"
+    new "オプション"
 
     # game/screens.rpy:304
     old "Start"

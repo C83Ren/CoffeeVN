@@ -39,6 +39,12 @@ define gui.about = _p("""
 
 define build.name = "CoffeeVN"
 
+
+## Disable quick save.
+
+define config.has_quicksave = False
+
+
 ## Sounds and music ############################################################
 
 ## These three variables control which mixers are shown to the player by
