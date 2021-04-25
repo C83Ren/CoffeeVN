@@ -667,7 +667,7 @@ screen file_slots(title):
                 for page in range(1, 10):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton ">" action FilePageNext()
+                textbutton ">" action FilePageNext(max=9)
 
 
 style page_label is gui_label
