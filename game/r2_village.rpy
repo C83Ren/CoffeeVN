@@ -296,11 +296,11 @@ label village_house_3_1:
 
     hj "Hahaha who knows, but Eve says so. Just believe her for now"
 
-    label village_forced_option:
-        hj "But the question is, do you want to help us?"
+    hj "But the question is, do you want to help us?"
 
+    label village_forced_option:
         menu:
-            hj "But the question is, do you want to help us?"
+            extend ""
 
             "No":
                 hj "Don’t be like that, you are our last hope. You can think this as a little fun trip. How about it?"
