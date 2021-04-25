@@ -5,6 +5,7 @@ label start:
 
     # disable save until after questionnaire
     $ quick_menu = False
+    $ _game_menu_screen, game_menu_screen_value = None, _game_menu_screen
 
     #show hitona1 happy3
     #show lios front:
@@ -200,7 +201,9 @@ label start:
     stop music fadeout 1.5
     play sound ["<silence 5.0 loop 5.0>", alarm] loop
     scene bg room with Fade(2.0, 4.0, 3.0)
+
     $ quick_menu = True
+    $ _game_menu_screen = game_menu_screen_value
 
     p "Uuugh…is it a call…ughh"
 
