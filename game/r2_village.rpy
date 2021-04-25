@@ -1,5 +1,4 @@
 init python:
-    #global f_spot1, f_spot2, f_hut1, f_hut2
     v_house1 = 0
     v_house2 = 0
     v_house3 = 0
