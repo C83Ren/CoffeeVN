@@ -192,6 +192,10 @@ init python:
 
     ## To archive files, classify them as 'archive'.
 
+    # build.classify('game/**.otf', 'archive')
+    # build.classify('game/**.wav', 'archive')
+    # build.classify('game/**.ogg', 'archive')
+    # build.classify('game/**.mp3', 'archive')
     # build.classify('game/**.png', 'archive')
     # build.classify('game/**.jpg', 'archive')
 
