@@ -1,3 +1,21 @@
+init python:
+    t_talk = 0
+    t_pond = 0
+    t_spot1 = 0
+    t_spot2 = 0
+    t_spot3 = 0
+    t_pond = 0
+    t_oldman = 0
+    t_bait1 = False
+    t_bait2 = False
+    t_bait3 = False
+    t_fish1 = False
+    t_fish2 = False
+    t_fish3 = False
+    t_bfish = False
+    t_forest = 0
+    t_pond2 = 0
+
 label r2_tranquility:
     scene black
 
@@ -70,24 +88,6 @@ label r2_tranquility:
     e "Well don’t mind him Hitona, let’s just find the thing"
 
     e "Remember \"What you seek lies deep in the water\""
-
-    python:
-        t_talk = 0
-        t_pond = 0
-        t_spot1 = 0
-        t_spot2 = 0
-        t_spot3 = 0
-        t_pond = 0
-        t_oldman = 0
-        t_bait1 = False
-        t_bait2 = False
-        t_bait3 = False
-        t_fish1 = False
-        t_fish2 = False
-        t_fish3 = False
-        t_bfish = False
-        t_forest = 0
-        t_pond2 = 0
 
 label tranquility_menu:
     if t_bfish:
