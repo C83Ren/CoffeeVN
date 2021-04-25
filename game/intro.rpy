@@ -100,32 +100,35 @@ label start:
             $ intro_name = "Hitona"
         "Kohigashi":
             $ intro_name = "Kohigashi"
+    $ add_choice_to_history(intro_name)
 
     menu:
         "2. Most favourite color among these"
         "Purple":
-            $ intro_color = "purple"
+            $ intro_color = "Purple"
         "Pink":
-            $ intro_color = "pink"
+            $ intro_color = "Pink"
         "Yellow":
-            $ intro_color = "yellow"
+            $ intro_color = "Yellow"
         "Black":
-            $ intro_color = "black"
+            $ intro_color = "Black"
         "White":
-            $ intro_color = "white"
+            $ intro_color = "White"
         "Red":
-            $ intro_color = "red"
+            $ intro_color = "Red"
         "Blue":
-            $ intro_color = "blue"
+            $ intro_color = "Blue"
+    $ add_choice_to_history(intro_color)
 
     menu:
         "3. Favourite food among these"
         "Pasta":
-            $ intro_food = "pasta"
+            $ intro_food = "Pasta"
         "Yakiniku":
-            $ intro_food = "yakiniku"
+            $ intro_food = "Yakiniku"
         "Salad":
-            $ intro_food = "salad"
+            $ intro_food = "Salad"
+    $ add_choice_to_history(intro_food)
 
     "Then a lot more questions came until this one"
 
@@ -137,55 +140,56 @@ label start:
             $ route = 2
         "Memories":
             $ route = 3
+    $ add_choice_to_history(["Support", "Joy", "Memories"][route - 1])
 
     p "Finally done! What was the questionnaire gonna give me~"
 
-    if intro_color == "purple":
-        if intro_food == "pasta":
+    if intro_color == "Purple":
+        if intro_food == "Pasta":
             "You are compassionate towards yourself. A good trait to have! You should always care about yourself"
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You are compassionate towards others. Your friends and those around you must be lucky having you around."
         else:
             "You are compassionate towards yourself and others. Equally loving everyone is always a good thing~"
-    elif intro_color == "pink":
-        if intro_food == "pasta":
+    elif intro_color == "Pink":
+        if intro_food == "Pasta":
             "You think you are cute. Hey no one's judging, and I think you are really cute!"
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You think others are cute. A lot of people are cute physically, but you see beyond that, you see how cute they are even in their hearts."
         else:
             "You think you and others are cute. When everything in this world is cute, surely the world looks a lot better"
-    elif intro_color == "yellow":
-        if intro_food == "pasta":
+    elif intro_color == "Yellow":
+        if intro_food == "Pasta":
             "You are a cheerful person. Always looking forward to what you're going to do next!"
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You are cheerful when around people. Having a bright sunshine around is a blessing that everyone near you should be grateful"
         else:
             "You are an infinite energy of cheerfulness. Everyone arounds you become suddenly cheerful because of you. I have no idea how, but I want one of you right here in my home~"
-    elif intro_color == "black":
-        if intro_food == "pasta":
+    elif intro_color == "Black":
+        if intro_food == "Pasta":
             "You think deeply about yourself. You often get lost in thought when it concerns you."
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You think deeply about others. You often get lost in thought when it concerns others but less when it concers you"
         else:
             "You are a deep thinker. You think about everything. Be careful going too deep"
-    elif intro_color == "white":
-        if intro_food == "pasta":
+    elif intro_color == "White":
+        if intro_food == "Pasta":
             "You are an innocent person. No one in this world is more innocent than you. White as sheet, just like a baby"
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You think others are not guilty of anything. Every of their action is a pre determined course for them and they are not guilty of it. They are just following that route"
         else:
             "You think everyone in this world is innocent. Of course including yourself. As long people can forgive each other and not repeat the mistake they made, the world can be as pure as paper."
-    elif intro_color == "red":
-        if intro_food == "pasta":
+    elif intro_color == "Red":
+        if intro_food == "Pasta":
             "You are very ambitious about your project. Nothing in this world can stop you when you are working on it"
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You are very ambitious about others project. You stop at nothing to help them reach their goal"
         else:
             "You are a very ambitious person. You want to do all 100%% no 200%% about anything."
     else:
-        if intro_food == "pasta":
+        if intro_food == "Pasta":
             "You are a very calm person. When something involves you, you can think very calmly not panicking and reach a solution quickly without any struggle."
-        elif intro_food == "yakiniku":
+        elif intro_food == "Yakiniku":
             "You are a very calm person when it is about others. You can solve other people problem no sweat. But the opposite when it comes to yourself. Probably because you put yourself out of the equation here?"
         else:
             "You are a very calm person. The most calm person in the world. I want you to be my consultant"

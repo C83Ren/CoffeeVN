@@ -914,6 +914,8 @@ screen history():
 
                 $ what = renpy.filter_text_tags(h.what, allow=gui.history_allow_tags)
                 text what:
+                    if "italic" in h.what_args:
+                        italic True
                     substitute False
 
         if not _history_list:
