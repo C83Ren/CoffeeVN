@@ -255,14 +255,14 @@ label example:
     "more narration"
 
     # bliss2 for one line only
-    hc bliss2 "text1"
+    s bliss2 "text1"
 
-    hc "text2"
+    s "text2"
 
     # cry1 for one line, then switch to bliss1
-    hc bliss1 @ cry1 "text3"
+    s bliss1 @ cry1 "text3"
 
-    hc "text4"
+    s "text4"
 
     "more narration [a]"
 
@@ -274,10 +274,10 @@ label example:
 
 label utawaku_quiz_example:
     show hitona1 stareyes3
-    check_lyrics hc "audio/kokoronasi.mp3" "Enter the following lyrics" "Incorrect, try again" "それはねここにあるよ"
+    check_lyrics s "audio/kokoronasi.mp3" "Enter the following lyrics" "Incorrect, try again" "それはねここにあるよ"
 
     show hitona1 stareyes4
-    hc "Correct"
+    s "Correct"
 
 label map_example:
     scene bg conbini
