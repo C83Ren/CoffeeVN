@@ -1487,6 +1487,8 @@ style slider_pref_slider:
 ################################################################################
 
 init python:
+    persistent.cg_page = persistent.cg_page or 1
+
     class CGPage(Action):
         def __init__(self, page):
             self.page = page
@@ -1517,7 +1519,7 @@ screen cg():
         fixed:
             order_reverse True
 
-            $ page = int(persistent.cg_page or 1) - 1
+            $ page = int(persistent.cg_page) - 1
             $ rows = 2
             $ cols = (3 if page == 0 else 2)
 
@@ -1557,6 +1559,8 @@ screen cg():
 ################################################################################
 
 init python:
+    persistent.ed_page = persistent.ed_page or 1
+
     class EDPage(Action):
         def __init__(self, page):
             self.page = page
@@ -1587,7 +1591,7 @@ screen ed():
         fixed:
             order_reverse True
 
-            $ page = int(persistent.ed_page or 1) - 1
+            $ page = int(persistent.ed_page) - 1
             $ rows = (1 if page == 2 else 2)
             $ cols = (2 if page == 2 else 3)
 
