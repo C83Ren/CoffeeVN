@@ -1,3 +1,11 @@
+init python:
+    #global f_spot1, f_spot2, f_hut1, f_hut2
+    v_house1 = 0
+    v_house2 = 0
+    v_house3 = 0
+    v_house4 = 0
+    v_talk = 0
+
 label r2_village:
     scene bg village
 
@@ -8,14 +16,6 @@ label r2_village:
     e "Maybe they fear the oh so fearsome Majna Eden Ba-"
 
     p "Yeah you’re right, let’s just explore around"
-
-    python:
-        #global f_spot1, f_spot2, f_hut1, f_hut2
-        v_house1 = 0
-        v_house2 = 0
-        v_house3 = 0
-        v_house4 = 0
-        v_talk = 0
 
 label village_menu:
     scene bg village
