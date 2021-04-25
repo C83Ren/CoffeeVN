@@ -40,8 +40,9 @@ define gui.about = _p("""
 define build.name = "CoffeeVN"
 
 
-## Disable quick save.
+## Disable quick save and auto save.
 
+define config.has_autosave = False
 define config.has_quicksave = False
 
 
