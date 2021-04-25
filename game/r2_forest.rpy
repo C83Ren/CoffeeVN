@@ -1,11 +1,10 @@
-label r2_forest:
-    python:
-        #global f_spot1, f_spot2, f_hut1, f_hut2
-        f_spot1 = 0
-        f_spot2 = 0
-        f_hut1 = 0
-        f_hut2 = 0
+init python:
+    f_spot1 = 0
+    f_spot2 = 0
+    f_hut1 = 0
+    f_hut2 = 0
 
+label r2_forest:
     label forest_menu:
         menu:
             "Where to go?"
