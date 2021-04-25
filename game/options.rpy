@@ -40,10 +40,11 @@ define gui.about = _p("""
 define build.name = "CoffeeVN"
 
 
-## Disable quick save and auto save.
+## Disable quick save, auto save, and rollback.
 
 define config.has_autosave = False
 define config.has_quicksave = False
+define config.rollback_enabled = False
 
 
 ## Sounds and music ############################################################

@@ -729,13 +729,6 @@ screen preferences():
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
                 vbox:
-                    style_prefix "radio"
-                    label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left") action Preference("rollback side", "left")
-                    textbutton _("Right") action Preference("rollback side", "right")
-
-                vbox:
                     style_prefix "check"
                     label _("Skip")
                     textbutton _("Unseen Text") action Preference("skip", "toggle")
@@ -1030,14 +1023,6 @@ screen keyboard_help():
         text _("Toggles dialogue skipping.")
 
     hbox:
-        label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Page Down")
-        text _("Rolls forward to later dialogue.")
-
-    hbox:
         label "H"
         text _("Hides the user interface.")
 
@@ -1060,29 +1045,12 @@ screen mouse_help():
         label _("Right Click")
         text _("Accesses the game menu.")
 
-    hbox:
-        label _("Mouse Wheel Up\nClick Rollback Side")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
-
 
 screen gamepad_help():
 
     hbox:
         label _("Right Trigger\nA/Bottom Button")
         text _("Advances dialogue and activates the interface.")
-
-    hbox:
-        label _("Left Trigger\nLeft Shoulder")
-        text _("Rolls back to earlier dialogue.")
-
-    hbox:
-        label _("Right Shoulder")
-        text _("Rolls forward to later dialogue.")
-
 
     hbox:
         label _("D-Pad, Sticks")
@@ -1428,7 +1396,6 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Menu") action ShowMenu()
