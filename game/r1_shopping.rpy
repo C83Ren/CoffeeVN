@@ -1,4 +1,4 @@
 label r1_shopping:
     "you are shopping"
 
-    jump r1_regret_choice
+    jump r1_park_end

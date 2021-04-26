@@ -24,4 +24,4 @@ label r1_movie:
         "i don't know":
             jump r1_movie_bad_end
         "definitely":
-            jump r1_regret_choice
+            jump r1_after_movie
