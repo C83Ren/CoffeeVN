@@ -11,8 +11,6 @@ label start:
     #show lios front:
         #xzoom 0.5 yzoom 0.5 xpos 440 ypos 100 xanchor 0 yanchor 0
 
-    #"??" "続けて. 次は君の最悪敵だ~"
-
     p "Sigh"
 
     p "What a hot day today is. I'm all sweaty...I have to take a bath again"
