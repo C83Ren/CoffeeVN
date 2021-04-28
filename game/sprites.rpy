@@ -42,4 +42,24 @@ image hitona1 stareyes4 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stare
 
 
 #KohiSh (hitona3)
+image hitona3 angry hat = Transform(Image("images/kohi_r3/hat/angry.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 happy hat = Transform(Image("images/kohi_r3/hat/happy.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 idle hat = Transform(Image("images/kohi_r3/hat/idle.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 laugh hat = Transform(Image("images/kohi_r3/hat/laugh.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 pout hat = Transform(Image("images/kohi_r3/hat/pout.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 sad hat = Transform(Image("images/kohi_r3/hat/sad.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 smile hat = Transform(Image("images/kohi_r3/hat/smile.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 smug hat = Transform(Image("images/kohi_r3/hat/smug.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 surprised1 hat = Transform(Image("images/kohi_r3/hat/surprised happy.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 surprised2 hat = Transform(Image("images/kohi_r3/hat/surprised.png"), zoom=0.5, xanchor=320, yanchor=1000)
+image hitona3 worried hat = Transform(Image("images/kohi_r3/hat/worried.png"), zoom=0.5, xanchor=320, yanchor=1000)
 
+#Lios
+image lios front = Transform(Image("images/lios/front.png"), zoom=0.6, xanchor=900, yanchor=1100)
+image lios back = Transform(Image("images/lios/back.png"), zoom=0.5, xanchor=320, yanchor=1100)
+#r3 transforms
+
+transform r3_left:
+    zoom 0.5
+    xanchor 700
+    yanchor 1100

@@ -13,4 +13,5 @@ image bg turmoil = "images/bg village.png"
 image bg tranquility = Transform(Image("images/bg tranquility front.png"), zoom=0.5)
 image bg castle room = "images/bg room.png"
 image bg grand spell = "images/bg room.png"
+image bg hub = "images/hub.png"
 image black = "#000"
