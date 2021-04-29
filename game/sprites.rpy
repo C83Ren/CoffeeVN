@@ -56,10 +56,16 @@ image hitona3 worried hat = Transform(Image("images/kohi_r3/hat/worried.png"), z
 
 #Lios
 image lios front = Transform(Image("images/lios/front.png"), zoom=0.6, xanchor=900, yanchor=1100)
-image lios back = Transform(Image("images/lios/back.png"), zoom=0.5, xanchor=320, yanchor=1100)
+image lios back = Transform(Image("images/lios/back.png"), zoom=0.6, xanchor=900, yanchor=1100)
+
 #r3 transforms
 
-transform r3_left:
-    zoom 0.5
-    xanchor 700
-    yanchor 1100
+transform hitona_left:
+    #zoom 0.5
+    xpos 500
+    ypos 1100
+
+transform lios_right:
+    #zoom 0.5
+    xpos 1100
+    ypos 1090
