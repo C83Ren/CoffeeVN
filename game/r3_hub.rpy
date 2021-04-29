@@ -24,6 +24,7 @@ label r3_hub:
     p "Huh? Where am I…"
 
     scene bg hub
+    play music quiz_bgm
 
     "I woke up in an enclosed room…a really huge room full of…I can’t even describe it"
 
@@ -124,4 +125,4 @@ label r3_hub:
 
     p "Eh?!"
 
-    return
+    jump r3_quiz
