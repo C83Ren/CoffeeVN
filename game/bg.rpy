@@ -14,4 +14,6 @@ image bg tranquility = Transform(Image("images/bg tranquility front.png"), zoom=
 image bg castle room = "images/bg room.png"
 image bg grand spell = "images/bg room.png"
 image bg hub = "images/hub.png"
+image bg quiz = "images/quiz room.png"
+image bg sing = "images/sing room.png"
 image black = "#000"
