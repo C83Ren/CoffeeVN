@@ -58,6 +58,24 @@ image hitona3 worried hat = Transform(Image("images/kohi_r3/hat/worried.png"), z
 image lios front = Transform(Image("images/lios/front.png"), zoom=0.6, xanchor=900, yanchor=1100)
 image lios back = Transform(Image("images/lios/back.png"), zoom=0.6, xanchor=900, yanchor=1100)
 
+#Cat
+image cat happy = Transform(Image("images/cat/happy.png"), zoom=0.6, xanchor=500, yanchor=1100)
+image cat smile = Transform(Image("images/cat/smile.png"), zoom=0.6, xanchor=500, yanchor=1100)
+image cat blush = Transform(Image("images/cat/blush.png"), zoom=0.6, xanchor=500, yanchor=1100)
+image cat sad = Transform(Image("images/cat/sad.png"), zoom=0.6, xanchor=500, yanchor=1100)
+
+#Dog
+image dog happy = Transform(Image("images/dog/happy.png"), zoom=0.8, xanchor=700, yanchor=1100)
+image dog smile = Transform(Image("images/dog/smile.png"), zoom=0.8, xanchor=700, yanchor=1100)
+image dog blush = Transform(Image("images/dog/blush.png"), zoom=0.8, xanchor=700, yanchor=1100)
+image dog sad = Transform(Image("images/dog/sad.png"), zoom=0.8, xanchor=700, yanchor=1100)
+
+#Deer
+image deer happy = Transform(Image("images/deer/happy.png"), zoom=0.5, xanchor=500, yanchor=1100)
+image deer smile = Transform(Image("images/deer/smile.png"), zoom=0.5, xanchor=500, yanchor=1100)
+image deer blush = Transform(Image("images/deer/blush.png"), zoom=0.5, xanchor=500, yanchor=1100)
+image deer sad = Transform(Image("images/deer/sad.png"), zoom=0.5, xanchor=500, yanchor=1100)
+
 #r3 transforms
 
 transform hitona_left:
