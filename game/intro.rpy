@@ -7,10 +7,6 @@ label start:
     $ quick_menu = False
     $ _game_menu_screen, game_menu_screen_value = None, _game_menu_screen
 
-    #show hitona1 happy3
-    #show lios front:
-        #xzoom 0.5 yzoom 0.5 xpos 440 ypos 100 xanchor 0 yanchor 0
-
     p "Sigh"
 
     p "What a hot day today is. I'm all sweaty...I have to take a bath again"
