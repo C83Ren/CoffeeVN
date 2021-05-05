@@ -159,8 +159,3 @@ label room_passcode_badend:
     "Bad End"
 
     return
-
-label end_8:
-    $ persistent.ed_unlocked_8 = True
-    "route 3 end"
-    return
