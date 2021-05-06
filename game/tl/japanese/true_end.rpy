@@ -136,7 +136,7 @@ translate japanese end_14_c5827b7a:
 translate japanese end_14_565b84a2:
 
     # "Come to think of it, I do remember having 3 pieces of paper and 3 keys..."
-    "そういえば、３枚の紙と３つの鍵をもらったよね"
+    "そういえば、３枚の紙と３つの鍵をもらったよね。"
 
 # game/true_end.rpy:62
 translate japanese end_14_d482a1c9:
