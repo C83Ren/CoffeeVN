@@ -57,7 +57,7 @@ label end_14:
 
     p "Huh? What are you talking...about...?"
 
-    "I only remember having 3 pieces of paper and 3 keys..."
+    "Come to think of it, I do remember having 3 pieces of paper and 3 keys..."
 
     "I took three keys and slips of paper out from my drawer."
 

@@ -32,7 +32,7 @@ translate japanese end_14_72a76858:
 translate japanese end_14_14168fb1:
 
     # sn "I kept waiting but you didn’t come, so I decided to go to you instead."
-    sn "「ずっっと待ってたけどさ、こっひー来なかったから、こっひーのところに行こうって」"
+    sn "「ずっっと待ってたけど、こっひーが来なかったから、こっひーのところに行こうと思って。」"
 
 # game/true_end.rpy:24
 translate japanese end_14_0a01cb26:
@@ -50,13 +50,13 @@ translate japanese end_14_fb7ccd46:
 translate japanese end_14_327af692:
 
     # sn "Well, I'll wait here then. You also wanted to ask about the safe right?"
-    sn "「じゃ、ここに待ってるね。金庫のことも聞きたいよね？」"
+    sn "「じゃーここに待ってるね。金庫のことも聞きたいよね？」"
 
 # game/true_end.rpy:30
 translate japanese end_14_0723dbc3:
 
     # p "I...okay, I'll head back now."
-    p "「う・・・うん、帰る。」"
+    p "「う・・・うん、じゃー今帰る。」"
 
 # game/true_end.rpy:32
 translate japanese end_14_651fedc5:
@@ -133,10 +133,10 @@ translate japanese end_14_c5827b7a:
     p "「えぇ？どういう・・いみ・・・？」"
 
 # game/true_end.rpy:60
-translate japanese end_14_002272b8:
+translate japanese end_14_565b84a2:
 
-    # "I only remember having 3 pieces of paper and 3 keys..."
-    "３枚の紙と３つの鍵しか持ってないはずなのに・・・"
+    # "Come to think of it, I do remember having 3 pieces of paper and 3 keys..."
+    "そういえば、３枚の紙と３つの鍵をもらったよね"
 
 # game/true_end.rpy:62
 translate japanese end_14_d482a1c9:
