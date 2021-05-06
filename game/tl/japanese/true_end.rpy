@@ -160,7 +160,7 @@ translate japanese end_14_a858bc1a:
 translate japanese true_end_combination_bdfc090e:
 
     # "It's not opening...probably the wrong code. Let's try again."
-    "開けない・・・多分暗証番号は間違った。もう一回開こうとしよう。"
+    "開けない・・・多分暗証番号が間違った。もう一回開こうとしよう。"
 
 # game/true_end.rpy:78
 translate japanese true_end_combination_c96468df:
@@ -184,7 +184,7 @@ translate japanese true_end_combination_3d2f0b68:
 translate japanese true_end_combination_c5b87de1:
 
     # "\"First of all, we want to tell you that your fans are always there behind you! No matter when or where, across time and space, we will always be there for you!\""
-    "『１つ目、ファンのみんなはいつも応援しています！\n　いつまでもどこまでも、時間でも場所でも構わず、\n　ずっと側にいてあげます！』"
+    "『１つ目、ファンのみんなはいつも応援していると伝えたいです！\n　いつまでもどこまでも、時間でも場所でも構わず、\n　ずっと側にいてあげます！』"
 
 # game/true_end.rpy:90
 translate japanese true_end_combination_b0817cc9:
