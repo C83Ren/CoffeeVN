@@ -23,6 +23,12 @@ label r3_quiz:
 
     l "Let’s start!"
 
+    $ quiz_count = 0
+    $ quiz_done = []
+
+    jump quiz_check
+
+label quiz_menu:
     menu:
         "Did you succeed?"
         "Yeah!":
