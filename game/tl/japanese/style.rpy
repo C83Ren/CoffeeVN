@@ -1,7 +1,7 @@
 translate japanese python:
-    gui.text_font = "YasashisaGothic.otf"
-    gui.name_text_font = "YasashisaGothic.otf"
-    gui.interface_text_font = "YasashisaGothic.otf"
+    gui.text_font = "SourceHanSansLite.ttf"
+    gui.name_text_font = "SourceHanSansLite.ttf"
+    gui.interface_text_font = "SourceHanSansLite.ttf"
     gui.choice_button_text_font = gui.text_font
     gui.button_text_font = gui.interface_text_font
 

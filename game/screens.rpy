@@ -739,7 +739,7 @@ screen preferences():
                     style_prefix "radio"
                     label _("Language")
                     textbutton "{font=DejaVuSans.ttf}English{/font}" action Language(None)
-                    textbutton "{font=tl/japanese/YasashisaGothic.otf}日本語{/font}" action Language("japanese")
+                    textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}" action Language("japanese")
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.

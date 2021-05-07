@@ -15,7 +15,7 @@ label end_14:
 
     sn "Kohi~"
 
-    p "Ah senpai, I'm on my way there now."
+    p "Ah senpai, I'm on my way there now!"
 
     sn "Hmmm? I'm in front of your place though..."
 
@@ -57,13 +57,13 @@ label end_14:
 
     p "Huh? What are you talking...about...?"
 
-    "I only remember having 3 pieces of paper and 3 keys..."
+    "Come to think of it, I do remember having 3 pieces of paper and 3 keys..."
 
     "I took three keys and slips of paper out from my drawer."
 
     "4 keys, and three sheets of papers with 1, 0, and 1 written on them."
 
-    sn "Try opening the safe."
+    sn "Try opening the safe!"
 
     label true_end_combination:
         # TODO implement
@@ -101,9 +101,7 @@ label end_14:
 
     # call show_cg("")
 
-    "\"Third! The memories that you have made all this time are irreplaceable!\""
-
-    "\"We want Hitona to keep on making more memories from now on!\""
+    "\"Third! The memories that you have made all this time are irreplaceable! We want Hitona to keep on making wonderful memories!\""
 
     "There's another locked safe inside, and there is one key left."
 

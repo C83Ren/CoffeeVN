@@ -10,14 +10,110 @@ label r1_7_11:
     # “Whatever you like~”. “I want to have Hitona neechan’s recommendation!”.
     # What will you give?
 
+    scene bg conbini
+
+    "We walked to the best place ever for getting food! 7/11~"
+
+    "It was clear that Shiraishi was very excited but now she kept holding my hand"
+
+    s "Hitona nee-chan what will be having for lunch?"
+
+    p "Anything you want Shiraishi~"
+
+    s "I want Hitona nee-chan’s recommendation!"
+
+    P "Is that so? Shiraishi wants the opinion of the (not) official 7/11 ambassador! Okay then~"
+
     menu:
-        "What will you give?"
-        "Item 1":
-            "Item 1 Dialogue here"
-        "Item 2":
-            "Item 2 Dialogue here"
-        "Item 3":
-            "Item 3 Dialogue here"
+        "What should I recommend to her?"
+        "7/11 Soba Meshi":
+            p "How about Soba Meshi?"
+
+            s "Sound yummy! Shiraishi can’t wait!"
+
+            "We took two of Soba Meshi and I paid it. Went out to find a place to sit"
+
+            p "Let’s Eat!" (multiple=2)
+
+            s "Let’s Eat!" (multiple=2)
+
+            "Nom nom nom"
+
+            s "It's good!"
+
+            p "Well I'm glad"
+
+            p "There's soba, chicken and cabbage in there. A perfect combo!"
+
+            s "There's no cabbage though… but there's sesame seed!"
+
+            p "Oh really? I forgot about that"
+
+            s "The soba feels like soba too!"
+
+            p "What does that even mean… but glad you like it~"
+
+        "7/11 Seven Premium Gold Hamburger Steak":
+            p "How about Seven Premium Gold Hamburger Steak?"
+
+            s "Sound yummy! Shiraishi can’t wait!"
+
+            "We took two of Seven Premium Gold Hamburger Steak and I paid it. Went out to find a place to sit"
+
+            p "Let’s Eat!" (multiple=2)
+
+            s "Let’s Eat!" (multiple=2)
+
+            "Nom nom nom"
+            
+            s "It's delicious!"
+            
+            s "The sauce is delicious~"
+
+            p "Right! It's supposed to be 100 % beef" 
+
+            s "The beef essence is really coming through I have no idea what is she talking about but"
+
+            p "Is that so? Well there's this another one called Japanese style which I think has a better sauce"
+
+            s "Heee?"
+
+            p "But definitely the steak is better here"
+
+            s "Well Shiraishi likes it!"
+
+            p "Glad you like it~"
+
+        "7/11 Spaghetti Neapolitan":
+            p "How about Spaghetti Neapolitan?"
+
+            s "Sound yummy! Shiraishi can’t wait!"
+
+            "We took two of Spaghetti Neapolitan and I paid it. Went out to find a place to sit"
+
+            p "Let’s Eat!" (multiple=2)
+
+            s "Let’s Eat!" (multiple=2)
+
+            "Nom nom nom"
+            
+            s "It's yummy~ And there's a lot!"
+
+            p "Yup~ there are green onion, green pepper, garlic, tomato paste, tomato paste, sausage"
+
+            s "But there's no mushroom…"
+
+            p "Were you expecting some…?"
+
+            s "Shiraishi just thought there would be some"
+
+            s "But there are green pepper, yummy~"
+
+            p "I love the ketchup flavor in there"
+
+            s "Shiraishi too!"
+
+            p "The one who created Neapolitan is a genius~"
     
     # “Sounds yummy!”. They proceed buying the goods, found somewhere to sit and eat the goodies.
     # The choices will reflect on whether it is good okay or bad. Shiraishi will mention about the stream regardless.
@@ -28,10 +124,24 @@ label r1_7_11:
     # Now it seemed that Shiraishi had calmed down, it even looks like she was feeling sleepy.
     # What should I do?
     
+    s "But Hitona nee-chan already mentioned it before in her stream~"
+
+    p "Eh? Stream? What do you mean?"
+
+    s "Hitona nee-chan streams about reviewing food right? I love those!"
+
+    s "Those stream makes Shiraishi wonder how many snacks Shiraishi hasn’t tried! Everything looks so delicious! And Hitona nee-chan reaction is priceless! Makes Shiraishi watch it over and over again! With how some snacks made Hitona nee-chan so excited while others oddly have no taste, Shiraishi couldn’t wait for Hitona nee-chan’s rating! It’s also funny how the rating sometime is 5 stars max while other times it’s 3 stars max. It’s a fun stream!"
+
+    p "Eh? Did I ever mention about streaming?"
+
+    "Shiraishi just smiled and continued eating"
+
+    "Oh well…"
+
     menu:
-        "where to go?"
-        "home":
+        "We finished our food and Shiraishi looked rather satisfied. She even looked sleepy, What should we do?"
+        "Accompany her home":
             jump r1_home_bad_end
-        "park":
+        "Go to the park":
             $ r1_regrets = False
             jump r1_park_end
