@@ -156,69 +156,69 @@ translate japanese end_14_a858bc1a:
     # sn "Try opening the safe!"
     sn "「金庫を開いてみて！」"
 
-# game/true_end.rpy:73
-translate japanese true_end_combination_bdfc090e:
+# game/true_end.rpy:71
+translate japanese true_end_combination_ee249342:
+
+    # "It's a combination lock with 4 digits."
+    "４桁ダイヤル錠だ。"
+
+# game/true_end.rpy:79
+translate japanese combination_lock_wrong_bdfc090e:
 
     # "It's not opening...probably the wrong code. Let's try again."
     "開けない・・・多分暗証番号が間違った。もう一回開こうとしよう。"
 
-# game/true_end.rpy:78
-translate japanese true_end_combination_c96468df:
+# game/true_end.rpy:86
+translate japanese combination_lock_correct_c96468df:
 
     # p "Oh it opened!"
     p "「開いた！」"
 
-# game/true_end.rpy:80
-translate japanese true_end_combination_3bb9fe31:
+# game/true_end.rpy:91
+translate japanese true_end_combination_unlocked_d89b7fb5:
 
-    # "There’s a letter inside and...another safe with a keyhole."
+    # "There's a letter inside and...another safe with a keyhole."
     "金庫の中には手紙と・・・鍵穴のある箱もある。"
 
-# game/true_end.rpy:82
-translate japanese true_end_combination_3d2f0b68:
+# game/true_end.rpy:93
+translate japanese true_end_combination_unlocked_3d2f0b68:
 
     # "\"Hitona! This is our gift to you. Open each safe with each key!\""
     "『ひとなちゃん！\n　これは私達のプレゼントです。\n　各鍵で各箱を開けてみて！』"
 
-# game/true_end.rpy:88
-translate japanese true_end_combination_c5b87de1:
+# game/true_end.rpy:99
+translate japanese true_end_combination_unlocked_c5b87de1:
 
     # "\"First of all, we want to tell you that your fans are always there behind you! No matter when or where, across time and space, we will always be there for you!\""
     "『１つ目、ファンのみんなはいつも応援していると伝えたいです！\n　いつまでもどこまでも、時間でも場所でも構わず、\n　ずっと側にいてあげます！』"
 
-# game/true_end.rpy:90
-translate japanese true_end_combination_b0817cc9:
+# game/true_end.rpy:101
+translate japanese true_end_combination_unlocked_b0817cc9:
 
     # "There's another locked safe inside, and there are three keys left."
     "箱の中にはまた錠をかけた箱がある。残り３つの鍵。"
 
-# game/true_end.rpy:96
-translate japanese true_end_combination_b4ff7191:
+# game/true_end.rpy:107
+translate japanese true_end_combination_unlocked_b4ff7191:
 
     # "\"Second! Keep being yourself! That is Hitona's unique charm! Let loose!\""
     "『２つ目、自分らしくあれ！\n　それはひとなちゃんの愛嬌です！\n　遠慮しないで！』"
 
-# game/true_end.rpy:98
-translate japanese true_end_combination_b8ee2b23:
+# game/true_end.rpy:109
+translate japanese true_end_combination_unlocked_b8ee2b23:
 
     # "There's another locked safe inside, and there are two keys left."
     "箱の中にはまた錠をかけた箱がある。残り２つの鍵。"
 
-# game/true_end.rpy:104
-translate japanese true_end_combination_d0b32248:
+# game/true_end.rpy:115
+translate japanese true_end_combination_unlocked_d0b32248:
 
     # "\"Third! The memories that you have made all this time are irreplaceable! We want Hitona to keep on making wonderful memories!\""
     "『３つ目、この二年に作った思い出はかけがえのないものです！\n　これからももっともっと素敵な思い出を作り続けてほしいです！』"
 
-# game/true_end.rpy:108
-translate japanese true_end_combination_67ee3490:
+# game/true_end.rpy:117
+translate japanese true_end_combination_unlocked_67ee3490:
 
     # "There's another locked safe inside, and there is one key left."
     "箱の中にはまた錠をかけた箱がある。残り１つの鍵。"
-
-translate japanese strings:
-
-    # game/true_end.rpy:70
-    old "It's a combination lock with 4 digits."
-    new "４桁ダイヤル錠だ。"
 

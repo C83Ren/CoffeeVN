@@ -65,19 +65,30 @@ label end_14:
 
     sn "Try opening the safe!"
 
-    label true_end_combination:
-        # TODO implement
-        menu:
-            "It's a combination lock with 4 digits."
-            "wrong passcode":
-                "It's not opening...probably the wrong code. Let's try again."
-                jump true_end_combination
-            "correct passcode":
-                pass
+label true_end_combination:
+    show screen lock_buttons
 
-    p "Oh it opened!"
+    "It's a combination lock with 4 digits."
 
-    "There’s a letter inside and...another safe with a keyhole."
+    $ lock_active = True
+    while True:
+        $ renpy.pause(hard=True)
+
+    label combination_lock_wrong:
+        $ lock_active = False
+        "It's not opening...probably the wrong code. Let's try again."
+        $ lock_active = True
+        while True:
+            $ renpy.pause(hard=True)
+
+    label combination_lock_correct:
+        $ lock_active = False
+        p "Oh it opened!"
+        hide screen lock_buttons
+
+
+label true_end_combination_unlocked:
+    "There's a letter inside and...another safe with a keyhole."
 
     "\"Hitona! This is our gift to you. Open each safe with each key!\""
 

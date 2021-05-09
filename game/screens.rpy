@@ -1636,6 +1636,67 @@ screen ed():
                 textbutton ">" action EDPageNext(3)
 
 ################################################################################
+## Combination Lock
+################################################################################
+default combination_lock = [0, 0, 0, 0]
+init python:
+    correct_combination = [1, 3, 0, 7]
+
+    class LockButtonAction(Action):
+        def __call__(self):
+            combination_lock[self.slot] = (combination_lock[self.slot] + self.offset + 10) % 10
+            renpy.restart_interaction()
+
+        def get_sensitive(self):
+            return True
+
+    class LockDown(LockButtonAction):
+        def __init__(self, slot):
+            self.slot = slot
+            self.offset = -1
+
+    class LockUp(LockButtonAction):
+        def __init__(self, slot):
+            self.slot = slot
+            self.offset = 1
+
+screen lock_buttons():
+    fixed xalign 0.5 yalign 0.3 xsize 1000 ysize 699:
+        vbox:
+            frame xsize 1000 ysize 600 xpadding 55 ypadding 55:
+                background "images/lock_bg.png"
+                vbox:
+                    hbox:
+                        for slot in range(4):
+                            vbox:
+                                fixed xsize 200 ysize 100:
+                                    imagebutton auto 'images/lock up %s.png':
+                                        if lock_active:
+                                            action LockUp(slot)
+                                fixed xsize 200 ysize 60
+                                fixed xsize 200 ysize 170:
+                                    text str(combination_lock[slot]):
+                                        size 150
+                                        text_align 0.47
+                                        min_width 200
+                                        font gui.combination_lock_text_font
+                                fixed xsize 200 ysize 60
+                                fixed xsize 200 ysize 100:
+                                    imagebutton auto 'images/lock down %s.png':
+                                        if lock_active:
+                                            action LockDown(slot)
+                            vbox:
+                                fixed xsize 30 ysize 5
+            imagebutton auto 'images/lock unlock ' + str(_preferences.language) + ' %s.png':
+                if lock_active:
+                    if combination_lock == correct_combination:
+                        action Jump('combination_lock_correct')
+                    else:
+                        action Jump('combination_lock_wrong')
+
+default lock_active = False
+
+################################################################################
 ## Map
 ################################################################################
 screen map_buttons():
