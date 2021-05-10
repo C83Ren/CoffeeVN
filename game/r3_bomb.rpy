@@ -58,6 +58,12 @@ label r3_bomb:
     pi "WHAT? This is not part of the plan LIOOOS!"
 
     play music bomb_bgm
+    show bomb map at center
+
+    "Remember this map~"
+
+    hide bomb map
+    jump bomb_mechanic
 
     init python:
         r3_secret = False
@@ -73,6 +79,7 @@ label r3_bomb:
             jump r3_river
 
 label bomb_fail:
+    hide countdown
     scene black
 
     "BOOOM"
