@@ -102,11 +102,11 @@ label quiz_6:
     menu:
         "The first character Hitona used in uma musume was maruzenski. The first race she didn't get first place was when she got 5th place. But who got first place?"
         "Narita Bryan":
-            "CORRECT"
-            jump quiz_check
-        "Ines Fujin":
             "WRONG"
             jump quiz_fail
+        "Ines Fujin":
+            "CORRECT"
+            jump quiz_check
         "Grass Wonder":
             "WRONG"
             jump quiz_fail
