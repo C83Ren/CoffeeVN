@@ -47,8 +47,6 @@ label r3_river:
 
     $ animal_route = renpy.random.randint(1,3)
 
-    "[animal_route]"
-
     if animal_route == 1:
         jump river_cat
     elif animal_route == 2:
@@ -60,7 +58,7 @@ label river_cat:
 
     show cat smile
 
-    "Now a cat [animal_route] is in front of us…"
+    "Now a cat is in front of us…"
 
     "A huge cat, it has the same height as me…"
 
