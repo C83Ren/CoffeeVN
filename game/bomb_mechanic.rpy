@@ -1,5 +1,6 @@
 init:
     python:
+        import time
 
         # This function will run a countdown of the given length. It will
         # be white until 5 seconds are left, and then red until 0 seconds are
@@ -15,12 +16,88 @@ init:
             else:
                 return anim.Blink(Text("0.0", color="#f00", size=72)), None
 
-        maze = [
-            [1, 1, 2],
-            [0, 1, 0]
+        maze1 = [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 1, 1, 1, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+            [0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0],
+            [0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 2, 0],
+            [0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
         ]
 
-        player_x, player_y = 1, 1
+        maze2 = [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0],
+            [0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0],
+            [0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0],
+            [0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 1, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0],
+            [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 3, 0],
+            [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0],
+            [0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0],
+            [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
+
+        maze3 = [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 3, 1, 0, 0, 0],
+            [0, 2, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0],
+            [0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0],
+            [0, 1, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0],
+            [0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0],
+            [0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
+
+        maze4 = [
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 0],
+            [0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0],
+            [0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0],
+            [0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0],
+            [0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0],
+            [0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0],
+            [0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1, 1, 0],
+            [0, 1, 3, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0],
+            [0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0],
+            [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        ]
 
         def rotate(m, x, y):
             return list(zip(*m[::-1])), y, len(m) - x - 1
@@ -57,32 +134,72 @@ init:
             return m[x][y] == 3
 
     # Show a countdown for 10 seconds.
-    image countdown = DynamicDisplayable(countdown, length=5.0)
-
-image bomb map = "images/bomb map.png"
+image countdown = DynamicDisplayable(countdown, length= 120)
 
 label bomb_mechanic:
     play music bomb_bgm
+    scene black
+
+    python:
+        maze_num = renpy.random.randint(1,4)
+        if maze_num == 1:
+            maze = maze1
+            player_x, player_y = 17, 11
+        elif maze_num == 2:
+            maze = maze2
+            player_x, player_y = 15, 2
+        elif maze_num == 3:
+            maze = maze3
+            player_x, player_y = 11, 8
+        else:
+            maze = maze4
+            player_x, player_y = 12, 7
+
+    image bomb map = "images/maze/bomb map[maze_num].png"
+
+    show bomb map:
+        zoom 0.5, xalign 0.5, yalign 0.5
+    "Memorize it well~"
+    hide bomb map
 
     show countdown at Position(xalign=.1, yalign=.1)
-    $ ui.timer(5.0, ui.jumps("bomb_fail"))
+    $ time_remain = 120
 
 label bomb_choice:
+
+    if time_remain <= 0:
+        jump bomb_fail
+
+    python:
+        time_start = renpy.time.time()
+        ui.timer(time_remain, ui.jumps("bomb_fail"))
+        forward = 'yes' if can_move_forward(maze, player_x, player_y) else 'no'
+        right = 'yes' if can_move_right(maze, player_x, player_y) else 'no'
+        left = 'yes' if can_move_left(maze, player_x, player_y) else 'no'
+        backward = 'yes' if can_move_backward(maze, player_x, player_y) else 'no'
+        img_maze = "%s %s %s" % (forward, right, left)
+
+    image bomb_maze = "images/maze/[img_maze].png"
+    show bomb_maze behind countdown
+    with dissolve
+
     menu:
-        "forward" if can_move_forward(maze, player_x, player_y):
+        "forward" if forward == "yes":
              $ maze, player_x, player_y = move_forward(maze, player_x, player_y)
-        "right" if can_move_right(maze, player_x, player_y):
+        "right" if right == "yes":
              $ maze, player_x, player_y = move_right(maze, player_x, player_y)
-        "left" if can_move_left(maze, player_x, player_y):
+        "left" if left == "yes":
              $ maze, player_x, player_y = move_left(maze, player_x, player_y)
-        "backward" if can_move_backward(maze, player_x, player_y):
+        "backward" if backward == "yes":
              $ maze, player_x, player_y = move_backward(maze, player_x, player_y)
 
-    "[player_x],[player_y]"
+    $ time_remain = time_remain - (renpy.time.time() - time_start)
 
     if at_finish(maze, player_x, player_y):
+        hide countdown
         jump r3_river
     elif at_finish_secret(maze, player_x, player_y):
+        hide countdown
         $ r3_secret = True
         jump r3_river
     else:

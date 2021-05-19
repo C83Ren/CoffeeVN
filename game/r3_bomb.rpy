@@ -56,13 +56,7 @@ label r3_bomb:
     show hitona3 angry hat
 
     pi "WHAT? This is not part of the plan LIOOOS!"
-
-    play music bomb_bgm
-    show bomb map at center
-
-    "Remember this map~"
-
-    hide bomb map
+    
     jump bomb_mechanic
 
     init python:
