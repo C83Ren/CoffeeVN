@@ -86,6 +86,16 @@ label r2_start:
     e "Help me, I’ll properly explain everything after this"
 
     #Gets into fight
+    python:
+        fight_order = [hitona_stats, eve_stats, soldier1_stats, soldier2_stats]
+        ally_list = [hitona_stats, eve_stats]
+        enemy_list = [soldier1_stats, soldier2_stats]
+        fight_label = "r2_start_after_battle"
+        x = 0
+
+    jump r2_fight
+
+label r2_start_after_battle:
 
     e "That was easy~"
 
