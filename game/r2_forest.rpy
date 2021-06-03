@@ -85,7 +85,9 @@ label forest_spot_2:
 
         e "Oh but it’s a one time use, still useful to have. Take it Hitona"
 
-        #Gets healing item
+        "You got Heal Orb"
+
+        $ hitona_stats["item"].append("Heal Orb")
 
         jump forest_menu
 
@@ -147,7 +149,9 @@ label forest_hut_2:
 
         e "It’ll break after one use so don’t use it willy nilly"
 
-        # Gets attack item
+        "You got Flamethrower"
+
+        $ hitona_stats["item"].append("Flamethrower")
 
         jump forest_menu
 

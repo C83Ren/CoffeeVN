@@ -171,10 +171,13 @@ label village_house_1_1:
     menu:
         "What should I get?"
         "Upgrade Wind Blast to Wind Cutter":
+            $ hitona_stats["spell"][0] = "Wind Cutter"
             jump village_menu
         "Get Fire Ball (Burn Effect)":
+            $ hitona_stats["spell"].append("Fire Ball")
             jump village_menu
         "Get Electric Bolt (Paralysis Effect)":
+            $ hitona_stats["spell"].append("Electric Bolt")
             jump village_menu
 
 label village_house_1_2:
@@ -334,9 +337,9 @@ label village_house_3_2:
 
     hj "Well great timing, I was going to give you this"
 
-    "Receive Healing Spell Item"
+    "You got God Blessing"
 
-    # Gets Healing Item
+    $ hitona_stats["item"].append("God Blessing")
 
     hj "It’s gonna get rough out there, just stay safe. Hopefully not run into any soldier"
 

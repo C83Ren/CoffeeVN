@@ -35,7 +35,26 @@ label r2_final:
 
     k "Rebels must be purged~"
 
-    "Fight until half HP"
+    python:
+        hitona_stats["hp"] = 300
+        hitona_stats["hp_max"] = 300
+        hitona_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
+        eve_stats["hp"] = 300
+        eve_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
+        eve_stats["item"] = ["Heal Aura", "Flamethrower", "God Blessing"]
+        fight_order = [hitona_stats, eve_stats, king_stats]
+        ally_list = [hitona_stats, eve_stats]
+        enemy_list = [king_stats]
+        fight_label = "r2_final_after_battle"
+        x = 0
+
+    "FIGHT!"
+
+    jump r2_fight
+
+label r2_final_after_battle:
+
+    hide screen multi_stat
 
     k "Annoying little pest"
 

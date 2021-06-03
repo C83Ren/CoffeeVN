@@ -50,8 +50,8 @@ init python:
     "name": "Hitona",
     "hp": 100,
     "hp_max": 100,
-    "spell": ["Wind Blast", "Fire Wall"],
-    "item": ["Heal Orb", "Paralyzing Spark"],
+    "spell": ["Wind Blast"],
+    "item": [],
     "burn": 0,
     "par": 0
     }
@@ -60,8 +60,8 @@ init python:
     "name": "Eve",
     "hp": 300,
     "hp_max": 300,
-    "spell": ["Wind Lance", "Fire Ball", "Electric Bolt"],
-    "item": ["Flamethrower", "Heal Orb"],
+    "spell": ["Wind Blast", "Fire Ball"],
+    "item": ["Heal Orb"],
     "burn": 0,
     "par": 0
     }
@@ -77,11 +77,31 @@ init python:
     }
 
     soldier2_stats = {
+    "name": "Soldier 1",
+    "hp": 100,
+    "hp_max": 100,
+    "spell": ["Wind Blast", "Fire Ball"],
+    "item": ["Heal Orb", "Paralyzing Spark"],
+    "burn": 0,
+    "par": 0
+    }
+
+    soldier3_stats = {
     "name": "Soldier 2",
     "hp": 100,
     "hp_max": 100,
-    "spell": ["Wind Blast"],
-    "item": ["Heal Orb"],
+    "spell": ["Wind Cutter", "Electric Bolt"],
+    "item": ["Heal Orb", "God Blessing"],
+    "burn": 0,
+    "par": 0
+    }
+
+    king_stats = {
+    "name": "King Achnost",
+    "hp": 500,
+    "hp_max": 500,
+    "spell": ["Wind Lance", "Fire Wall", "Lightning Strike"],
+    "item": ["God Blessing", "Flamethrower", "Paralyzing Spark"],
     "burn": 0,
     "par": 0
     }
@@ -113,11 +133,11 @@ screen single_stat(name, hp, hp_max, xalign):
                 text " [hp]/[hp_max]":
                     yalign 0.5
 screen multi_stat:
-    use single_stat("Hitona", hitona_stats["hp"], 100, 0.0)
-    use single_stat("Eve", eve_stats["hp"], 300, 0.3)
+    use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0.0)
+    use single_stat("Eve", eve_stats["hp"], eve_stats["hp_max"], 0.3)
     $ screen_num = 0.6
     for enemies in enemy_list:
-        use single_stat(enemies["name"], enemies["hp"], 100, screen_num)
+        use single_stat(enemies["name"], enemies["hp"], enemies["hp_max"], screen_num)
         $ screen_num = screen_num + 0.3
 
 label r2_fight:
@@ -131,6 +151,7 @@ label r2_fight:
             if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
                 self = fight_order_temp[x]
                 x = x + 1
+                renpy.say(narrator, "It's " + self["name"] + " turn")
                 if self["name"] == "Hitona":
                     renpy.jump("fight_option")
                 else:
@@ -170,7 +191,6 @@ label r2_fight:
         elif len(ally_list) == 0:
             renpy.jump("fight_fail")
         else:
-            hide screen multi_stat
             renpy.jump(fight_label)
 
 label fight_option:
@@ -290,12 +310,13 @@ label fight_log:
     python:
         target_name = target["name"]
         self_name = self["name"]
+
+    if self["par"] == 0:
         if item_name != 0:
             spell_name = item_name
             hitona_stats["item"].remove(spell_name)
             item_name = 0
 
-    if self["par"] == 0:
         "[self_name] casted [spell_name] to [target_name]"
 
         if atk > 0:

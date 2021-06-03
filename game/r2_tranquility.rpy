@@ -17,7 +17,7 @@ init python:
     t_pond2 = 0
 
 label r2_tranquility:
-    scene black
+    scene bg map
 
     e "Huh? Why is the army here?"
 
@@ -31,7 +31,30 @@ label r2_tranquility:
 
     so "It’s her! Damn you little! Get her!"
 
-    "Fight (Get healing item/attack item)"
+    python:
+        hitona_stats["hp"] = 200
+        hitona_stats["hp_max"] = 200
+        eve_stats["hp"] = 300
+        eve_stats["spell"] = ["Wind Cutter", "Fire Ball", "Electric Bolt"]
+        eve_stats["item"] = ["Heal Aura", "Flamethrower"]
+        fight_order = [hitona_stats, eve_stats, soldier2_stats, soldier3_stats]
+        ally_list = [hitona_stats, eve_stats]
+        enemy_list = [soldier2_stats, soldier3_stats]
+        fight_label = "r2_tranquility_after_battle"
+        x = 0
+
+    "FIGHT!"
+
+    jump r2_fight
+
+label r2_tranquility_after_battle:
+    scene bg map
+
+    hide screen multi_stat
+
+    $ hitona_stats["item"].append("Paralyzing Spark")
+
+    $ hitona_stats["item"].append("Heal Aura")
 
     e "Oh you’re getting better, still far compared to me but progress at least"
 
