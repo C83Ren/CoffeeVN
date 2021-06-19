@@ -313,9 +313,9 @@ label fight_log:
 
     if self["par"] == 0:
         if item_name != 0:
-            spell_name = item_name
-            hitona_stats["item"].remove(spell_name)
-            item_name = 0
+            $ spell_name = item_name
+            $ hitona_stats["item"].remove(spell_name)
+            $ item_name = 0
 
         "[self_name] casted [spell_name] to [target_name]"
 
