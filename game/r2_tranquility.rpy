@@ -19,11 +19,15 @@ init python:
 label r2_tranquility:
     scene bg map
 
+    #angry3
+
     e "Huh? Why is the army here?"
 
     p "Eh really? They are probably searching for you"
 
     "Eve then suddenly just closes in to the soldiers"
+
+    #laugh2
 
     e "Hello soldiers!!"
 
@@ -45,16 +49,21 @@ label r2_tranquility:
 
     "FIGHT!"
 
+    play music battletheme_bgm
+
     jump r2_fight
 
 label r2_tranquility_after_battle:
     scene bg map
+    play music adventure_bgm
 
     hide screen multi_stat
 
     $ hitona_stats["item"].append("Paralyzing Spark")
 
     $ hitona_stats["item"].append("Heal Aura")
+
+    #idle
 
     e "Oh you’re getting better, still far compared to me but progress at least"
 
@@ -72,9 +81,13 @@ label r2_tranquility_after_battle:
 
     p "Such a peaceful place…"
 
+    #idle
+
     e "It is called Tranquility after all"
 
     p "The forest is so thick though"
+
+    #angry3
 
     e "Shh…"
 
@@ -88,6 +101,8 @@ label r2_tranquility_after_battle:
 
     p "What’s with this scenery…"
 
+    #hide
+
     "The forest was thick"
 
     "The greenery is enormous"
@@ -100,6 +115,8 @@ label r2_tranquility_after_battle:
 
     p "That has a size of a small bath tub!"
 
+    #angry3
+
     e "Where is all the water going though"
 
     e "Old man what are you doing here?"
@@ -107,6 +124,8 @@ label r2_tranquility_after_battle:
     om "As you can see, I’m fishing"
 
     p "Of all places here you’re fishing…"
+
+    #idle
 
     e "Well don’t mind him Hitona, let’s just find the thing"
 
@@ -199,7 +218,10 @@ label tranquility_talk:
         jump tranquility_talk_2
 
 label tranquility_talk_1:
+
     p "That pond is so small…"
+
+    #angry3
 
     e "While that waterfall is massive"
 
@@ -219,11 +241,16 @@ label tranquility_talk_1:
 
     e "So this is much more tame than what I saw back then, be grateful"
 
+    #idle
+
     e "Anyway remember ‘What you seek lies deep in the water’"
 
     jump tranquility_menu
 
 label tranquility_talk_2:
+
+    #idle
+
     e "Did you forget the clue already?"
 
     e "It’s ‘What you seek lies deep in the water’"
@@ -233,15 +260,22 @@ label tranquility_talk_2:
     jump tranquility_menu
 
 label tranquility_pond_1:
+
+    #idle
+
     p "You think the spell is down there?"
 
     e "Most likely yeah"
 
     p "Use your magic Eve!"
 
+    #angry3
+
     e "To drain the water?"
 
     p "Of course not! To swim!"
+
+    #pout2
 
     e "…"
 
@@ -260,6 +294,9 @@ label tranquility_pond_1:
     jump tranquility_menu
 
 label tranquility_pond_2:
+
+    #angry3
+
     e "So you’re gonna swim??"
 
     menu:
@@ -285,6 +322,8 @@ label tranquility_pond_2:
         "No":
             p "Of course not..."
 
+            #idle
+
             e "Yeah thought so"
 
             jump tranquility_menu
@@ -293,6 +332,9 @@ label tranquility_spot_1_1:
     $ t_spot1 = 1
 
     if t_oldman > 0:
+
+        #idle
+
         "There’s a lot of frogs here…"
 
         "It’s kinda disturbing"
@@ -306,6 +348,9 @@ label tranquility_spot_1_1:
         jump tranquility_menu
 
     else:
+
+        #idle
+
         "There’s a lot of frogs here…"
 
         "It’s kinda disturbing"
@@ -314,6 +359,9 @@ label tranquility_spot_1_1:
 
 label tranquility_spot_1_2:
     if t_oldman > 0 and not t_bait1 and not t_fish1:
+
+        #idle
+
         e "You love frogs or something?"
 
         p "Uuuh not really?"
@@ -327,6 +375,9 @@ label tranquility_spot_1_2:
         jump tranquility_menu
 
     elif t_bait1 or t_fish1:
+
+        #idle
+
         e "You sure you don’t love frogs"
 
         p "Now I’m not so sure…"
@@ -334,6 +385,9 @@ label tranquility_spot_1_2:
         jump tranquility_menu
 
     else:
+
+        #idle
+
         e "You love frogs or something?"
 
         p "Uuuh not really?"
@@ -344,6 +398,9 @@ label tranquility_spot_2_1:
     $ t_spot2 = 1
 
     if t_oldman > 0:
+
+        #idle
+
         e "That’s a weird space for those to gather"
 
         p "What are you talking about?"
@@ -354,9 +411,13 @@ label tranquility_spot_2_1:
 
         "Eh?"
 
+        #smile2
+
         "She pushed me…"
 
         p "What are you doooo AAAAAAAAAAAAAAAA"
+
+        #idle
 
         e "Yeah what is a massive amount of worms doing there I wonder"
 
@@ -371,6 +432,9 @@ label tranquility_spot_2_1:
         jump tranquility_menu
 
     else:
+
+        #idle
+
         e "That’s a weird space for those to gather"
 
         p "What are you talking about?"
@@ -381,9 +445,13 @@ label tranquility_spot_2_1:
 
         "Eh?"
 
+        #smile2
+
         "She pushed me…"
 
         p "What are you doooo AAAAAAAAAAAAAAAA"
+
+        #idle
 
         e "Yeah what is a massive amount of worms doing there I wonder"
 
@@ -393,9 +461,14 @@ label tranquility_spot_2_1:
 
 label tranquility_spot_2_2:
     if t_oldman > 0 and not t_bait2 and not t_fish2:
+
+        #smile2
+
         p "You remember that place Eve?"
 
         "I put my biggest smile ever"
+
+        #surprised1
 
         e "Yeah…let’s take one as a bait…"
 
@@ -406,11 +479,16 @@ label tranquility_spot_2_2:
         jump tranquility_menu
 
     elif t_bait2 or t_fish2:
+
         p "Do we have to go there again…"
+
+        #smile2
 
         e "You might like them eventually"
 
         p "I could say the same to you…"
+
+        #angry3
 
         e "Yeah let’s go back…"
 
@@ -418,6 +496,8 @@ label tranquility_spot_2_2:
 
     else:
         p "Want to go there again Eve?"
+
+        #surprised1
 
         e "That smile on your face makes me say no"
 
@@ -431,6 +511,8 @@ label tranquility_spot_3_1:
 
         p "What a weird big black wall doing in the forest?"
 
+        #angry3
+
         e "Hitona you really think that’s a wall?"
 
         "I felt pushed...and it was towards the black wall"
@@ -438,6 +520,8 @@ label tranquility_spot_3_1:
         "…"
 
         "The black wall dispersed…"
+
+        #smile1
 
         e "Catch one Hitona! We can use it as a bait!"
 
@@ -458,6 +542,8 @@ label tranquility_spot_3_1:
 
         p "What a weird big black wall doing in the forest?"
 
+        #angry3
+
         e "Hitona you really think that’s a wall?"
 
         "I felt pushed...and it was towards the black wall"
@@ -465,6 +551,8 @@ label tranquility_spot_3_1:
         "…"
 
         "The black wall dispersed…"
+
+        #smile1
 
         p "Let’s go back…"
 
@@ -478,6 +566,9 @@ label tranquility_spot_3_1:
 
 label tranquility_spot_3_2:
     if t_oldman > 0 and not t_bait3 and not t_fish3:
+
+        #idle
+
         e "Surely now you know that isn’t a black wall right Hitona?"
 
         p "I know!"
@@ -491,6 +582,9 @@ label tranquility_spot_3_2:
         jump tranquility_menu
 
     elif t_bait3:
+
+        #idle
+
         p "I never knew you can use bug as a bait"
 
         e "Yeah me neither"
@@ -502,6 +596,9 @@ label tranquility_spot_3_2:
         jump tranquility_menu
 
     else:
+
+        #angry3
+
         e "Are you testing your luck again thinking there won’t be any cockroaches Hitona?"
 
         p "Shut up will you!"
@@ -509,6 +606,9 @@ label tranquility_spot_3_2:
         jump tranquility_menu
 
 label tranquility_oldman_1:
+
+    #idle
+
     e "So old man, can you help us?"
 
     e "We’re trying to find something probably under this small pond"
@@ -528,6 +628,8 @@ label tranquility_oldman_1:
     "Nothing happened"
 
     p "Uuuh nothing happened though?”"
+
+    #pout2
 
     e "This pond…is blocking magic…"
 
@@ -577,6 +679,8 @@ label tranquility_after_fishing:
 
     p "WE GOT NO SPELL!"
 
+    #angry3
+
     e "Yeah I can see that Hitona, calm down"
 
     p "Why are you so calm when you’re usually so weird"
@@ -615,6 +719,8 @@ label tranquility_release_fishes:
                 t_fish3 = False
                 t_bfish = True
 
+            #surprised1
+
             e "That fish holds amazing amount of magical power as well…it’s not the Ultimate spell but that fish packs a huge punch"
 
             p "What are we gonna do with this…"
@@ -629,6 +735,8 @@ label tranquility_release_fishes:
 label tranquility_forest_1:
     $ t_forest = 1
 
+    #idle
+
     e "Are you going to use the fish there?"
 
     p "The clue might be a trick to make us look away from the forest!"
@@ -638,6 +746,8 @@ label tranquility_forest_1:
     "We released the fish right in the middle of the forest"
 
     "BOOM!"
+
+    #angry3
 
     "It fell with a thump"
 
@@ -654,6 +764,9 @@ label tranquility_forest_1:
     jump tranquility_menu
 
 label tranquility_forest_2:
+
+    #angry3
+
     e "You’re gonna let Amafi go through that kind of experience again Hitona??”"
 
     p "No I wasn’t…Don’t make look like I’m the bad guy here!"
@@ -662,6 +775,8 @@ label tranquility_forest_2:
 
 label tranquility_pond_after_1:
     $ t_pond2 = 1
+
+    #angry3
 
     p "Let’s try dropping this fish to the pond"
 
@@ -684,7 +799,10 @@ label tranquility_pond_after_1:
     jump tranquility_menu
 
 label tranquility_pond_after_2:
+
     p "How the hell that fish came from that pond"
+
+    #smug1
 
     e "I can cast a spell that make you huge as well, wanna try?"
 
@@ -697,6 +815,9 @@ label tranquility_pond_after_2:
     jump tranquility_menu
 
 label tranquility_waterfall:
+
+    #idle
+
     p "How about we let the fish swim up the waterfall"
 
     e "That…actually might work?"
@@ -709,6 +830,8 @@ label tranquility_waterfall:
 
     p "The waterfall stopped…"
 
+    #surprised1
+
     e "That fish is surely huge huh"
 
     "We looked at the pond and it was dried up"
@@ -717,16 +840,22 @@ label tranquility_waterfall:
 
     p "There! Something is shining there!"
 
+    #idle
+
     e "Wind among us, elevate~"
 
     "As Eve casted the spell, the shiny blue orb lifted up and landed on my hands"
 
     "Then suddenly the orb entered my body"
 
+    #smile1
+
     e "Congrats, the wind didn’t lie"
 
     e "You are the second salvation Hitona"
 
     "…"
+
+    stop music
 
     jump r2_final

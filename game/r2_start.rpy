@@ -1,5 +1,6 @@
 label r2_start:
     scene bg forest
+    play music adventure_bgm
 
     p "…"
 
@@ -15,9 +16,15 @@ label r2_start:
 
     "It was a girl with a cat ear hoodie and wearing an eyepatch"
 
+    # idle
+
     p "Huh? What are you talking about?"
 
+    #pout2
+
     "??" "Based on your expression it seems you have been cursed by the brain manipulation spell"
+
+    #smile1
 
     "??" "I am just glad that they didn’t manage to control you completely instead only manage to erase some of your memory"
 
@@ -29,13 +36,19 @@ label r2_start:
 
     "This girl suddenly manifested a staff from nowhere onto her hand"
 
+    #idle
+
     p "By the blessing of the wind, cleanse this girl from its curse"
 
     "As she said that, my body lighted up a bit then dimmed back"
 
+    #angry3
+
     e "I see so your name is Hitona, and you were summoned here by…hmm how do I say this name… ‘Risu…’ dunno how to say it but I have to say my thanks to them later"
 
     p "What are you talking about…"
+
+    #smile1
 
     e "Well welcome to the Kingdom of Soso!"
 
@@ -45,11 +58,17 @@ label r2_start:
 
     e "Just so you know this Kingdom is known for its usage of magic"
 
+    #angry3
+
     e "But because of the current king, King Achnost, he’s suppressing the usage of it by monopolizing it"
+
+    #angry2
 
     e "King Achnost is the worst! He is taking tax from his people way too much just for his own benefit"
 
     p "Is that so…"
+
+    #angry3
 
     e "Because of that rebels were popping out one by one and band together to defeat the king"
 
@@ -57,11 +76,17 @@ label r2_start:
 
     p "Haaa…"
 
+    #laugh2
+
     e "With that! I shall defeat the king!"
 
     p "Huh??"
 
+    #angry3
+
     e "King Achnost only order people around and then laze around after!"
+
+    #smug1
 
     e "I want to be a NEET King like him!"
 
@@ -71,6 +96,9 @@ label r2_start:
 
     "And now he’s here"
 
+    #soldier
+    #angry3
+
     so "You there! Halt!"
 
     p "We weren’t even moving though…"
@@ -79,11 +107,29 @@ label r2_start:
 
     p "What?"
 
-    e "Here a staff you can use, it has ‘Air Blast’ spell In it"
+    e "Here a staff you can use, it has ‘Wind Blast’ spell In it"
 
     p "Wait…what??"
 
     e "Help me, I’ll properly explain everything after this"
+
+    #blank
+
+    '''
+    You’re going to get into a fight
+
+    Here you can use spells or items to attack or heal
+
+    If you use an attacking spell you can multiply your damage by winning the rock paper scissor!
+
+    If you lose, you’ll do half damage
+
+    What’s a  better way to learn then just try it? Let’s go!
+    '''
+
+    play music battletheme_bgm
+
+    #angry3 during fight
 
     #Gets into fight
     python:
@@ -101,6 +147,9 @@ label r2_start_after_battle:
     scene bg forest
 
     hide screen multi_stat
+    play music adventure_bgm
+
+    #smug1
 
     e "That was easy~"
 
@@ -109,6 +158,8 @@ label r2_start_after_battle:
     "It feels like I only got confused since I got here"
 
     "And I am so exhausted from that fight…"
+
+    #idle
 
     e "Well everyone can use magic if they have a spell orb"
 
@@ -120,9 +171,13 @@ label r2_start_after_battle:
 
     p "So why did that soldier attack us again?"
 
+    #laugh2
+
     e "Ah…because I’m on the wanted list"
 
     p "Because you were rebelling against the king before?"
+
+    #idle
 
     e "Well that is one but it’s mainly because I’ve been collecting and stealing orbs from all around"
 
@@ -130,11 +185,15 @@ label r2_start_after_battle:
 
     e "Well you know I did say the king is monopolizing all the magic, so no one is allowed to use it"
 
+    #smile1
+
     e "So here I am being a wanted person~"
 
     e "Well either way, come with me Hitona!"
 
     p "Eeh why?"
+
+    #idle
 
     e "You don’t know where to go anyway right?"
 
@@ -142,11 +201,12 @@ label r2_start_after_battle:
 
     p "Fine then…"
 
+    #smile2
+
     e "Let’s go then~"
 
-    jump r2_forest
+    "You can check same place more than once"
 
-label end_5:
-    $ persistent.ed_unlocked_5 = True
-    "route 2 end"
-    return
+    "Be sure to check them all!"
+
+    jump r2_forest

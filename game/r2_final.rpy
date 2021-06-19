@@ -8,14 +8,22 @@ label r2_final:
     p "Huh?"
 
     scene bg castle room
+    play music beforefinal_intro_bgm noloop
+    queue music beforefinal_loop_bgm
 
     p "Why are we here…"
 
+    #angry3
+
     e "It’s not the time to ponder around!"
+
+    #laugh2
 
     e "It’s time to become the king!"
 
     p "Eh what happened?!"
+
+    #smug1
 
     e "You already gathered every ultimate spell!"
 
@@ -23,7 +31,11 @@ label r2_final:
 
     p "WHAT? BUT!"
 
+    #pout2
+
     e "And I have my Void but…we’ll see"
+
+    #angry3
 
     k "So you came here huh…"
 
@@ -50,6 +62,9 @@ label r2_final:
 
     "FIGHT!"
 
+    play music king_intro_bgm noloop
+    queue music king_loop_bgm loop
+
     jump r2_fight
 
 label r2_final_after_battle:
@@ -60,9 +75,13 @@ label r2_final_after_battle:
 
     k "Bend to my will~ Absolute~"
 
+    #surprised1
+
     e "Huh?"
 
     p "Eh? We can’t cast magic??"
+
+    #angry3
 
     e "No! He’s taking our magic to his own!"
 
@@ -98,11 +117,17 @@ label final_no_grand_spell:
 
     p "But I still won’t use it, knowing that you need to use Void…"
 
+    #idle
+
     e "I see…"
+
+    #smile1
 
     e "Then let’s try our best"
 
     "The king unleashed its attack and Eve managed to dispel it using her barrier spell"
+
+    #angry3
 
     "But…"
 
@@ -119,7 +144,11 @@ label final_no_grand_spell:
 label final_grand_spell:
     p "Okay…Let’s use it! The Grand Spell!"
 
+    #smile1
+
     e "Okay!"
+
+    #idle
 
     e "Before that, did you take the catalyst from before??"
 
@@ -129,6 +158,8 @@ label final_grand_spell:
             $ catalyst = True
         "No I don't think so":
             $ catalyst = False
+
+    #smile1
 
     e "Okay Let’s do it!"
 
@@ -162,6 +193,8 @@ label final_grand_spell:
         jump final_bad_end
 
 label final_bad_end:
+    play music r2bad_bgm
+
     "But…Eve was just there…lying down on the floor"
 
     p "I knew this would happen…I’m sorry Eve…"
@@ -179,17 +212,27 @@ label final_good_end:
 
     p "Eh?"
 
+    #angry3
+
     e "Eh?"
+
+    play music r2end_bgm
 
     p "You’re alive!"
 
+    #surprised1
+
     e "Yeah…somehow…"
+
+    #idle
 
     e "Ah probably because of the catalyst"
 
     p "Whatever it is, you’re alive!!!"
 
     "I hugged Eve tightly"
+
+    #smile2
 
     e "Haha…yeah…"
 
@@ -204,6 +247,8 @@ label final_good_end:
     e "Thank you Hitona…truly…"
 
     p "Hey…I had a lot of fun as well"
+
+    #smug1
 
     e "And don’t worry about this, I’ll be a good NEET King Okay~"
 
@@ -245,4 +290,7 @@ label final_good_end:
 
     p "And also a note with the number 1?"
 
+label end_5:
+    $ persistent.ed_unlocked_5 = True
+    "route 2 end"
     return

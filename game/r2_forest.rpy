@@ -5,6 +5,7 @@ init python:
     f_hut2 = 0
 
 label r2_forest:
+
     label forest_menu:
         menu:
             "Where to go?"
@@ -23,6 +24,8 @@ label forest_spot_1:
     if f_spot1 == 0:
         $ f_spot1 = 1
 
+        #idle
+
         e "Why are you going there Hitona?"
 
         p "Hey I don’t see this kind of thing often you know"
@@ -30,6 +33,8 @@ label forest_spot_1:
         p "Oooh what’s this? Looks kinda shiny"
 
         e "Shiny? What’s shiny? Nothing is…oooh"
+
+        #angry3
 
         e "I advised you to not touch that"
 
@@ -56,6 +61,9 @@ label forest_spot_1:
         jump forest_menu
 
     else:
+
+        #surprised1
+
         e "Why are you going there again…do you subconsciously have a fascination for turd…"
 
         "I looked at the thing"
@@ -63,6 +71,8 @@ label forest_spot_1:
         p "That thing truly looks like gold…"
 
         p "Who the hell would make a gold turd in the middle of the forest"
+
+        #smug1
 
         e "“…Who else?! But I Majna Eden Bat Azuma Nula Sedun"
 
@@ -75,11 +85,17 @@ label forest_spot_2:
     if f_spot2 == 0:
         $ f_spot2 = 1
 
+        #idle
+
         e "I sense a magical power from here"
 
         p "You can do that?"
 
+        #smug1
+
         e "You underestimate me too much young one"
+
+        #smile1
 
         e "Ah look something is shiny! It’s a healing spell orb!"
 
@@ -92,6 +108,9 @@ label forest_spot_2:
         jump forest_menu
 
     else:
+
+        #idle
+
         p "I wonder if I can find anything else here"
 
         e "Naah you won’t, the great Majna doesn’t sense anything from there anymore. Let’s go"
@@ -104,7 +123,11 @@ label forest_hut_1:
     if f_hut1 == 0:
         $ f_hut1 = 1
 
+        #idle
+
         p "I wonder if anyone is home?"
+
+        #laugh2
 
         e "Bring everything to the great Nula!"
 
@@ -113,6 +136,8 @@ label forest_hut_1:
         p "Why did you do that?!"
 
         "But inside…it was empty and full of dust"
+
+        #idle
 
         e "No one lives here Hitona dear"
 
@@ -127,6 +152,9 @@ label forest_hut_1:
         jump forest_menu
 
     else:
+
+        #idle
+
         p "What do you mean this place is wiped out?"
 
         e "This place was one of the place where the rebels fought the army"
@@ -143,6 +171,8 @@ label forest_hut_2:
     if f_hut2 == 0:
         $ f_hut2 = 1
 
+        #smile1
+
         e "Look look Hitona! What a rare fine! A spell item!"
 
         e "I think this one spews fire or something"
@@ -156,15 +186,24 @@ label forest_hut_2:
         jump forest_menu
 
     else:
+
+        #idle
+
         p "Can I try the item now Eve?"
+
+        #angry3
 
         e "I told you it’ll break after one use"
 
         p "But…"
 
+        #idle
+
         e "Eve will get you another spell okay little one~"
 
         p "Didn’t you say you were stealing the orbs…give me another!"
+
+        #pout2
 
         e "It’s in my staff…"
 

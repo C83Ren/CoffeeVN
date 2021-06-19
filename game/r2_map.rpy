@@ -1,11 +1,17 @@
 label r2_map_1:
     scene bg map
 
+    #idle
+
     "Eve took out a map out of thin air"
 
     p "How do you do that!? I don’t want to carry anything either!"
 
+    #smug1
+
     e "Majna Eve’s special power!"
+
+    #idle
 
     e "That staff has dimensional storage spell as well. Just use that"
 
@@ -43,19 +49,27 @@ label r2_map_1:
 label on_to_village:
     "We then walked to the village"
 
+    #idle
+
     p "Eve…"
 
     e "What is it?"
 
     p "Eve…"
 
+    #smile1
+
     e "Yes I am Eve the holder of emptiness itself~ Nula"
 
     p "Eve…"
 
+    #smug1
+
     e "Yes call me Eve, the one who controls the wind of the east~"
 
     p "I still don’t get how the hell you call yourself Eve…"
+
+    #laugh2
 
     e "I, Majna Eden Bat Azuma Nula Sedun, shall bestow you with knowledge of the origin of my name!"
 
@@ -101,13 +115,20 @@ label map_rage:
         jump map_rage_2
 
 label map_talk:
+
+    #smile1
+
     e "Time for another adventure!!!"
 
     p "Yaaaaay! To be honest I am quite excited~"
 
+    #smug1
+
     e "You should be! You are accompanying the great Eve~"
 
     p "Uuuh sure…mostly because I can use magic!! So exciting!"
+
+    #smile2
 
     e "Eve understands~ When I was a little I used my first magic"
 
@@ -124,6 +145,9 @@ label map_talk:
     jump map_menu
 
 label map_castle:
+
+    #idle
+
     p "Why are we here…"
 
     e "Just to take a look around~"
@@ -133,6 +157,8 @@ label map_castle:
     p "No… I barely have anything with me!"
 
     p "And weren’t you the one who wanted me to get those ultimate spells?!"
+
+    #smug1
 
     e "You’re with the great Eve, what can go wrong?"
 
@@ -149,6 +175,9 @@ label map_castle:
     return
 
 label map_rage_1:
+
+    #idle
+
     p "Just looking this from here looks very intimidating"
 
     e "It is called Rage for a reason"
@@ -165,6 +194,8 @@ label map_rage_1:
 
     p "You speak logical sometimes huh"
 
+    #angry3
+
     e "You want me to wind blast you to that fire wall?"
 
     p "I will decline for now"
@@ -174,9 +205,13 @@ label map_rage_1:
 label map_rage_2:
     p "Rage sound kinda cool don’t you think?"
 
+    #laugh2
+
     e "You compare such pity naming sense with Eve?"
 
     p "What does your name mean anyway?"
+
+    #pout2
 
     e "…"
 
