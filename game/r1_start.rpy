@@ -290,6 +290,8 @@ label r1_start:
 
     p "You can take picture of yourself there and decorate it with cute funny stuff"
 
+    show hitona1 stareyes1
+
     "Shiraishi was looking at it with hopeful eyes. And she is practically jumping want to try it. Shall we try it?"
     # On the way Hitona cross upon an intersection with a young girl standing there.
     #

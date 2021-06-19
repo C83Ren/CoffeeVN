@@ -10,6 +10,8 @@ label r2_village:
 
     "After a bit we arrived at the village"
 
+    #smug1
+
     p "This is a nice village, but why there’s no one outside?"
 
     e "Maybe they fear the oh so fearsome Majna Eden Ba-"
@@ -78,15 +80,22 @@ label village_house_4:
         jump village_house_4_3
 
 label village_talk_1:
+
+    #idle
+
     e "Why are we here again?"
 
     p "…"
 
     p "You were the one who said we should go here!"
 
+    #smile1
+
     e "Put trust in Eve, the wind blesses me and told me we should go here"
 
     p "You had no plan!"
+
+    #smile2
 
     e "Put trust in the wind~"
 
@@ -95,11 +104,18 @@ label village_talk_1:
     jump village_menu
 
 label village_talk_2:
+
+    #idle
+
     p "You called me second salvation, what was the first?"
+
+    #smug1
 
     e "It is I, the Great Majna Eden Bat Azuma Nula Sedun"
 
     p "What does it mean being a salvation anyway?"
+
+    #idle
 
     e "It means giving hope to everyone"
 
@@ -108,17 +124,26 @@ label village_talk_2:
     jump village_menu
 
 label village_talk_3:
+
+    #idle
+
     p "How the special region looks like anyway?"
+
+    #laugh2
 
     e "They are as magnificent as myself~"
 
     p "That doesn’t explain anything…you said the magical energy sometimes go on a rampage or something right"
+
+    #idle
 
     e "Yes, it is horrible. Captain Jack almost died because of it"
 
     e "A sudden thunderstorm, followed by an earthquake, then a vortex of lightning bolt surrounding him"
 
     p "How did he survived that…"
+
+    #smug1
 
     e "All thanks to the Great Eve’s help~"
 
@@ -129,6 +154,8 @@ label village_talk_3:
 label village_announcement:
     "\"Join the army not the rebels!\""
 
+    #idle
+
     p "What a weird poster"
 
     e "It is from when the rebel and the army were still fighting around here"
@@ -138,11 +165,16 @@ label village_announcement:
     jump village_menu
 
 label village_house_1_1:
+
+    #idle
+
     e "Hitoni! I am here!"
 
     hn "Oh been a while. Still Traveling around I see"
 
     hn "Hm? Who’s that beside you?"
+
+    #smile1
 
     e "This is our second salvation! After me of course~"
 
@@ -152,9 +184,13 @@ label village_house_1_1:
 
     hn "Either it is true or not, don’t let her waste it like you did"
 
+    #laugh2
+
     e "“Afraid not Hitoni, Eve will set things straight once and for all. And you all will be under King Eve~"
 
     hn "Again with that talk"
+
+    #idle
 
     e "Anyway our second salvation name is Hitona, found her in the forest"
 
@@ -191,6 +227,8 @@ label village_house_1_2:
 
     hn "Hahaha! You got that right!"
 
+    #pout2
+
     e "My eye is sensing someone is mocking the great Majna Eden Bat Azuna Nula Sedun!"
 
     p "See? Told you"
@@ -202,15 +240,21 @@ label village_house_1_2:
 label village_house_2_1:
     "??" "Who would come to this place in the middle of the day, I got no money okay~"
 
+    #laugh2
+
     e "You should be grateful that the great Majna is came to greet you"
 
     "??" "Oh…it’s you…Even worse, get out"
+
+    #surprised1
 
     e "Such ungrateful person you are Hitoshi"
 
     hs "Nothing good ever comes when you’re around"
 
     hs "Hmm? Who’s that behind you?"
+
+    #smile1
 
     e "Glad you asked, she’s the second salvation, after me of course!"
 
@@ -236,11 +280,16 @@ label village_house_2_2:
     jump village_menu
 
 label village_house_3_1:
+
+    #laugh2
+
     e "Captain! The Great Majna is here with the one who’ll bring the second salvation~"
 
     "??" "Huh if it isn’t Eve"
 
     "??" "Second salvation you say? Is it the one beside you right now?"
+
+    #smile1
 
     e "Yes it is her, she’s Hitona"
 
@@ -250,7 +299,11 @@ label village_house_3_1:
 
     p "You got that right, I have no idea why I am here…"
 
+    #idle
+
     e "Well then Eve will leave Majna to you captain, I’ll be waiting outside"
+
+    #hide eve
 
     "Eve then left the house leaving me alone with this man"
 
@@ -318,6 +371,8 @@ label village_house_3_1:
 
                 "I went out after that and Eve was waiting there"
 
+                #idle
+
                 e "Oh you’re done with the Captain?"
 
                 p "Yeah, he said we should go to Tranquility"
@@ -357,6 +412,9 @@ label village_house_3_3:
     jump village_menu
 
 label village_house_4_1:
+
+    #angry3
+
     e "This is a very dangerous domain, let’s explore somewhere else first"
 
     p "Looks normal to me though…"
@@ -364,6 +422,9 @@ label village_house_4_1:
     jump village_menu
 
 label village_house_4_2:
+
+    #idle
+
     p "Huh so this is your house"
 
     "The house was full of books and Eve was searching through them"
@@ -399,6 +460,9 @@ label village_house_4_2:
     jump village_menu
 
 label village_house_4_3:
+
+    #idle
+
     e "I know my domain is such a lovely place, but we got places to go"
 
     jump village_menu
