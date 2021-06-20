@@ -88,6 +88,10 @@ label r3_drawing:
 
     p "Just got to try then"
 
+    "START"
+
+    jump quiz_pic_default
+
     menu:
         "Did you succeed?"
         "Yeah":

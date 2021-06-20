@@ -42,6 +42,9 @@ label r3_bomb:
 
     show lios front
 
+    play music bomb_intro_bgm noloop
+    queue music bomb_loop_bgm loop
+
     l "You have to escape the maze within the time limit. If not the bomb would explode~"
 
     p "What?"
@@ -56,7 +59,7 @@ label r3_bomb:
     show hitona3 angry hat
 
     pi "WHAT? This is not part of the plan LIOOOS!"
-    
+
     jump bomb_mechanic
 
     init python:
@@ -79,6 +82,8 @@ label bomb_fail:
     "BOOOM"
 
     scene bg hub
+
+    play music lios_bgm
 
     "We got sent back to the first room…"
 

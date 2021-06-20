@@ -72,6 +72,8 @@ label r3_sing:
 
     scene bg sing
 
+    stop music
+
     p "It’s a…stage?"
 
     show hitona3 idle hat
