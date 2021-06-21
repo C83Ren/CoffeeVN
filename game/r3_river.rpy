@@ -42,6 +42,7 @@ label r3_river:
     "We walked for a bit and again"
 
     scene bg river
+    play sound riverbank loop
 
     p "How does he change these places so easily"
 
@@ -574,22 +575,28 @@ label river_final:
     if animal_route == 1:
         show cat smile
         if affection > 0:
+            play audio challengecomplete
             c "She passed~"
         else:
+            play audio falsechoice_long
             c "She failed~"
         hide cat
     elif animal_route == 2:
         show dog smile
         if affection > 0:
+            play audio challengecomplete
             do "She passed~"
         else:
+            play audio falsechoice_long
             do "She failed~"
         hide dog
     else:
         show deer smile
         if affection > 0:
+            play audio challengecomplete
             de "She passed~"
         else:
+            play audio falsechoice_long
             de "She failed~"
         hide deer
 
@@ -598,7 +605,7 @@ label river_final:
 
     p "She can talk?????!!!!!"
 
-    pi "Yeah"
+    "Pierrot & Lios" "Yeah"
 
     #Lios says this as well ^
 
@@ -622,11 +629,16 @@ label river_fail:
 
     l "Well a fail is a fail so off you go~"
 
+    stop sound
+    play music room_bgm
+
     scene bg room
 
     "I opened my eyes and I was holding my room door knob"
 
     "Where was I going to go again…?"
+
+    play sound messagetone
 
     "Oh there’s a message on my phone"
 

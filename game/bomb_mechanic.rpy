@@ -156,9 +156,11 @@ label bomb_mechanic:
 
     image bomb map = "images/maze/bomb map[maze_num].png"
 
+    play sound takecard
     show bomb map:
         zoom 0.5, xalign 0.5, yalign 0.5
     "Memorize it well~"
+    play sound takecard
     hide bomb map
 
     show countdown at Position(xalign=.1, yalign=.1)

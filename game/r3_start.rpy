@@ -41,6 +41,8 @@ label r3_start:
 
     hide hitona3
 
+    play sound takecard
+
     "\"Kohigashi Hitona, I, Phantom Thief Lios has stolen one of your most precious possession. If you want to get it back enter the date when the mermaid princess has her yearly celebration\""
 
     p "What’s this about?"
@@ -65,8 +67,10 @@ label room_passcode1:
     menu:
         "Okay let’s put in the code"
         "0504":
+            play sound correctchoice
             jump r3_hub
         "Other than that":
+            play sound falsechoice_short
             jump room_tryagain
 
 label room_tryagain:
@@ -113,8 +117,10 @@ label room_passcode2:
     menu:
         "Okay let’s put in the passcode"
         "0504":
+            play sound correctchoice
             jump r3_hub
         "Other than that":
+            play sound falsechoice_short
             jump room_tryagain
 
 label room_passcode_badend:

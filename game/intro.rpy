@@ -7,6 +7,26 @@ label start:
     $ quick_menu = False
     $ _game_menu_screen, game_menu_screen_value = None, _game_menu_screen
 
+    #scene bg shop
+
+    #show hitona1 happy3
+
+    #"??" "わーい！やくそくだよ、ひとなおねえちゃん！"
+    #"??" "Yaay! It's a promise okay, Hitona onee-chan!"
+
+    #scene bg hub
+
+    #show lios front
+
+    #"??" "進め～　次はお前の最大の敵だ"
+    #"??" "Go on~ Your worst enemy is next."
+
+    #scene bg village
+    #show hitona2 idle
+
+    #"??" "この世界を救う第二救世主は貴方だよ、ひとな"
+    #"??" "Hitona, you are the second salvation."
+
     p "Sigh"
 
     p "What a hot day today is. I'm all sweaty...I have to take a bath again"
@@ -29,8 +49,8 @@ label start:
 
     "If I think further I probably can list down how bad today was…As soon as I thought about that"
 
-    play audio doorbell noloop
-    pause 1.0
+    play sound doorbell
+    #pause 1.0
 
     "??" "Delivery!"
 
@@ -43,6 +63,8 @@ label start:
     "The mailman then left leaving a huge box at the front door."
 
     "On top of the box there was letter attached to it. I took it and opened it"
+
+    play sound takecard
 
     "\"Dear Kohi,"
 
@@ -65,6 +87,8 @@ label start:
     "After that I just lazed back to the computer chair. Staring the monitor blankly…"
 
     p "What to do..."
+
+    play sound messagetone
 
     "As soon I was lost in thought, a message came"
 
@@ -197,7 +221,7 @@ label start:
     """
 
     stop music fadeout 1.5
-    play sound ["<silence 5.0 loop 5.0>", alarm] loop
+    play sound ["<silence 5.0 loop 5.0>", phonecall] loop
     scene bg room with Fade(2.0, 4.0, 3.0)
 
     $ quick_menu = True
@@ -227,6 +251,8 @@ label start:
     """
 
     p "Let's go then~"
+
+    play sound dooropen
 
     if route == 1:
         jump r1_start

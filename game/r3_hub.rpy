@@ -121,6 +121,8 @@ label r3_hub:
 
     pi "Don’t worry Hitona! The great detective Pierrot is here!"
 
+    play sound lightswitch
+
     scene black
 
     "The room suddenly went dark"

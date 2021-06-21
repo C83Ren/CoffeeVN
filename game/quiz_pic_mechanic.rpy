@@ -25,6 +25,7 @@ label quiz_pic_check:
         $ quiz_done.append(quiz_num)
         $ quiz_count = quiz_count + 1
     else:
+        play sound challengecomplete
         "Congratulation! You got all 3 correct!"
         jump r3_sing
 
@@ -38,6 +39,7 @@ label quiz_pic_check:
     image quiz_image = "images/r3_drawing/[img_str]"
 
     show quiz_image
+    play sound quizquestion
 
     menu:
         "What is this drawing?"
@@ -49,8 +51,10 @@ label quiz_pic_check:
             $ user_answer = 3
 
     if user_answer == drawing_list[quiz_num][4]:
+        play sound correctchoice
         "CORRECT"
         jump quiz_pic_check
     else:
+        play sound falsechoice_long
         "WRONG"
         jump drawing_fail

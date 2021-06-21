@@ -1,6 +1,8 @@
 label r3_quiz:
     scene bg quiz
 
+    play sound lightswitch
+
     "Then the room lighted up again, showing a quiz like room"
 
     l "First up is a quiz challenge! Get 3 out of 3 and you shall pass~"
@@ -23,7 +25,11 @@ label r3_quiz:
 
     l "Let’s start!"
 
+    play sound quizstart
+
     "QUIZ START"
+
+    hide hitona3
 
     jump quiz_default
 
