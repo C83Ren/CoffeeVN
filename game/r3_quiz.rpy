@@ -23,18 +23,9 @@ label r3_quiz:
 
     l "Let’s start!"
 
-    $ quiz_count = 0
-    $ quiz_done = []
+    "QUIZ START"
 
-    jump quiz_check
-
-label quiz_menu:
-    menu:
-        "Did you succeed?"
-        "Yeah!":
-            jump r3_bomb
-        "Nope~":
-            jump quiz_fail
+    jump quiz_default
 
 label quiz_fail:
     scene bg quiz
@@ -61,6 +52,8 @@ label quiz_fail:
     l "Off you go little girls~"
 
     scene bg room
+
+    play music room_bgm
 
     p "Eh? I’m in my room? On my bed…"
 

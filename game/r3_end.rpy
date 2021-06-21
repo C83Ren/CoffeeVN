@@ -1,6 +1,8 @@
 label r3_end:
     scene bg sing
 
+    play music r3end_bgm 
+
     show lios front at lios_right
     show hitona3 smile hat at hitona_left
 

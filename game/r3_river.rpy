@@ -5,6 +5,8 @@ label r3_river:
 
     scene bg hub
 
+    play music lios_bgm
+
     p "We somehow managed to finished that… pant pant pant"
 
     show hitona3 laugh hat at hitona_left

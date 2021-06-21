@@ -137,7 +137,6 @@ init:
 image countdown = DynamicDisplayable(countdown, length= 120)
 
 label bomb_mechanic:
-    play music bomb_bgm
     scene black
 
     python:
@@ -204,91 +203,3 @@ label bomb_choice:
         jump r3_river
     else:
         jump bomb_choice
-
-label bomb_start:
-    menu:
-        "Right":
-            jump bomb_1_f
-        "Left":
-            jump bomb_8_f
-
-label bomb_start_1:
-    menu:
-        "Straight":
-            jump bomb_8_start
-        "Left":
-            pi "That's where we started Hitona!"
-
-            pi "Let's find another way!"
-
-            jump bomb_start
-
-label bomb_start_8:
-    menu:
-        "Straight":
-            jump bomb_1_start
-        "Right":
-            pi "That's where we started Hitona!"
-
-            pi "Let's find another way!"
-
-            jump bomb_start
-
-label bomb_1_start:
-    #hide countdown
-    menu:
-        "Right":
-            jump bomb_2_1
-        "Left":
-            jump bomb_3_1
-        "Straight":
-            jump bomb_5_1
-        "Back":
-            jump bomb_start_1
-
-label bomb_1_2:
-    #hide countdown
-    menu:
-        "Right":
-            jump bomb_5_1
-        "Left":
-            jump bomb_start_1
-        "Straight":
-            jump bomb_3_1
-        "Back":
-            jump bomb_2_1
-
-label bomb_1_3:
-    #hide countdown
-    menu:
-        "Right":
-            jump bomb_start_1
-        "Left":
-            jump bomb_5_1
-        "Straight":
-            jump bomb_2_1
-        "Back":
-            jump bomb_3_1
-
-label bomb_1_5:
-    #hide countdown
-    menu:
-        "Right":
-            jump bomb_3_1
-        "Left":
-            jump bomb_2_1
-        "Straight":
-            jump bomb_start_1
-        "Back":
-            jump bomb_5_1
-
-label bomb_2_1:
-    pi "It's a dead end..."
-
-    pi "Let's go back quick"
-
-
-
-label bomb_go_left:
-    #hide countdown
-    "..."

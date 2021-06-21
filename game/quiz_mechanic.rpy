@@ -1,10 +1,10 @@
 init python:
     def custom_random(exclude):
 
-        randInt = renpy.random.randint(1,6)
+        randInt = renpy.random.randint(0,5)
 
         while randInt in exclude:
-            randInt = renpy.random.randint(1,6)
+            randInt = renpy.random.randint(0,5)
 
         return randInt
 
@@ -12,25 +12,32 @@ init python:
     quiz_done = []
     quiz_num = 0
 
+label quiz_default:
+    python:
+        quiz_count = 0
+        quiz_done = []
+        quiz_num = 0
+
 label quiz_check:
     $ quiz_num = custom_random(quiz_done)
 
     if quiz_count < 3:
         $ quiz_done.append(quiz_num)
         $ quiz_count = quiz_count + 1
-        if quiz_num == 1:
+        if quiz_num == 0:
             jump quiz_1
-        elif quiz_num == 2:
+        elif quiz_num == 1:
             jump quiz_2
-        elif quiz_num == 3:
+        elif quiz_num == 2:
             jump quiz_3
-        elif quiz_num == 4:
+        elif quiz_num == 3:
             jump quiz_4
-        elif quiz_num == 5:
+        elif quiz_num == 4:
             jump quiz_5
         else:
             jump quiz_6
     else:
+        "Congratulation! You got all 3 correct!"
         jump r3_bomb
 
 label quiz_1:
