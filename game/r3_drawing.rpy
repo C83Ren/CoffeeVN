@@ -24,6 +24,8 @@ label r3_drawing:
     hide hitona3
     hide lios
 
+    play audio messagetone
+
     "Oh there’s a message from my phone"
 
     "100+ unread messages…"
@@ -40,6 +42,8 @@ label r3_drawing:
     l "Go on to the next one"
 
     pi "Let’s go Hitona, to the next challenge!"
+
+    stop sound
 
     "We walked a bit again and the room suddenly changed"
 
@@ -88,6 +92,8 @@ label r3_drawing:
 
     p "Just got to try then"
 
+    play sound quizstart
+
     "START"
 
     jump quiz_pic_default
@@ -124,6 +130,8 @@ label drawing_fail:
     l "Nope, nothing like that, go on. I’ll kick you out myself then. Ciao~"
 
     scene bg room
+    play music room_bgm
+    play sound phonecall
 
     p "Huh?!"
 
@@ -132,6 +140,8 @@ label drawing_fail:
     "Cause of the phone was ringing"
 
     "A call?"
+
+    stop sound
 
     "“KOHIIIII! I’ve been waiting for xx minutes now! Where are you?!”"
 

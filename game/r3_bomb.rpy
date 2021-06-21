@@ -65,19 +65,10 @@ label r3_bomb:
     init python:
         r3_secret = False
 
-    menu:
-        "Did you succeed escaping?"
-        "Yes!":
-            jump r3_river
-        "No...":
-            jump bomb_fail
-        "Through the secret exit~":
-            $ r3_secret = True
-            jump r3_river
-
 label bomb_fail:
     hide countdown
     scene black
+    play sound bombexplode
 
     "BOOOM"
 
@@ -127,7 +118,13 @@ label bomb_fail:
 
     "I opened my eyes and I was in my room lying on my bed…"
 
-    "My phone was ringing…I just looked at it…then the caller hung up"
+    play sound phonecall loop
+
+    "My phone was ringing…I just looked at it…"
+
+    stop sound
+
+    "then the caller hung up"
 
     p "…"
 
