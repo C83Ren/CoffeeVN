@@ -10,7 +10,7 @@ init 0:
     image cg 3 = Transform(ImageReference("cg 3 unscaled"), zoom=0.5)
     image cg BirthdayKohi= "cg 3"
 
-    image cg 4 unscaled = "cg Placeholder"
+    image cg 4 unscaled = Image("images/hitona_memory.png")
     image cg 4 = "cg 4 unscaled"
     image cg 5 unscaled = "cg Placeholder"
     image cg 5 = "cg 5 unscaled"

@@ -11,6 +11,7 @@ image bg forest = Transform(Image("images/bg tranquility front.png"), zoom=0.5)
 image bg map = "images/bg room.png"
 image bg village = "images/bg village.png"
 image bg turmoil = Transform(Image("images/bg turmoil front.png"), zoom=0.5)
+image bg rage = Transform(Image("images/bg rage front.png"), zoom=0.5)
 image bg tranquility = Transform(Image("images/bg tranquility front.png"), zoom=0.5)
 image bg castle room = "images/bg room.png"
 image bg grand spell = "images/bg room.png"
