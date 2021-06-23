@@ -6,27 +6,33 @@ label r1_start:
     #
     scene bg intersection day
 
-    "At least it’s sunny today. Unlike yesterday…"
+    "8:00 AM."
 
-    "It’s still 8 am in the morning I sure wonder what senpai’s up to."
-
-    "While enjoying my walk, there seemed to be a young girl just standing there at the intersection."
-
-    "I wonder if she’s lost, while thinking about that the young girl came up to me"
+    "It’s sunny today. Unlike yesterday..."
+    
+    p "(What is senpai planning…?)"
+    
+    "While enjoying my walk, I noticed a young girl just standing there at the intersection."
+    
+    p "(Maybe she’s lost?)"
+    
+    "While thinking that, the young girl approached me."
 
     show hitona1 idle1
 
-    "??" "Nee-chan!"
+    "??" "Onee-chan!"
 
     p "Eh? Me?"
 
-    "??" "Yes nee-chan! Are you busy?"
+    "??" "Yes nee-chan! Are you busy right now?"
 
     show hitona1 happy1
 
-    "She’s showing such a bright smile…so bright~"
-
-    p "Ummm I’m meeting someone right now, are you perhaps lost?"
+    "The girl displayed a bright smile while asking the question. It’s such a bright smile."
+    
+    p "Ummm... I'm going to meet a friend right now."
+    
+    p "Are you perhaps lost?"
 
     show hitona1 idle1
 
@@ -36,57 +42,67 @@ label r1_start:
 
     show hitona1 idle3
 
-    "??" "Play with me nee-chan!"
+    "??" "Onee-chan, play with Shiraishi!"
 
-    p "You shouldn’t play with strangers…Let’s get you back to your parents"
+    p "You know… you should be a bit more careful around strangers! Anyways, let’s get you back to your parents."
 
     show hitona1 pout3
 
-    "??" "Eeeeeh? Noooo Shiraishi wants to play! Shiraishi wants to play with Nee-chaan!"
+    "??" "Eeeeeh? Noooo Shiraishi wants to play! Shiraishi wants to play with Onee-chaan!"
 
-    "Ah this kid may be more troublesome I she first thought. And her name is Shiraishi I guess"
+    p "(Ah, this kid is turning out to be more troublesome than I first thought…)"
 
-    p "Okay okay wait a bit, I need to call someone okay"
+    "It seems like her name is Shiraishi."
+
+    "I’m at a loss about what to do. For now, I guess I’ll call senpai and ask her."
+    
+    p "Ah, okay, okay, give me a moment."
+    
+    p "Let me call my friend first."
 
     show hitona1 idle2
 
-    s "Yees Shiraishi will wait~"
+    s "Okaaay. Shiraishi will waiiit."
+    
+    "I took out my phone and called senpai."
+    
+    sn "Hello?"
 
-    "Took out my phone then I called senpai"
+    p "Senpai, I might be a bit late."
+    
+    sn "Ah Kohi! What's the matter? Did something happen?"
+    
+    p "So there’s this girl..."
 
-    p "Uuh senpai there’s a little hold up…"
+    "I told Senpai what had happened."
 
-    sn "What is it Kohi?"
-
-    p "So there’s this girl.."
-
-    "I told Senpai what happened"
-
-    sn "Ah is that so? Then just go play with her, don’t worry about me Kohii"
-
-    sn "We can meet again later, no worries~"
-
+    sn "Ah, is that so? Then just go play with her! Don’t worry about me!"
+    
+    sn "We can always find another time to meet, no worries!"
+    
     p "Eh?"
 
-    sn "But be sure to play with that girl okay~ If not…Kohi surely doesn’t want to know what’s going to happen hehehe"
-
-    p "Huh…? Okay…then…"
-
-    sn "Okay Kohii I’ll hang up, see you soon~"
+    sn "It’s more important for Kohi to play with her! But make sure to have fun with her, okay! If you don’t…"
+    
+    sn "You really don’t want to know what’s going to happen. Hehehe..."
+    
+    p "H...Huh…? O...Okay...I understand..."
+    
+    sn "Okay Kohii, I’m hanging up! See you sometime~"
 
     "Beep beep beep"
-
-    "I swear everyone is so weird recently…"
+    
+    p "(I swear everyone has been so weird recently…)"
 
     show hitona1 stareyes2
 
-    "There Shiraishi was looking up to me with beaming smile"
+    "At the corner of my vision, Shiraishi was looking up to me with a beaming smile. In any case it looks like I’ll be playing with her"
 
     p "So Shiraishi was it? Nee-chan will play with you~"
 
     show hitona1 happy1
 
-    s "Yaaay! Let’s play Hitona Nee-chan!"
+    s "Yaaay! Let’s play Hitona Onee-chan!"
 
     p "Eh…? Huh? Yeah…so do you want to play in the park?"
 
@@ -96,7 +112,7 @@ label r1_start:
 
     p "You mean the game store?"
 
-    s "No! You put coins then you play!"
+    s "No! A place where you put in coins and then play!"
 
     p "Oooh you mean the game center. Yeah sure, let’s go~"
 
@@ -112,11 +128,11 @@ label r1_start:
 
     s "No, Shiraishi just feel like doing it today"
 
-    s "Playing can make people happy!"
+    s "After all, playing games can make anyone happy!"
 
     "I could only smile at her innocent response."
 
-    "I wonder if I was that cheerful and innocent when I was 10 years old…really do makes me wonder"
+    p "(I wonder if I was that cheerful and innocent when I was 10 years old…)"
 
     scene bg gamecenter
 
@@ -124,91 +140,101 @@ label r1_start:
 
     show hitona1 stareyes1
 
-    "I looked at Shiraishi and her eyes were so excited. She let go of my hand and just started walking inside"
+    "Shiraishi was standing by my side."
+
+    "her eyes filled with excitement."
+
+    "Unable to wait any longer, she let go of my hand and started heading inside without me."
 
     p "Oooi Shiraishi"
 
-    "She seemed to be so entranced by the game center she couldn’t even hear me"
+    "She seemed to be so entranced by the game center she couldn’t even hear my voice"
 
-    "Shiraishi walked around the game center admiring every machine there was. I just quietly followed her from behind"
-
-    "Shiraishi took a full round of walking towards every machine then she realized she wasn’t with me."
+    "Shiraishi walked around the game center, admiring every machine there was."
+    
+    "I just quietly followed her without saying a word."
 
     show hitona1 sad1
 
-    "Shiraishi stopped and looked behind her. She looked worried but when she realized I was there she smiled again"
+    "She took a full round around the game center before realizing I wasn’t walking beside her anymore."
+
+    "Realizing this, she stopped and looked around worriedly, but smiled again at our eyes."
 
     show hitona1 happy3
 
-    "Shiraishi tottered back to me and hold my hand again"
+    "She tottered back to me and held my hand again."
 
     p "So what do you think of the game center?"
 
-    s "It’s fun!"
+    s "It’s really fun!"
 
-    p "We haven’t even tried anything though"
+    p "We haven’t even tried anything though…"
 
-    s "It’s still fun! Hitona nee-chan let’s play!"
+    s "It’s still fun! Hitona onee-chan, let’s play something!"
 
     p "What should we play then?"
 
     show hitona1 idle2
 
-    s "Hmmmm"
+    s "Hmmmm…"
 
-    p "How about racing game? There’s two of us, so might be fun if we race against each other"
+    p "How about a racing game? There’s two of us, so it might be fun if we race against each other."
 
     s "Hmmm no…"
 
-    p "How about playing the drum rhythm game? Listening to music is fun also~"
+    p "Then how about the drum rhythm game? It’s fun listening to music as well!"
 
-    s "Hmmm Shiraishi feels like playing something else…"
+    s "Ummm... Shiraishi feels like playing something else though…"
 
-    "Even though she was excited looking at everything she’s quite picky"
+    "Even though she was excited looking at everything, she’s unexpectedly picky."
 
-    "It’s not like I’m good at those two games~"
+    p "(Oh well, I’m not really good at those two games anyways.)"
 
     p "Well then…How about we try the crane game then?"
 
     show hitona1 stareyes4
 
-    "As soon as I said that Shiraishi was smiling ear to ear"
+    "As soon as I said that, Shiraishi was smiling ear to ear."
 
-    s "Yess! Shiraishi wants to try that with Hitona Nee-chan!"
+    s "Yess! Shiraishi wants to try that with Hitona onee-chan!"
 
     show hitona1 smile1
 
-    "We then walked towards the crane game area. There were plushies, figurines, bags, all sort of stuffs being the prize"
+    "With that said, we started heading towards the crane games."
 
-    p "Which one are we going to try Shiraishi?"
+    "There were plushies, figurines, bags, all sorts of prizes."
 
-    s "Hmmm…Shiraishi wants to look around"
+    p "(Ah that’s right…)"
 
-    p "Okay let’s look around"
+    p "Which one do you want to try, Shiraishi?"
 
-    "We were walking from one machine to another"
+    s "Hmmm…Shiraishi wants to look around first!"
 
-    s "Ooooh this looks cute, this one looks cute as well!"
+    p "Okay, let’s have a look around then~"
 
-    p "Yeah you’re right! This one looks cute as well!"
+    "We went from one machine to the next, looking at the different prizes."
 
-    "Shiraishi was nodding vigorously"
+    s "Ooooh this one is cute! That one is cute as well!"
 
-    "We went about walking around the crane machine for an hour and hadn’t even tried one"
+    p "Yeah you’re right! This one over here is cute too!"
 
-    p "Shiraishi…we should pick one soon, we’ve been looking around for one hour"
+    "Shiraishi nodded vigorously"
+
+    "And just like this, we spent an hour, but had yet to try even one."
+
+    p "Hey, Shiraishi…we should pick one soon; we’ve been looking around for one hour already."
 
     show hitona1 idle2
 
-    s "Hmmmmm…but everything is cute…"
+    s "Hmmm…but they’re all so cute…"
 
-    p "I know right! Such a dilemma…but we have to pick one"
+    p "I know right! It’s such a dilemma! But we still have to pick one."
 
-    p "Picking one is the key point of winning a prize!"
+    p "After all, the trick with crane games is to pick a single one! It’s no good to try each machine one by one."
 
-    "Shiraishi looks In deep thought"
+    "Shiraishi went into deep thought."
 
-    p "How about that plushie right there? The white dog with the yellow shirt? The S**rio character one"
+    p "How about that plushie over there? The white dog wearing the yellow shirt? The San**o character."
 
     show hitona1 smug1
 
@@ -216,49 +242,55 @@ label r1_start:
 
     p "Oh?"
 
-    s "The one with pretty lady!"
+    s "The one with the pretty lady!"
 
-    "Shiraishi was pointing at the machine with bishoujo figurine"
+    "Shiraishi was pointing at the machine with bishoujo figurines."
 
-    "It was Hatsune miku with orange clothing and green skirt…I feel like I’ve gotten this before"
+    "It was a Hatsu** Miku figure with an orange jacket and green skirt. For some reason, it feels like I’ve won this one before."
 
-    p "Eh? I totally thought you were going to choose the one with the plushie"
+    p "Eh? I totally thought you were going to choose one with a plushie."
 
-    s "No! Shiraishi wants the one with the pretty lady!"
+    s "No! Shiraishi wants to play the one with the pretty lady!"
 
     p "Okay then, let’s try it!"
 
     hide hitona1
 
-    "Just as soon as I put the coin memories flooded back…the struggle…the sweat and tears…"
+    "As soon as I went to insert the coin, memories flooded back…that struggle…the bitterness and the tears."
 
-    "For Shiraishi sake! Let’s do this"
+    p "(This is for Shiraishi sake! Let’s get the prize!)"
 
     p "Let’s GOO!"
 
     s "OOOOU!"
 
-    "I put in my first coin in…"
+    "I put the first coin in."
 
-    p "Okay bit to the right, more to the front…yeah! No…bit more to the left. Okay…let’s try"
+    #Coin sfx, arcade start sfx
+
+    p "A bit more to the right, more to the front…right there! No…a bit more to the left...okay, let’s try it!"
 
     show hitona1 sad3
 
-    "Shiraishi was beside me with hopeful and nervous eyes as the crane went down…"
+    #Crane sfx
 
-    "It didn’t even hit the prize…"
+    "As the crane went down, Shiraishi was beside me staring with hopeful eyes and fidgeting…"
+
+    "...but the crane didn’t even touch the prize."
 
     show hitona1 happy2
 
-    s "Don’t worry Hitona nee-chan! You’ll definitely get it this next one!"
+    s "Don’t worry Hitona onee-chan! You’ll definitely get it the next time!"
 
-    "Shiraishi looks so sure that I’ll get it, I shall not disappoint!"
+    "Shiraishi looks so sure that I’ll get it; I must not disappoint!"
 
     p "Yes! Hitona nee-chan will get it this time!"
 
     hide hitona1
 
     "Put my second coin in…"
+
+    #Coin sfx, arcade start sfx
 
     p "I didn’t hit it last time so it should go a bit to the right…little bit to the back…who cares let’s just try it!"
 
@@ -284,7 +316,7 @@ label r1_start:
 
     "Shiraishi was looking something else now"
 
-    "It was the purikuri booth that people kept going in to it"
+    "It was the purikura booth that people kept going in to it"
 
     s "Hitona nee-chan what does that do?"
 
