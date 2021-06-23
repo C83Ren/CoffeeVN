@@ -166,6 +166,8 @@ label village_announcement:
 
 label village_house_1_1:
 
+    play sound dooropen
+
     #idle
 
     e "Hitoni! I am here!"
@@ -208,15 +210,23 @@ label village_house_1_1:
         "What should I get?"
         "Upgrade Wind Blast to Wind Cutter":
             $ hitona_stats["spell"][0] = "Wind Cutter"
+            play sound correctchoice
+            "You get Wind Cutter spell!"
             jump village_menu
         "Get Fire Ball (Burn Effect)":
+            play sound correctchoice
+            "You get Fire Ball spell!"
             $ hitona_stats["spell"].append("Fire Ball")
             jump village_menu
         "Get Electric Bolt (Paralysis Effect)":
+            play sound correctchoice
+            "You get Electric Bolt spell!"
             $ hitona_stats["spell"].append("Electric Bolt")
             jump village_menu
 
 label village_house_1_2:
+    play sound dooropen
+
     hn "Did you forget something?"
 
     p "No nothing, just wondering what’s your relation with Eve"
@@ -238,6 +248,9 @@ label village_house_1_2:
     jump village_menu
 
 label village_house_2_1:
+
+    play sound dooropen
+
     "??" "Who would come to this place in the middle of the day, I got no money okay~"
 
     #laugh2
@@ -267,6 +280,9 @@ label village_house_2_1:
     jump village_menu
 
 label village_house_2_2:
+
+    play sound dooropen
+
     hs "What is it this time, oh it’s you. I didn’t catch your name"
 
     p "It’s Hitona"
@@ -280,6 +296,8 @@ label village_house_2_2:
     jump village_menu
 
 label village_house_3_1:
+
+    play sound dooropen
 
     #laugh2
 
@@ -304,6 +322,8 @@ label village_house_3_1:
     e "Well then Eve will leave Majna to you captain, I’ll be waiting outside"
 
     #hide eve
+
+    play sound dooropen
 
     "Eve then left the house leaving me alone with this man"
 
@@ -369,6 +389,8 @@ label village_house_3_1:
 
                 hj "Good luck with your journey"
 
+                play sound dooropen
+
                 "I went out after that and Eve was waiting there"
 
                 #idle
@@ -386,6 +408,9 @@ label village_house_3_1:
                 jump village_menu
 
 label village_house_3_2:
+
+    play sound dooropen
+
     hj "You need something from me?"
 
     p "Uuuh no, I guess"
@@ -401,6 +426,9 @@ label village_house_3_2:
     jump village_menu
 
 label village_house_3_3:
+
+    play sound dooropen
+
     hj "Back here again"
 
     p "I have no excuse"
@@ -422,6 +450,8 @@ label village_house_4_1:
     jump village_menu
 
 label village_house_4_2:
+
+    play sound dooropen
 
     #idle
 

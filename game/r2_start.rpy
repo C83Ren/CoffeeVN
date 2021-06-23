@@ -1,6 +1,7 @@
 label r2_start:
     scene bg forest
-    play music adventure_bgm
+
+    play music forest
 
     p "…"
 
@@ -9,6 +10,8 @@ label r2_start:
     "I see…trees…huts…bushes…"
 
     p "…eh?"
+
+    play sound bushrustling
 
     "I see a bush beside me was moving and suddenly something popped out from it"
 
@@ -34,9 +37,13 @@ label r2_start:
 
     p "Huh???? There are so many things I want to point out but first…how did that become Eve???!"
 
+    play sound staffsummon
+
     "This girl suddenly manifested a staff from nowhere onto her hand"
 
     #idle
+
+    play sound magiccasting
 
     p "By the blessing of the wind, cleanse this girl from its curse"
 
@@ -92,6 +99,8 @@ label r2_start:
 
     p "Wow…"
 
+    play sound footstepforest
+
     "Now that think about it…there is someone who is running towards here for a while"
 
     "And now he’s here"
@@ -106,6 +115,8 @@ label r2_start:
     e "Geeeh, it’s the guard…Well Hitona going to the forest is a bad idea so I guess we just have to stop him here!"
 
     p "What?"
+
+    play sound staffsummon
 
     e "Here a staff you can use, it has ‘Wind Blast’ spell In it"
 
@@ -147,7 +158,7 @@ label r2_start_after_battle:
     scene bg forest
 
     hide screen multi_stat
-    play music adventure_bgm
+    play music forest
 
     #smug1
 
@@ -208,5 +219,7 @@ label r2_start_after_battle:
     "You can check same place more than once"
 
     "Be sure to check them all!"
+
+    play music adventure_bgm
 
     jump r2_forest

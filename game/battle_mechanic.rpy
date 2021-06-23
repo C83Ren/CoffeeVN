@@ -4,6 +4,7 @@ init python:
 
         atk = list[object][0]
         heal = list[object][1]
+        sfx = list[object][4]
         if renpy.random.randint(1,10) <= list[object][2]:
             burn = 5
         else:
@@ -12,7 +13,7 @@ init python:
             par = 2
         else:
              par = 0
-        return atk, heal, burn, par
+        return atk, heal, burn, par, sfx
 
     def janken(player_janken, opp_janken):
 
@@ -29,21 +30,21 @@ init python:
 
     #ATK, Heal, Burn, Paralyze
     spell_list = {
-    "Wind Blast": [10, 0, 0, 0],
-    "Wind Cutter": [15, 0, 0, 0],
-    "Fire Ball": [10, 0, 2, 0],
-    "Electric Bolt": [8, 0, 0, 2],
-    "Wind Lance": [20, 0, 0, 0],
-    "Fire Wall": [15, 0, 5, 0],
-    "Lightning Strike": [12, 0, 0, 5]
+    "Wind Blast": [10, 0, 0, 0, "audio/sfx/wind_blast.mp3"],
+    "Wind Cutter": [15, 0, 0, 0, "audio/sfx/wind_cutter.mp3"],
+    "Fire Ball": [10, 0, 2, 0, "audio/sfx/fire_ball.mp3"],
+    "Electric Bolt": [8, 0, 0, 2, "audio/sfx/electric_bolt.mp3"],
+    "Wind Lance": [20, 0, 0, 0, "audio/sfx/wind_lance.mp3"],
+    "Fire Wall": [15, 0, 5, 0, "audio/sfx/fire_wall.mp3"],
+    "Lightning Strike": [12, 0, 0, 5, "audio/sfx/lightning_strike.mp3"]
     }
 
     item_list = {
-    "Heal Orb": [0, 20, 0, 0],
-    "Flamethrower": [50, 0, 5, 0],
-    "Heal Aura": [0, 50, 0, 0],
-    "God Blessing": [0, 100, 0, 0],
-    "Paralyzing Spark": [30, 0, 0, 5]
+    "Heal Orb": [0, 20, 0, 0, "audio/sfx/heal.mp3"],
+    "Flamethrower": [50, 0, 5, 0, "audio/sfx/flamethrower.mp3"],
+    "Heal Aura": [0, 50, 0, 0, "audio/sfx/heal.mp3"],
+    "God Blessing": [0, 100, 0, 0, "audio/sfx/heal.mp3"],
+    "Paralyzing Spark": [30, 0, 0, 5, "audio/sfx/paralyzing_spark.mp3"]
     }
 
     hitona_stats = {
@@ -158,14 +159,14 @@ label r2_fight:
                     if len(self["item"]) > 0:
                         if renpy.random.randint(1,4) > 1:
                             spell_name = renpy.random.choice(self["spell"])
-                            atk, heal, burn, par = store_turn(spell_list, spell_name)
+                            atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
                         else:
                             spell_name = renpy.random.choice(self["item"])
                             self["item"].remove(spell_name)
-                            atk, heal, burn, par = store_turn(item_list, spell_name)
+                            atk, heal, burn, par, sfx = store_turn(item_list, spell_name)
                     else:
                         spell_name = renpy.random.choice(self["spell"])
-                        atk, heal, burn, par = store_turn(spell_list, spell_name)
+                        atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
 
                     if self["name"] == "Eve":
                         if atk > 0:
@@ -221,7 +222,7 @@ label spell_option:
         "Cancel":
             jump fight_option
 
-    $ atk, heal, burn, par = store_turn(spell_list, spell_name)
+    $ atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
 
     jump target_option
 
@@ -239,7 +240,7 @@ label item_option:
             item_name = 0
             renpy.jump("fight_option")
         else:
-            atk, heal, burn, par = store_turn(item_list, item_name)
+            atk, heal, burn, par, sfx = store_turn(item_list, item_name)
             renpy.jump("target_option")
 
 
@@ -317,7 +318,9 @@ label fight_log:
             $ hitona_stats["item"].remove(spell_name)
             $ item_name = 0
 
+        play sound sfx
         "[self_name] casted [spell_name] to [target_name]"
+
 
         if atk > 0:
             $ target["hp"] = target["hp"] - int((atk * multiplier))
@@ -335,10 +338,12 @@ label fight_log:
 
         if burn > 0:
             $ target["burn"] = burn
+            play sound fireball
             "[target_name] got burnt for the next 5 turns"
 
         if par > 0:
             $ target["par"] = par
+            play sound paralyzingspark
             "[target_name] got paralyzed for the next 2 turns"
 
         if self["burn"] > 0:
@@ -347,9 +352,11 @@ label fight_log:
             if self["hp"] < 0:
                 $ self["hp"] = 0
             show screen multi_stat
+            play sound fireball
             "[self_name] received 5 damage from burn status"
     else:
         $ self["par"] = self["par"] - 1
+        play sound paralyzingspark
         "[self_name] is still paralyzed!"
 
         if self["burn"] > 0:
@@ -358,6 +365,7 @@ label fight_log:
             if self["hp"] < 0:
                 $ self["hp"] = 0
             show screen multi_stat
+            play sound fireball
             "[self_name] received 5 damage from burn status"
 
     if target["hp"] <= 0:

@@ -101,6 +101,8 @@ label forest_spot_2:
 
         e "Oh but it’s a one time use, still useful to have. Take it Hitona"
 
+        play sound correctchoice
+
         "You got Heal Orb"
 
         $ hitona_stats["item"].append("Heal Orb")
@@ -130,6 +132,8 @@ label forest_hut_1:
         #laugh2
 
         e "Bring everything to the great Nula!"
+
+        play sound dooropen
 
         "Eve just barged in…"
 
@@ -173,11 +177,15 @@ label forest_hut_2:
 
         #smile1
 
+        play sound dooropen
+
         e "Look look Hitona! What a rare fine! A spell item!"
 
         e "I think this one spews fire or something"
 
         e "It’ll break after one use so don’t use it willy nilly"
+
+        play sound correctchoice
 
         "You got Flamethrower"
 

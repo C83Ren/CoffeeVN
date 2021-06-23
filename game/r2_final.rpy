@@ -125,6 +125,8 @@ label final_no_grand_spell:
 
     e "Then let’s try our best"
 
+    play sound absolutespell
+
     "The king unleashed its attack and Eve managed to dispel it using her barrier spell"
 
     #angry3
@@ -163,6 +165,8 @@ label final_grand_spell:
 
     e "Okay Let’s do it!"
 
+    play sound absolutespell
+
     "The king unleashed its attack and Eve managed to dispel it using her barrier spell"
 
     "But…"
@@ -180,6 +184,8 @@ label final_grand_spell:
     p "Apeiros Iris!"
 
     # Hitona and Eve supposed to be saying it together
+
+    play sound apeirosiris
 
     "We casted the Grand Spell, a rainbow magical ball from me and pitch black magical ball from Eve combined together"
 
@@ -264,7 +270,7 @@ label final_good_end:
 
     p "What a dream that was…"
 
-    "Ring ring"
+    play sound messagetone
 
     p "A message?"
 

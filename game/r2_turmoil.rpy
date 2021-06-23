@@ -1,6 +1,9 @@
 label r2_turmoil:
     scene bg turmoil
 
+    play music storm
+    play sound thunder loop
+
     p "This is such a heavy rain…"
 
     e "With lightning striking the ground no less"
@@ -23,6 +26,12 @@ label r2_turmoil:
 
     p "I’ll get you back sometime later!"
 
+    jump turmoil_menu
+
+label turmoil_default:
+    play music storm
+    play sound thunder loop
+
 label turmoil_menu:
     scene bg turmoil
 
@@ -44,6 +53,9 @@ label turmoil_menu:
             jump turmoil_menu
 
         "World Map":
+            play music adventure_bgm
+            stop sound
+
             jump map_menu
 
     return

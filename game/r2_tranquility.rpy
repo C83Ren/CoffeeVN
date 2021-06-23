@@ -79,6 +79,8 @@ label r2_tranquility_after_battle:
 
     scene bg tranquility
 
+    play music waterfall
+
     p "Such a peaceful place…"
 
     #idle
@@ -333,6 +335,8 @@ label tranquility_spot_1_1:
 
     if t_oldman > 0:
 
+        play sound frog loop
+
         #idle
 
         "There’s a lot of frogs here…"
@@ -341,13 +345,19 @@ label tranquility_spot_1_1:
 
         e "We can use it as a bait, let’s take one"
 
+        play audio correctchoice
+
         "Get frog as bait"
 
         $ t_bait1 = True
 
+        stop sound
+
         jump tranquility_menu
 
     else:
+
+        play sound frog loop
 
         #idle
 
@@ -355,10 +365,14 @@ label tranquility_spot_1_1:
 
         "It’s kinda disturbing"
 
+        stop sound
+
         jump tranquility_menu
 
 label tranquility_spot_1_2:
     if t_oldman > 0 and not t_bait1 and not t_fish1:
+
+        play sound frog loop
 
         #idle
 
@@ -368,13 +382,19 @@ label tranquility_spot_1_2:
 
         p "I just thought we can use it as bait, let’s take one"
 
+        play audio correctchoice
+
         "Get frog as bait"
 
         $ t_bait1 = True
 
+        stop sound
+
         jump tranquility_menu
 
     elif t_bait1 or t_fish1:
+
+        play sound frog loop
 
         #idle
 
@@ -382,15 +402,21 @@ label tranquility_spot_1_2:
 
         p "Now I’m not so sure…"
 
+        stop sound
+
         jump tranquility_menu
 
     else:
+
+        play sound frog loop
 
         #idle
 
         e "You love frogs or something?"
 
         p "Uuuh not really?"
+
+        stop sound
 
         jump tranquility_menu
 
@@ -424,6 +450,8 @@ label tranquility_spot_2_1:
         p "EEEEVEEEE"
 
         e "Well calm down, we can use it as a bait, let’s take one"
+
+        play sound correctchoice
 
         "Get worm as bait"
 
@@ -471,6 +499,8 @@ label tranquility_spot_2_2:
         #surprised1
 
         e "Yeah…let’s take one as a bait…"
+
+        play sound correctchoice
 
         "Get worm as bait"
 
@@ -531,6 +561,8 @@ label tranquility_spot_3_1:
 
         p "I should note that tactic down"
 
+        play sound correctchoice
+
         "Get \"bug\" as bait"
 
         $ t_bait3 = True
@@ -574,6 +606,8 @@ label tranquility_spot_3_2:
         p "I know!"
 
         e "We can use it as a bait so let’s take one"
+
+        play sound correctchoice
 
         "Get \"bug\" as bait"
 
@@ -623,6 +657,8 @@ label tranquility_oldman_1:
 
     e "I’ll try using magic then~"
 
+    play sound magiccasting
+
     e "I call the mana of aquos, break free!"
 
     "Nothing happened"
@@ -667,6 +703,8 @@ label tranquility_oldman_2:
 
     "The old man fished using the bait"
 
+    play sound fishing
+
     "You get [fish_string]"
 
     if t_fish1 and t_fish2 and t_fish3:
@@ -704,6 +742,8 @@ label tranquility_release_fishes:
             p "I sure hope so…"
 
             "I released the fishes then…"
+
+            play sound fishing
 
             "The pond lighted up and out of the pond one massive fish came out"
 
@@ -751,6 +791,8 @@ label tranquility_forest_1:
 
     "It fell with a thump"
 
+    play sound fishflap loop
+
     "And now…it’s flailing around…."
 
     p "Doesn’t seem like it’s working…"
@@ -760,6 +802,8 @@ label tranquility_forest_1:
     e "Okay ‘Amafi’ come back here to the storage"
 
     p "You’re naming that fish???"
+
+    stop sound
 
     jump tranquility_menu
 
@@ -830,6 +874,8 @@ label tranquility_waterfall:
 
     p "The waterfall stopped…"
 
+    stop music fadeout 1.0
+
     #surprised1
 
     e "That fish is surely huge huh"
@@ -841,6 +887,8 @@ label tranquility_waterfall:
     p "There! Something is shining there!"
 
     #idle
+
+    play sound magiccasting
 
     e "Wind among us, elevate~"
 
