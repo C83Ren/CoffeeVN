@@ -3,6 +3,8 @@ label r2_map_1:
 
     #idle
 
+    play sound staffsummon
+
     "Eve took out a map out of thin air"
 
     p "How do you do that!? I don’t want to carry anything either!"
@@ -105,7 +107,7 @@ label map_turmoil:
         $ m_turmoil = 1
         jump r2_turmoil
     else:
-        jump turmoil_menu
+        jump turmoil_default
 
 label map_rage:
     if m_rage == 0:
@@ -176,6 +178,10 @@ label map_castle:
 
 label map_rage_1:
 
+    scene bg rage
+
+    play music volcano
+
     #idle
 
     p "Just looking this from here looks very intimidating"
@@ -200,9 +206,16 @@ label map_rage_1:
 
     p "I will decline for now"
 
+    play music adventure_bgm
+
     jump map_menu
 
 label map_rage_2:
+
+    scene bg rage
+
+    play music volcano
+
     p "Rage sound kinda cool don’t you think?"
 
     #laugh2
@@ -218,6 +231,8 @@ label map_rage_2:
     p "…"
 
     e "Let’s go~"
+
+    play music adventure_bgm
 
     jump map_menu
 

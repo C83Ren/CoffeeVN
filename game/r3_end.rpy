@@ -1,7 +1,7 @@
 label r3_end:
     scene bg sing
 
-    play music r3end_bgm 
+    play music r3end_bgm
 
     show lios front at lios_right
     show hitona3 smile hat at hitona_left
@@ -118,7 +118,9 @@ label r3_end:
 
     # Pierrot says this also ^
 
-    "CG shows"
+    scene cg 4 unscaled
+
+    "Thanks for playing"
 
     if r3_secret:
         "The hidden message"
