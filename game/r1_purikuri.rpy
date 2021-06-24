@@ -11,6 +11,8 @@ label r1_purikuri:
     # What will you do?
     p "Let’s take one Shiraishi~"
     
+    show hitona1 happy3
+
     s "Yaay let’s goo!"
     
     "I went into the booth with a very happy Shiraishi holding a bag with bishojo figure"
@@ -22,6 +24,8 @@ label r1_purikuri:
     "We pose wrapping our hands to each other’s shoulder"
 
     "{i}Click{/i}"
+
+    show hitona1 idle2
 
     p "Look our photo is there Shiraishi, now we can decorate it"
 
@@ -38,6 +42,8 @@ label r1_purikuri:
     "We added a lot of decoration to our picture, but now that I thought about it…I wasn’t focusing much on the picture"
 
     "I wonder how it looks hmmm"
+
+    show hitona1 smile1
 
     "I thought of looking at the printed picture but when I look at Shiraishi, I felt reluctant…"
 
