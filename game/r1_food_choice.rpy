@@ -12,6 +12,8 @@ label r1_food_choice_purikuri:
     
     "I’ll just put it away for now, it’s still black anyway"
 
+    show hitona1 shy5
+
     "Shiraishi was looking down seemed a bit off"
     
     jump r1_food_choice
@@ -27,12 +29,18 @@ label r1_food_choice_no_purikuri:
     # But before they could go around the game center, Shiraishi’s stomach grumbled.
     #
 
+    show hitona1 bliss3
+
     "I patted Shiraishi"
 
     p "Let’s play some other stuff, like the guitar right there"
 
+    show hitona1 smile1
+
     "Shiraishi just nodded and smiled but as soon we were going to move again"
 
+    show hitona1 shy5
+    
     jump r1_food_choice
 
 label r1_food_choice:
