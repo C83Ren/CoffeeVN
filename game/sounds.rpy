@@ -14,6 +14,7 @@ define audio.quizstart = "audio/sfx/quiz_start.mp3"
 define audio.riverbank = "audio/sfx/river_bank.mp3"
 define audio.takecard = "audio/sfx/take_card.mp3"
 define audio.bombexplode = "audio/sfx/bomb_explode.mp3"
+define audio.mazewalk = "audio/sfx/maze_walk.mp3"
 
 define audio.bushrustling = "audio/sfx/bush.mp3"
 define audio.staffsummon = "audio/sfx/staff_summon.mp3"

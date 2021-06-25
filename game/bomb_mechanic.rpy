@@ -180,6 +180,8 @@ label bomb_choice:
         backward = 'yes' if can_move_backward(maze, player_x, player_y) else 'no'
         img_maze = "%s %s %s" % (forward, right, left)
 
+    play sound mazewalk
+
     image bomb_maze = "images/maze/[img_maze].png"
     show bomb_maze behind countdown
     with dissolve

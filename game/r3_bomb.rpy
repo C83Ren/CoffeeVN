@@ -42,8 +42,9 @@ label r3_bomb:
 
     show lios front
 
-    play music bomb_intro_bgm noloop
-    queue music bomb_loop_bgm loop
+    #play music bomb_intro_bgm noloop
+    play music bomb_loop_bgm loop volume 0.5
+
 
     l "You have to escape the maze within the time limit. If not the bomb would explode~"
 
