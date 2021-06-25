@@ -4,7 +4,7 @@ init python:
     quiz_num = 0
 
     drawing_list = [
-    ["1.jpg", "Asking for help", "Distributing flyer", " Food delivery", 2],
+    ["1.png", "Asking for help", "Distributing flyer", " Food delivery", 2],
     ["2.png", "Jiangshi", "Vampire", "Dracula", 1],
     ["3.png", "Bath", "Onsen", "Soap", 3],
     ["4.png", "Barrel", "Izakaya", "Dinner", 1],
