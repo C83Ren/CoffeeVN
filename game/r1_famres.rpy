@@ -186,11 +186,12 @@ label r1_famres:
     
     "Don’t order 3 in the first place…"
 
-    # Shiraishi seemed very happy after all that.
-    # It’s still noon, what should we do?
-    menu:
-        "where to go?"
-        "movie":
-            jump r1_movie
-        "shopping":
-            jump r1_shopping
+    jump r1_post_meal
+    # # Shiraishi seemed very happy after all that.
+    # # It’s still noon, what should we do?
+    # menu:
+    #     "where to go?"
+    #     "movie":
+    #         jump r1_movie
+    #     "shopping":
+    #         jump r1_shopping

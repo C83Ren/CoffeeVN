@@ -170,10 +170,11 @@ label r1_7_11:
 
     show hitona1 bliss4
 
-    menu:
-        "We finished our food and Shiraishi looked rather satisfied. She even looked sleepy, What should we do?"
-        "Accompany her home":
-            jump r1_home_bad_end
-        "Go to the park":
-            $ r1_regrets = False
-            jump r1_park_end
+    jump r1_post_meal
+    # menu:
+    #     "We finished our food and Shiraishi looked rather satisfied. She even looked sleepy, What should we do?"
+    #     "Accompany her home":
+    #         jump r1_home_bad_end
+    #     "Go to the park":
+    #         $ r1_regrets = False
+    #         jump r1_park_end
