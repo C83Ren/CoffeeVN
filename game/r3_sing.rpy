@@ -93,8 +93,6 @@ label r3_sing:
 
     l "Not quite~"
 
-    "First song plays"
-
     l "You have to guess the next line from the songs~"
 
     hide lios
@@ -102,15 +100,11 @@ label r3_sing:
 
     pi "This should be easy~"
 
-label sing_menu:
-    scene bg sing
+    check_lyrics l "audio/Hana_ni_Bourei.m4a" "Type in the lyrics afterwards" sing_retry "あせをぬぐってなつめく" "answer"
+    pi "test"
+    check_lyrics l "audio/Kokoronashi.m4a" "Type in the lyrics afterwards" sing_retry "でもぼくはそんざいしないからじゃあせめてここにきてよ" "answer"
 
-    menu:
-        "Did you succeed?"
-        "Yes!":
-            jump r3_end
-        "No...":
-            jump sing_retry
+    jump r3_end
 
 label sing_retry:
     scene bg sing
@@ -135,9 +129,9 @@ label sing_retry:
     menu:
         "What should I do?"
         "Try Again":
-            jump sing_menu
+            return ""
         "Give up":
-            jump sing_fail
+            return "sing_fail"
 
 label sing_fail:
     scene black

@@ -299,12 +299,6 @@ label example:
 
     return
 
-label utawaku_quiz_example:
-    show hitona1 stareyes3
-    check_lyrics s "audio/kokoronasi.mp3" "Enter the following lyrics" "Incorrect, try again" "それはねここにあるよ"
-
-    show hitona1 stareyes4
-    s "Correct"
 
 label map_example:
     scene bg conbini

@@ -1,7 +1,5 @@
 python early:
-    listen_again = "Listen again"
-    enter_again = "Guess again"
-
+    in_check_lyrics = False
     def normalize_input(s):
         s = s.replace('"', '').replace('　', '').replace('・', '').replace('。', '').replace('、', '').replace(' ', '')
         return s
@@ -17,49 +15,52 @@ python early:
         who = lex.simple_expression()
         filename = lex.string()
         lyrics_prompt = lex.string()
-        wrong_text = lex.string()
-        answer = lex.string()
-        lex.expect_eol()
-        return (who, filename, lyrics_prompt, wrong_text, answer)
+        wrong_call = lex.label_name()
+        answer = []
+        while not lex.eol():
+            answer.append(lex.string())
+        return (who, filename, lyrics_prompt, wrong_call, answer)
 
     def execute_check_lyrics(o):
-        global quick_menu
+        global quick_menu, in_check_lyrics
 
-        who, filename, lyrics_prompt, wrong_text, answer = o
+        who, filename, lyrics_prompt, wrong_call, answer = o
 
-        successful = False
-        action = "listen"
-        while not successful:
-            if action == "listen":
-                renpy.music.set_pause(True)
-                renpy.music.play([filename], channel="sound", loop=False, fadeout=1.0, fadein=1.0)
-                _window_hide()
-                quick_menu = False
-                while renpy.music.is_playing("sound"):
-                    renpy.pause(1, hard=True)
-                quick_menu = True
-                _window_show()
+        if in_check_lyrics and _return:
+            in_check_lyrics = False
+            renpy.jump(_return)
 
-            successful = ask_and_check_lyrics(lyrics_prompt, answer)
-            if not successful:
-                renpy.say(eval(who), __(wrong_text))
-                action = renpy.display_menu([(__(listen_again), "listen"), (__(enter_again), "enter")])
+        in_check_lyrics = True
 
+        renpy.music.set_pause(True)
+        renpy.music.play([filename], channel="sound", loop=False, fadeout=1.0, fadein=1.0)
+        _window_hide()
+        quick_menu = False
+        while renpy.music.is_playing("sound"):
+            renpy.pause(1, hard=True)
+        quick_menu = True
+        _window_show()
+
+        successful = ask_and_check_lyrics(lyrics_prompt, *answer)
+        if not successful:
+            renpy.call(wrong_call, from_current=True)
+
+        in_check_lyrics = False
 
     def lint_check_lyrics(o):
         if len(o) != 5:
             renpy.error("Expected 5 arguments to check_lyrics")
             return
 
-        who, filename, lyrics_prompt, wrong_text, answer = o
+        who, filename, lyrics_prompt, wrong_call, answer = o
         try:
             eval(who)
         except:
             renpy.error("Character not defined: %s" % who)
 
     def translation_strings_check_lyrics(o):
-        who, filename, lyrics_prompt, wrong_text, answer = o
-        return [lyrics_prompt, wrong_text, listen_again, enter_again]
+        who, filename, lyrics_prompt, wrong_call, answer = o
+        return [lyrics_prompt]
 
     renpy.register_statement(
         "check_lyrics",
