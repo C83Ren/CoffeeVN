@@ -32,7 +32,6 @@ init 0:
 
 init +1 python:
     for i in range(14):
-        print(i)
         renpy.image("ed %d thumbnail" % (i + 1), im.Scale(ImageReference("ed %d" % (i + 1)), 384, 216))
     renpy.image("ed locked", im.Scale(Image("cg locked.png"), 384, 216))
 
