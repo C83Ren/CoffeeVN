@@ -7,7 +7,7 @@ python early:
     def ask_and_check_lyrics(lyrics_prompt, *accepted_answers):
         input_lyrics = ''
         while not input_lyrics:
-            input_lyrics = renpy.input(__(lyrics_prompt), length=20)
+            input_lyrics = renpy.input(__(lyrics_prompt), length=50)
             input_lyrics = normalize_input(input_lyrics)
         return any(input_lyrics.startswith(normalize_input(a)) for a in accepted_answers)
 

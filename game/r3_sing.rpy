@@ -99,10 +99,28 @@ label r3_sing:
     show hitona3 smug hat
 
     pi "This should be easy~"
+    hide hitona3
 
-    check_lyrics l "audio/Hana_ni_Bourei.m4a" "Type in the lyrics afterwards" sing_retry "あせをぬぐってなつめく" "answer"
-    pi "test"
-    check_lyrics l "audio/Kokoronashi.m4a" "Type in the lyrics afterwards" sing_retry "でもぼくはそんざいしないからじゃあせめてここにきてよ" "answer"
+    play sound quizstart
+    "LET'S START"
+
+    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
+    play sound correctchoice
+    pi "Correct! next!"
+    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
+    play sound correctchoice
+    pi "Correct! next!"
+    check_lyrics l "audio/cherry.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "ゆびさきでおくるきみへのめっせじ" "yubisakideokurukimienomesseji"
+    play sound correctchoice
+    pi "Correct! next!"
+    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta"
+    play sound correctchoice
+    pi "Correct! next!"
+    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "いまはるにつつまれていくよ" "imaharunitsutsumareteikuyo"
+    play sound correctchoice
+    pi "Correct! next!"
+    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "でもぼくはそんざいしないからじゃあせめてここにきてよ" "demobokuwasonzaishinaikarajaasemetekokonikiteyo"
+    play sound correctchoice
 
     jump r3_end
 
