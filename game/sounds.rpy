@@ -1,4 +1,4 @@
-define audio.alarm = "audio/alarm_placeholder.wav"
+define audio.alarm = "audio/alarm_placeholder.ogg"
 define audio.doorbell = "audio/sfx/door_bell.mp3"
 define audio.phonecall = "audio/sfx/phone_call.mp3"
 define audio.dooropen = "audio/sfx/door_open.mp3"
