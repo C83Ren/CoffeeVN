@@ -415,9 +415,9 @@ translate japanese start_0e96fbb6:
     "『あなたは他の人に応援することに情熱がある人です。周りの人が目標を達成するために全てをかけます…！』"
 
 # game/intro.rpy:207
-translate japanese start_927fc506:
+translate japanese start_b49418a7:
 
-    # "“You are a very ambitious person. No matter what it is, you always want to give it 100%, no, 200% effort!”"
+    # "“You are a very ambitious person. No matter what it is, you always want to give it 100%%, no, 200%% effort!”"
     "『あなたは野心家です。全力、いや、全力の２倍で何でもかんでも挑戦したいです！』"
 
 # game/intro.rpy:210

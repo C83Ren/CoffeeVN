@@ -204,7 +204,7 @@ label start:
         elif intro_food == "Yakiniku":
             "“You are very ambitious when supporting others. You stop at nothing to help those around you reach their goals.”"
         else:
-            "“You are a very ambitious person. No matter what it is, you always want to give it 100%, no, 200% effort!”"
+            "“You are a very ambitious person. No matter what it is, you always want to give it 100%%, no, 200%% effort!”"
     else:
         if intro_food == "Pasta":
             "“You are a very calm person. When it involves you, you are able to think calmly without panicking, and quickly reach a solution without struggle.”"
