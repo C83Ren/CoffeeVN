@@ -181,16 +181,45 @@ translate japanese true_end_combination_unlocked_d9ab4462:
     "金庫の中には手紙と…鍵穴のある箱もある。"
 
 # game/true_end.rpy:93
-translate japanese true_end_combination_unlocked_a66a8ac5:
+translate japanese true_end_combination_unlocked_14c7c80c:
 
-    # "“Hitona! This is our gift to you. Open each safe with each key!”"
-    "『ひとなちゃん！\n　これは私達のプレゼントです。\n　各鍵で各箱を開けてみて！』"
+    # nvl clear
+    # nvl_narrator "“Hitona!"
+    nvl clear
+    nvl_narrator "『ひとなちゃん！"
 
-# game/true_end.rpy:99
-translate japanese true_end_combination_unlocked_4c755303:
+# game/true_end.rpy:95
+translate japanese true_end_combination_unlocked_a6abb636:
 
-    # "“First of all, we want to tell you that your fans are always there behind you! No matter when or where, across time and space, we will always be there for you!”"
-    "『１つ目、ファンのみんなはいつも応援していると伝えたいです！\n　いつまでもどこまでも、時間でも場所でも構わず、\n　ずっと側にいてあげます！』"
+    # nvl_narrator "This is our gift to you."
+    nvl_narrator "　これは私達のプレゼントです。"
+
+# game/true_end.rpy:96
+translate japanese true_end_combination_unlocked_c07a072b:
+
+    # nvl_narrator "Open each safe with each key!”"
+    nvl_narrator "　各鍵で各箱を開けてみて！』"
+
+# game/true_end.rpy:102
+translate japanese true_end_combination_unlocked_34a36c14:
+
+    # nvl clear
+    # nvl_narrator "“First of all!"
+    nvl clear
+    nvl_narrator "『１つ目、"
+
+# game/true_end.rpy:104
+translate japanese true_end_combination_unlocked_07113f0e:
+
+    # nvl_narrator "We want to tell you that your fans are always there behind you!"
+    nvl_narrator "　ファンのみんなはいつも応援していると伝えたいです！"
+
+# game/true_end.rpy:105
+translate japanese true_end_combination_unlocked_c49f7a46:
+
+    # nvl_narrator "No matter when or where, across time and space, we will always be there for you!”"
+    nvl_narrator "　いつまでもどこまでも、時間でも場所でも構わず、"
+    nvl_narrator "　ずっと側にいてあげます！』"
 
 # game/true_end.rpy:101
 translate japanese true_end_combination_unlocked_c8d96d53:
@@ -198,11 +227,29 @@ translate japanese true_end_combination_unlocked_c8d96d53:
     # "There’s another locked safe inside, and there are three keys left."
     "箱の中にはまた錠をかけた箱がある。残り３つの鍵。"
 
-# game/true_end.rpy:107
-translate japanese true_end_combination_unlocked_ccf5f1d6:
+# game/true_end.rpy:113
+translate japanese true_end_combination_unlocked_fd8c0b24:
 
-    # "“Second! Keep being yourself! That is Hitona’s unique charm! Let loose!”"
-    "『２つ目、自分らしくあれ！\n　それはひとなちゃんの愛嬌です！\n　遠慮しないで！』"
+    # nvl_narrator "“Second!"
+    nvl_narrator "『２つ目、"
+
+# game/true_end.rpy:115
+translate japanese true_end_combination_unlocked_b2b34ea6:
+
+    # nvl_narrator "Keep being yourself!"
+    nvl_narrator "　自分らしくあれ！"
+
+# game/true_end.rpy:116
+translate japanese true_end_combination_unlocked_77efd7bc:
+
+    # nvl_narrator "That is Hitona’s unique charm!"
+    nvl_narrator "　それはひとなちゃんの愛嬌です！"
+
+# game/true_end.rpy:117
+translate japanese true_end_combination_unlocked_c4f784c7:
+
+    # nvl_narrator "Let loose!”"
+    nvl_narrator "　遠慮しないで！』"
 
 # game/true_end.rpy:109
 translate japanese true_end_combination_unlocked_92c76bea:
@@ -210,11 +257,23 @@ translate japanese true_end_combination_unlocked_92c76bea:
     # "There’s another locked safe inside, and there are two keys left."
     "箱の中にはまた錠をかけた箱がある。残り２つの鍵。"
 
-# game/true_end.rpy:115
-translate japanese true_end_combination_unlocked_dea405e7:
+# game/true_end.rpy:124
+translate japanese true_end_combination_unlocked_6fdb9230:
 
-    # "“Third! The memories that you have made all this time are irreplaceable! We want Hitona to keep on making wonderful memories!”"
-    "『３つ目、この二年に作った想い出はかけがえのないものです！\n　これからももっともっと素敵な想い出を作り続けてほしいです！』"
+    # nvl_narrator "“Third!"
+    nvl_narrator "『３つ目、"
+
+# game/true_end.rpy:127
+translate japanese true_end_combination_unlocked_3fa1a0d8:
+
+    # nvl_narrator "The memories that you have made all this time are irreplaceable!"
+    nvl_narrator "　この二年に作った想い出はかけがえのないものです！"
+
+# game/true_end.rpy:128
+translate japanese true_end_combination_unlocked_8efb901a:
+
+    # nvl_narrator "We want Hitona to keep on making wonderful memories!”"
+    nvl_narrator "　これからももっともっと素敵な想い出を作り続けてほしいです！』"
 
 # game/true_end.rpy:117
 translate japanese true_end_combination_unlocked_fd3bc48b:

@@ -90,13 +90,19 @@ label true_end_combination:
 label true_end_combination_unlocked:
     "There’s a letter inside and…another safe with a keyhole."
 
-    "“Hitona! This is our gift to you. Open each safe with each key!”"
+    nvl clear
+    nvl_narrator "“Hitona!"
+    nvl_narrator "This is our gift to you."
+    nvl_narrator "Open each safe with each key!”"
 
     "insert key"
 
     call show_cg("BirthdayKohi")
 
-    "“First of all, we want to tell you that your fans are always there behind you! No matter when or where, across time and space, we will always be there for you!”"
+    nvl clear
+    nvl_narrator "“First of all!"
+    nvl_narrator "We want to tell you that your fans are always there behind you!"
+    nvl_narrator "No matter when or where, across time and space, we will always be there for you!”"
 
     "There’s another locked safe inside, and there are three keys left."
 
@@ -104,7 +110,10 @@ label true_end_combination_unlocked:
 
     # call show_cg("")
 
-    "“Second! Keep being yourself! That is Hitona’s unique charm! Let loose!”"
+    nvl_narrator "“Second!"
+    nvl_narrator "Keep being yourself!"
+    nvl_narrator "That is Hitona’s unique charm!"
+    nvl_narrator "Let loose!”"
 
     "There’s another locked safe inside, and there are two keys left."
 
@@ -112,7 +121,9 @@ label true_end_combination_unlocked:
 
     # call show_cg("")
 
-    "“Third! The memories that you have made all this time are irreplaceable! We want Hitona to keep on making wonderful memories!”"
+    nvl_narrator "“Third!"
+    nvl_narrator "The memories that you have made all this time are irreplaceable!"
+    nvl_narrator "We want Hitona to keep on making wonderful memories!”"
 
     "There’s another locked safe inside, and there is one key left."
 
