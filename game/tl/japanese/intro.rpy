@@ -128,13 +128,13 @@ translate japanese start_87f754cd:
 translate japanese start_e4a65c3e:
 
     # nvl_narrator "You left this in your old room! Can’t believe you forgot to bring something so big! Be thankful that you have such a reliable senpai! Hope we can meet sometime!"
-    nvl_narrator "こっひー！これは昔の部屋の忘れものだよ！こんなに大きなものを忘れるなんて信じられない！この頼もしい先輩がいるのを、ありがたく思いなさいよっ！近いうちにまた会いましょうね！"
+    nvl_narrator "　こっひー！これは昔の部屋の忘れものだよ！こんなに大きなものを忘れる\n　なんて信じられない！この頼もしい先輩がいるのを、ありがたく思いなさ\n　いよっ！近いうちにまた会いましょうね！"
 
 # game/intro.rpy:55
 translate japanese start_3d5b3c63:
 
     # nvl_narrator "Senpai”"
-    nvl_narrator "先輩より』"
+    nvl_narrator "　先輩より』"
 
 # game/intro.rpy:57
 translate japanese start_b50b7f74:
