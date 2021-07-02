@@ -119,10 +119,10 @@ translate japanese start_d5535be6:
     "箱の上に手紙が付けていた。手紙を取り、読むことにした。"
 
 # game/intro.rpy:51
-translate japanese start_1438f9da:
+translate japanese start_87f754cd:
 
-    # nvl_narrator "Kohi!"
-    nvl_narrator "こっひーへ"
+    # nvl_narrator "“Kohi!"
+    nvl_narrator "『こっひーへ"
 
 # game/intro.rpy:53
 translate japanese start_e4a65c3e:
@@ -131,10 +131,10 @@ translate japanese start_e4a65c3e:
     nvl_narrator "こっひー！これは昔の部屋の忘れものだよ！こんなに大きなものを忘れるなんて信じられない！この頼もしい先輩がいるのを、ありがたく思いなさいよっ！近いうちにまた会いましょうね！"
 
 # game/intro.rpy:55
-translate japanese start_f85b5e77:
+translate japanese start_3d5b3c63:
 
-    # nvl_narrator "Senpai"
-    nvl_narrator "先輩より"
+    # nvl_narrator "Senpai”"
+    nvl_narrator "先輩より』"
 
 # game/intro.rpy:57
 translate japanese start_b50b7f74:

@@ -48,11 +48,11 @@ label start:
 
     play sound takecard
 
-    nvl_narrator "Kohi!"
+    nvl_narrator "“Kohi!"
 
     nvl_narrator "You left this in your old room! Can’t believe you forgot to bring something so big! Be thankful that you have such a reliable senpai! Hope we can meet sometime!"
 
-    nvl_narrator "Senpai"
+    nvl_narrator "Senpai”"
 
     nvl clear
 
