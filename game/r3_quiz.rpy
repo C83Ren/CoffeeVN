@@ -1,5 +1,5 @@
 label r3_quiz:
-    scene bg quiz
+    scene bg quiz with fade
 
     play sound lightswitch
 
@@ -29,14 +29,14 @@ label r3_quiz:
 
     "QUIZ START"
 
-    hide hitona3
+    hide hitona3 with dissolve
 
     jump quiz_default
 
 label quiz_fail:
     scene bg quiz
 
-    show lios front
+    show lios front at lios_right with dissolve
 
     "Someone with a black cape suddenly appeared in front of us"
 
@@ -44,8 +44,8 @@ label quiz_fail:
 
     # hitona says this as well ^
 
-    show hitona3 pout hat at hitona_left
-    show lios front at lios_right behind hitona3
+    show hitona3 pout hat at hitona_left with dissolve
+    #show lios front at lios_right behind hitona3
 
     pi "Hey don’t blame me! You were the one answering!"
 
@@ -57,9 +57,11 @@ label quiz_fail:
 
     l "Off you go little girls~"
 
-    scene bg room
+    stop music fadeout 1.0
 
-    play music room_bgm
+    scene bg room with Fade(1.0, 1.0, 1.0)
+
+    play music room_bgm fadein 3.0 volume 0.2
 
     p "Eh? I’m in my room? On my bed…"
 
@@ -73,7 +75,7 @@ label quiz_fail:
 
     "I rushed out of the room"
 
-    scene black
+    scene black with dissolve
 
     "While going to the park that dream kept spinning in my head"
 

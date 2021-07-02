@@ -38,7 +38,7 @@ label quiz_pic_check:
 
     image quiz_image = "images/r3_drawing/[img_str]"
 
-    show quiz_image
+    show quiz_image with dissolve
     play sound quizquestion
 
     menu:

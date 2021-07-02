@@ -1,14 +1,14 @@
 label r3_bomb:
     scene bg quiz
 
-    show lios front
+    show lios front at lios_right with dissolve
 
     "Someone with a black cape suddenly appeared in front of us"
 
     l "You got all right huh, unexpected"
 
-    show hitona3 laugh hat at hitona_left
-    show lios front at lios_right behind hitona3
+    show hitona3 laugh hat at hitona_left with dissolve
+    # show lios front at lios_right behind hitona3
 
     pi "Like I said, don’t underestimate the Great Detective Pierrot"
 
@@ -36,14 +36,18 @@ label r3_bomb:
 
     pi "Don’t falter Hitona! Let’s goo"
 
-    scene bg hub
+    scene bg hub with fade
 
     "We walked for a bit, then somehow we were back in the previous room"
 
-    show lios front
+    show lios front with dissolve
+
+    stop music fadeout 2.0
+
+    pause 2.0
 
     #play music bomb_intro_bgm noloop
-    play music bomb_loop_bgm loop volume 0.5
+    play music bomb_loop_bgm loop volume 0.2 fadein 3.0
 
 
     l "You have to escape the maze within the time limit. If not the bomb would explode~"
@@ -56,8 +60,8 @@ label r3_bomb:
 
     l "Right after the map is gone, 2 minutes, good luck~"
 
-    hide lios
-    show hitona3 angry hat
+    hide lios with dissolve
+    show hitona3 angry hat with dissolve
 
     pi "WHAT? This is not part of the plan LIOOOS!"
 
@@ -71,19 +75,20 @@ label bomb_fail:
     scene black
     play sound bombexplode
 
+    stop music
     "BOOOM"
 
-    scene bg hub
+    scene bg hub with fade
 
-    play music lios_bgm
+    play music lios_bgm fadein 1.0 volume 0.1
 
     "We got sent back to the first room…"
 
-    show lios front at lios_right
+    show lios front at lios_right with dissolve
 
     l "Told you it’s your worst enemy~"
 
-    show hitona3 angry hat at hitona_left
+    show hitona3 angry hat at hitona_left with dissolve
 
     pi "By worst you mean actually running?!"
 
@@ -111,9 +116,11 @@ label bomb_fail:
 
     l "Til Next time~"
 
-    scene bg room
+    stop music fadeout 1.0
 
-    play music room_bgm
+    scene bg room with Fade(1.0, 1.0, 1.0)
+
+    play music room_bgm fadein 3.0 volume 0.2
 
     p "Eh?"
 
@@ -133,7 +140,7 @@ label bomb_fail:
 
     "I rushed out of the room"
 
-    scene black
+    scene black with fade
 
     "While going to the park that dream kept spinning in my head"
 

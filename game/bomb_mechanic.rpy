@@ -158,7 +158,7 @@ label bomb_mechanic:
 
     play sound takecard
     show bomb map:
-        zoom 0.5, xalign 0.5, yalign 0.5
+        zoom 0.5, xalign 0.5, yalign 0.5Oju
     "Memorize it well~"
     play sound takecard
     hide bomb map
@@ -184,7 +184,7 @@ label bomb_choice:
 
     image bomb_maze = "images/maze/[img_maze].png"
     show bomb_maze behind countdown
-    with dissolve
+    with Fade(0.3, 0.1, 0.3)
 
     menu:
         "forward" if forward == "yes":

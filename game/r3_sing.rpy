@@ -1,8 +1,8 @@
 label r3_sing:
-    scene bg computer
+    scene bg computer with fade
 
-    show lios front at lios_right
-    show hitona3 happy hat at hitona_left
+    show lios front at lios_right with dissolve
+    show hitona3 happy hat at hitona_left with dissolve
 
     pi "Aaah sure brings back memories"
 
@@ -42,7 +42,7 @@ label r3_sing:
 
     pi "Which is why we should hurry!"
 
-    scene bg hub
+    scene bg hub with Fade(1.0, 1.0, 1.0)
 
     "Pierrot pulled my hands and we walked around the hub finding the challenge"
 
@@ -50,7 +50,7 @@ label r3_sing:
 
     p "What were you talking with Lios Pierrot?"
 
-    show hitona3 idle hat
+    show hitona3 idle hat with dissolve
 
     pi "About what?"
 
@@ -70,9 +70,9 @@ label r3_sing:
 
     "As I was still trying to understand what Pierrot was saying the scene suddenly changed again"
 
-    scene bg sing
+    scene bg sing with Fade(1.0, 1.0, 1.0)
 
-    stop music
+    stop music fadeout 1.0
 
     p "It’s a…stage?"
 
@@ -81,7 +81,7 @@ label r3_sing:
     pi "Yeah…"
 
     hide hitona3
-    show lios front
+    show lios front with dissolve
 
     l "The last challenge!"
 
@@ -99,26 +99,26 @@ label r3_sing:
     show hitona3 smug hat
 
     pi "This should be easy~"
-    hide hitona3
+    hide hitona3 with dissolve
 
     play sound quizstart
     "LET'S START"
 
     check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
     play sound correctchoice
-    pi "Correct! next!"
+    pi "Correct! Next!"
     check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
     play sound correctchoice
-    pi "Correct! next!"
+    pi "Correct! Next!"
     check_lyrics l "audio/cherry.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "ゆびさきでおくるきみへのめっせじ" "yubisakideokurukimienomesseji"
     play sound correctchoice
-    pi "Correct! next!"
+    pi "Correct! Next!"
     check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta"
     play sound correctchoice
-    pi "Correct! next!"
+    pi "Correct! Next!"
     check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "いまはるにつつまれていくよ" "imaharunitsutsumareteikuyo"
     play sound correctchoice
-    pi "Correct! next!"
+    pi "Correct! Next!"
     check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "でもぼくはそんざいしないからじゃあせめてここにきてよ" "demobokuwasonzaishinaikarajaasemetekokonikiteyo"
     play sound correctchoice
 
@@ -152,7 +152,7 @@ label sing_retry:
             return "sing_fail"
 
 label sing_fail:
-    scene black
+    scene black with fade
 
     "Let's try again okay"
 

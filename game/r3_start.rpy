@@ -1,5 +1,5 @@
 label r3_start:
-    scene bg room
+    scene bg room with fade
 
     "??" "Pant pant"
 
@@ -9,7 +9,7 @@ label r3_start:
 
     p "Uuuh are you okay?"
 
-    show hitona3 sad hat
+    show hitona3 sad hat with dissolve
 
     "??" "Uh yeah…I’m okay…"
 

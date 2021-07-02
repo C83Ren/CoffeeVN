@@ -1,10 +1,10 @@
 label r3_end:
-    scene bg sing
+    scene bg sing with fade
 
-    play music r3end_bgm
+    play music r3end_bgm fadein 2.0
 
-    show lios front at lios_right
-    show hitona3 smile hat at hitona_left
+    show lios front at lios_right with dissolve
+    show hitona3 smile hat at hitona_left with dissolve
 
     pi "Aaaaaaaaaaaaaaaaaaah finally…"
 
@@ -16,11 +16,11 @@ label r3_end:
 
     pi "I leave the rest to you Lios"
 
-    scene bg hub
+    scene bg hub with Fade(1.0, 1.0, 1.0)
 
     p "What’s happening?? I did finish the challenge right?"
 
-    show lios front
+    show lios front with dissolve
 
     l "Yeah don’t worry, congrats on finishing every challenge there is"
 
@@ -118,14 +118,15 @@ label r3_end:
 
     # Pierrot says this also ^
 
-    scene cg 4 unscaled
+    scene cg 4 unscaled with Fade(1.0, 1.0, 1.0)
 
-    "Thanks for playing"
+    #"Thanks for playing"
+    pause 15.0
 
     if r3_secret:
         "The hidden message"
 
-    scene bg room
+    scene bg room with fade
 
     p "What’s this?"
 
