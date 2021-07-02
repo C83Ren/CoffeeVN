@@ -3,9 +3,6 @@ label start:
     play music room_bgm fadein 1.0 volume 0.2
     #play music "room_bgm.wav"
 
-    # disable save until after questionnaire
-    $ quick_menu = False
-    $ _game_menu_screen, game_menu_screen_value = None, _game_menu_screen
 
     #scene bg shop
 
@@ -119,6 +116,8 @@ label start:
         "Kohigashi":
             $ intro_name = "Kohigashi"
     $ add_choice_to_history(intro_name)
+    # disable save until after questionnaire
+    $ save_enabled = False
 
     menu:
         "2. Most favourite color among these"
@@ -161,6 +160,7 @@ label start:
     $ add_choice_to_history(["Support", "Joy", "Memories"][route - 1])
 
     p "Finally done! What was the questionnaire gonna give me~"
+    $ save_enabled = True
 
     if intro_color == "Purple":
         if intro_food == "Pasta":
@@ -224,8 +224,6 @@ label start:
     play sound ["<silence 5.0 loop 5.0>", phonecall] loop
     scene bg room with Fade(2.0, 4.0, 3.0)
 
-    $ quick_menu = True
-    $ _game_menu_screen = game_menu_screen_value
 
     p "Uuugh…is it a call…ughh"
 
