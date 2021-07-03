@@ -104,27 +104,27 @@ label r3_sing:
     play sound quizstart
     "LET'S START"
 
-    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
+    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics that come next" sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
     play sound correctchoice
     pi "Correct! Next!"
-    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
+    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics that come next" sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
     play sound correctchoice
     pi "Correct! Next!"
-    check_lyrics l "audio/cherry.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "ゆびさきでおくるきみへのめっせじ" "yubisakideokurukimienomesseji"
+    check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next" sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji"
     play sound correctchoice
     pi "Correct! Next!"
-    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta"
+    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics that come next" sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta" "きょうのためいっしょうけんめいがんばった" "kyounotameisshoukenmeiganbatta"
     play sound correctchoice
     pi "Correct! Next!"
-    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "いまはるにつつまれていくよ" "imaharunitsutsumareteikuyo"
+    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next" sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
     play sound correctchoice
     pi "Correct! Next!"
-    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics afterwards, no space needed" sing_retry "でもぼくはそんざいしないからじゃあせめてここにきてよ" "demobokuwasonzaishinaikarajaasemetekokonikiteyo"
+    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics that come next" sing_retry "でもぼくにはそんざいしないからじゃあせめてここにきてよ" "demobokuniwasonzaishinaikarajaasemetekokonikiteyo"
     play sound correctchoice
 
     jump r3_end
 
-label sing_retry:
+label sing_retry(hint=False):
     scene bg sing
 
     show lios front at lios_right
@@ -143,6 +143,9 @@ label sing_retry:
     pi "THANK YOU!"
 
     pi "Let’s try again Hitona!"
+
+    if hint:
+        pi "You were close! Try typing a bit more this time."
 
     menu:
         "What should I do?"
