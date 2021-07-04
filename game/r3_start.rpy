@@ -43,7 +43,13 @@ label r3_start:
 
     play sound takecard
 
-    "\"Kohigashi Hitona, I, Phantom Thief Lios has stolen one of your most precious possession. If you want to get it back enter the date when the mermaid princess has her yearly celebration\""
+    nvl_narrator "“Kohigashi Hitona"
+
+    nvl_narrator "I, Phantom Thief Lios has stolen one of your most precious possession."
+
+    nvl_narrator "If you want to get it back enter the date when the mermaid princess has her yearly celebration”"
+
+    nvl clear
 
     p "What’s this about?"
 

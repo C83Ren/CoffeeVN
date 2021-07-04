@@ -1,7 +1,7 @@
 label r2_start:
-    scene bg forest
+    scene bg forest with Fade(1.0, 1.0, 1.0)
 
-    play music forest
+    play music forest fadein 1.0
 
     p "…"
 
@@ -126,6 +126,8 @@ label r2_start:
 
     #blank
 
+    stop music fadeout 1.0
+
     '''
     You’re going to get into a fight
 
@@ -138,7 +140,7 @@ label r2_start:
     What’s a  better way to learn then just try it? Let’s go!
     '''
 
-    play music battletheme_bgm
+    play music battletheme_bgm fadein 1.0 volume 0.5
 
     #angry3 during fight
 
@@ -155,10 +157,10 @@ label r2_start:
     jump r2_fight
 
 label r2_start_after_battle:
-    scene bg forest
+    scene bg forest with dissolve
 
     hide screen multi_stat
-    play music forest
+    play music forest fadein 1.0
 
     #smug1
 
@@ -216,10 +218,12 @@ label r2_start_after_battle:
 
     e "Let’s go then~"
 
+    stop music fadeout 1.0
+
     "You can check same place more than once"
 
     "Be sure to check them all!"
 
-    play music adventure_bgm
+    play music adventure_bgm fadein 1.0
 
     jump r2_forest

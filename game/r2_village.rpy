@@ -6,7 +6,7 @@ init python:
     v_talk = 0
 
 label r2_village:
-    scene bg village
+    scene bg village with Fade(1.0, 1.0, 1.0)
 
     "After a bit we arrived at the village"
 
@@ -19,7 +19,7 @@ label r2_village:
     p "Yeah you’re right, let’s just explore around"
 
 label village_menu:
-    scene bg village
+    scene bg village with dissolve
     menu:
         "Where should we go~"
         "Talk":
