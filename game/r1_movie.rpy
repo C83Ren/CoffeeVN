@@ -10,23 +10,29 @@ label r1_movie:
     # “I’ll leave it to Hitona neechan~”.
     # So it’s obvious which one right?
 
+    scene bg cinema
+
     "I paid the meal then we went out to a cinema"
 
-    p "I paid the meal then we went out to a cinema"
+    p "Here we are, the cinema!"
     
     p "You’ve been to a cinema right Shiraishi?"
+
+    show hitona1 smile1
 
     s "No, Shiraishi never been to a cinema before"
 
     p "Really? Then Hitona nee-chan here will make this your best cinema experience ever!"
 
+    show hitona1 happy2
+
     s "Yaaay"
 
-    "From the looks of it, there are two movies playing…"
-
-    "Horror movie and a romance movie"
+    "It seems there are two movies starting soon: a horror movie and a romance movie."
 
     p "Shiraishi, which one do you want to watch?"
+
+    show hitona1 smile1
 
     s "I’ll leave it to Hitona nee-chan"
 
@@ -34,99 +40,141 @@ label r1_movie:
         "Looking at the selection it’s pretty obvious which one we’re watching right?"
         
         "Horror Movie":
-            "I bought the ticket, and not long after it was time for the movie"
-            
-            "The movie name is ParanormalJP"
-            
-            "The movie synopsis said it's about some people challenging a Haunted Street where they need to get out"
-            
-            "At first it was just a game while they were recording it but it became something more..."
-            
-            "Well we'll see how it is"
-            
-            p "If you're scared Shiraishi you can close your eyes or hold my hands okay"
-
-            s "Okay~"
-
-            "The movie is starting"
-
-            "It's quite dark as well, expected from a horror movie"
-
-            "Oh the movie is from a first person perspective as the cameraman, interesting"
-
-            "Cathy is her partner, looks like they'll be together"
-
-            "I looked at Shiraishi she seemed fine"
-
-            "Cathy" "Come on let's go...AAAAAH HELP ME"
-
-            "Cathy is being dragged by something..."
-
-            "Now the cameraman is alone..."
-
-            "I don't want to watch anymore..."
-
-            "Shiraishi held my hand, is she scared?"
-
-            "I got to hold on until the end then, let's go..."
-
-            "The movie ended"
-
-            s "That was fun!!"
-
-            p "It was?? I see...good then"
-
-            "So Shiraishi was just comforting me. What a strong and good girl"
-
-            "I gave her a head pat"
+            $ mov = "horror"    
 
         "Romance Movie":
-            "The movie name was Nakitai Watashi wa Same wo Kaburu"
+            $ mov = "romance"
 
-            "The movie synopsis said it's about someone who wanted to run away from her usual life."
-
-            "She met a strange character then she managed to become a…?"
-
-            "Well we'll see how it is"
-
-            p "This should be fun Shiraishi"
-
-            s "Shiraishi can't wait!"
-
-            "The movie is starting"
-
-            "Oh here is the main character, she's a middle schooler huh"
-
-            "What a strong minded this girl is keeps getting close to her crush even though he's not"
-
-            "responding much to her"
-
-            "Ooh such a backstory this girl have..."
-
-            "The strange character is here! It's a...fish in an aquarium"
-
-            "The fish gave her a mask"
-
-            "She jumped to the ocean!?? Put on the mask and now she's...a shark...I see"
-
-            "Shiraishi seemed to be enjoying it, well let's watch till the end"
-
-            "The movie ended"
-
-            s "That was fun!!"
-
-            p "Yeah that was nice~ Good you enjoyed it too"
-
-            "I gave her a head pat"
+    menu:
+        "I went to buy the ticket, but for some reason the cinema only accepts W*bMoney."
         
+        "Buy some W*bMoney":
+        
+    "I bought some W*bMoney, then used it to buy a ticket."
+
+    "The movie is starting soon!"
+
+    if mov == "horror":
+        "The movie is {i}ParanormalJP.{/i}"
+
+        "“The protagonists challenge a certain Haunted Street! They record it thinking it’s a game, but all of a sudden something happened…?!”"
+
+        p "(Well, let’s see how it goes.)"
+
+        p "If you feel scared Shiraishi, it’s okay to close your eyes and hold my hands."
+
+        show hitona1 smile1
+
+        s "Okaay."
+
+        hide
+        
+        "The movie is starting."
+
+        "As expected from a horror movie, It's quite dark."
+
+        "It seems like the movie is from the cameraman’s first-person perspective."
+
+        "The cameraman is challenging the Haunted Street with a partner named Cathy."
+
+        show hitona1 idle2
+
+        "Shiraishi doesn’t seem to be the slightest bit scared."
+
+        hide
+        
+        "Cathy" "Come on, let's go…aaAAAAAH!!! HELP!!!"
+
+        "Cathy is being dragged away by something!"
+
+        "Now the cameraman is all alone!"
+
+        p "(Ahh, I don't want to watch anymore…)"
+
+        "Suddenly, I felt something grabbing my hand!"
+
+        "I was so surprised I was about to jump up in the air, but it was Shiraishi."
+
+        p "(Maybe she’s also scared?)"
+
+        "Holding hands, we were able to finish watching the movie."
+
+        show hitona1 happy1
+
+        s "That was so fun!!"
+
+        p "F…fun?? Ah…that’s good then."
+
+        "Shiraishi doesn’t seem to have been scared at all."
+
+        "Rather, it seems like she held my hand during the movie just to comfort me."
+
+    else:
+        "The movie is {i}A Fin Away.{/i}" 
+
+        "“The story of a girl who wanted to run away from her daily life. One day, she meets a mysterious being, and then becomes a…?!”"
+
+        p "(Well, let’s see how it goes.)"
+
+        p "This movie looks pretty interesting, doesn’t it!"
+        
+        show hitona1 idle3
+        
+        s "Shiraishi can't wait!"
+        
+        hide
+        
+        "The movie is starting."
+
+        "The main character is a middle schooler."
+
+        "Even though her crush is completely oblivious to her feelings, she continues to try to get closer to him."
+
+        p "(How strong-minded…!)"
+
+        "The mysterious being is here!"
+
+        "It’s… a shark that seems to live in the aquarium?!"
+
+        "After receiving a mask from the shark…"
+
+        "She put the mask on and jumped into the ocean!"
+
+        p "(Ehhhh?!)"
+
+        "The moment the mask touched her face, the girl transformed into a shark!"
+
+        p "(Ah, I see…)"
+
+        show hitona1 stareyes1
+
+        "Shiraishi seems to be happily engrossed in the movie."
+
+        hide
+        
+        "After the movie ended…"
+
+        show hitona1 happy1
+        
+        s "That was so fun!!"
+        
+        p "That was a great movie, wasn’t it! I’m glad Shiraishi also had fun!"
+        
+
     # Shiraishi then asked “Would you watch a movie again someday?”.
     # Surely you know what to say
+
+    show hitona1 smile2
+
+    "While the credits were playing, I patted Shiraishi’s head."
+    
+    show hitona1 idle2
 
     s "Hitona nee-chan, would you watch a movie with me again someday?"
 
     menu:
-        "What’s with the sudden question? Well…"
-        "i don't know":
+        "Shiraishi suddenly asked a question."
+        "I don’t know…I’m not sure if we can meet again later, so I can’t promise.":
             jump r1_movie_bad_end
-        "definitely":
+        "Yeah, definitely!":
             jump r1_after_movie
