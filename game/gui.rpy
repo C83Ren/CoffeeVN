@@ -29,17 +29,17 @@ define gui.idle_color = u'#cc99cc'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = u'#997799'
+define gui.idle_small_color = u'#aa55aa'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = u'#990099'
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = u'#555555'
+define gui.selected_color = u'#550055'
 
 ## The color used for a text button when it cannot be selected.
-define gui.insensitive_color = u'#666633'
+define gui.insensitive_color = u'#bbbbbb'
 
 ## Colors used for the portions of bars that are not filled in. These are not
 ## used directly, but are used when re-generating bar image files.
@@ -367,15 +367,15 @@ define gui.nvl_borders = Borders(0, 15, 0, 30)
 
 ## The maximum number of NVL-mode entries Ren'Py will display. When more entries
 ## than this are to be show, the oldest entry will be removed.
-define gui.nvl_list_length = 6
+define gui.nvl_list_length = 12
 
 ## The height of an NVL-mode entry. Set this to None to have the entries
 ## dynamically adjust height.
-define gui.nvl_height = 173
+define gui.nvl_height = None
 
 ## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
-define gui.nvl_spacing = 15
+define gui.nvl_spacing = 30
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.

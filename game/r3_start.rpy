@@ -1,5 +1,5 @@
 label r3_start:
-    scene bg room
+    scene bg room with fade
 
     "??" "Pant pant"
 
@@ -9,7 +9,7 @@ label r3_start:
 
     p "Uuuh are you okay?"
 
-    show hitona3 sad hat
+    show hitona3 sad hat with dissolve
 
     "??" "Uh yeah…I’m okay…"
 
@@ -43,7 +43,13 @@ label r3_start:
 
     play sound takecard
 
-    "\"Kohigashi Hitona, I, Phantom Thief Lios has stolen one of your most precious possession. If you want to get it back enter the date when the mermaid princess has her yearly celebration\""
+    nvl_narrator "“Kohigashi Hitona"
+
+    nvl_narrator "I, Phantom Thief Lios has stolen one of your most precious possession."
+
+    nvl_narrator "If you want to get it back enter the date when the mermaid princess has her yearly celebration”"
+
+    nvl clear
 
     p "What’s this about?"
 

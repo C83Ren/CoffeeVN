@@ -3,125 +3,100 @@ label start:
     play music room_bgm fadein 1.0 volume 0.2
     #play music "room_bgm.wav"
 
-    # disable save until after questionnaire
-    $ quick_menu = False
-    $ _game_menu_screen, game_menu_screen_value = None, _game_menu_screen
+    p "{i}Sigh…{/i}"
 
-    #scene bg shop
+    p "{i}What a hot day today is… I’m all sweaty…I’ll have to take a bath again…{/i}"
 
-    #show hitona1 happy3
+    "It was Saturday afternoon. After a series of unfortunate events, I am now just lazing around in my room."
 
-    #"??" "わーい！やくそくだよ、ひとなおねえちゃん！"
-    #"??" "Yaay! It's a promise okay, Hitona onee-chan!"
+    p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining! The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
 
-    #scene bg hub
+    p "{i}…geez!{/i}"
 
-    #show lios front
+    p "{i}And right when I thought that it couldn’t get any worse, I realized I was lost because of the huge downpour!{/i}"
 
-    #"??" "進め～　次はお前の最大の敵だ"
-    #"??" "Go on~ Your worst enemy is next."
+    p "{i}After all that, I didn’t even get to buy my favourite chips and lunch! Ugh!{/i}"
 
-    #scene bg village
-    #show hitona2 idle
+    p "{i}…wait. It’s during these times that SSRs are pulled from gacha, right?{/i}"
 
-    #"??" "この世界を救う第二救世主は貴方だよ、ひとな"
-    #"??" "Hitona, you are the second salvation."
+    p "{i}Let’s pull!!!!{/i}"
 
-    p "Sigh"
+    "But in the end, not even a single SR card came out."
 
-    p "What a hot day today is. I'm all sweaty...I have to take a bath again"
+    p "{i}Sigh…yeah right, what was I expecting…{/i}"
 
-    "It was Saturday afternoon. Here I am just lazing around after a series of unfortunate events."
+    p "{i}I want this terrible day to hurry up and end already…{/i}"
 
-    "Going to a convenience store to get food then a sudden downpour? The weather forecast said it’s sunny! Not to mention that speeding car that splashed all that mud…"
-
-    "And I can’t believe I got lost because of the huge downpour that was happening"
-
-    p "After all that I didn’t even get my favourite chips and lunch! *sigh"
-
-    p "Probably my luck is saved up for this gacha!"
-
-    p "Let’s pull!!!!"
-
-    "Only R cards came up"
-
-    p "…*sigh Yeah right what was I expecting"
-
-    "If I think further I probably can list down how bad today was…As soon as I thought about that"
+    "As soon as that thought came to mind…"
 
     play sound doorbell
-    #pause 1.0
+    pause 1.0
 
-    "??" "Delivery!"
+    "…the doorbell rang."
 
-    p "A delivery? I wonder what it is"
+    "???" "Hello! Delivery!"
 
-    "Mailman" "Here is your delivery maam. For ummm Kohigashi Hitona correct? Please sign here"
+    p "{i}A delivery? I wonder what it is.{/i}"
 
-    p "Ah yes, okay"
+    "Mailman" "Here is your delivery. For ummm, Hitona Kohigashi, correct? Please sign here."
 
-    "The mailman then left leaving a huge box at the front door."
+    p "Ah yes, okay…"
 
-    "On top of the box there was letter attached to it. I took it and opened it"
+    "Just like that, a huge box was left at the front door."
+
+    "On top of the box was a letter. I picked it up and read it."
 
     play sound takecard
 
-    "\"Dear Kohi,"
+    nvl_narrator "“Kohi!"
 
-    "Kohi you left this in your old room! Can’t believe you forgot to bring something so huge! Here~ Be thankful that your senpai is so reliable. Hope we can meet sometime~"
+    nvl_narrator "You left this in your old room! Can’t believe you forgot to bring something so big! Be thankful that you have such a reliable senpai! Hope we can meet sometime!"
 
-    "Sincerely, Your Senpai"
+    nvl_narrator "Senpai”"
 
-    p "So it was from senpai. Been a while since I last met her"
+    nvl clear
 
-    p "But really, what is she talking about? I don’t think I would forget bringing something so huge. Let’s see what’s inside"
+    p "{i}So it was from senpai…it’s been quite a while since I last met her.{/i}"
 
-    p "It’s a…safe?"
+    p "{i}But really, what is she talking about? I don’t think I would forget to bring something so huge…right?{/i}"
 
-    "It was a gray safe that had a lock with a 4 characters password and a keyhole."
+    p "{i}Well, let’s see what’s inside first.{/i}"
 
-    p "I don’t think I ever had this. Hmmm let’s just put it inside and ask senpai what it’s all about"
+    p "{i}It’s a…safe?{/i}"
 
-    "I put the safe inside…which was quite heavy and texted senpai asking what it is"
+    "It was a silver-coloured safe with a 4-digit lock affixed to it."
 
-    "After that I just lazed back to the computer chair. Staring the monitor blankly…"
+    p "{i}Hmmm, I don’t think I ever had a safe like this.{/i}"
 
-    p "What to do..."
+    p "{i}Let’s just bring this inside and ask senpai what it’s all about.{/i}"
+
+    "Thinking that, I put the rather heavy safe inside and texted senpai asking about it."
+
+    "After sending the text, I went back to lazing in my chair and staring blankly at the monitor."
+
+    p "{i}What to do…{/i}"
 
     play sound messagetone
 
-    "As soon I was lost in thought, a message came"
+    "As soon I got lost in thought, a message came."
 
-    "\"“Kohigashiii! I found an interesting questionnaire! Try it Try it!”"
+    "“Kohigashiii! I found an interesting questionnaire! Hurry up and try it!”"
 
-    p "Oh that’s kinda rare and…random but that’s just how she is I guess."
+    p "{i}Oh?{/i}"
 
-    p "Let’s try it then"
+    p "{i}That’s kinda rare and…random.{/i}"
 
-    "I opened the link that was on the message"
+    p "{i}Oh well, let’s try it.{/i}"
 
-    #if  and persistent.ed_unlocked_5 and persistent.ed_unlocked_8:
-        #menu:
-            #"Try opening the box?"
-            #"Yes":
-                #
-                #$ quick_menu = True
-                #jump true_end
-            #"No":
-                #pass
+    "I opened the questionnaire linked."
+
+    # disable save until after questionnaire
+    $ save_enabled = False
+
+    $ player_name = input_with_history("1. Enter your name.", default="Hitona")
 
     menu:
-        "1. Enter your name"
-        "Kohi":
-            $ intro_name = "Kohi"
-        "Hitona":
-            $ intro_name = "Hitona"
-        "Kohigashi":
-            $ intro_name = "Kohigashi"
-    $ add_choice_to_history(intro_name)
-
-    menu:
-        "2. Most favourite color among these"
+        "2. Of the following, what is your most favourite color?"
         "Purple":
             $ intro_color = "Purple"
         "Pink":
@@ -139,7 +114,7 @@ label start:
     $ add_choice_to_history(intro_color)
 
     menu:
-        "3. Favourite food among these"
+        "3. Of the following, which is your most favourite food?"
         "Pasta":
             $ intro_food = "Pasta"
         "Yakiniku":
@@ -148,88 +123,111 @@ label start:
             $ intro_food = "Salad"
     $ add_choice_to_history(intro_food)
 
-    "Then a lot more questions came until this one"
+    "The questions came one by one, never seeming to end."
+
+    "10. Your favorite day of the year?"
+
+    p "{i}There’s so many of them though…{/i}"
+
+    "45. When do you think you’ll meet your soulmate?"
+
+    p "{i}It’s asking me about the future now??{/i}"
+
+    "70. What is your favourite movie genre?"
+
+    p "{i}It asks this 70 questions in?!{/i}"
+
+    "155. How much time do you spend each day sitting down?"
+
+    p "{i}Really? What does this have to do with anything?? And 155 questions in??!{/i}"
+
+    p "{i}Why am I even still doing this…{/i}"
+
+    "Final question."
+
+    p "{i}Finally…{/i}"
 
     menu:
-        "Which one you want to keep giving (Notice, this option determines the route you’re going to take)?"
+        "Which of these do you treasure the most? (Warning: this option determines the game route.)"
         "Support":
             $ route = 1
         "Joy":
             $ route = 2
         "Memories":
             $ route = 3
-    $ add_choice_to_history(["Support", "Joy", "Memories"][route - 1])
+        "All of them" if persistent.ed_unlocked_1 and persistent.ed_unlocked_5 and persistent.ed_unlocked_8:
+            $ route = 4
 
-    p "Finally done! What was the questionnaire gonna give me~"
+    $ add_choice_to_history(["Support", "Joy", "Memories", "All of them"][route - 1])
+    $ save_enabled = True
+
+    p "{i}Finally done! What’s the result of this questionnaire?{/i}"
 
     if intro_color == "Purple":
         if intro_food == "Pasta":
-            "You are compassionate towards yourself. A good trait to have! You should always care about yourself"
+            "“You are compassionate towards yourself. A good trait to have! It’s important to care for yourself.”"
         elif intro_food == "Yakiniku":
-            "You are compassionate towards others. Your friends and those around you must be lucky having you around."
+            "“You are compassionate towards everyone else. Your friends must be lucky to have you around.”"
         else:
-            "You are compassionate towards yourself and others. Equally loving everyone is always a good thing~"
+            "“You are compassionate towards both yourself and others. It’s good to love everyone, yourself included.”"
     elif intro_color == "Pink":
         if intro_food == "Pasta":
-            "You think you are cute. Hey no one's judging, and I think you are really cute!"
+            "“You think you are cute. Hey, no one is judging, and you really are cute!”"
         elif intro_food == "Yakiniku":
-            "You think others are cute. A lot of people are cute physically, but you see beyond that, you see how cute they are even in their hearts."
+            "“You think everyone else is cute. A lot of people are cute on the outside, but you are able to see beyond that, and appreciate the cuteness within their hearts as well.”"
         else:
-            "You think you and others are cute. When everything in this world is cute, surely the world looks a lot better"
+            "“You think everyone is cute. When everything in the world is cute, the world becomes a better place!”"
     elif intro_color == "Yellow":
         if intro_food == "Pasta":
-            "You are a cheerful person. Always looking forward to what you're going to do next!"
+            "“You are a cheerful person. Always looking forward to what you’re going to do next!”"
         elif intro_food == "Yakiniku":
-            "You are cheerful when around people. Having a bright sunshine around is a blessing that everyone near you should be grateful"
+            "“You are especially cheerful when around others. Like a bright ray of sunshine, you’re a blessing that everyone is grateful for.”"
         else:
-            "You are an infinite energy of cheerfulness. Everyone arounds you become suddenly cheerful because of you. I have no idea how, but I want one of you right here in my home~"
+            "“You are an infinite source of cheerfulness. Everyone around you immediately becomes cheerful just being near you. I have no idea how, but I want one of you right here in my home!”"
     elif intro_color == "Black":
         if intro_food == "Pasta":
-            "You think deeply about yourself. You often get lost in thought when it concerns you."
+            "“You think deeply about yourself. You often get lost in thought about matters pertaining to yourself.”"
         elif intro_food == "Yakiniku":
-            "You think deeply about others. You often get lost in thought when it concerns others but less when it concers you"
+            "“You think deeply about the situations of others. You are prone to getting lost in thought when thinking about others but quick and decisive about your own affairs.”"
         else:
-            "You are a deep thinker. You think about everything. Be careful going too deep"
+            "“You are a deep thinker. You enjoy thinking thoroughly about anything and everything. Be careful going too deep.”"
     elif intro_color == "White":
         if intro_food == "Pasta":
-            "You are an innocent person. No one in this world is more innocent than you. White as sheet, just like a baby"
+            "“You are an innocent person. No one in this world is more innocent than you. White as snow, just like a baby.”"
         elif intro_food == "Yakiniku":
-            "You think others are not guilty of anything. Every of their action is a pre determined course for them and they are not guilty of it. They are just following that route"
+            "“You believe that no one is truly guilty of anything. All actions are predetermined, thus no one can be guilty.”"
         else:
-            "You think everyone in this world is innocent. Of course including yourself. As long people can forgive each other and not repeat the mistake they made, the world can be as pure as paper."
+            "“You believe that everyone in this world is innocent. Of course, including yourself. As long as everyone is able to forgive each other and not repeat their mistakes, the world will be as pure as the driven snow.”"
     elif intro_color == "Red":
         if intro_food == "Pasta":
-            "You are very ambitious about your project. Nothing in this world can stop you when you are working on it"
+            "“You are very ambitious about your goals. Nothing in this world can stop you once you start working.”"
         elif intro_food == "Yakiniku":
-            "You are very ambitious about others project. You stop at nothing to help them reach their goal"
+            "“You are very ambitious when supporting others. You stop at nothing to help those around you reach their goals.”"
         else:
-            "You are a very ambitious person. You want to do all 100%% no 200%% about anything."
+            "“You are a very ambitious person. No matter what it is, you always want to give it 100%%, no, 200%% effort!”"
     else:
         if intro_food == "Pasta":
-            "You are a very calm person. When something involves you, you can think very calmly not panicking and reach a solution quickly without any struggle."
+            "“You are a very calm person. When it involves you, you are able to think calmly without panicking, and quickly reach a solution without struggle.”"
         elif intro_food == "Yakiniku":
-            "You are a very calm person when it is about others. You can solve other people problem no sweat. But the opposite when it comes to yourself. Probably because you put yourself out of the equation here?"
+            "“You are very calm when it comes to the predicaments of others. You are able to solve their problems without breaking a sweat. But the opposite is true when it comes to yourself. Perhaps it’s because you are putting yourself out of the equation?”"
         else:
-            "You are a very calm person. The most calm person in the world. I want you to be my consultant"
+            "“You are a very calm person. The most calm person in the world. Nothing in the world can perturb you.”"
 
-    p "…That’s it??? After all those questions that’s it???? Such a day this has been…"
+    p "{i}…That’s it??? After all those questions, that’s it???? Give me back my time!{/i}"
 
-    """
-    I looked outside and the clock, it was already midnight.
+    "I looked outside and the clock, and it was already midnight."
 
-    How did that questionnaire took so much time…uugh…I feel sleepy…I’ll just sleep
-    """
+    p "{i}How did that questionnaire took so much time…uugh…I feel sleepy…{/i}"
+
+    p "{i}I’ll just go sleep…{/i}"
 
     stop music fadeout 1.5
     play sound ["<silence 5.0 loop 5.0>", phonecall] loop
     scene bg room with Fade(2.0, 4.0, 3.0)
 
-    $ quick_menu = True
-    $ _game_menu_screen = game_menu_screen_value
+    p "{i}Uuugh…is it a call…ughh{/i}"
 
-    p "Uuugh…is it a call…ughh"
-
-    "I picked up the phone saw it was senpai calling"
+    "I picked up the phone; it was senpai calling."
 
     stop sound
     play music ["<silence 1.0 loop 1.0>", room_bgm] fadein 3.0 volume 0.2
@@ -238,19 +236,24 @@ label start:
 
     sn "Kohiiii! Morniiing! Can you meet me at the park right now?"
 
-    sn "There’s something I want to give you. Well just come okay, I’ll be waiting~"
+    sn "There’s something I want to give you. Well, just hurry up and come! I’ll be waiting!"
 
-    """
-    She hung up…I didn’t even manage to say anything
+    # TODO
+    # beep beep beep
 
-    Senpai seemed very excited, well she didn’t reply my message yesterday might as well meet her and ask her directly
+    p "{i}She hung up…I didn’t even get to say a single word…{/i}"
 
-    I prepared myself to meet senpai.
+    "Senpai seemed very excited, but she didn’t reply to my message yesterday."
 
-    Reach out the door, I can only sigh while looking back at the safe.
-    """
+    p "{i}Well, might as well meet her and ask her directly.{/i}"
 
-    p "Let's go then~"
+    "I got ready to go out and meet senpai."
+
+    "Before leaving, I looked around the place a bit, and caught sight of the safe."
+
+    p "{i}Sigh…{/i}"
+
+    p "{i}Let’s go then!{/i}"
 
     play sound dooropen
 
@@ -258,12 +261,10 @@ label start:
         jump r1_start
     elif route == 2:
         jump r2_start
-    else:
+    elif route == 3:
         jump r3_start
-
-
-
-
+    else:
+        jump true_end
 
 # just some example stuff that never gets used
 
@@ -299,12 +300,6 @@ label example:
 
     return
 
-label utawaku_quiz_example:
-    show hitona1 stareyes3
-    check_lyrics s "audio/kokoronasi.mp3" "Enter the following lyrics" "Incorrect, try again" "それはねここにあるよ"
-
-    show hitona1 stareyes4
-    s "Correct"
 
 label map_example:
     scene bg conbini

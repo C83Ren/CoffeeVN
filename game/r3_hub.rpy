@@ -15,7 +15,7 @@ label r3_hub:
 
     p "What? Where?"
 
-    scene black
+    scene black with fade
 
     "I blacked out…"
 
@@ -25,12 +25,12 @@ label r3_hub:
 
     p "Huh? Where am I…"
 
-    scene bg hub
-    play music lios_bgm
+    scene bg hub with Fade(1.0, 0.0, 1.0)
+    play music lios_bgm fadein 3.0 fadeout 3.0 volume 0.1
 
     "I woke up in an enclosed room…a really huge room full of…I can’t even describe it"
 
-    show hitona3 smile hat
+    show hitona3 smile hat with dissolve
     #show lios front
 
     "??" "We’re in the virtual world"
@@ -91,7 +91,7 @@ label r3_hub:
 
     "This is all so confusing but…it’s exciting so might as well follow Pierrot"
 
-    hide hitona3
+    hide hitona3 with dissolve
 
     "But…wasn’t I suppose to do something? Oh well~"
 

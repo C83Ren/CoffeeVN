@@ -4,6 +4,8 @@
 
 init offset = -1
 
+init python:
+    _game_menu_screen = 'history'
 
 ################################################################################
 ## Styles
@@ -257,11 +259,12 @@ screen quick_menu():
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Load") action ShowMenu('load')
+            textbutton _("Save") action If(save_enabled, ShowMenu('save'))
+            textbutton _("Load") action If(save_enabled, ShowMenu('load'))
             textbutton _("Prefs") action ShowMenu('preferences')
 
 default quick_menu = True
+default save_enabled = True
 
 style quick_button is default
 style quick_button_text is button_text
@@ -300,9 +303,9 @@ screen navigation():
 
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Save") action If(save_enabled, ShowMenu("save"))
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Load") action If(main_menu or save_enabled, ShowMenu("load"))
 
         textbutton _("CG") action ShowMenu("cg")
 

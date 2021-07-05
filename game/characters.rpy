@@ -1,5 +1,6 @@
 #List of Characters will be defined here
-define p = Character(_('Hitona'), color="#880088") #Player a.k.a KohigashiActual
+default player_name = None
+define p = Character("player_name", dynamic=True, color="#880088") #Player a.k.a KohigashiActual
 define sn = Character(_('Senpai'), color="#880000")
 define s = Character(_('Shiraishi'), color="#338833", image="hitona1") #KohiLO
 define e = Character(_('Eve'), color="#338833") #KohiC2

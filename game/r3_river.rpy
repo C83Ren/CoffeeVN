@@ -3,13 +3,14 @@ label r3_river:
     init python:
         affection = 0
 
-    scene bg hub
+    scene bg hub with fade
 
-    play music lios_bgm
+    stop music fadeout 1.0
+    play music lios_bgm fadein 2.0 volume 0.1
 
     p "We somehow managed to finished that… pant pant pant"
 
-    show hitona3 laugh hat at hitona_left
+    show hitona3 laugh hat at hitona_left with dissolve
 
     pi "Worst enemy? Yeah cause it was too easy Lios!"
 
@@ -20,7 +21,7 @@ label r3_river:
     pi "I powered up since last time Lios!"
 
     hide hitona3
-    show lios front at lios_right
+    show lios front at lios_right with dissolve
 
     l "Well you might powered up, but doesn’t seem the little girl right there understand anything"
 
@@ -36,12 +37,12 @@ label r3_river:
 
     l "You won’t be that optimistic when you see the next one"
 
-    hide hitona3
-    hide lios
+    hide hitona3 with dissolve
+    hide lios with dissolve
 
     "We walked for a bit and again"
 
-    scene bg river
+    scene bg river with Fade(1.0, 0.0, 1.0)
     play sound riverbank loop
 
     p "How does he change these places so easily"
@@ -59,7 +60,7 @@ label r3_river:
 
 label river_cat:
 
-    show cat smile
+    show cat smile with dissolve
 
     "Now a cat is in front of us…"
 
@@ -91,7 +92,7 @@ label river_cat:
 
 label river_dog:
 
-    show dog smile
+    show dog smile with dissolve
 
     "Now a dog is in front of us…"
 
@@ -123,7 +124,7 @@ label river_dog:
 
 label river_deer:
 
-    show deer smile
+    show deer smile with dissolve
 
     "Now a deer is in front of us…"
 
@@ -554,12 +555,12 @@ label river_girlfriend:
     jump river_final
 
 label river_final:
-    scene bg river
+    scene bg river with fade
 
     p "I did what I could, what now?"
 
-    show lios front at lios_right
-    show hitona3 worried hat at hitona_left
+    show lios front at lios_right with dissolve
+    show hitona3 worried hat at hitona_left with dissolve
 
     l "What do you think Pierrot? Did she pass?"
 
@@ -605,7 +606,7 @@ label river_final:
 
     p "She can talk?????!!!!!"
 
-    "Pierrot & Lios" "Yeah"
+    l "Yeah"
 
     #Lios says this as well ^
 
@@ -629,10 +630,10 @@ label river_fail:
 
     l "Well a fail is a fail so off you go~"
 
-    stop sound
-    play music room_bgm
+    stop sound fadeout 1.0
+    play music room_bgm fadein 1.0 volume 0.2
 
-    scene bg room
+    scene bg room with Fade(1.0, 1.0, 1.0)
 
     "I opened my eyes and I was holding my room door knob"
 
@@ -646,7 +647,7 @@ label river_fail:
 
     "I guess I gotta go…"
 
-    scene black
+    scene black with fade
 
     "While going to the park that dream kept spinning in my head"
 

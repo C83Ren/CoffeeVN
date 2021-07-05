@@ -17,7 +17,7 @@ init python:
     t_pond2 = 0
 
 label r2_tranquility:
-    scene bg map
+    scene bg map with Fade(0.5, 0.5, 0.5)
 
     #angry3
 
@@ -49,13 +49,13 @@ label r2_tranquility:
 
     "FIGHT!"
 
-    play music battletheme_bgm
+    play music battletheme_bgm fadein 1.0 volume 0.5
 
     jump r2_fight
 
 label r2_tranquility_after_battle:
-    scene bg map
-    play music adventure_bgm
+    scene bg map with Fade(0.5, 0.5, 0.5)
+    play music adventure_bgm fadein 1.0
 
     hide screen multi_stat
 
@@ -77,9 +77,9 @@ label r2_tranquility_after_battle:
 
     "We walk into the forest and the scene was sublime…"
 
-    scene bg tranquility
+    scene bg tranquility with Fade(1.0, 0.5, 1.0)
 
-    play music waterfall
+    play music waterfall fadein 2.0
 
     p "Such a peaceful place…"
 

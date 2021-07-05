@@ -47,12 +47,12 @@ label r3_drawing:
 
     "We walked a bit again and the room suddenly changed"
 
-    scene bg computer
+    scene bg computer with Fade(1.0, 1.0, 1.0)
 
     p "It still weirds me out that these rooms can change just like that"
 
-    show lios front at lios_right
-    show hitona3 worried hat at hitona_left
+    show lios front at lios_right with dissolve
+    show hitona3 worried hat at hitona_left with dissolve
 
     pi "I really think the animal from before was weirder…"
 
@@ -92,6 +92,8 @@ label r3_drawing:
 
     p "Just got to try then"
 
+    hide hitona3 with dissolve
+
     play sound quizstart
 
     "START"
@@ -106,10 +108,10 @@ label r3_drawing:
             jump drawing_fail
 
 label drawing_fail:
-    scene bg computer
+    scene bg computer with Fade(1.0, 1.0, 1.0)
 
-    show lios front at lios_right
-    show hitona3 angry hat at hitona_left
+    show lios front at lios_right with dissolve
+    show hitona3 angry hat at hitona_left with dissolve
 
     pi "Lios…YOUR DOODLE IS HORRIBLE!"
 
@@ -129,8 +131,10 @@ label drawing_fail:
 
     l "Nope, nothing like that, go on. I’ll kick you out myself then. Ciao~"
 
-    scene bg room
-    play music room_bgm
+    stop music fadeout 1.0
+
+    scene bg room with Fade(1.0, 1.0, 1.0)
+    play music room_bgm fadein 1.0 volume 0.2
     play sound phonecall
 
     p "Huh?!"
@@ -149,7 +153,7 @@ label drawing_fail:
 
     "I hung up and dash outside"
 
-    scene black
+    scene black with fade
 
     "While going to the park that dream kept spinning in my head"
 

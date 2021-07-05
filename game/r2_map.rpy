@@ -1,5 +1,5 @@
 label r2_map_1:
-    scene bg map
+    scene bg map with Fade(1.0, 1.0, 1.0)
 
     #idle
 
@@ -80,7 +80,7 @@ label on_to_village:
     jump r2_village
 
 label r2_map_2:
-    scene bg map
+    scene bg map with dissolve
     python:
         m_turmoil = 0
         m_rage = 0
@@ -166,7 +166,7 @@ label map_castle:
 
     e "Let’s go!"
 
-    scene black
+    scene black with dissolve
 
     "Eve charged in and I had to follow her"
 
@@ -178,9 +178,9 @@ label map_castle:
 
 label map_rage_1:
 
-    scene bg rage
+    scene bg rage with fade
 
-    play music volcano
+    play music volcano fadein 1.0
 
     #idle
 
@@ -206,15 +206,15 @@ label map_rage_1:
 
     p "I will decline for now"
 
-    play music adventure_bgm
+    play music adventure_bgm fadein 1.0
 
     jump map_menu
 
 label map_rage_2:
 
-    scene bg rage
+    scene bg rage with fade
 
-    play music volcano
+    play music volcano fadein 1.0
 
     p "Rage sound kinda cool don’t you think?"
 
@@ -232,7 +232,7 @@ label map_rage_2:
 
     e "Let’s go~"
 
-    play music adventure_bgm
+    play music adventure_bgm fadein 1.0
 
     jump map_menu
 

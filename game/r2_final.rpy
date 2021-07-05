@@ -1,5 +1,5 @@
 label r2_final:
-    scene black
+    scene black with dissolve
 
     e "Hey Hitona!"
 
@@ -7,9 +7,9 @@ label r2_final:
 
     p "Huh?"
 
-    scene bg castle room
-    play music beforefinal_intro_bgm noloop
-    queue music beforefinal_loop_bgm
+    scene bg castle room with Fade(1.0, 1.0, 2.0)
+    play music beforefinal_intro_bgm noloop fadein 2.0 volume 0.5
+    queue music beforefinal_loop_bgm volume 0.5
 
     p "Why are we here…"
 
@@ -62,8 +62,8 @@ label r2_final:
 
     "FIGHT!"
 
-    play music king_intro_bgm noloop
-    queue music king_loop_bgm loop
+    play music king_intro_bgm noloop fadein 1.0 volume 0.5
+    queue music king_loop_bgm loop volume 0.5
 
     jump r2_fight
 
@@ -175,7 +175,7 @@ label final_grand_spell:
 
     "The king casted the same spell…"
 
-    scene bg grand spell
+    scene bg grand spell with dissolve
 
     p "Tranquility, Turmoil, Rage, I, Hitona, rule over the composition of emotion. Compile everything to one"
 
@@ -199,7 +199,8 @@ label final_grand_spell:
         jump final_bad_end
 
 label final_bad_end:
-    play music r2bad_bgm
+    scene black with dissolve
+    play music r2bad_bgm fadein 1.0
 
     "But…Eve was just there…lying down on the floor"
 
@@ -214,6 +215,9 @@ label final_bad_end:
     return
 
 label final_good_end:
+
+    scene bg castle room with dissolve
+
     "I looked at Eve…"
 
     p "Eh?"
@@ -222,7 +226,7 @@ label final_good_end:
 
     e "Eh?"
 
-    play music r2end_bgm
+    play music r2end_bgm fadein 2.0
 
     p "You’re alive!"
 
@@ -262,7 +266,7 @@ label final_good_end:
 
     "I feel very dizzy…and everything went black…"
 
-    scene bg room
+    scene bg room with Fade(1.0, 2.0, 1.0)
 
     p "Huh? Where am I…"
 
@@ -274,13 +278,15 @@ label final_good_end:
 
     p "A message?"
 
-    "“Surely you got back safely right?”"
+    nvl_narrator "“Surely you got back safely right?"
 
-    "\"Wahahahaha you should trust The Great Majna Eden Bat Azuma Nula Sedun more\""
+    nvl_narrator "Wahahahaha you should trust The Great Majna Eden Bat Azuma Nula Sedun more"
 
-    "\"This NEET King will make the Kingdom prosper again okay~\""
+    nvl_narrator "This NEET King will make the Kingdom prosper again okay~"
 
-    "\"Until next time!\""
+    nvl_narrator "Until next time!”"
+
+    nvl clear
 
     p "Hahahahahaha"
 

@@ -1,7 +1,7 @@
 label r2_turmoil:
     scene bg turmoil
 
-    play music storm
+    play music storm fadein 1.0
     play sound thunder loop
 
     p "This is such a heavy rain…"
@@ -29,7 +29,7 @@ label r2_turmoil:
     jump turmoil_menu
 
 label turmoil_default:
-    play music storm
+    play music storm fadein 1.0
     play sound thunder loop
 
 label turmoil_menu:
@@ -53,7 +53,7 @@ label turmoil_menu:
             jump turmoil_menu
 
         "World Map":
-            play music adventure_bgm
+            play music adventure_bgm fadein 1.0
             stop sound
 
             jump map_menu
