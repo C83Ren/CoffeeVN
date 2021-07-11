@@ -186,6 +186,8 @@ label r1_famres:
     
     "Don’t order 3 in the first place…"
 
+    $ famresflag = 1
+
     jump r1_post_meal
     # # Shiraishi seemed very happy after all that.
     # # It’s still noon, what should we do?
