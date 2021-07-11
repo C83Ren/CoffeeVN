@@ -4,12 +4,12 @@ init python:
     quiz_num = 0
 
     drawing_list = [
-    ["1.png", "Asking for help", "Distributing flyer", " Food delivery", 2],
-    ["2.png", "Jiangshi", "Vampire", "Dracula", 1],
-    ["3.png", "Bath", "Onsen", "Soap", 3],
-    ["4.png", "Barrel", "Izakaya", "Dinner", 1],
-    ["5.png", "Taking exam", "Focus Power", "Studying", 2],
-    ["6.png", "Gyudon Shop", "Izakaya", "Ramen Shop", 1]
+    ["1.png", "Asking for help", "Distributing flyer", " Food delivery", 2, "This is actually not that bad", "Flattery won't get you anywhere"],
+    ["2.png", "Jiangshi", "Vampire", "Dracula", 1, "Before I really can't remember its name", "Well now you do, good for you"],
+    ["3.png", "Bath", "Onsen", "Soap", 3, "You're saying the one above his head is soap as well?", "I'll leave it to your imagination"],
+    ["4.png", "Barrel", "Izakaya", "Dinner", 1, "Is the dinner above it really necessary...", "It's the most important part of this"],
+    ["5.png", "Taking exam", "Focus Power", "Studying", 2, "That answer is oddly specific...", "I'll tell you as well, I wish it wasn't this specific"],
+    ["6.png", "Gyudon Shop", "Izakaya", "Ramen Shop", 1, "Without the staff I would've thought it's just the food", "Even I almost forgot it wasn't about the food"]
     ]
 
 label quiz_pic_default:
@@ -53,6 +53,8 @@ label quiz_pic_check:
     if user_answer == drawing_list[quiz_num][4]:
         play sound correctchoice
         "CORRECT"
+        $ pi(drawing_list[quiz_num][5])
+        $ l(drawing_list[quiz_num][6])
         jump quiz_pic_check
     else:
         play sound falsechoice_long

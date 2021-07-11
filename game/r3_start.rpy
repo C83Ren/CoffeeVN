@@ -69,15 +69,18 @@ label r3_start:
 
     "I guess there’s nothing wrong with going along with this. I wonder what the passcode is~"
 
+
+
 label room_passcode1:
-    menu:
-        "Okay let’s put in the code"
-        "0504":
-            play sound correctchoice
-            jump r3_hub
-        "Other than that":
-            play sound falsechoice_short
-            jump room_tryagain
+    python:
+        passcode_r3 = renpy.input("Input the passcode", length=4, allow="0123456789")
+
+    if passcode_r3 == "0405":
+        play sound correctchoice
+        jump r3_hub
+    else:
+        play sound falsechoice_short
+        jump room_tryagain
 
 label room_tryagain:
     "\"WRONG PASS\""
@@ -120,14 +123,15 @@ label room_passcode2:
 
     "Makes me wonder why she isn’t the one entering this passcode…"
 
-    menu:
-        "Okay let’s put in the passcode"
-        "0504":
-            play sound correctchoice
-            jump r3_hub
-        "Other than that":
-            play sound falsechoice_short
-            jump room_tryagain
+    python:
+        passcode_r3 = renpy.input("Input the passcode", length=4, allow="0123456789")
+
+    if passcode_r3 == "0405":
+        play sound correctchoice
+        jump r3_hub
+    else:
+        play sound falsechoice_short
+        jump room_tryagain
 
 label room_passcode_badend:
     p "Ah I’m done with this"
