@@ -12,6 +12,8 @@ label r1_movie:
 
     scene bg cinema
 
+    $ movieflag = 1
+
     "I paid the meal then we went out to a cinema"
 
     p "Here we are, the cinema!"

@@ -1,5 +1,5 @@
 label r1_shopping:
-    scene bg 
+    scene bg shop
     #bgm 星海
     
     if famresflag == 1:
