@@ -15,7 +15,7 @@ label r1_movie:
     "I paid the meal then we went out to a cinema"
 
     p "Here we are, the cinema!"
-    
+
     p "You’ve been to a cinema right Shiraishi?"
 
     show hitona1 smile1
@@ -38,18 +38,19 @@ label r1_movie:
 
     menu:
         "Looking at the selection it’s pretty obvious which one we’re watching right?"
-        
+
         "Horror Movie":
-            $ mov = "horror"    
+            $ mov = "horror"
 
         "Romance Movie":
             $ mov = "romance"
 
     menu:
         "I went to buy the ticket, but for some reason the cinema only accepts W*bMoney."
-        
+
         "Buy some W*bMoney":
-        
+            $ mov = mov
+
     "I bought some W*bMoney, then used it to buy a ticket."
 
     "The movie is starting soon!"
@@ -67,8 +68,8 @@ label r1_movie:
 
         s "Okaay."
 
-        hide
-        
+        hide hitona1
+
         "The movie is starting."
 
         "As expected from a horror movie, It's quite dark."
@@ -81,8 +82,8 @@ label r1_movie:
 
         "Shiraishi doesn’t seem to be the slightest bit scared."
 
-        hide
-        
+        hide hitona1
+
         "Cathy" "Come on, let's go…aaAAAAAH!!! HELP!!!"
 
         "Cathy is being dragged away by something!"
@@ -110,20 +111,20 @@ label r1_movie:
         "Rather, it seems like she held my hand during the movie just to comfort me."
 
     else:
-        "The movie is {i}A Fin Away.{/i}" 
+        "The movie is {i}A Fin Away.{/i}"
 
         "“The story of a girl who wanted to run away from her daily life. One day, she meets a mysterious being, and then becomes a…?!”"
 
         p "(Well, let’s see how it goes.)"
 
         p "This movie looks pretty interesting, doesn’t it!"
-        
+
         show hitona1 idle3
-        
+
         s "Shiraishi can't wait!"
-        
-        hide
-        
+
+        hide hitona1
+
         "The movie is starting."
 
         "The main character is a middle schooler."
@@ -150,16 +151,16 @@ label r1_movie:
 
         "Shiraishi seems to be happily engrossed in the movie."
 
-        hide
-        
+        hide hitona1
+
         "After the movie ended…"
 
         show hitona1 happy1
-        
+
         s "That was so fun!!"
-        
+
         p "That was a great movie, wasn’t it! I’m glad Shiraishi also had fun!"
-        
+
 
     # Shiraishi then asked “Would you watch a movie again someday?”.
     # Surely you know what to say
@@ -167,7 +168,7 @@ label r1_movie:
     show hitona1 smile2
 
     "While the credits were playing, I patted Shiraishi’s head."
-    
+
     show hitona1 idle2
 
     s "Hitona nee-chan, would you watch a movie with me again someday?"

@@ -7,7 +7,7 @@ label r1_after_movie:
 
     p "Yeah sure"
 
-    hide
+    hide hitona1
 
     "We walked out from the cinema then"
 
