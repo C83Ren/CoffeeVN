@@ -38,8 +38,12 @@ label quiz_pic_check:
 
     image quiz_image = "images/r3_drawing/[img_str]"
 
+label quiz_pic_showing:
+
     show quiz_image with dissolve
     play sound quizquestion
+    window hide
+    pause 5.0
 
     menu:
         "What is this drawing?"
@@ -49,6 +53,8 @@ label quiz_pic_check:
             $ user_answer = 2
         "[quiz_opt3]":
             $ user_answer = 3
+        "Look at pic again":
+            jump quiz_pic_showing
 
     if user_answer == drawing_list[quiz_num][4]:
         play sound correctchoice
