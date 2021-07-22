@@ -165,6 +165,7 @@ label bomb_mechanic:
 
     show countdown at Position(xalign=.1, yalign=.1)
     $ time_remain = 120
+    $ sleep_time = 0
 
 label bomb_choice:
 
@@ -184,7 +185,9 @@ label bomb_choice:
 
     image bomb_maze = "images/maze/[img_maze].png"
     show bomb_maze behind countdown
-    with Fade(0.3, 0.1, 0.3)
+    with Fade(0.3, sleep_time , 0.3)
+    $ renpy.pause(delay=sleep_time, hard=True)
+    stop sound
 
     menu:
         "forward" if forward == "yes":
@@ -197,6 +200,7 @@ label bomb_choice:
              $ maze, player_x, player_y = move_backward(maze, player_x, player_y)
 
     $ time_remain = time_remain - (renpy.time.time() - time_start)
+    $ sleep_time = sleep_time + 0.1
 
     if at_finish(maze, player_x, player_y):
         hide countdown
