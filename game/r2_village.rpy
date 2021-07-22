@@ -18,7 +18,13 @@ label r2_village:
 
     p "Yeah you’re right, let’s just explore around"
 
+
+
 label village_menu:
+    call screen village_map
+
+    "Where should we go?"
+
     scene bg village with dissolve
     menu:
         "Where should we go~"
@@ -81,6 +87,7 @@ label village_house_4:
 
 label village_talk_1:
 
+    hide village_map
     #idle
 
     e "Why are we here again?"

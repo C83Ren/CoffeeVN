@@ -1,8 +1,12 @@
 label r2_turmoil:
-    scene bg turmoil
+    scene bg turmoil_front with fade
+    play music storm fadein 1.0 volume 0.2
+    play sound thunder loop volume 0.2
 
-    play music storm fadein 1.0
-    play sound thunder loop
+    $ renpy.pause(3.0)
+
+    scene bg turmoil with dissolve
+
 
     p "This is such a heavy rain…"
 
@@ -33,7 +37,29 @@ label turmoil_default:
     play sound thunder loop
 
 label turmoil_menu:
-    scene bg turmoil
+    call screen turmoil_map
+
+label turmoil_pillar:
+    "It’s a stone pillar"
+
+    e "Better not get close to it, the lightning might strike it"
+
+    jump turmoil_menu
+
+label turmoil_tablet:
+    "It’s a stone tablet but there’s no inscription"
+
+    p "What’s this doing here?"
+
+    e "Might have to do with how we get the ultimate spell. Just remember it for now"
+
+    jump turmoil_menu
+
+label turmoil_world_map:
+    play music adventure_bgm fadein 1.0
+    stop sound
+
+    jump map_menu
 
     menu:
         "Pillar":
