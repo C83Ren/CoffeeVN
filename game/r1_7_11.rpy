@@ -12,6 +12,8 @@ label r1_7_11:
 
     scene bg conbini
 
+    $ conbiniflag = 1
+
     "We walked to the best place ever for getting food! 7/11~"
 
     show hitona1 smile2
