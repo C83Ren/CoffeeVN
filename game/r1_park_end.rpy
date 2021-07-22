@@ -1,6 +1,210 @@
 label r1_park_end:
 label end_1:
-    "park end"
+    # "park end"
+    scene bg park
 
+    "We walked for quite a while, and finally arrived at the park."
+    
+    # bgm 泣いて泣いて泣き止んだら
+    
+    show hitona1 smile1
+
+    "Shiraishi pointed at the swings, and I understood."
+
+    "She hopped on the swings, and I pushed it from behind."
+
+    show hitona1 smile2
+
+    s "Today was fun, Hitona onee-chan!"
+
+    p "Yeah, it really was!"
+
+    "It was different from my original plan but it certainly was a fun day."
+
+    s "We went to the game center and played the crane game!"
+
+    p "Yeah, we even got a prize at our second try! I was so surprised!"
+
+    if conbiniflag == 1 and movieflag == 1:
+
+        show hitona1 happy2
+        s "And then after that, we went to get food at the best place ever!"
+        
+        p "Ooooh you understand!"
+
+        show hitona1 happy1
+
+        s "Shiraishi got to eat Hitona onee-chan's recommendation!"
+
+        p "Hehehe, now can I get a sponsor from them?"
+
+        show hitona1 idle2
+
+        s "Sponsor?"
+
+        p "Ah, nevermind."
+
+        show hitona1 happy2
+
+        s "We then went to the movies!"
+
+        p "Food before the movie, I'm surprised we didn't fall asleep while watching it."
+
+        show hitona1 smile2
+
+        s "The movie was too interesting for Shiraishi to sleep!"
+
+        p "I guess so, yeah."
+
+    elif conbiniflag == 1:
+        
+        show hitona1 happy2
+        
+        s "And then after that, we went to get food at the best place ever!"
+
+        p "Ooooh you understand!"
+
+        show hitona1 happy1
+
+        s "Shiraishi got to eat Hitona onee-chan's recommendation!"
+
+        p "Hehehe, now can I get a sponsor from them?"
+
+        show hitona1 idle2
+        
+        s "Sponsor?"
+
+        p "Ah, nevermind."
+        
+        show hitona1 bliss4
+
+        if shoppingflag == "suit":
+
+            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a cool suit"
+        else:
+
+            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a beautiful dress"
+
+        p "Shiraishi was really cute in that outfit!"
+
+    elif famresflag == 1 and movieflag == 1:
+
+        show hitona1 happy2
+        
+        s "And then after that, we went to the family restaurant!"
+
+        p "You ordered way too many things…"
+
+        show hitona1 bliss1
+
+        s "Hehehe it was tasty!"
+
+        p "Food before the movie, I'm surprised we didn't fall asleep while watching it."
+
+        show hitona1 smile2
+
+        s "The movie was too interesting for Shiraishi to sleep!"
+
+        p "I guess so, yeah."
+
+    elif famresflag == 1:
+
+        show hitona1 happy2
+
+        s "After that we went to the family restaurant!"
+
+        p "And you ordered so many things…"
+
+        s "Hehehe it was tasty!"
+
+        show hitona1 bliss1
+
+        p "Well, I guess we burned quite some calories walking in the shopping district."
+
+        show hitona1 bliss4
+
+        if shoppingflag == "suit":
+
+            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a cool suit"
+        else:
+
+            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a beautiful dress"
+
+        p "Shiraishi was really cute in that outfit!"
+            
+    hide hitona1
+    
+    "As the sun set, Shiraishi jumped up from the swings."
+
+    show hitona1 smile2
+
+    s "Hey, Hitona onee-chan, thank you for today."
+
+    s "I really had a lot of fun!"
+
+    "Shiraishi smiled at me while saying that."
+
+    p "Eh? Shiraishi, you look a little pale…?"
+
+    if purikuri_flag:
+        
+        "Something is starting to heat up inside my pocket."
+
+        "I pulled it out. It was the photo we took."
+        
+        hide hitona1
+
+        #scene cg Purikura
+        
+        p "Huh…? Where is Shiraishi?"
+
+        "The photo was just me and…a congratulatory message."
+
+        p "I don’t remember us writing this message…?"
+
+        I "look back up towards Shiraishi, but…"
+
+        #close CG
+        
+        "…she wasn’t there."
+
+    else:
+    
+        s "Hehehe, it’s okay, Hitona onee-chan."
+
+        p "We should go back soon."
+
+        #blur 33%
+        
+        "As I said that, my vision started to get blurry."
+
+        "Rather, I can’t really make out Shiraishi’s figure."
+
+        #blur 66%
+        
+        "The blurriness got worse and worse, and I can’t see Shiraishi anymore."
+
+        #black
+
+        p "Shiraishi?"
+        
+        hide hitona1
+
+        #back to normal
+        
+        "My vision returned to normal, but Shiraishi was no longer there."
+
+        "I looked around frantically, but she was nowhere to be found. In her place appeared messages dancing lightly through the air."
+        
+    if regret_choice == "Yeah I regret something":
+
+        #CG Message I (If Regret decision)
+
+    else:
+
+        #CG Message II (If No Regret decision)
+
+    #Credit roll
+    
     $ persistent.ed_unlocked_1 = True
     return
