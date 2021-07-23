@@ -62,8 +62,8 @@ label r2_final:
 
     "FIGHT!"
 
-    play music king_intro_bgm noloop fadein 1.0 volume 0.5
-    queue music king_loop_bgm loop volume 0.5
+    play music king_intro_bgm noloop fadein 1.0 volume 0.3
+    queue music king_loop_bgm loop volume 0.3
 
     jump r2_fight
 
@@ -175,7 +175,7 @@ label final_grand_spell:
 
     "The king casted the same spell…"
 
-    scene bg grand spell with dissolve
+    scene cg 5 unscaled with dissolve
 
     p "Tranquility, Turmoil, Rage, I, Hitona, rule over the composition of emotion. Compile everything to one"
 

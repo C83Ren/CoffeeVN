@@ -5,8 +5,11 @@ init python:
     f_hut2 = 0
 
 label r2_forest:
+    scene bg forest with fade
 
     label forest_menu:
+        "Where to go?"
+        call screen forest_map
         menu:
             "Where to go?"
             "Forest Spot 1":

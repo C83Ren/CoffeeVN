@@ -6,13 +6,13 @@ init 0:
     image cg 2 unscaled = "cg Placeholder"
     image cg 2 = "cg 2 unscaled"
 
-    image cg 3 unscaled = Image("images/BirthdayKohi.png")
+    image cg 3 unscaled = Image("images/CG/BirthdayKohi.png")
     image cg 3 = Transform(ImageReference("cg 3 unscaled"), zoom=0.5)
     image cg BirthdayKohi= "cg 3"
 
-    image cg 4 unscaled = Image("images/hitona_memory.png")
+    image cg 4 unscaled = Image("images/CG/hitona_memory.png")
     image cg 4 = "cg 4 unscaled"
-    image cg 5 unscaled = "cg Placeholder"
+    image cg 5 unscaled = Image("images/CG/grand_spell.png")
     image cg 5 = "cg 5 unscaled"
     image cg 6 unscaled = "cg Placeholder"
     image cg 6 = "cg 6 unscaled"

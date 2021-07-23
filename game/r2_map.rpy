@@ -182,6 +182,8 @@ label map_rage_1:
 
     play music volcano fadein 1.0
 
+    $ renpy.pause(3.0)
+
     #idle
 
     p "Just looking this from here looks very intimidating"
