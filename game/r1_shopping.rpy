@@ -1,3 +1,6 @@
+init python:
+    shoppingflag = None
+
 label r1_shopping:
     scene bg shop
     #bgm 星海
@@ -115,7 +118,7 @@ label r1_shopping:
 
     s "Ehhh? But Shiraishi wanted to choose for Hitona onee-chan!"
 
-    I "showed the outfit I picked for Shiraishi."
+    "I showed the outfit I picked for Shiraishi."
 
     show hitona1 stareyes1
 

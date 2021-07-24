@@ -1,9 +1,12 @@
+init python:
+    combiniflag = 0
+
 label r1_7_11:
     # 7/11
-    # 
+    #
     # Music: Happy excited, doesn’t loop, > 3 minutes (same as before)
     # Background: Convenience Store
-    # 
+    #
     # Hitona and Shiraishi arrived at 7/11.
     # Similar with before, Shiraishi was very excited but this time she kept holding Hitona’s hand.
     # Shiraishi asked “What will be having for lunch Hitona nee chan?”.
@@ -40,7 +43,7 @@ label r1_7_11:
             s "Sounds yummy! Shiraishi can’t wait!"
 
             "We took two of Soba Meshi and I paid for them. Went out to find a place to sit"
-            
+
             show hitona1 idle1
 
             p "Let’s Eat!" (multiple=2)
@@ -83,15 +86,15 @@ label r1_7_11:
             "Nom nom nom"
 
             show hitona1 happy1
-            
+
             s "It's delicious!"
-            
+
             s "The sauce is delicious~"
 
-            p "Right! It's supposed to be 100 % beef" 
+            p "Right! It's supposed to be 100%% beef"
 
             s "The beef essence is really coming through"
-            
+
             "I have no idea what is she talking about but"
 
             p "Is that so? Well there's this another one called Japanese style which I think has a better sauce"
@@ -120,7 +123,7 @@ label r1_7_11:
             s "Let’s Eat!" (multiple=2)
 
             "Nom nom nom"
-            
+
             show hitona1 happy1
 
             s "It's yummy~ And there's a lot!"
@@ -140,7 +143,7 @@ label r1_7_11:
             s "Shiraishi too!"
 
             p "The one who created Neapolitan is a genius~"
-    
+
     # “Sounds yummy!”. They proceed buying the goods, found somewhere to sit and eat the goodies.
     # The choices will reflect on whether it is good okay or bad. Shiraishi will mention about the stream regardless.
     # “Eh? Stream? What do you mean?”
@@ -149,7 +152,7 @@ label r1_7_11:
     # Both of them stuffed themselves with food.
     # Now it seemed that Shiraishi had calmed down, it even looks like she was feeling sleepy.
     # What should I do?
-    
+
     show hitona1 idle2
 
     s "But Hitona nee-chan already mentioned it before in her stream~"

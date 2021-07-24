@@ -1,3 +1,6 @@
+init python:
+   purikuri_flag = False
+
 label r1_purikuri:
     # Take Purikuri
     #
@@ -10,15 +13,15 @@ label r1_purikuri:
     # Hitona was going to look at the picture but she saw Shiraishi then feel little bit reluctant.
     # What will you do?
     p "Let’s take one Shiraishi~"
-    
+
     show hitona1 happy3
 
     s "Yaay let’s goo!"
-    
+
     "I went into the booth with a very happy Shiraishi holding a bag with bishojo figure"
-    
+
     p "Look at the screen Shiraishi, we’ll take our photo here"
-    
+
     s "Okay!"
 
     "We pose wrapping our hands to each other’s shoulder"

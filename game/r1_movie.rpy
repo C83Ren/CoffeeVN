@@ -1,3 +1,6 @@
+init python:
+    movieflag = 0
+
 label r1_movie:
     # Go to the movie
     #

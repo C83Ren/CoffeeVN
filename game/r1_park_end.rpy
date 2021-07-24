@@ -162,7 +162,7 @@ label end_1:
 
         p "I don’t remember us writing this message…?"
 
-        I "look back up towards Shiraishi, but…"
+        "I look back up towards Shiraishi, but…"
 
         #close CG
         
