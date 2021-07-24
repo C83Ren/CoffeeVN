@@ -28,7 +28,7 @@ label r1_7_11:
 
     s "I want Hitona nee-chan’s recommendation!"
 
-    P "Is that so? Shiraishi wants the opinion of the (not) official 7/11 ambassador! Okay then~"
+    p "Is that so? Shiraishi wants the opinion of the (not) official 7/11 ambassador! Okay then~"
 
     menu:
         "What should I recommend to her?"

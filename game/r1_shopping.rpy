@@ -45,7 +45,7 @@ label r1_shopping:
     
     p "Okay, let’s go in!"
 
-    hide
+    hide hitona1
     
     "We wandered inside the store and looked at all sorts of costumes on show."
 
@@ -71,7 +71,7 @@ label r1_shopping:
 
     s "Okay!"
 
-    hide
+    hide hitona1
     
     "With that said, Shiraishi left on her own to pick an outfit for me."
 

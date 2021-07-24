@@ -199,10 +199,12 @@ label end_1:
     if regret_choice == "Yeah I regret something":
 
         #CG Message I (If Regret decision)
+        pass
 
     else:
 
         #CG Message II (If No Regret decision)
+        pass
 
     #Credit roll
     
