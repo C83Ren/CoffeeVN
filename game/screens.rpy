@@ -311,7 +311,7 @@ screen navigation():
 
             textbutton _("Save") action If(save_enabled, ShowMenu("save")) style "nav_button"
 
-        textbutton _("Load") action If(main_menu or save_enabled, ShowMenu("load")) style "nav_button"
+        textbutton _("Load") action ShowMenu("load") style "nav_button"
 
         textbutton _("CG") action ShowMenu("cg") style "nav_button"
 
