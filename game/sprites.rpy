@@ -76,6 +76,11 @@ image deer smile = Transform(Image("images/deer/smile.png"), zoom=0.5, xanchor=5
 image deer blush = Transform(Image("images/deer/blush.png"), zoom=0.5, xanchor=500, yanchor=1100)
 image deer sad = Transform(Image("images/deer/sad.png"), zoom=0.5, xanchor=500, yanchor=1100)
 
+#Rabbit
+image rabbit alone = Image("images/rabbit.png")
+image rabbit together = Image("images/rabbitco.png")
+
+
 #r3 transforms
 
 transform hitona_left:
