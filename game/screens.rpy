@@ -285,6 +285,12 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+style nav_button is button:
+    # hover_background "#eaffd966"
+    hover_background "gui/nav_button hover.png"
+    selected_background "gui/nav_button selected.png"
+    xminimum 365
+
 screen navigation():
 
     vbox:
@@ -297,42 +303,42 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action Start() style "nav_button"
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("History") action ShowMenu("history") style "nav_button"
 
-            textbutton _("Save") action If(save_enabled, ShowMenu("save"))
+            textbutton _("Save") action If(save_enabled, ShowMenu("save")) style "nav_button"
 
-        textbutton _("Load") action If(main_menu or save_enabled, ShowMenu("load"))
+        textbutton _("Load") action If(main_menu or save_enabled, ShowMenu("load")) style "nav_button"
 
-        textbutton _("CG") action ShowMenu("cg")
+        textbutton _("CG") action ShowMenu("cg") style "nav_button"
 
-        textbutton _("Endings") action ShowMenu("ed")
+        textbutton _("Endings") action ShowMenu("ed") style "nav_button"
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Preferences") action ShowMenu("preferences") style "nav_button"
 
         if _in_replay:
 
-            textbutton _("End Replay") action EndReplay(confirm=True)
+            textbutton _("End Replay") action EndReplay(confirm=True) style "nav_button"
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Main Menu") action MainMenu() style "nav_button"
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("About") action ShowMenu("about") style "nav_button"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Help") action ShowMenu("help") style "nav_button"
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Quit") action Quit(confirm=not main_menu) style "nav_button"
 
 
 style navigation_button is gui_button
