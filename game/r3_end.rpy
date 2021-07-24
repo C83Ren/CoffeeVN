@@ -1,4 +1,6 @@
 label r3_end:
+label end_3:
+    $ persistent.ed_unlocked_3 = True
     scene bg sing with fade
 
     play music r3end_bgm fadein 2.0
@@ -142,7 +144,4 @@ label r3_end:
 
     "\"Good luck~\""
 
-label end_8:
-    $ persistent.ed_unlocked_8 = True
-    "route 3 end"
     return

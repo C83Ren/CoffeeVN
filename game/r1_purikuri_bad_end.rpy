@@ -52,12 +52,6 @@ label r1_purikuri_bad_end:
 
     p "Guess I’ll go stream or something then."
     
-    jump end_2
-
-label end_2:
-
     scene bg black
 
-    "bad end"
-    $ persistent.ed_unlocked_2 = True
     return

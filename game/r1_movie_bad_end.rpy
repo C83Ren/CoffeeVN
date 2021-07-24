@@ -33,9 +33,4 @@ label r1_movie_bad_end:
 
     "I guess dreams will just be dreams."
 
-    jump end_4
-
-label end_4:
-    "bad end"
-    $ persistent.ed_unlocked_4 = True
     return

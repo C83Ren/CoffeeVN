@@ -1598,9 +1598,10 @@ screen ed():
         fixed:
             order_reverse True
 
+            $ persistent.ed_page = 1
             $ page = int(persistent.ed_page) - 1
-            $ rows = (1 if page == 2 else 2)
-            $ cols = (2 if page == 2 else 3)
+            $ rows = 2
+            $ cols = 2
 
             grid cols rows:
                 style_prefix "slot"
@@ -1627,20 +1628,20 @@ screen ed():
                 for i in range(cols * rows):
                     $ slot = page * 6 + i + 1
 
-            hbox:
-                style_prefix "page"
+            #hbox:
+                #style_prefix "page"
 
-                xalign 0.5
-                yalign 1.0
+                #xalign 0.5
+                #yalign 1.0
 
-                spacing gui.page_spacing
+                #spacing gui.page_spacing
 
-                textbutton "<" action EDPagePrevious()
+                #textbutton "<" action EDPagePrevious()
 
-                for page in range(1, 4):
-                    textbutton "[page]" action EDPage(page)
+                #for page in range(1, 2):
+                    #textbutton "[page]" action EDPage(page)
 
-                textbutton ">" action EDPageNext(3)
+                #textbutton ">" action EDPageNext(1)
 
 ################################################################################
 ## Combination Lock

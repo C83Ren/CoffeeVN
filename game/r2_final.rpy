@@ -215,6 +215,8 @@ label final_bad_end:
     return
 
 label final_good_end:
+label end_2:
+    $ persistent.ed_unlocked_2 = True
 
     scene bg castle room with dissolve
 
@@ -302,7 +304,4 @@ label final_good_end:
 
     p "And also a note with the number 1?"
 
-label end_5:
-    $ persistent.ed_unlocked_5 = True
-    "route 2 end"
     return
