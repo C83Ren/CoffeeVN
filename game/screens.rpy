@@ -254,7 +254,7 @@ screen quick_menu():
             style_prefix "quick"
 
             xalign 0.5
-            yalign 0.97
+            yalign 0.9876
 
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
