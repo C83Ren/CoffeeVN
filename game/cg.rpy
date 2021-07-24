@@ -1,5 +1,5 @@
 init 0:
-    image cg Placeholder = "gui/main_menu.png"
+    image cg Placeholder = "images/river bank.png"
 
     image cg 1 unscaled = "cg Placeholder"
     image cg 1 = "cg 1 unscaled"

@@ -359,7 +359,10 @@ screen main_menu():
 
     style_prefix "main_menu"
 
-    add gui.main_menu_background
+    if persistent.ed_unlocked_4:
+        add gui.main_menu_background_final
+    else:
+        add gui.main_menu_background_initial
 
     ## This empty frame darkens the main menu.
     frame:
@@ -422,9 +425,10 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     style_prefix "game_menu"
 
     if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
+        if persistent.ed_unlocked_4:
+            add gui.main_menu_background_final
+        else:
+            add gui.main_menu_background_initial
 
     frame:
         style "game_menu_outer_frame"

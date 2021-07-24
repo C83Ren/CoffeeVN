@@ -1,5 +1,5 @@
 init 0:
-    image ed Placeholder = "gui/main_menu.png"
+    image ed Placeholder = "images/sing room.png"
 
     image ed 1 = "ed Placeholder"
     define ed_title_1 = _("Support End")
