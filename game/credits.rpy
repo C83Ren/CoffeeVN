@@ -109,7 +109,7 @@ default credits_message_index = 0
 screen credits_message_display:
     use credits_message(*credits_messages[credits_message_index])
 
-define credits_scroll_time = 1.0
+define credits_scroll_time = 60.0
 define credits_message_display_time = 5.0
 define credits_height = 8678
 
