@@ -1,10 +1,15 @@
+#SFX R1
 define audio.alarm = "audio/alarm_placeholder.ogg"
 define audio.doorbell = "audio/sfx/door_bell.mp3"
 define audio.phonecall = "audio/sfx/phone_call.mp3"
 define audio.dooropen = "audio/sfx/door_open.mp3"
+define audio.ringingtone = "audio/sfx/ringing_tone.mp3"
+define audio.endcall = "audio/sfx/end_call.mp3"
+define audio.cranegame = "audio/sfx/crane_game_get.mp3"
+
+#SFX R3
 define audio.challengecomplete = "audio/sfx/challenge_complete.mp3"
 define audio.correctchoice = "audio/sfx/correct_choice.mp3"
-define audio.cranegame = "audio/sfx/crane_game_get.mp3"
 define audio.falsechoice_long = "audio/sfx/false_choice_long.mp3"
 define audio.falsechoice_short = "audio/sfx/false_choice_short.mp3"
 define audio.lightswitch = "audio/sfx/lights_off_on.mp3"
@@ -16,6 +21,7 @@ define audio.takecard = "audio/sfx/take_card.mp3"
 define audio.bombexplode = "audio/sfx/bomb_explode.mp3"
 define audio.mazewalk = "audio/sfx/maze_walk.mp3"
 
+#SFX R2
 define audio.bushrustling = "audio/sfx/bush.mp3"
 define audio.staffsummon = "audio/sfx/staff_summon.mp3"
 define audio.magiccasting = "audio/sfx/magic_casting.mp3"
@@ -41,8 +47,17 @@ define audio.windlance = "audio/sfx/wind_lance.mp3"
 define audio.apeirosiris = "audio/sfx/apeiros_iris.mp3"
 define audio.absolutespell = "audio/sfx/absolute_spell.mp3"
 
-define audio.room_bgm = "audio/Route_1_-_Track_1_Sample.ogg"
+define audio.keyunlock = "audio/sfx/key_unlock.mp3"
+define audio.keylock = "audio/sfx/key_lock.mp3"
 
+#BGM R1
+define audio.room_bgm = "audio/Route_1_-_Track_1.ogg"
+define audio.hitona_theme = "audio/Route_1_-_hitona_theme.mp3"
+define audio.game_arcade = "audio/Route_1_-_game_arcade.mp3"
+define audio.movie_theme = "audio/Route_1_-_movie_theme.mp3"
+define audio.r1end_bgm = "audio/Route_1_-_End_Theme.mp3"
+
+#BGM R2
 define audio.adventure_bgm = "audio/Route_2_-_Adventure.ogg"
 define audio.r2bad_bgm = "audio/Route_2_-_Bad_End.mp3"
 define audio.battletheme_bgm = "audio/Route_2_-_Battle_Theme.mp3"
@@ -52,7 +67,10 @@ define audio.king_intro_bgm = "audio/Route_2_-_King_intro.ogg"
 define audio.king_loop_bgm = "audio/Route_2_-_King_loop.ogg"
 define audio.r2end_bgm = "audio/Route_2_-_End_Theme.mp3"
 
+#BGM R3
 define audio.lios_bgm = "audio/Route_3_-_Track_1.mp3"
 define audio.bomb_intro_bgm = "audio/Route_3_-_Track_2.ogg"
 define audio.bomb_loop_bgm = "audio/Route_3_-_Track_3.ogg"
 define audio.r3end_bgm = "audio/Route_3_-_End_Theme.mp3"
+
+define audio.last_end = "audio/true_end.mp3"
