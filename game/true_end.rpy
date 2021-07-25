@@ -199,8 +199,10 @@ label handle_key_lock_click(index, expected):
     $ print(index, expected)
     if index == expected:
         $ key_lock_active = False
+        play sound keyunlock
         p "{i}The key fits perfectly!{/i}"
     else:
         $ key_lock_active = True
+        play sound keylock
         p "{i}The key doesn't fit...let's try another key.{/i}"
     return
