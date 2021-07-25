@@ -73,6 +73,7 @@ label true_end_combination:
 
     $ lock_active = True
     while True:
+        window hide
         $ renpy.pause(hard=True)
 
     label combination_lock_wrong:
@@ -80,6 +81,7 @@ label true_end_combination:
         p "{i}It’s not opening…probably the wrong code. Let’s try again.{/i}"
         $ lock_active = True
         while True:
+            window hide
             $ renpy.pause(hard=True)
 
     label combination_lock_correct:
