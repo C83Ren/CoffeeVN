@@ -129,6 +129,7 @@ label credits:
     stop music
     stop sound
     $ _skipping = False
+    $ _game_menu_screen, _old_game_menu_screen = None, _game_menu_screen
     window hide
 
     scene credits_bg with dissolve
@@ -144,6 +145,7 @@ label credits:
         hide screen credits_message_display with dissolve
         $ credits_message_index += 1
 
+    $ _game_menu_screen = _old_game_menu_screen
     $ _skipping = True
 
     return
