@@ -68,6 +68,7 @@ label end_14: # lazy and don't want to fix tl tags
 
 label true_end_combination:
     show screen lock_buttons
+    $ _skipping = False
 
     "It’s a combination lock with 4 digits."
 
@@ -91,6 +92,7 @@ label true_end_combination:
 
 
 label true_end_combination_unlocked:
+    $ _skipping = True
     "There’s a letter inside and…another safe with a keyhole."
 
     nvl clear

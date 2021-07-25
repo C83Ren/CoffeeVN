@@ -1675,38 +1675,77 @@ init python:
             self.offset = 1
 
 screen lock_buttons():
-    fixed xalign 0.5 yalign 0.3 xsize 1000 ysize 699:
-        vbox:
-            frame xsize 1000 ysize 600 xpadding 55 ypadding 55:
-                background "images/lock_bg.png"
+    fixed xalign 0.5 yalign 0.5 xsize 1480 ysize 699:
+        frame:
+            background "images/combo_lock/pane.png"
+            hbox:
                 vbox:
-                    hbox:
-                        for slot in range(4):
-                            vbox:
-                                fixed xsize 200 ysize 100:
-                                    imagebutton auto 'images/lock up %s.png':
-                                        if lock_active:
-                                            action LockUp(slot)
-                                fixed xsize 200 ysize 60
-                                fixed xsize 200 ysize 170:
-                                    text str(combination_lock[slot]):
-                                        size 150
-                                        text_align 0.47
-                                        min_width 200
-                                        font gui.combination_lock_text_font
-                                fixed xsize 200 ysize 60
-                                fixed xsize 200 ysize 100:
-                                    imagebutton auto 'images/lock down %s.png':
-                                        if lock_active:
-                                            action LockDown(slot)
-                            vbox:
-                                fixed xsize 30 ysize 5
-            imagebutton auto 'images/lock unlock ' + str(_preferences.language) + ' %s.png':
-                if lock_active:
-                    if combination_lock == correct_combination:
-                        action Jump('combination_lock_correct')
-                    else:
-                        action Jump('combination_lock_wrong')
+                    fixed xsize 380 ysize 192
+                    fixed xsize 380 ysize 314:
+                        imagebutton auto 'images/combo_lock/button %s.png' xalign 0.5:
+                            focus_mask 'images/combo_lock/button idle.png'
+                            if lock_active:
+                                if combination_lock == correct_combination:
+                                    action Jump('combination_lock_correct')
+                                else:
+                                    action Jump('combination_lock_wrong')
+                    fixed xsize 380 ysize 193
+                vbox xpos -17:
+                    fixed xsize 273 ysize 25
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow up %s.png':
+                            focus_mask 'images/combo_lock/arrow up hover.png'
+                            if lock_active:
+                                action LockUp(0)
+                    fixed xsize 273 ysize 356:
+                        image 'images/combo_lock/numbers/[combination_lock[0]].png' xalign 0.5 yalign 0.5
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow down %s.png':
+                            focus_mask 'images/combo_lock/arrow down hover.png'
+                            if lock_active:
+                                action LockDown(0)
+                vbox xpos -25:
+                    fixed xsize 273 ysize 25
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow up %s.png':
+                            focus_mask 'images/combo_lock/arrow up hover.png'
+                            if lock_active:
+                                action LockUp(1)
+                    fixed xsize 273 ysize 356:
+                        image 'images/combo_lock/numbers/[combination_lock[1]].png' xalign 0.5 yalign 0.5
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow down %s.png':
+                            focus_mask 'images/combo_lock/arrow down hover.png'
+                            if lock_active:
+                                action LockDown(1)
+                vbox xpos -34:
+                    fixed xsize 273 ysize 25
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow up %s.png':
+                            focus_mask 'images/combo_lock/arrow up hover.png'
+                            if lock_active:
+                                action LockUp(2)
+                    fixed xsize 273 ysize 356:
+                        image 'images/combo_lock/numbers/[combination_lock[2]].png' xalign 0.5 yalign 0.5
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow down %s.png':
+                            focus_mask 'images/combo_lock/arrow down hover.png'
+                            if lock_active:
+                                action LockDown(2)
+                vbox xpos -40:
+                    fixed xsize 273 ysize 25
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow up %s.png':
+                            focus_mask 'images/combo_lock/arrow up hover.png'
+                            if lock_active:
+                                action LockUp(3)
+                    fixed xsize 273 ysize 356:
+                        image 'images/combo_lock/numbers/[combination_lock[3]].png' xalign 0.5 yalign 0.5
+                    fixed xsize 273 ysize 138:
+                        imagebutton auto 'images/combo_lock/arrow down %s.png':
+                            focus_mask 'images/combo_lock/arrow down hover.png'
+                            if lock_active:
+                                action LockDown(3)
 
 default lock_active = False
 
