@@ -122,6 +122,26 @@ label end_3:
 
     $ renpy.pause(15.0)
 
+    scene bg room with fade
+
+    p "What’s this?"
+
+    "A paper and a key was on the floor"
+
+    play sound takecard
+
+    nvl_narrator "Hey hope you enjoyed that"
+
+    nvl_narrator "By the way to open the safe you need to input some passcode right?"
+
+    nvl_narrator "Well the passcode is just how many cards there are in one suit of trump cards and the number from your own name!"
+
+    nvl_narrator "Here you get the number 0~"
+
+    nvl_narrator "Good luck~"
+
+    nvl clear
+
 label r3_secret_ending:
 
     if r3_secret:
@@ -322,25 +342,5 @@ label r3_secret_ending:
 
         stop music
 
-
-    scene bg room with fade
-
-    p "What’s this?"
-
-    "A paper and a key was on the floor"
-
-    play sound takecard
-
-    nvl_narrator "Hey hope you enjoyed that"
-
-    nvl_narrator "By the way to open the safe you need to input some passcode right?"
-
-    nvl_narrator "Well the passcode is just how many cards there are in one suit of trump cards and the number from your own name!"
-
-    nvl_narrator "Here you get the number 0~"
-
-    nvl_narrator "Good luck~"
-
-    nvl clear
 
     return
