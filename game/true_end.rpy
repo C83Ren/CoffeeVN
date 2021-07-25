@@ -133,5 +133,6 @@ label true_end_combination_unlocked:
     # call show_cg("")
 
     # credits, etc.
+    call credits()
 
     return
