@@ -39,7 +39,8 @@ image hitona1 stareyes3 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stare
 image hitona1 stareyes4 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes4.png"), xanchor=193, yanchor=840)
 
 #KohiC2 (hitona2)
-
+image hitona2 idle = Transform(Image("images/kohi_r2/idle.png"), zoom=0.9, xanchor=320, yanchor=1000)
+image hitona2 test = Transform(Image("images/kohi_r2/idle.png"), zoom=0.9)
 
 #KohiSh (hitona3)
 image hitona3 angry hat = Transform(Image("images/kohi_r3/hat/angry.png"), xanchor=320, yanchor=1000)
@@ -81,7 +82,7 @@ image rabbit alone = Image("images/rabbit.png")
 image rabbit together = Image("images/rabbitco.png")
 
 
-#r3 transforms
+#transforms
 
 transform hitona_left:
     #zoom 0.5

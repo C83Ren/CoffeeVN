@@ -54,7 +54,9 @@ init python:
     "spell": ["Wind Blast"],
     "item": [],
     "burn": 0,
-    "par": 0
+    "par": 0,
+    "img1":"images/kohi_r2/idle.png",
+    "img2":"images/kohi_r2/hover.png"
     }
 
     eve_stats = {
@@ -64,7 +66,9 @@ init python:
     "spell": ["Wind Blast", "Fire Ball"],
     "item": ["Heal Orb"],
     "burn": 0,
-    "par": 0
+    "par": 0,
+    "img1":"images/kohi_r2/idle.png",
+    "img2":"images/kohi_r2/hover.png"
     }
 
     soldier1_stats = {
@@ -74,7 +78,9 @@ init python:
     "spell": ["Wind Blast"],
     "item": ["Heal Orb"],
     "burn": 0,
-    "par": 0
+    "par": 0,
+    "img1":"images/kohi_r2/idle.png",
+    "img2":"images/kohi_r2/hover.png"
     }
 
     soldier2_stats = {
@@ -84,7 +90,9 @@ init python:
     "spell": ["Wind Blast", "Fire Ball"],
     "item": ["Heal Orb", "Paralyzing Spark"],
     "burn": 0,
-    "par": 0
+    "par": 0,
+    "img1":"images/kohi_r2/idle.png",
+    "img2":"images/kohi_r2/hover.png"
     }
 
     soldier3_stats = {
@@ -94,7 +102,9 @@ init python:
     "spell": ["Wind Cutter", "Electric Bolt"],
     "item": ["Heal Orb", "God Blessing"],
     "burn": 0,
-    "par": 0
+    "par": 0,
+    "img1":"images/kohi_r2/idle.png",
+    "img2":"images/kohi_r2/hover.png"
     }
 
     king_stats = {
@@ -104,7 +114,9 @@ init python:
     "spell": ["Wind Lance", "Fire Wall", "Lightning Strike"],
     "item": ["God Blessing", "Flamethrower", "Paralyzing Spark"],
     "burn": 0,
-    "par": 0
+    "par": 0,
+    "img1":"images/kohi_r2/idle.png",
+    "img2":"images/kohi_r2/hover.png"
     }
 
     multiplier_list = [0.5, 1, 2]
@@ -113,7 +125,7 @@ init python:
 screen single_stat(name, hp, hp_max, xalign):
 
     frame:
-        xalign xalign
+        xpos xalign
 
         vbox:
             spacing 5
@@ -134,15 +146,44 @@ screen single_stat(name, hp, hp_max, xalign):
                 text " [hp]/[hp_max]":
                     yalign 0.5
 screen multi_stat:
-    use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0.0)
-    use single_stat("Eve", eve_stats["hp"], eve_stats["hp_max"], 0.3)
-    $ screen_num = 0.6
+    $ screen_num = 0
+    #use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0.0)
+    #use single_stat("Eve", eve_stats["hp"], eve_stats["hp_max"], 0.3)
+    for ally in ally_list:
+        use single_stat(ally["name"], ally["hp"], ally["hp_max"], screen_num)
+        $ screen_num = screen_num + 500
     for enemies in enemy_list:
         use single_stat(enemies["name"], enemies["hp"], enemies["hp_max"], screen_num)
-        $ screen_num = screen_num + 0.3
+        $ screen_num = screen_num + 500
+
+screen single_sprite(image_name_idle, image_name_hover, x_align, stats):
+    imagebutton:
+        xpos x_align
+        ypos 300
+        if stats == hit:
+            idle Transform(Image(image_name_idle), zoom=0.8) at shake
+        else:
+            idle Transform(Image(image_name_idle), zoom=0.8,)
+        hover Transform(Image(image_name_hover), zoom=0.8)
+        if image_unlock:
+            action Call("target_option", stats)
+
+screen multi_sprite:
+    $ x_align = 0
+    for ally in ally_list:
+        use single_sprite(ally["img1"], ally["img2"], x_align, ally)
+        $ x_align = x_align + 500
+
+    for enemy in enemy_list:
+        use single_sprite(enemy["img1"], enemy["img2"], x_align, enemy)
+        $ x_align = x_align + 500
+
+default image_unlock = False
+default hit = 0
 
 label r2_fight:
     show screen multi_stat
+    show screen multi_sprite
     python:
         item_name = 0
         if len(ally_list) > 0 and len(enemy_list) > 0:
@@ -223,7 +264,11 @@ label spell_option:
             jump fight_option
 
     $ atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
-
+    $ image_unlock = True
+    #call screen multi_sprite
+    while image_unlock:
+        window hide
+        $ renpy.pause(hard=True)
     jump target_option
 
 label item_option:
@@ -244,29 +289,32 @@ label item_option:
             renpy.jump("target_option")
 
 
-label target_option:
-    python:
-        enemy_menu1 = enemy_list[0]["name"]
-        if len(enemy_list) == 2:
-            enemy_menu2 = enemy_list[1]["name"]
-        if len(enemy_list) == 3:
-            enemy_menu2 = enemy_list[1]["name"]
-            enemy_menu3 = enemy_list[2]["name"]
+label target_option(stats):
+    $ image_unlock = False
+    #python:
+        #enemy_menu1 = enemy_list[0]["name"]
+        #if len(enemy_list) == 2:
+            #enemy_menu2 = enemy_list[1]["name"]
+        #if len(enemy_list) == 3:
+            #enemy_menu2 = enemy_list[1]["name"]
+            #enemy_menu3 = enemy_list[2]["name"]
 
-    menu:
-        "Who are you targeting targeting?"
-        "Hitona":
-            $ target = hitona_stats
-        "Eve" if eve_stats in ally_list:
-            $ target = eve_stats
-        "[enemy_menu1]":
-            $ target = enemy_list[0]
-        "[enemy_menu2]" if len(enemy_list) == 2:
-            $ target = enemy_list[1]
-        "[enemy_menu3]" if len(enemy_list) == 3:
-            $ target = enemy_list[2]
-        "Cancel":
-            jump spell_option
+    #menu:
+        #"Who are you targeting targeting?"
+        #"Hitona":
+            #$ target = hitona_stats
+        #"Eve" if eve_stats in ally_list:
+            #$ target = eve_stats
+        #"[enemy_menu1]":
+            #$ target = enemy_list[0]
+        #"[enemy_menu2]" if len(enemy_list) == 2:
+            #$ target = enemy_list[1]
+        #"[enemy_menu3]" if len(enemy_list) == 3:
+            #$ target = enemy_list[2]
+        #"Cancel":
+            #jump spell_option
+
+    $ target = stats
 
     if atk > 0 and target != hitona_stats :
         jump rock_paper_scissor
@@ -318,7 +366,6 @@ label fight_log:
             $ hitona_stats["item"].remove(spell_name)
             $ item_name = 0
 
-        play sound sfx
         "[self_name] casted [spell_name] to [target_name]"
 
 
@@ -327,24 +374,34 @@ label fight_log:
             if target["hp"] < 0:
                 $ target["hp"] = 0
             $ atk = int(atk * multiplier)
+            $ hit = target
             show screen multi_stat
+            play sound sfx
             "[target_name] received [atk] damage"
+            $ hit = 0
         else:
             $ target["hp"] = target["hp"] + heal
             if target["hp"] > target["hp_max"]:
                 $ target["hp"] = target["hp_max"]
             show screen multi_stat
+            play sound sfx
             "[target_name] is healed for [heal]"
 
         if burn > 0:
             $ target["burn"] = burn
             play sound fireball
+            $ hit = target
+            play sound sfx
             "[target_name] got burnt for the next 5 turns"
+            $ hit = 0
 
         if par > 0:
             $ target["par"] = par
             play sound paralyzingspark
+            $ hit = target
+            play sound sfx
             "[target_name] got paralyzed for the next 2 turns"
+            $ hit = 0
 
         if self["burn"] > 0:
             $ self["burn"] = self["burn"] - 1
@@ -353,7 +410,9 @@ label fight_log:
                 $ self["hp"] = 0
             show screen multi_stat
             play sound fireball
+            $ hit = target
             "[self_name] received 5 damage from burn status"
+            $ hit = 0
     else:
         $ self["par"] = self["par"] - 1
         play sound paralyzingspark
@@ -366,7 +425,9 @@ label fight_log:
                 $ self["hp"] = 0
             show screen multi_stat
             play sound fireball
+            $ hit = self
             "[self_name] received 5 damage from burn status"
+            $ hit = 0
 
     if target["hp"] <= 0:
         if target in ally_list:
