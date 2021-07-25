@@ -365,10 +365,7 @@ screen main_menu():
 
     style_prefix "main_menu"
 
-    if persistent.ed_unlocked_4:
-        add gui.main_menu_background_final
-    else:
-        add gui.main_menu_background_initial
+    use main_menu_background()
 
     ## This empty frame darkens the main menu.
     frame:
@@ -416,6 +413,19 @@ style main_menu_title:
 style main_menu_version:
     properties gui.text_properties("version")
 
+screen main_menu_background():
+    if persistent.ed_unlocked_4:
+        add gui.main_menu_background_final
+    else:
+        add gui.main_menu_background_initial
+        fixed xalign 1.0 yalign 1.0 ysize 300 xsize 800:
+            for i in range(1, 4):
+                fixed ysize 275 xsize 250 xpos 250 * (i - 1):
+                    if getattr(persistent, 'ed_unlocked_%d' % i):
+                        image Transform(Image('images/keys/note_r%d.png' % i), rotate=-10, xpos=120, ypos=110)
+                        image Transform(Image('images/keys/key_r%d hover.png' % i), zoom=0.3, rotate=35)
+
+    image Transform(Image(gui.title_image), zoom=0.3) xalign 1.0 yalign 0.0
 
 ## Game Menu screen ############################################################
 ##
@@ -431,10 +441,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
     style_prefix "game_menu"
 
     if main_menu:
-        if persistent.ed_unlocked_4:
-            add gui.main_menu_background_final
-        else:
-            add gui.main_menu_background_initial
+        use main_menu_background()
 
     frame:
         style "game_menu_outer_frame"
