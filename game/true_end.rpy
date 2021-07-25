@@ -1,3 +1,52 @@
+screen key_lock_buttons(cur_route):
+    image "images/keys/lock_r[cur_route].png" xalign 0.5 yalign 0.5
+    vbox xalign 0.1 yalign 0.0:
+        imagebutton:
+            if cur_route <= 1:
+                idle Transform(Image('images/keys/key_r1 idle.png'), rotate=60, zoom=0.65)
+            else:
+                idle Transform(Image('images/keys/key_r1 disabled.png'), rotate=60, zoom=0.65)
+            focus_mask Transform(Image('images/keys/key_r1 idle.png'), rotate=60, zoom=0.65)
+            hover Transform(Image('images/keys/key_r1 hover.png'), rotate=60, zoom=0.65)
+            if key_lock_active and cur_route <= 1:
+                action Call("handle_key_lock_click", index=cur_route, expected=1)
+
+    vbox xalign 0.1 yalign 1.0:
+        imagebutton:
+            if cur_route <= 3:
+                idle Transform(Image('images/keys/key_r3 idle.png'), rotate=60, zoom=0.65)
+            else:
+                idle Transform(Image('images/keys/key_r3 disabled.png'), rotate=60, zoom=0.65)
+            focus_mask Transform(Image('images/keys/key_r3 idle.png'), rotate=60, zoom=0.65)
+            hover Transform(Image('images/keys/key_r3 hover.png'), rotate=60, zoom=0.65)
+            if key_lock_active and cur_route <= 3:
+                action Call("handle_key_lock_click", index=cur_route, expected=3)
+
+    vbox xalign 0.9 yalign 0.0:
+        imagebutton:
+            if cur_route <= 4:
+                idle Transform(Image('images/keys/key_r4 idle.png'), rotate=60, zoom=0.65)
+            else:
+                idle Transform(Image('images/keys/key_r4 disabled.png'), rotate=60, zoom=0.65)
+            idle Transform(Image('images/keys/key_r4 idle.png'), rotate=60, zoom=0.65)
+            focus_mask Transform(Image('images/keys/key_r4 idle.png'), rotate=60, zoom=0.65)
+            hover Transform(Image('images/keys/key_r4 hover.png'), rotate=60, zoom=0.65)
+            if key_lock_active and cur_route <= 4:
+                action Call("handle_key_lock_click", index=cur_route, expected=4)
+
+    vbox xalign 0.9 yalign 1.0:
+        imagebutton:
+            if cur_route <= 2:
+                idle Transform(Image('images/keys/key_r2 idle.png'), rotate=60, zoom=0.65)
+            else:
+                idle Transform(Image('images/keys/key_r2 disabled.png'), rotate=60, zoom=0.65)
+            focus_mask Transform(Image('images/keys/key_r2 idle.png'), rotate=60, zoom=0.65)
+            hover Transform(Image('images/keys/key_r2 hover.png'), rotate=60, zoom=0.65)
+            if key_lock_active and cur_route <= 2:
+                action Call("handle_key_lock_click", index=cur_route, expected=2)
+
+default key_lock_active = True
+
 label true_end:
 label end_4:
 label end_14: # lazy and don't want to fix tl tags
@@ -100,8 +149,7 @@ label true_end_combination_unlocked:
     nvl_narrator "This is our gift to you."
     nvl_narrator "Open each safe with each key!”"
 
-    "insert key"
-
+    call handle_key_lock(1)
     call show_cg("BirthdayKohi")
 
     nvl clear
@@ -111,8 +159,7 @@ label true_end_combination_unlocked:
 
     "There’s another locked safe inside, and there are three keys left."
 
-    "insert key"
-
+    call handle_key_lock(2)
     # call show_cg("")
 
     nvl_narrator "“Second!"
@@ -122,8 +169,7 @@ label true_end_combination_unlocked:
 
     "There’s another locked safe inside, and there are two keys left."
 
-    "insert key"
-
+    call handle_key_lock(3)
     # call show_cg("")
 
     nvl_narrator "“Third!"
@@ -132,11 +178,31 @@ label true_end_combination_unlocked:
 
     "There’s another locked safe inside, and there is one key left."
 
-    "insert key"
-
+    call handle_key_lock(4)
     # call show_cg("")
 
-    # credits, etc.
     call credits()
 
+    return
+
+label handle_key_lock(index):
+    show screen key_lock_buttons(index)
+
+    window hide
+    $ key_lock_active = True
+
+    while key_lock_active:
+        $ renpy.pause(hard=True)
+
+    hide screen key_lock_buttons
+    return
+
+label handle_key_lock_click(index, expected):
+    $ print(index, expected)
+    if index == expected:
+        $ key_lock_active = False
+        p "{i}The key fits perfectly!{/i}"
+    else:
+        $ key_lock_active = True
+        p "{i}The key doesn't fit...let's try another key.{/i}"
     return

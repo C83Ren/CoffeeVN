@@ -280,3 +280,15 @@ translate japanese true_end_combination_unlocked_fd3bc48b:
 
     # "There’s another locked safe inside, and there is one key left."
     "箱の中にはまた錠をかけた箱がある。残り１つの鍵。"
+
+# game/true_end.rpy:204
+translate japanese handle_key_lock_click_45f971ac:
+
+    # p "{i}The key fits perfectly!{/i}"
+    p "（鍵はぴったりとあった！）"
+
+# game/true_end.rpy:207
+translate japanese handle_key_lock_click_4a20c7db:
+
+    # p "{i}The key doesn't fit...let's try another key.{/i}"
+    p "（鍵が合わなさそう…他の鍵を試してみよう）"
