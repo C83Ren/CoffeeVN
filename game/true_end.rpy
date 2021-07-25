@@ -116,10 +116,8 @@ label end_14: # lazy and don't want to fix tl tags
     sn "Try opening the safe!"
 
 label true_end_combination:
-    show screen lock_buttons
+    show screen lock_buttons with dissolve
     $ _skipping = False
-
-    "It’s a combination lock with 4 digits."
 
     $ lock_active = True
     while True:
@@ -137,7 +135,7 @@ label true_end_combination:
     label combination_lock_correct:
         $ lock_active = False
         p "Oh it opened!"
-        hide screen lock_buttons
+        hide screen lock_buttons with dissolve
 
 
 label true_end_combination_unlocked:
@@ -186,7 +184,7 @@ label true_end_combination_unlocked:
     return
 
 label handle_key_lock(index):
-    show screen key_lock_buttons(index)
+    show screen key_lock_buttons(index) with dissolve
 
     window hide
     $ key_lock_active = True
@@ -194,7 +192,7 @@ label handle_key_lock(index):
     while key_lock_active:
         $ renpy.pause(hard=True)
 
-    hide screen key_lock_buttons
+    hide screen key_lock_buttons with dissolve
     return
 
 label handle_key_lock_click(index, expected):
