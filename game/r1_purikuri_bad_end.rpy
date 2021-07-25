@@ -52,6 +52,4 @@ label r1_purikuri_bad_end:
 
     p "Guess I’ll go stream or something then."
     
-    scene bg black
-
-    return
+    jump bad_end

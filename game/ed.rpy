@@ -15,3 +15,9 @@ init +1 python:
         renpy.image("ed %d thumbnail" % (i + 1), im.Scale(ImageReference("ed %d" % (i + 1)), 384, 216))
     renpy.image("ed locked", im.Scale(Image("cg locked.png"), 384, 216))
 
+label bad_end:
+    window hide
+    show image 'images/bad_end.png' with dissolve
+    $ renpy.pause(1.0, hard=True)
+    pause
+    return
