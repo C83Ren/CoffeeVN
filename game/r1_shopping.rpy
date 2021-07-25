@@ -4,7 +4,7 @@ init python:
 label r1_shopping:
     scene bg shop
     #bgm 星海
-    
+
     if famresflag == 1:
         "I paid for the meal, and then we went to the shopping district."
     else:
@@ -45,19 +45,19 @@ label r1_shopping:
     s "Yes!"
 
     s "Hitone onee-chan too!"
-    
+
     p "Okay, let’s go in!"
 
     hide hitona1
-    
+
     "We wandered inside the store and looked at all sorts of costumes on show."
 
     "There were many outfits on display, such as nurse outfits, maid outfits, suits, and all sorts of dresses."
 
     p "(Now that we’re here…I want to dress Shiraishi up!!)"
-    
+
     "I am fired up!"
-    
+
     p "Shiraishi!"
 
     show hitona1 smile1
@@ -75,7 +75,7 @@ label r1_shopping:
     s "Okay!"
 
     hide hitona1
-    
+
     "With that said, Shiraishi left on her own to pick an outfit for me."
 
     "For some reason I feel like I’ll regret that decision, But this is a chance to dress Shiraishi up!"
@@ -102,7 +102,7 @@ label r1_shopping:
 
     "Shiraishi was smiling and looking at…wedding outfits."
 
-    show hitona1 "stareyes4"
+    show hitona1 stareyes4
 
     s "They look so beautiful!"
 
@@ -132,6 +132,8 @@ label r1_shopping:
 
     s "If Hitona onee-chan says so…"
 
+    hide hitona1
+
     "Shiraishi took the costume I picked and went to change."
 
     "She looks a bit upset, but I’ll show her what I can do!"
@@ -140,7 +142,7 @@ label r1_shopping:
         "Which outfit to change into?"
 
         "Suit":
-        
+
             $ shoppingflag = "suit"
 
             "I picked up a black suit and changed into it."
@@ -148,9 +150,9 @@ label r1_shopping:
             "After changing, I found Shiraishi standing in front of another changing room."
 
             "It seems that she has not changed her clothes yet."
-            
+
             show hitona1 idle2
-            
+
             "Well, it doesn’t seem like she noticed me yet."
             "I prepared my deeper voice and called out to her."
 
@@ -160,18 +162,18 @@ label r1_shopping:
 
             "She seemed puzzled at first, but soon understood."
 
-            show hitona1 staryeyes1
+            show hitona1 stareyes1
 
             s "Hitona onee-chan?!"
 
             p "Was I so cool that you lost your memory?"
 
             "Shiraishi looks amused."
-            
+
             "Using this voice hurts my throat a bit, so I dropped the act."
 
             p "How was it?"
-            
+
             s "Hitona onee-chan is so cool!"
 
             p "Right~?"
@@ -179,17 +181,17 @@ label r1_shopping:
             p "Did I make your heart skip a beat?"
 
             s "You did!"
-            
+
             s "Shiraishi was really surprised!"
-            
+
             p "I wanted to surprise Shiraishi a bit, so I’m glad it worked!"
 
             s "Shiraishi wants to be patted!"
-            
+
             "I decided to go along with her sudden request, and patted her head."
-            
+
             show hitona1 bliss3
-            
+
             "Shiraishi looked really happy, so I decided to continue for a while."
 
         "Dress":
@@ -211,7 +213,7 @@ label r1_shopping:
             p "(Ahh! She’s really so cute…)"
 
             s "Hitona onee-chan is so beautiful…"
-            
+
             p "Hehe, right!"
 
             p "I told you not to worry!"
@@ -219,7 +221,7 @@ label r1_shopping:
             p "Don’t underestimate my fashion sense!"
 
             s "I want Hitona onee-chan to pick all of my outfits from now on!"
-            
+
             p "Haha that’s a bit much."
 
             p "But still…Shiraishi you look so CUUUTE!"
