@@ -118,26 +118,40 @@ init python:
 
 screen single_stat(name, hp, hp_max, ypos):
 
-    frame:
+    frame xsize 400 ysize 110 xpadding 20 ypadding 13:
         ypos ypos
-        vbox:
-            spacing 5
 
+        vbox:
             hbox:
-                text "[name!t]" min_width 220
+                text "[name!t]"
 
             hbox:
                 text _("HP"):
                     min_width 40
                     yalign 0.5
 
+                fixed xsize 6
+
                 bar:
                     value AnimatedValue(hp, hp_max, 1.0)
                     xmaximum 180
                     ysize 26
+                    yalign 0.5
+
+                fixed xsize 6
 
                 text " [hp]/[hp_max]":
                     yalign 0.5
+                    if hp == hp_max:
+                        color '#373'
+                    elif float(hp) / hp_max > 0.5:
+                        color '#131'
+                    elif float(hp) / hp_max > 0.3333:
+                        color '#bb0'
+                    elif float(hp) / hp_max > 0.2:
+                        color '#b70'
+                    else:
+                        color '#f00'
 screen multi_stat:
     $ screen_num = 0
     use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0)
@@ -208,7 +222,6 @@ screen target_action:
         yalign 1.0
         vbox spacing 10:
             text "{b}Who to target?{/b}"
-            spacing 10
             for someone in ally_list:
                 textbutton someone["name"] action Call("target_option", someone)
             for someone in enemy_list:
