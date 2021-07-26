@@ -381,7 +381,7 @@ label fight_log:
             $ atk = int(atk * multiplier)
             $ hit = target
             show screen multi_stat
-            play sound sfx
+            $ renpy.play(sfx, channel='sound')
             "[target_name] received [atk] damage"
             $ hit = 0
         else:
@@ -389,14 +389,14 @@ label fight_log:
             if target["hp"] > target["hp_max"]:
                 $ target["hp"] = target["hp_max"]
             show screen multi_stat
-            play sound sfx
+            $ renpy.play(sfx, channel='sound')
             "[target_name] is healed for [heal]"
 
         if burn > 0:
             $ target["burn"] = burn
             play sound fireball
             $ hit = target
-            play sound sfx
+            $ renpy.play(sfx, channel='sound')
             "[target_name] got burnt for the next 5 turns"
             $ hit = 0
 
@@ -404,7 +404,7 @@ label fight_log:
             $ target["par"] = par
             play sound paralyzingspark
             $ hit = target
-            play sound sfx
+            $ renpy.play(sfx, channel='sound')
             "[target_name] got paralyzed for the next 2 turns"
             $ hit = 0
 
