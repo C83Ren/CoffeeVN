@@ -105,9 +105,6 @@ init:
         def can_move_forward(m, x, y):
             return x > 0 and m[x - 1][y]
 
-        def can_move_backward(m, x, y):
-            return x < len(m) - 1 and m[x + 1][y]
-
         def can_move_left(m, x, y):
             return y > 0 and m[x][y - 1]
 
@@ -117,11 +114,11 @@ init:
         def move_forward(m, x, y):
             return m, x - 1, y
 
-        def move_left(m, x, y):
-            return rotate(m, x, y - 1)
+        def turn_left(m, x, y):
+            return rotate(m, x, y)
 
-        def move_right(m, x, y):
-            return rotate(*rotate(*rotate(m, x, y + 1)))
+        def turn_right(m, x, y):
+            return rotate(*rotate(*rotate(m, x, y)))
 
         def move_backward(m, x, y):
             #m, x, y = rotate(m, x + 1, y)
@@ -133,8 +130,29 @@ init:
         def at_finish_secret(m, x, y):
             return m[x][y] == 3
 
-    # Show a countdown for 10 seconds.
-image countdown = DynamicDisplayable(countdown, length= 120)
+screen bomb_movement(can_move_forward, time_left):
+    imagebutton xalign 0.5 yalign 0.3:
+        if can_move_forward == 'yes':
+            idle 'images/maze/forward idle.png'
+            action Call("handle_bomb_movement", what="forward")
+        else:
+            idle 'images/maze/forward disabled.png'
+        focus_mask 'images/maze/forward idle.png'
+        hover 'images/maze/forward hover.png'
+    imagebutton xalign 0.2 yalign 0.7:
+        idle 'images/maze/left idle.png'
+        focus_mask 'images/maze/left idle.png'
+        hover 'images/maze/left hover.png'
+        action Call("handle_bomb_movement", what="left")
+    imagebutton xalign 0.8 yalign 0.7:
+        idle 'images/maze/right idle.png'
+        focus_mask 'images/maze/right idle.png'
+        hover 'images/maze/right hover.png'
+        action Call("handle_bomb_movement", what="right")
+    timer time_left action Jump("bomb_mechanic_exit")
+
+# Show a countdown for 120 seconds.
+image countdown = DynamicDisplayable(countdown, length=120)
 
 label bomb_mechanic:
     scene black
@@ -153,6 +171,7 @@ label bomb_mechanic:
         else:
             maze = maze4
             player_x, player_y = 12, 7
+        img_maze = None
 
     image bomb map = "images/maze/bomb map[maze_num].png"
 
@@ -164,50 +183,77 @@ label bomb_mechanic:
     hide bomb map
 
     show countdown at Position(xalign=.1, yalign=.1)
+    $ _skipping = False
     $ time_remain = 120
     $ sleep_time = 0
+    $ bomb_choice_counter = 0
 
 label bomb_choice:
 
     if time_remain <= 0:
-        jump bomb_fail
+        jump bomb_mechanic_exit
 
     python:
         time_start = renpy.time.time()
-        ui.timer(time_remain, ui.jumps("bomb_fail"))
         forward = 'yes' if can_move_forward(maze, player_x, player_y) else 'no'
         right = 'yes' if can_move_right(maze, player_x, player_y) else 'no'
         left = 'yes' if can_move_left(maze, player_x, player_y) else 'no'
-        backward = 'yes' if can_move_backward(maze, player_x, player_y) else 'no'
-        img_maze = "%s %s %s" % (forward, right, left)
+        if img_maze:
+            old_img_maze, img_maze = img_maze, "%s %s %s" % (forward, right, left)
+        else:
+            old_img_maze = img_maze = "%s %s %s" % (forward, right, left)
 
     play sound mazewalk
 
     image bomb_maze = "images/maze/[img_maze].png"
-    show bomb_maze behind countdown
-    with Fade(0.3, sleep_time , 0.3)
+    show bomb_maze behind countdown:
+        truecenter zoom 1.5
+    with Fade(0.3, sleep_time, 0.3)
     $ renpy.pause(delay=sleep_time, hard=True)
     stop sound
 
-    menu:
-        "forward" if forward == "yes":
-             $ maze, player_x, player_y = move_forward(maze, player_x, player_y)
-        "right" if right == "yes":
-             $ maze, player_x, player_y = move_right(maze, player_x, player_y)
-        "left" if left == "yes":
-             $ maze, player_x, player_y = move_left(maze, player_x, player_y)
-        "backward" if backward == "yes":
-             $ maze, player_x, player_y = move_backward(maze, player_x, player_y)
+    $ time_now = renpy.time.time()
+    $ time_remain = time_remain - (time_now - time_start)
+    $ time_start = time_now
+    if time_remain <= 0:
+        jump bomb_mechanic_exit
 
+    show screen bomb_movement(forward, time_remain) with dissolve
+    window hide
+    $ renpy.pause(hard=True)
+
+    hide screen bomb_movement with dissolve
     $ time_remain = time_remain - (renpy.time.time() - time_start)
-    $ sleep_time = sleep_time + 0.1
+    if bomb_choice_counter < 10:
+        $ sleep_time = 0.1 + 0.015 * bomb_choice_counter
+    elif bomb_choice_counter < 35:
+        $ sleep_time = 0.25 + 0.015 * (bomb_choice_counter - 10) ** 1.6
+    else:
+        $ sleep_time = 2.84 + 0.1 * (bomb_choice_counter - 35) ** 0.9
+    $ bomb_choice_counter += 1
 
     if at_finish(maze, player_x, player_y):
         hide countdown
+        $ _skipping = True
         jump r3_river
     elif at_finish_secret(maze, player_x, player_y):
         hide countdown
+        $ _skipping = True
         $ r3_secret = True
         jump r3_river
     else:
         jump bomb_choice
+
+label handle_bomb_movement(what):
+    if what == "forward":
+        $ maze, player_x, player_y = move_forward(maze, player_x, player_y)
+    elif what == "left":
+        $ maze, player_x, player_y = turn_left(maze, player_x, player_y)
+    elif what == "right":
+        $ maze, player_x, player_y = turn_right(maze, player_x, player_y)
+    return
+
+label bomb_mechanic_exit:
+    hide screen bomb_movement with dissolve
+    $ _skipping = True
+    jump bomb_fail
