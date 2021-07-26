@@ -13,7 +13,7 @@ label r1_movie_bad_end:
 
     s "One day, when I grow up, I want to become someone just like you."
 
-    scene bg black
+    scene black
 
     "??" "Oii! Kohiiiii!"
 

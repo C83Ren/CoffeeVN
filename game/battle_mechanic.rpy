@@ -1,5 +1,4 @@
 init python:
-
     def store_turn(list, object):
 
         atk = list[object][0]
@@ -117,7 +116,6 @@ init python:
     hitona_hp = hitona_stats["hp"]
 
 screen single_stat(name, hp, hp_max, ypos):
-
     frame xsize 400 ysize 110 xpadding 20 ypadding 13:
         ypos ypos
 
@@ -152,7 +150,7 @@ screen single_stat(name, hp, hp_max, ypos):
                         color '#b70'
                     else:
                         color '#f00'
-screen multi_stat:
+screen multi_stat():
     $ screen_num = 0
     use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0)
     hbox xalign 0.5 spacing 90:
@@ -170,14 +168,13 @@ screen single_sprite(image_name_idle, image_name_hover, stats):
         else:
             idle Transform(Image(image_name_hover), zoom=0.8)
 
-screen multi_sprite:
-
+screen multi_sprite():
     hbox xalign 0.5 ypos 300:
         spacing 20
         for someone in fight_list:
             use single_sprite(someone["img"][0], someone["img"][1], someone)
 
-screen battle_action:
+screen battle_action():
     frame:
         xpadding 300
         ypadding 50
@@ -189,7 +186,7 @@ screen battle_action:
                 textbutton "Spell" action Jump("spell_option")
                 textbutton "Item" action Jump("item_option")
 
-screen spell_action:
+screen spell_action():
     frame:
         xpadding 300
         ypadding 50
@@ -201,7 +198,7 @@ screen spell_action:
                 textbutton spell action Call("load_spell", spell)
             textbutton "Cancel" action Jump("fight_option")
 
-screen item_action:
+screen item_action():
     frame:
         xpadding 300
         ypadding 50
@@ -214,7 +211,7 @@ screen item_action:
             textbutton "Cancel":
                 action Jump("fight_option")
 
-screen target_action:
+screen target_action():
     frame:
         xpadding 300
         ypadding 50
@@ -228,7 +225,7 @@ screen target_action:
                 textbutton someone["name"] action Call("target_option", someone)
             textbutton "Cancel" action Jump("fight_option")
 
-screen janken_action:
+screen janken_action():
     frame:
         xpadding 300
         ypadding 50
@@ -241,7 +238,7 @@ screen janken_action:
                 textbutton "Paper" action Call("after_rock_paper_scissor", "paper")
                 textbutton "Scissor" action Call("after_rock_paper_scissor", "scissor")
 
-screen janken_enemy_action:
+screen janken_enemy_action():
     frame:
         xpadding 300
         ypadding 50

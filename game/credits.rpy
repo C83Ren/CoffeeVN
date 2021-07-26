@@ -106,7 +106,7 @@ define credits_messages = [
 ]
 
 default credits_message_index = 0
-screen credits_message_display:
+screen credits_message_display():
     use credits_message(*credits_messages[credits_message_index])
 
 define credits_scroll_time = 60.0
@@ -119,7 +119,7 @@ transform credits_scroll:
 
     linear credits_scroll_time ypos -credits_height + 1080
 
-screen credits_scroll_screen:
+screen credits_scroll_screen():
     fixed at credits_scroll:
         use credits_display()
 

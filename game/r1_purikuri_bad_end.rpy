@@ -22,7 +22,7 @@ label r1_purikuri_bad_end:
 
     "While still looking at the photo, I took out my phone."
 
-    scene bg black
+    scene black
 
     "..."
 

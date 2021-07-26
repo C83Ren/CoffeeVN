@@ -87,7 +87,7 @@ label village_house_4:
 
 label village_talk_1:
 
-    hide village_map
+    hide screen village_map
     #idle
 
     e "Why are we here again?"
