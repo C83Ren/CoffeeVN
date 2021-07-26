@@ -147,6 +147,7 @@ label r2_start:
     #Gets into fight
     python:
         fight_order = [hitona_stats, eve_stats, soldier1_stats]
+        fight_list = [eve_stats, soldier1_stats]
         ally_list = [hitona_stats, eve_stats]
         enemy_list = [soldier1_stats]
         fight_label = "r2_start_after_battle"
@@ -160,6 +161,7 @@ label r2_start_after_battle:
     scene bg forest with dissolve
 
     hide screen multi_stat
+    hide screen multi_sprite
     play music forest fadein 1.0
 
     #smug1

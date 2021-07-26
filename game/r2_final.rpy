@@ -55,6 +55,7 @@ label r2_final:
         eve_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
         eve_stats["item"] = ["Heal Aura", "Flamethrower", "God Blessing"]
         fight_order = [hitona_stats, eve_stats, king_stats]
+        fight_list = [eve_stats, king_stats]
         ally_list = [hitona_stats, eve_stats]
         enemy_list = [king_stats]
         fight_label = "r2_final_after_battle"

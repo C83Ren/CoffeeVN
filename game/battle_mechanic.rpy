@@ -55,8 +55,7 @@ init python:
     "item": [],
     "burn": 0,
     "par": 0,
-    "img1":"images/kohi_r2/idle.png",
-    "img2":"images/kohi_r2/hover.png"
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
     }
 
     eve_stats = {
@@ -67,8 +66,7 @@ init python:
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img1":"images/kohi_r2/idle.png",
-    "img2":"images/kohi_r2/hover.png"
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
     }
 
     soldier1_stats = {
@@ -79,8 +77,7 @@ init python:
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img1":"images/kohi_r2/idle.png",
-    "img2":"images/kohi_r2/hover.png"
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
     }
 
     soldier2_stats = {
@@ -91,8 +88,7 @@ init python:
     "item": ["Heal Orb", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img1":"images/kohi_r2/idle.png",
-    "img2":"images/kohi_r2/hover.png"
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
     }
 
     soldier3_stats = {
@@ -103,8 +99,7 @@ init python:
     "item": ["Heal Orb", "God Blessing"],
     "burn": 0,
     "par": 0,
-    "img1":"images/kohi_r2/idle.png",
-    "img2":"images/kohi_r2/hover.png"
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
     }
 
     king_stats = {
@@ -115,18 +110,16 @@ init python:
     "item": ["God Blessing", "Flamethrower", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img1":"images/kohi_r2/idle.png",
-    "img2":"images/kohi_r2/hover.png"
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
     }
 
     multiplier_list = [0.5, 1, 2]
     hitona_hp = hitona_stats["hp"]
 
-screen single_stat(name, hp, hp_max, xalign):
+screen single_stat(name, hp, hp_max, ypos):
 
     frame:
-        xpos xalign
-
+        ypos ypos
         vbox:
             spacing 5
 
@@ -147,38 +140,107 @@ screen single_stat(name, hp, hp_max, xalign):
                     yalign 0.5
 screen multi_stat:
     $ screen_num = 0
-    #use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0.0)
-    #use single_stat("Eve", eve_stats["hp"], eve_stats["hp_max"], 0.3)
-    for ally in ally_list:
-        use single_stat(ally["name"], ally["hp"], ally["hp_max"], screen_num)
-        $ screen_num = screen_num + 500
-    for enemies in enemy_list:
-        use single_stat(enemies["name"], enemies["hp"], enemies["hp_max"], screen_num)
-        $ screen_num = screen_num + 500
+    use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0)
+    hbox xalign 0.5 spacing 90:
+        for someone in fight_list:
+            use single_stat(someone["name"], someone["hp"], someone["hp_max"], 200)
 
-screen single_sprite(image_name_idle, image_name_hover, x_align, stats):
+
+screen single_sprite(image_name_idle, image_name_hover, stats):
     imagebutton:
-        xpos x_align
-        ypos 300
         if stats == hit:
             idle Transform(Image(image_name_idle), zoom=0.8) at shake
-        else:
+
+        if stats["hp"] > 0:
             idle Transform(Image(image_name_idle), zoom=0.8,)
-        hover Transform(Image(image_name_hover), zoom=0.8)
-        if image_unlock:
-            action Call("target_option", stats)
+        else:
+            idle Transform(Image(image_name_hover), zoom=0.8)
 
 screen multi_sprite:
-    $ x_align = 0
-    for ally in ally_list:
-        use single_sprite(ally["img1"], ally["img2"], x_align, ally)
-        $ x_align = x_align + 500
 
-    for enemy in enemy_list:
-        use single_sprite(enemy["img1"], enemy["img2"], x_align, enemy)
-        $ x_align = x_align + 500
+    hbox xalign 0.5 ypos 300:
+        spacing 20
+        for someone in fight_list:
+            use single_sprite(someone["img"][0], someone["img"][1], someone)
 
-default image_unlock = False
+screen battle_action:
+    frame:
+        xpadding 300
+        ypadding 50
+        xalign 0.5
+        yalign 1.0
+        vbox spacing 10:
+            text "{b}What to do?{/b}"
+            hbox spacing 30:
+                textbutton "Spell" action Jump("spell_option")
+                textbutton "Item" action Jump("item_option")
+
+screen spell_action:
+    frame:
+        xpadding 300
+        ypadding 50
+        xalign 0.5
+        yalign 1.0
+        vbox spacing 10:
+            text "{b}What spell to use?{/b}"
+            for spell in hitona_stats["spell"]:
+                textbutton spell action Call("load_spell", spell)
+            textbutton "Cancel" action Jump("fight_option")
+
+screen item_action:
+    frame:
+        xpadding 300
+        ypadding 50
+        xalign 0.5
+        yalign 1.0
+        vbox spacing 10:
+            text "{b}What item to use?{/b}"
+            for item in hitona_stats["item"]:
+                textbutton item action Call("load_item", item)
+            textbutton "Cancel":
+                action Jump("fight_option")
+
+screen target_action:
+    frame:
+        xpadding 300
+        ypadding 50
+        xalign 0.5
+        yalign 1.0
+        vbox spacing 10:
+            text "{b}Who to target?{/b}"
+            spacing 10
+            for someone in ally_list:
+                textbutton someone["name"] action Call("target_option", someone)
+            for someone in enemy_list:
+                textbutton someone["name"] action Call("target_option", someone)
+            textbutton "Cancel" action Jump("fight_option")
+
+screen janken_action:
+    frame:
+        xpadding 300
+        ypadding 50
+        xalign 0.5
+        yalign 1.0
+        vbox spacing 10:
+            text "{b}Rock Paper Scissor!{/b}"
+            hbox spacing 30:
+                textbutton "Rock" action Call("after_rock_paper_scissor", "rock")
+                textbutton "Paper" action Call("after_rock_paper_scissor", "paper")
+                textbutton "Scissor" action Call("after_rock_paper_scissor", "scissor")
+
+screen janken_enemy_action:
+    frame:
+        xpadding 300
+        ypadding 50
+        xalign 0.5
+        yalign 1.0
+        vbox spacing 30:
+            text "{b}Rock Paper Scissor!{/b}"
+            hbox spacing 10:
+                textbutton "Rock" action Call("after_rock_paper_scissor_enemy", "rock")
+                textbutton "Paper" action Call("after_rock_paper_scissor_enemy", "paper")
+                textbutton "Scissor" action Call("after_rock_paper_scissor_enemy", "scissor")
+
 default hit = 0
 
 label r2_fight:
@@ -236,6 +298,8 @@ label r2_fight:
             renpy.jump(fight_label)
 
 label fight_option:
+    $ item_name = 0
+    call screen battle_action
     menu:
         "What to do?"
         "Spell":
@@ -244,78 +308,21 @@ label fight_option:
             jump item_option
 
 label spell_option:
-    menu:
-        "What spell to use?"
-        "Wind Blast" if "Wind Blast" in hitona_stats["spell"]:
-            $ spell_name = "Wind Blast"
-        "Wind Cutter" if "Wind Cutter" in hitona_stats["spell"]:
-            $ spell_name = "Wind Cutter"
-        "Fire Ball" if "Fire Ball" in hitona_stats["spell"]:
-            $ spell_name = "Fire Ball"
-        "Electric Bolt" if "Electric Bolt" in hitona_stats["spell"]:
-            $ spell_name = "Electric Bolt"
-        "Wind Lance" if "Wind Lance" in hitona_stats["spell"]:
-            $ spell_name = "Wind Lance"
-        "Fire Wall" if "Fire Wall" in hitona_stats["spell"]:
-            $ spell_name = "Fire Wall"
-        "Lightning Strike" if "Lightning Strike" in hitona_stats["spell"]:
-            $ spell_name = "Lightning Strike"
-        "Cancel":
-            jump fight_option
+    call screen spell_action
 
+label load_spell(spell_name):
     $ atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
-    $ image_unlock = True
-    #call screen multi_sprite
-    while image_unlock:
-        window hide
-        $ renpy.pause(hard=True)
-    jump target_option
+    call screen target_action
 
 label item_option:
-    python:
-        item_menu = []
-        for z in hitona_stats["item"]:
-            item_menu.append((z, z))
+    call screen item_action
 
-        item_menu.append(("Cancel", "cancel"))
-
-        item_name = renpy.display_menu(item_menu)
-
-        if item_name == "cancel":
-            item_name = 0
-            renpy.jump("fight_option")
-        else:
-            atk, heal, burn, par, sfx = store_turn(item_list, item_name)
-            renpy.jump("target_option")
-
+label load_item(item_name):
+    $ atk, heal, burn, par, sfx = store_turn(item_list, item_name)
+    call screen target_action
 
 label target_option(stats):
-    $ image_unlock = False
-    #python:
-        #enemy_menu1 = enemy_list[0]["name"]
-        #if len(enemy_list) == 2:
-            #enemy_menu2 = enemy_list[1]["name"]
-        #if len(enemy_list) == 3:
-            #enemy_menu2 = enemy_list[1]["name"]
-            #enemy_menu3 = enemy_list[2]["name"]
-
-    #menu:
-        #"Who are you targeting targeting?"
-        #"Hitona":
-            #$ target = hitona_stats
-        #"Eve" if eve_stats in ally_list:
-            #$ target = eve_stats
-        #"[enemy_menu1]":
-            #$ target = enemy_list[0]
-        #"[enemy_menu2]" if len(enemy_list) == 2:
-            #$ target = enemy_list[1]
-        #"[enemy_menu3]" if len(enemy_list) == 3:
-            #$ target = enemy_list[2]
-        #"Cancel":
-            #jump spell_option
-
     $ target = stats
-
     if atk > 0 and target != hitona_stats :
         jump rock_paper_scissor
     else:
@@ -324,17 +331,11 @@ label target_option(stats):
 label rock_paper_scissor:
     $ janken_list = ["rock", "paper", "scissor"]
     $ opp_janken = janken_list[renpy.random.randint(0,2)]
-    menu:
-        "Rock paper scissor!"
-        "Rock":
-            $ multiplier = janken("rock", opp_janken)
-        "Paper":
-            $ multiplier = janken("paper", opp_janken)
-        "Scissor":
-            $ multiplier = janken("scissor", opp_janken)
-        "Cancel":
-            jump target_option
+    "Let's double the damage!"
+    call screen janken_action
 
+label after_rock_paper_scissor(me_janken):
+    $ multiplier = janken(me_janken, opp_janken)
     jump fight_log
 
 label rock_paper_scissor_enemy:
@@ -343,15 +344,10 @@ label rock_paper_scissor_enemy:
     $ self_name = self["name"]
 
     "[self_name] is targeting Hitona! Let's defend!"
-    menu:
-        "Rock paper scissor!"
-        "Rock":
-            $ multiplier = janken(opp_janken, "rock")
-        "Paper":
-            $ multiplier = janken(opp_janken, "paper")
-        "Scissor":
-            $ multiplier = janken(opp_janken, "scissor")
+    call screen janken_enemy_action
 
+label after_rock_paper_scissor_enemy(me_janken):
+    $ multiplier = janken(opp_janken, me_janken)
     jump fight_log
 
 label fight_log:
@@ -367,7 +363,6 @@ label fight_log:
             $ item_name = 0
 
         "[self_name] casted [spell_name] to [target_name]"
-
 
         if atk > 0:
             $ target["hp"] = target["hp"] - int((atk * multiplier))

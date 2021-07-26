@@ -42,6 +42,7 @@ label r2_tranquility:
         eve_stats["spell"] = ["Wind Cutter", "Fire Ball", "Electric Bolt"]
         eve_stats["item"] = ["Heal Aura", "Flamethrower"]
         fight_order = [hitona_stats, eve_stats, soldier2_stats, soldier3_stats]
+        fight_list = [eve_stats, soldier2_stats, soldier3_stats]
         ally_list = [hitona_stats, eve_stats]
         enemy_list = [soldier2_stats, soldier3_stats]
         fight_label = "r2_tranquility_after_battle"
@@ -58,6 +59,10 @@ label r2_tranquility_after_battle:
     play music adventure_bgm fadein 1.0
 
     hide screen multi_stat
+    hide screen multi_sprite
+
+    window hide
+    $ renpy.pause(3.0)
 
     $ hitona_stats["item"].append("Paralyzing Spark")
 
