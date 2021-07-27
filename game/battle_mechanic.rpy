@@ -382,6 +382,7 @@ label fight_log:
             $ hit = target
             show screen multi_stat
             $ renpy.play(sfx, channel='sound')
+            $ renpy.pause(2.0, hard=True)
             "[target_name] received [atk] damage"
             $ hit = 0
         else:
@@ -390,21 +391,24 @@ label fight_log:
                 $ target["hp"] = target["hp_max"]
             show screen multi_stat
             $ renpy.play(sfx, channel='sound')
+            $ renpy.pause(2.0, hard=True)
             "[target_name] is healed for [heal]"
 
         if burn > 0:
             $ target["burn"] = burn
-            play sound fireball
+            #play sound fireball
             $ hit = target
-            $ renpy.play(sfx, channel='sound')
+            $ renpy.play(audio.fireball, channel='sound')
+            $ renpy.pause(2.0, hard=True)
             "[target_name] got burnt for the next 5 turns"
             $ hit = 0
 
         if par > 0:
             $ target["par"] = par
-            play sound paralyzingspark
+            #play sound paralyzingspark
             $ hit = target
-            $ renpy.play(sfx, channel='sound')
+            $ renpy.play(audio.paralyzingspark, channel='sound')
+            $ renpy.pause(delay=2.0, hard=True)
             "[target_name] got paralyzed for the next 2 turns"
             $ hit = 0
 
@@ -414,13 +418,17 @@ label fight_log:
             if self["hp"] < 0:
                 $ self["hp"] = 0
             show screen multi_stat
-            play sound fireball
+            #play sound fireball
+            $ renpy.play(audio.fireball, channel='sound')
+            $ renpy.pause(1.0, hard=True)
             $ hit = target
             "[self_name] received 5 damage from burn status"
             $ hit = 0
     else:
         $ self["par"] = self["par"] - 1
-        play sound paralyzingspark
+        #play sound paralyzingspark
+        $ renpy.play(audio.paralyzingspark, channel='sound')
+        $ renpy.pause(2.0, hard=True)
         "[self_name] is still paralyzed!"
 
         if self["burn"] > 0:
@@ -429,7 +437,9 @@ label fight_log:
             if self["hp"] < 0:
                 $ self["hp"] = 0
             show screen multi_stat
-            play sound fireball
+            #play sound fireball
+            $ renpy.play(audio.fireball, channel='sound')
+            $ renpy.pause(2.0, hard=True)
             $ hit = self
             "[self_name] received 5 damage from burn status"
             $ hit = 0
