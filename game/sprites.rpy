@@ -39,8 +39,14 @@ image hitona1 stareyes3 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stare
 image hitona1 stareyes4 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes4.png"), xanchor=193, yanchor=840)
 
 #KohiC2 (hitona2)
-image hitona2 idle = Transform(Image("images/kohi_r2/idle.png"), zoom=0.9, xanchor=320, yanchor=1000)
-image hitona2 test = Transform(Image("images/kohi_r2/idle.png"), zoom=0.9)
+image hitona2 idle = Transform(Image("images/kohi_r2/idle.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 angry = Transform(Image("images/kohi_r2/angry.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 laugh = Transform(Image("images/kohi_r2/laugh.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 pout = Transform(Image("images/kohi_r2/pout.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 smile1 = Transform(Image("images/kohi_r2/smile1.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 smile2 = Transform(Image("images/kohi_r2/smile2.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 smug = Transform(Image("images/kohi_r2/smug.png"), zoom=0.9, xalign=0.3, yanchor=900)
+image hitona2 surprised = Transform(Image("images/kohi_r2/surprised.png"), zoom=0.9, xalign=0.3, yanchor=900)
 
 #KohiSh (hitona3)
 image hitona3 angry hat = Transform(Image("images/kohi_r3/hat/angry.png"), xanchor=320, yanchor=1000)
@@ -81,6 +87,11 @@ image deer sad = Transform(Image("images/deer/sad.png"), zoom=0.5, xanchor=500, 
 image rabbit alone = Image("images/rabbit.png")
 image rabbit together = Image("images/rabbitco.png")
 
+#Soldier
+image soldier = Transform(Image("images/wizard_idle.png"), zoom=0.9, xalign=0.7, yanchor=900)
+
+#King
+image king = Transform(Image("images/king_idle.png"), zoom=0.9, xalign=0.95, yanchor=900)
 
 #transforms
 
