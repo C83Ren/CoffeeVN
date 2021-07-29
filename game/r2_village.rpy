@@ -8,40 +8,23 @@ init python:
 label r2_village:
     scene bg village with Fade(1.0, 1.0, 1.0)
 
-    "After a bit we arrived at the village"
-
     #smug1
 
-    p "This is a nice village, but why there’s no one outside?"
+    p "This is a nice village, but why is there no one outside?"
 
-    e "Maybe they fear the oh so fearsome Majna Eden Ba-"
+    e "Maybe it’s because they fear the oh so fearsome Majna Eden Ba-"
 
-    p "Yeah you’re right, let’s just explore around"
+    p "Yeah, yeah, you’re right, let’s just explore around."
 
 
 
 label village_menu:
+    scene bg village with Fade(1.0, 1.0, 1.0)
     call screen village_map
 
     "Where should we go?"
 
     scene bg village with dissolve
-    menu:
-        "Where should we go~"
-        "Talk":
-            jump village_talk
-        "Announcement Board":
-            jump village_announcement
-        "House 1":
-            jump village_house_1
-        "House 2":
-            jump village_house_2
-        "House 3":
-            jump village_house_3
-        "House 4":
-            jump village_house_4
-        "World Map" if v_house4 > 0:
-            jump r2_map_2
 
 label village_talk:
     if v_house3 == 0:
@@ -92,21 +75,21 @@ label village_talk_1:
 
     e "Why are we here again?"
 
-    p "…"
+    p "..."
 
     p "You were the one who said we should go here!"
 
     #smile1
 
-    e "Put trust in Eve, the wind blesses me and told me we should go here"
+    e "Believe in this Eve! The one blessed by the wind who told me we should come here!"
 
     p "You had no plan!"
 
     #smile2
 
-    e "Put trust in the wind~"
+    e "Believe in the wind!"
 
-    p "Yeah right, let’s just explore around"
+    p "Yes yes, let’s just explore around."
 
     jump village_menu
 
@@ -114,19 +97,19 @@ label village_talk_2:
 
     #idle
 
-    p "You called me second salvation, what was the first?"
+    p "You called me second salvation, so who was the first?"
 
     #smug1
 
-    e "It is I, the Great Majna Eden Bat Azuma Nula Sedun"
+    e "Of course it is I, the Great Majna Eden Bat Azuma Nula Sedun!"
 
-    p "What does it mean being a salvation anyway?"
+    p "What does it mean being a salvation anyways...?"
 
     #idle
 
-    e "It means giving hope to everyone"
+    e "A salvation is an existence that grants hope to everyone."
 
-    p "Hope huh…"
+    p "Hope huh..."
 
     jump village_menu
 
@@ -134,40 +117,42 @@ label village_talk_3:
 
     #idle
 
-    p "How the special region looks like anyway?"
+    p "What do the special regions look like anyway?"
 
     #laugh2
 
-    e "They are as magnificent as myself~"
+    e "They are as magnificent as myself"
 
-    p "That doesn’t explain anything…you said the magical energy sometimes go on a rampage or something right"
+    p "That doesn’t explain anything at all..."
+
+    p "You said the magical energy in the regions sometimes go on a rampage or something like that right?"
 
     #idle
 
-    e "Yes, it is horrible. Captain Jack almost died because of it"
+    e "Yes, it is horrible! The Captain almost died once because of it!"
 
-    e "A sudden thunderstorm, followed by an earthquake, then a vortex of lightning bolt surrounding him"
+    e "A sudden thunderstorm, followed by an earthquake, then a vortex of lightning surrounding him…"
 
-    p "How did he survived that…"
+    p "How in the world did he survive that..."
 
     #smug1
 
-    e "All thanks to the Great Eve’s help~"
+    e "That’s because of this great Eve!"
 
-    p "I see…not gonna bother asking"
+    p "I see...I don’t feel like hearing anymore."
 
     jump village_menu
 
 label village_announcement:
-    "\"Join the army not the rebels!\""
+    "\"Join the army, not the rebels!\""
 
     #idle
 
-    p "What a weird poster"
+    p "What a weird poster..."
 
-    e "It is from when the rebel and the army were still fighting around here"
+    e "It's from when the rebels and the army were still fighting around this area."
 
-    e "Not many people around here anymore, don’t think they will bother updating this"
+    e "There aren’t many people around here anymore, I doubt anyone will update this or anything."
 
     jump village_menu
 
@@ -177,57 +162,60 @@ label village_house_1_1:
 
     #idle
 
-    e "Hitoni! I am here!"
+    e "Hitoni! I have arrived!"
 
-    hn "Oh been a while. Still Traveling around I see"
+    hn "Oh, it's been a while. Still traveling around I see."
 
-    hn "Hm? Who’s that beside you?"
+    hn "Hm? Who’s that girl beside you?"
 
     #smile1
 
-    e "This is our second salvation! After me of course~"
+    e "This is our second salvation who will save this world! After me of course~"
 
     hn "So you’ve found someone compatible?"
 
-    e "Of course~ The wind is telling me so"
+    e "Of course! The wind told me so!"
 
-    hn "Either it is true or not, don’t let her waste it like you did"
+    hn "Well, true or not, don’t let her waste it like you did."
 
     #laugh2
 
-    e "“Afraid not Hitoni, Eve will set things straight once and for all. And you all will be under King Eve~"
+    e "Do not fear! This Eve will set things straight once and for all. And then after that everyone will be subjects of King Eve!"
 
-    hn "Again with that talk"
+    hn "Again with that talk..."
 
     #idle
 
-    e "Anyway our second salvation name is Hitona, found her in the forest"
+    e "Anyways, this is our second salvation, her name is Hitona. Found her in the forest."
 
-    p "Hello I’m Hitona"
+    p "Nice to meet you, I’m Hitona Kohigashi."
 
-    hn "Nice to meet you Hitona, what brings you here?"
+    hn "Nice to meet you."
 
-    e "Show us your spell selection. She only has Wind Blast now"
+    hn "So, what brings you here?"
 
-    p "Huh? He has spells? Isn’t the only one who has spells is the army?"
+    e "Show us your spell selection!"
 
-    hn "The army almost never comes to this place anymore. So what do you want to have?"
+    e "Hitona only has Wind Blast right now."
+
+    p "Huh? He has spells? I thought only the army could use magic?"
+
+    hn "Well, the army pretty much never comes here these days. So, which one do you want?"
 
     menu:
-        "What should I get?"
         "Upgrade Wind Blast to Wind Cutter":
             $ hitona_stats["spell"][0] = "Wind Cutter"
             play sound correctchoice
-            "You get Wind Cutter spell!"
+            "You have obtained Wind Cutter spell!"
             jump village_menu
-        "Get Fire Ball (Burn Effect)":
+        "Get Fire Ball (Occasionally inflicts the Burn Status)":
             play sound correctchoice
-            "You get Fire Ball spell!"
+            "You have obtained Fire Ball spell!"
             $ hitona_stats["spell"].append("Fire Ball")
             jump village_menu
-        "Get Electric Bolt (Paralysis Effect)":
+        "Get Electric Bolt (Occasionally inflicts the Paralysis Status)":
             play sound correctchoice
-            "You get Electric Bolt spell!"
+            "You have obtained Electric Bolt spell!"
             $ hitona_stats["spell"].append("Electric Bolt")
             jump village_menu
 
@@ -238,19 +226,19 @@ label village_house_1_2:
 
     p "No nothing, just wondering what’s your relation with Eve"
 
-    hn "You could’ve just asked Eve"
+    hn "You could’ve just asked Eve herself"
 
-    p "Her talk is nonsense most of the time"
+    p "Her talk is nonsense most of the time though..."
 
     hn "Hahaha! You got that right!"
 
     #pout2
 
-    e "My eye is sensing someone is mocking the great Majna Eden Bat Azuna Nula Sedun!"
+    e "My eye is sensing someone is mocking this great Majna Eden Bat Azuna Nula Sedun!"
 
-    p "See? Told you"
+    p "Speak of the devil."
 
-    hn "Well I’ll tell you later okay Hitona~"
+    hn "Ahaha, I’ll tell you later then."
 
     jump village_menu
 
@@ -258,31 +246,31 @@ label village_house_2_1:
 
     play sound dooropen
 
-    "??" "Who would come to this place in the middle of the day, I got no money okay~"
+    "??" "Who would come to this place in the middle of the day? I don’t have any money!"
 
     #laugh2
 
-    e "You should be grateful that the great Majna is came to greet you"
+    e "You should be grateful that this great Majna came out to greet you!"
 
-    "??" "Oh…it’s you…Even worse, get out"
+    "??" "Oh, it’s you. Even worse, hurry up and get out."
 
     #surprised1
 
-    e "Such ungrateful person you are Hitoshi"
+    e "Ungrateful as always, Hitoshi."
 
-    hs "Nothing good ever comes when you’re around"
+    hs "Nothing good ever comes when you’re nearby."
 
     hs "Hmm? Who’s that behind you?"
 
     #smile1
 
-    e "Glad you asked, she’s the second salvation, after me of course!"
+    e "Glad you asked! This is the world’s second salvation! After me of course!"
 
-    hs "Salvation you say…You talk big but nothing to show"
+    hs "Salvation you say… You’re always talking big but have nothing to show for it."
 
-    e "Don’t worry this time the wind is telling the truth"
+    e "There’s no need to worry! This time around, the wind is telling the truth!"
 
-    hs "But I see you’re still in great spirit. You should greet the Captain if you haven’t already"
+    hs "But I see you’re still in great spirits. You should go and greet the Captain if you haven’t already."
 
     jump village_menu
 
@@ -290,15 +278,15 @@ label village_house_2_2:
 
     play sound dooropen
 
-    hs "What is it this time, oh it’s you. I didn’t catch your name"
+    hs "What do you wa… oh it’s you. I didn’t catch your name last time."
 
-    p "It’s Hitona"
+    p "It’s Hitona Kohigashi"
 
-    hs "Hitona hmm? I hope Eve is right this time about you being the salvation"
+    hs "Kohigashi hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
 
-    p "I have no idea what you two are talking about, but I doubt it"
+    p "I have no idea what you two are talking about, but I doubt it..."
 
-    hs "It’s fine, a little bit of hope is nice to have"
+    hs "Well, it’s fine. It’s good to have a little bit of hope every now and then."
 
     jump village_menu
 
@@ -308,109 +296,115 @@ label village_house_3_1:
 
     #laugh2
 
-    e "Captain! The Great Majna is here with the one who’ll bring the second salvation~"
+    e "Captain! The Great Majna has come with the world’s second salvation!"
 
-    "??" "Huh if it isn’t Eve"
+    "??" "Huh, if it isn’t Eve!"
 
-    "??" "Second salvation you say? Is it the one beside you right now?"
+    "??" "Second salvation you say? Is she the one beside you right now?"
 
     #smile1
 
-    e "Yes it is her, she’s Hitona"
+    e "Yep, she’s Hitona."
 
-    p "I’m Hitona nice to meet you"
+    p "Nice to meet you, I’m Hitona Kohigashi."
 
-    "??" "Considering your personality, I am guessing you just dragged her here without much explanation"
+    "??" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation"
 
-    p "You got that right, I have no idea why I am here…"
+    p "You got that right, I have no idea why I am here."
 
     #idle
 
-    e "Well then Eve will leave Majna to you captain, I’ll be waiting outside"
+    e "Well then, I will leave Hitona to you, Captain! I’ll be waiting outside."
 
     #hide eve
 
     play sound dooropen
 
-    "Eve then left the house leaving me alone with this man"
+    "Saying that, Eve left the house."
 
-    "??" "So Hitona why are you here?"
+    "??" "So, how did you end up here?"
 
-    p "You tell me! I somehow got into this world then fought some soldier with magic no less...got dragged around by a weird girl"
+    p "You tell me...I somehow got suddenly dragged into this world, somehow fought a soldier with magic, and got dragged around by that weird girl."
 
-    "??" "Ahahahahaha as expected of Eve"
+    "??" "Ahahahahaha as expected of Eve!"
 
-    hj "First of all I am Hitoju"
+    hj "First of all, I am Hitoju."
 
-    hj "You say you got transported here? I see now why she calls you the second salvation"
+    hj "You said you got suddenly transported into this world… I see, now I understand why she calls you the second salvation."
 
     p "Well I don’t!"
 
-    hj "Hahaha calm down now, have some tea"
+    hj "Hahaha, calm down, calm down."
 
-    "Hitoji poured some tea to a cup and offered it to me"
+    hj "Have some tea?"
 
-    hj "So, To what extent she explained to you?"
+    "Hitoju poured some tea to a cup and offered it to me."
 
-    "I explained what Eve had told me up until now"
+    hj "So, to what extent has she explained it to you?"
 
-    hj "Hmmm…Is that so…"
+    "I summarized everything Eve had told me up until now."
 
-    hj "Basically we want the king to be defeated, is the reason Eve brought you here"
+    hj "Hmmm...Is that so..."
 
-    p "I don’t see how someone who doesn’t know anything can help you reach that goal"
+    hj "Basically, we want the king to be defeated, and that is the reason Eve brought you here."
 
-    hj "The King’s army is frankly very powerful and now the only way for us to defeat him is to use the Ultimate Spells"
+    p "I don’t see how someone who doesn’t know anything can help you reach that goal."
+
+    hj "Honestly, the King’s army is frankly very powerful. So powerful that the only way for us to defeat him is to use the Ultimate Spells."
 
     p "Ultimate spells?"
 
-    hj "Ultimate spells are very powerful spells that resides in the special region near here"
+    hj "Ultimate spells are very powerful spells that reside in the three special regions near here."
 
     p "You mean the ones called Tranquility, Turmoil, and Rage?"
 
-    hj "You’re right, those regions hold the ultimate spells. We need you to gather it"
+    hj "Yes, those regions each hold an ultimate spell."
 
-    p "Why doesn’t Eve do it herself…"
+    hj "What we need you to do is to go to each region and gather all three of the ultimate spells."
 
-    hj "Unlike normal spells where it can be used by everyone, ultimate spells can only be use by chosen people"
+    p "Then why doesn’t Eve just do it herself..."
 
-    p "And you’re saying I’m one of the chosen?"
+    hj "Unlike normal spells that can be used by anyone, ultimate spells can only be gathered and used by chosen people."
 
-    hj "Hahaha who knows, but Eve says so. Just believe her for now"
+    p "And you’re saying I’m chosen?"
 
-    hj "But the question is, do you want to help us?"
+    hj "Ahaha, who knows."
+
+    hj "But that’s what Eve thinks, so let’s just believe her for now."
+
+    hj "With that said, will you help us?"
 
     label village_forced_option:
         menu:
             extend ""
 
             "No":
-                hj "Don’t be like that, you are our last hope. You can think this as a little fun trip. How about it?"
+                hj "Don’t be like that, you are our last hope. Just think of this as a little fun trip. How about it?"
 
                 jump village_forced_option
 
             "Yes":
                 hj "That’s the spirit!"
 
-                hj "For now I recommend you to go to Tranquility. That’s one of the safest special region."
+                hj "I recommend going to Tranquility first. It’s safer than the other special regions."
 
-                hj "Good luck with your journey"
+                hj "Have a good journey!"
 
                 play sound dooropen
 
-                "I went out after that and Eve was waiting there"
+                "I went out and found Eve waiting."
 
                 #idle
 
-                e "Oh you’re done with the Captain?"
+                e "Oh you’re done talking with the Captain?"
 
                 p "Yeah, he said we should go to Tranquility"
 
-                e "Let’s stop by my domain before that"
+                e "Let’s stop by my domain before that then."
 
-                p "Which one was it again?"
+                p "Where is that?"
 
-                e "It’s the one on the bottom right if you see the map"
+                e "It’s on the bottom right of the map."
 
                 jump village_menu
 
@@ -418,17 +412,19 @@ label village_house_3_2:
 
     play sound dooropen
 
-    hj "You need something from me?"
+    hj "Do you need something from me?"
 
-    p "Uuuh no, I guess"
+    p "Uuuh no, nothing"
 
-    hj "Well great timing, I was going to give you this"
+    hj "Well great timing, I was going to give you this."
 
-    "You got God Blessing"
+    "You have obtained God Blessing"
 
     $ hitona_stats["item"].append("God Blessing")
 
-    hj "It’s gonna get rough out there, just stay safe. Hopefully not run into any soldier"
+    hj "It’s gonna get rough out there, stay safe."
+
+    hj "May you not run into any soldiers."
 
     jump village_menu
 
@@ -436,13 +432,13 @@ label village_house_3_3:
 
     play sound dooropen
 
-    hj "Back here again"
+    hj "Back here again."
 
-    p "I have no excuse"
+    p "I have no excuse."
 
-    hj "Well you got places to go~"
+    hj "Well you got places to go."
 
-    e "Yeah we got places to go, let's go"
+    e "Yeah we got places to go, let’s go."
 
     jump village_menu
 
@@ -450,9 +446,9 @@ label village_house_4_1:
 
     #angry3
 
-    e "This is a very dangerous domain, let’s explore somewhere else first"
+    e "This a very dangerous domain; let’s explore somewhere else first!"
 
-    p "Looks normal to me though…"
+    p "Looks normal to me though..."
 
     jump village_menu
 
@@ -462,35 +458,37 @@ label village_house_4_2:
 
     #idle
 
-    p "Huh so this is your house"
+    p "I see, so this is your house."
 
-    "The house was full of books and Eve was searching through them"
+    "The house was filled to brim with books, and Eve was busily searching through them."
 
-    e "Now where was it…"
+    e "Now where did I put it..."
 
     p "What are you trying to find?"
 
     "I tried flipping some books as well"
 
-    "What is this language…I can’t read it at all"
+    "{i}What is this language…I can’t read it at all!{/i}"
 
-    e "Here we go, some hints about the Tranquility region"
+    e "Here we go! Some hints about the Tranquility region!"
 
     p "Huh? Hints? What?"
 
-    e "If you’re expecting we go into the region and casually get the ultimate spell you are going to be very disappointed"
+    e "If you thought we could casually stroll into the region and pick up the ultimate spell, you are going to be very disappointed."
 
-    e "The spells are hidden and locked behind some kind of mechanism"
+    e "The spells are hidden and sealed behind some kind of mechanism."
 
-    p "Is that so…"
+    p "Is that so..."
 
-    e "So the hint is ‘What you seek lies deep in the water’"
+    e "The hint for the Tranquility region is..."
 
-    p "That seems straight forward enough for a hint"
+    e "{b}\"What you seek lies deep in the water.\"{/b}"
 
-    e "…I sure hope so"
+    p "That seems really straightforward."
 
-    e "Let’s go when you are ready"
+    e "...I sure hope so"
+
+    e "Let’s go when you are ready!"
 
     # Triggers the World Map to be open again
 

@@ -1,9 +1,9 @@
 label r2_final:
     scene black with dissolve
 
-    e "Hey Hitona!"
+    e "Hitona!"
 
-    e "Oiii Hitona!"
+    e "Hey, Hitona!"
 
     p "Huh?"
 
@@ -15,37 +15,61 @@ label r2_final:
 
     #angry3
 
-    e "It’s not the time to ponder around!"
+    e "It’s time for this great Eve to become king!"
 
     #laugh2
 
     e "It’s time to become the king!"
 
-    p "Eh what happened?!"
+    p "Eh? What happened?!"
 
     #smug1
 
-    e "You already gathered every ultimate spell!"
+    e "You already gathered every ultimate spell! Tranquility, Turmoil, and Rage!"
 
-    e "Tranquility, Turmoil, and Rage"
+    p "WHAT? Wait, wait, wait!!"
 
-    p "WHAT? BUT!"
+    p "We were just in Tranquility! Like...5 seconds ago!"
+
+    e "I see...must be a spell from a soldier in the courtyard earlier that’s making you so confused."
+
+    e "Anyways! You already gathered all the spells we need to go against the King!"
 
     #pout2
 
-    e "And I have my Void but…we’ll see"
+    e "And I have my Void ready as well..."
+
+    p "Huh...?"
+
+    '''
+    At that moment, a great number of memories suddenly surfaced in my mind like a storm.
+
+    Memories about how in that storm-filled Turmoil region, I obtained the Turmoil spell.
+
+    Memories about how I sacrificed myself in the Rage region to obtain the Rage spell.
+
+    Memories about Eve telling me about the ultimate spell she controls called Void.
+
+    How she caused the death of a countless number of people in a catastrophic disaster the last time she used Void.
+
+    How, in order to activate the Grand Spell, the three ultimate spells I gathered were insufficient by themselves, and Void must be used alongside.
+
+    And finally, how, in order to cast Void even just one more time, a terrible price would be required from Eve.
+
+    As these memories rushed in, someone began to talk.
+    '''
 
     #angry3
 
-    k "So you came here huh…"
+    k "So you finally came here, huh..."
 
-    "The king in front of us…King Achnost…"
+    "The king in front of us...King Achnost..."
 
-    "Is just lying down lazily"
+    "...is just lying down lazily"
 
-    "He stand up facing us"
+    "In what seemed like a massive amount of effort, he stood up to face us."
 
-    k "Rebels must be purged~"
+    k "Rebels must be purged."
 
     python:
         hitona_stats["hp"] = 300
@@ -61,8 +85,6 @@ label r2_final:
         fight_label = "r2_final_after_battle"
         x = 0
 
-    "FIGHT!"
-
     play music king_intro_bgm noloop fadein 1.0 volume 0.3
     queue music king_loop_bgm loop volume 0.3
 
@@ -72,9 +94,9 @@ label r2_final_after_battle:
 
     hide screen multi_stat
 
-    k "Annoying little pest"
+    k "Annoying little pest. Know that resistance is futile!"
 
-    k "Bend to my will~ Absolute~"
+    k "Bend to my will! Absolute Domain!"
 
     #surprised1
 
@@ -84,68 +106,66 @@ label r2_final_after_battle:
 
     #angry3
 
-    e "No! He’s taking our magic to his own!"
+    e "No! He’s taking our magic!"
 
-    e "Look at that!"
+    e "Look over there!"
 
-    "In front of us there was this huge magic ball ready to be blasted at us"
+    "In front of us there was a huge magic ball about to hit us."
 
-    e "We won’t survive this one if we don’t have anything"
+    e "We won’t survive if we don’t do something about it!"
 
-    p "Then…"
+    p "Then..."
 
-    e "Don’t worry I have one barrier spell that I can use once"
+    e "Don’t worry I have one last barrier spell!"
 
-    e "But after that, there’s no more…"
+    e "But after that..."
 
-    e "While I block this one spell, decide do we use the Grand Spell or not"
+    e "While I block this one spell, decide if we should use the Grand Spell or not!"
 
     p "Eh?? But…"
 
     e "Quick!"
 
     menu:
-        "Do we use the Grand Spell?!"
+        "Use the Grand Spell?!"
         "Use it!":
             jump final_grand_spell
         "Don't use it!":
             jump final_no_grand_spell
 
 label final_no_grand_spell:
-    p "I won’t use it!"
+    p "I won’t use it! I don’t want to use it!"
 
-    e "If we fail here, no one be able to stand up to him again!"
+    e "If we die here, there’s no meaning to saving it!"
 
-    p "But I still won’t use it, knowing that you need to use Void…"
+    p "Even then, I won’t use it! You would have to use Void right?"
 
     #idle
 
-    e "I see…"
+    e "I see..."
 
     #smile1
 
-    e "Then let’s try our best"
+    e "Then, let’s try our best"
 
     play sound absolutespell
 
-    "The king unleashed its attack and Eve managed to dispel it using her barrier spell"
+    "Eve barely managed to block the magic ball with her last barrier spell."
 
     #angry3
 
-    "But…"
+    "I don’t want her to pay the price for using the Void, but..."
 
-    k "Wahahahaha there’s more to that!"
+    k "Wahahahaha, there’s more where that came from!"
 
-    "The king casted the same spell…"
-
-    "And that was it…"
+    "...the king casted the same spell again. To the two of us who no longer had any means of defense, the ball of magic wiped all traces of our existence from the world."
 
     "Bad End"
 
     return
 
 label final_grand_spell:
-    p "Okay…Let’s use it! The Grand Spell!"
+    p "...okay! Let’s use it! The Grand Spell!"
 
     #smile1
 
@@ -153,14 +173,15 @@ label final_grand_spell:
 
     #idle
 
-    e "Before that, did you take the catalyst from before??"
+    e "By the way, did you bring the catalyst from before??"
 
     menu:
-        "Did I take the catalyst???"
         "Yeah I did!":
             $ catalyst = True
+            "Hearing my response, Eve looked relieved"
         "No I don't think so":
             $ catalyst = False
+            "Hearing my response, Eve looked resigned"
 
     #smile1
 
@@ -168,31 +189,31 @@ label final_grand_spell:
 
     play sound absolutespell
 
-    "The king unleashed its attack and Eve managed to dispel it using her barrier spell"
+    "Eve barely managed to block the magic ball with her last barrier spell."
 
-    "But…"
+    k "Wahahahaha, there’s more where that came from!"
 
-    k "Wahahahaha there’s more to that!"
-
-    "The king casted the same spell…"
+    "In response to the king casting the same spell again, we began to chant the Grand Spell!"
 
     scene cg 5 unscaled with dissolve
 
-    p "Tranquility, Turmoil, Rage, I, Hitona, rule over the composition of emotion. Compile everything to one"
+    p "Tranquility, Turmoil, Rage! I, Hitona, the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
 
-    e "I, Majna Eden Bat Azuma Nula Sedun, ruler of the Void. Give the emotion infinite space to burst"
+    e "I am Majna Eden Bat Azuma Nula Sedun, ruler of the Void! To allow the power of the emotions to be fully unleashed, use this life, expand the void, and create an infinite space!"
 
     p "Apeiros Iris!"
+
+    e "Apeiros Iris"
 
     # Hitona and Eve supposed to be saying it together
 
     play sound apeirosiris
 
-    "We casted the Grand Spell, a rainbow magical ball from me and pitch black magical ball from Eve combined together"
+    "As we cast the Grand Spell, a rainbow ball of magic from me and pitch black ball of magic from Eve combined together, and filled the castle with a blinding light."
 
-    "The outcome was obvious…"
+    "When the light faded away, King Achnost had already been sent away to the afterlife, but..."
 
-    "The king was no more"
+    "Eve..."
 
     if catalyst:
         jump final_good_end
@@ -203,13 +224,15 @@ label final_bad_end:
     scene black with dissolve
     play music r2bad_bgm fadein 1.0
 
-    "But…Eve was just there…lying down on the floor"
+    "...was lying motionlessly on the ground."
 
-    p "I knew this would happen…I’m sorry Eve…"
+    p "{i}I knew this would happen...{/i}"
 
-    p "If only there was some other way…"
+    p "{i}Eve...I’m sorry.{/i}"
 
-    "The king is gone, but…his replacement is gone as well…"
+    p "{i}If only there was some other way...{/i}"
+
+    "The king was successfully defeated, but the new king was no longer here to take his place."
 
     "Bad End"
 
@@ -220,8 +243,6 @@ label end_2:
     $ persistent.ed_unlocked_2 = True
 
     scene bg castle room with dissolve
-
-    "I looked at Eve…"
 
     p "Eh?"
 
@@ -235,74 +256,72 @@ label end_2:
 
     #surprised1
 
-    e "Yeah…somehow…"
+    e "Yeah...somehow..."
 
     #idle
 
-    e "Ah probably because of the catalyst"
+    e "Ah, it’s probably because of the catalyst."
 
-    p "Whatever it is, you’re alive!!!"
+    p "Whatever it is, you’re alive!!! I’m just happy you’re alive!!"
 
-    "I hugged Eve tightly"
+    "I hugged Eve, who, even though she used Void, was still alive, tightly."
 
     #smile2
 
-    e "Haha…yeah…"
+    e "Haha...yeah..."
 
-    "We both fell on our knees"
+    "The feeling of exhaustion finally sunk in, and we both fell onto our knees."
 
-    "The exhaustion just sank in…"
+    p "Hahahahahaha...Haaaa..."
 
-    p "Hahahahahaha…Haaaa…"
+    e "Hahahahahaha...Haaaa..."
 
     # Hitona and Eve supposed to be saying it together
 
-    e "Thank you Hitona…truly…"
+    e "Thank you, Hitona...truly..."
 
-    p "Hey…I had a lot of fun as well"
+    p "Hey...I had a lot of fun too"
 
     #smug1
 
-    e "And don’t worry about this, I’ll be a good NEET King Okay~"
+    e "And don’t worry about this, I’ll be a good NEET King okay."
 
-    p "Hahaha yeah…ugh…"
+    p "Hahaha yeah...ugh..."
 
-    "I feel very dizzy…and everything went black…"
+    "I suddenly felt very dizzy, and then everything went black..."
 
     scene bg room with Fade(1.0, 2.0, 1.0)
 
-    p "Huh? Where am I…"
+    p "{i}Huh? Where am I...{/i}"
 
-    "I’m on my bed…"
+    "{i}On my bed...lying down...?{/i}"
 
-    p "What a dream that was…"
+    p "{i}What a dream that was...{/i}"
 
     play sound messagetone
 
-    p "A message?"
+    p "A text?"
 
-    nvl_narrator "“Surely you got back safely right?"
+    nvl_narrator "You got back safely right?"
 
-    nvl_narrator "Wahahahaha you should trust The Great Majna Eden Bat Azuma Nula Sedun more"
+    nvl_narrator "Wahahahaha! You should trust The Great Majna Eden Bat Azuma Nula Sedun more!"
 
-    nvl_narrator "This NEET King will make the Kingdom prosper again okay~"
+    nvl_narrator "By the way, the wind says {b}'it resembles thy name, but one digit differs'{/b}"
 
-    nvl_narrator "Until next time!”"
+    nvl_narrator "Until next time!"
 
     nvl clear
 
-    p "Hahahahahaha"
+    p "{i}Hahahahahaha{/i}"
 
-    p "If you’re a king you’re not a NEET anymore Eve!"
+    p "{i}If you’re a king you’re not a NEET anymore, Eve!{/i}"
 
     "Good End"
 
     "On the ground there was something..."
 
-    p "Huh? What’s This?"
+    p "{i}Huh? What’s this...? a key{/i}"
 
-    p "A key?"
-
-    p "And also a note with the number 1?"
+    p "{i}And also a note with the number 7?{/i}"
 
     return

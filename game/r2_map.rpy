@@ -1,5 +1,6 @@
 label r2_map_1:
     scene bg map with Fade(1.0, 1.0, 1.0)
+    $ renpy.pause(3.0)
 
     #idle
 
@@ -11,33 +12,35 @@ label r2_map_1:
 
     #smug1
 
-    e "Majna Eve’s special power!"
+    e "'Tis this Majna Eve’s special power!"
 
     #idle
 
-    e "That staff has dimensional storage spell as well. Just use that"
+    e "Well, that staff has a dimensional storage spell in it as well, just use that."
 
-    p "Oh you’re right"
+    p "Oh you’re right!"
 
-    "I put every of my belonging inside the storage"
+    "I put all of my belongings inside the dimensional storage."
 
     e "So look at this map"
 
     e "At the far right is the castle. Before that you can see a village"
 
-    p "“…There’s only one village…how is this kingdom still here?!"
+    p "...There’s only one village?! How is this kingdom still here?!"
 
-    e "Most of the cities and village are on the other side of this map"
+    e "Most of the cities and villages are on the other side."
 
-    e "Not many people lives on this side due to these 3 places"
+    e "Because of these three dangerous areas, there aren’t many people living over here."
 
-    e "Tranquility and Turmoil region on the upper part of the map. Rage region near the village and incidentally near the castle as well"
+    e "At the top of the map there’s the Tranquility and Turmoil regions. And then there’s the Rage region near the village and castle."
 
     p "What’s with those regions?"
 
-    e "Those regions have huge magical power that sometimes it goes rampant and affects nearby areas"
+    e "Those special regions contain a great magical power that from time to time goes rampant and impacts nearby areas."
 
-    e "Enough of that, let’s go to the village"
+    e "Well, enough of that, let’s go to the village!"
+
+    call screen world_map()
 
     menu:
         "Where to go"
@@ -49,33 +52,34 @@ label r2_map_1:
     #jump on_to_village
 
 label on_to_village:
-    "We then walked to the village"
 
     #idle
 
-    p "Eve…"
+    p "Eve..."
 
     e "What is it?"
 
-    p "Eve…"
+    p "Eve..."
 
     #smile1
 
-    e "Yes I am Eve the holder of emptiness itself~ Nula"
+    e "Yes, my name is Eve. I am the holder of emptiness itself!"
 
-    p "Eve…"
+    p "Eve..."
 
     #smug1
 
-    e "Yes call me Eve, the one who controls the wind of the east~"
+    e "Yes, you may call me Eve! I am the one who controls the wind of the east!"
 
-    p "I still don’t get how the hell you call yourself Eve…"
+    p "I still don’t get how the hell you call yourself Eve..."
 
     #laugh2
 
-    e "I, Majna Eden Bat Azuma Nula Sedun, shall bestow you with knowledge of the origin of my name!"
+    e "I see! Then, I, Majna Eden Bat Azuma Nula Sedun, shall bestow you with knowledge of the origin of my name!"
 
-    p "No let’s not…"
+    p "Ah, there’s no need for that."
+
+    "A bit after that, we arrived at the village."
 
     jump r2_village
 
@@ -87,6 +91,8 @@ label r2_map_2:
 
 label map_menu:
     scene bg map
+    call screen world_map()
+
     menu:
         "Where should we go?"
         "Talk":
@@ -118,31 +124,45 @@ label map_rage:
 
 label map_talk:
 
-    #smile1
+    if m_rage > 0 or m_turmoil > 0:
+        "{i}Seems like whenever we talk about the special regions, Eve becomes a lot more humble and serious.{/i}"
 
-    e "Time for another adventure!!!"
+        "{i}Wonder what happened...{/i}"
+    else:
 
-    p "Yaaaaay! To be honest I am quite excited~"
+        #smile1
 
-    #smug1
+        e "Time for another adventure!!!"
 
-    e "You should be! You are accompanying the great Eve~"
+        p "Yaaaaay!"
 
-    p "Uuuh sure…mostly because I can use magic!! So exciting!"
+        p "To be honest, I’m really excited!"
 
-    #smile2
+        #smug1
 
-    e "Eve understands~ When I was a little I used my first magic"
+        e "You should be! You are accompanying the great Eve after all!"
 
-    p "What was it?"
+        p "Uuuh...sure..."
 
-    e "It was a spell that creates a hole in the ground"
+        p "More importantly, I can use magic!! So exciting!"
 
-    p "Oh that’s cool"
+        #smile2
 
-    e "Yeah I remember the whole village sank, good times~"
+        e "Ah I understand that feeling~"
 
-    p "…"
+        e "I was really excited when I used my first spell as a child!"
+
+        p "What type of spell was it?"
+
+        e "It was a spell that created a hole in the ground!"
+
+        p "Oh that’s cool!"
+
+        e "Yeah, I remember the whole village sank!"
+
+        e "Good times~"
+
+        p "..."
 
     jump map_menu
 
@@ -150,27 +170,27 @@ label map_castle:
 
     #idle
 
-    p "Why are we here…"
+    p "Why are we here..."
 
     e "Just to take a look around~"
 
-    e "Might as well go inside don’t you think?"
+    e "Since we’re here already, might as take a peek inside!"
 
-    p "No… I barely have anything with me!"
+    p "No, wait! I barely have anything with me!"
 
-    p "And weren’t you the one who wanted me to get those ultimate spells?!"
+    p "And weren’t you the one who wanted me to get those ultimate spells to take down the king?!"
 
     #smug1
 
-    e "You’re with the great Eve, what can go wrong?"
+    e "Don’t worry! You’re with the great Eve, what can possibly go wrong!"
 
     e "Let’s go!"
 
     scene black with dissolve
 
-    "Eve charged in and I had to follow her"
+    "Eve charged in straight through the front door!"
 
-    "You got obliterated by innumerous amount of spell casted by the soldiers"
+    "After that, we found ourselves on the receiving end of an uncountable number of spells casted by the soldiers, and were completely obliterated."
 
     "Bad End"
 
@@ -186,27 +206,27 @@ label map_rage_1:
 
     #idle
 
-    p "Just looking this from here looks very intimidating"
+    p "I can feel overwhelming pressure just looking at it from here."
 
     e "It is called Rage for a reason"
 
-    e "We can’t pass through here anyway."
+    e "In any case, we can’t pass through here."
 
-    e "That Fire wall surrounding it going to be a pain to deal with"
+    e "That fire wall surrounding the region is going to be a pain to deal with..."
 
-    p "Can’t you just use some magic of yours?"
+    p "Can’t you just use some magic?"
 
-    e "This Fire wall is the magic produced by the region"
+    e "This fire wall is produced by the region’s ultimate spell."
 
-    e "The only thing that can deal with this is another ultimate spell"
+    e "The only thing that can negate it is another ultimate spell."
 
-    p "You speak logical sometimes huh"
+    p "You make sense sometimes, huh. Sometimes."
 
     #angry3
 
-    e "You want me to wind blast you to that fire wall?"
+    e "You want me to Wind Blast you into that fire wall?"
 
-    p "I will decline for now"
+    p "No thanks, there’s no need for that."
 
     play music adventure_bgm fadein 1.0
 
@@ -222,25 +242,28 @@ label map_rage_2:
 
     #laugh2
 
-    e "You compare such pity naming sense with Eve?"
+    e "You dare praise such a lame name in front of this wonderfully named Eve?"
 
-    p "What does your name mean anyway?"
+    p "By the way, what does your name mean anyway?"
 
     #pout2
 
-    e "…"
+    e "..."
 
-    p "…"
+    p "..."
 
-    e "Let’s go~"
+    e "Let’s go."
 
     play music adventure_bgm fadein 1.0
 
     jump map_menu
 
 label map_tranquility:
+
+    "Enter Tranquility?"
+
     menu:
-        "You sure? (You won't be able to come back here again)"
+        "(Warning: you won’t be able to leave after entering)"
         "Yes":
             jump r2_tranquility
         "No":

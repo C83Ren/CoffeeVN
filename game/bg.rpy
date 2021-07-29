@@ -12,7 +12,7 @@ image bg park = "images/bg playground.png"
 
 #Route 2
 image bg forest = "images/r2_maps/r2_forest/forest.png"
-image bg map = "images/bg room.png"
+image bg map = "images/r2_maps/r2_world_map/world_map.png"
 image bg village = "images/r2_maps/r2_village/village.png"
 image bg turmoil_front = "images/bg turmoil front.png"
 image bg turmoil = "images/r2_maps/r2_turmoil/turmoil.png"

@@ -23,17 +23,19 @@ label r2_tranquility:
 
     e "Huh? Why is the army here?"
 
-    p "Eh really? They are probably searching for you"
+    p "Eh really? They are probably searching for you..."
 
-    "Eve then suddenly just closes in to the soldiers"
+    "But as I said that, Eve had already left to greet the soldiers."
 
     #laugh2
 
-    e "Hello soldiers!!"
+    e "Hello soldiers!"
 
-    p "Why would you do that!???"
+    p "Idiot! Why would you do that!?"
 
-    so "It’s her! Damn you little! Get her!"
+    so "It's her! Get her!"
+
+    p "..."
 
     python:
         hitona_stats["hp"] = 200
@@ -47,8 +49,6 @@ label r2_tranquility:
         enemy_list = [soldier2_stats, soldier3_stats]
         fight_label = "r2_tranquility_after_battle"
         x = 0
-
-    "FIGHT!"
 
     play music battletheme_bgm fadein 1.0 volume 0.5
 
@@ -68,75 +68,86 @@ label r2_tranquility_after_battle:
 
     $ hitona_stats["item"].append("Heal Aura")
 
+    play sound correctchoice
+
+    "You have obtained Paralyzing Spark!"
+
+    play sound correctchoice
+
+    "You have obtained Heal Aura!"
+
     #idle
 
-    e "Oh you’re getting better, still far compared to me but progress at least"
+    e "Ooh, you're getting better!"
 
-    p "You said the army doesn’t even go here anymore"
+    e "Still far compared to this great Eve, but progress is progress!"
 
-    p "This is the second time we met them"
+    p "I thought the army doesn't even come here anymore..."
 
     e "Something might be going on in the castle"
 
-    e "Well don’t need to worry about it, let’s go in"
+    e "Well, no need to worry about it, let's go into the forest!"
 
-    "We walk into the forest and the scene was sublime…"
+    "We walked into the forest filled with a serene and sublime atmosphere."
 
     scene bg tranquility with Fade(1.0, 0.5, 1.0)
-
     play music waterfall fadein 2.0
 
-    p "Such a peaceful place…"
+    $ renpy.pause(3.0)
+
+    p "Such a peaceful place..."
 
     #idle
 
-    e "It is called Tranquility after all"
+    e "It is called Tranquility after all."
 
-    p "The forest is so thick though"
+    p "The forest is so thick though..."
 
     #angry3
 
-    e "Shh…"
+    e "Shh..."
 
     p "Huh?"
 
-    e "There’s someone there, prepare your staff"
+    e "There's someone there, prepare your staff."
 
-    om "Don’t be alarmed young ones, I am no bad guy"
+    "??" "Don't be alarmed young ones, I ain't no bad guy."
 
-    "The old man is fishin at the pond"
+    "It's an old man fishing in a pond."
 
-    p "What’s with this scenery…"
+    p "What's with this place..."
 
     #hide
 
-    "The forest was thick"
+    "The forest was too thick."
 
-    "The greenery is enormous"
+    "The amount of greenery was overwhelming."
 
-    "The waterfall is enormous as well"
+    "The waterfall is enormous."
 
-    "The river flowing above is massive also but…"
+    "The river flowing above the waterfall is way too wide."
 
-    p "THAT POND IS SO SMALL!"
+    "But..."
 
-    p "That has a size of a small bath tub!"
+    p "ISN'T THAT POND TOO SMALL?!!!"
+
+    p "I've seen bathtubs larger than that?!"
 
     #angry3
 
-    e "Where is all the water going though"
+    p "Where the heck is all that water from the waterfall going to?!"
 
-    e "Old man what are you doing here?"
+    e "Old man, what are you doing here?"
 
-    om "As you can see, I’m fishing"
+    om "As you can see, I'm just fishing."
 
-    p "Of all places here you’re fishing…"
+    p "The pond is so small, there can't be any fish in there though?!"
 
     #idle
 
-    e "Well don’t mind him Hitona, let’s just find the thing"
+    e "Well don't mind him, Hitona. Let's just find that thing."
 
-    e "Remember \"What you seek lies deep in the water\""
+    e "Remember {b}\"What you seek lies deep in the water.\"{/b}"
 
 label tranquility_menu:
     if t_bfish:
@@ -226,31 +237,33 @@ label tranquility_talk:
 
 label tranquility_talk_1:
 
-    p "That pond is so small…"
+    p "That pond is really so small..."
+
+    p "I'm pretty sure I've seen puddles larger than that..."
 
     #angry3
 
-    e "While that waterfall is massive"
+    e "While that waterfall is massive, right?"
 
-    p "Haven’t you been here before Eve?"
+    p "Haven't you been here before, Eve?"
 
     e "Believe it or not, the special regions changes over time."
 
-    e "So yes I have been here, but it wasn’t like this"
+    e "So yes, I have been here before, but it's my first time seeing this pond."
 
-    p "What was it when you were here before?"
+    p "What was it when you were here in the past?"
 
-    e "It was surrounded by forest, but in the middle there was a ring of water fall dropping out of nowhere"
+    e "It was surrounded by forest like this, but in the middle there was a ring of waterfalls dropping out of nowhere."
 
-    e "And in the middle of that ring wall, was a huge lake"
+    e "And in the middle of that ring of waterfalls was a huge lake."
 
-    p "I can’t imagine that"
+    p "I can't picture that at all."
 
-    e "So this is much more tame than what I saw back then, be grateful"
+    e "Well, this is much more tame than what I saw back then, we should be grateful."
 
     #idle
 
-    e "Anyway remember ‘What you seek lies deep in the water’"
+    e "Anyway remember, {b}\"What you seek lies deep in the water.\"{/b}"
 
     jump tranquility_menu
 
@@ -258,11 +271,11 @@ label tranquility_talk_2:
 
     #idle
 
-    e "Did you forget the clue already?"
+    e "Did you forget the hint already?"
 
-    e "It’s ‘What you seek lies deep in the water’"
+    e "It's {b}\"What you seek lies deep in the water.\"{/b}"
 
-    p "Yeah I know, now that you keep repeating it, it is stuck in my mind"
+    p "Yes, yes, you've been repeating it nonstop that there's no way I could forget it."
 
     jump tranquility_menu
 
@@ -270,9 +283,9 @@ label tranquility_pond_1:
 
     #idle
 
-    p "You think the spell is down there?"
+    p "You think the ultimate spell is down there?"
 
-    e "Most likely yeah"
+    e "Probably, yeah."
 
     p "Use your magic Eve!"
 
@@ -284,19 +297,19 @@ label tranquility_pond_1:
 
     #pout2
 
-    e "…"
+    e "..."
 
-    e "The great Eve is forbidden from swimming since she was a child"
+    e "The great Eve has been forbidden from swimming ever since she was born."
 
-    p "…"
+    p "..."
 
-    p "You can’t swim can you"
+    p "You can't swim, can you?"
 
-    e "You can’t swim can you Hitona"
+    e "You can't swim, can you, Hitona?"
 
-    p "…"
+    p "..."
 
-    e "…"
+    e "..."
 
     jump tranquility_menu
 
@@ -304,23 +317,27 @@ label tranquility_pond_2:
 
     #angry3
 
-    e "So you’re gonna swim??"
+    e "So you're gonna swim??"
 
     menu:
         "Yes":
             p "Of course!"
 
-            e "Let’s see then~"
+            e "Well, go on."
 
             scene black
 
             "I jumped into the pond"
 
-            "The waterfall is hitting me hard"
+            "The pressure from the waterfall is overwhelming."
 
-            "I got further and further down…"
+            "I'm being pushed down and down."
 
-            "And…"
+            "I keep sinking further and further down."
+
+            "There doesn’t seem to be a bottom to this lake."
+
+            "I...can't...move..."
 
             "Bad End"
 
@@ -331,7 +348,7 @@ label tranquility_pond_2:
 
             #idle
 
-            e "Yeah thought so"
+            e "Yeah, thought so"
 
             jump tranquility_menu
 
@@ -344,15 +361,13 @@ label tranquility_spot_1_1:
 
         #idle
 
-        "There’s a lot of frogs here…"
+        "There’s a disturbing amount of frogs here..."
 
-        "It’s kinda disturbing"
-
-        e "We can use it as a bait, let’s take one"
+        e "Well, we can use it as bait, let’s grab one."
 
         play audio correctchoice
 
-        "Get frog as bait"
+        "You have obtained frog as bait!"
 
         $ t_bait1 = True
 
@@ -366,9 +381,7 @@ label tranquility_spot_1_1:
 
         #idle
 
-        "There’s a lot of frogs here…"
-
-        "It’s kinda disturbing"
+        "There’s a disturbing amount of frogs here..."
 
         stop sound
 
@@ -381,15 +394,15 @@ label tranquility_spot_1_2:
 
         #idle
 
-        e "You love frogs or something?"
+        e "Do you love frogs or something?"
 
         p "Uuuh not really?"
 
-        p "I just thought we can use it as bait, let’s take one"
+        p "I just thought that we could use it as bait, so we should grab one."
 
         play audio correctchoice
 
-        "Get frog as bait"
+        "You have obtained frog as bait!"
 
         $ t_bait1 = True
 
@@ -403,9 +416,9 @@ label tranquility_spot_1_2:
 
         #idle
 
-        e "You sure you don’t love frogs"
+        e "Are you sure you don’t love frogs?"
 
-        p "Now I’m not so sure…"
+        p "Now I’m not so sure anymore..."
 
         stop sound
 
@@ -417,7 +430,7 @@ label tranquility_spot_1_2:
 
         #idle
 
-        e "You love frogs or something?"
+        e "Do you love frogs or something?"
 
         p "Uuuh not really?"
 
@@ -432,33 +445,33 @@ label tranquility_spot_2_1:
 
         #idle
 
-        e "That’s a weird space for those to gather"
+        e "That’s a weird space for those to gather."
 
         p "What are you talking about?"
 
         "Eve pointed to a certain spot"
 
-        p "What is that pink thing…It’s….kinda moving"
+        p "What is that pink thing...It's...moving..."
 
-        "Eh?"
+        "{i}Eh?{/i}"
 
         #smile2
 
-        "She pushed me…"
+        "Eve pushed me from behind into the pink...something."
 
-        p "What are you doooo AAAAAAAAAAAAAAAA"
+        p "What are you doooo-aaaaaAAAAAAAAAAAA"
 
         #idle
 
-        e "Yeah what is a massive amount of worms doing there I wonder"
+        e "Yeah, what are such a massive amount of worms doing over there~"
 
-        p "EEEEVEEEE"
+        p "EEEEVEEEE!!!!!"
 
-        e "Well calm down, we can use it as a bait, let’s take one"
+        e "Well calm down, we can use it as bait, so go grab one."
 
         play sound correctchoice
 
-        "Get worm as bait"
+        "You have obtained a slimy worm as bait!"
 
         $ t_bait2 = True
 
@@ -468,27 +481,27 @@ label tranquility_spot_2_1:
 
         #idle
 
-        e "That’s a weird space for those to gather"
+        e "That’s a weird space for those to gather."
 
         p "What are you talking about?"
 
         "Eve pointed to a certain spot"
 
-        p "What is that pink thing…It’s….kinda moving"
+        p "What is that pink thing...It's...moving..."
 
-        "Eh?"
+        "{i}Eh?{/i}"
 
         #smile2
 
-        "She pushed me…"
+        "Eve pushed me from behind into the pink...something."
 
-        p "What are you doooo AAAAAAAAAAAAAAAA"
+        p "What are you doooo-aaaaaAAAAAAAAAAAA"
 
         #idle
 
-        e "Yeah what is a massive amount of worms doing there I wonder"
+        e "Yeah, what are such a massive amount of worms doing over there~"
 
-        p "EEEEVEEEE"
+        p "EEEEVEEEE!!!!!"
 
         jump tranquility_menu
 
@@ -497,17 +510,17 @@ label tranquility_spot_2_2:
 
         #smile2
 
-        p "You remember that place Eve?"
+        p "You remember that place, Eve?"
 
-        "I put my biggest smile ever"
+        "I put on my biggest smile"
 
         #surprised1
 
-        e "Yeah…let’s take one as a bait…"
+        e "Yeah...let's take one as bait and go..."
 
         play sound correctchoice
 
-        "Get worm as bait"
+        "You have obtained a slimy worm as bait!"
 
         $ t_bait2 = True
 
@@ -515,26 +528,26 @@ label tranquility_spot_2_2:
 
     elif t_bait2 or t_fish2:
 
-        p "Do we have to go there again…"
+        p "Do we have to go there again...?"
 
         #smile2
 
-        e "You might like them eventually"
+        e "You might start liking them, you know."
 
-        p "I could say the same to you…"
+        p "I could say the same back to you..."
 
         #angry3
 
-        e "Yeah let’s go back…"
+        e "Y...Yeah, let’s go back..."
 
         jump tranquility_menu
 
     else:
-        p "Want to go there again Eve?"
+        p "Want to go there again, Eve?"
 
         #surprised1
 
-        e "That smile on your face makes me say no"
+        e "That smile on your face makes me say no."
 
         jump tranquility_menu
 
@@ -542,62 +555,70 @@ label tranquility_spot_3_1:
     $ t_spot3 = 1
 
     if t_oldman > 0:
-        "There was a black wall at that part of the forest"
+        "There was a black wall at this part of the forest."
 
-        p "What a weird big black wall doing in the forest?"
+        p "What’s this weird big black wall doing in the middle of this forest?"
 
         #angry3
 
-        e "Hitona you really think that’s a wall?"
+        e "Hitona, do you really think that’s a wall?"
 
-        "I felt pushed...and it was towards the black wall"
+        "Saying that, Eve pushed me from behind towards the black wall."
 
-        "…"
+        "..."
 
-        "The black wall dispersed…"
+        "The black wall dispersed."
+
+        "..."
 
         #smile1
 
-        e "Catch one Hitona! We can use it as a bait!"
+        e "Catch one Hitona! We can use it as bait!"
 
-        p "I got one…one cockroach…Why you pushed me?!"
-
-        e "So you don’t have any second thought about it"
-
-        p "I should note that tactic down"
+        p "..."
 
         play sound correctchoice
 
-        "Get \"bug\" as bait"
+        "You have obtained a cockroach as bait!"
+
+        p "I got one...cockroach..."
+
+        p "Why did you push me!?"
+
+        e "So that you wouldn’t have any second thoughts about it."
+
+        p "I should note that tactic down..."
 
         $ t_bait3 = True
 
         jump tranquility_menu
 
     else:
-        "There was a black wall at that part of the forest"
+        "There was a black wall at this part of the forest."
 
-        p "What a weird big black wall doing in the forest?"
+        p "What’s this weird big black wall doing in the middle of this forest?"
 
         #angry3
 
-        e "Hitona you really think that’s a wall?"
+        e "Hitona, do you really think that’s a wall?"
 
-        "I felt pushed...and it was towards the black wall"
+        "Saying that, Eve pushed me from behind towards the black wall."
 
-        "…"
+        "..."
 
-        "The black wall dispersed…"
+        "The black wall dispersed."
+
+        "..."
 
         #smile1
 
-        p "Let’s go back…"
+        p "Let's go back..."
 
-        "Eve patted me"
+        "Eve patted my head"
 
-        e "How can you see a massive amount of cockroaches as a wall"
+        e "How did you see a massive amount of cockroaches as a wall?"
 
-        p "Don’t comment on it…"
+        p "Don't comment on it..."
 
         jump tranquility_menu
 
@@ -606,15 +627,15 @@ label tranquility_spot_3_2:
 
         #idle
 
-        e "Surely now you know that isn’t a black wall right Hitona?"
+        e "Surely now you know that isn't a black wall, right Hitona?"
 
         p "I know!"
 
-        e "We can use it as a bait so let’s take one"
+        e "We can use it as a bait, so go catch one."
 
         play sound correctchoice
 
-        "Get \"bug\" as bait"
+        "You have obtained a cockroach as bait!"
 
         $ t_bait3 = True
 
@@ -624,11 +645,11 @@ label tranquility_spot_3_2:
 
         #idle
 
-        p "I never knew you can use bug as a bait"
+        p "I never knew you could use cockroaches as a fishing bait..."
 
-        e "Yeah me neither"
+        e "Yeah me neither..."
 
-        p "…"
+        p "..."
 
         e "What?"
 
@@ -638,7 +659,7 @@ label tranquility_spot_3_2:
 
         #angry3
 
-        e "Are you testing your luck again thinking there won’t be any cockroaches Hitona?"
+        e "Are you testing your luck again hoping that there won’t be any cockroaches, Hitona?"
 
         p "Shut up will you!"
 
@@ -648,23 +669,25 @@ label tranquility_oldman_1:
 
     #idle
 
-    e "So old man, can you help us?"
+    e "So old man, can you help us out?"
 
-    e "We’re trying to find something probably under this small pond"
+    e "We’re trying to find something that’s probably at the bottom of this small pond."
 
     e "Any idea how?"
 
-    p "Huh? We’re asking him?!"
+    p "Huh? We're asking him?!"
 
     om "Under the water? Easy! You fish it!"
 
-    p "Seriously…?"
+    p "Seriously...?"
 
-    e "I’ll try using magic then~"
+    e "I'll try using magic then!"
 
     play sound magiccasting
 
     e "I call the mana of aquos, break free!"
+
+    p "..."
 
     "Nothing happened"
 
@@ -672,15 +695,15 @@ label tranquility_oldman_1:
 
     #pout2
 
-    e "This pond…is blocking magic…"
+    e "This pond...is blocking magic..."
 
-    om "Like I said. You fish!"
+    om "Didn’t I say? You fish it!"
 
-    e "I guess we got no choice"
+    e "I guess we got no choice..."
 
-    om "Bring me bait then I’ll help you fish it"
+    om "Well, if you bring me the bait, I can help you fish."
 
-    p "Time to find some bait"
+    p "Time to find some bait I guess."
 
     jump tranquility_menu
 
@@ -693,20 +716,23 @@ label tranquility_oldman_2:
             $ fish_string = "Big Fish"
             $ t_bait1 = False
             $ t_fish1 = True
-        "Worm" if t_bait2:
+            $ bait_name = "frog"
+        "Slimy Worm" if t_bait2:
             $ fish_string = "Medium Fish"
             $ t_bait2 = False
             $ t_fish2 = True
-        "Bug" if t_bait3:
+            $ bait_name = "slimy worm"
+        "Cockroach" if t_bait3:
             $ fish_string = "Small Fish"
             $ t_bait3 = False
             $ t_fish3 = True
+            $ bait_name = "cockroach"
         "Cancel":
             jump tranquility_menu
 
-    om "A nice bait this is, let’s try it"
+    om "This is a nice bait."
 
-    "The old man fished using the bait"
+    "The old man tried to fish with the [bait_name] bait."
 
     play sound fishing
 
@@ -718,7 +744,7 @@ label tranquility_oldman_2:
     jump tranquility_menu
 
 label tranquility_after_fishing:
-    p "We got no spell…"
+    p "We got no spell..."
 
     p "WE GOT NO SPELL!"
 
@@ -726,35 +752,35 @@ label tranquility_after_fishing:
 
     e "Yeah I can see that Hitona, calm down"
 
-    p "Why are you so calm when you’re usually so weird"
+    p "You’re always so crazy, so why are you suddenly calm now?"
 
-    om "Are you two going to eat the fishes?"
+    om "Are you two going to eat the fish?"
 
-    p "No probably not"
+    p "No, probably not"
 
-    om "Then release it back to the pond~"
+    om "Then you should release it back to the pond."
 
-    om "That is the way of fisherman"
+    om "‘Tis the way of fishers."
 
     jump tranquility_menu
 
 label tranquility_release_fishes:
     menu:
-        "What should I do..."
+        "What to do"
         "Release the fishes":
-            om "The fishes will truly bless you young girl"
+            om "The god of fish will surely bless you."
 
-            p "I sure hope so…"
+            p "I sure hope so..."
 
-            "I released the fishes then…"
+            "When I released the fish..."
 
             play sound fishing
 
-            "The pond lighted up and out of the pond one massive fish came out"
+            "...the pond suddenly lit up, and from the bottom jumped out a massive fish."
 
-            "The fish is SO HUGE that I’m sure it can clog up pretty much anything"
+            "So massive, that it was surely impossible for it to have fit in that small pond."
 
-            p "Fish…"
+            p "Fish..."
 
             "I just stood there in awe"
 
@@ -766,14 +792,14 @@ label tranquility_release_fishes:
 
             #surprised1
 
-            e "That fish holds amazing amount of magical power as well…it’s not the Ultimate spell but that fish packs a huge punch"
+            e "That fish, it’s not the ultimate spell, but it still holds an amazing amount of magical power."
 
-            p "What are we gonna do with this…"
+            p "What are we going to do with this fish..."
 
             jump tranquility_menu
 
         "Cancel":
-            "I need more time to think"
+            "I need more time to think..."
 
             jump tranquility_menu
 
@@ -782,31 +808,31 @@ label tranquility_forest_1:
 
     #idle
 
-    e "Are you going to use the fish there?"
+    e "Are you going to use the fish here in the forest...?"
 
     p "The clue might be a trick to make us look away from the forest!"
 
-    e "Okay let’s try releasing the fish there!"
+    e "Okay let's try releasing the fish there!"
 
     "We released the fish right in the middle of the forest"
 
-    "BOOM!"
+    "{b}BOOM!{/b}"
 
     #angry3
 
-    "It fell with a thump"
+    "It fell with a loud thump onto the ground..."
 
     play sound fishflap loop
 
-    "And now…it’s flailing around…."
+    "...and now it’s flailing and bouncing up and down."
 
-    p "Doesn’t seem like it’s working…"
+    p "Nothing happened..."
 
     e "I even feel sorry for the fish"
 
-    e "Okay ‘Amafi’ come back here to the storage"
+    e "Okay, Amafi, come back here to the dimensional storage."
 
-    p "You’re naming that fish???"
+    p "You even named it?!"
 
     stop sound
 
@@ -816,9 +842,9 @@ label tranquility_forest_2:
 
     #angry3
 
-    e "You’re gonna let Amafi go through that kind of experience again Hitona??”"
+    e "You’re gonna let Amafi go through that kind of experience again?"
 
-    p "No I wasn’t…Don’t make look like I’m the bad guy here!"
+    p "No I wasn’t! Don’t make me look like I’m the bad guy here!"
 
     jump tranquility_menu
 
@@ -827,23 +853,25 @@ label tranquility_pond_after_1:
 
     #angry3
 
-    p "Let’s try dropping this fish to the pond"
+    p "Let’s try releasing this fish in the pond."
 
-    e "I really doubt the fish can fit into that pond"
+    e "Umm...I really doubt the fish can fit into that pond...it’s too big."
 
-    p "But it came from the pond!"
+    p "Wait, hold on, but it came from this very pond!"
 
-    e "That is one magical pond I tell you"
+    e "This is one magical pond after all."
 
-    p "Let’s just try it"
+    p "Ah, whatever, let’s just try it."
 
-    "We dropped the fish to the pond but…"
+    "We dropped the fish back into the pond but..."
 
-    p "It’s stuck…"
+    p "It's stuck..."
 
-    e "Yeah it’s stuck…"
+    e "Yeah, it’s stuck..."
 
-    p "Let’s put it back"
+    "...it was so big, it covered the entire pond instead."
+
+    p "Let’s put it back into the dimensional storage."
 
     jump tranquility_menu
 
@@ -853,13 +881,13 @@ label tranquility_pond_after_2:
 
     #smug1
 
-    e "I can cast a spell that make you huge as well, wanna try?"
+    e "I can cast a spell that makes you huge as well, want to try?"
 
-    p "That is kind of useful"
+    p "That sounds kind of useful."
 
-    e "Only for half a second though"
+    e "Only for half a second though."
 
-    p "I take back my admiration…"
+    p "Give me back the admiration I gave you!"
 
     jump tranquility_menu
 
@@ -867,47 +895,49 @@ label tranquility_waterfall:
 
     #idle
 
-    p "How about we let the fish swim up the waterfall"
+    p "How about we let the fish swim up the waterfall?"
 
-    e "That…actually might work?"
+    e "That...actually might work?"
 
-    "We then released the fish to the waterfall"
+    "We released the fish into the waterfall and let it swim in the waterfall..."
 
-    p "It’s actually swimming up there…"
+    p "It’s actually swimming up there..."
 
-    "It reached the top of the waterfall then it clogged the stream"
+    "...and it reached the top of the waterfall without problems, blocking the flow of water."
 
-    p "The waterfall stopped…"
+    p "The waterfall disappeared..."
 
     stop music fadeout 1.0
 
     #surprised1
 
-    e "That fish is surely huge huh"
+    e "That fish is surely huge, huh."
 
-    "We looked at the pond and it was dried up"
+    "We looked at the pond and it too had dried up."
 
-    "The pond was really deep, might as well call it a well"
+    "The hole left behind was so deep, the bottom could not be seen. But in the hole..."
 
-    p "There! Something is shining there!"
+    p "There! Something is shining!"
+
+    "Something was shining."
 
     #idle
 
     play sound magiccasting
 
-    e "Wind among us, elevate~"
+    e "Wind among us, elevate!"
 
-    "As Eve casted the spell, the shiny blue orb lifted up and landed on my hands"
+    "As Eve cast her the spell, a shining blue orb flew up from the hole, and landed gently in my open hands."
 
-    "Then suddenly the orb entered my body"
+    "Then, the orb entered my body on its own."
 
     #smile1
 
-    e "Congrats, the wind didn’t lie"
+    e "Congratulations, the wind didn’t lie this time."
 
-    e "You are the second salvation Hitona"
+    e "You are indeed the second salvation that will save this world, Hitona."
 
-    "…"
+    "..."
 
     stop music
 

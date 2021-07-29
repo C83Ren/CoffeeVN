@@ -8,27 +8,27 @@ label r2_turmoil:
     scene bg turmoil with dissolve
 
 
-    p "This is such a heavy rain…"
+    p "This is such a heavy rain..."
 
-    e "With lightning striking the ground no less"
+    e "With lightning striking the ground so frequently as well."
 
-    e "There’s not much we can do here probably since we have no clue what to do"
+    e "We don’t have any clue about what to do here; we probably can’t pass through here..."
 
-    p "Can you do a magic like this storm Eve?"
+    p "Can you make a storm like this with magic, Eve?"
 
-    e "At a smaller scale yeah~"
+    e "At a smaller scale, yeah."
 
     p "That’s oddly humble from you"
 
-    e "That’s plenty enough to defeat small chumps like the soldiers, no need to be fancy"
+    e "That’s plenty enough to defeat small fries like the soldiers, no need to use a fancier spell."
 
-    e "If Hitona can defeat them, why bother use such a flashy spell"
+    e "If Hitona can defeat them, why bother using such a flashy spell?"
 
-    p "You’re mocking me aren’t you"
+    p "You’re mocking me, aren’t you"
 
-    "Eve patted me for some reason…"
+    "For some reason, Eve started patting me on the head."
 
-    p "I’ll get you back sometime later!"
+    p "I’ll get you back later for this!"
 
     jump turmoil_menu
 
@@ -40,18 +40,22 @@ label turmoil_menu:
     call screen turmoil_map
 
 label turmoil_pillar:
-    "It’s a stone pillar"
+    "It’s a normal-looking stone pillar."
 
-    e "Better not get close to it, the lightning might strike it"
+    e "Be careful not to get close to it."
+
+    e "Lightning might strike it at any moment."
 
     jump turmoil_menu
 
 label turmoil_tablet:
-    "It’s a stone tablet but there’s no inscription"
+    "It’s a stone tablet with no inscription."
 
     p "What’s this doing here?"
 
-    e "Might have to do with how we get the ultimate spell. Just remember it for now"
+    e "Might have to do with how we get the ultimate spell."
+
+    e "Just remember it for now."
 
     jump turmoil_menu
 
@@ -60,28 +64,3 @@ label turmoil_world_map:
     stop sound
 
     jump map_menu
-
-    menu:
-        "Pillar":
-            "It’s a stone pillar"
-
-            e "Better not get close to it, the lightning might strike it"
-
-            jump turmoil_menu
-
-        "Tablet":
-            "It’s a stone tablet but there’s no inscription"
-
-            p "What’s this doing here?"
-
-            e "Might have to do with how we get the ultimate spell. Just remember it for now"
-
-            jump turmoil_menu
-
-        "World Map":
-            play music adventure_bgm fadein 1.0
-            stop sound
-
-            jump map_menu
-
-    return

@@ -7,137 +7,145 @@ label r2_start:
 
     p "…"
 
-    "I see…trees…huts…bushes…"
+    "{i}Trees...huts...bushes...{/i}"
 
-    p "…eh?"
+    "It seems like I’ve been suddenly transported to a forest. In the distance, a person could be seen running this way."
+
+    p "..."
+    p "...eh?"
 
     play sound bushrustling
 
-    "I see a bush beside me was moving and suddenly something popped out from it"
+    "The bush beside me suddenly started moving, and something suddenly popped out...!"
 
-    "??" "You! Are you the one??"
+    "??" "You! Are you the chosen one??"
 
-    "It was a girl with a cat ear hoodie and wearing an eyepatch"
+    "It was a girl wearing a cat ear hoodie and an eyepatch."
 
-    # idle
+    show hitona2 idle with dissolve
 
     p "Huh? What are you talking about?"
 
-    #pout2
+    show hitona2 pout
 
-    "??" "Based on your expression it seems you have been cursed by the brain manipulation spell"
+    "??" "Based on your expression it seems you have been cursed by a brain manipulation spell."
 
-    #smile1
+    show hitona2 smile1
 
-    "??" "I am just glad that they didn’t manage to control you completely instead only manage to erase some of your memory"
+    "??" "It’s good that you aren’t being completely controlled though, and are only suffering from some memory loss."
 
-    "??" "In that case, a proper introduction is required"
+    "??" "In that case, a proper introduction is required!"
 
-    e "I am Majna Eden Bat Azuma Nula Sedun, you can just call me Eve"
+    "??" "I am Majna Eden Bat Azuma Nula Sedun"
 
-    p "Huh???? There are so many things I want to point out but first…how did that become Eve???!"
+    e "But you can just call me Eve~"
+
+    p "Huh???? Wait, there are so many things I want to point out...but first…how did that become Eve??!!"
 
     play sound staffsummon
 
-    "This girl suddenly manifested a staff from nowhere onto her hand"
+    "Without answering, Eve suddenly manifested a staff out of nowhere and into her hand."
 
-    #idle
+    show hitona2 idle
 
     play sound magiccasting
 
-    p "By the blessing of the wind, cleanse this girl from its curse"
+    p "By the blessing of the wind, cleanse this girl from the curse!"
 
-    "As she said that, my body lighted up a bit then dimmed back"
+    "When she said that, my body lit up for a moment, then returned to normal."
 
-    #angry3
+    show hitona2 angry
 
-    e "I see so your name is Hitona, and you were summoned here by…hmm how do I say this name… ‘Risu…’ dunno how to say it but I have to say my thanks to them later"
+    e "I see, I see, so your name is Hitona Kohigashi, and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
 
-    p "What are you talking about…"
+    p "What in the world are you talking about..."
 
-    #smile1
+    show hitona2 smile1
 
-    e "Well welcome to the Kingdom of Soso!"
+    e "Well, don’t fuss over the small things! Welcome to the Kingdom of Soso!"
 
-    e "The kingdom of magic~"
+    e "Also known as the kingdom of magic!"
 
     p "Magic?"
 
-    e "Just so you know this Kingdom is known for its usage of magic"
+    e "This Kingdom is renowned for its usage of magic!"
 
-    #angry3
+    show hitona2 angry
 
-    e "But because of the current king, King Achnost, he’s suppressing the usage of it by monopolizing it"
+    e "However, because the current king, King Achnost, is monopolizing the usage of magic, the use of magic has been suppressed."
 
-    #angry2
+    show hitona2 surprised
 
-    e "King Achnost is the worst! He is taking tax from his people way too much just for his own benefit"
+    e "King Achnost is the worst! He is taxing his people way too much just for his own benefit!"
 
-    p "Is that so…"
+    p "Is that...so..."
 
-    #angry3
+    show hitona2 angry
 
-    e "Because of that rebels were popping out one by one and band together to defeat the king"
+    e "Because of that, rebels popped out one by one and banded together to take down the king."
 
-    e "But because of the king monopolizes magic, the rebels are defenseless and now is no more"
+    e "But, since the king monopolizes magic, the defenseless rebels were easily suppressed."
 
-    p "Haaa…"
+    p "Haaa..."
 
-    #laugh2
+    show hitona2 laugh
 
-    e "With that! I shall defeat the king!"
+    e "However! This Eve here has decided to take down the king!"
 
     p "Huh??"
 
-    #angry3
+    show hitona2 angry
 
-    e "King Achnost only order people around and then laze around after!"
+    e "King Achnost only orders people around and lazes around!"
 
-    #smug1
+    show hitona2 smug
 
     e "I want to be a NEET King like him!"
 
-    p "Wow…"
+    "{i}Wow...{/i}"
 
     play sound footstepforest
 
-    "Now that think about it…there is someone who is running towards here for a while"
+    "{i}Now that think about it...there was someone running in this direction earlier wasn’t there...{/i}"
 
-    "And now he’s here"
+    "{i}Ah, here they are.{/i}"
 
-    #soldier
-    #angry3
+    show soldier with dissolve
+    show hitona2 angry
 
-    so "You there! Halt!"
+    so "You over there! Halt!"
 
-    p "We weren’t even moving though…"
+    "{i}We weren’t even moving at all though...{/i}"
 
-    e "Geeeh, it’s the guard…Well Hitona going to the forest is a bad idea so I guess we just have to stop him here!"
+    e "Geeeh, it’s a soldier..."
 
-    p "What?"
+    e "Well, it’s no good having Hitona go deeper into the forest, so I guess we just have to stop him here!"
+
+    p "W...What!?"
 
     play sound staffsummon
 
-    e "Here a staff you can use, it has ‘Wind Blast’ spell In it"
+    e "Here, a staff! It has 'Wind Blast' spell stored inside!"
 
-    p "Wait…what??"
+    p "Wai...huuhhh?!?!"
 
-    e "Help me, I’ll properly explain everything after this"
+    e "I’ll properly explain after this so help me out!"
 
-    #blank
+    hide hitona2
+    hide soldier
 
     stop music fadeout 1.0
 
     '''
-    You’re going to get into a fight
+    A fight is about to start!
 
-    Here you can use spells or items to attack or heal
+    You can use spells or items to attack and heal!
 
-    If you use an attacking spell you can multiply your damage by winning the rock paper scissor!
+    If you use an attacking spell, you can double your damage by winning rock paper scissors!
 
-    If you lose, you’ll do half damage
+    But, if you lose, your damage will be halved instead, so be careful!
 
-    What’s a  better way to learn then just try it? Let’s go!
+    The fastest way to learn is to just try it, so let’s go!
     '''
 
     play music battletheme_bgm fadein 1.0 volume 0.5
@@ -153,8 +161,6 @@ label r2_start:
         fight_label = "r2_start_after_battle"
         x = 0
 
-    "FIGHT!"
-
     jump r2_fight
 
 label r2_start_after_battle:
@@ -164,67 +170,71 @@ label r2_start_after_battle:
     hide screen multi_sprite
     play music forest fadein 1.0
 
-    #smug1
+    show hitona2 smug with dissolve
 
     e "That was easy~"
 
-    p "How was that easy…it took my everything just to cast some spell…and how I could use magic..."
+    p "What part of that was easy...it took my everything just to cast a spell..."
 
-    "It feels like I only got confused since I got here"
+    p "Wait no, to begin with, I shouldn’t even be able to use magic right?"
 
-    "And I am so exhausted from that fight…"
+    "{i}Feels like I’ve only been getting more and more confused ever since I got here{/i}"
 
-    #idle
+    "{i}That fight was so exhausting too...{/i}"
 
-    e "Well everyone can use magic if they have a spell orb"
+    show hitona2 idle
+
+    e "Well anyone can use magic if they have a spell orb"
 
     p "Spell orb?"
 
-    e "Yup, it’s an orb where magic is stored"
+    e "Yup, it’s an orb that stores magic."
 
-    e "Like the one you used, when you use magic spell stored in the orb you use your own energy to activate it"
+    e "Like the orb in that staff you used, by using your own energy to activate it, the magic spell stored in the orb can be used."
 
-    p "So why did that soldier attack us again?"
+    p "So anyways, why did that soldier attack us again?"
 
-    #laugh2
+    e "Ah."
 
-    e "Ah…because I’m on the wanted list"
+    show hitona2 laugh
 
-    p "Because you were rebelling against the king before?"
+    e "It’s probably because I’m on the wanted list."
 
-    #idle
+    p "Because you were rebelling against the king?"
 
-    e "Well that is one but it’s mainly because I’ve been collecting and stealing orbs from all around"
+    show hitona2 idle
 
-    p "Eeeeeh?"
+    e "Well there’s also that of course."
 
-    e "Well you know I did say the king is monopolizing all the magic, so no one is allowed to use it"
+    e "But it’s probably because I’ve been collecting and stealing spell orbs from all around?"
 
-    #smile1
+    p "Ehhhh?"
+
+    e "Well I mentioned it earlier right? About how the king is monopolizing magic and all."
+
+    show hitona2 smile1
 
     e "So here I am being a wanted person~"
 
     e "Well either way, come with me Hitona!"
 
-    p "Eeh why?"
+    p "Ehh, why?"
 
-    #idle
+    show hitona2 idle
 
-    e "You don’t know where to go anyway right?"
+    e "You don’t have anywhere to go anyways, right?"
 
-    "I looked at my room…which is not there anymore…"
+    "I looked around my room...but I’m no longer in my room."
 
-    p "Fine then…"
+    p "Fine then..."
 
-    #smile2
+    show hitona2 smile2
 
     e "Let’s go then~"
 
     stop music fadeout 1.0
 
-    "You can check same place more than once"
-
-    "Be sure to check them all!"
+    "Things may change if you visit the same place a second time. Be sure to check them all!"
 
     play music adventure_bgm fadein 1.0
 

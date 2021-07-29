@@ -10,18 +10,6 @@ label r2_forest:
     label forest_menu:
         "Where to go?"
         call screen forest_map
-        menu:
-            "Where to go?"
-            "Forest Spot 1":
-                jump forest_spot_1
-            "Forest Spot 2":
-                jump forest_spot_2
-            "Hut 1":
-                jump forest_hut_1
-            "Hut 2":
-                jump forest_hut_2
-            "Pathway":
-                jump forest_exit
 
 label forest_spot_1:
     if f_spot1 == 0:
@@ -31,35 +19,39 @@ label forest_spot_1:
 
         e "Why are you going there Hitona?"
 
-        p "Hey I don’t see this kind of thing often you know"
+        p "Hey I don’t go to these types of places very often you know."
 
         p "Oooh what’s this? Looks kinda shiny"
 
-        e "Shiny? What’s shiny? Nothing is…oooh"
+        e "Shiny? What’s shiny? Nothing is...oooh"
 
         #angry3
 
-        e "I advised you to not touch that"
+        e "I advise you not to touch that"
 
-        p "Why not? It’s shiny…"
+        p "Why not? It’s shiny..."
 
-        "The one I’m looking at is shining gold and looks like a cucumber"
+        "It shines like gold and looks like a cucumber."
 
-        e "No seriously, don’t touch it…it won’t kill you but…"
+        e "No seriously. Don’t touch it. It won’t kill you but..."
 
         "I pick it up"
 
-        "…"
+        "..."
 
-        "I put it back down…"
+        "I put it back down"
 
-        p "WHY DIDN’T YOU TELL ME?! IT’S TURD!"
+        p "WHY DIDN’T YOU TELL ME?!"
 
-        p "SHINY TURD! HOW CAN A TURD BE THAT SHINY! NOOOOO!"
+        p "IT’S TURD!"
 
-        e "It has an illusion spell to it that makes it look like gold. So yeah…"
+        p "HOW CAN A TURD BE THAT SHINY!"
 
-        "Eve casted a spell to make water to wash my hands…"
+        p "NOOOOO"
+
+        e "It has an illusion spell applied on it that makes it look like gold. So yeah..."
+
+        "Eve casted a spell to create water so I could wash my hand."
 
         jump forest_menu
 
@@ -67,19 +59,21 @@ label forest_spot_1:
 
         #surprised1
 
-        e "Why are you going there again…do you subconsciously have a fascination for turd…"
+        e "Why are you going there again? Do you have a fascination for turd?"
 
-        "I looked at the thing"
+        p "There’s no way in hell!"
 
-        p "That thing truly looks like gold…"
+        "I looked at the thing."
 
-        p "Who the hell would make a gold turd in the middle of the forest"
+        p "It really looks like gold..."
+
+        p "Who the hell would make a gold turd in the middle of the forest..."
 
         #smug1
 
-        e "“…Who else?! But I Majna Eden Bat Azuma Nula Sedun"
+        e "...Who else?! But I, Majna Eden Bat Azuma Nula Sedun!"
 
-        p "“…If I wasn’t so exhausted I would slice you to pieces with this staff, not using magic, just using this blunt staff"
+        p "If I weren’t so exhausted I would slice you to pieces with this staff! Not using magic, just hitting you with this staff!"
 
         jump forest_menu
 
@@ -90,19 +84,19 @@ label forest_spot_2:
 
         #idle
 
-        e "I sense a magical power from here"
+        e "I perceive a certain magical power from here."
 
         p "You can do that?"
 
         #smug1
 
-        e "You underestimate me too much young one"
+        e "You underestimate me too much, young one"
 
         #smile1
 
-        e "Ah look something is shiny! It’s a healing spell orb!"
+        e "Look, over there! It’s shining! It’s a healing spell orb!"
 
-        e "Oh but it’s a one time use, still useful to have. Take it Hitona"
+        e "Oh, it’s one time use, but still useful to have. Take it Hitona!"
 
         play sound correctchoice
 
@@ -116,13 +110,19 @@ label forest_spot_2:
 
         #idle
 
-        p "I wonder if I can find anything else here"
+        p "I wonder if I can find anything else here..."
 
-        e "Naah you won’t, the great Majna doesn’t sense anything from there anymore. Let’s go"
+        e "Naah you won’t."
+
+        e "This great Majna does not sense any magic power here."
+
+        e "Well, there are some edible weeds I guess."
+
+        e "If you filter some river water and eat these weeds, you can probably survive for a while."
+
+        p "I’ll pass."
 
         jump forest_menu
-
-
 
 label forest_hut_1:
     if f_hut1 == 0:
@@ -130,19 +130,19 @@ label forest_hut_1:
 
         #idle
 
-        p "I wonder if anyone is home?"
+        p "Is anyone home?"
 
         #laugh2
 
-        e "Bring everything to the great Nula!"
+        e "Listen up! Offer all your possessions to this great Nula!"
 
         play sound dooropen
 
-        "Eve just barged in…"
+        "Without any trace of courtesy, Eve barged into the house."
 
         p "Why did you do that?!"
 
-        "But inside…it was empty and full of dust"
+        "But, there was no one inside the empty hut filled with dust."
 
         #idle
 
@@ -150,11 +150,13 @@ label forest_hut_1:
 
         e "This place is wiped out as you can see"
 
-        "I looked down and…there were skeletons around…"
+        e "No one is here anymore."
+
+        "Looking down, I saw skeletons scattered across the floor."
 
         p "?!"
 
-        e "Nothing to see here~"
+        e "There’s nothing to see here."
 
         jump forest_menu
 
@@ -162,15 +164,17 @@ label forest_hut_1:
 
         #idle
 
-        p "What do you mean this place is wiped out?"
+        p "What did you mean by “no one is here anymore”"
 
-        e "This place was one of the place where the rebels fought the army"
+        e "This place was one of the places where the rebels fought the army."
 
-        e "While magic is quite useful, some are scary young Hitona. Like the one that was used here"
+        e "Like the one that was used here."
 
-        p "What was used here?"
+        p "What magic was used here…?"
 
-        e "You don’t want to know~ Let’s move on"
+        e "You don’t want to know that."
+
+        e "Anyways, let’s go somewhere else!"
 
         jump forest_menu
 
@@ -182,11 +186,11 @@ label forest_hut_2:
 
         play sound dooropen
 
-        e "Look look Hitona! What a rare fine! A spell item!"
+        e "Look, look, Hitona! I found a rare item! A spell orb!"
 
-        e "I think this one spews fire or something"
+        e "I think the spell in this one spews fire or something."
 
-        e "It’ll break after one use so don’t use it willy nilly"
+        e "It seems like it’ll break after one use though, so don’t use it willy nilly."
 
         play sound correctchoice
 
@@ -200,33 +204,40 @@ label forest_hut_2:
 
         #idle
 
-        p "Can I try the item now Eve?"
+        p "Hey, Eve."
+
+        p "Can I try using that spell orb?"
 
         #angry3
 
-        e "I told you it’ll break after one use"
+        e "Didn’t I say it earlier? It’ll break after one use."
 
-        p "But…"
+        p "But..."
 
         #idle
 
-        e "Eve will get you another spell okay little one~"
+        e "Haaa...I’ll get you another spell orb later, okay."
 
-        p "Didn’t you say you were stealing the orbs…give me another!"
+        p "Didn’t you say you were stealing the orbs?"
+
+        p "Give me some!"
 
         #pout2
 
-        e "It’s in my staff…"
+        e "It’s in my staff..."
 
-        p "…"
+        p "..."
 
-        e "…"
+        e "..."
 
         jump forest_menu
 
 label forest_exit:
+
+    "Leave the forest?"
+
     menu:
-        "You sure? (You won't be able to come back here again)"
+        "(Warning: you won’t be able to come back after leaving)"
         "Yes":
             jump r2_map_1
         "No":
