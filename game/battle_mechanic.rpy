@@ -54,7 +54,7 @@ init python:
     "item": [],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/ko.png", 200]
     }
 
     eve_stats = {
@@ -65,7 +65,7 @@ init python:
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
+    "img":["images/kohi_r2/angry.png", "images/kohi_r2/ko.png", 200]
     }
 
     soldier1_stats = {
@@ -76,7 +76,7 @@ init python:
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
+    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200]
     }
 
     soldier2_stats = {
@@ -87,7 +87,7 @@ init python:
     "item": ["Heal Orb", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
+    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200]
     }
 
     soldier3_stats = {
@@ -98,7 +98,7 @@ init python:
     "item": ["Heal Orb", "God Blessing"],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
+    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200]
     }
 
     king_stats = {
@@ -109,7 +109,7 @@ init python:
     "item": ["God Blessing", "Flamethrower", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/hover.png"]
+    "img":["images/king_idle.png", "images/king_idle.png", 0]
     }
 
     multiplier_list = [0.5, 1, 2]
@@ -132,7 +132,7 @@ screen single_stat(name, hp, hp_max, ypos):
 
                 bar:
                     value AnimatedValue(hp, hp_max, 1.0)
-                    xmaximum 180
+                    xmaximum 150
                     ysize 26
                     yalign 0.5
 
@@ -155,24 +155,25 @@ screen multi_stat():
     use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0)
     hbox xalign 0.5 spacing 90:
         for someone in fight_list:
-            use single_stat(someone["name"], someone["hp"], someone["hp_max"], 200)
+            use single_stat(someone["name"], someone["hp"], someone["hp_max"], someone["img"][2])
 
 
 screen single_sprite(image_name_idle, image_name_hover, stats):
     imagebutton:
         if stats == hit:
-            idle Transform(Image(image_name_idle), zoom=0.8) at shake
+            idle Transform(Image(image_name_idle), zoom=0.65) at shake
 
         if stats["hp"] > 0:
-            idle Transform(Image(image_name_idle), zoom=0.8,)
+            idle Transform(Image(image_name_idle), zoom=0.65)
         else:
-            idle Transform(Image(image_name_hover), zoom=0.8)
+            idle Transform(Image(image_name_hover), zoom=0.65)
 
 screen multi_sprite():
-    hbox xalign 0.5 ypos 300:
-        spacing 20
+    hbox xalign 0.5 yalign 1.0:
+        spacing 40
         for someone in fight_list:
-            use single_sprite(someone["img"][0], someone["img"][1], someone)
+            hbox yalign 1.0:
+                use single_sprite(someone["img"][0], someone["img"][1], someone)
 
 screen battle_action():
     frame:
@@ -183,8 +184,8 @@ screen battle_action():
         vbox spacing 10:
             text "{b}What to do?{/b}"
             hbox spacing 30:
-                textbutton "Spell" action Jump("spell_option")
-                textbutton "Item" action Jump("item_option")
+                textbutton "Use Spell" action Jump("spell_option")
+                textbutton "Use Item" action Jump("item_option")
 
 screen spell_action():
     frame:
@@ -218,7 +219,7 @@ screen target_action():
         xalign 0.5
         yalign 1.0
         vbox spacing 10:
-            text "{b}Who to target?{/b}"
+            text "{b}Who are you targeting?{/b}"
             for someone in ally_list:
                 textbutton someone["name"] action Call("target_option", someone)
             for someone in enemy_list:
@@ -233,10 +234,9 @@ screen janken_action():
         yalign 1.0
         vbox spacing 10:
             text "{b}Rock Paper Scissor!{/b}"
-            hbox spacing 30:
-                textbutton "Rock" action Call("after_rock_paper_scissor", "rock")
-                textbutton "Paper" action Call("after_rock_paper_scissor", "paper")
-                textbutton "Scissor" action Call("after_rock_paper_scissor", "scissor")
+            textbutton "Rock" action Call("after_rock_paper_scissor", "rock")
+            textbutton "Paper" action Call("after_rock_paper_scissor", "paper")
+            textbutton "Scissor" action Call("after_rock_paper_scissor", "scissor")
 
 screen janken_enemy_action():
     frame:
@@ -244,12 +244,11 @@ screen janken_enemy_action():
         ypadding 50
         xalign 0.5
         yalign 1.0
-        vbox spacing 30:
+        vbox spacing 10:
             text "{b}Rock Paper Scissor!{/b}"
-            hbox spacing 10:
-                textbutton "Rock" action Call("after_rock_paper_scissor_enemy", "rock")
-                textbutton "Paper" action Call("after_rock_paper_scissor_enemy", "paper")
-                textbutton "Scissor" action Call("after_rock_paper_scissor_enemy", "scissor")
+            textbutton "Rock" action Call("after_rock_paper_scissor_enemy", "rock")
+            textbutton "Paper" action Call("after_rock_paper_scissor_enemy", "paper")
+            textbutton "Scissor" action Call("after_rock_paper_scissor_enemy", "scissor")
 
 default hit = 0
 
@@ -372,7 +371,7 @@ label fight_log:
             $ hitona_stats["item"].remove(spell_name)
             $ item_name = 0
 
-        "[self_name] casted [spell_name] to [target_name]"
+        "[self_name] casted [spell_name] on [target_name]"
 
         if atk > 0:
             $ target["hp"] = target["hp"] - int((atk * multiplier))
@@ -383,7 +382,7 @@ label fight_log:
             show screen multi_stat
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] received [atk] damage"
+            "[target_name] took [atk] damage"
             $ hit = 0
         else:
             $ target["hp"] = target["hp"] + heal
@@ -422,7 +421,7 @@ label fight_log:
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(1.0, hard=True)
             $ hit = target
-            "[self_name] received 5 damage from burn status"
+            "[self_name] took 5 damage from burn status"
             $ hit = 0
     else:
         $ self["par"] = self["par"] - 1
@@ -441,7 +440,7 @@ label fight_log:
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
             $ hit = self
-            "[self_name] received 5 damage from burn status"
+            "[self_name] took 5 damage from burn status"
             $ hit = 0
 
     if target["hp"] <= 0:
@@ -452,7 +451,7 @@ label fight_log:
 
         $ fight_order.remove(target)
 
-        "[target_name] fainted!"
+        "[target_name] has been defeated!"
 
     if self["hp"] <= 0:
         if self in ally_list:
@@ -462,11 +461,11 @@ label fight_log:
 
         $ fight_order.remove(self)
 
-        "[self_name] fainted!"
+        "[self_name] has been defeated!"
 
     jump r2_fight
 
 label fight_fail:
-    "You lost the fight, never to see the Kingdom save..."
+    "Having lost the fight, you’ve become unable to save the kingdom."
 
     return
