@@ -54,7 +54,8 @@ init python:
     "item": [],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/idle.png", "images/kohi_r2/ko.png", 200]
+    "img":["images/kohi_r2/idle.png", "images/kohi_r2/ko.png", 200],
+    "silent_death": False,
     }
 
     eve_stats = {
@@ -65,18 +66,20 @@ init python:
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img":["images/kohi_r2/angry.png", "images/kohi_r2/ko.png", 200]
+    "img":["images/kohi_r2/angry.png", "images/kohi_r2/ko.png", 200],
+    "silent_death": False,
     }
 
     soldier1_stats = {
-    "name": "Soldier 1",
+    "name": "Soldier",
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast"],
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200]
+    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200],
+    "silent_death": False,
     }
 
     soldier2_stats = {
@@ -87,7 +90,8 @@ init python:
     "item": ["Heal Orb", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200]
+    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200],
+    "silent_death": False,
     }
 
     soldier3_stats = {
@@ -98,7 +102,8 @@ init python:
     "item": ["Heal Orb", "God Blessing"],
     "burn": 0,
     "par": 0,
-    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200]
+    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200],
+    "silent_death": False,
     }
 
     king_stats = {
@@ -109,7 +114,8 @@ init python:
     "item": ["God Blessing", "Flamethrower", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img":["images/king_idle.png", "images/king_idle.png", 0]
+    "img":["images/king_idle.png", "images/king_idle.png", 0],
+    "silent_death": True,
     }
 
     multiplier_list = [0.5, 1, 2]
@@ -245,7 +251,7 @@ label r2_fight:
             if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
                 self = fight_order_temp[x]
                 x = x + 1
-                renpy.say(narrator, __("It's %s's turn") % __(self["name"]))
+                renpy.say(narrator, __("It's {color=#00c}%s{/color}'s turn.") % __(self["name"]))
                 if self["name"] == "Hitona":
                     renpy.jump("fight_option")
                 else:
@@ -350,12 +356,14 @@ label load_item(item):
 
 label target_action:
     menu:
-        set {"Hitona", "Eve", "Soldier 1", "Soldier 2", "King Achnost"}.difference([s["name"] for s in ally_list + enemy_list])
+        set {"Hitona", "Eve", "Soldier", "Soldier 1", "Soldier 2", "King Achnost"}.difference([s["name"] for s in ally_list + enemy_list])
         "Who are you targeting?"
         "Hitona":
             $ target = [s for s in ally_list if s["name"] == "Hitona" ][0]
         "Eve":
             $ target = [s for s in ally_list if s["name"] == "Eve"][0]
+        "Soldier":
+            $ target = [s for s in enemy_list if s["name"] == "Soldier"][0]
         "Soldier 1":
             $ target = [s for s in enemy_list if s["name"] == "Soldier 1"][0]
         "Soldier 2":
@@ -387,7 +395,7 @@ label rock_paper_scissor:
 
 label rock_paper_scissor_enemy:
     $ self_name = self["name"]
-    "[self_name] is targeting Hitona! Let's defend!"
+    "{color=#00c}[self_name]{/color} is targeting {color=#00c}Hitona{/color}! Let's defend!"
     call do_janken(True)
     jump fight_log
 
@@ -438,48 +446,45 @@ label fight_log:
             $ hitona_stats["item"].remove(spell_name)
             $ item_name = 0
 
-        "[self_name] casted [spell_name] on [target_name]!"
+        "{color=#00c}[self_name]{/color} casted {color=#909}[spell_name]{/color} on {color=#00c}[target_name]{/color}!"
 
         if atk > 0:
-            $ target["hp"] = target["hp"] - int((atk * multiplier))
-            if target["hp"] < 0:
-                $ target["hp"] = 0
-            $ atk = int(atk * multiplier)
+            $ atk = min(target["hp"], int(atk * multiplier))
+            $ target["hp"] = target["hp"] - atk
             $ hit = target
             show screen multi_stat
             window hide
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] took [atk] damage!"
+            "{color=#00c}[target_name]{/color} took {color=#d00}[atk]{/color} damage!"
             $ hit = 0
         else:
+            $ heal = min(target["hp_max"] - target["hp"], heal)
             $ target["hp"] = target["hp"] + heal
-            if target["hp"] > target["hp_max"]:
-                $ target["hp"] = target["hp_max"]
             show screen multi_stat
             window hide
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] has been healed [heal]HP!"
+            "{color=#00c}[target_name]{/color} has been healed {color=#090}[heal]{/color} HP!"
 
-        if burn > 0:
+        if burn > 0 and target["hp"] > 0:
             $ target["burn"] = burn
             #play sound fireball
             $ hit = target
             window hide
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] got burnt for the next 5 turns!"
+            "{color=#00c}[target_name]{/color} got burnt for the next 5 turns!"
             $ hit = 0
 
-        if par > 0:
+        if par > 0 and target["hp"] > 0:
             $ target["par"] = par
             #play sound paralyzingspark
             $ hit = target
             window hide
             $ renpy.play(audio.paralyzingspark, channel='sound')
             $ renpy.pause(delay=2.0, hard=True)
-            "[target_name] got paralyzed for the next 2 turns!"
+            "{color=#00c}[target_name]{/color} got paralyzed for the next 2 turns!"
             $ hit = 0
 
         if self["burn"] > 0:
@@ -493,7 +498,7 @@ label fight_log:
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(1.0, hard=True)
             $ hit = target
-            "[self_name] took 5 damage from the burn!"
+            "{color=#00c}[self_name]{/color} took {color=#d00}5{/color} damage from the burn!"
             $ hit = 0
     else:
         $ self["par"] = self["par"] - 1
@@ -501,7 +506,7 @@ label fight_log:
         window hide
         $ renpy.play(audio.paralyzingspark, channel='sound')
         $ renpy.pause(2.0, hard=True)
-        "[self_name] is still paralyzed!"
+        "{color=#00c}[self_name]{/color} is still paralyzed!"
 
         if self["burn"] > 0:
             $ self["burn"] = self["burn"] - 1
@@ -513,7 +518,7 @@ label fight_log:
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
             $ hit = self
-            "[self_name] took 5 damage from the burn!"
+            "{color=#00c}[self_name]{/color} took {color=#d00}5{/color} damage from the burn!"
             $ hit = 0
 
     if target["hp"] <= 0:
@@ -524,7 +529,8 @@ label fight_log:
 
         $ fight_order.remove(target)
 
-        "[target_name] has been defeated!"
+        if not target["silent_death"]:
+            "{color=#00c}[target_name]{/color} has been defeated!"
 
     if self["hp"] <= 0:
         if self in ally_list:
@@ -534,7 +540,8 @@ label fight_log:
 
         $ fight_order.remove(self)
 
-        "[self_name] has been defeated!"
+        if not self["silent_death"]:
+            "{color=#00c}[self_name]{/color} has been defeated!"
 
     jump r2_fight
 
