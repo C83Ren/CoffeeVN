@@ -29,25 +29,25 @@ init python:
 
     #ATK, Heal, Burn, Paralyze
     spell_list = {
-    "Wind Blast": [10, 0, 0, 0, "audio/sfx/wind_blast.mp3"],
-    "Wind Cutter": [15, 0, 0, 0, "audio/sfx/wind_cutter.mp3"],
-    "Fire Ball": [10, 0, 2, 0, "audio/sfx/fire_ball.mp3"],
-    "Electric Bolt": [8, 0, 0, 2, "audio/sfx/electric_bolt.mp3"],
-    "Wind Lance": [20, 0, 0, 0, "audio/sfx/wind_lance.mp3"],
-    "Fire Wall": [15, 0, 5, 0, "audio/sfx/fire_wall.mp3"],
-    "Lightning Strike": [12, 0, 0, 5, "audio/sfx/lightning_strike.mp3"]
+    _("Wind Blast"): [10, 0, 0, 0, "audio/sfx/wind_blast.mp3"],
+    _("Wind Cutter"): [15, 0, 0, 0, "audio/sfx/wind_cutter.mp3"],
+    _("Fire Ball"): [10, 0, 2, 0, "audio/sfx/fire_ball.mp3"],
+    _("Electric Bolt"): [8, 0, 0, 2, "audio/sfx/electric_bolt.mp3"],
+    _("Wind Lance"): [20, 0, 0, 0, "audio/sfx/wind_lance.mp3"],
+    _("Fire Wall"): [15, 0, 5, 0, "audio/sfx/fire_wall.mp3"],
+    _("Lightning Strike"): [12, 0, 0, 5, "audio/sfx/lightning_strike.mp3"]
     }
 
     item_list = {
-    "Heal Orb": [0, 20, 0, 0, "audio/sfx/heal.mp3"],
-    "Flamethrower": [50, 0, 5, 0, "audio/sfx/flamethrower.mp3"],
-    "Heal Aura": [0, 50, 0, 0, "audio/sfx/heal.mp3"],
-    "God Blessing": [0, 100, 0, 0, "audio/sfx/heal.mp3"],
-    "Paralyzing Spark": [30, 0, 0, 5, "audio/sfx/paralyzing_spark.mp3"]
+    _("Heal Orb"): [0, 20, 0, 0, "audio/sfx/heal.mp3"],
+    _("Flamethrower"): [50, 0, 5, 0, "audio/sfx/flamethrower.mp3"],
+    _("Heal Aura"): [0, 50, 0, 0, "audio/sfx/heal.mp3"],
+    _("God Blessing"): [0, 100, 0, 0, "audio/sfx/heal.mp3"],
+    _("Paralyzing Spark"): [30, 0, 0, 5, "audio/sfx/paralyzing_spark.mp3"]
     }
 
     hitona_stats = {
-    "name": "Hitona",
+    "name": _("Hitona"),
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast"],
@@ -58,7 +58,7 @@ init python:
     }
 
     eve_stats = {
-    "name": "Eve",
+    "name": _("Eve"),
     "hp": 300,
     "hp_max": 300,
     "spell": ["Wind Blast", "Fire Ball"],
@@ -69,7 +69,7 @@ init python:
     }
 
     soldier1_stats = {
-    "name": "Soldier 1",
+    "name": _("Soldier 1"),
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast"],
@@ -80,7 +80,7 @@ init python:
     }
 
     soldier2_stats = {
-    "name": "Soldier 1",
+    "name": _("Soldier 1"),
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast", "Fire Ball"],
@@ -91,7 +91,7 @@ init python:
     }
 
     soldier3_stats = {
-    "name": "Soldier 2",
+    "name": _("Soldier 2"),
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Cutter", "Electric Bolt"],
@@ -102,7 +102,7 @@ init python:
     }
 
     king_stats = {
-    "name": "King Achnost",
+    "name": _("King Achnost"),
     "hp": 500,
     "hp_max": 500,
     "spell": ["Wind Lance", "Fire Wall", "Lightning Strike"],
@@ -124,7 +124,7 @@ screen single_stat(name, hp, hp_max, ypos):
                 text "[name!t]"
 
             hbox:
-                text _("HP"):
+                text "HP":
                     min_width 40
                     yalign 0.5
 
@@ -264,7 +264,7 @@ label r2_fight:
             if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
                 self = fight_order_temp[x]
                 x = x + 1
-                renpy.say(narrator, "It's " + self["name"] + " turn")
+                renpy.say(narrator, __("It's %s's turn") % __(self["name"]))
                 if self["name"] == "Hitona":
                     renpy.jump("fight_option")
                 else:
@@ -311,9 +311,9 @@ label fight_option:
     call screen battle_action
     menu:
         "What to do?"
-        "Spell":
+        "Use Spell":
             jump spell_option
-        "Item":
+        "Use Item":
             jump item_option
 
 label spell_option:
@@ -371,7 +371,7 @@ label fight_log:
             $ hitona_stats["item"].remove(spell_name)
             $ item_name = 0
 
-        "[self_name] casted [spell_name] on [target_name]"
+        "[self_name] casted [spell_name] on [target_name]!"
 
         if atk > 0:
             $ target["hp"] = target["hp"] - int((atk * multiplier))
@@ -382,7 +382,7 @@ label fight_log:
             show screen multi_stat
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] took [atk] damage"
+            "[target_name] took [atk] damage!"
             $ hit = 0
         else:
             $ target["hp"] = target["hp"] + heal
@@ -391,7 +391,7 @@ label fight_log:
             show screen multi_stat
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] is healed for [heal]"
+            "[target_name] has been healed [heal]HP!"
 
         if burn > 0:
             $ target["burn"] = burn
@@ -399,7 +399,7 @@ label fight_log:
             $ hit = target
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
-            "[target_name] got burnt for the next 5 turns"
+            "[target_name] got burnt for the next 5 turns!"
             $ hit = 0
 
         if par > 0:
@@ -408,7 +408,7 @@ label fight_log:
             $ hit = target
             $ renpy.play(audio.paralyzingspark, channel='sound')
             $ renpy.pause(delay=2.0, hard=True)
-            "[target_name] got paralyzed for the next 2 turns"
+            "[target_name] got paralyzed for the next 2 turns!"
             $ hit = 0
 
         if self["burn"] > 0:
@@ -421,7 +421,7 @@ label fight_log:
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(1.0, hard=True)
             $ hit = target
-            "[self_name] took 5 damage from burn status"
+            "[self_name] took 5 damage from the burn!"
             $ hit = 0
     else:
         $ self["par"] = self["par"] - 1
@@ -440,7 +440,7 @@ label fight_log:
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
             $ hit = self
-            "[self_name] took 5 damage from burn status"
+            "[self_name] took 5 damage from the burn!"
             $ hit = 0
 
     if target["hp"] <= 0:
