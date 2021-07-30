@@ -67,7 +67,7 @@ label r1_home_bad_end:
 
     p "{i}She was... right... the...{/i}"
 
-    with Fade(2.0, 1.0, 2.0, ’#000’)
+    with Fade(2.0, 1.0, 2.0, "#000")
 
     scene bg famres
 
