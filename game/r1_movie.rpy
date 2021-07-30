@@ -17,7 +17,7 @@ label r1_movie:
 
     $ movieflag = 1
 
-    if famiresflag:
+    if famresflag:
         "I paid for the meal, and then we went to a nearby cinema."
     else:
         "We went to a nearby cinema."

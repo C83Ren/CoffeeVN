@@ -38,12 +38,12 @@ label r1_7_11:
         "7/*1 P*young Sobameshi":
             $ conbini_food = "7/*1 P*young Sobameshi"
         "Sev*n Pr*mium Gold Hamburg Steak":
-            $ combini_food = "Sev*n Pr*mium Gold Hamburg Steak"
+            $ conbini_food = "Sev*n Pr*mium Gold Hamburg Steak"
         "Sev*n Pr*mium Spaghetti Neapolitan":
-            $ combini_food = "Sev*n Pr*mium Spaghetti Neapolitan"
-    $ add_choice_to_history(combini_food)
+            $ conbini_food = "Sev*n Pr*mium Spaghetti Neapolitan"
+    $ add_choice_to_history(conbini_food)
 
-    p "I recommend getting the [combini_food!t]!"
+    p "I recommend getting the [conbini_food!t]!"
 
     show hitona1 happy3
 
@@ -54,10 +54,6 @@ label r1_7_11:
     "After buying them, we found empty seats in the eat-in corner."
 
     show hitona1 idle1
-
-    p "Let’s eat!" (multiple=2)
-
-    s "Let’s eat!" (multiple=2)
 
     "Nom nom nom"
 
