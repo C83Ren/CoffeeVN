@@ -3,9 +3,9 @@ label r2_start:
 
     play music forest fadein 1.0
 
-    p "…"
+    p "..."
 
-    p "…"
+    p "..."
 
     "{i}Trees...huts...bushes...{/i}"
 
@@ -18,7 +18,7 @@ label r2_start:
 
     "The bush beside me suddenly started moving, and something suddenly popped out...!"
 
-    "??" "You! Are you the chosen one??"
+    "???" "You! Are you the chosen one??"
 
     "It was a girl wearing a cat ear hoodie and an eyepatch."
 
@@ -28,19 +28,19 @@ label r2_start:
 
     show hitona2 pout
 
-    "??" "Based on your expression it seems you have been cursed by a brain manipulation spell."
+    "???" "Based on your expression it seems you have been cursed by a brain manipulation spell."
 
     show hitona2 smile1
 
-    "??" "It’s good that you aren’t being completely controlled though, and are only suffering from some memory loss."
+    "???" "It’s good that you aren’t being completely controlled though, and are only suffering from some memory loss."
 
-    "??" "In that case, a proper introduction is required!"
+    "???" "In that case, a proper introduction is required!"
 
-    "??" "I am Majna Eden Bat Azuma Nula Sedun"
+    "???" "I am Majna Eden Bat Azuma Nula Sedun"
 
     e "But you can just call me Eve~"
 
-    p "Huh???? Wait, there are so many things I want to point out...but first…how did that become Eve??!!"
+    p "Huh???? Wait, there are so many things I want to point out...but first...how did that become Eve??!!"
 
     play sound staffsummon
 
@@ -125,7 +125,7 @@ label r2_start:
 
     play sound staffsummon
 
-    e "Here, a staff! It has 'Wind Blast' spell stored inside!"
+    e "Here, a staff! It has ’Wind Blast’ spell stored inside!"
 
     p "Wai...huuhhh?!?!"
 
@@ -136,7 +136,7 @@ label r2_start:
 
     stop music fadeout 1.0
 
-    '''
+    """
     A fight is about to start!
 
     You can use spells or items to attack and heal!
@@ -146,7 +146,7 @@ label r2_start:
     But, if you lose, your damage will be halved instead, so be careful!
 
     The fastest way to learn is to just try it, so let’s go!
-    '''
+    """
 
     play music battletheme_bgm fadein 1.0 volume 0.5
 
@@ -178,13 +178,13 @@ label r2_start_after_battle:
 
     p "Wait no, to begin with, I shouldn’t even be able to use magic right?"
 
-    "{i}Feels like I’ve only been getting more and more confused ever since I got here{/i}"
+    p "{i}Feels like I’ve only been getting more and more confused ever since I got here...{/i}"
 
-    "{i}That fight was so exhausting too...{/i}"
+    p "{i}That fight was so exhausting too...{/i}"
 
     show hitona2 idle
 
-    e "Well anyone can use magic if they have a spell orb"
+    e "Well anyone can use magic if they have a spell orb."
 
     p "Spell orb?"
 

@@ -18,7 +18,7 @@ translate japanese strings:
 
     # game/characters.rpy:7
     old "Soldier"
-    new "兵"
+    new "兵士"
 
     # game/characters.rpy:8
     old "Hitoni"
