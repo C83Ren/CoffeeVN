@@ -175,6 +175,60 @@ screen multi_sprite():
             hbox yalign 1.0:
                 use single_sprite(someone["img"][0], someone["img"][1], someone)
 
+screen rps_picker():
+    vbox xalign 0.5 yalign 0.2:
+        imagebutton:
+            idle Transform(Image('images/rps/rock player idle.png'), zoom=1.0)
+            focus_mask Transform(Image('images/rps/rock player idle.png'), zoom=1.0)
+            hover Transform(Image('images/rps/rock player hover.png'), zoom=1.0)
+            action Call("handle_rps_pick", what="rock")
+
+    vbox xalign 0.2 yalign 0.8:
+        imagebutton:
+            idle Transform(Image('images/rps/paper player idle.png'), zoom=0.8)
+            focus_mask Transform(Image('images/rps/paper player idle.png'), zoom=0.8)
+            hover Transform(Image('images/rps/paper player hover.png'), zoom=0.8)
+            action Call("handle_rps_pick", what="paper")
+
+    vbox xalign 0.8 yalign 0.8:
+        imagebutton:
+            idle Transform(Image('images/rps/scissor player idle.png'), zoom=0.8)
+            focus_mask Transform(Image('images/rps/scissor player idle.png'), zoom=0.8)
+            hover Transform(Image('images/rps/scissor player hover.png'), zoom=0.8)
+            action Call("handle_rps_pick", what="scissor")
+
+transform rps_before(left):
+    truecenter rotate 0
+    xoffset (-100 if left else 100)
+    yoffset -100
+    linear 0.2 truecenter rotate (90 if left else -90) xoffset 0 yoffset 0
+    linear 0.2 truecenter rotate 0 xoffset (-100 if left else 100) yoffset -100
+    pause 0.5
+    linear 0.2 truecenter rotate (90 if left else -90) xoffset 0 yoffset 0
+    linear 0.2 truecenter rotate 0 xoffset (-100 if left else 100) yoffset -100
+    pause 0.5
+    linear 0.1 truecenter rotate (30 if left else -30) xoffset (-50 if left else 50) yoffset -50
+    alpha 0
+
+transform rps_after(left):
+    alpha 0
+    pause 1.9
+    alpha 1
+    truecenter rotate (30 if left else -30)
+    xoffset (-50 if left else 50)
+    yoffset -50
+    linear 0.1 truecenter rotate (60 if left else -60) xoffset 0 yoffset 0
+
+screen rps_result(me, opp):
+    vbox xalign 0.2 yalign 0.5:
+        image 'images/rps/rock player idle.png' at rps_before(True)
+    vbox xalign 0.2 yalign 0.5:
+        image 'images/rps/' + me + ' player idle.png' at rps_after(True)
+    vbox xalign 0.8 yalign 0.5:
+        image 'images/rps/rock opponent idle.png' at rps_before(False)
+    vbox xalign 0.8 yalign 0.5:
+        image 'images/rps/' + opp + ' opponent idle.png' at rps_after(False)
+
 default hit = 0
 
 label r2_fight:
@@ -337,18 +391,23 @@ label rock_paper_scissor_enemy:
     call do_janken(True)
     jump fight_log
 
+label handle_rps_pick(what):
+    $ my_janken = what
+    return
+
 label do_janken(reverse):
     $ janken_list = ["rock", "paper", "scissor"]
     $ opp_janken = janken_list[renpy.random.randint(0,2)]
-    menu:
-        "Rock Paper Scissor!"
-        "Rock":
-            $ my_janken = "rock"
-        "Paper":
-            $ my_janken = "paper"
-        "Scissor":
-            $ my_janken = "scissor"
-    "[my_janken] vs [opp_janken]!"
+
+    $ _skipping = False
+    window hide
+    show screen rps_picker with dissolve
+    $ renpy.pause(hard=True)
+    hide screen rps_picker
+    $ _skipping = True
+
+    show screen rps_result(my_janken, opp_janken)
+    pause 2.3
     if reverse:
         $ multiplier = janken(opp_janken, my_janken)
         if multiplier < 1:
@@ -365,6 +424,7 @@ label do_janken(reverse):
             "You lost! Damage dealt has been halved!"
         else:
             "It's a tie!"
+    hide screen rps_result
     return
 
 label fight_log:
