@@ -10,11 +10,9 @@ label r1_shopping:
     else:
         "We went to the shopping district."
 
-    "you are shopping"
-
     p "Ahh, walks are great."
 
-    p "Nothing better than a nice walk after a nice…uhh…meal."
+    p "Nothing better than a nice walk after a nice... uhh... meal."
 
     "That meal really was something, all right."
 
@@ -22,15 +20,15 @@ label r1_shopping:
 
     show hitona1 bliss3
 
-    s "Napping is also nice though…"
+    s "Napping is also nice though..."
 
-    p "You got a point…"
+    p "You got a point..."
 
     "We walked around the shops."
 
     show hitona1 smile1
 
-    p "(Now that I look closely, Shiraishi really looks like me, doesn’t she…)"
+    p "{i}Now that I look closely, Shiraishi really looks like me, doesn’t she...{/i}"
 
     "Shiraishi suddenly stopped in front of a certain shop. It’s a costume shop."
 
@@ -44,8 +42,6 @@ label r1_shopping:
 
     s "Yes!"
 
-    s "Hitone onee-chan too!"
-
     p "Okay, let’s go in!"
 
     hide hitona1
@@ -54,7 +50,7 @@ label r1_shopping:
 
     "There were many outfits on display, such as nurse outfits, maid outfits, suits, and all sorts of dresses."
 
-    p "(Now that we’re here…I want to dress Shiraishi up!!)"
+    p "{i}Now that we’re here... I want to dress Shiraishi up!!{/i}"
 
     "I am fired up!"
 
@@ -64,7 +60,7 @@ label r1_shopping:
 
     s "Hmmm?"
 
-    p "How about we pick each other's outfits!"
+    p "How about we pick each other’s outfits!"
 
     show hitona1 stareyes3
 
@@ -78,13 +74,13 @@ label r1_shopping:
 
     "With that said, Shiraishi left on her own to pick an outfit for me."
 
-    "For some reason I feel like I’ll regret that decision, But this is a chance to dress Shiraishi up!"
+    "For some reason I feel like I’ll regret that decision. But this is a chance to dress Shiraishi up!"
 
     "No way I’m letting this chance go!"
 
-    "What would she look nice in… this is going to be hard."
+    "What would she look nice in... this is going to be hard."
 
-    "Shiraishi is so pure and innocent, that a contrasting color might work well, like say…black!"
+    "Shiraishi is so pure and innocent, that a contrasting color might work well, like say... black!"
 
     "Yes, black is truly the perfect color for someone that pure!"
 
@@ -92,15 +88,18 @@ label r1_shopping:
 
     "A long black dress would also be dashing!"
 
-    "Hmmm, but I want to emphasize her childishness as well…"
+    "Hmmm, but I want to emphasize her childishness as well..."
 
-    p "(Oh! This might be it…!)"
+    p "{i}Oh! This might be it...!{/i}"
+
+    window hide
+    pause 1.0
 
     p "Shiraishi! Are you done choosing?"
 
     s "I’ve decided!"
 
-    "Shiraishi was smiling and looking at…wedding outfits."
+    "Shiraishi was smiling and looking at... wedding outfits."
 
     show hitona1 stareyes4
 
@@ -112,7 +111,7 @@ label r1_shopping:
 
     s "But I don’t know which one to pick, they all look so good!"
 
-    "Suddenly, I got an idea…"
+    "Suddenly, I got an idea..."
 
     p "Shiraishi, how about you let me choose from these?"
 
@@ -130,7 +129,7 @@ label r1_shopping:
 
     show hitona1 pout2
 
-    s "If Hitona onee-chan says so…"
+    s "If Hitona onee-chan says so..."
 
     hide hitona1
 
@@ -139,97 +138,104 @@ label r1_shopping:
     "She looks a bit upset, but I’ll show her what I can do!"
 
     menu:
-        "Which outfit to change into?"
+        "Which outfit should I change into?"
 
         "Suit":
-
+            $ add_choice_to_history("Suit")
             $ shoppingflag = "suit"
-
-            "I picked up a black suit and changed into it."
-
-            "After changing, I found Shiraishi standing in front of another changing room."
-
-            "It seems that she has not changed her clothes yet."
-
-            show hitona1 idle2
-
-            "Well, it doesn’t seem like she noticed me yet."
-            "I prepared my deeper voice and called out to her."
-
-            p "Hello, little kitten~. Did you wait long?"
-
-            "Shiraishi looked at me."
-
-            "She seemed puzzled at first, but soon understood."
-
-            show hitona1 stareyes1
-
-            s "Hitona onee-chan?!"
-
-            p "Was I so cool that you lost your memory?"
-
-            "Shiraishi looks amused."
-
-            "Using this voice hurts my throat a bit, so I dropped the act."
-
-            p "How was it?"
-
-            s "Hitona onee-chan is so cool!"
-
-            p "Right~?"
-
-            p "Did I make your heart skip a beat?"
-
-            s "You did!"
-
-            s "Shiraishi was really surprised!"
-
-            p "I wanted to surprise Shiraishi a bit, so I’m glad it worked!"
-
-            s "Shiraishi wants to be patted!"
-
-            "I decided to go along with her sudden request, and patted her head."
-
-            show hitona1 bliss3
-
-            "Shiraishi looked really happy, so I decided to continue for a while."
+            jump r1_shopping_suit
 
         "Dress":
-
+            $ add_choice_to_history("Dress")
             $ shoppingflag = "dress"
+            jump r1_shopping_dress
 
-            "I picked up a beautiful wedding dress, and went into a changing room."
+label r1_shopping_suit:
+    "I picked up a black suit and changed into it."
 
-            "After changing, I met up with Shiraishi again, and…"
+    "After changing, I found Shiraishi standing in front of another changing room."
 
-            # CG
+    "It seems that she has not changed her clothes yet."
 
-            p "AAAAAAH!!! SHIRAISHI, YOU’RE SO CUUUTE!!!!"
+    show hitona1 idle2
 
-            "Standing in front of the neighbouring changing room was Shiraishi, wearing the witch’s outfit I picked for her."
+    "Well, it doesn’t seem like she noticed me yet."
 
-            "As expected, the black color emphasized her innocent appearance, while the witch outfit made her childishness shine even more!"
+    "I prepared my deeper voice and called out to her."
 
-            p "(Ahh! She’s really so cute…)"
+    p "Hello, little kitten~. Did you wait long?"
 
-            s "Hitona onee-chan is so beautiful…"
+    "Shiraishi looked at me."
 
-            p "Hehe, right!"
+    "She seemed puzzled at first, but soon understood."
 
-            p "I told you not to worry!"
+    show hitona1 stareyes1
 
-            p "Don’t underestimate my fashion sense!"
+    s "Hitona onee-chan?!"
 
-            s "I want Hitona onee-chan to pick all of my outfits from now on!"
+    p "Was I so cool that you lost your memory?"
 
-            p "Haha that’s a bit much."
+    "Shiraishi looks amused."
 
-            p "But still…Shiraishi you look so CUUUTE!"
+    "Using this voice hurts my throat a bit, so I dropped the act."
 
-            "Shiraishi clinged on my arm as we looked into the mirror."
+    p "How was it?"
 
-            s "Ehehehe."
+    s "Hitona onee-chan is so cool!"
 
-            "Seeing Shiraishi so happy, I couldn’t help but smile."
+    p "Right~?"
+
+    p "Did I make your heart skip a beat?"
+
+    s "You did!"
+
+    s "Shiraishi was really surprised!"
+
+    p "I wanted to surprise Shiraishi a bit, so I’m glad it worked!"
+
+    s "Shiraishi wants to be patted!"
+
+    "I decided to go along with her sudden request, and patted her head."
+
+    show hitona1 bliss3
+
+    "Shiraishi looked really happy, so I decided to continue for a while."
+
+    jump r1_regret_choice
+
+label r1_shopping_dress:
+    "I picked up a beautiful wedding dress, and went into a changing room."
+
+    "After changing, I met up with Shiraishi again, and..."
+
+    # CG
+
+    p "AAAAAAH!!! SHIRAISHI, YOU’RE SO CUUUTE!!!!"
+
+    "Standing in front of the neighbouring changing room was Shiraishi, wearing the witch’s outfit I picked for her."
+
+    "As expected, the black color emphasized her innocent appearance, while the witch outfit made her childishness shine even more!"
+
+    p "{i}Ahh! She’s really so cute...{/i}"
+
+    s "Hitona onee-chan is so beautiful..."
+
+    p "Hehe, right!"
+
+    p "I told you not to worry!"
+
+    p "Don’t underestimate my fashion sense!"
+
+    s "I want Hitona onee-chan to pick all of my outfits from now on!"
+
+    p "Haha that’s a bit much."
+
+    p "But still... Shiraishi you look so CUUUTE!"
+
+    "Shiraishi clinged on my arm as we looked into the mirror."
+
+    s "Ehehehe."
+
+    "Seeing Shiraishi so happy, I couldn’t help but smile."
 
     jump r1_regret_choice

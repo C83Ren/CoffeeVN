@@ -20,23 +20,23 @@ label r1_famres:
     # “….EEEEH?!” With such face Hitona just couldn’t say no.
     # So which one will you choose?
 
-    "We walked to a nearby family restaurant"
+    "We walked to a nearby family restaurant."
 
     scene bg famres
 
-    "We took our seats"
+    "We took our seats and looked at the menu."
 
-    p "You can get whatever you want Shiraishi"
+    p "You can get whatever you want, Shiraishi."
 
     show hitona1 happy2
 
     s "Really? Can I order more than one?"
 
-    p "You sure are hungry, sure go ahead"
+    p "You sure are hungry! Sure, go right ahead, order whatever you want~"
 
     show hitona1 idle2
 
-    "Shiraishi was flipping the menu with focus, choosing what to order"
+    "Shiraishi flipped through the menu focusedly, choosing what to order."
 
     p "Done choosing?"
 
@@ -44,150 +44,150 @@ label r1_famres:
 
     show hitona1 smile2
 
-    p "Let’s call the waitress then"
+    p "Let’s call the waitress then."
 
-    "Waitress" "What would you like to order?"
+    "Waitress" "Are you ready to order?"
 
-    p "I’d like carbonara pasta and fries, what about you Shiraishi?"
+    p "I’d like the carbonara pasta and fries. What about you, Shiraishi?"
 
     show hitona1 smile1
 
-    s "Shiraishi wants omellete rice, beef bowl, and hamburger steak!"
+    s "Shiraishi wants omurice, beef bowl, and hamburger steak!"
 
     p "..."
 
-    "Waitress" "Thank you for your order, please wait a bit"
+    "Waitress" "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit."
 
-    "The waitress left"
+    "The waitress left."
 
     p "..."
 
-    p "Eeeeeeeh?!! You’re going to eat all that Shiraishi??!"
+    p "Ehhhhhhhh?!! You’re going to eat all that, Shiraishi??!"
 
-    "Shiraishi just smiled"
+    "Shiraishi just replied with a bright smile."
 
-    "Not long after the food came"
+    "Not long after, the food came."
 
-    p "As expected…this is a lot…"
+    p "As expected... this is really a lot..."
 
     show hitona1 idle2
 
-    s "Hitona nee-chan~"
+    s "Hitona onee-chan~"
 
     p "Hmmm?"
 
-    s "Can Hitona nee-chan eat one of these?"
+    s "Can Hitona onee-chan eat one of these?"
 
     p "..."
 
     p "..."
 
-    p "EEEEEH?! But!"
+    p "EHHHHH!?"
+
+    p "W...Wait a second...!"
 
     show hitona1 stareyes1
 
-    "Shiraishi was showing such a sweet hopeful begging eyes… She’s too bright!"
+    "Shiraishi looked at me pleadingly with eyes full of hope."
 
-    p "...Okay"
+    p "...Okay fine."
 
     show hitona1 happy3
 
-    s "Pick one Hitona nee-chan!"
+    s "Pick one, Hitona onee-chan!"
 
     menu:
-        "Which one should I pick…"
-        "Omellete Rice":
-            p "I'll have Omellete Rice"
-
-            show hitona1 idle2
-
-            s "Hitona nee-chan, Shiraishi wants to ask"
-
-            p "What is it?"
-
-            s "Would Shiraishi become taller if she eats omelette rice?"
-
-            "Where did that come from??"
-
-            p "Eh? I don't think so"
-
-            p "Usually people ask if milk is going to make you taller, but omelette rice? That's a first one"
-
-            p "You want to become taller Shiraishi?"
-
-            show hitona1 idle1
-
-            s "Yes Shiraishi wants to become tall and beautiful like Hitona nee-chan"
-
-            "What a cute response~ I want to pat her"
-
-        "Hamburger Steak":
-            p "I'll have Hamburger Steak"
-
-            show hitona1 idle2
-
-            s "Hitona nee-chan, does Hamburger Steak make you energetic?"
-
-            p "It's meat…I guess so? Why ask?"
-
-            show hitona1 idle1
-
-            s "Shiraishi heard a really energetic person who loves hamburger steak"
-
-            s "Shiraishi thought hamburger steak is the reason she is so energetic"
-
-            "What a cute thought...that reminds me of someone though..."
-
-            p "Well whenever you eat your favourite food you'll become energetic!"
-
-            show hitona1 idle2
-
-            s "Does that mean hamburger steak is Hitona nee-chan's favourite food?"
-
-            p "Uuuh...No, not really"
-
-            s "Is that so?"
-
+        "Which dish should I eat?"
+        "Omurice":
+            $ famires_food = "Omurice"
         "Beef Bowl":
-            p "I'll have Beef Bowl"
+            $ famires_food = "Beef Bowl"
+        "Hamburger Steak":
+            $ famires_food = "Hamburger Steak"
+    $ add_choice_to_history(famires_food)
 
-            show hitona1 idle2
+    p "I’ll have the [famires_food!t] then."
 
-            s "Hitona nee-chan, are you planning to play something tonight?"
+    show hitona1 idle2
 
-            p "I didn't plan for anything, so not really"
+    if famires_food == "Omurice":
+        s "Hitona onee-chan, Shiraishi has something to ask."
 
-            s "Does Hitona nee-chan like beef bowl?"
+        p "What is it?"
 
-            p "Yeah I guess so?"
+        s "Do people become taller if they eat omurice?"
 
-            s "When Hitona nee-chan chose beef bowl, Shiraishi thought Hitona nee-chan will be playing a horror game tonight"
+        p "{i}Where did that come from??{/i}"
 
-            p "That's quite specific, how so?"
+        p "Eh? I don’t think so."
 
-            show hitona1 idle1
+        p "Usually people ask if drinking milk makes you grow taller, but omurice? That’s a new one."
 
-            s "There was a fortune telling about it!"
+        p "You want to become taller, Shiraishi?"
 
-            p "That's some fortune telling alright..."
+        show hitona1 idle1
 
-    "We ate the mountain of food that we (Shiraishi) ordered and somehow managed to finish it"
+        s "Yes! Shiraishi wants to become tall and beautiful just like Hitona onee-chan!"
 
-    p "Ugghhh that was a lot…"
+        p "{i}Ahh, what a precious response...{/i}"
+    elif famires_food == "Hamburger Steak":
+        s "Hitona onee-chan, does Hamburger Steak make you more energetic?"
+
+        p "It’s meat... so I guess so? Why?"
+
+        show hitona1 idle1
+
+        s "Shiraishi heard of a really energetic person who loves hamburger steak!"
+
+        s "Shiraishi thought that maybe hamburger steaks were the reason that she’s always so energetic!"
+
+        p "{i}What a cute thought... for some reason, it reminds me of a certain someone though.{/i}"
+
+        p "Well, I guess whenever you eat your favourite foods you become a bit happier."
+
+        show hitona1 idle2
+
+        s "Does that mean that hamburger steak is Hitona onee-chan’s favourite food?"
+
+        p "Uhhh... no, not really..."
+
+        s "Is that so?"
+    else:
+        s "Hitona onee-chan, are you planning to play something tonight?"
+
+        p "Uhh... I don’t have any plans, so not really."
+
+        s "Hitona onee-chan, do you like beef bowls?"
+
+        p "I guess so?"
+
+        s "When Hitona onee-chan chose the beef bowl, Shiraishi thought that Hitona onee-chan was planning to play a horror game tonight!"
+
+        p "That’s oddly specific, why did you think so?"
+
+        show hitona1 idle1
+
+        s "Fortune telling!"
+
+        p "That’s some impressive fortune telling alright...."
+
+    "We somehow managed to finish eating the mountain of food that we (Shiraishi) ordered."
+
+    p "Ugghhh, I ate too much..."
 
     show hitona1 happy3
 
     s "It was yummy!"
 
-    p "I can’t believe you managed to eat all of that by yourself"
+    p "I can’t believe you managed to eat all of that by yourself!"
 
-    p "You might even be able to eat all 3…"
+    p "You might have even been able to eat all three of them..."
 
     show hitona1 smile2
 
-    s "No! Shiraishi can’t eat 3, Hitona nee-chan helped"
+    s "No way! Shiraishi can’t eat three; it’s because of Hitona onee-chan that we finished!"
 
-    "Don’t order 3 in the first place…"
+    p "{i}Then don’t order three in the first place...{/i}"
 
     $ famresflag = 1
 

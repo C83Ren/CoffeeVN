@@ -12,48 +12,58 @@ label r1_purikuri:
     # Hitona took the picture and went out of the booth.
     # Hitona was going to look at the picture but she saw Shiraishi then feel little bit reluctant.
     # What will you do?
-    p "Let’s take one Shiraishi~"
+    p "Why don’t we take a picture?"
 
     show hitona1 happy3
 
     s "Yaay let’s goo!"
 
-    "I went into the booth with a very happy Shiraishi holding a bag with bishojo figure"
+    "I went into the booth with a very happy Shiraishi holding the bishoujo figure."
 
-    p "Look at the screen Shiraishi, we’ll take our photo here"
+    p "Face that way Shiraishi! I’m taking the photo now!"
 
     s "Okay!"
 
-    "We pose wrapping our hands to each other’s shoulder"
+    "We pose with our hands wrapped around each others’ shoulders."
 
-    "{i}Click{/i}"
+    window hide
+    $ renpy.pause(0.5, hard=True)
+    with Fade(0.1, 0.0, 0.5, color="#fff")
+    $ renpy.pause(0.5, hard=True)
 
     show hitona1 idle2
 
-    p "Look our photo is there Shiraishi, now we can decorate it"
+    p "That was a great photo! Let’s go decorate it now!"
 
-    s "ooooh I want to have this big eye!"
+    s "Ooooh then I want to have these big eyes!"
 
-    p "Well I want an Afro as my hair~"
+    p "Ah, then I want an afro for my hair!"
 
-    s "Shiraishi wants balloons!"
+    s "Let’s add some balloons!"
 
-    p "And add some stars~"
+    p "Some stars too!"
 
-    s "Fishies! Add fishies!"
+    s "Fishies! Add some fishies too!"
 
-    "We added a lot of decoration to our picture, but now that I thought about it…I wasn’t focusing much on the picture"
+    "We added all sorts of things to our photo, but now that I thought about it..."
 
-    "I wonder how it looks hmmm"
+    p "{i}Hmm? What did the final photo look like...?{/i}"
+
+    "...it seems like I can’t remember what the photo we just decorated looks like."
+
+    p "{i}Maybe I should take a peek at it?{/i}"
 
     show hitona1 smile1
 
-    "I thought of looking at the printed picture but when I look at Shiraishi, I felt reluctant…"
+    "I thought of taking a look at the printed picture, but when I looked at Shiraishi, I felt a bit reluctant."
 
     $ purikuri_flag = True
+
     menu:
-        "Should I see the picture?"
-        "yes":
+        "Look at the picture?"
+        "Look at it":
+            $ add_choice_to_history("Look at it")
             jump r1_purikuri_bad_end
-        "no":
+        "Don’t look at it":
+            $ add_choice_to_history("Don’t look at it")
             jump r1_food_choice_purikuri

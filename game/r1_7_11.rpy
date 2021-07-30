@@ -17,132 +17,108 @@ label r1_7_11:
 
     $ conbiniflag = 1
 
-    "We walked to the best place ever for getting food! 7/11~"
+    "We walked to the best place ever for getting food! Of course, it’s 7/*1!"
 
     show hitona1 smile2
 
-    "It was clear that Shiraishi was very excited but now she kept holding my hand"
+    "Shiraishi was always very excited, but she was now even more excited than ever, happily grasping onto my hand."
 
-    s "Hitona nee-chan what will I be having for lunch?"
+    s "Hitona onee-chan what will we be having for lunch?"
 
-    p "Anything you want Shiraishi~"
+    p "Anything you want! Pick whatever you like!"
 
     show hitona1 happy2
 
-    s "I want Hitona nee-chan’s recommendation!"
+    s "I want Hitona onee-chan’s recommendation!"
 
-    p "Is that so? Shiraishi wants the opinion of the (not) official 7/11 ambassador! Okay then~"
+    p "Is that so? Shiraishi wants the opinion of the (not) official 7/11 ambassador? Understood!"
 
     menu:
         "What should I recommend to her?"
-        "7/11 Soba Meshi":
-            p "How about Soba Meshi?"
+        "7/*1 P*young Sobameshi":
+            $ conbini_food = "7/*1 P*young Sobameshi"
+        "Sev*n Pr*mium Gold Hamburg Steak":
+            $ combini_food = "Sev*n Pr*mium Gold Hamburg Steak"
+        "Sev*n Pr*mium Spaghetti Neapolitan":
+            $ combini_food = "Sev*n Pr*mium Spaghetti Neapolitan"
+    $ add_choice_to_history(combini_food)
 
-            show hitona1 happy3
+    p "I recommend getting the [combini_food!t]!"
 
-            s "Sounds yummy! Shiraishi can’t wait!"
+    show hitona1 happy3
 
-            "We took two of Soba Meshi and I paid for them. Went out to find a place to sit"
+    s "Sounds yummy! Shiraishi can’t wait!"
 
-            show hitona1 idle1
+    "We took two [conbini_food!t]s and went to pay for them."
 
-            p "Let’s Eat!" (multiple=2)
+    "After buying them, we found empty seats in the eat-in corner."
 
-            s "Let’s Eat!" (multiple=2)
+    show hitona1 idle1
 
-            "Nom nom nom"
+    p "Let’s eat!" (multiple=2)
 
-            show hitona1 happy1
+    s "Let’s eat!" (multiple=2)
 
-            s "It's good!"
+    "Nom nom nom"
 
-            p "Well I'm glad"
+    show hitona1 happy1
 
-            p "There's soba, chicken and cabbage there. A perfect combo!"
+    if conbini_food == "7/*1 P*young Sobameshi":
+        s "It’s good!"
 
-            s "There's no cabbage though… but there's sesame seed!"
+        p "That’s good to hear!"
 
-            p "Oh really? I forgot about that"
+        p "There’s soba, chicken and cabbage there. A perfect combo!"
 
-            s "The soba feels like soba too!"
+        s "There’s no cabbage though... but there’s sesame seed!"
 
-            p "What does that even mean… but glad you like it~"
+        p "Oh really? I must have forgotten about it."
 
-        "7/11 Seven Premium Gold Hamburger Steak":
-            p "How about Seven Premium Gold Hamburger Steak?"
+        s "The soba feels like soba too!"
 
-            show hitona1 happy3
+        p "What does that even... anyways, I’m glad you like it!"
 
-            s "Sounds yummy! Shiraishi can’t wait!"
+    elif conbini_food == "7/11 Seven Premium Gold Hamburger Steak":
+        s "It’s so delicious!"
 
-            "We took two of Seven Premium Gold Hamburger Steak and I paid for them. Went out to find a place to sit"
+        s "The sauce is amazing!"
 
-            show hitona1 idle1
+        p "Right? This is supposed to be 100%% beef."
 
-            p "Let’s Eat!" (multiple=2)
+        s "The beef’s essence is really coming through!"
 
-            s "Let’s Eat!" (multiple=2)
+        "I have no idea what she is talking about."
 
-            "Nom nom nom"
+        p "Is that so? By the way, there’s also a Japanese-style Hamburg Steak sold here! I think the sauce on that one is tastier!"
 
-            show hitona1 happy1
+        s "Ohh?"
 
-            s "It's delicious!"
+        p "But the meat is definitely tastier in this one."
 
-            s "The sauce is delicious~"
+        s "Shiraishi likes it!"
 
-            p "Right! It's supposed to be 100%% beef"
+        p "That’s good to hear!"
 
-            s "The beef essence is really coming through"
+    else:
+        s "It’s yummy~! And there’s so much of it!"
 
-            "I have no idea what is she talking about but"
+        p "Yup! There’s onion, green pepper, garlic, tomato paste, ketchup, and sausage in it."
 
-            p "Is that so? Well there's this another one called Japanese style which I think has a better sauce"
+        s "But there’s no mushroom..."
 
-            s "Heee?"
+        p "Were you expecting there to be some?"
 
-            p "But definitely the steak is better here"
+        s "Shiraishi just thought there would be some."
 
-            s "Well Shiraishi likes it!"
+        s "But oh well, there’s green pepper!"
 
-            p "Glad you like it~"
+        s "So tasty!"
 
-        "7/11 Spaghetti Neapolitan":
-            p "How about Spaghetti Neapolitan?"
+        p "I love the tomato flavor!"
 
-            show hitona1 happy3
+        s "Shiraishi prefers tomato sauces on pasta too!"
 
-            s "Sounds yummy! Shiraishi can’t wait!"
-
-            "We took two of Spaghetti Neapolitan and I paid for them. Went out to find a place to sit"
-
-            show hitona1 idle1
-
-            p "Let’s Eat!" (multiple=2)
-
-            s "Let’s Eat!" (multiple=2)
-
-            "Nom nom nom"
-
-            show hitona1 happy1
-
-            s "It's yummy~ And there's a lot!"
-
-            p "Yup~ there are green onion, green pepper, garlic, tomato paste, sausage"
-
-            s "But there's no mushroom…"
-
-            p "Were you expecting some…?"
-
-            s "Shiraishi just thought there would be some"
-
-            s "But there are green pepper, yummy~"
-
-            p "I love the ketchup flavor in there"
-
-            s "Shiraishi too!"
-
-            p "The one who created Neapolitan is a genius~"
+        p "The person who invented Spaghetti Neapolitan is really a genius!"
 
     # “Sounds yummy!”. They proceed buying the goods, found somewhere to sit and eat the goodies.
     # The choices will reflect on whether it is good okay or bad. Shiraishi will mention about the stream regardless.
@@ -155,23 +131,35 @@ label r1_7_11:
 
     show hitona1 idle2
 
-    s "But Hitona nee-chan already mentioned it before in her stream~"
+    s "Come to think of it, Hitona onee-chan tried eating this in a stream before~!"
 
-    p "Eh? Stream? What do you mean?"
+    p "Eh? In a stream? What do you mean?"
 
     show hitona1 happy3
 
-    s "Hitona nee-chan streams about reviewing food right? I love those!"
+    s "Hitona onee-chan streams food reviews, right?"
 
-    s "Those streams make Shiraishi wonder how many snacks Shiraishi hasn’t tried! Everything looks so delicious! And Hitona nee-chan reaction is priceless! Makes Shiraishi watch it over and over again! With how some snacks made Hitona nee-chan so excited while others oddly have no taste, Shiraishi couldn’t wait for Hitona nee-chan’s rating! It’s also funny how the rating sometimes is 5 stars max while other times it’s 3 stars max. It’s a fun stream!"
+    s "I love those streams!"
 
-    p "Eh? Did I ever mention about streaming?"
+    s """
+    Whenever Shiraishi watches those streams, Shiraishi always thinks about how many snacks Shiraishi hasn’t tried yet!
+
+    Everything always looks so delicious! And Hitona onee-chan’s reactions are priceless! It makes Shiraishi want to watch it over and over again!
+
+    With how some snacks make Hitona onee-chan really excited, while others oddly have no taste, Shiraishi can never wait for Hitona onee-chan’s rating!
+
+    It’s also funny how the rating sometimes is out of 5 stars while other times it’s out of 3 stars!
+
+    It’s always a fun stream!
+    """
+
+    p "{i}Eh? Did I ever mention anything about streaming...?{/i}"
 
     show hitona1 idle3
 
-    "Shiraishi just smiled and continued eating"
+    "Shiraishi just smiled and continued eating without saying another word."
 
-    "Oh well…"
+    p "{i}Ah, whatever.{/i}"
 
     show hitona1 bliss4
 
