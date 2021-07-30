@@ -792,4 +792,3 @@ translate japanese strings:
     # game/r1_start.rpy:374
     old "Don’t use the purikura"
     new "プリクラを使わない"
-

@@ -15,7 +15,7 @@ label r1_regret_choice:
         "Nope, nothing at all":
             $ regret_choice = "Nope, nothing at all"
 
-    p "[regret_choice]"
+    p "[regret_choice!t]"
 
     s "Is that so?"
 
