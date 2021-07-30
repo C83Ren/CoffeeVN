@@ -29,25 +29,25 @@ init python:
 
     #ATK, Heal, Burn, Paralyze
     spell_list = {
-    _("Wind Blast"): [10, 0, 0, 0, "audio/sfx/wind_blast.mp3"],
-    _("Wind Cutter"): [15, 0, 0, 0, "audio/sfx/wind_cutter.mp3"],
-    _("Fire Ball"): [10, 0, 2, 0, "audio/sfx/fire_ball.mp3"],
-    _("Electric Bolt"): [8, 0, 0, 2, "audio/sfx/electric_bolt.mp3"],
-    _("Wind Lance"): [20, 0, 0, 0, "audio/sfx/wind_lance.mp3"],
-    _("Fire Wall"): [15, 0, 5, 0, "audio/sfx/fire_wall.mp3"],
-    _("Lightning Strike"): [12, 0, 0, 5, "audio/sfx/lightning_strike.mp3"]
+    "Wind Blast": [10, 0, 0, 0, "audio/sfx/wind_blast.mp3"],
+    "Wind Cutter": [15, 0, 0, 0, "audio/sfx/wind_cutter.mp3"],
+    "Fire Ball": [10, 0, 2, 0, "audio/sfx/fire_ball.mp3"],
+    "Electric Bolt": [8, 0, 0, 2, "audio/sfx/electric_bolt.mp3"],
+    "Wind Lance": [20, 0, 0, 0, "audio/sfx/wind_lance.mp3"],
+    "Fire Wall": [15, 0, 5, 0, "audio/sfx/fire_wall.mp3"],
+    "Lightning Strike": [12, 0, 0, 5, "audio/sfx/lightning_strike.mp3"]
     }
 
     item_list = {
-    _("Heal Orb"): [0, 20, 0, 0, "audio/sfx/heal.mp3"],
-    _("Flamethrower"): [50, 0, 5, 0, "audio/sfx/flamethrower.mp3"],
-    _("Heal Aura"): [0, 50, 0, 0, "audio/sfx/heal.mp3"],
-    _("God Blessing"): [0, 100, 0, 0, "audio/sfx/heal.mp3"],
-    _("Paralyzing Spark"): [30, 0, 0, 5, "audio/sfx/paralyzing_spark.mp3"]
+    "Heal Orb": [0, 20, 0, 0, "audio/sfx/heal.mp3"],
+    "Flamethrower": [50, 0, 5, 0, "audio/sfx/flamethrower.mp3"],
+    "Heal Aura": [0, 50, 0, 0, "audio/sfx/heal.mp3"],
+    "God Blessing": [0, 100, 0, 0, "audio/sfx/heal.mp3"],
+    "Paralyzing Spark": [30, 0, 0, 5, "audio/sfx/paralyzing_spark.mp3"]
     }
 
     hitona_stats = {
-    "name": _("Hitona"),
+    "name": "Hitona",
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast"],
@@ -58,7 +58,7 @@ init python:
     }
 
     eve_stats = {
-    "name": _("Eve"),
+    "name": "Eve",
     "hp": 300,
     "hp_max": 300,
     "spell": ["Wind Blast", "Fire Ball"],
@@ -69,7 +69,7 @@ init python:
     }
 
     soldier1_stats = {
-    "name": _("Soldier 1"),
+    "name": "Soldier 1",
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast"],
@@ -80,7 +80,7 @@ init python:
     }
 
     soldier2_stats = {
-    "name": _("Soldier 1"),
+    "name": "Soldier 1",
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Blast", "Fire Ball"],
@@ -91,7 +91,7 @@ init python:
     }
 
     soldier3_stats = {
-    "name": _("Soldier 2"),
+    "name": "Soldier 2",
     "hp": 100,
     "hp_max": 100,
     "spell": ["Wind Cutter", "Electric Bolt"],
@@ -102,7 +102,7 @@ init python:
     }
 
     king_stats = {
-    "name": _("King Achnost"),
+    "name": "King Achnost",
     "hp": 500,
     "hp_max": 500,
     "spell": ["Wind Lance", "Fire Wall", "Lightning Strike"],
@@ -175,88 +175,15 @@ screen multi_sprite():
             hbox yalign 1.0:
                 use single_sprite(someone["img"][0], someone["img"][1], someone)
 
-screen battle_action():
-    frame:
-        xpadding 300
-        ypadding 50
-        xalign 0.5
-        yalign 1.0
-        vbox spacing 10:
-            text "{b}What to do?{/b}"
-            hbox spacing 30:
-                textbutton "Use Spell" action Jump("spell_option")
-                textbutton "Use Item" action Jump("item_option")
-
-screen spell_action():
-    frame:
-        xpadding 300
-        ypadding 50
-        xalign 0.5
-        yalign 1.0
-        vbox spacing 10:
-            text "{b}What spell to use?{/b}"
-            for spell in hitona_stats["spell"]:
-                textbutton spell action Call("load_spell", spell)
-            textbutton "Cancel" action Jump("fight_option")
-
-screen item_action():
-    frame:
-        xpadding 300
-        ypadding 50
-        xalign 0.5
-        yalign 1.0
-        vbox spacing 10:
-            text "{b}What item to use?{/b}"
-            for item in hitona_stats["item"]:
-                textbutton item action Call("load_item", item)
-            textbutton "Cancel":
-                action Jump("fight_option")
-
-screen target_action():
-    frame:
-        xpadding 300
-        ypadding 50
-        xalign 0.5
-        yalign 1.0
-        vbox spacing 10:
-            text "{b}Who are you targeting?{/b}"
-            for someone in ally_list:
-                textbutton someone["name"] action Call("target_option", someone)
-            for someone in enemy_list:
-                textbutton someone["name"] action Call("target_option", someone)
-            textbutton "Cancel" action Jump("fight_option")
-
-screen janken_action():
-    frame:
-        xpadding 300
-        ypadding 50
-        xalign 0.5
-        yalign 1.0
-        vbox spacing 10:
-            text "{b}Rock Paper Scissor!{/b}"
-            textbutton "Rock" action Call("after_rock_paper_scissor", "rock")
-            textbutton "Paper" action Call("after_rock_paper_scissor", "paper")
-            textbutton "Scissor" action Call("after_rock_paper_scissor", "scissor")
-
-screen janken_enemy_action():
-    frame:
-        xpadding 300
-        ypadding 50
-        xalign 0.5
-        yalign 1.0
-        vbox spacing 10:
-            text "{b}Rock Paper Scissor!{/b}"
-            textbutton "Rock" action Call("after_rock_paper_scissor_enemy", "rock")
-            textbutton "Paper" action Call("after_rock_paper_scissor_enemy", "paper")
-            textbutton "Scissor" action Call("after_rock_paper_scissor_enemy", "scissor")
-
 default hit = 0
 
 label r2_fight:
     show screen multi_stat
     show screen multi_sprite
     python:
+        textbox_menu = True
         item_name = 0
+        multiplier = 1.0
         if len(ally_list) > 0 and len(enemy_list) > 0:
             if x == 0:
                 fight_order_temp = fight_order
@@ -302,13 +229,14 @@ label r2_fight:
                 x = 0
                 renpy.jump("r2_fight")
         elif len(ally_list) == 0:
+            textbox_menu = False
             renpy.jump("fight_fail")
         else:
+            textbox_menu = False
             renpy.jump(fight_label)
 
 label fight_option:
     $ item_name = 0
-    call screen battle_action
     menu:
         "What to do?"
         "Use Spell":
@@ -317,50 +245,129 @@ label fight_option:
             jump item_option
 
 label spell_option:
-    call screen spell_action
+    menu:
+        set set(spell_list.keys()).difference(hitona_stats["spell"])
+        "What spell to use?"
+        "Wind Blast":
+            call load_spell("Wind Blast")
+        "Wind Cutter":
+            call load_spell("Wind Cutter")
+        "Fire Ball":
+            call load_spell("Fire Ball")
+        "Electric Bolt":
+            call load_spell("Electric Bolt")
+        "Wind Lance":
+            call load_spell("Wind Lance")
+        "Fire Wall":
+            call load_spell("Fire Wall")
+        "Lightning Strike":
+            call load_spell("Lightning Strike")
+        "Cancel":
+            jump fight_option
+    jump target_action
 
-label load_spell(spell_name):
+label load_spell(spell):
+    $ spell_name = spell
     $ atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
-    call screen target_action
+    return
 
 label item_option:
-    call screen item_action
+    menu:
+        set set(item_list.keys()).difference(hitona_stats["item"])
+        "What item to use?"
+        "Heal Orb":
+            call load_item("Heal Orb")
+        "Flamethrower":
+            call load_item("Flamethrower")
+        "Heal Aura":
+            call load_item("Heal Aura")
+        "God Blessing":
+            call load_item("God Blessing")
+        "Paralyzing Spark":
+            call load_item("Paralyzing Spark")
+        "Cancel":
+            jump fight_option
+    jump target_action
 
-label load_item(item_name):
+label load_item(item):
+    $ item_name = item
     $ atk, heal, burn, par, sfx = store_turn(item_list, item_name)
-    call screen target_action
+    return
 
-label target_option(stats):
-    $ target = stats
+label target_action:
+    menu:
+        set {"Hitona", "Eve", "Soldier 1", "Soldier 2", "King Achnost"}.difference([s["name"] for s in ally_list + enemy_list])
+        "Who are you targeting?"
+        "Hitona":
+            $ target = [s for s in ally_list if s["name"] == "Hitona" ][0]
+        "Eve":
+            $ target = [s for s in ally_list if s["name"] == "Eve"][0]
+        "Soldier 1":
+            $ target = [s for s in enemy_list if s["name"] == "Soldier 1"][0]
+        "Soldier 2":
+            $ target = [s for s in enemy_list if s["name"] == "Soldier 2"][0]
+        "King Achnost":
+            $ target = [s for s in enemy_list if s["name"] == "King Achnost"][0]
+        "Cancel":
+            jump fight_option
+    jump target_option
+
+label target_option:
     if atk > 0 and target != hitona_stats :
-        jump rock_paper_scissor
+        jump decide_rock_paper_scissor
     else:
-         jump fight_log
+        jump fight_log
+
+label decide_rock_paper_scissor:
+    menu:
+        "Attempt to double your damage by playing rock paper scissors?"
+        "Yes":
+            jump rock_paper_scissor
+        "No":
+            jump fight_log
 
 label rock_paper_scissor:
-    $ janken_list = ["rock", "paper", "scissor"]
-    $ opp_janken = janken_list[renpy.random.randint(0,2)]
     "Let's double the damage!"
-    call screen janken_action
-
-label after_rock_paper_scissor(me_janken):
-    $ multiplier = janken(me_janken, opp_janken)
+    call do_janken(False)
     jump fight_log
 
 label rock_paper_scissor_enemy:
-    $ janken_list = ["rock", "paper", "scissor"]
-    $ opp_janken = janken_list[renpy.random.randint(0,2)]
     $ self_name = self["name"]
-
     "[self_name] is targeting Hitona! Let's defend!"
-    call screen janken_enemy_action
-
-label after_rock_paper_scissor_enemy(me_janken):
-    $ multiplier = janken(opp_janken, me_janken)
+    call do_janken(True)
     jump fight_log
 
-label fight_log:
+label do_janken(reverse):
+    $ janken_list = ["rock", "paper", "scissor"]
+    $ opp_janken = janken_list[renpy.random.randint(0,2)]
+    menu:
+        "Rock Paper Scissor!"
+        "Rock":
+            $ my_janken = "rock"
+        "Paper":
+            $ my_janken = "paper"
+        "Scissor":
+            $ my_janken = "scissor"
+    "[my_janken] vs [opp_janken]!"
+    if reverse:
+        $ multiplier = janken(opp_janken, my_janken)
+        if multiplier < 1:
+            "You won! Damage taken has been halved!"
+        elif multiplier > 1:
+            "You lost! Damage taken has been doubled!"
+        else:
+            "It's a tie!"
+    else:
+        $ multiplier = janken(my_janken, opp_janken)
+        if multiplier > 1:
+            "You won! Damage dealt has been doubled!"
+        elif multiplier < 1:
+            "You lost! Damage dealt has been halved!"
+        else:
+            "It's a tie!"
+    return
 
+label fight_log:
     python:
         target_name = target["name"]
         self_name = self["name"]
@@ -380,6 +387,7 @@ label fight_log:
             $ atk = int(atk * multiplier)
             $ hit = target
             show screen multi_stat
+            window hide
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
             "[target_name] took [atk] damage!"
@@ -389,6 +397,7 @@ label fight_log:
             if target["hp"] > target["hp_max"]:
                 $ target["hp"] = target["hp_max"]
             show screen multi_stat
+            window hide
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
             "[target_name] has been healed [heal]HP!"
@@ -397,6 +406,7 @@ label fight_log:
             $ target["burn"] = burn
             #play sound fireball
             $ hit = target
+            window hide
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
             "[target_name] got burnt for the next 5 turns!"
@@ -406,6 +416,7 @@ label fight_log:
             $ target["par"] = par
             #play sound paralyzingspark
             $ hit = target
+            window hide
             $ renpy.play(audio.paralyzingspark, channel='sound')
             $ renpy.pause(delay=2.0, hard=True)
             "[target_name] got paralyzed for the next 2 turns!"
@@ -418,6 +429,7 @@ label fight_log:
                 $ self["hp"] = 0
             show screen multi_stat
             #play sound fireball
+            window hide
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(1.0, hard=True)
             $ hit = target
@@ -426,6 +438,7 @@ label fight_log:
     else:
         $ self["par"] = self["par"] - 1
         #play sound paralyzingspark
+        window hide
         $ renpy.play(audio.paralyzingspark, channel='sound')
         $ renpy.pause(2.0, hard=True)
         "[self_name] is still paralyzed!"

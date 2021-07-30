@@ -208,16 +208,35 @@ style input:
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
 screen choice(items):
-    style_prefix "choice"
-
-    vbox:
-        for i in items:
-            textbutton i.caption action [Function(add_choice_to_history, i.caption), i.action]
-
+    if textbox_menu:
+        style_prefix "say"
+        vbox:
+            xpos gui.dialogue_xpos + 20
+            ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
+            hbox:
+                for i, item in enumerate(items[::2]):
+                    textbutton item.caption:
+                        action [Function(add_choice_to_history, item.caption), item.action]
+                        xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
+                        text_xalign gui.dialogue_text_xalign
+            hbox:
+                for i, item in enumerate(items[1::2]):
+                    textbutton item.caption:
+                        action [Function(add_choice_to_history, item.caption), item.action]
+                        xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
+                        text_xalign gui.dialogue_text_xalign
+    else:
+        style_prefix "choice"
+        vbox:
+            for i in items:
+                textbutton i.caption action [Function(add_choice_to_history, i.caption), i.action]
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
 define config.narrator_menu = True
+
+## When this is true, choices will be displayed in 2x4 layout in the text box.
+default textbox_menu = False
 
 
 style choice_vbox is vbox
