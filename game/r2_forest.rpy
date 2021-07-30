@@ -35,11 +35,11 @@ label forest_spot_1:
 
         e "No seriously. Don’t touch it. It won’t kill you but..."
 
-        "I pick it up"
+        "I picked it up." id forest_spot_1_0f21d916
 
-        "..."
+        p "..." id forest_spot_1_a20cefa7
 
-        "I put it back down"
+        "I put it back down." id forest_spot_1_87bb6f24
 
         p "WHY DIDN’T YOU TELL ME?!"
 
@@ -47,7 +47,7 @@ label forest_spot_1:
 
         p "HOW CAN A TURD BE THAT SHINY!"
 
-        p "NOOOOO"
+        p "NOOOOO!" id forest_spot_1_ab382a4f
 
         e "It has an illusion spell applied on it that makes it look like gold. So yeah..."
 
@@ -90,7 +90,7 @@ label forest_spot_2:
 
         #smug1
 
-        e "You underestimate me too much, young one"
+        e "You underestimate me too much, young one."
 
         #smile1
 
@@ -100,7 +100,7 @@ label forest_spot_2:
 
         play sound correctchoice
 
-        "You got Heal Orb"
+        "{b}You have obtained a Heal Orb!{/b}"
 
         $ hitona_stats["item"].append("Heal Orb")
 
@@ -146,9 +146,9 @@ label forest_hut_1:
 
         #idle
 
-        e "No one lives here Hitona dear"
+        e "No one lives here, Hitona dear."
 
-        e "This place is wiped out as you can see"
+        e "This place is wiped out as you can see."
 
         e "No one is here anymore."
 
@@ -168,9 +168,11 @@ label forest_hut_1:
 
         e "This place was one of the places where the rebels fought the army."
 
+        e "While there are many useful magics, there are also scary ones, young Hitona."
+
         e "Like the one that was used here."
 
-        p "What magic was used here…?"
+        p "What magic was used here...?"
 
         e "You don’t want to know that."
 
@@ -194,7 +196,7 @@ label forest_hut_2:
 
         play sound correctchoice
 
-        "You got Flamethrower"
+        "{b}You have obtained a Flamethrower!{/b}"
 
         $ hitona_stats["item"].append("Flamethrower")
 
@@ -234,11 +236,10 @@ label forest_hut_2:
 
 label forest_exit:
 
-    "Leave the forest?"
 
     menu:
-        "(Warning: you won’t be able to come back after leaving)"
-        "Yes":
+        "Leave the forest?\n(Warning: you won’t be able to come back after leaving)"
+        "Leave the forest":
             jump r2_map_1
-        "No":
+        "Remain in the forest":
             jump forest_menu
