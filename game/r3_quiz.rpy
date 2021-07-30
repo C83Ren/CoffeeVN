@@ -1,29 +1,32 @@
 label r3_quiz:
-    scene bg quiz with fade
-
     play sound lightswitch
 
-    "Then the room lighted up again, showing a quiz like room"
+    scene bg quiz with fade
 
-    l "First up is a quiz challenge! Get 3 out of 3 and you shall pass~"
+    $ renpy.pause(1.0)
+    window hide
 
-    l "If not…you don’t want to know what happen next do you?"
+    "A moment later, the lights returned, and the room had become like a quiz corner."
+
+    l "First up is the quiz challenge! Get 3 out of 3 correct to continue!"
+
+    l "If you miss even one...well, you don't want to know what will happen."
 
     show hitona3 smile hat
 
-    pi "Don’t worry Hitona, this first part is usually easy"
+    pi "Don't worry, Kohigashi! This first part is usually really easy!"
 
-    p "Huh? You’ve been here before?"
+    p "Huh? You've done this before?"
 
     show hitona3 smug hat
 
-    "Pierrot didn’t answer, she just smiled smugly"
+    "Pierrot answered with a smile."
 
-    l "Go on to the podium"
+    l "Go on, to the podium"
 
-    "Wondering about all this I just walked to the podium"
+    "Not understanding what was going on, I decided to just head over to the podium anyways."
 
-    l "Let’s start!"
+    l "Let's start!"
 
     play sound quizstart
 
@@ -38,24 +41,24 @@ label quiz_fail:
 
     show lios front at lios_right with dissolve
 
-    "Someone with a black cape suddenly appeared in front of us"
+    "Someone with a black cape suddenly appeared in front of us."
 
-    l "So much for being a great detective…"
+    "[l] & [p]" "So much for being a great detective..."
 
     # hitona says this as well ^
 
     show hitona3 pout hat at hitona_left with dissolve
     #show lios front at lios_right behind hitona3
 
-    pi "Hey don’t blame me! You were the one answering!"
+    pi "Hey don't blame me! Kohigashi was the only one answering!"
 
-    l "You kept quite cause you don’t know the answer either right"
+    l "You kept quiet because you didn't know the answer either though."
 
     show hitona3 surprised2 hat
 
-    "Pierrot looked away and whistled"
+    "Pierrot looked away and whistled without saying another word."
 
-    l "Off you go little girls~"
+    l "Goodbye, little girls~"
 
     stop music fadeout 1.0
 
@@ -63,26 +66,26 @@ label quiz_fail:
 
     play music room_bgm fadein 3.0 volume 0.2
 
-    p "Eh? I’m in my room? On my bed…"
+    "{i}Eh? I'm in...my room? On my bed...{/i}"
 
-    p "Even if that was a dream, I wonder what was stolen…"
+    "{i}Even if that was a dream, I wonder what was stolen...{/i}"
 
-    "I looked up at my phone"
+    "I looked up at my phone screen."
 
-    p "…"
+    p "..."
 
-    p "AAAAAAA I’M SO SORRY SENPAI!"
+    p "AAAAAAA I'M SO SORRY SENPAI!"
 
-    "I rushed out of the room"
+    "I rushed out of my room in a hurry to meet senpai."
 
     scene black with dissolve
 
-    "While going to the park that dream kept spinning in my head"
+    "While running towards the park, that dream? kept spinning in my mind."
 
-    "I wonder what was that all about"
+    "It seems like the meaning of that dream? will stay unknown forever."
 
-    "I guess I will never figure out what that dream was all about"
+    "I guess dreams will just be dreams."
 
-    "Dream stay as dream huh"
+    "Bad End"
 
     return

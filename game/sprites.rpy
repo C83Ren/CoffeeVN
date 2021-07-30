@@ -78,10 +78,10 @@ image dog blush = Transform(Image("images/dog/blush.png"), zoom=0.8, xanchor=700
 image dog sad = Transform(Image("images/dog/sad.png"), zoom=0.8, xanchor=700, yanchor=1100)
 
 #Deer
-image deer happy = Transform(Image("images/deer/happy.png"), zoom=0.5, xanchor=500, yanchor=1100)
-image deer smile = Transform(Image("images/deer/smile.png"), zoom=0.5, xanchor=500, yanchor=1100)
-image deer blush = Transform(Image("images/deer/blush.png"), zoom=0.5, xanchor=500, yanchor=1100)
-image deer sad = Transform(Image("images/deer/sad.png"), zoom=0.5, xanchor=500, yanchor=1100)
+image deer happy = Transform(Image("images/deer/happy.png"), zoom=1.0, xanchor=700, yanchor=1000)
+image deer smile = Transform(Image("images/deer/smile.png"), zoom=1.0, xanchor=700, yanchor=1000)
+image deer blush = Transform(Image("images/deer/blush.png"), zoom=1.0, xanchor=700, yanchor=1000)
+image deer sad = Transform(Image("images/deer/sad.png"), zoom=1.0, xanchor=700, yanchor=1000)
 
 #Rabbit
 image rabbit alone = Image("images/rabbit.png")

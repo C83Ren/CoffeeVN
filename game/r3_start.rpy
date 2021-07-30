@@ -1,43 +1,45 @@
 label r3_start:
     scene bg room with fade
 
-    "??" "Pant pant"
+    "??" "Haa...haa..."
 
-    "Someone’s is in front of my door…"
+    "Someone is standing in front of my door."
 
-    "What kind of costume is that…Ah yeah it’s a detective costume"
+    "{i}What kind of costume is that...?{/i}"
 
-    p "Uuuh are you okay?"
+    "{i}Ah yeah, it’s a detective costume.{/i}"
+
+    p "Uuuh, are you okay?"
 
     show hitona3 sad hat with dissolve
 
-    "??" "Uh yeah…I’m okay…"
+    "??" "Uh yeah...I’m okay..."
 
-    "??" "NO!"
+    "??" "...wait, that’s not the problem!"
 
     p "Eh??"
 
-    "She looked up at me…"
+    "The suspicious person wearing a detective costume looked carefully at me."
 
-    p "Huh?? Me???"
+    p "Huh? Can I help you?"
 
     "??" "Kohigashi! Phantom Thief Lios has stolen something from you!"
 
     p "Eeeeeh?"
 
-    p "What???"
+    p "When??"
 
-    p "Why do you…?"
+    p "What do you mean???"
 
-    "I have so many questions right now…"
+    "There are so many questions I want to ask right now."
 
-    "??" "Lios has stolen something very important from you!"
+    "??" "Lios has stolen something that’s very important to you!"
 
-    p "Seriously what are you taking about???"
+    p "Seriously, what are you taking about???"
 
-    p "And who are you???"
+    p "In the first place, who are you even???"
 
-    "Not minding what I said she showed me a card"
+    "Completely ignoring what I said, she instead took out and showed me a card."
 
     hide hitona3
 
@@ -51,31 +53,31 @@ label r3_start:
 
     nvl clear
 
-    p "What’s this about?"
+    play sound takecard
+
+    p "What’s this all about?"
 
     show hitona3 idle hat
 
     "??" "Look at your computer!"
 
-    "I looked at my computer and on the screen it prompted me to enter a 4 digit passcode of some sort"
+    "I looked at my computer, and on the screen, it prompted me to enter a 4 digit passcode."
 
-    "Is this what the card was talking about? I have no idea"
+    "{i}Is this what the card was talking about?{/i}"
 
-    p "Is this some kind of prank?"
+    p "Is this some sort of prank?"
 
-    "??" "I assure you it’s not!"
+    "??" "I assure you it’s not! Really!"
 
-    p "Sigh"
+    p "Haa..."
 
-    "I guess there’s nothing wrong with going along with this. I wonder what the passcode is~"
-
-
+    "{i}Well, I guess there’s nothing wrong with going along with this for now.{/i}"
 
 label room_passcode1:
     python:
         passcode_r3 = renpy.input("Input the passcode", length=4, allow="0123456789")
 
-    if passcode_r3 == "0405":
+    if passcode_r3 == "0504":
         play sound correctchoice
         jump r3_hub
     else:
@@ -83,50 +85,50 @@ label room_passcode1:
         jump room_tryagain
 
 label room_tryagain:
-    "\"WRONG PASS\""
+    "{b}\"Wrong Passcode\"{/b}"
 
-    p "Huh? I guess that was wrong"
+    "{i}Huh? I guess that was wrong...{/i}"
 
     show hitona3 smile hat
 
-    "??" "You can always try again"
+    "??" "You can always try again!"
 
     menu:
-        "Try again?"
-        "Yes":
+        "Try to enter the password again?"
+        "Try again":
             jump room_passcode1
-        "No":
+        "Give up":
             jump room_giveup1
 
 label room_giveup1:
-    p "Nope I’m good~"
+    p "Nope I’m good"
 
     show hitona3 sad hat
 
     "??" "Eeeeeh? Don’t be like that!"
 
-    "??" "I’ll give you a hint! If you continue I’ll give you a hint!"
+    "??" "A hint! If you continue I’ll give you a hint!"
 
     menu:
-        "This girl is practically begging, what should I do?"
-        "Try Again!":
+        "This girl is practically on her knees begging."
+        "Try again":
             jump room_passcode2
         "Give up":
             jump room_passcode_badend
 
 label room_passcode2:
-    p "Okay fine give me a hint then"
+    p "Okay fine! Geez, I’ll try again! Give me the hint then."
 
     show hitona3 smug hat
 
-    "??" "The hint is the birthday of the mermaid princess"
+    "??" "The hint is {b}\"the birthday of the mermaid princess\"{/b}."
 
-    "Makes me wonder why she isn’t the one entering this passcode…"
+    "{i}If you know it, why don’t you just enter it yourself.{/i}"
 
     python:
         passcode_r3 = renpy.input("Input the passcode", length=4, allow="0123456789")
 
-    if passcode_r3 == "0405":
+    if passcode_r3 == "0504":
         play sound correctchoice
         jump r3_hub
     else:
@@ -138,39 +140,45 @@ label room_passcode_badend:
 
     show hitona3 pout hat
 
-    "??" "Eeeeh come on!"
+    "??" "Ehhhh, wait!"
 
-    p "Nope, I’m officially done with this~"
+    p "Nope, I’m officially done with this."
 
-    "??" "Fine I’ll come back again later!"
+    "??" "Fine, okay, let’s meet later."
 
     show hitona3 angry hat
 
-    "??" "I’ll come back until you want to do it again okay!"
+    "??" "I’ll keep coming back until you want to do it again!"
 
-    "??" "Bye for now~"
+    "??" "Bye for now then."
 
-    p "Eh don’t please don’t…"
+    p "No, please don’t come back again..."
 
     hide hitona3
 
-    "She left the room…"
+    "The suspicious person left the building."
 
-    "I really hope she’s not serious…I should considering moving again…"
+    "{i}I really hope she’s not serious...maybe I should move again...{/i}"
 
-    "Ah the she didn’t close the door…"
+    "{i}Ah, geez, she didn’t even close the door...{/i}"
 
-    p "AAAAAAAAAAA I FORGOT! SENPAI IS WAITING FOR MEEEE"
+    "{i}...AAAAAAAA!!!{/i}"
 
-    "I dashed out to the park to meet senpai"
+    "{i}THIS IS BAD!!!{/i}"
+
+    "{i}I FORGOT!!!{/i}"
+
+    "{i}SENPAI IS WAITING FOR ME RIGHT NOW!!!{/i}"
+
+    "I rushed out of my room in a hurry to meet senpai."
 
     scene black
 
-    "While going to the park what the girl said keeps ringing in my head"
+    "While running towards the park, the words of that strange girl kept ringing in my head."
 
-    "I wonder what was that all about"
+    "What in the world was that all about? What could possibly have been stolen?"
 
-    "Too late for regret now, I guess I will never figure out what she was talking about"
+    "It’s already too late to regret it. I guess I will never be able to understand what she was talking about."
 
     "Bad End"
 

@@ -39,11 +39,11 @@ label quiz_check:
     else:
         play sound challengecomplete
         "Congratulation! You got all 3 correct!"
-        jump r3_bomb
+        jump r3_sing
 
 label quiz_1:
     menu:
-        "Who is the first heroine Hitona ever conquered?"
+        "Who is the very first heroine that Hitona Kohigashi conquered?"
         "Ayatsuji":
             play sound falsechoice_long
             "WRONG"
@@ -51,6 +51,7 @@ label quiz_1:
         "Yuri":
             play sound correctchoice
             "CORRECT"
+            p "I would have never picked her as the first one if I knew how she was..."
             jump quiz_check
         "Kano":
             play sound falsechoice_long
@@ -59,10 +60,11 @@ label quiz_1:
 
 label quiz_2:
     menu:
-        "What scent that Hitona can't take?"
+        "Which of the following scents does Hitona Kohigashi dislike?"
         "Vanilla":
             play sound correctchoice
             "CORRECT"
+            p "Vanilla scent is too sweet for me too. I like the smell of fresh yakiniku though!"
             jump quiz_check
         "Pizza":
             play sound falsechoice_long
@@ -75,10 +77,11 @@ label quiz_2:
 
 label quiz_3:
     menu:
-        "In Mahjong Souls Hitona was hoping to get one out of four of these Kaavi, Aihara Mai, Suzumiya Anju, or Yagi Yui. Hitona got 2 characters from 11 pulls. At what pull Hitona got Yagi Yui?"
+        "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of the following four from gacha: Kaavi, Aihara Mai, Suzumiya Anju, and Yagi Yui. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
         "6th":
             play sound correctchoice
             "CORRECT"
+            p "Believe in the power of your pinky!"
             jump quiz_check
         "10th":
             play sound falsechoice_long
@@ -91,7 +94,7 @@ label quiz_3:
 
 label quiz_4:
     menu:
-        "What was the prize in the first online crane machine Hitona tried?"
+        "What was the prize in the very first online crane machine Hitona Kohigashi attempted?"
         "Hatsune Miku Birthday Figure 2020~Pop idol ver":
             play sound falsechoice_long
             "WRONG"
@@ -103,36 +106,45 @@ label quiz_4:
         "Marshmellow Animal Bolster Harinezumi GRAY":
             play sound correctchoice
             "CORRECT"
+            p "This game is a money sink...I need to be careful."
             jump quiz_check
 
 label quiz_5:
+    image honmono_sign = "images/honmono no sign.png"
+    show honmono_sign with dissolve:
+        yalign 0.5
+    $ renpy.pause(5.0)
     menu:
-        "What was this paint named? Show paint"
+        "What is the name of this famous piece of art?"
         "Honmono no Sign":
             play sound correctchoice
             "CORRECT"
+            p "You know, it looks more like a drawing than a sign."
             jump quiz_check
-        "Dai Sutaa no Sign":
+        "Honjin no Sign":
             play sound falsechoice_long
             "WRONG"
             jump quiz_fail
-        "Kiduki":
+        "Kimi wa Boku":
             play sound falsechoice_long
             "WRONG"
             jump quiz_fail
+        "See picture again":
+            jump quiz_5
 
 label quiz_6:
     menu:
-        "The first character Hitona used in uma musume was maruzenski. The first race she didn't get first place was when she got 5th place. But who got first place?"
-        "Narita Bryan":
+        "In the game called Uma Musume, during the first time that Hitona Kohigashi tried to raise Maruzensky, she came in 5th place during the Nippon Derby. Who came in first place?"
+        "Narita Taishin":
             play sound falsechoice_long
             "WRONG"
             jump quiz_fail
         "Ines Fujin":
             play sound correctchoice
             "CORRECT"
+            p "It’s always sad to see someone failing even though they've tried so hard."
             jump quiz_check
-        "Grass Wonder":
+        "Mihono Bourbon":
             play sound falsechoice_long
             "WRONG"
             jump quiz_fail

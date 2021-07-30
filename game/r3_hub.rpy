@@ -3,129 +3,140 @@ label r3_hub:
 
     stop music
 
-    "\"CORRECT\""
+    "{b}\"Correct Passcode\"{/b}"
 
-    p "Oh that was the correct one"
+    p "Oh, that was the correct one."
 
     show hitona3 smile hat
 
-    "The girl held my arm"
+    "The girl standing next to me grabbed my arm."
 
-    "??" "Let’s go!"
+    "??" "Let's go!"
 
-    p "What? Where?"
+    p "What? Where..."
 
     scene black with fade
 
-    "I blacked out…"
+    "Before I could finish my words, I lost consciousness."
 
     "??" "Ooooi Kohigashi"
 
     "??" "Ooooi wake up already"
 
-    p "Huh? Where am I…"
+    p "Huh? Where am I..."
 
-    scene bg hub with Fade(1.0, 0.0, 1.0)
+    scene bg hub with Fade(1.0, 1.0, 2.0)
     play music lios_bgm fadein 3.0 fadeout 3.0 volume 0.1
 
-    "I woke up in an enclosed room…a really huge room full of…I can’t even describe it"
+    "I woke up in an enclosed room"
+
+    "It was a really huge room full of...something."
+
+    "It's difficult to describe it in words."
 
     show hitona3 smile hat with dissolve
-    #show lios front
 
-    "??" "We’re in the virtual world"
+    "??" "This is a virtual world."
 
     p "Virtual world?"
 
-    "??" "Yeah the space inside the computer, it’s Lios’ domain"
+    "??" "Yeah, you could call it the space inside the computer. This is Lios' domain."
 
-    "??" "He would steal stuff and bring it back here"
+    "??" "He steals various things and brings them here."
 
-    p "…I…see…"
+    p "...I...see..."
 
     show hitona3 laugh hat
 
-    "??" "Oh right I haven’t introduced myself, I’m Pierrot! No not Poirot but Pierrot! The Master Detective Pierrot!"
+    "??" "Oh right, sorry, I haven't introduced myself. I'm Pierrot! No, not Poirot but Pierrot! The Master Detective Pierrot!"
 
-    p "Okay…I’m uuh…Hitona, Kohigashi Hitona"
+    p "Okay...uhh...I'm Hitona, Hitona Kohigashi."
 
-    p "But…you somehow knew that"
+    p "But...you somehow knew that, it seems."
 
-    pi "Don’t mind the details but here we are! Lios’ Domain!"
+    pi "Don't mind the small details! Welcome to Lios' Domain! "
 
     show hitona3 idle hat
 
-    p "Why are we here again?"
+    p "Why did we come here again?"
 
-    pi "You want to get back the thing Lios stole from you right?"
+    pi "You want to get back the thing Lios stole from you, right?"
 
-    p "What? Oooh…"
+    p "What? Ahhh..."
 
-    p "I don’t even know what he stole though…"
+    p "In the first place, I don't even know what he stole though..."
 
     show hitona3 smug hat
 
-    pi "Well let’s get it anyway!"
+    pi "Well, let's take it back anyways!"
 
-    "??" "You’re here again…"
+    "??" "You've come back again..."
 
-    p "Eh? You saying something Pierrot?"
+    p "Eh? Did you say something, Pierrot?"
 
     show hitona3 idle hat
 
-    pi "It’s Lios"
+    pi "That's Lios' voice."
 
-    l "Make my job easier won’t you Pierrot…"
+    l "Make my job easier, won't you Pierrot..."
 
     "Pierrot just shrugged"
 
-    l "Well no matter, Welcome to my domain, the place where you can find things I stole"
+    l "Well, whatever. Welcome to my domain, the place where you can find things I stole!"
 
-    p "What did you steal anyway?"
+    p "What did you steal from me anyways?"
 
-    l "That’s for you to find out~"
+    l "I'm not telling you that."
+
+    l "That's for you to find out."
 
     show hitona3 laugh hat
 
-    pi "Let’s go Kohigashi, let’s go!"
+    pi "Let's go Kohigashi, let's go!"
 
-    "This is all so confusing but…it’s exciting so might as well follow Pierrot"
+    "This is all so confusing but...it seems a bit fun, so might as well follow along."
 
     hide hitona3 with dissolve
 
-    "But…wasn’t I suppose to do something? Oh well~"
+    "{i}Wait...wasn't there something I was supposed to do...? Oh well...{/i}"
 
-    "We walked through the room looking around"
+    "We walked through the area looking around."
 
-    l "So Pierrot, ready to fail again?"
+    l "So, Pierrot, are you prepared to fail again?"
 
     show hitona3 smug hat
 
     pi "Wahahahaha! Lios, underestimating me now is the worst mistake you can possibly make!"
 
-    pi "I have grown, this time for sure Hitona will get her stolen goods back!"
+    pi "I have grown, this time for sure Kohigashi will get back what you have stolen!"
 
     hide hitona3
 
-    p "Uuuh…so where do we find these stolen stuff?"
+    p "Uhhh...so, where exactly do we find these things that were stolen...?"
 
-    l "This is my domain little one~ I can give you it right away but that’s no fun"
+    l "This is my domain, little one."
 
-    l "Complete these challenges and you shall receive it back"
+    l "While I could return it right away, that's boring!"
 
-    l "Fail any one of it, you’re banned from the domain!"
+    l "Complete all my challenges and I'll return it..."
 
-    p "This is gonna be tedious…"
+    l "However! If you fail even one..."
+
+    l "I'll ban you from my domain!"
+
+    p "This is getting to be more and more tedious..."
 
     show hitona3 smug hat
 
-    pi "Don’t worry Hitona! The great detective Pierrot is here!"
+    pi "Don't worry, Kohigashi! The great detective Pierrot is here by your side!"
 
     play sound lightswitch
 
     scene black
 
-    "The room suddenly went dark"
+    $ renpy.pause(1.0)
+
+    "The room suddenly darkened"
 
     p "Eh?!"
 

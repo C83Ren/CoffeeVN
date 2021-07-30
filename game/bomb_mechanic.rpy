@@ -235,12 +235,12 @@ label bomb_choice:
     if at_finish(maze, player_x, player_y):
         hide countdown
         $ _skipping = True
-        jump r3_river
+        jump r3_end
     elif at_finish_secret(maze, player_x, player_y):
         hide countdown
         $ _skipping = True
         $ r3_secret = True
-        jump r3_river
+        jump r3_end
     else:
         jump bomb_choice
 

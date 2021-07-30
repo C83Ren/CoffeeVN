@@ -1,23 +1,25 @@
 label r3_drawing:
     scene bg river
 
-    p "Well the result was as I was expecting~"
+    p "Just as expected~"
 
-    p "Don’t underestimate Hitona the romance master~"
+    p "Don’t underestimate me, the romance master!"
 
     show hitona3 laugh hat at hitona_left
 
-    pi "Yeah such challenge can’t defeat the great detective Pierrot!"
+    pi "Yeah, such a simple challenge couldn’t possibly defeat the great detective Pierrot!"
 
-    p "You didn’t help!"
+    p "You didn’t help at all!"
 
     show lios front at lios_right behind hitona3
 
-    l "Well at least finally you got here…"
+    l "Well, at least finally you made it here..."
 
     show hitona3 smile hat
 
-    "Pierrot looked somewhat relief"
+    "Pierrot looked somewhat relieved"
+
+    "Without really thinking about it, I checked my phone."
 
     p "Huh?"
 
@@ -26,41 +28,53 @@ label r3_drawing:
 
     play audio messagetone
 
-    "Oh there’s a message from my phone"
+    $ renpy.pause(1.0)
+    window hide
 
-    "100+ unread messages…"
+    "It seems like I received some texts."
 
-    "“Kohiii, where are you?”"
+    "\"Unread Messages: 100+\""
 
-    "This is kinda scary…Who’s sending these anyway? I can’t read its name"
+    "\"Kohi! Where are you?\""
 
-    "Oh well~"
+    "\"Kohi?\""
+
+    "\"Hello?!?!!\""
+
+    "{i}This is kind of scary...{/i}"
+
+    "{i}To begin with, who’s even sending these...? The name...for some reason I can’t read it...{/i}"
+
+    "{i}Oh well...{/i}"
+
 
     show lios front at lios_right
     show hitona3 smile hat at hitona_left
 
-    l "Go on to the next one"
+    l "Anyways, keep moving."
 
-    pi "Let’s go Hitona, to the next challenge!"
+    pi "Let’s go, Kohigashi!"
+
+    pi "To the next challenge!"
 
     stop sound
 
     "We walked a bit again and the room suddenly changed"
 
-    scene bg computer with Fade(1.0, 1.0, 1.0)
+    scene bg quiz with Fade(1.0, 1.0, 1.0)
 
-    p "It still weirds me out that these rooms can change just like that"
+    p "It still weirds me out that these rooms can change just like that..."
 
     show lios front at lios_right with dissolve
     show hitona3 worried hat at hitona_left with dissolve
 
-    pi "I really think the animal from before was weirder…"
+    pi "I really think the animal flirting from before was weirder though..."
 
-    l "The animal has heart too you know, such cruelty"
+    l "How cruel. Animals have hearts too, you know."
 
-    p "You popping up whenever and wherever is probably weirder yeah…"
+    p "You popping up out of nowhere is even weirder though."
 
-    l "Well just sit in front of that computer"
+    l "Well anyways, just look at the monitor"
 
     show hitona3 idle hat
 
@@ -71,26 +85,30 @@ label r3_drawing:
     hide hitona3
     hide lios
 
-    "I sat on the chair and the computer screen showed “Just a little bit more!”"
+    "I looked at the monitor. On the screen, \"Just a little bit more!\" was displayed in large font."
 
-    p "Okay…?"
+    p "..."
+
+    p "Huh"
 
     show lios front at lios_right
     show hitona3 idle hat at hitona_left
 
-    l "Time to do more quizzes~ Guess the drawings!"
+    l "Time to do more quizzes!"
 
-    pi "Seem quite tame for your standards"
+    l "Guess the drawings!"
 
-    l "Shut it will you…"
+    pi "Seems quite tame for your standards"
 
-    l "Guess 3 out of 3 okay. Like Pierrot said should be easy~"
+    l "Shut it."
+
+    l "Just like last time, 3 out of 3."
+
+    l "Like Pierrot said, it should be easy."
 
     show hitona3 worried hat
 
-    pi "Now I’m not so sure when you put it that way…"
-
-    p "Just got to try then"
+    pi "Now that you put it that way, I’m not so sure anymore..."
 
     hide hitona3 with dissolve
 
@@ -103,7 +121,7 @@ label r3_drawing:
     menu:
         "Did you succeed?"
         "Yeah":
-            jump r3_sing
+            jump r3_bomb
         "Nope":
             jump drawing_fail
 
@@ -113,23 +131,33 @@ label drawing_fail:
     show lios front at lios_right with dissolve
     show hitona3 angry hat at hitona_left with dissolve
 
-    pi "Lios…YOUR DOODLE IS HORRIBLE!"
+    pi "Lios...YOUR DOODLE IS HORRIBLE!"
 
-    l "You just don’t understand my artistic sense Pierrot"
+    l "You just don’t understand my artistic sense, Pierrot."
 
-    p "It was…yeah kinda horrible Lios"
+    p "It was a bit..."
 
-    l "Uuugh, if you knew who drew these you would singing praises"
+    l "Uuugh, if you knew who drew these you would be singing praises instead."
 
-    l "But no matter, such trifle thing should not be brought up any further"
+    l "But no matter."
 
-    l "Cause you failed it means you getting out of here. Go on, shoo shoo~"
+    l "There’s no need to talk about such trifling things anymore."
+
+    l "Since you failed, goodbye."
+
+    l "Go on, shoo shoo."
 
     show hitona3 surprised2 hat
 
-    pi "Come ooooon we were so close. Lios pleeeeeaaase"
+    pi "Come ooooon we were so close...!"
 
-    l "Nope, nothing like that, go on. I’ll kick you out myself then. Ciao~"
+    pi "Lios, pleeeeeaaase!"
+
+    l "Nope, nothing like that, off you go."
+
+    l "Actually, I’ll just kick you out myself."
+
+    l "Bye."
 
     stop music fadeout 1.0
 
@@ -139,31 +167,24 @@ label drawing_fail:
 
     p "Huh?!"
 
-    "I suddenly woke up on my bed…"
-
-    "Cause of the phone was ringing"
-
-    "A call?"
+    "I suddenly woke up on my bed. My phone was ringing."
 
     stop sound
 
-    "“KOHIIIII! I’ve been waiting for xx minutes now! Where are you?!”"
+    "XXX" "KOHIIIII! I’ve been waiting for XX minutes already! Where are you!?"
 
-    "…"
+    "..."
 
-    "I hung up and dash outside"
+    "I hung up, and dashed out from my room. "
 
     scene black with fade
 
-    "While going to the park that dream kept spinning in my head"
+    "While running towards the park, that dream? kept spinning in my mind."
 
-    "I wonder what was that all about"
+    "It seems like the meaning of that dream? will stay unknown forever."
 
-    "I guess I will never figure out what that dream was all about"
-
-    "Dream stay as dream huh"
+    "I guess dreams will just be dreams."
 
     "Bad End"
-
 
     return

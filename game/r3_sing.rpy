@@ -1,74 +1,36 @@
 label r3_sing:
-    scene bg computer with fade
+    scene bg quiz
 
     show lios front at lios_right with dissolve
-    show hitona3 happy hat at hitona_left with dissolve
 
-    pi "Aaah sure brings back memories"
+    "Someone with a black cape suddenly appeared in front of us"
 
-    l "Amazes me you still remember those drawings Pierrot"
+    l "You got them all right, huh. That’s unexpected."
 
-    pi "It reminds me when Hitona was playing *** and she drew ***"
+    show hitona3 laugh hat at hitona_left with dissolve
+    # show lios front at lios_right behind hitona3
 
-    p "Yeah you’re right!"
+    pi "Like I said, don’t underestimate the Great Detective Pierrot"
 
-    "?"
+    show hitona3 smug hat
 
-    "What was I saying?? What game? What drawing?"
+    pi "Such a quiz like that is no big deal!"
 
-    show hitona3 worried hat
+    p "But I was the one answering..."
 
-    l "She still looks confused Pierrot"
+    l "Pierrot don’t get too cocky."
 
-    pi "Sigh"
-
-    l "You underestimate this domain effect Pierrot. But those who finishes it surely will be compensated equally"
+    l "You’ve been doing this for quite a while now, you could even say you’re quite slow."
 
     show hitona3 angry hat
 
-    pi "Even when you’re the one who stole it you dare say that…"
+    pi "How dare you! You always change the question!"
 
-    l "Hey don’t blame me, you’re the one who triggered it"
+    "Even though they’re arguing, it seems like they are actually quite close."
 
-    l "Well go on to the last challenge"
+    l "Well, no matter, it’s not like you will manage to clear the next one anyways."
 
-    p "You said last????"
-
-    l "Yeah I did"
-
-    p "I can’t believe it…"
-
-    show hitona3 surprised1 hat
-
-    pi "Which is why we should hurry!"
-
-    scene bg hub with Fade(1.0, 1.0, 1.0)
-
-    "Pierrot pulled my hands and we walked around the hub finding the challenge"
-
-    "Which will probably just gonna drop out of nowhere again"
-
-    p "What were you talking with Lios Pierrot?"
-
-    show hitona3 idle hat with dissolve
-
-    pi "About what?"
-
-    p "About the domain effect and what not"
-
-    pi "Hmmm I guess it’s fine to tell it now since it is the last challenge"
-
-    pi "Basically Lios domain has the effect to amplify human’s forgetfulness"
-
-    p "Huh??"
-
-    pi "The effect is really strong just so you know"
-
-    pi "You can forget really obvious things"
-
-    p "Is that so…"
-
-    "As I was still trying to understand what Pierrot was saying the scene suddenly changed again"
+    "We walked for a bit, then somehow ended up back in the another room"
 
     scene bg sing with Fade(1.0, 1.0, 1.0)
 
@@ -83,17 +45,15 @@ label r3_sing:
     hide hitona3
     show lios front with dissolve
 
-    l "The last challenge!"
+    l "Go to the stage!"
 
-    l "Go to the stage little one~"
-
-    "I went up to the stage with the mic"
+    "Grabbing the microphone, I went up to the stage."
 
     p "So you want me to…sing?"
 
     l "Not quite~"
 
-    l "You have to guess the next line from the songs~"
+    l "You have to sing the next line when the song stops!"
 
     hide lios
     show hitona3 smug hat
@@ -102,27 +62,50 @@ label r3_sing:
     hide hitona3 with dissolve
 
     play sound quizstart
-    "LET'S START"
+    "LET'S START (Use Romaji only)"
 
     check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics that come next" sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
     play sound correctchoice
-    pi "Correct! Next!"
+    "{b}\"Correct!\"{/b}"
+    pi "What a fitting song...this was on purpose wasn't it?"
+    l "I have no idea what you're talking about"
+    "{b}\"Next\"{/b}"
+
     check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics that come next" sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
     play sound correctchoice
-    pi "Correct! Next!"
+    "{b}\"Correct!\"{/b}"
+    pi "I never really understood this song."
+    l "Just shows how young you are."
+    "{b}\"Next\"{/b}"
+
     check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next" sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji"
     play sound correctchoice
-    pi "Correct! Next!"
+    "{b}\"Correct!\"{/b}"
+    pi "Lios don't be such a tsundere, if you like Kohigashi, just say so."
+    l "You're definitely tired. aren't you..."
+    "{b}\"Next\"{/b}"
+
     check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics that come next" sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta" "きょうのためいっしょうけんめいがんばった" "kyounotameisshoukenmeiganbatta"
     play sound correctchoice
-    pi "Correct! Next!"
+    "{b}\"Correct!\"{/b}"
+    pi "Pierrot also did her best!"
+    l "Did your best to make things harder~"
+    "{b}\"Next\"{/b}"
+
     check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next" sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
     play sound correctchoice
-    pi "Correct! Next!"
+    "{b}\"Correct!\"{/b}"
+    pi "Spring is such a bittersweet season."
+    l "You're right, just like right now, when it all ends, you can only reminisce."
+    "{b}\"Next\"{/b}"
+
     check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics that come next" sing_retry "でもぼくにはそんざいしないからじゃあせめてここにきてよ" "demobokuniwasonzaishinaikarajaasemetekokonikiteyo"
     play sound correctchoice
+    "{b}\"Correct!\"{/b}"
+    pi "Listening to this always makes me shiver, don't you Lios?"
+    l "After repeating this whole thing for thousand times, I feel numb, and not about the song."
 
-    jump r3_end
+    jump r3_river
 
 label sing_retry(hint=False):
     scene bg sing
@@ -130,22 +113,24 @@ label sing_retry(hint=False):
     show lios front at lios_right
     show hitona3 sad hat at hitona_left
 
-    pi "Lios…come on Lios…"
+    pi "Lios...please...Lios..."
 
-    l "Who said it was easy?"
+    l "Who was the one who said it’d be easy?"
 
     pi "I’m sorry!"
 
-    l "Fine, you can try again if you want. I am nice today"
+    l "Fine, you can try again if you want."
+
+    l "I feel nice today."
 
     show hitona3 surprised1 hat
 
     pi "THANK YOU!"
 
-    pi "Let’s try again Hitona!"
+    pi "Let’s try again!"
 
     if hint:
-        pi "You were close! Try typing a bit more this time."
+        pi "You were so close last time! Just sing a little more!"
 
     menu:
         "What should I do?"
@@ -155,8 +140,32 @@ label sing_retry(hint=False):
             return "sing_fail"
 
 label sing_fail:
-    scene black with fade
+    stop music fadeout 1.0
 
-    "Let's try again okay"
+    scene bg room with Fade(1.0, 1.0, 1.0)
+
+    play music room_bgm fadein 3.0 volume 0.2
+
+    "{i}Eh? I'm in...my room? On my bed...{/i}"
+
+    "{i}Even if that was a dream, I wonder what was stolen...{/i}"
+
+    "I looked up at my phone screen."
+
+    p "..."
+
+    p "AAAAAAA I'M SO SORRY SENPAI!"
+
+    "I rushed out of my room in a hurry to meet senpai."
+
+    scene black with dissolve
+
+    "While running towards the park, that dream? kept spinning in my mind."
+
+    "It seems like the meaning of that dream? will stay unknown forever."
+
+    "I guess dreams will just be dreams."
+
+    "Bad End"
 
     return

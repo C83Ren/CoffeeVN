@@ -1,44 +1,81 @@
 label r3_bomb:
-    scene bg quiz
+
+    scene bg quiz with fade
 
     show lios front at lios_right with dissolve
+    show hitona3 happy hat at hitona_left with dissolve
 
-    "Someone with a black cape suddenly appeared in front of us"
+    pi "Ahhh, sure brings back memories."
 
-    l "You got all right huh, unexpected"
+    l "Amazes me that you still remember those drawings, Pierrot."
 
-    show hitona3 laugh hat at hitona_left with dissolve
-    # show lios front at lios_right behind hitona3
+    pi "It reminds me of when Kohigashi was playing XXXXXX and she drew XXXX."
 
-    pi "Like I said, don’t underestimate the Great Detective Pierrot"
+    p "Yeah, that’s right!"
 
-    show hitona3 smug hat
+    "{i}Huh?{/i}"
 
-    pi "Such petty quiz you’re giving us"
+    "{i}What was I saying?? What game? What drawing?{/i}"
 
-    p "But I was the one answering…"
+    show hitona3 worried hat
 
-    l "Pierrot don’t get too cocky, you’ve been doing this for a while now it is no surprise that you would memorize it by now"
+    l "She still looks confused, Pierrot."
+
+    pi "Haa..."
+
+    l "You underestimate this domain effect."
+
+    l "But those who reach the end will surely be justly compensated."
 
     show hitona3 angry hat
 
-    pi "How dare you say that! You always change the question!"
+    pi "You’re the one who stole it though..."
 
-    "Even though they’re arguing seems like they are quite close somehow"
+    l "Hey don’t blame me!"
 
-    l "Well no matter, it’s not like you will manage to clear the next one"
+    l "You’re the one who triggered it!"
 
-    l "Go on, see your worst enemy"
+    l "Well anyways, off you go to the last challenge."
 
-    p "Eh? Worst enemy?"
+    p "You said last????"
 
-    show hitona3 idle hat
+    l "Yeah I did"
 
-    pi "Don’t falter Hitona! Let’s goo"
+    p "I can’t believe it..."
+
+    show hitona3 surprised1 hat
+
+    pi "Which is why we should hurry!"
+
+    scene bg hub with Fade(1.0, 1.0, 1.0)
+
+    "Pierrot pulled my hands and led me on a search for the last challenge."
+
+    "Though it will probably just drop out of nowhere."
+
+    p "What were you talking about with Lios earlier?"
+
+    show hitona3 idle hat with dissolve
+
+    pi "What do you mean?"
+
+    p "About the domain effect and what not."
+
+    pi "Hmmm, I guess it’s fine to tell it now since it is the last challenge."
+
+    pi "Basically, Lios’ domain has the effect of amplifying a human’s forgetfulness."
+
+    p "Huh??"
+
+    pi "It’s really strong!"
+
+    pi "It can cause you to forget even the most obvious things."
+
+    p "Is that so..."
+
+    "While I was still processing what Pierrot said, the scene suddenly changed again."
 
     scene bg hub with fade
-
-    "We walked for a bit, then somehow we were back in the previous room"
 
     show lios front with dissolve
 
@@ -46,24 +83,34 @@ label r3_bomb:
 
     pause 2.0
 
-    #play music bomb_intro_bgm noloop
-    play music bomb_loop_bgm loop volume 0.2 fadein 3.0
+    play music bomb_intro_bgm noloop
 
+    l "The last challenge!"
 
-    l "You have to escape the maze within the time limit. If not the bomb would explode~"
+    l "Go on~ Your worst enemy is next."
 
-    p "What?"
+    p "Eh? Worst enemy??"
 
-    l "Here a map, you can see it for a bit"
+    pi "Don’t falter, Kohigashi! You can do it!"
 
-    l "By the way the time limit is 2 minutes, like actually 2 minutes yes I’m looking at you player"
+    l "You have to escape from the maze within the time limit. If you’re too slow..."
 
-    l "Right after the map is gone, 2 minutes, good luck~"
+    l "The bomb will explode."
+
+    p "What????"
+
+    l "Here, a map, I’ll let you see it for a little bit."
+
+    l "The time limit is 2 minutes, yes, 2 minutes for you who’s sitting on the other side of the monitor."
+
+    l "Right after I take the map back, 2 minutes, good luck~"
 
     hide lios with dissolve
     show hitona3 angry hat with dissolve
 
     pi "WHAT? This is not part of the plan LIOOOS!"
+
+    play music bomb_loop_bgm loop volume 0.2 fadein 3.0
 
     jump bomb_mechanic
 
@@ -73,48 +120,52 @@ label r3_bomb:
 label bomb_fail:
     hide countdown
     scene black
+    stop music
     play sound bombexplode
 
-    stop music
-    "BOOOM"
+    "{b}BOOOM{/b}"
+
+    $ renpy.pause(3.0)
 
     scene bg hub with fade
 
     play music lios_bgm fadein 1.0 volume 0.1
 
-    "We got sent back to the first room…"
+    "We got sent back to the first room..."
 
     show lios front at lios_right with dissolve
 
-    l "Told you it’s your worst enemy~"
+    l "Told you it’s your worst enemy."
 
     show hitona3 angry hat at hitona_left with dissolve
 
-    pi "By worst you mean actually running?!"
+    pi "You mean exercise?!"
 
-    p "Huuf…nothing…huuf…we could…huuuf about that…"
+    p "Huff...nothing...huff...I could...huff...do...huff...about that..."
 
     show hitona3 pout hat
 
-    pi "Aren’t you annoyed?! It was just the second challenge!"
+    pi "Aren’t you annoyed?! That's the last challenge!"
 
     pi "Lios you must have cheated somehow!"
 
-    l "Doesn’t really matter now does it"
+    l "That doesn’t really matter now, does it?"
 
-    l "I make the rule here and you’re here to solve it…somehow…"
+    l "I make the rules here."
 
-    pi "Cheater, cheater, cheater, cheater Lios~"
+    l "You’re only players."
 
-    p "After all that you still have the energy to get angry huh Pierrot"
+    pi "Cheater! cheater! Lios is a cheater!"
+
+    p "After all that, you still have the energy to get angry huh, Pierrot."
 
     show hitona3 worried hat
 
-    pi "Well I guess we can try it again at another time"
+    pi "Well, oh well. I guess we can try it again at another time."
 
-    l "Yes off you go little girls"
+    l "Yes, yes, off you go, little girls."
 
-    l "Til Next time~"
+    l "Until next time."
 
     stop music fadeout 1.0
 
@@ -122,32 +173,26 @@ label bomb_fail:
 
     play music room_bgm fadein 3.0 volume 0.2
 
-    p "Eh?"
+    "{i}Eh? I'm in...my room? On my bed...{/i}"
 
-    "I opened my eyes and I was in my room lying on my bed…"
+    "{i}Even if that was a dream, I wonder what was stolen...{/i}"
 
-    play sound phonecall loop
+    "I looked up at my phone screen."
 
-    "My phone was ringing…I just looked at it…"
+    p "..."
 
-    stop sound
+    p "AAAAAAA I'M SO SORRY SENPAI!"
 
-    "then the caller hung up"
+    "I rushed out of my room in a hurry to meet senpai."
 
-    p "…"
+    scene black with dissolve
 
-    p "…eh? NOO SENPAI SORRY!"
+    "While running towards the park, that dream? kept spinning in my mind."
 
-    "I rushed out of the room"
+    "It seems like the meaning of that dream? will stay unknown forever."
 
-    scene black with fade
+    "I guess dreams will just be dreams."
 
-    "While going to the park that dream kept spinning in my head"
-
-    "I wonder what was that all about"
-
-    "I guess I will never figure out what that dream was all about"
-
-    "Dream stay as dream huh"
+    "Bad End"
 
     return
