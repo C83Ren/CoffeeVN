@@ -1,26 +1,17 @@
 translate japanese strings:
 
     # game/ed.rpy:5
-    old "End 1"
-    new "ＥＮＤ　１"
+    old "Support End"
+    new "応援ＥＮＤ"
 
     # game/ed.rpy:7
-    old "End 2"
-    new "ＥＮＤ　２"
+    old "Joy End"
+    new "喜びＥＮＤ"
 
     # game/ed.rpy:9
-    old "End 3"
-    new "ＥＮＤ　３"
+    old "Memories End"
+    new "想い出ＥＮＤ"
 
     # game/ed.rpy:11
     old "True End"
     new "ＴＲＵＥ　ＥＮＤ"
-
-    # game/ed.rpy:13
-    old "Bad End 1"
-    new "ＢＡＤ　ＥＮＤ　１"
-
-    # game/ed.rpy:15
-    old "Bad End 2"
-    new "ＢＡＤ　ＥＮＤ　２"
-
