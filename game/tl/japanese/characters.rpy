@@ -13,8 +13,8 @@ translate japanese strings:
     new "白石"
 
     # game/characters.rpy:6
-    # old "Eve"
-    # new ""
+    old "Eve"
+    new "イーブ"
 
     # game/characters.rpy:7
     old "Soldier"
@@ -60,3 +60,6 @@ translate japanese strings:
     old "Deer"
     new "シカ"
 
+    # game/characters.rpy:18
+    old "Rabbit"
+    new "ウサギ"
