@@ -176,25 +176,25 @@ screen multi_sprite():
                 use single_sprite(someone["img"][0], someone["img"][1], someone)
 
 screen rps_picker():
-    vbox xalign 0.5 yalign 0.2:
+    vbox xalign 0.5 yalign 0.1:
         imagebutton:
-            idle Transform(Image('images/rps/rock player idle.png'), zoom=1.0)
-            focus_mask Transform(Image('images/rps/rock player idle.png'), zoom=1.0)
-            hover Transform(Image('images/rps/rock player hover.png'), zoom=1.0)
+            idle 'images/rps/rock player idle.png'
+            focus_mask 'images/rps/rock player idle.png'
+            hover 'images/rps/rock player hover.png'
             action Call("handle_rps_pick", what="rock")
 
     vbox xalign 0.2 yalign 0.8:
         imagebutton:
-            idle Transform(Image('images/rps/paper player idle.png'), zoom=0.8)
-            focus_mask Transform(Image('images/rps/paper player idle.png'), zoom=0.8)
-            hover Transform(Image('images/rps/paper player hover.png'), zoom=0.8)
+            idle 'images/rps/paper player idle.png'
+            focus_mask 'images/rps/paper player idle.png'
+            hover 'images/rps/paper player hover.png'
             action Call("handle_rps_pick", what="paper")
 
     vbox xalign 0.8 yalign 0.8:
         imagebutton:
-            idle Transform(Image('images/rps/scissor player idle.png'), zoom=0.8)
-            focus_mask Transform(Image('images/rps/scissor player idle.png'), zoom=0.8)
-            hover Transform(Image('images/rps/scissor player hover.png'), zoom=0.8)
+            idle 'images/rps/scissor player idle.png'
+            focus_mask 'images/rps/scissor player idle.png'
+            hover 'images/rps/scissor player hover.png'
             action Call("handle_rps_pick", what="scissor")
 
 transform rps_before(left):
