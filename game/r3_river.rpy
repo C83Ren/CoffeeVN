@@ -155,13 +155,10 @@ label river_menu1:
     menu:
         extend ""
         "Pat its head":
-            $ add_choice_to_history("Pat its head")
             jump river_pat
         "\"What's your name?\"":
-            $ add_choice_to_history("\"What's your name\"")
             jump river_name
         "\"I love you\"":
-            $ add_choice_to_history("\"I love you\"")
             jump river_love
 
 label river_pat:
@@ -306,13 +303,10 @@ label river_menu2:
     menu:
         "Now what should I do next?"
         "Rub its chin":
-            $ add_choice_to_history("Rub its chin")
             jump river_rub
         "\"What do you do on your days off?\"":
-            $ add_choice_to_history("\"What do you do on your days off?\"")
             jump river_daysoff
         "\"Let's go on a date!\"":
-            $ add_choice_to_history("\"Let's go on a date!\"")
             jump river_date
 
 label river_rub:
@@ -458,10 +452,8 @@ label river_menu3:
     menu:
         "For the final blow, what should I say?"
         "Let's be friends~":
-            $ add_choice_to_history("Let's be friends~")
             jump river_friend
         "Be my girlfriend!":
-            $ add_choice_to_history("Be my girlfriend!")
             jump river_girlfriend
 
 label river_friend:

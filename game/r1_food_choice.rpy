@@ -61,8 +61,6 @@ label r1_food_choice:
     menu:
         "Where should we go to eat?"
         "7/*1":
-            $ add_choice_to_history("7/*1")
             jump r1_7_11
         "Family Restaurant":
-            $ add_choice_to_history("Family Restaurant")
             jump r1_famres

@@ -48,18 +48,16 @@ label r1_movie:
         "Looking at the selection, it’s pretty obvious which one we’re watching! Which movie do we watch?"
 
         "Horror Movie":
-            $ add_choice_to_history("Horror Movie")
             $ mov = "horror"
 
         "Romance Movie":
-            $ add_choice_to_history("Romance Movie")
             $ mov = "romance"
 
     menu:
         "I went to buy the ticket, but for some reason the cinema only accepts W*bMoney."
 
         "Buy some W*bMoney":
-            $ add_choice_to_history("Buy some W*bMoney")
+            pass
 
     "I bought some W*bMoney, then used it to buy a ticket."
 
@@ -183,7 +181,6 @@ label r1_movie:
 
     "Shiraishi suddenly asked a question."
 
-    # choice not added because it’s said aloud in the line after
     menu:
         s "Hitona onee-chan, would you like to watch a movie with Shiraishi again someday?"
         "I don’t know... I’m not sure if we can meet again later, so I can’t promise.":

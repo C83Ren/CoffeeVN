@@ -62,8 +62,6 @@ label r1_purikuri:
     menu:
         "Look at the picture?"
         "Look at it":
-            $ add_choice_to_history("Look at it")
             jump r1_purikuri_bad_end
         "Don’t look at it":
-            $ add_choice_to_history("Don’t look at it")
             jump r1_food_choice_purikuri

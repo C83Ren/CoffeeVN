@@ -111,7 +111,6 @@ label start:
             $ intro_color = "Red"
         "Blue":
             $ intro_color = "Blue"
-    $ add_choice_to_history(intro_color)
 
     menu:
         "3. Of the following, which is your most favourite food?"
@@ -121,7 +120,6 @@ label start:
             $ intro_food = "Yakiniku"
         "Salad":
             $ intro_food = "Salad"
-    $ add_choice_to_history(intro_food)
 
     "The questions came one by one, never seeming to end."
 
@@ -158,7 +156,6 @@ label start:
         "All of them" if persistent.ed_unlocked_1 and persistent.ed_unlocked_5 and persistent.ed_unlocked_8:
             $ route = 4
 
-    $ add_choice_to_history(["Support", "Joy", "Memories", "All of them"][route - 1])
     $ save_enabled = True
 
     p "{i}Finally done! What’s the result of this questionnaire?{/i}"

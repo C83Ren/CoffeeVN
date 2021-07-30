@@ -41,7 +41,6 @@ label r1_7_11:
             $ conbini_food = "Sev*n Pr*mium Gold Hamburg Steak"
         "Sev*n Pr*mium Spaghetti Neapolitan":
             $ conbini_food = "Sev*n Pr*mium Spaghetti Neapolitan"
-    $ add_choice_to_history(conbini_food)
 
     p "I recommend getting the [conbini_food!t]!"
 

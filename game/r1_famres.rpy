@@ -104,7 +104,6 @@ label r1_famres:
             $ famires_food = "Beef Bowl"
         "Hamburger Steak":
             $ famires_food = "Hamburger Steak"
-    $ add_choice_to_history(famires_food)
 
     p "I’ll have the [famires_food!t] then."
 

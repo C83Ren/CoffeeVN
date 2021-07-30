@@ -374,8 +374,6 @@ label r1_start:
     menu:
         "Shiraishi was looking at it with hopeful eyes. She’s practically jumping up in the air wanting to try it."
         "Use the purikura":
-            $ add_choice_to_history("Use the purikura")
             jump r1_purikuri
         "Don’t use the purikura":
-            $ add_choice_to_history("Don’t the purikura")
             jump r1_food_choice_no_purikuri

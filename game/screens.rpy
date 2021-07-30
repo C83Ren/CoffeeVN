@@ -212,7 +212,7 @@ screen choice(items):
 
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            textbutton i.caption action [Function(add_choice_to_history, i.caption), i.action]
 
 
 ## When this is true, menu captions will be spoken by the narrator. When false,

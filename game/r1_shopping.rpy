@@ -141,12 +141,10 @@ label r1_shopping:
         "Which outfit should I change into?"
 
         "Suit":
-            $ add_choice_to_history("Suit")
             $ shoppingflag = "suit"
             jump r1_shopping_suit
 
         "Dress":
-            $ add_choice_to_history("Dress")
             $ shoppingflag = "dress"
             jump r1_shopping_dress
 
