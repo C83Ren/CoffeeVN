@@ -7,6 +7,7 @@ label r2_turmoil:
 
     scene bg turmoil with dissolve
 
+    show hitona2 idle with dissolve
 
     p "This is such a heavy rain..."
 
@@ -20,11 +21,15 @@ label r2_turmoil:
 
     p "That’s oddly humble from you"
 
+    show hitona2 smug
+
     e "That’s plenty enough to defeat small fries like the soldiers, no need to use a fancier spell."
 
     e "If Hitona can defeat them, why bother using such a flashy spell?"
 
     p "You’re mocking me, aren’t you?"
+
+    show hitona2 idle
 
     "For some reason, Eve started patting me on the head."
 
@@ -37,6 +42,7 @@ label turmoil_default:
     play sound thunder loop
 
 label turmoil_menu:
+    scene bg turmoil with fade
     call screen turmoil_map
 
 label turmoil_pillar:

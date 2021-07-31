@@ -2,7 +2,7 @@ label r2_map_1:
     scene bg map with Fade(1.0, 1.0, 1.0)
     $ renpy.pause(3.0)
 
-    #idle
+    show hitona2 idle with dissolve
 
     play sound staffsummon
 
@@ -10,11 +10,11 @@ label r2_map_1:
 
     p "How do you do that!? I don’t want to carry anything either!"
 
-    #smug1
+    show hitona2 smug
 
     e "’Tis this Majna Eve’s special power!"
 
-    #idle
+    show hitona2 idle
 
     e "Well, that staff has a dimensional storage spell in it as well, just use that."
 
@@ -42,18 +42,9 @@ label r2_map_1:
 
     call screen world_map()
 
-    menu:
-        "Where to go"
-        "Village":
-            jump on_to_village
-
-    # Put button to pick village
-
-    #jump on_to_village
-
 label on_to_village:
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "Eve..."
 
@@ -61,19 +52,19 @@ label on_to_village:
 
     p "Eve..."
 
-    #smile1
+    show hitona2 smile1
 
     e "Yes, my name is Eve. I am the holder of emptiness itself!"
 
     p "Eve..."
 
-    #smug1
+    show hitona2 smug
 
     e "Yes, you may call me Eve! I am the one who controls the wind of the east!"
 
     p "I still don’t get how the hell you call yourself Eve..."
 
-    #laugh2
+    show hitona2 laugh
 
     e "I see! Then, I, Majna Eden Bat Azuma Nula Sedun, shall bestow you with knowledge of the origin of my name!"
 
@@ -90,7 +81,7 @@ label r2_map_2:
         m_rage = 0
 
 label map_menu:
-    scene bg map
+    scene bg map with fade
     call screen world_map()
 
     menu:
@@ -130,7 +121,7 @@ label map_talk:
         "{i}Wonder what happened...{/i}"
     else:
 
-        #smile1
+        show hitona2 smile1
 
         e "Time for another adventure!!!"
 
@@ -138,7 +129,7 @@ label map_talk:
 
         p "To be honest, I’m really excited!"
 
-        #smug1
+        show hitona2 smug
 
         e "You should be! You are accompanying the great Eve after all!"
 
@@ -146,7 +137,7 @@ label map_talk:
 
         p "More importantly, I can use magic!! So exciting!"
 
-        #smile2
+        show hitona2 smile2
 
         e "Ah I understand that feeling~"
 
@@ -168,7 +159,7 @@ label map_talk:
 
 label map_castle:
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "Why are we here..."
 
@@ -180,7 +171,7 @@ label map_castle:
 
     p "And weren’t you the one who wanted me to get those ultimate spells to take down the king?!"
 
-    #smug1
+    show hitona2 smug
 
     e "Don’t worry! You’re with the great Eve, what can possibly go wrong!"
 
@@ -202,7 +193,7 @@ label map_rage_1:
 
     $ renpy.pause(3.0)
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "I can feel overwhelming pressure just looking at it from here."
 
@@ -220,7 +211,7 @@ label map_rage_1:
 
     p "You make sense sometimes, huh. Sometimes."
 
-    #angry3
+    show hitona2 angry
 
     e "You want me to Wind Blast you into that fire wall?"
 
@@ -238,13 +229,13 @@ label map_rage_2:
 
     p "Rage sound kinda cool don’t you think?"
 
-    #laugh2
+    show hitona2 laugh with dissolve
 
     e "You dare praise such a lame name in front of this wonderfully named Eve?"
 
     p "By the way, what does your name mean anyway?"
 
-    #pout2
+    show hitona2 pout
 
     e "..."
 

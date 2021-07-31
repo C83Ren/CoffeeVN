@@ -131,8 +131,8 @@ label r2_start:
 
     e "I’ll properly explain after this so help me out!"
 
-    hide hitona2
-    hide soldier
+    hide hitona2 with dissolve
+    hide soldier with dissolve
 
     stop music fadeout 1.0
 

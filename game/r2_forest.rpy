@@ -5,17 +5,16 @@ init python:
     f_hut2 = 0
 
 label r2_forest:
-    scene bg forest with fade
 
     label forest_menu:
-        "Where to go?"
+        scene bg forest with fade
         call screen forest_map
 
 label forest_spot_1:
     if f_spot1 == 0:
         $ f_spot1 = 1
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "Why are you going there Hitona?"
 
@@ -25,7 +24,7 @@ label forest_spot_1:
 
         e "Shiny? What’s shiny? Nothing is...oooh"
 
-        #angry3
+        show hitona2 angry
 
         e "I advise you not to touch that"
 
@@ -57,7 +56,7 @@ label forest_spot_1:
 
     else:
 
-        #surprised1
+        show hitona2 surprised with dissolve
 
         e "Why are you going there again? Do you have a fascination for turd?"
 
@@ -69,7 +68,7 @@ label forest_spot_1:
 
         p "Who the hell would make a gold turd in the middle of the forest..."
 
-        #smug1
+        show hitona2 smug
 
         e "...Who else?! But I, Majna Eden Bat Azuma Nula Sedun!"
 
@@ -82,17 +81,17 @@ label forest_spot_2:
     if f_spot2 == 0:
         $ f_spot2 = 1
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "I perceive a certain magical power from here."
 
         p "You can do that?"
 
-        #smug1
+        show hitona2 smug
 
         e "You underestimate me too much, young one."
 
-        #smile1
+        show hitona2 smile1
 
         e "Look, over there! It’s shining! It’s a healing spell orb!"
 
@@ -108,7 +107,7 @@ label forest_spot_2:
 
     else:
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "I wonder if I can find anything else here..."
 
@@ -128,11 +127,11 @@ label forest_hut_1:
     if f_hut1 == 0:
         $ f_hut1 = 1
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "Is anyone home?"
 
-        #laugh2
+        show hitona2 laugh
 
         e "Listen up! Offer all your possessions to this great Nula!"
 
@@ -144,7 +143,7 @@ label forest_hut_1:
 
         "But, there was no one inside the empty hut filled with dust."
 
-        #idle
+        show hitona2 idle
 
         e "No one lives here, Hitona dear."
 
@@ -162,7 +161,7 @@ label forest_hut_1:
 
     else:
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "What did you mean by “no one is here anymore”"
 
@@ -184,7 +183,7 @@ label forest_hut_2:
     if f_hut2 == 0:
         $ f_hut2 = 1
 
-        #smile1
+        show hitona2 smile1 with dissolve
 
         play sound dooropen
 
@@ -204,19 +203,19 @@ label forest_hut_2:
 
     else:
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "Hey, Eve."
 
         p "Can I try using that spell orb?"
 
-        #angry3
+        show hitona2 angry
 
         e "Didn’t I say it earlier? It’ll break after one use."
 
         p "But..."
 
-        #idle
+        show hitona2 idle
 
         e "Haaa...I’ll get you another spell orb later, okay."
 
@@ -224,7 +223,7 @@ label forest_hut_2:
 
         p "Give me some!"
 
-        #pout2
+        show hitona2 pout
 
         e "It’s in my staff..."
 

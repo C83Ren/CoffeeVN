@@ -8,7 +8,7 @@ init python:
 label r2_village:
     scene bg village with Fade(1.0, 1.0, 1.0)
 
-    #smug1
+    show hitona2 smug with dissolve
 
     p "This is a nice village, but why is there no one outside?"
 
@@ -70,8 +70,7 @@ label village_house_4:
 
 label village_talk_1:
 
-    hide screen village_map
-    #idle
+    show hitona2 idle with dissolve
 
     e "Why are we here again?"
 
@@ -79,13 +78,13 @@ label village_talk_1:
 
     p "You were the one who said we should go here!"
 
-    #smile1
+    show hitona2 smile1
 
     e "Believe in this Eve! The one blessed by the wind who told me we should come here!"
 
     p "You had no plan!"
 
-    #smile2
+    show hitona2 smile2
 
     e "Believe in the wind!"
 
@@ -95,17 +94,17 @@ label village_talk_1:
 
 label village_talk_2:
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "You called me second salvation, so who was the first?"
 
-    #smug1
+    show hitona2 smug
 
     e "Of course it is I, the Great Majna Eden Bat Azuma Nula Sedun!"
 
     p "What does it mean being a salvation anyways...?"
 
-    #idle
+    show hitona2 idle
 
     e "A salvation is an existence that grants hope to everyone."
 
@@ -115,11 +114,11 @@ label village_talk_2:
 
 label village_talk_3:
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "What do the special regions look like anyway?"
 
-    #laugh2
+    show hitona2 laugh
 
     e "They are as magnificent as myself!"
 
@@ -127,7 +126,7 @@ label village_talk_3:
 
     p "You said the magical energy in the regions sometimes go on a rampage or something like that right?"
 
-    #idle
+    show hitona2 idle
 
     e "Yes, it is horrible! The Captain almost died once because of it!"
 
@@ -135,7 +134,7 @@ label village_talk_3:
 
     p "How in the world did he survive that..."
 
-    #smug1
+    show hitona2 smug
 
     e "That’s because of this great Eve!"
 
@@ -146,7 +145,7 @@ label village_talk_3:
 label village_announcement:
     "“Join the army, not the rebels!”"
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "What a weird poster..."
 
@@ -160,7 +159,7 @@ label village_house_1_1:
 
     play sound dooropen
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "Hitoni! I have arrived!"
 
@@ -168,7 +167,7 @@ label village_house_1_1:
 
     hn "Hm? Who’s that girl beside you?"
 
-    #smile1
+    show hitona2 smile1
 
     e "This is our second salvation who will save this world! After me of course~"
 
@@ -178,13 +177,13 @@ label village_house_1_1:
 
     hn "Well, true or not, don’t let her waste it like you did."
 
-    #laugh2
+    show hitona2 laugh
 
     e "Do not fear! This Eve will set things straight once and for all. And then after that everyone will be subjects of King Eve!"
 
     hn "Again with that talk..."
 
-    #idle
+    show hitona2 idle
 
     e "Anyways, this is our second salvation, her name is Hitona. Found her in the forest."
 
@@ -232,7 +231,7 @@ label village_house_1_2:
 
     hn "Hahaha! You got that right!"
 
-    #pout2
+    show hitona2 pout
 
     e "My eye is sensing someone is mocking this great Majna Eden Bat Azuna Nula Sedun!"
 
@@ -248,13 +247,13 @@ label village_house_2_1:
 
     "???" "Who would come to this place in the middle of the day? I don’t have any money!"
 
-    #laugh2
+    show hitona2 laugh
 
     e "You should be grateful that this great Majna came out to greet you!"
 
     "???" "Oh, it’s you. Even worse, hurry up and get out."
 
-    #surprised1
+    show hitona2 surprised
 
     e "Ungrateful as always, Hitoshi."
 
@@ -262,7 +261,7 @@ label village_house_2_1:
 
     hs "Hmm? Who’s that behind you?"
 
-    #smile1
+    show hitona2 smile1
 
     e "Glad you asked! This is the world’s second salvation! After me of course!"
 
@@ -294,7 +293,7 @@ label village_house_3_1:
 
     play sound dooropen
 
-    #laugh2
+    show hitona2 laugh with dissolve
 
     e "Captain! The Great Majna has come with the world’s second salvation!"
 
@@ -302,7 +301,7 @@ label village_house_3_1:
 
     "???" "Second salvation you say? Is she the one beside you right now?"
 
-    #smile1
+    show hitona2 smile1
 
     e "Yep, she’s Hitona."
 
@@ -312,11 +311,11 @@ label village_house_3_1:
 
     p "You got that right, I have no idea why I am here."
 
-    #idle
+    show hitona2 idle
 
     e "Well then, I will leave Hitona to you, Captain! I’ll be waiting outside."
 
-    #hide eve
+    hide hitona2 with dissolve
 
     play sound dooropen
 
@@ -389,7 +388,7 @@ label village_house_3_1:
 
                 "I went out and found Eve waiting."
 
-                #idle
+                show hitona2 idle with dissolve
 
                 e "Oh you’re done talking with the Captain?"
 
@@ -444,7 +443,7 @@ label village_house_3_3:
 
 label village_house_4_1:
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "This a very dangerous domain; let’s explore somewhere else first!"
 
@@ -456,7 +455,7 @@ label village_house_4_2:
 
     play sound dooropen
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "I see, so this is your house."
 
@@ -496,7 +495,7 @@ label village_house_4_2:
 
 label village_house_4_3:
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "I know my domain is such a lovely place, but we got places to go."
 

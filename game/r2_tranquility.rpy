@@ -19,7 +19,7 @@ init python:
 label r2_tranquility:
     scene bg map with Fade(0.5, 0.5, 0.5)
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "Huh? Why is the army here?"
 
@@ -27,15 +27,24 @@ label r2_tranquility:
 
     "But as I said that, Eve had already left to greet the soldiers."
 
-    #laugh2
+    show hitona2 laugh with dissolve
 
     e "Hello soldiers!"
 
     p "Idiot! Why would you do that!?"
 
+    show soldier with dissolve
+    show soldier as soldier_s:
+        xalign 1.0
+        ypos 1080
+
     so "It’s her! Get her!"
 
     p "..."
+
+    hide hitona2
+    hide soldier
+    hide soldier_s
 
     python:
         hitona_stats["hp"] = 200
@@ -76,7 +85,7 @@ label r2_tranquility_after_battle:
 
     "{b}You have obtained a Heal Aura!{/b}"
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "Ooh, you’re getting better!"
 
@@ -99,13 +108,13 @@ label r2_tranquility_after_battle:
 
     p "Such a peaceful place..."
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "It is called Tranquility after all."
 
     p "The forest is so thick though..."
 
-    #angry3
+    show hitona2 angry
 
     e "Shh..."
 
@@ -119,7 +128,7 @@ label r2_tranquility_after_battle:
 
     p "What’s with this place..."
 
-    #hide
+    hide hitona2
 
     "The forest was too thick."
 
@@ -135,7 +144,7 @@ label r2_tranquility_after_battle:
 
     p "I’ve seen bathtubs larger than that?!"
 
-    #angry3
+    show hitona2 angry
 
     p "Where the heck is all that water from the waterfall going to?!"
 
@@ -145,13 +154,14 @@ label r2_tranquility_after_battle:
 
     p "The pond is so small, there can’t be any fish in there though?!"
 
-    #idle
+    show hitona2 idle
 
     e "Well don’t mind him, Hitona. Let’s just find that thing."
 
     e "Remember, {b}“What you seek lies deep in the water.”{/b}"
 
 label tranquility_menu:
+    scene bg tranquility_front with Fade
     call screen tranquility_map
 
 label tranquility_forest:
@@ -216,7 +226,7 @@ label tranquility_talk_1:
 
     p "I’m pretty sure I’ve seen puddles larger than that..."
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "While that waterfall is massive, right?"
 
@@ -236,7 +246,7 @@ label tranquility_talk_1:
 
     e "Well, this is much more tame than what I saw back then, we should be grateful."
 
-    #idle
+    show hitona2 idle
 
     e "Anyway remember, {b}“What you seek lies deep in the water.”{/b}"
 
@@ -244,7 +254,7 @@ label tranquility_talk_1:
 
 label tranquility_talk_2:
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "Did you forget the hint already?"
 
@@ -256,7 +266,7 @@ label tranquility_talk_2:
 
 label tranquility_pond_1:
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "You think the ultimate spell is down there?"
 
@@ -264,13 +274,13 @@ label tranquility_pond_1:
 
     p "Use your magic Eve!"
 
-    #angry3
+    show hitona2 angry
 
     e "To drain the water?"
 
     p "Of course not! To swim!"
 
-    #pout2
+    show hitona2 pout
 
     e "..."
 
@@ -290,7 +300,7 @@ label tranquility_pond_1:
 
 label tranquility_pond_2:
 
-    #angry3
+    show hitona2 angry with dissolve
 
     menu:
         e "So you’re gonna swim??"
@@ -318,7 +328,7 @@ label tranquility_pond_2:
         "Of course not...":
             p "Of course not..."
 
-            #idle
+            show hitona2 idle
 
             e "Yeah, thought so"
 
@@ -331,7 +341,7 @@ label tranquility_spot_1_1:
 
         play sound frog loop
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "There’s a disturbing amount of frogs here..." id tranquility_spot_1_1_3af2fb24
 
@@ -351,7 +361,7 @@ label tranquility_spot_1_1:
 
         play sound frog loop
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "There’s a disturbing amount of frogs here..." id tranquility_spot_1_1_3af2fb24_1
 
@@ -364,7 +374,7 @@ label tranquility_spot_1_2:
 
         play sound frog loop
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "Do you love frogs or something?"
 
@@ -386,7 +396,7 @@ label tranquility_spot_1_2:
 
         play sound frog loop
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "Are you sure you don’t love frogs?"
 
@@ -400,7 +410,7 @@ label tranquility_spot_1_2:
 
         play sound frog loop
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "Do you love frogs or something?"
 
@@ -415,7 +425,7 @@ label tranquility_spot_2_1:
 
     if t_oldman > 0:
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "That’s a weird space for those to gather."
 
@@ -427,13 +437,13 @@ label tranquility_spot_2_1:
 
         p "Eh?"
 
-        #smile2
+        show hitona2 smile2
 
         "Eve pushed me from behind into the pink...something."
 
         p "What are you doooo-aaaaaAAAAAAAAAAAA"
 
-        #idle
+        show hitona2 idle
 
         e "Yeah, what are such a massive amount of worms doing over there~"
 
@@ -451,7 +461,7 @@ label tranquility_spot_2_1:
 
     else:
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "That’s a weird space for those to gather."
 
@@ -463,13 +473,13 @@ label tranquility_spot_2_1:
 
         "{i}Eh?{/i}"
 
-        #smile2
+        show hitona2 smile2
 
         "Eve pushed me from behind into the pink...something."
 
         p "What are you doooo-aaaaaAAAAAAAAAAAA"
 
-        #idle
+        show hitona2 idle
 
         e "Yeah, what are such a massive amount of worms doing over there~"
 
@@ -480,13 +490,13 @@ label tranquility_spot_2_1:
 label tranquility_spot_2_2:
     if t_oldman > 0 and not t_bait2 and not t_fish2:
 
-        #smile2
+        show hitona2 smile2 with dissolve
 
         p "You remember that place, Eve?"
 
         "I put on my biggest smile"
 
-        #surprised1
+        show hitona2 surprised
 
         e "Yeah...let’s take one as bait and go..."
 
@@ -502,13 +512,13 @@ label tranquility_spot_2_2:
 
         p "Do we have to go there again...?"
 
-        #smile2
+        show hitona2 smile2
 
         e "You might start liking them, you know."
 
         p "I could say the same back to you..."
 
-        #angry3
+        show hitona2 angry
 
         e "Y...Yeah, let’s go back..."
 
@@ -517,7 +527,7 @@ label tranquility_spot_2_2:
     else:
         p "Want to go there again, Eve?"
 
-        #surprised1
+        show hitona2 surprised with dissolve
 
         e "That smile on your face makes me say no."
 
@@ -531,7 +541,7 @@ label tranquility_spot_3_1:
 
         p "What’s this weird big black wall doing in the middle of this forest?"
 
-        #angry3
+        show hitona2 angry with dissolve
 
         e "Hitona, do you really think that’s a wall?"
 
@@ -543,7 +553,7 @@ label tranquility_spot_3_1:
 
         p "..."
 
-        #smile1
+        show hitona2 smile1
 
         e "Catch one Hitona! We can use it as bait!"
 
@@ -570,7 +580,7 @@ label tranquility_spot_3_1:
 
         p "What’s this weird big black wall doing in the middle of this forest?"
 
-        #angry3
+        show hitona2 angry with dissolve
 
         e "Hitona, do you really think that’s a wall?"
 
@@ -582,7 +592,7 @@ label tranquility_spot_3_1:
 
         p "..."
 
-        #smile1
+        show hitona2 smile1
 
         p "Let’s go back..."
 
@@ -597,7 +607,7 @@ label tranquility_spot_3_1:
 label tranquility_spot_3_2:
     if t_oldman > 0 and not t_bait3 and not t_fish3:
 
-        #idle
+        show hitona2 idle with dissolve
 
         e "Surely now you know that isn’t a black wall, right Hitona?"
 
@@ -615,7 +625,7 @@ label tranquility_spot_3_2:
 
     elif t_bait3:
 
-        #idle
+        show hitona2 idle with dissolve
 
         p "I never knew you could use cockroaches as a fishing bait..."
 
@@ -629,7 +639,7 @@ label tranquility_spot_3_2:
 
     else:
 
-        #angry3
+        show hitona2 angry with dissolve
 
         e "Are you testing your luck again hoping that there won’t be any cockroaches, Hitona?"
 
@@ -639,7 +649,7 @@ label tranquility_spot_3_2:
 
 label tranquility_oldman_1:
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "So old man, can you help us out?"
 
@@ -667,7 +677,7 @@ label tranquility_oldman_1:
 
     p "Umm nothing happened though?”"
 
-    #pout2
+    show hitona2 pout
 
     e "This pond...is blocking magic..."
 
@@ -722,7 +732,7 @@ label tranquility_after_fishing:
 
     p "WE GOT NO SPELL!"
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "Yeah I can see that Hitona, calm down."
 
@@ -764,7 +774,7 @@ label tranquility_release_fishes:
                 t_fish3 = False
                 t_bfish = True
 
-            #surprised1
+            show hitona2 surprised
 
             e "That fish, it’s not the ultimate spell, but it still holds an amazing amount of magical power."
 
@@ -784,7 +794,7 @@ label tranquility_release_fishes:
 label tranquility_forest_1:
     $ t_forest = 1
 
-    #idle
+    show hitona2 idle with dissolve
 
     e "Are you going to use the fish here in the forest...?"
 
@@ -796,7 +806,7 @@ label tranquility_forest_1:
 
     "{size=100}BOOM!{/size}"
 
-    #angry3
+    show hitona2 angry
 
     "It fell with a loud thump onto the ground..."
 
@@ -818,7 +828,7 @@ label tranquility_forest_1:
 
 label tranquility_forest_2:
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "You’re gonna let Amafi go through that kind of experience again?"
 
@@ -829,7 +839,7 @@ label tranquility_forest_2:
 label tranquility_pond_after_1:
     $ t_pond2 = 1
 
-    #angry3
+    show hitona2 with dissolve
 
     p "Let’s try releasing this fish in the pond."
 
@@ -857,7 +867,7 @@ label tranquility_pond_after_2:
 
     p "How the hell did that fish come out from that pond?"
 
-    #smug1
+    show hitona2 smug with dissolve
 
     e "I can cast a spell that makes you huge as well, want to try?"
 
@@ -871,7 +881,7 @@ label tranquility_pond_after_2:
 
 label tranquility_waterfall:
 
-    #idle
+    show hitona2 idle with dissolve
 
     p "How about we let the fish swim up the waterfall?"
 
@@ -887,7 +897,7 @@ label tranquility_waterfall:
 
     stop music fadeout 1.0
 
-    #surprised1
+    show hitona2 surprised
 
     e "That fish is surely huge, huh."
 
@@ -899,7 +909,7 @@ label tranquility_waterfall:
 
     "Something was shining."
 
-    #idle
+    show hitona2 idle
 
     play sound magiccasting
 
@@ -911,7 +921,7 @@ label tranquility_waterfall:
 
     "Then, the orb entered my body on its own."
 
-    #smile1
+    show hitona2 smile1
 
     e "Congratulations, the wind didn’t lie this time."
 

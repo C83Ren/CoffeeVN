@@ -91,7 +91,7 @@ image rabbit together = Image("images/rabbitco.png")
 image soldier = Transform(Image("images/wizard_idle.png"), zoom=0.9, xalign=0.7, yanchor=900)
 
 #King
-image king = Transform(Image("images/king_idle.png"), zoom=0.9, xalign=0.95, yanchor=900)
+image king = Transform(Image("images/king_idle.png"), zoom=0.9, xalign=0.7, yanchor=900)
 
 #transforms
 
