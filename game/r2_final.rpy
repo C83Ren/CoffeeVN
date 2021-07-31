@@ -11,7 +11,7 @@ label r2_final:
     play music beforefinal_intro_bgm noloop fadein 2.0 volume 0.5
     queue music beforefinal_loop_bgm volume 0.5
 
-    p "Why are we here…"
+    p "Why are we here..."
 
     #angry3
 
@@ -41,7 +41,7 @@ label r2_final:
 
     p "Huh...?"
 
-    '''
+    """
     At that moment, a great number of memories suddenly surfaced in my mind like a storm.
 
     Memories about how in that storm-filled Turmoil region, I obtained the Turmoil spell.
@@ -57,7 +57,7 @@ label r2_final:
     And finally, how, in order to cast Void even just one more time, a terrible price would be required from Eve.
 
     As these memories rushed in, someone began to talk.
-    '''
+    """
 
     #angry3
 
@@ -122,7 +122,7 @@ label r2_final_after_battle:
 
     e "While I block this one spell, decide if we should use the Grand Spell or not!"
 
-    p "Eh?? But…"
+    p "Eh?? But..."
 
     e "Quick!"
 
@@ -130,7 +130,7 @@ label r2_final_after_battle:
         "Use the Grand Spell?!"
         "Use it!":
             jump final_grand_spell
-        "Don't use it!":
+        "Don’t use it!":
             jump final_no_grand_spell
 
 label final_no_grand_spell:
@@ -160,9 +160,7 @@ label final_no_grand_spell:
 
     "...the king casted the same spell again. To the two of us who no longer had any means of defense, the ball of magic wiped all traces of our existence from the world."
 
-    "Bad End"
-
-    return
+    jump bad_end
 
 label final_grand_spell:
     p "...okay! Let’s use it! The Grand Spell!"
@@ -178,10 +176,10 @@ label final_grand_spell:
     menu:
         "Yeah I did!":
             $ catalyst = True
-            "Hearing my response, Eve looked relieved"
-        "No I don't think so":
+            "Hearing my response, Eve looked relieved."
+        "No I don’t think so":
             $ catalyst = False
-            "Hearing my response, Eve looked resigned"
+            "Hearing my response, Eve looked resigned."
 
     #smile1
 
@@ -201,11 +199,7 @@ label final_grand_spell:
 
     e "I am Majna Eden Bat Azuma Nula Sedun, ruler of the Void! To allow the power of the emotions to be fully unleashed, use this life, expand the void, and create an infinite space!"
 
-    p "Apeiros Iris!"
-
-    e "Apeiros Iris"
-
-    # Hitona and Eve supposed to be saying it together
+    "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Apeiros Iris!"
 
     play sound apeirosiris
 
@@ -234,9 +228,7 @@ label final_bad_end:
 
     "The king was successfully defeated, but the new king was no longer here to take his place."
 
-    "Bad End"
-
-    return
+    jump bad_end
 
 label final_good_end:
 label end_2:
@@ -272,11 +264,7 @@ label end_2:
 
     "The feeling of exhaustion finally sunk in, and we both fell onto our knees."
 
-    p "Hahahahahaha...Haaaa..."
-
-    e "Hahahahahaha...Haaaa..."
-
-    # Hitona and Eve supposed to be saying it together
+    "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..."
 
     e "Thank you, Hitona...truly..."
 
@@ -294,29 +282,27 @@ label end_2:
 
     p "{i}Huh? Where am I...{/i}"
 
-    "{i}On my bed...lying down...?{/i}"
+    p "{i}On my bed...lying down...?{/i}"
 
     p "{i}What a dream that was...{/i}"
 
     play sound messagetone
 
-    p "A text?"
+    p "{i}A text?{/i}"
 
     nvl_narrator "You got back safely right?"
 
     nvl_narrator "Wahahahaha! You should trust The Great Majna Eden Bat Azuma Nula Sedun more!"
 
-    nvl_narrator "By the way, the wind says {b}'it resembles thy name, but one digit differs'{/b}"
+    nvl_narrator "By the way, the wind says {b}‘it resembles thy name, but one digit differs’{/b}"
 
     nvl_narrator "Until next time!"
-
-    nvl clear
 
     p "{i}Hahahahahaha{/i}"
 
     p "{i}If you’re a king you’re not a NEET anymore, Eve!{/i}"
 
-    "Good End"
+    # todo: fade to end card r2
 
     "On the ground there was something..."
 
