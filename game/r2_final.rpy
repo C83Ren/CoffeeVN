@@ -15,7 +15,7 @@ label r2_final:
 
     #angry3
 
-    e "It’s time for this great Eve to become king!"
+    e "It’s not the time to ponder around!"
 
     #laugh2
 
