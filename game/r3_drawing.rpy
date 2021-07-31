@@ -33,19 +33,19 @@ label r3_drawing:
 
     "It seems like I received some texts."
 
-    "\"Unread Messages: 100+\""
+    "“Unread Messages: 100+”"
 
-    "\"Kohi! Where are you?\""
+    "“Kohi! Where are you?”"
 
-    "\"Kohi?\""
+    "“Kohi?”"
 
-    "\"Hello?!?!!\""
+    "“Hello?!?!!”"
 
-    "{i}This is kind of scary...{/i}"
+    p "{i}This is kind of scary...{/i}"
 
-    "{i}To begin with, who’s even sending these...? The name...for some reason I can’t read it...{/i}"
+    p "{i}To begin with, who’s even sending these...? The name...for some reason I can’t read it...{/i}"
 
-    "{i}Oh well...{/i}"
+    p "{i}Oh well...{/i}"
 
 
     show lios front at lios_right
@@ -74,31 +74,31 @@ label r3_drawing:
 
     p "You popping up out of nowhere is even weirder though."
 
-    l "Well anyways, just look at the monitor"
+    l "Well anyways, just look at the monitor."
 
     show hitona3 idle hat
 
     pi "Then what?"
 
-    l "You’ll see"
+    l "You’ll see."
 
     hide hitona3
     hide lios
 
-    "I looked at the monitor. On the screen, \"Just a little bit more!\" was displayed in large font."
+    "I looked at the monitor. On the screen, “Just a little bit more!” was displayed in large font."
 
     p "..."
 
-    p "Huh"
+    p "Huh?"
 
     show lios front at lios_right
     show hitona3 idle hat at hitona_left
 
     l "Time to do more quizzes!"
 
-    l "Guess the drawings!"
+    l "Guess the situation in the drawings!"
 
-    pi "Seems quite tame for your standards"
+    pi "Seems quite tame for your standards."
 
     l "Shut it."
 
@@ -118,12 +118,12 @@ label r3_drawing:
 
     jump quiz_pic_default
 
-    menu:
-        "Did you succeed?"
-        "Yeah":
-            jump r3_bomb
-        "Nope":
-            jump drawing_fail
+    #menu:
+        #"Did you succeed?"
+        #"Yeah":
+            #jump r3_bomb
+        #"Nope":
+            #jump drawing_fail
 
 label drawing_fail:
     scene bg computer with Fade(1.0, 1.0, 1.0)
@@ -173,9 +173,9 @@ label drawing_fail:
 
     "XXX" "KOHIIIII! I’ve been waiting for XX minutes already! Where are you!?"
 
-    "..."
+    p "..."
 
-    "I hung up, and dashed out from my room. "
+    "I hung up, and dashed out from my room."
 
     scene black with fade
 
@@ -185,6 +185,4 @@ label drawing_fail:
 
     "I guess dreams will just be dreams."
 
-    "Bad End"
-
-    return
+    jump bad_end

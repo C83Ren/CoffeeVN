@@ -8,7 +8,7 @@ label end_3:
     show lios front at lios_right with dissolve
     show hitona3 smile hat at hitona_left with dissolve
 
-    pi "Ahhhhhh, finally..."
+    pi "Ahhhhhh, finally...!"
 
     p "Huff...we somehow managed to finish that...huff..."
 
@@ -24,7 +24,7 @@ label end_3:
 
     pi "I have no idea...way too many to count, that for sure."
 
-    pi "I leave the rest to you, Lios"
+    pi "I leave the rest to you, Lios."
 
     scene bg hub with Fade(1.0, 1.0, 1.0)
 
@@ -51,7 +51,7 @@ label end_3:
     hide lios
     show hitona3 idle hat at hitona_left
 
-    pi "I said it earlier, didn’t I? This domain makes you forget {b}even the most obvious things.{/b}"
+    pi "I said it earlier, didn’t I? This domain makes you forget {b}even the most obvious things{/b}."
 
     p "No way...how many times?"
 
@@ -105,17 +105,17 @@ label end_3:
 
     pi "If there’s a lasting impression, you’ll remember it more clearly."
 
-    pi "Such as these challenges"
+    pi "Such as these challenges."
 
     hide hitona3
     show lios front
 
-    l "And that is why we stole it from you"
+    l "And that is why we stole it from you."
 
     show hitona3 idle hat
     hide lios
 
-    pi "So it will have a lasting impression"
+    pi "So it will have a lasting impression."
 
     hide hitona3
     show lios front
@@ -124,7 +124,7 @@ label end_3:
 
     p "Get what back?!"
 
-    "[l] & [pi]" "Your memories."
+    "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Your memories."
 
     scene cg hitonamemory with Fade(1.0, 1.0, 1.0)
 
@@ -134,7 +134,7 @@ label end_3:
 
     pi "Albeit altered."
 
-    p "Altered."
+    p "Altered?"
 
     l "What’s shown here has been a bit altered, that’s all."
 
@@ -162,7 +162,7 @@ label end_3:
 
     "While watching the scene, a thought came to mind."
 
-    "{i}What will happen to these two after this?{/i}"
+    "What will happen to these two after this?"
 
     "As if they had heard me..."
 
@@ -185,6 +185,8 @@ label end_3:
     l "See you."
 
     scene bg room with fade
+    
+    # todo r3 endcard
 
     "{i}What’s this...a key...and paper?{/i}"
 
@@ -192,17 +194,17 @@ label end_3:
 
     play sound takecard
 
-    nvl_narrator "Hey! Did you enjoy the challenges?"
+    nvl_narrator "“Hey! Did you enjoy the challenges?”"
 
-    nvl_narrator "By the way, that safe has a 4 digit passcode right?"
+    nvl_narrator "“By the way, that safe has a 4 digit passcode right?”"
 
-    nvl_narrator "{b}How many cards are there in a suit in a deck of cards? The answer appears in the passcode.{/b}"
+    nvl_narrator "“{b}How many cards are there in a suit in a deck of cards? The answer appears in the passcode.{/b}”"
 
-    nvl_narrator "Good luck~"
+    nvl_narrator "“Good luck~”"
 
     nvl clear
 
-    "On the other piece of paper, there was only \"1\" written on it."
+    "On the other piece of paper, there was only “1” written on it."
 
     scene black with fade
 
@@ -239,7 +241,7 @@ label r3_secret_ending:
         play music room_bgm fadein 1.0 volume 0.2
         play sound apeirosiris loop
 
-        "I’ve been hearing noises from my fridge for a while..."
+        "I’ve been hearing noises from my fridge for a while now."
 
         "And I’ve been afraid to open it."
 
@@ -249,11 +251,11 @@ label r3_secret_ending:
 
         "When I opened the door, a couple of cups of ominous looking rainbow-colored pudding that a friend gave me a long time ago greeted me."
 
-        "{i}Yea, there’s no way I’m eating that anytime soon.{/i}"
+        p "{i}Yea, there’s no way I’m eating that anytime soon.{/i}"
 
         "But more importantly! There was a small safe next to those pudding cups that I don’t remember putting in the fridge."
 
-        "{i}I mean…who the hell would put a safe inside a fridge!{/i}"
+        p "{i}I mean…who the hell would put a safe inside a fridge!{/i}"
 
         "This must be some kind of joke!"
 
@@ -261,7 +263,7 @@ label r3_secret_ending:
 
         "My curiosity got the better of me"
 
-        "{i}Here goes nothing{/i}"
+        p "{i}Here goes nothing{/i}"
 
         "I entered the password “503158” that was on the note attached to the top of the (un)safe, and opened it up."
 
@@ -273,11 +275,11 @@ label r3_secret_ending:
 
         "When the light came back to my eyes, I saw a blue sky and an open field."
 
-        "{i}...{/i}"
+        p "{i}...{/i}"
 
-        "{i}Really? Is my house an isekai portal now?{/i}"
+        p "{i}Really? Is my house an isekai portal now?{/i}"
 
-        "{i}Where do I request for exorcism these days...?{/i}"
+        p "{i}Where do I request for exorcism these days...?{/i}"
 
         "After that flash of thought came to me, I finally realized there was a crowd standing in front of me."
 
@@ -297,7 +299,7 @@ label r3_secret_ending:
 
         p " I don’t know if you’ll believe me, but it seems that I was cursed by the pudding god and sent here haha..."
 
-        "{i}For whatever reasons, I don’t feel anxious being sent into another world anymore.{/i}"
+        p "{i}For whatever reasons, I don’t feel anxious being sent into another world anymore.{/i}"
 
         r "Fie?! O’ Goddess Hitona! Please forgive this worthless rabbit for her sinful rudeness!"
 
@@ -307,15 +309,15 @@ label r3_secret_ending:
 
         "At that moment, I finally noticed the statue that they called their goddess."
 
-        "{i}No matter how you look at it...that statue is me isn’t it...{/i}"
+        p "{i}No matter how you look at it...that statue is me isn’t it...{/i}"
 
-        "{i}It’s me with a ponytail, in a waitress uniform with stockings...{/i}"
+        p "{i}It’s me with a ponytail, in a waitress uniform with stockings...{/i}"
 
-        "{i}Should I arrest them...{/i}"
+        p "{i}Should I arrest them...{/i}"
 
         r "Everyone! Chant with me! Chant with all thy hearts poured for our peerless goddess!"
 
-        "{i}Now what are they up to...{/i}"
+        p "{i}Now what are they up to...{/i}"
 
         "Everyone" "First of all of course is the ponytail!"
         "Everyone" "Her elegant long purple hair tied up!"
@@ -353,7 +355,7 @@ label r3_secret_ending:
 
         r "Compose a VN to memorialize this sacred encounter! We shall offer it to our one and only goddess! Finish it within 2 months and a half!"
 
-        "{i}What the hell is that guy saying...{/i}"
+        p "{i}What the hell is that guy saying...{/i}"
 
         scene bg secret_sky
 
@@ -418,7 +420,7 @@ label r3_secret_ending:
 
         scene bg secret_pudding
 
-        "I gave them the brightest smile I could, and sent them off with their \"gift\""
+        "I gave them the brightest smile I could, and sent them off with their “gift”."
 
         window hide
 

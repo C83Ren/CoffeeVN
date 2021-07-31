@@ -178,7 +178,7 @@ label bomb_mechanic:
     play sound takecard
     show bomb map:
         zoom 0.5, xalign 0.5, yalign 0.5
-    "Memorize it well~"
+    l "Memorize it well~"
     play sound takecard
     hide bomb map
 

@@ -13,9 +13,9 @@ label r3_bomb:
 
     p "Yeah, that’s right!"
 
-    "{i}Huh?{/i}"
+    p "{i}Huh?{/i}"
 
-    "{i}What was I saying?? What game? What drawing?{/i}"
+    p "{i}What was I saying?? What game? What drawing?{/i}"
 
     show hitona3 worried hat
 
@@ -39,7 +39,7 @@ label r3_bomb:
 
     p "You said last????"
 
-    l "Yeah I did"
+    l "Yeah, I did."
 
     p "I can’t believe it..."
 
@@ -123,7 +123,7 @@ label bomb_fail:
     stop music
     play sound bombexplode
 
-    "{b}BOOOM{/b}"
+    "{size=100}BOOM!{/size}"
 
     $ renpy.pause(3.0)
 
@@ -131,11 +131,11 @@ label bomb_fail:
 
     play music lios_bgm fadein 1.0 volume 0.1
 
-    "We got sent back to the first room..."
+    "We got sent back to the first room."
 
     show lios front at lios_right with dissolve
 
-    l "Told you it’s your worst enemy."
+    l "Told you it was your worst enemy."
 
     show hitona3 angry hat at hitona_left with dissolve
 
@@ -193,6 +193,4 @@ label bomb_fail:
 
     "I guess dreams will just be dreams."
 
-    "Bad End"
-
-    return
+    jump bad_end
