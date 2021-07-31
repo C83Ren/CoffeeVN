@@ -292,9 +292,8 @@ label tranquility_pond_2:
 
     #angry3
 
-    e "So you’re gonna swim??"
-
     menu:
+        e "So you’re gonna swim??"
         "Yes":
             p "Of course!"
 

@@ -383,10 +383,10 @@ translate japanese tranquility_pond_1_72a33094_1:
     e "「…」"
 
 # game/r2_tranquility.rpy:320
-translate japanese tranquility_pond_2_c82290e9:
+translate japanese tranquility_pond_2_1cee29c7:
 
-    # e "So you’re gonna swim??"
-    e "「泳ぐか？」"
+    # e "So you’re gonna swim??" nointeract
+    e "「泳ぐか？」" nointeract
 
 # game/r2_tranquility.rpy:324
 translate japanese tranquility_pond_2_aa4b2ca1:
