@@ -96,10 +96,10 @@ label r3_sing:
 
     check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next." sing_retry "あのほしにかさねて" "anohoshinikasanete" "あのほしにかさねて" "anohoshinikasanete"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
-    pi "What was this song name again?"
-    l "Pretty sure it's Hitoribishi...but now that you ask, I'm not so sure anymore."
-    "{b}\"Next\"{/b}"
+    "{b}CORRECT{/b}" id r3_sing_a403d1d8
+    pi "What was this song's name again?" id r3_sing_fb37f0d8
+    l "Pretty sure it's Hitoriboshi...but now that you ask, I'm not so sure anymore." id r3_sing_4aa33a81
+    "{b}NEXT{/b}" id r3_sing_4454a96a
 
     check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next." sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
     play sound correctchoice
@@ -113,8 +113,6 @@ label r3_sing:
     "{b}CORRECT{/b}"
     pi "Listening to this always makes me shiver, don’t you Lios?"
     l "After repeating this whole thing for thousand times, I feel numb, and not about the song."
-
-    # TODO hitoriboshi
 
     jump r3_river
 
