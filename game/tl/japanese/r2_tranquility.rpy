@@ -1502,3 +1502,11 @@ translate japanese strings:
     # game/r2_tranquility.rpy:766
     old "Don’t release the fish"
     new "魚を放さない"
+
+    # game/r2_tranquility.rpy:295
+    old "Of course!"
+    new "もちろん！"
+
+    # game/r2_tranquility.rpy:295
+    old "Of course not..."
+    new "「もちろん泳ぎませんよ」"

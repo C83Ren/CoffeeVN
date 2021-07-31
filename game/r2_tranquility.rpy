@@ -294,7 +294,7 @@ label tranquility_pond_2:
 
     menu:
         e "So you’re gonna swim??"
-        "Yes":
+        "Of course!":
             p "Of course!"
 
             e "Well, go on."
@@ -315,7 +315,7 @@ label tranquility_pond_2:
 
             jump bad_end
 
-        "No":
+        "Of course not...":
             p "Of course not..."
 
             #idle
