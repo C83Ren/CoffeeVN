@@ -92,6 +92,13 @@ label r3_sing:
     l "Did your best to make things harder~"
     "{b}\"Next\"{/b}"
 
+    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next" sing_retry "あのほしにかさねて" "anohoshinikasanete" "あのほしにかさねて" "anohoshinikasanete"
+    play sound correctchoice
+    "{b}\"Correct!\"{/b}"
+    pi "What was this song name again?"
+    l "Pretty sure it's Hitoribishi...but now that you ask, I'm not so sure anymore."
+    "{b}\"Next\"{/b}"
+
     check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next" sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
     play sound correctchoice
     "{b}\"Correct!\"{/b}"
