@@ -14,6 +14,10 @@
 
 define config.name = _("Hitona's Adventure")
 
+init -3 python:
+    if persistent.language_set is None:
+        persistent.language_set = True
+        _preferences.language = 'japanese'
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

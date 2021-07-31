@@ -23,10 +23,10 @@ init:
             [0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
             [0, 1, 0, 1, 1, 1, 3, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
             [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
-            [0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0],
-            [0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0],
+            [0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+            [0, 1, 0, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0],
+            [0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0],
             [0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0],
             [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 2, 0],
             [0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
@@ -40,14 +40,14 @@ init:
 
         maze2 = [
             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 1, 0, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+            [0, 0, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0],
             [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
             [0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
             [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
             [0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0],
             [0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0],
-            [0, 1, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0],
-            [0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0],
+            [0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
             [0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0],
             [0, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 0, 0, 0],
             [0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0, 0],
@@ -159,6 +159,9 @@ label bomb_mechanic:
 
     python:
         maze_num = renpy.random.randint(1,4)
+        if not persistent.first_bomb_done:
+            persistent.first_bomb_done = True
+            maze_num = 2
         if maze_num == 1:
             maze = maze1
             player_x, player_y = 17, 11
@@ -173,11 +176,11 @@ label bomb_mechanic:
             player_x, player_y = 12, 7
         img_maze = None
 
-    image bomb map = "images/maze/bomb map[maze_num].png"
+    image bomb map = "images/maze/bomb map[maze_num] " + str(_preferences.language) + ".png"
 
     play sound takecard
     show bomb map:
-        zoom 0.5, xalign 0.5, yalign 0.5
+        zoom 0.75, xalign 0.5, yalign 0.5
     l "Memorize it well~"
     play sound takecard
     hide bomb map
@@ -202,6 +205,8 @@ label bomb_choice:
             old_img_maze, img_maze = img_maze, "%s %s %s" % (forward, right, left)
         else:
             old_img_maze = img_maze = "%s %s %s" % (forward, right, left)
+        if forward == 'yes' and maze[player_x - 1][player_y] > 1:
+            img_maze = img_maze + ' final'
 
     play sound mazewalk
 
@@ -230,7 +235,7 @@ label bomb_choice:
         $ sleep_time = 0.25 + 0.015 * (bomb_choice_counter - 10) ** 1.6
     else:
         $ sleep_time = 2.84 + 0.1 * (bomb_choice_counter - 35) ** 0.9
-    $ bomb_choice_counter += 1
+    $ bomb_choice_counter = 1
 
     if at_finish(maze, player_x, player_y):
         hide countdown

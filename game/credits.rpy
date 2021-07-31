@@ -68,17 +68,24 @@ screen credits_message(who, message, img):
     vbox:
         use credits_space(180)
         fixed xsize 1300 ysize 20
-        fixed xsize 1300 ysize 500:
-            use credits_centered_text(message)
-            vbox xalign 1.0 yalign 0.5:
-                $ t = '———' + __(credits_names[who])
-                text t xalign 1.0 color '#FFF' font credits_font
         if img:
-            fixed xalign 0.5 ysize 300:
-                image img xalign 0.5 yalign 0.0
-            use credits_space(100)
+            fixed xsize 1000 ysize 400 xalign 0.5:
+                vbox xalign 0.5 yalign 0.5 xsize 1000:
+                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_font
+                    fixed ysize 70
+                    vbox xalign 1.0 yalign 0.5:
+                        $ t = '———' + __(credits_names[who])
+                        text t xalign 1.0 color '#FFF' font credits_font
+            fixed xalign 0.5 ysize 400:
+                image img xalign 0.5 yalign 0.0 xsize 350 ysize 350
         else:
-            use credits_space(400)
+            fixed xsize 1000 ysize 800 xalign 0.5:
+                vbox xalign 0.5 yalign 0.5 xsize 1000:
+                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_font
+                    fixed ysize 70
+                    vbox xalign 1.0 yalign 0.5:
+                        $ t = '———' + __(credits_names[who])
+                        text t xalign 1.0 color '#FFF' font credits_font
 
 screen credits_display():
     vbox:
@@ -98,28 +105,33 @@ screen credits_display():
                 use credits_entry(_("Special Thanks"), ["kohi"], trailing_spaces=False)
         fixed xsize 1920 ysize 1080:
             vbox xalign 0.5 yalign 0.5:
-                use credits_centered_text(_("Congratulations on your second anniversary!"))
+                image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
+
+screen credits_final():
+    fixed xsize 1920 ysize 1080:
+        vbox xalign 0.5 yalign 0.5:
+            use credits_centered_text(_("Congratulations on your second anniversary!"))
 
 define credits_messages = [
+    ('wari', '60歳になるまでここにいてください！', 'images/credits/wari.png'),
+    ('gabu', 'Dont forget to eat healthy food', 'images/credits/gabu.png'),
+    ('kosa', 'kohisuki', 'images/credits/kosa.png'),
+    ('nep', 'kohi is a good girl and always trying hard, i hope you taking care of yourself and take some rest whenever you feel tired', 'images/credits/nep.png'),
+    ('lobster', 'let\'s continue having fun together', 'images/credits/lobster.png'),
+    ('lemon', 'kohisuki', 'images/credits/lemon.png'),
+    ('xn', 'kohisuki', None),
+    ('cryo', 'kohisuki', None),
+    ('luttii', 'G G A G C B\nG G A G D C', None),
+    # ('pupu', 'kohisuki', None),
     ('rabbit', 'Test Test Test\n\nテストテストテスト', None),
-    ('kosa', 'kohisuki', 'images/stamp idle.png'),
-    ('luttii', 'kohisuki', 'images/stamp idle.png'),
-    ('wari', '60歳になるまでここにいてください！', 'images/stamp idle.png'),
-    ('gabu', 'Dont forget to eat healthy food', 'images/stamp idle.png'),
-    ('cryo', 'kohisuki', 'images/stamp idle.png'),
-    ('pupu', 'kohisuki', 'images/stamp idle.png'),
-    ('nep', '"kohi is a good girl and always trying hard, i hope you taking care of yourself and take some rest whenever you feel tired', 'images/stamp idle.png'),
-    ('lemon', 'kohisuki', 'images/stamp idle.png'),
-    ('lobster', 'let\'s continue having fun together', 'images/stamp idle.png'),
-    ('xn', 'kohisuki', 'images/stamp idle.png'),
 ]
 
 default credits_message_index = 0
 screen credits_message_display():
     use credits_message(*credits_messages[credits_message_index])
 
-define credits_scroll_time = 60.0
-define credits_message_display_time = 5.0
+define credits_scroll_time = 1.0
+define credits_message_display_time = 7.5
 define credits_height = 8678
 
 transform credits_scroll:
@@ -145,14 +157,20 @@ label credits:
 
     show screen credits_scroll_screen
     $ renpy.pause(credits_scroll_time + 2, hard=True)
+    pause
     hide screen credits_scroll_screen with dissolve
 
     $ credits_message_index = 0
     while credits_message_index < len(credits_messages):
         show screen credits_message_display with dissolve
-        pause credits_message_display_time
+        pause # credits_message_display_time
         hide screen credits_message_display with dissolve
         $ credits_message_index += 1
+        
+    show screen credits_final with dissolve
+    pause
+    hide screen credits_final with dissolve
+    scene black with Dissolve(2.0)
 
     $ _game_menu_screen = _old_game_menu_screen
     $ _skipping = True

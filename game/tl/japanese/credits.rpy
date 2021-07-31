@@ -62,15 +62,15 @@ translate japanese strings:
 
     # game/credits.rpy:1
     old "かくうさこ"
-    new ""
+    new "かくうさこ様"
 
     # game/credits.rpy:1
     old "ナッツ"
-    new ""
+    new "ナッツ様"
 
     # game/credits.rpy:1
     old "omurice"
-    new ""
+    new "omurice様"
 
     # game/credits.rpy:86
     old "Planning"
@@ -114,5 +114,5 @@ translate japanese strings:
 
     # game/credits.rpy:101
     old "Congratulations on your second anniversary!"
-    new ""
+    new "２周年、おめでとうございます！"
 
