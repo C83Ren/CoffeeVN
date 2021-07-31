@@ -208,9 +208,9 @@ label end_1:
 
     # todo: fade to end card r1
 
-    p "What’s this on the ground? A key?"
+    p "{i}What’s this on the ground? A key?{/i}" id end_1_2071b73a
 
-    p "And also a note with “0” written on it...?"
+    p "{i}And also a note with “0” written on it...?{/i}" id end_1_1abb9b93
 
     $ persistent.ed_unlocked_1 = True
     return
