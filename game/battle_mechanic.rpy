@@ -78,7 +78,7 @@ init python:
     "item": ["Heal Orb"],
     "burn": 0,
     "par": 0,
-    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200],
+    "img":["images/wizard_idle.png", "images/wizard_ko.png", 200],
     "silent_death": False,
     }
 
@@ -90,7 +90,7 @@ init python:
     "item": ["Heal Orb", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200],
+    "img":["images/wizard_idle.png", "images/wizard_ko.png", 200],
     "silent_death": False,
     }
 
@@ -102,7 +102,7 @@ init python:
     "item": ["Heal Orb", "God Blessing"],
     "burn": 0,
     "par": 0,
-    "img":["images/wizard_idle.png", "images/wizard_idle.png", 200],
+    "img":["images/wizard_idle.png", "images/wizard_ko.png", 200],
     "silent_death": False,
     }
 
@@ -111,10 +111,10 @@ init python:
     "hp": 500,
     "hp_max": 500,
     "spell": ["Wind Lance", "Fire Wall", "Lightning Strike"],
-    "item": ["God Blessing", "Flamethrower", "Paralyzing Spark"],
+    "item": ["God Blessing", "Flamethrower", "Paralyzing Spark", "Flamethrower", "Paralyzing Spark"],
     "burn": 0,
     "par": 0,
-    "img":["images/king_idle.png", "images/king_idle.png", 0],
+    "img":["images/king_idle.png", "images/king_ko.png", 0],
     "silent_death": True,
     }
 

@@ -77,8 +77,8 @@ label r2_final:
     hide king
 
     python:
-        hitona_stats["hp"] = 300
-        hitona_stats["hp_max"] = 300
+        hitona_stats["hp"] = 200
+        hitona_stats["hp_max"] = 200
         hitona_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
         eve_stats["hp"] = 300
         eve_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
@@ -90,14 +90,15 @@ label r2_final:
         fight_label = "r2_final_after_battle"
         x = 0
 
-    play music king_intro_bgm noloop fadein 1.0 volume 0.3
-    queue music king_loop_bgm loop volume 0.3
+    play music king_intro_bgm noloop fadein 1.0 volume 0.4
+    queue music king_loop_bgm loop volume 0.4
 
     jump r2_fight
 
 label r2_final_after_battle:
 
     hide screen multi_stat
+    hide screen multi_sprite
 
     show hitona2 angry with dissolve
     show king
@@ -214,6 +215,7 @@ label final_grand_spell:
 
     "As we cast the Grand Spell, a rainbow ball of magic from me and pitch black ball of magic from Eve combined together, and filled the castle with a blinding light."
 
+    window hide
     $ renpy.pause(2.0)
 
     "When the light faded away, King Achnost had already been sent away to the afterlife, but..."
@@ -227,7 +229,7 @@ label final_grand_spell:
 
 label final_bad_end:
     scene black with dissolve
-    play music r2bad_bgm fadein 1.0
+    play music r2bad_bgm fadein 1.0 volume 0.4
 
     "...was lying motionlessly on the ground."
 
@@ -253,7 +255,7 @@ label end_2:
 
     e "Eh?"
 
-    play music r2end_bgm fadein 2.0
+    play music r2end_bgm fadein 2.0 volume 0.4
 
     p "You’re alive!"
 
