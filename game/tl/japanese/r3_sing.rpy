@@ -378,3 +378,27 @@ translate japanese strings:
     # game/r3_sing.rpy:137
     old "Give up"
     new "諦める"
+
+# game/r3_sing.rpy:99
+translate japanese r3_sing_a403d1d8:
+
+    # "{b}\"Correct!\"{/b}"
+    "ＣＯＲＲＥＣＴ"
+
+# game/r3_sing.rpy:100
+translate japanese r3_sing_fb37f0d8:
+
+    # pi "What was this song name again?"
+    pi "「曲名ってなんだっけ？」"
+
+# game/r3_sing.rpy:101
+translate japanese r3_sing_4aa33a81:
+
+    # l "Pretty sure it's Hitoribishi...but now that you ask, I'm not so sure anymore."
+    l "「ヒトリボシのはずだ…けどもうわからなくなるな」"
+
+# game/r3_sing.rpy:102
+translate japanese r3_sing_4454a96a:
+
+    # "{b}\"Next\"{/b}"
+    "ＮＥＸＴ"
