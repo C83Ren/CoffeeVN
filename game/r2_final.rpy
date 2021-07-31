@@ -13,17 +13,17 @@ label r2_final:
 
     p "Why are we here..."
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "It’s not the time to ponder around!"
 
-    #laugh2
+    show hitona2 laugh
 
     e "It’s time to become the king!"
 
     p "Eh? What happened?!"
 
-    #smug1
+    show hitona2 smug
 
     e "You already gathered every ultimate spell! Tranquility, Turmoil, and Rage!"
 
@@ -35,7 +35,7 @@ label r2_final:
 
     e "Anyways! You already gathered all the spells we need to go against the King!"
 
-    #pout2
+    show hitona2 pout
 
     e "And I have my Void ready as well..."
 
@@ -59,7 +59,7 @@ label r2_final:
     As these memories rushed in, someone began to talk.
     """
 
-    #angry3
+    show hitona2 angry
 
     k "So you finally came here, huh..."
 
@@ -67,9 +67,14 @@ label r2_final:
 
     "...is just lying down lazily"
 
+    show king
+
     "In what seemed like a massive amount of effort, he stood up to face us."
 
     k "Rebels must be purged."
+
+    hide hitona2
+    hide king
 
     python:
         hitona_stats["hp"] = 300
@@ -94,17 +99,20 @@ label r2_final_after_battle:
 
     hide screen multi_stat
 
+    show hitona2 angry with dissolve
+    show king
+
     k "Annoying little pest. Know that resistance is futile!"
 
     k "Bend to my will! Absolute Domain!"
 
-    #surprised1
+    show hitona2 surprised
 
     e "Huh?"
 
     p "Eh? We can’t cast magic??"
 
-    #angry3
+    show hitona2 angry
 
     e "No! He’s taking our magic!"
 
@@ -140,11 +148,11 @@ label final_no_grand_spell:
 
     p "Even then, I won’t use it! You would have to use Void right?"
 
-    #idle
+    show hitona2 idle
 
     e "I see..."
 
-    #smile1
+    show hitona2 smile1
 
     e "Then, let’s try our best"
 
@@ -152,7 +160,7 @@ label final_no_grand_spell:
 
     "Eve barely managed to block the magic ball with her last barrier spell."
 
-    #angry3
+    show hitona2 angry
 
     "I don’t want her to pay the price for using the Void, but..."
 
@@ -165,11 +173,11 @@ label final_no_grand_spell:
 label final_grand_spell:
     p "...okay! Let’s use it! The Grand Spell!"
 
-    #smile1
+    show hitona2 smile1
 
     e "Okay!"
 
-    #idle
+    show hitona2 idle
 
     menu:
         e "By the way, did you bring the catalyst from before??"
@@ -180,7 +188,7 @@ label final_grand_spell:
             $ catalyst = False
             "Hearing my response, Eve looked resigned."
 
-    #smile1
+    show hitona2 idle
 
     e "Okay let’s do it!" id final_grand_spell_4470a325
 
@@ -192,7 +200,9 @@ label final_grand_spell:
 
     "In response to the king casting the same spell again, we began to chant the Grand Spell!"
 
-    scene cg 5 unscaled with dissolve
+    scene cg grandspell with dissolve
+
+    $ renpy.pause(3.0)
 
     p "Tranquility, Turmoil, Rage! I, Hitona, the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
 
@@ -203,6 +213,8 @@ label final_grand_spell:
     play sound apeirosiris
 
     "As we cast the Grand Spell, a rainbow ball of magic from me and pitch black ball of magic from Eve combined together, and filled the castle with a blinding light."
+
+    $ renpy.pause(2.0)
 
     "When the light faded away, King Achnost had already been sent away to the afterlife, but..."
 
@@ -237,7 +249,7 @@ label end_2:
 
     p "Eh?"
 
-    #angry3
+    show hitona2 angry with dissolve
 
     e "Eh?"
 
@@ -245,11 +257,11 @@ label end_2:
 
     p "You’re alive!"
 
-    #surprised1
+    show hitona2 surprised
 
     e "Yeah...somehow..."
 
-    #idle
+    show hitona2 idle
 
     e "Ah, it’s probably because of the catalyst."
 
@@ -257,7 +269,7 @@ label end_2:
 
     "I hugged Eve, who, even though she used Void, was still alive, tightly."
 
-    #smile2
+    show hitona2 smile2
 
     e "Haha...yeah..."
 
@@ -269,7 +281,7 @@ label end_2:
 
     p "Hey...I had a lot of fun too"
 
-    #smug1
+    show hitona2 smug
 
     e "And don’t worry about this, I’ll be a good NEET King okay."
 
