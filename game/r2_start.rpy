@@ -236,6 +236,6 @@ label r2_start_after_battle:
 
     "Things may change if you visit the same place a second time. Be sure to check them all!"
 
-    play music adventure_bgm fadein 1.0
+    play music adventure_bgm fadein 1.0 volume 0.5
 
     jump r2_forest

@@ -66,7 +66,7 @@ label turmoil_tablet:
     jump turmoil_menu
 
 label turmoil_world_map:
-    play music adventure_bgm fadein 1.0
+    play music adventure_bgm fadein 1.0 volume 0.5
     stop sound
 
     jump map_menu

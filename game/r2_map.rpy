@@ -178,8 +178,11 @@ label map_castle:
     e "Let’s go!"
 
     scene black with dissolve
+    stop music fadeout 1.0
 
     "Eve charged in straight through the front door!"
+
+    play sound flamethrower
 
     "After that, we found ourselves on the receiving end of an uncountable number of spells casted by the soldiers, and were completely obliterated."
 
@@ -217,7 +220,7 @@ label map_rage_1:
 
     p "No thanks, there’s no need for that."
 
-    play music adventure_bgm fadein 1.0
+    play music adventure_bgm fadein 1.0 volume 0.5
 
     jump map_menu
 
@@ -243,7 +246,7 @@ label map_rage_2:
 
     e "Let’s go."
 
-    play music adventure_bgm fadein 1.0
+    play music adventure_bgm fadein 1.0 volume 0.5
 
     jump map_menu
 

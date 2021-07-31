@@ -65,7 +65,7 @@ label r2_tranquility:
 
 label r2_tranquility_after_battle:
     scene bg map with Fade(0.5, 0.5, 0.5)
-    play music adventure_bgm fadein 1.0
+    play music adventure_bgm fadein 1.0 volume 0.5
 
     hide screen multi_stat
     hide screen multi_sprite
@@ -161,7 +161,7 @@ label r2_tranquility_after_battle:
     e "Remember, {b}“What you seek lies deep in the water.”{/b}"
 
 label tranquility_menu:
-    scene bg tranquility_front with Fade
+    scene bg tranquility with fade
     call screen tranquility_map
 
 label tranquility_forest:
@@ -308,6 +308,8 @@ label tranquility_pond_2:
             p "Of course!"
 
             e "Well, go on."
+
+            stop music fadeout 1.0
 
             scene black
 
@@ -839,7 +841,7 @@ label tranquility_forest_2:
 label tranquility_pond_after_1:
     $ t_pond2 = 1
 
-    show hitona2 with dissolve
+    show hitona2 idle with dissolve
 
     p "Let’s try releasing this fish in the pond."
 

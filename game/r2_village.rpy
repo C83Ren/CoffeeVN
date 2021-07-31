@@ -417,6 +417,8 @@ label village_house_3_2:
 
     hj "Well great timing, I was going to give you this."
 
+    play sound correctchoice
+
     "{b}You have obtained God Blessing!{/b}"
 
     $ hitona_stats["item"].append("God Blessing")
