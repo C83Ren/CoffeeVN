@@ -172,7 +172,7 @@ label end_3:
 
     pi "We’ll stay inside your memories."
 
-    p "Oh so that's what you mean..."
+    p "Oh so that’s what you mean..."
 
     l "No, like, in the truest sense; we’re the one managing your memories."
 
@@ -380,7 +380,7 @@ label r3_secret_ending:
 
         l "Shut it, Pierrot! That should have been sealed behind the maze wall!"
 
-        l "If you didn't fail so many times I wouldn’t have needed to make a maze in the first place!"
+        l "If you didn’t fail so many times I wouldn’t have needed to make a maze in the first place!"
 
         p "Well at least you found me quickly and I can go back. All’s well that ends well!"
 

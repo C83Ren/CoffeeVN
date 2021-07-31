@@ -4,12 +4,12 @@ init python:
     quiz_num = 0
 
     drawing_list = [
-    ["1.png", "Asking for help", _("Distributing flyers"), _("Food delivery"), 2, _("This one's actually not that bad."), _("Flattery won't get you anywhere, you know.")],
-    ["2.png", _("Jiangshi"), _("Vampire"), _("Dracula"), 1, _("I really couldn't remember its name last time."), _("Well now you do, good for you.")],
-    ["3.png", _("Bath"), _("Hot Springs"), _("Soap"), 3, _("You're saying the one above his head is soap as well?"), _("I'll leave it to your imagination.")],
-    ["4.png", _("Barrel"), _("Izakaya"), _("Dinner"), 1, _("Is the food above it really necessary...?"), _("It's the most important part.")],
-    ["5.png", _("Taking an exam"), _("Focus power"), _("Studying"), 2, _("That answer is way too specific..."), _("I do wish it wasn't this specific as well.")],
-    ["6.png", _("Gyudon shop"), _("Izakaya"), _("Ramen shop"), 1, _("If it weren't for the waiter I would've thought it was about just the food."), _("Even I almost forgot it wasn't about the food.")]
+    ["1.png", _("Asking for help"), _("Distributing flyers"), _("Food delivery"), 2, _("This one’s actually not that bad."), _("Flattery won’t get you anywhere, you know.")],
+    ["2.png", _("Jiangshi"), _("Vampire"), _("Dracula"), 1, _("I really couldn’t remember its name last time."), _("Well now you do, good for you.")],
+    ["3.png", _("Bath"), _("Hot Springs"), _("Soap"), 3, _("You’re saying the one above his head is soap as well?"), _("I’ll leave it to your imagination.")],
+    ["4.png", _("Barrel"), _("Izakaya"), _("Dining table"), 1, _("Is the food above it really necessary...?"), _("It’s the most important part.")],
+    ["5.png", _("Taking an exam"), _("Focus power"), _("Studying"), 2, _("That answer is way too specific..."), _("I do wish it wasn’t this specific as well.")],
+    ["6.png", _("Gyudon shop"), _("Izakaya"), _("Ramen shop"), 1, _("If it weren’t for the waiter I would’ve thought it was about just the food."), _("Even I almost forgot it wasn’t about the food.")]
     ]
 
 label quiz_pic_default:

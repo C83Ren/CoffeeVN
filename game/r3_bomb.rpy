@@ -145,7 +145,7 @@ label bomb_fail:
 
     show hitona3 pout hat
 
-    pi "Aren’t you annoyed?! That's the last challenge!"
+    pi "Aren’t you annoyed?! That’s the last challenge!"
 
     pi "Lios you must have cheated somehow!"
 
@@ -173,7 +173,7 @@ label bomb_fail:
 
     play music room_bgm fadein 3.0 volume 0.2
 
-    "{i}Eh? I'm in...my room? On my bed...{/i}"
+    "{i}Eh? I’m in...my room? On my bed...{/i}"
 
     "{i}Even if that was a dream, I wonder what was stolen...{/i}"
 
@@ -181,7 +181,7 @@ label bomb_fail:
 
     p "..."
 
-    p "AAAAAAA I'M SO SORRY SENPAI!"
+    p "AAAAAAA I’M SO SORRY SENPAI!"
 
     "I rushed out of my room in a hurry to meet senpai."
 
