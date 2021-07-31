@@ -4,12 +4,12 @@ init python:
     quiz_num = 0
 
     drawing_list = [
-    ["1.png", "Asking for help", "Distributing flyer", " Food delivery", 2, "This is actually not that bad", "Flattery won't get you anywhere"],
-    ["2.png", "Jiangshi", "Vampire", "Dracula", 1, "Before I really can't remember its name", "Well now you do, good for you"],
-    ["3.png", "Bath", "Onsen", "Soap", 3, "You're saying the one above his head is soap as well?", "I'll leave it to your imagination"],
-    ["4.png", "Barrel", "Izakaya", "Dinner", 1, "Is the dinner above it really necessary...", "It's the most important part of this"],
-    ["5.png", "Taking exam", "Focus Power", "Studying", 2, "That answer is oddly specific...", "I'll tell you as well, I wish it wasn't this specific"],
-    ["6.png", "Gyudon Shop", "Izakaya", "Ramen Shop", 1, "Without the staff I would've thought it's just the food", "Even I almost forgot it wasn't about the food"]
+    ["1.png", _("Asking for help"), _("Distributing flyers"), _("Food delivery"), 2, _("This one’s actually not that bad."), _("Flattery won’t get you anywhere, you know.")],
+    ["2.png", _("Jiangshi"), _("Vampire"), _("Dracula"), 1, _("I really couldn’t remember its name last time."), _("Well now you do, good for you.")],
+    ["3.png", _("Bath"), _("Hot Springs"), _("Soap"), 3, _("You’re saying the one above his head is soap as well?"), _("I’ll leave it to your imagination.")],
+    ["4.png", _("Barrel"), _("Izakaya"), _("Dining table"), 1, _("Is the food above it really necessary...?"), _("It’s the most important part.")],
+    ["5.png", _("Taking an exam"), _("Focus power"), _("Studying"), 2, _("That answer is way too specific..."), _("I do wish it wasn’t this specific as well.")],
+    ["6.png", _("Gyudon shop"), _("Izakaya"), _("Ramen shop"), 1, _("If it weren’t for the waiter I would’ve thought it was about just the food."), _("Even I almost forgot it wasn’t about the food.")]
     ]
 
 label quiz_pic_default:
@@ -26,7 +26,7 @@ label quiz_pic_check:
         $ quiz_count = quiz_count + 1
     else:
         play sound challengecomplete
-        "Congratulation! You got all 3 correct!"
+        "Congratulations! You got all 3 correct!"
         jump r3_sing
 
     python:
@@ -46,14 +46,14 @@ label quiz_pic_showing:
     pause 5.0
 
     menu:
-        "What is this drawing?"
-        "[quiz_opt1]":
+        "What is this drawing of?"
+        "[quiz_opt1!t]":
             $ user_answer = 1
-        "[quiz_opt2]":
+        "[quiz_opt2!t]":
             $ user_answer = 2
-        "[quiz_opt3]":
+        "[quiz_opt3!t]":
             $ user_answer = 3
-        "Look at pic again":
+        "Look at picture again":
             jump quiz_pic_showing
 
     if user_answer == drawing_list[quiz_num][4]:

@@ -30,7 +30,7 @@ label r3_quiz:
 
     play sound quizstart
 
-    "QUIZ START"
+    "{b}QUIZ START{/b}" id r3_quiz_5362ee96
 
     hide hitona3 with dissolve
 
