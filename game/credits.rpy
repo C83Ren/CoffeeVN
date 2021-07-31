@@ -5,22 +5,22 @@ define credits_names = {
     'wari': _('超エライひまわり'),
     'gabu': _('Gabuccino'),
     'cryo': _('Cryo83 (C83Ren)'),
-    'pupu': _('pupu'),
+    'pupu': _('miyo'),
     'nep': _('Nepelz_AR'),
     'lemon': _('ILLimN'),
-    'lobster': _('lobster'),
+    'lobster': _('Lobsteranian'),
     'xn': _('xn'),
 
     'company': _('Black Rabbit Black Company'),
 
     'dova': _('DOVA-SYNDROME'),
-    'zap': _('zap'),
+    'zap': _('https://www.zapsplat.com/'),
 
     'kohi': _('kohi'),
 
-    'artist0': _('???'),
-    'artist1': _('???'),
-    'artist2': _('???'),
+    'artist0': _('かくうさこ'),
+    'artist1': _('ナッツ'),
+    'artist2': _('omurice'),
 
     'message0': _('???'),
     'message1': _('???'),
@@ -87,7 +87,7 @@ screen credits_display():
         use credits_entry(_("Scenario"), ["rabbit"])
         use credits_entry(_("Translation"), ["kosa", "xn"])
         use credits_entry(_("Editing"), ["xn"])
-        use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "artist0", "artist1", "artist2"])
+        use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2"])
         use credits_entry(_("Music"), ["luttii", "dova"])
         use credits_entry(_("Sound"), ["zap"])
         use credits_entry(_("Programming"), ["rabbit", "cryo", "xn"])
@@ -102,7 +102,16 @@ screen credits_display():
 
 define credits_messages = [
     ('rabbit', 'Test Test Test\n\nテストテストテスト', None),
-    ('kosa', 'テストテストテスト', 'images/stamp idle.png'),
+    ('kosa', 'kohisuki', 'images/stamp idle.png'),
+    ('luttii', 'kohisuki', 'images/stamp idle.png'),
+    ('wari', '60歳になるまでここにいてください！', 'images/stamp idle.png'),
+    ('gabu', 'Dont forget to eat healthy food', 'images/stamp idle.png'),
+    ('cryo', 'kohisuki', 'images/stamp idle.png'),
+    ('pupu', 'kohisuki', 'images/stamp idle.png'),
+    ('nep', '"kohi is a good girl and always trying hard, i hope you taking care of yourself and take some rest whenever you feel tired', 'images/stamp idle.png'),
+    ('lemon', 'kohisuki', 'images/stamp idle.png'),
+    ('lobster', 'let\'s continue having fun together', 'images/stamp idle.png'),
+    ('xn', 'kohisuki', 'images/stamp idle.png'),
 ]
 
 default credits_message_index = 0
