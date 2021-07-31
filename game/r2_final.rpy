@@ -171,9 +171,8 @@ label final_grand_spell:
 
     #idle
 
-    e "By the way, did you bring the catalyst from before??"
-
     menu:
+        e "By the way, did you bring the catalyst from before??"
         "Yeah I did!":
             $ catalyst = True
             "Hearing my response, Eve looked relieved."
@@ -183,7 +182,7 @@ label final_grand_spell:
 
     #smile1
 
-    e "Okay Let’s do it!"
+    e "Okay let’s do it!" id final_grand_spell_4470a325
 
     play sound absolutespell
 
