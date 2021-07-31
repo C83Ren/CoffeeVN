@@ -1,13 +1,14 @@
 label r1_park_end:
 label end_1:
     # "park end"
-    scene bg park
+    scene bg park with Fade(0.5, 0.5, 0.5)
 
     "We walked for quite a while, and finally arrived at the park."
 
     # bgm 泣いて泣いて泣き止んだら
+    play music r1end_bgm volume 0.2 fadein 1.0
 
-    show hitona1 smile1
+    show hitona1 smile1 with dissolve
 
     "Shiraishi pointed at the swings, and I understood."
 
@@ -25,7 +26,7 @@ label end_1:
 
     p "Yeah, we even got a prize at our second try! I was so surprised!"
 
-    if conbiniflag == 1 and movieflag == 1:
+    if combiniflag == 1 and movieflag == 1:
 
         show hitona1 happy2
         s "And then after that, we went to get food at the best place ever!"
@@ -56,7 +57,7 @@ label end_1:
 
         p "I guess so, yeah."
 
-    elif conbiniflag == 1:
+    elif combiniflag == 1:
 
         show hitona1 happy2
 
@@ -154,7 +155,7 @@ label end_1:
 
         hide hitona1
 
-        #scene cg Purikura
+        scene cg anniv with dissolve
 
         p "Huh...? Where is Shiraishi?"
 
@@ -164,7 +165,8 @@ label end_1:
 
         "I look back up towards Shiraishi, but..."
 
-        #close CG
+        scene bg park
+        show hitona1 smile2
 
         "...she wasn’t there."
 
@@ -174,21 +176,21 @@ label end_1:
 
         p "We should go back soon."
 
-        #blur 33%
+        show hitona1 blur1 with dissolve
 
         "As I said that, my vision started to get blurry."
 
         "Rather, I can’t really make out Shiraishi’s figure."
 
-        #blur 66%
+        show hitona1 blur2 with dissolve
 
         "The blurriness got worse and worse, and I can’t see Shiraishi anymore."
 
-        #black
+        show hitona1 blur3 with dissolve
 
         p "Shiraishi?"
 
-        hide hitona1
+        hide hitona1 with dissolve
 
         #back to normal
 
@@ -197,16 +199,35 @@ label end_1:
         "I looked around frantically, but she was nowhere to be found. In her place appeared messages dancing lightly through the air."
 
     if regret_choice == "Yeah, I regret something":
+        window hide
+        scene cg regret1 with dissolve
+        $ renpy.pause(60.0)
+        scene cg regret2 with dissolve
+        $ renpy.pause(60.0)
+        scene cg regret3 with dissolve
+        $ renpy.pause(60.0)
+        scene cg regret4 with dissolve
+        $ renpy.pause(60.0)
 
         #CG Message I (If Regret decision)
-        pass
+        #pass
 
     else:
-
+        window hide
+        scene cg noregret1 with dissolve
+        $ renpy.pause(60.0)
+        scene cg noregret2 with dissolve
+        $ renpy.pause(60.0)
+        scene cg noregret3 with dissolve
+        $ renpy.pause(60.0)
+        scene cg noregret4 with dissolve
+        $ renpy.pause(60.0)
         #CG Message II (If No Regret decision)
-        pass
+        #pass
 
     # todo: fade to end card r1
+
+    scene bg park with fade
 
     p "{i}What’s this on the ground? A key?{/i}" id end_1_2071b73a
 

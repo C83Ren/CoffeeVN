@@ -1,6 +1,8 @@
 label r1_movie_bad_end:
 
     #no bgm
+    stop music fadeout 1.0
+
     p "I don’t know... I’m not sure if we can meet again later, so I can’t promise."
 
     p "Sorry, Shiraishi..."
@@ -13,7 +15,7 @@ label r1_movie_bad_end:
 
     s "One day, when I grow up, I want to become someone just like you."
 
-    scene black
+    scene black with dissolve
 
     "???" "Oii! Kohiiiii!"
 

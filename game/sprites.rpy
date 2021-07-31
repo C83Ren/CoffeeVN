@@ -37,6 +37,10 @@ image hitona1 stareyes1 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stare
 image hitona1 stareyes2 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes2.png"), xanchor=193, yanchor=840)
 image hitona1 stareyes3 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes3.png"), xanchor=193, yanchor=840)
 image hitona1 stareyes4 = Transform(Image("images/kohi_r1/star eyes/KohiLO_stareyes4.png"), xanchor=193, yanchor=840)
+image hitona1 blur1 = Transform(Image("images/kohi_r1/blur1.png"), xanchor=193, yanchor=840)
+image hitona1 blur2 = Transform(Image("images/kohi_r1/blur2.png"), xanchor=193, yanchor=840)
+image hitona1 blur3 = Transform(Image("images/kohi_r1/blur3.png"), xanchor=193, yanchor=840)
+
 
 #KohiC2 (hitona2)
 image hitona2 idle = Transform(Image("images/kohi_r2/idle.png"), zoom=0.9, xalign=0.3, yanchor=900)

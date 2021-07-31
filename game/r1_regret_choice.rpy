@@ -29,20 +29,24 @@ label r1_regret_choice:
         p "{i}Oh well.{/i}"
 
     elif shoppingflag == "dress":
-        hide hitona1
+        scene bg shop with dissolve
 
         "We changed back to our clothes and left the shop."
 
     # Background: Intersection (Afternoon)
+
+    scene bg shop with fade
+
+    stop music fadeout 1.0
 
     "The sun is starting to set."
 
     p "{i}We better start heading back.{/i}"
 
     if movieflag == 1:
-        show hitona1 idle1
+        show hitona1 idle1 with dissolve
     else:
-        show hitona1 idle3
+        show hitona1 idle3 with dissolve
 
     s "Hitona nee-chan! Let’s go to the park!"
 

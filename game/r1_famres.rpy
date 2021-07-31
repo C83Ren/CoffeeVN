@@ -22,13 +22,16 @@ label r1_famres:
 
     "We walked to a nearby family restaurant."
 
-    scene bg famres
+    stop music fadeout 1.0
+    scene bg famres with Fade(0.5, 0.5, 0.5)
+
+    play music hitona_theme volume 0.2 fadein 1.0
 
     "We took our seats and looked at the menu."
 
     p "You can get whatever you want, Shiraishi."
 
-    show hitona1 happy2
+    show hitona1 happy2 with dissolve
 
     s "Really? Can I order more than one?"
 

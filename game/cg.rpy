@@ -1,6 +1,16 @@
 init 0:
     image cg Placeholder = "images/river bank.png"
 
+    image cg regret1 = Image("images/CG/lastCG_Green_1.png")
+    image cg regret2 = Image("images/CG/lastCG_Green_2.png")
+    image cg regret3 = Image("images/CG/lastCG_Green_3.png")
+    image cg regret4 = Image("images/CG/lastCG_Green_4.png")
+
+    image cg noregret1 = Image("images/CG/lastCG_Blue_1.png")
+    image cg noregret2 = Image("images/CG/lastCG_Blue_2.png")
+    image cg noregret3 = Image("images/CG/lastCG_Blue_3.png")
+    image cg noregret4 = Image("images/CG/lastCG_Blue_4.png")
+
     image cg 1 unscaled = Image("images/CG/hitona dress.png")
     image cg 1 = "cg 1 unscaled"
     image cg hitonadress = "cg 1 unscaled"
@@ -29,4 +39,4 @@ init 0:
     image cg 10 unscaled = "cg Placeholder"
     image cg 10 = "cg 10 unscaled"
 
-    define cg_list = ["hitonadress", "anniv", "fanmessage", "grandspell", "hitonamemory", "truehitona", "Placeholder6", "Placeholder7", "Placeholder8", "Placeholder9"]
+    define cg_list = ["hitonadress", "anniv", "fanmessage", "grandspell", "hitonamemory", "truehitona", "regret1", "regret2", "regret3", "regret4", "noregret1", "noregret2", "noregret3", "noregret4"]

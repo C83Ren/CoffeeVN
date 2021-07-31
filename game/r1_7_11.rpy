@@ -13,7 +13,10 @@ label r1_7_11:
     # “Whatever you like~”. “I want to have Hitona neechan’s recommendation!”.
     # What will you give?
 
-    scene bg conbini
+    stop music fadeout 1.0
+    scene bg konbini with Fade(0.5, 0.5, 0.5)
+
+    play music hitona_theme volume 0.2 fadein 1.0
 
     $ conbiniflag = 1
 

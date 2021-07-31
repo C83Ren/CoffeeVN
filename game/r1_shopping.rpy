@@ -2,7 +2,7 @@ init python:
     shoppingflag = None
 
 label r1_shopping:
-    scene bg shop
+    scene bg shop with Fade
     #bgm 星海
 
     if famresflag == 1:
@@ -18,7 +18,7 @@ label r1_shopping:
 
     p "Don’t you think so too, Shiraishi?"
 
-    show hitona1 bliss3
+    show hitona1 bliss3 with dissolve
 
     s "Napping is also nice though..."
 
@@ -70,7 +70,7 @@ label r1_shopping:
 
     s "Okay!"
 
-    hide hitona1
+    hide hitona1 with dissolve
 
     "With that said, Shiraishi left on her own to pick an outfit for me."
 
@@ -101,7 +101,7 @@ label r1_shopping:
 
     "Shiraishi was smiling and looking at... wedding outfits."
 
-    show hitona1 stareyes4
+    show hitona1 stareyes4 with dissolve
 
     s "They look so beautiful!"
 
@@ -131,7 +131,7 @@ label r1_shopping:
 
     s "If Hitona onee-chan says so..."
 
-    hide hitona1
+    hide hitona1 with dissolve
 
     "Shiraishi took the costume I picked and went to change."
 
@@ -155,7 +155,7 @@ label r1_shopping_suit:
 
     "It seems that she has not changed her clothes yet."
 
-    show hitona1 idle2
+    show hitona1 idle2 with dissolve
 
     "Well, it doesn’t seem like she noticed me yet."
 
@@ -206,7 +206,7 @@ label r1_shopping_dress:
 
     "After changing, I met up with Shiraishi again, and..."
 
-    # CG
+    scene cg hitonadress with dissolve
 
     p "AAAAAAH!!! SHIRAISHI, YOU’RE SO CUUUTE!!!!"
 

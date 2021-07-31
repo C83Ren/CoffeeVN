@@ -1,5 +1,5 @@
 label r1_home_bad_end:
-    stop music
+    stop music fadeout 1.0
 
     p "It’s getting late, Shiraishi; you should go home now. I’ll accompany you."
 
@@ -21,21 +21,19 @@ label r1_home_bad_end:
 
     "Saying that, Shiraishi stood up and led the way."
 
-    hide hitona1
+    scene bg intersection day with Fade(0.5, 0.5, 0.5)
 
-    scene bg intersection day
+    play music r2bad_bgm fadein 1.0 volume 0.2
 
     "We walked for quite a long time."
 
     p "Shiraishi, are you maybe lost?"
 
-    show hitona1 smile1
+    show hitona1 smile1 with dissolve
 
     s "It’s okay, Hitona onee-chan. We’ll be there soon."
 
-    hide hitona1
-
-    scene bg intersection afternoon
+    scene bg intersection evening with dissolve
 
     "We then walked and walked and walked."
 
@@ -51,9 +49,14 @@ label r1_home_bad_end:
 
     p "Eh?"
 
+    play sound phonecall
+    $ renpy.pause(2.0, hard=True)
+
     # phonecall tone
 
     "My phone is ringing."
+
+    stop sound
 
     sn "I told you, right, to have fun with that girl."
 
@@ -67,9 +70,7 @@ label r1_home_bad_end:
 
     p "{i}She was... right... the...{/i}"
 
-    with Fade(2.0, 1.0, 2.0, "#000")
-
-    scene bg famres
+    scene bg famres with Fade(2.0, 1.0, 2.0)
 
     "Friend" "OOOOI! KOHIII!"
 

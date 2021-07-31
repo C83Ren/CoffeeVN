@@ -4,7 +4,7 @@ label r1_start:
     # Music: Happy excited, doesn’t loop, > 3 minutes
     # Background: Intersection day
     #
-    scene bg intersection day
+    scene bg intersection day with fade
 
     "8:00 AM."
 
@@ -18,7 +18,9 @@ label r1_start:
 
     "While thinking that, the young girl approached me."
 
-    show hitona1 idle1
+    play music hitona_theme fadein 1.0 volume 0.2
+
+    show hitona1 idle1 with dissolve
 
     "???" "Onee-chan!"
 
@@ -66,6 +68,10 @@ label r1_start:
 
     "I took out my phone and called senpai."
 
+    play sound ringingtone
+    window hide
+    $ renpy.pause(3.0, hard=True)
+    stop sound
     # TODO ring tone, pause
 
     sn "Hello?"
@@ -91,6 +97,8 @@ label r1_start:
     p "H...Huh...? O...Okay...I understand..."
 
     sn "Okay Kohii, I’m hanging up! See you sometime~"
+
+    play sound endcall
 
     # TODO endcall
 
@@ -136,11 +144,15 @@ label r1_start:
 
     p "{i}I wonder if I was that cheerful and innocent back when I was 10 years old...{/i}"
 
-    scene bg gamecenter
+    stop music fadeout 1.0
+
+    scene bg gamecenter with Fade(0.5, 0.5, 0.5)
+
+    play music game_arcade fadein 1.0 volume 0.2
 
     p "And here we are, the game center~"
 
-    show hitona1 stareyes1
+    show hitona1 stareyes1 with dissolve
 
     "Shiraishi was standing by my side; her eyes were filled with excitement."
 
@@ -268,6 +280,9 @@ label r1_start:
 
     "I put the first coin in."
 
+    play sound quizquestion
+    $ renpy.pause(2.0, hard=True)
+
     #Coin sfx, arcade start sfx
 
     p "A bit more to the right, a bit forward... right there! No... a bit more to the left... okay, let’s go!"
@@ -276,8 +291,10 @@ label r1_start:
 
     "As the crane went down, Shiraishi was beside me, fidgeting and staring with hopeful eyes..."
 
+    play sound falsechoice_long
+    $renpy.pause(2.0, hard=True)
     #Crane sfx
-
+    
     "...but the crane didn’t even touch the prize."
 
     show hitona1 happy2
@@ -292,6 +309,9 @@ label r1_start:
 
     "I put a second coin in."
 
+    play sound quizquestion
+    $ renpy.pause(2.0, hard=True)
+
     #Coin sfx, arcade start sfx
 
     p "{i}I didn’t hit it last time so I should try a bit more to the right... a little bit more to the back... ah who cares, let’s just try it!{/i}"
@@ -299,6 +319,12 @@ label r1_start:
     "Push!"
 
     p "{i}Ahh, doesn’t seem like it’s gonna work... sigh...{/i}"
+
+    play sound cranegame
+    queue sound cranegame
+    queue sound cranegame
+
+    $renpy.pause(3.0, hard=True)
 
     s "Hitona onee-chan! We got it!!! Yaaaaaay!"
 

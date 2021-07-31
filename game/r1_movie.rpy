@@ -13,7 +13,7 @@ label r1_movie:
     # “I’ll leave it to Hitona neechan~”.
     # So it’s obvious which one right?
 
-    scene bg cinema
+    scene bg cinema with Fade
 
     $ movieflag = 1
 
@@ -26,7 +26,7 @@ label r1_movie:
 
     p "You’ve been to a cinema before, right Shiraishi?"
 
-    show hitona1 smile1
+    show hitona1 smile1 with dissolve
 
     s "Nope, Shiraishi has never been to a cinema before!"
 
@@ -63,6 +63,8 @@ label r1_movie:
 
     "The movie is starting soon!"
 
+    stop music fadeout 1.0
+
     if mov == "horror":
         "The movie is {i}ParanormalJP{/i}."
 
@@ -79,6 +81,8 @@ label r1_movie:
         hide hitona1
 
         "The movie is starting."
+
+        play music horror_theme
 
         "As expected from a horror movie, it’s quite dark."
 
@@ -108,7 +112,11 @@ label r1_movie:
 
         "Holding hands, we were able to finish watching the movie."
 
-        show hitona1 happy1
+        stop music
+
+        show hitona1 happy1 with dissolve
+
+        play music hitona_theme fadein 1.0 volume 0.2
 
         s "That was so fun!!"
 
@@ -134,6 +142,8 @@ label r1_movie:
         hide hitona1
 
         "The movie is starting."
+
+        play music movie_theme
 
         "The main character is a middle schooler."
 
@@ -161,9 +171,13 @@ label r1_movie:
 
         hide hitona1
 
+        stop music
+
         "After the movie ended..."
 
-        show hitona1 happy1
+        show hitona1 happy1 with dissolve
+
+        play music hitona_theme fadein 1.0 volume 0.2
 
         s "That was so fun!!"
 

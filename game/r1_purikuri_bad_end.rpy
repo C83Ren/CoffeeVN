@@ -1,6 +1,7 @@
 label r1_purikuri_bad_end:
 
     #no BGM
+    stop music fadeout 2.0
 
     "I looked at the photo, but it was still black."
 
@@ -15,16 +16,19 @@ label r1_purikuri_bad_end:
     "..."
 
     #phone_call tone, pause
+    play sound phonecall
 
     "It’s the sound of my phone ringing."
 
     "While still looking at the photo, I took out my phone."
 
-    scene black
+    stop sound
+
+    scene black with dissolve
 
     "..."
 
-    scene bg room
+    scene bg room with dissolve
 
     "When I opened my eyes, I was lying on my bed."
 
@@ -32,9 +36,13 @@ label r1_purikuri_bad_end:
 
     #phone_call tone
 
+    play sound phonecall
+
     "My phone is ringing."
 
     "It’s from senpai."
+
+    stop sound
 
     sn "Kohiii! Morning~! So about today..."
 

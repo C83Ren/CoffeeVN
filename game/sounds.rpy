@@ -55,6 +55,7 @@ define audio.room_bgm = "audio/Route_1_-_Track_1.ogg"
 define audio.hitona_theme = "audio/Route_1_-_hitona_theme.mp3"
 define audio.game_arcade = "audio/Route_1_-_game_arcade.mp3"
 define audio.movie_theme = "audio/Route_1_-_movie_theme.mp3"
+define audio.horror_theme = "audio/Route_1_-_horror_theme.mp3"
 define audio.r1end_bgm = "audio/Route_1_-_End_Theme.mp3"
 
 #BGM R2
