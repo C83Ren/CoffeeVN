@@ -6,13 +6,13 @@ label r2_map_1:
 
     play sound staffsummon
 
-    "Eve took out a map out of thin air"
+    "Eve took out a map out of thin air."
 
     p "How do you do that!? I don’t want to carry anything either!"
 
     #smug1
 
-    e "'Tis this Majna Eve’s special power!"
+    e "’Tis this Majna Eve’s special power!"
 
     #idle
 
@@ -22,17 +22,17 @@ label r2_map_1:
 
     "I put all of my belongings inside the dimensional storage."
 
-    e "So look at this map"
+    e "So look at this map."
 
-    e "At the far right is the castle. Before that you can see a village"
+    e "At the far right is the castle. And here on the lower left is the village."
 
     p "...There’s only one village?! How is this kingdom still here?!"
 
-    e "Most of the cities and villages are on the other side."
+    e "Most of the cities and villages are much farther away."
 
-    e "Because of these three dangerous areas, there aren’t many people living over here."
+    e "Between the village and the castle are the {color=#00c}Tranquility{/color}, {color=#00c}Turmoil{/color}, and {color=#00c}Rage{/color} regions."
 
-    e "At the top of the map there’s the Tranquility and Turmoil regions. And then there’s the Rage region near the village and castle."
+    e "Because of these three dangerous areas, there aren’t many people living nearby."
 
     p "What’s with those regions?"
 
@@ -192,9 +192,7 @@ label map_castle:
 
     "After that, we found ourselves on the receiving end of an uncountable number of spells casted by the soldiers, and were completely obliterated."
 
-    "Bad End"
-
-    return
+    jump bad_end
 
 label map_rage_1:
 
@@ -260,11 +258,9 @@ label map_rage_2:
 
 label map_tranquility:
 
-    "Enter Tranquility?"
-
     menu:
-        "(Warning: you won’t be able to leave after entering)"
-        "Yes":
+        "Enter Tranquility?\n(Warning: you won’t be able to leave after entering)"
+        "Enter Tranquility":
             jump r2_tranquility
-        "No":
+        "Don't enter Tranquility":
             jump map_menu
