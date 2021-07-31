@@ -24,7 +24,7 @@ label r2_turmoil:
 
     e "If Hitona can defeat them, why bother using such a flashy spell?"
 
-    p "You’re mocking me, aren’t you"
+    p "You’re mocking me, aren’t you?"
 
     "For some reason, Eve started patting me on the head."
 

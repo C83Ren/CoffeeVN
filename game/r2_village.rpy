@@ -121,7 +121,7 @@ label village_talk_3:
 
     #laugh2
 
-    e "They are as magnificent as myself"
+    e "They are as magnificent as myself!"
 
     p "That doesn’t explain anything at all..."
 
@@ -131,7 +131,7 @@ label village_talk_3:
 
     e "Yes, it is horrible! The Captain almost died once because of it!"
 
-    e "A sudden thunderstorm, followed by an earthquake, then a vortex of lightning surrounding him…"
+    e "A sudden thunderstorm, followed by an earthquake, then a vortex of lightning surrounding him..."
 
     p "How in the world did he survive that..."
 
@@ -144,13 +144,13 @@ label village_talk_3:
     jump village_menu
 
 label village_announcement:
-    "\"Join the army, not the rebels!\""
+    "“Join the army, not the rebels!”"
 
     #idle
 
     p "What a weird poster..."
 
-    e "It's from when the rebels and the army were still fighting around this area."
+    e "It’s from when the rebels and the army were still fighting around this area."
 
     e "There aren’t many people around here anymore, I doubt anyone will update this or anything."
 
@@ -164,7 +164,7 @@ label village_house_1_1:
 
     e "Hitoni! I have arrived!"
 
-    hn "Oh, it's been a while. Still traveling around I see."
+    hn "Oh, it’s been a while. Still traveling around I see."
 
     hn "Hm? Who’s that girl beside you?"
 
@@ -206,16 +206,16 @@ label village_house_1_1:
         "Upgrade Wind Blast to Wind Cutter":
             $ hitona_stats["spell"][0] = "Wind Cutter"
             play sound correctchoice
-            "You have obtained Wind Cutter spell!"
+            "{b}Wind Blast has been upgraded into Wind Cutter!{/b}"
             jump village_menu
         "Get Fire Ball (Occasionally inflicts the Burn Status)":
             play sound correctchoice
-            "You have obtained Fire Ball spell!"
+            "{b}You have obtained the Fire Ball spell!{/b}"
             $ hitona_stats["spell"].append("Fire Ball")
             jump village_menu
         "Get Electric Bolt (Occasionally inflicts the Paralysis Status)":
             play sound correctchoice
-            "You have obtained Electric Bolt spell!"
+            "{b}You have obtained the Electric Bolt spell!{/b}"
             $ hitona_stats["spell"].append("Electric Bolt")
             jump village_menu
 
@@ -224,9 +224,9 @@ label village_house_1_2:
 
     hn "Did you forget something?"
 
-    p "No nothing, just wondering what’s your relation with Eve"
+    p "No nothing, just wondering what’s your relation with Eve."
 
-    hn "You could’ve just asked Eve herself"
+    hn "You could’ve just asked Eve herself."
 
     p "Her talk is nonsense most of the time though..."
 
@@ -246,13 +246,13 @@ label village_house_2_1:
 
     play sound dooropen
 
-    "??" "Who would come to this place in the middle of the day? I don’t have any money!"
+    "???" "Who would come to this place in the middle of the day? I don’t have any money!"
 
     #laugh2
 
     e "You should be grateful that this great Majna came out to greet you!"
 
-    "??" "Oh, it’s you. Even worse, hurry up and get out."
+    "???" "Oh, it’s you. Even worse, hurry up and get out."
 
     #surprised1
 
@@ -266,7 +266,7 @@ label village_house_2_1:
 
     e "Glad you asked! This is the world’s second salvation! After me of course!"
 
-    hs "Salvation you say… You’re always talking big but have nothing to show for it."
+    hs "Salvation you say... You’re always talking big but have nothing to show for it."
 
     e "There’s no need to worry! This time around, the wind is telling the truth!"
 
@@ -278,9 +278,9 @@ label village_house_2_2:
 
     play sound dooropen
 
-    hs "What do you wa… oh it’s you. I didn’t catch your name last time."
+    hs "What do you wa... oh it’s you. I didn’t catch your name last time."
 
-    p "It’s Hitona Kohigashi"
+    p "It’s Hitona Kohigashi."
 
     hs "Kohigashi hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
 
@@ -298,9 +298,9 @@ label village_house_3_1:
 
     e "Captain! The Great Majna has come with the world’s second salvation!"
 
-    "??" "Huh, if it isn’t Eve!"
+    "???" "Huh, if it isn’t Eve!"
 
-    "??" "Second salvation you say? Is she the one beside you right now?"
+    "???" "Second salvation you say? Is she the one beside you right now?"
 
     #smile1
 
@@ -308,7 +308,7 @@ label village_house_3_1:
 
     p "Nice to meet you, I’m Hitona Kohigashi."
 
-    "??" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation"
+    "???" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation."
 
     p "You got that right, I have no idea why I am here."
 
@@ -322,15 +322,15 @@ label village_house_3_1:
 
     "Saying that, Eve left the house."
 
-    "??" "So, how did you end up here?"
+    "???" "So, how did you end up here?"
 
     p "You tell me...I somehow got suddenly dragged into this world, somehow fought a soldier with magic, and got dragged around by that weird girl."
 
-    "??" "Ahahahahaha as expected of Eve!"
+    "???" "Ahahahahaha as expected of Eve!"
 
     hj "First of all, I am Hitoju."
 
-    hj "You said you got suddenly transported into this world… I see, now I understand why she calls you the second salvation."
+    hj "You said you got suddenly transported into this world... I see, now I understand why she calls you the second salvation."
 
     p "Well I don’t!"
 
@@ -378,12 +378,7 @@ label village_house_3_1:
         menu:
             extend ""
 
-            "No":
-                hj "Don’t be like that, you are our last hope. Just think of this as a little fun trip. How about it?"
-
-                jump village_forced_option
-
-            "Yes":
+            "I’ll go collect the ultimate spells for you":
                 hj "That’s the spirit!"
 
                 hj "I recommend going to Tranquility first. It’s safer than the other special regions."
@@ -408,17 +403,22 @@ label village_house_3_1:
 
                 jump village_menu
 
+            "Nope, it sounds too annoying":
+                hj "Don’t be like that, you are our last hope. Just think of this as a little fun trip. How about it?"
+
+                jump village_forced_option
+
 label village_house_3_2:
 
     play sound dooropen
 
     hj "Do you need something from me?"
 
-    p "Uuuh no, nothing"
+    p "Uhhh no, nothing."
 
     hj "Well great timing, I was going to give you this."
 
-    "You have obtained God Blessing"
+    "{b}You have obtained God Blessing!{/b}"
 
     $ hitona_stats["item"].append("God Blessing")
 
@@ -466,9 +466,9 @@ label village_house_4_2:
 
     p "What are you trying to find?"
 
-    "I tried flipping some books as well"
+    "I tried flipping some books as well."
 
-    "{i}What is this language…I can’t read it at all!{/i}"
+    p "{i}What is this language...I can’t read it at all!{/i}"
 
     e "Here we go! Some hints about the Tranquility region!"
 
@@ -482,11 +482,11 @@ label village_house_4_2:
 
     e "The hint for the Tranquility region is..."
 
-    e "{b}\"What you seek lies deep in the water.\"{/b}"
+    e "{b}“What you seek lies deep in the water.”{/b}"
 
     p "That seems really straightforward."
 
-    e "...I sure hope so"
+    e "...I sure hope so."
 
     e "Let’s go when you are ready!"
 
@@ -498,6 +498,6 @@ label village_house_4_3:
 
     #idle
 
-    e "I know my domain is such a lovely place, but we got places to go"
+    e "I know my domain is such a lovely place, but we got places to go."
 
     jump village_menu
