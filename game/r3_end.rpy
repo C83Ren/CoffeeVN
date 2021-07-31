@@ -1,7 +1,7 @@
 label r3_end:
 label end_3:
     $ persistent.ed_unlocked_3 = True
-    scene bg sing with fade
+    scene bg hub with Fade(1.0, 1.0, 1.0)
 
     play music r3end_bgm fadein 2.0
 
@@ -26,13 +26,11 @@ label end_3:
 
     pi "I leave the rest to you, Lios."
 
-    scene bg hub with Fade(1.0, 1.0, 1.0)
-
     p "What’s happening?? I did finish the challenge...right?"
 
-    show lios front with dissolve
-
     l "Yeah, don’t worry, congratulations on finishing every challenge there is~"
+
+    show hitona3 smile hat
 
     pi "Yaaay!"
 
@@ -46,16 +44,13 @@ label end_3:
 
     l "You’ve been doing this more than one time."
 
-    p "Huh?"
+    show hitona3 idle hat
 
-    hide lios
-    show hitona3 idle hat at hitona_left
+    p "Huh?"
 
     pi "I said it earlier, didn’t I? This domain makes you forget {b}even the most obvious things{/b}."
 
     p "No way...how many times?"
-
-    show lios front at lios_right behind hitona3
 
     l "That’s what I asked Pierrot just now."
 
@@ -126,7 +121,17 @@ label end_3:
 
     "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Your memories."
 
-    scene cg hitonamemory with Fade(1.0, 1.0, 1.0)
+    scene black
+
+    window hide
+    show art_1 with dissolve
+    $ renpy.pause(3.0)
+    hide art_1 with dissolve
+    show art_2 with dissolve
+    $ renpy.pause(3.0)
+    hide art_2 with dissolve
+    show art_3 with dissolve
+    $ renpy.pause(3.0)
 
     p "These are...?"
 
@@ -134,39 +139,114 @@ label end_3:
 
     pi "Albeit altered."
 
+    hide art_3 with dissolve
+    show art_4 with dissolve:
+        zoom 0.8
+        xalign 0.5
+        yalign 0.3
+
     p "Altered?"
 
     l "What’s shown here has been a bit altered, that’s all."
 
+    window hide
+    hide art_4 with dissolve
+    show art_5 with dissolve
+    $ renpy.pause(3.0)
+    hide art_5 with dissolve
+    show art_6 with dissolve
+    $ renpy.pause(3.0)
+
     p "You’re telling me...you’re giving me back altered memories?!"
+
+    hide art_6 with dissolve
+    show art_7 with dissolve:
+        zoom 0.8
+        xalign 0.5
+        yalign 0.3
 
     pi "Don’t worry, don’t worry."
 
     p "I should worry!"
 
+    hide art_7 with dissolve
+    show art_8 with dissolve
+
     l "She meant that the memories you got back are not altered. Only what’s being shown here is altered."
 
+    window hide
+    hide art_8 with dissolve
+    show art_9 with dissolve
+    $ renpy.pause(3.0)
+    hide art_9 with dissolve
+    show art_10 with dissolve
+
     p "But why though..."
+
+    hide art_10 with dissolve
+    show art_11 with dissolve:
+        zoom 0.7
+        xalign 0.5
+        yalign 0.3
 
     pi "To make things more interesting."
 
     l "So it becomes more memorable?"
 
+    hide art_11 with dissolve
+    show art_12 with dissolve
+
     pi "Probably yeah."
+
+    hide art_12 with dissolve
+    show art_13 with dissolve:
+        zoom 0.5
+        xalign 0.5
+        yalign 0.3
 
     p "Oi, you two sound so unsure about it!?"
 
+    hide art_13 with dissolve
+    show art_14 with dissolve:
+        zoom 0.5
+        xalign 0.5
+        yalign 0.3
+
     pi "Hey, who cares! Just enjoy the view!"
+
+    hide art_14 with dissolve
+    show art_15 with dissolve
 
     l "I have to agree with Pierrot."
 
+    hide art_15 with dissolve
+    show art_16 with dissolve:
+        zoom 0.5
+        xalign 0.5
+        yalign 0.3
+
     "While watching the scene, a thought came to mind."
 
+    hide art_16 with dissolve
+    show art_17 with dissolve
+
     "What will happen to these two after this?"
+
+    hide art_17 with dissolve
+    show art_18 with dissolve:
+        zoom 0.5
+        xalign 0.5
+        yalign 0.3
 
     "As if they had heard me..."
 
     pi "Don’t be sad, we’ll still be with you, Kohigashi."
+
+    hide art_18 with dissolve
+    show art_19 with dissolve:
+        zoom 0.8
+        xalign 0.5
+        yalign 0.3
 
     p "Eh?"
 
@@ -174,19 +254,33 @@ label end_3:
 
     p "Oh so that’s what you mean..."
 
+    hide art_19 with dissolve
+    show art_20 with dissolve:
+        zoom 0.7
+        xalign 0.5
+        yalign 0.3
+
     l "No, like, in the truest sense; we’re the one managing your memories."
 
     l "So, we’ll always be in your memories."
 
     p "What...?"
 
+    hide art_20 with dissolve
+
     pi "Well that’s how it is, see you!"
 
     l "See you."
 
+    scene cg hitonamemory with Fade(1.0, 1.0, 1.0)
+
+    $ renpy.pause(10.0)
+
     scene bg room with fade
-    
+
     # todo r3 endcard
+
+    stop music fadeout 1.0
 
     "{i}What’s this...a key...and paper?{/i}"
 
