@@ -138,3 +138,58 @@ screen world_map():
             xpos 141
             ypos 817
             action Jump ("on_to_village")
+
+screen tranquility_map():
+    add "r2_maps/r2_tranquility/tranquility.png"
+
+
+    if t_bfish:
+        imagebutton auto "images/r2_maps/r2_tranquility/waterfall_%s.png":
+            xpos 929
+            ypos 0
+            action Jump ("tranquility_waterfall")
+
+        imagebutton auto "images/r2_maps/r2_tranquility/pond_%s.png":
+            xpos 956
+            ypos 281
+            action Jump ("tranquility_pond_after")
+
+        imagebutton auto "images/r2_maps/r2_tranquility/tree medium_%s.png":
+            xpos 1522
+            ypos 389
+            action Jump ("tranquility_forest")
+    elif t_fish1 and t_fish2 and t_fish3:
+        imagebutton auto "images/r2_maps/r2_tranquility/pond_%s.png":
+            xpos 956
+            ypos 281
+            action Jump ("tranquility_release_fishes")
+    else:
+        imagebutton auto "images/r2_maps/r2_tranquility/tree medium_%s.png":
+            xpos 273
+            ypos 385
+            action Jump ("tranquility_spot_1")
+
+        imagebutton auto "images/r2_maps/r2_tranquility/tree medium_%s.png":
+            xpos 381
+            ypos 663
+            action Jump ("tranquility_spot_2")
+
+        imagebutton auto "images/r2_maps/r2_tranquility/tree medium_%s.png":
+            xpos 1635
+            ypos 662
+            action Jump ("tranquility_spot_3")
+
+        imagebutton auto "images/r2_maps/r2_tranquility/old man_%s.png":
+            xpos 963
+            ypos 316
+            action Jump ("tranquility_oldman")
+
+        imagebutton auto "images/r2_maps/r2_tranquility/pond_%s.png":
+            xpos 956
+            ypos 281
+            action Jump ("tranquility_pond")
+
+        imagebutton auto 'images/r2_maps/talk ' + str(_preferences.language) + ' %s.png':
+            xpos 94
+            ypos 73
+            action Jump ("tranquility_talk")

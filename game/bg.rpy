@@ -17,7 +17,8 @@ image bg village = "images/r2_maps/r2_village/village.png"
 image bg turmoil_front = "images/bg turmoil front.png"
 image bg turmoil = "images/r2_maps/r2_turmoil/turmoil.png"
 image bg rage = "images/bg rage front.png"
-image bg tranquility = "images/bg tranquility front.png"
+image bg tranquility_front = "images/bg tranquility front.png"
+image bg tranquility = "images/r2_maps/r2_tranquility/tranquility.png"
 image bg castle room = "images/r2_maps/castle.png"
 
 #Route 3

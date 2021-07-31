@@ -90,10 +90,12 @@ label r2_tranquility_after_battle:
 
     "We walked into the forest filled with a serene and sublime atmosphere."
 
-    scene bg tranquility with Fade(1.0, 0.5, 1.0)
+    scene bg tranquility_front with Fade(1.0, 0.5, 1.0)
     play music waterfall fadein 2.0
 
     $ renpy.pause(3.0)
+
+    scene bg tranquility with dissolve
 
     p "Such a peaceful place..."
 
@@ -150,34 +152,7 @@ label r2_tranquility_after_battle:
     e "Remember, {b}“What you seek lies deep in the water.”{/b}"
 
 label tranquility_menu:
-    if t_bfish:
-        menu:
-            "Where should I use this fish?"
-            "Forest":
-                jump tranquility_forest
-            "Pond":
-                jump tranquility_pond_after
-            "Waterfall":
-                jump tranquility_waterfall
-    elif t_fish1 and t_fish2 and t_fish3:
-        menu:
-            "Pond":
-                jump tranquility_release_fishes
-    else:
-        menu:
-            "Where should I go?"
-            "Forest Spot 1":
-                jump tranquility_spot_1
-            "Forest Spot 2":
-                jump tranquility_spot_2
-            "Forest Spot 3":
-                jump tranquility_spot_3
-            "Pond":
-                jump tranquility_pond
-            "Old Man":
-                jump tranquility_oldman
-            "Talk":
-                jump tranquility_talk
+    call screen tranquility_map
 
 label tranquility_forest:
     if t_forest == 0:
@@ -685,6 +660,8 @@ label tranquility_oldman_1:
 
     e "I call the mana of aquos, break free!"
 
+    $ renpy.pause(2.0, hard=True)
+
     p "..."
 
     "Nothing happened." id tranquility_oldman_1_a37ef08e
@@ -928,6 +905,8 @@ label tranquility_waterfall:
     play sound magiccasting
 
     e "Wind among us, elevate!"
+
+    $ renpy.pause(2.0, hard=True)
 
     "As Eve cast her the spell, a shining blue orb flew up from the hole, and landed gently in my open hands."
 
