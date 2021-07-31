@@ -148,7 +148,18 @@ label true_end_combination_unlocked:
     nvl_narrator "Open each safe with each key!”"
 
     call handle_key_lock(1)
-    call show_cg("BirthdayKohi")
+    #call show_cg("hitonadress")
+    call show_cg("anniv")
+    #call show_cg("regret1")
+    #call show_cg("regret2")
+    #call show_cg("regret3")
+    #call show_cg("regret4")
+    #call show_cg("noregret1")
+    #call show_cg("noregret2")
+    #call show_cg("noregret3")
+    #call show_cg("noregret4")
+
+    #^ Or show just one from regret CG and one from Not Regret CG
 
     nvl clear
     nvl_narrator "“First of all!"
@@ -158,7 +169,10 @@ label true_end_combination_unlocked:
     "There’s another locked safe inside, and there are three keys left."
 
     call handle_key_lock(2)
-    # call show_cg("")
+    # call show_cg("spreg1")
+    # call show_cg("spreg2")
+    # call show_cg("spreg3")
+    # call show_cg("grandspell")
 
     nvl_narrator "“Second!"
     nvl_narrator "Keep being yourself!"
@@ -168,7 +182,14 @@ label true_end_combination_unlocked:
     "There’s another locked safe inside, and there are two keys left."
 
     call handle_key_lock(3)
-    # call show_cg("")
+    # call show_cg("artreel1")
+    # call show_cg("artreel2")
+    # call show_cg("artreel3")
+    # call show_cg("artreel4")
+    # call show_cg("artreel5")
+    # call show_cg("hitonamemories")
+
+    #^ art most are not full HD
 
     nvl_narrator "“Third!"
     nvl_narrator "The memories that you have made all this time are irreplaceable!"
@@ -177,7 +198,8 @@ label true_end_combination_unlocked:
     "There’s another locked safe inside, and there is one key left."
 
     call handle_key_lock(4)
-    # call show_cg("")
+    # call show_cg("truehitona")
+    $ renpy.pause(10.0)
 
     call credits()
 
