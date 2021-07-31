@@ -14,7 +14,7 @@ define credits_names = {
     'company': _('Black Rabbit Black Company'),
 
     'dova': _('DOVA-SYNDROME'),
-    'zap': _('https://www.zapsplat.com/'),
+    'zap': _('ZapSplat'),
 
     'kohi': _('kohi'),
 
