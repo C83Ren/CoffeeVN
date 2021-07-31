@@ -8,19 +8,6 @@ label r3_river:
     stop music fadeout 1.0
     play music lios_bgm fadein 2.0 volume 0.1
 
-    p "We somehow managed to finished that… pant pant pant"
-
-    show hitona3 laugh hat at hitona_left with dissolve
-
-    pi "Worst enemy? Yeah cause it was too easy Lios!"
-
-    pi "Don’t you think so too Hitona?"
-
-    p "Didn’t you hear what I was saying… pant pant pant"
-
-
-
-
     show hitona3 laugh hat at hitona_left with dissolve
 
     pi "I powered up since last time Lios!"
@@ -36,7 +23,7 @@ label r3_river:
 
     show hitona3 idle hat at hitona_left
 
-    pi "She’ll get it eventually, especially when you give it back to her"
+    pi "She’ll get it eventually, especially when you give it back to her."
 
     p  "Let’s just move on to the next challenge, Kohigashi."
 
@@ -81,17 +68,17 @@ label river_cat:
 
     pi "..."
 
-    "[p] & [pi]" "Come again...?"
-
-    # Pierrot says this as well ^
+    "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
 
     c "Meow meow meow meow meow"
 
-    p "So uuh Pierrot...uuh..."
+    l "I said, make it fall in love with you."
+
+    p "So uhh, Pierrot...uhh..."
 
     pi "Don’t look at me like that..."
 
-    "What should I do now..."
+    "What should I do?"
 
     jump river_menu1
 
@@ -113,17 +100,17 @@ label river_dog:
 
     pi "..."
 
-    "[p] & [pi]" "Come again...?"
+    "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
 
-    # Pierrot says this as well ^
+    do "Woof Woof woof woof"
 
-    c "Woof Woof woof woof"
+    l "I said, make it fall in love with you."
 
-    p "So uuh Pierrot...uuh..."
+    p "So uhh, Pierrot...uhh..."
 
     pi "Don’t look at me like that..."
 
-    "What should I do now..."
+    "What should I do?"
 
     jump river_menu1
 
@@ -145,17 +132,17 @@ label river_deer:
 
     pi "..."
 
-    "[p] & [pi]" "Come again...?"
+    "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
 
-    # Pierrot says this as well ^
+    de "..."
 
-    c "..."
+    l "I said, make it fall in love with you."
 
-    p "So uuh Pierrot...uuh..."
+    p "So uhh, Pierrot...uhh..."
 
     pi "Don’t look at me like that..."
 
-    "What should I do now..."
+    "What should I do?"
 
     jump river_menu1
 
@@ -164,13 +151,10 @@ label river_menu1:
     menu:
         extend ""
         "Pat its head":
-            $ add_choice_to_history("Pat its head")
             jump river_pat
-        "\"What's your name?\"":
-            $ add_choice_to_history("\"What's your name\"")
+        "“What’s your name?”":
             jump river_name
-        "\"I love you\"":
-            $ add_choice_to_history("\"I love you\"")
+        "“I love you.”":
             jump river_love
 
 label river_pat:
@@ -179,17 +163,17 @@ label river_pat:
 
         show cat happy
 
-        p "Oh she looks happy."
+        p "Oh, she looks happy."
 
         c "Meow meow."
 
-        pi "She's not happy at all."
+        pi "She’s not happy at all."
 
-        l "Yeah that cat is not happy at all"
+        l "Yeah that cat is not happy at all."
 
         p "But she looks so happy!"
 
-        pi "...you've still got much to learn."
+        pi "...you’ve still got much to learn."
 
     elif animal_route == 2:
         $ affection = affection + 20
@@ -200,9 +184,9 @@ label river_pat:
 
         p "It looks so excited"
 
-        pi "I don't think I could've patted a dog like that"
+        pi "I don’t think I could’ve patted a dog like that"
 
-        l "That's the reson you'd fail here, Pieerrot."
+        l "That’s the reson you’d fail here, Pierrot."
 
         p "The dog is so cute!"
 
@@ -213,11 +197,11 @@ label river_pat:
 
         de "..."
 
-        p "This deer is uuh...kinda scary"
+        p "This deer is... kinda scary"
 
         pi "I can at least tell you, patting her was probably a bad idea."
 
-        "Lios just nodded in aggreement"
+        "Lios just nodded in agreement."
 
         p "Uhh, okay?"
 
@@ -229,15 +213,15 @@ label river_name:
 
         show cat sad
 
-        c "Nyaaaa"
+        c "Nyaaaaa"
 
-        p "Uuuh...I only asked for her name though...why is she making such a sad face..?"
+        p "Uhhh...I only asked for her name though...why is she making such a sad face...?"
 
-        pi "She said her name is Hakuto"
+        pi "She said her name is Hakuto."
 
-        l "She's quite happy though that you want to talk to her."
+        l "She’s quite happy though that you want to talk to her."
 
-        p "You're making this up right?!"
+        p "You’re making this up, right?!"
 
     elif animal_route == 2:
         $ affection = affection - 10
@@ -246,13 +230,13 @@ label river_name:
 
         do "Woof"
 
-        p "That reaction seems kind of weak"
+        p "That reaction seems kind of weak."
 
         pi "Looking at this dog, it should be obvious that she wants affection."
 
-        l "Either way, the dog doesn't seem very happy"
+        l "Either way, the dog doesn’t seem very happy."
 
-        p "Aren't you two way too in sync with each other?"
+        p "Aren’t you two way too in sync with each other?"
 
     else:
         show deer smile
@@ -263,7 +247,7 @@ label river_name:
 
         pi "She says her name is Kaba."
 
-        l "Let me correct you, it's Kava"
+        l "Let me correct you, it’s Kava."
 
         p "...How do you know?"
 
@@ -281,7 +265,7 @@ label river_love:
 
         pi "You got her good!"
 
-        l "You're a cat killer, huh"
+        l "You’re a cat killer, huh."
 
         p "What are you saying..."
 
@@ -292,40 +276,37 @@ label river_love:
 
         do "Woooooof!"
 
-        p "This might be the first time I've ever seen a dog blush..."
+        p "This might be the first time I’ve ever seen a dog blush..."
 
         pi "Wow. she looks elated."
 
         l "Do you feel like patting her now?"
 
-        p "A bit, yeah"
+        p "A bit, yeah."
 
     else:
         show deer smile
 
         de "..."
 
-        p "...I'm begging you react to that..."
+        p "...I’m begging you react to that..."
 
         pi "Never thought I see the day where someone would just say that to an animal she just met."
 
-        l "Should've recorded that..."
+        l "Should’ve recorded that..."
 
-        p "Don't you dare..."
+        p "Don’t you dare!"
 
     jump river_menu2
 
 label river_menu2:
     menu:
-        "Now what should I do next?"
+        "What should I do next?"
         "Rub its chin":
-            $ add_choice_to_history("Rub its chin")
             jump river_rub
-        "\"What do you do on your days off?\"":
-            $ add_choice_to_history("\"What do you do on your days off?\"")
+        "“What do you do on your days off?”":
             jump river_daysoff
-        "\"Let's go on a date!\"":
-            $ add_choice_to_history("\"Let's go on a date!\"")
+        "“Let’s go on a date!”":
             jump river_date
 
 label river_rub:
@@ -336,7 +317,7 @@ label river_rub:
 
         c "Meeeoow~"
 
-        p "This cat must be so happy that she's blushing, huh."
+        p "This cat must be so happy that she’s blushing, huh."
 
         pi "You think so?"
 
@@ -368,9 +349,9 @@ label river_rub:
 
         p "..."
 
-        pi "Be careful not to get kicked"
+        pi "Be careful not to get kicked."
 
-        l "That deer is quite pissed"
+        l "That deer is quite pissed."
 
         p "No!"
 
@@ -386,7 +367,7 @@ label river_daysoff:
 
         p "I swear I have no intention of making her cry!!"
 
-        l "She's rather pleased though."
+        l "She’s rather pleased though."
 
         pi "She says she play games on her days off."
 
@@ -405,7 +386,7 @@ label river_daysoff:
 
         l "Poor Charu..."
 
-        p "That's this dog's name??"
+        p "That’s this dog’s name??"
 
     else:
         $ affection = affection + 10
@@ -416,11 +397,11 @@ label river_daysoff:
 
         p "..."
 
-        pi "She said she likes reading books"
+        pi "She said she likes reading books."
 
         l "Also singing."
 
-        p "She didn't say anything though???"
+        p "She didn’t say anything though???"
 
     jump river_menu3
 
@@ -430,11 +411,11 @@ label river_date:
 
         c "Meow meow"
 
-        p "I can't believe I said that...but at least she looks happy"
+        p "I can’t believe I said that...but at least she looks happy"
 
-        pi "Nah, she's quite indifferent"
+        pi "Nah, she’s quite indifferent."
 
-        l "I recorded that, don't worry"
+        l "I recorded that, don’t worry."
 
         p "Hurry up and delete that recording!"
 
@@ -445,7 +426,7 @@ label river_date:
 
         do "Woof Woof Woof Woof!"
 
-        p "Woah there, calm down, we going to all sorts of places, don't worry."
+        p "Woah there, calm down, we going to all sorts of places, don’t worry."
 
         pi "A dog sure loves a good walk."
 
@@ -470,10 +451,9 @@ label river_date:
 label river_menu3:
     menu:
         "For the final blow, what should I say?"
-        "Let's be friends~":
-            $ add_choice_to_history("Let's be friends~")
+        "“Let’s be friends~”":
             jump river_friend
-        "Be my girlfriend!":
+        "“Go out with me!”":
             $ add_choice_to_history("Be my girlfriend!")
             jump river_girlfriend
 
@@ -487,9 +467,9 @@ label river_friend:
 
         p "So what is it now?"
 
-        pi "I think you're good"
+        pi "I think you’re good."
 
-        l "Yeah she's sad but I think you're good, let's see."
+        l "Yeah she’s sad but I think you’re good, let’s see."
 
         p "See what?"
 
@@ -500,11 +480,11 @@ label river_friend:
 
         do "..."
 
-        p "Woah, I'm sorry!"
+        p "Woah, I’m sorry!"
 
-        pi "Can't believe you just said that to a poor dog"
+        pi "Can’t believe you just said that to a poor dog."
 
-        l "Such cruel world you're living in, Charu"
+        l "Such cruel world you’re living in, Charu."
 
         p "I mean...I mean...I have no excuse..."
 
@@ -515,13 +495,13 @@ label river_friend:
 
         de "..."
 
-        p "I hope her expression shows what she's feeling now..."
+        p "I hope her expression shows what she’s feeling now..."
 
-        pi "Don't worry, she's happy"
+        pi "Don’t worry, she’s happy."
 
-        l "Yeah don't worry"
+        l "Yeah don’t worry."
 
-        p "That's good to hear."
+        p "That’s good to hear."
 
     jump river_final
 
@@ -533,9 +513,9 @@ label river_girlfriend:
 
         p "I have no idea what that means..."
 
-        pi "I think you messed up"
+        pi "I think you messed up."
 
-        l "Yeah she's sad but I think you're good, let's see."
+        l "Yeah she’s sad but I think you’re good, let’s see."
 
         p "See what?"
 
@@ -546,7 +526,7 @@ label river_girlfriend:
 
         do "Wooooof!"
 
-        p "Woah yeah, we'll be together for life!"
+        p "Woah yeah, we’ll be together for life!"
 
         pi "You got that, Lios?"
 
@@ -563,9 +543,9 @@ label river_girlfriend:
 
         p "I put my everything on that confession!"
 
-        pi "I guess your everything wasn't enough."
+        pi "I guess your everything wasn’t enough."
 
-        l "Her blushing doesn't mean anything good,let me tell you that."
+        l "Her blushing doesn’t mean anything good, let me tell you that."
 
         p "WHYYYY!!"
 
@@ -585,7 +565,7 @@ label river_final:
 
     p "Why are you two judging together?!"
 
-    l "Well let's just ask the one in question."
+    l "Well let’s just ask the one in question."
 
     hide hitona3
     hide lios
@@ -623,11 +603,9 @@ label river_final:
 
     p "She can talk?????!!!!!"
 
-    "[l] & [pi]" "Yeah."
+    "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Yeah."
 
-    #Lios says this as well ^
-
-    p "YOU SHOULD'VE SAID SO!"
+    p "YOU SHOULD’VE SAID SO!"
 
     if affection > 0:
         jump r3_drawing
@@ -655,13 +633,13 @@ label river_fail:
 
     "When I opened my eyes, I was holding the doorknob of my own room."
 
-    "{i}Where was I going to go again...?{/i}"
+    p "{i}Where was I going to go again...?{/i}"
 
     "When I looked at my phone, there was a single message."
 
-    "\"Kohi...hurry up already!\""
+    "“Kohi……hurry up already!”"
 
-    "{i}This isn’t good, if I don’t hurry up...{/i}"
+    p "{i}This isn’t good; if I don’t hurry up...{/i}"
 
     scene black with dissolve
 
@@ -671,6 +649,4 @@ label river_fail:
 
     "I guess dreams will just be dreams."
 
-    "Bad End"
-
-    return
+    jump bad_end

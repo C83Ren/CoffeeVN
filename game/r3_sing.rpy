@@ -3,7 +3,9 @@ label r3_sing:
 
     show lios front at lios_right with dissolve
 
-    "Someone with a black cape suddenly appeared in front of us"
+    "Someone with a black cape suddenly appeared in front of us."
+
+    "It was Lios."
 
     l "You got them all right, huh. That’s unexpected."
 
@@ -30,17 +32,17 @@ label r3_sing:
 
     l "Well, no matter, it’s not like you will manage to clear the next one anyways."
 
-    "We walked for a bit, then somehow ended up back in the another room"
+    "We walked for a bit, then somehow ended up back in the previous room."
 
     scene bg sing with Fade(1.0, 1.0, 1.0)
 
     stop music fadeout 1.0
 
-    p "It’s a…stage?"
+    p "It’s a... stage?"
 
     show hitona3 idle hat
 
-    pi "Yeah…"
+    pi "Yeah..."
 
     hide hitona3
     show lios front with dissolve
@@ -49,7 +51,7 @@ label r3_sing:
 
     "Grabbing the microphone, I went up to the stage."
 
-    p "So you want me to…sing?"
+    p "So you want me to...sing?"
 
     l "Not quite~"
 
@@ -62,55 +64,57 @@ label r3_sing:
     hide hitona3 with dissolve
 
     play sound quizstart
-    "LET'S START (Use Romaji only)"
+    "{b}LET'S START{/b}"
 
-    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics that come next" sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
+    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics that come next." sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
-    pi "What a fitting song...this was on purpose wasn't it?"
-    l "I have no idea what you're talking about"
-    "{b}\"Next\"{/b}"
+    "{b}CORRECT{/b}"
+    pi "What a fitting song...this was on purpose wasn’t it?"
+    l "I have no idea what you’re talking about."
+    "{b}NEXT{/b}"
 
-    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics that come next" sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
+    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics that come next." sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
+    "{b}CORRECT{/b}"
     pi "I never really understood this song."
     l "Just shows how young you are."
-    "{b}\"Next\"{/b}"
+    "{b}NEXT{/b}"
 
-    check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next" sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji"
+    check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next." sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
-    pi "Lios don't be such a tsundere, if you like Kohigashi, just say so."
-    l "You're definitely tired. aren't you..."
-    "{b}\"Next\"{/b}"
+    "{b}CORRECT{/b}"
+    pi "Lios don’t be such a tsundere, if you like Kohigashi, just say so."
+    l "You’re definitely tired. aren’t you..."
+    "{b}NEXT{/b}"
 
-    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics that come next" sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta" "きょうのためいっしょうけんめいがんばった" "kyounotameisshoukenmeiganbatta"
+    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics that come next." sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta" "きょうのためいっしょうけんめいがんばった" "kyounotameisshoukenmeiganbatta"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
+    "{b}CORRECT{/b}"
     pi "Pierrot also did her best!"
     l "Did your best to make things harder~"
-    "{b}\"Next\"{/b}"
+    "{b}NEXT{/b}"
 
-    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next" sing_retry "あのほしにかさねて" "anohoshinikasanete" "あのほしにかさねて" "anohoshinikasanete"
+    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next." sing_retry "あのほしにかさねて" "anohoshinikasanete" "あのほしにかさねて" "anohoshinikasanete"
     play sound correctchoice
     "{b}\"Correct!\"{/b}"
     pi "What was this song name again?"
     l "Pretty sure it's Hitoribishi...but now that you ask, I'm not so sure anymore."
     "{b}\"Next\"{/b}"
 
-    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next" sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
+    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next." sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
+    "{b}CORRECT{/b}"
     pi "Spring is such a bittersweet season."
-    l "You're right, just like right now, when it all ends, you can only reminisce."
-    "{b}\"Next\"{/b}"
+    l "You’re right, just like right now, when it all ends, you can only reminisce."
+    "{b}NEXT{/b}"
 
-    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics that come next" sing_retry "でもぼくにはそんざいしないからじゃあせめてここにきてよ" "demobokuniwasonzaishinaikarajaasemetekokonikiteyo"
+    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics that come next." sing_retry "でもぼくにはそんざいしないからじゃあせめてここにきてよ" "demobokuniwasonzaishinaikarajaasemetekokonikiteyo"
     play sound correctchoice
-    "{b}\"Correct!\"{/b}"
-    pi "Listening to this always makes me shiver, don't you Lios?"
+    "{b}CORRECT{/b}"
+    pi "Listening to this always makes me shiver, don’t you Lios?"
     l "After repeating this whole thing for thousand times, I feel numb, and not about the song."
+
+    # TODO hitoriboshi
 
     jump r3_river
 
@@ -141,7 +145,7 @@ label sing_retry(hint=False):
 
     menu:
         "What should I do?"
-        "Try Again":
+        "Try again":
             return ""
         "Give up":
             return "sing_fail"
@@ -153,15 +157,15 @@ label sing_fail:
 
     play music room_bgm fadein 3.0 volume 0.2
 
-    "{i}Eh? I'm in...my room? On my bed...{/i}"
+    p "{i}Eh? I’m in...my room? On my bed...{/i}"
 
-    "{i}Even if that was a dream, I wonder what was stolen...{/i}"
+    p "{i}Even if that was a dream, I wonder what was stolen...{/i}"
 
     "I looked up at my phone screen."
 
     p "..."
 
-    p "AAAAAAA I'M SO SORRY SENPAI!"
+    p "AAAAAAA I’M SO SORRY SENPAI!"
 
     "I rushed out of my room in a hurry to meet senpai."
 
@@ -173,6 +177,4 @@ label sing_fail:
 
     "I guess dreams will just be dreams."
 
-    "Bad End"
-
-    return
+    jump bad_end

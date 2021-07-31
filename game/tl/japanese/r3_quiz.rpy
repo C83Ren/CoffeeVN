@@ -55,8 +55,8 @@ translate japanese r3_quiz_b564cbc1:
 # game/r3_quiz.rpy:33
 translate japanese r3_quiz_5362ee96:
 
-    # "QUIZ START"
-    "クイズ・スタート"
+    # "{b}QUIZ START{/b}"
+    "ＱＵＩＺ　ＳＴＡＲＴ"
 
 # game/r3_quiz.rpy:44
 translate japanese quiz_fail_ce188195:
