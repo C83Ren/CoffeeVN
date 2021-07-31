@@ -13,7 +13,7 @@ label r1_movie:
     # “I’ll leave it to Hitona neechan~”.
     # So it’s obvious which one right?
 
-    scene bg cinema with Fade
+    scene bg cinema with fade
 
     $ movieflag = 1
 

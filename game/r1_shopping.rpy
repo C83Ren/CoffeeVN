@@ -2,7 +2,7 @@ init python:
     shoppingflag = None
 
 label r1_shopping:
-    scene bg shop with Fade
+    scene bg shop with fade
     #bgm 星海
 
     if famresflag == 1:
@@ -206,7 +206,8 @@ label r1_shopping_dress:
 
     "After changing, I met up with Shiraishi again, and..."
 
-    scene cg hitonadress with dissolve
+    scene cg hitonadress with Fade(1.0, 2.0, 1.0)
+    $ renpy.pause(2.0)
 
     p "AAAAAAH!!! SHIRAISHI, YOU’RE SO CUUUTE!!!!"
 
