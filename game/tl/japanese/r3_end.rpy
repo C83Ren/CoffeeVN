@@ -532,7 +532,7 @@ translate japanese r3_secret_ending_aaef21d6:
 translate japanese r3_secret_ending_0472faf9:
 
     # nvl_narrator "If you have already finished the Support and Joy routes, please also enjoy the true ending that has just been unlocked."
-    nvl_narrator "し「応援」と「喜び」のルートももう遊んだのならば、この後に解放する最後のエンディングも是非是非お楽しみください！"
+    nvl_narrator "もし「応援」と「喜び」のルートももう遊んだのならば、この後に解放する最後のエンディングも是非是非お楽しみください！"
 
 # game/r3_end.rpy:234
 translate japanese r3_secret_ending_144a31c9:
@@ -1002,7 +1002,7 @@ translate japanese r3_secret_ending_9f647674:
 translate japanese r3_secret_ending_c63a8139:
 
     # p "Thanks for the help! See you lat--"
-    p "：「連れ帰ってくれてありがとうございました！じゃあ、まー」"
+    p "「連れ帰ってくれてありがとうございました！じゃあ、まー」"
 
 # game/r3_end.rpy:413
 translate japanese r3_secret_ending_f8791c8f:

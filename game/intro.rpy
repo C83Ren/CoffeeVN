@@ -153,7 +153,7 @@ label start:
             $ route = 2
         "Memories":
             $ route = 3
-        "All of them" if persistent.ed_unlocked_1 and persistent.ed_unlocked_5 and persistent.ed_unlocked_8:
+        "All of them" if persistent.ed_unlocked_1 and persistent.ed_unlocked_2 and persistent.ed_unlocked_3:
             $ route = 4
 
     $ save_enabled = True

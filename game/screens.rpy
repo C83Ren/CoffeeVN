@@ -1632,10 +1632,8 @@ screen ed():
 
             $ persistent.ed_page = 1
             $ page = int(persistent.ed_page) - 1
-            $ rows = 2
-            $ cols = 2
 
-            grid cols rows:
+            grid 3 2:
                 style_prefix "slot"
 
                 xalign 0.5
@@ -1643,8 +1641,8 @@ screen ed():
 
                 spacing gui.slot_spacing
 
-                for i in range(cols * rows):
-                    $ slot = page * 6 + i + 1
+                for i in range(3):
+                    $ slot = 0 * 6 + i + 1
                     $ s = "ed %d thumbnail" % slot
                     button:
                         action Replay('end_%d' % slot, locked=not getattr(persistent, 'ed_unlocked_%d' % slot))
@@ -1657,8 +1655,33 @@ screen ed():
                             add ImageReference("ed locked") xalign 0.5
                             text _("???") style "slot_time_text"
 
-                for i in range(cols * rows):
-                    $ slot = page * 6 + i + 1
+                for i in range(3):
+                    vbox
+
+            grid 2 2:
+                style_prefix "slot"
+
+                xalign 0.5
+                yalign 0.5
+
+                spacing gui.slot_spacing
+
+                for i in range(2):
+                    vbox
+
+                for i in range(3, 5):
+                    $ slot = 0 * 6 + i + 1
+                    $ s = "ed %d thumbnail" % slot
+                    button:
+                        action Replay('end_%d' % slot, locked=not getattr(persistent, 'ed_unlocked_%d' % slot))
+                        has vbox
+
+                        if getattr(persistent, 'ed_unlocked_%d' % slot):
+                            add ImageReference(s) xalign 0.5
+                            text globals()['ed_title_%d' % slot] style "slot_time_text"
+                        else:
+                            add ImageReference("ed locked") xalign 0.5
+                            text _("???") style "slot_time_text"
 
             #hbox:
                 #style_prefix "page"

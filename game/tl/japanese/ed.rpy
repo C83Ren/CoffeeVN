@@ -15,3 +15,7 @@ translate japanese strings:
     # game/ed.rpy:11
     old "True End"
     new "ＴＲＵＥ　ＥＮＤ"
+
+    # game/ed.rpy:13
+    old "Extra"
+    new "ＥＸＴＲＡ"

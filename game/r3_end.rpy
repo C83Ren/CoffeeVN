@@ -276,9 +276,14 @@ label end_3:
 
     $ renpy.pause(10.0)
 
-    scene bg room with fade
+    window hide
+    $ _skipping = False
+    show image 'images/r3_end.png' with dissolve
+    $ renpy.pause(1.0, hard=True)
+    pause
+    $ _skipping = True
 
-    # todo r3 endcard
+    scene bg room with fade
 
     stop music fadeout 1.0
 
@@ -302,9 +307,13 @@ label end_3:
 
     scene black with fade
 
+    if not r3_secret:
+        return
+
+label end_5:
 label r3_secret_ending:
 
-    if r3_secret:
+    if True:
         nvl_narrator "Hello, this is BlackRabbit13."
 
         nvl_narrator "Congratulations for reaching the secret exit of the maze!"
@@ -522,5 +531,10 @@ label r3_secret_ending:
 
         stop music
 
+        window hide
+        show image 'images/extra_end.png' with dissolve
+        $ persistent.ed_unlocked_5 = True
+        $ renpy.pause(1.0, hard=True)
+        pause
 
     return

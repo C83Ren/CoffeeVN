@@ -315,7 +315,14 @@ label end_2:
 
     p "{i}If you’re a king you’re not a NEET anymore, Eve!{/i}"
 
-    # todo: fade to end card r2
+    window hide
+    $ _skipping = False
+    show image 'images/r2_end.png' with dissolve
+    $ renpy.pause(1.0, hard=True)
+    pause
+    $ _skipping = True
+
+    scene bg room with dissolve
 
     "On the ground there was something..."
 

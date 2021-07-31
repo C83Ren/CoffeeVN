@@ -198,7 +198,7 @@ label end_1:
 
         "I looked around frantically, but she was nowhere to be found. In her place appeared messages dancing lightly through the air."
 
-    if regret_choice == "Yeah, I regret something":
+    if ('regret_choice' in globals()) and regret_choice == "Yeah, I regret something":
         window hide
         scene cg regret1 with dissolve
         $ renpy.pause(60.0)
@@ -225,7 +225,12 @@ label end_1:
         #CG Message II (If No Regret decision)
         #pass
 
-    # todo: fade to end card r1
+    window hide
+    $ _skipping = False
+    show image 'images/r1_end.png' with dissolve
+    $ renpy.pause(1.0, hard=True)
+    pause
+    $ _skipping = True
 
     scene bg park with fade
 
