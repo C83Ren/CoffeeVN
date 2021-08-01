@@ -342,17 +342,17 @@ define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at
 ## the cost of performance.
-define gui.history_height = 100
+define gui.history_height = 150
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.history_name_xpos = 200
+define gui.history_name_xpos = 250
 define gui.history_name_ypos = 0
-define gui.history_name_width = 200
+define gui.history_name_width = 300
 define gui.history_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.history_text_xpos = 222
+define gui.history_text_xpos = 272
 define gui.history_text_ypos = 3
 define gui.history_text_width = 1150
 define gui.history_text_xalign = 0.0
