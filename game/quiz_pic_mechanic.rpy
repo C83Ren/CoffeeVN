@@ -23,7 +23,7 @@ label quiz_pic_mechanic_init():
     $ quiz_opt1 = drawing_list[quiz_num][1]
     $ quiz_opt2 = drawing_list[quiz_num][2]
     $ quiz_opt3 = drawing_list[quiz_num][3]
-    $ user_answer = 0
+    $ user_answer = 1
 
     return
 

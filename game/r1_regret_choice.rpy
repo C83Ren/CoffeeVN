@@ -1,3 +1,7 @@
+label r1_regret_choice_init():
+    $ regret_choice = "Nope, nothing at all"
+    return
+
 label r1_regret_choice:
 
     s "Hitona onee-chan, do you have any regrets today?"

@@ -1,3 +1,7 @@
+label r2_final_init():
+    $ catalyst = False
+    return
+
 label r2_final:
     scene black with dissolve
 

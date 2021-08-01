@@ -130,6 +130,20 @@ init:
         def at_finish_secret(m, x, y):
             return m[x][y] == 3
 
+label bomb_mechanic_init():
+    $ maze_num = 2
+    $ maze = maze2
+    $ player_x, player_y = 14, 2
+    $ img_maze = 'yes yes yes'
+    $ old_img_maze = 'yes yes yes'
+    $ time_remain = 120
+    $ sleep_time = 0
+    $ bomb_choice_counter = 0
+    $ time_start = 0
+    $ forward = right = left = 'yes'
+    $ time_now = 0
+    return
+
 screen bomb_movement(can_move_forward, time_left):
     imagebutton xalign 0.5 yalign 0.3:
         if can_move_forward == 'yes':

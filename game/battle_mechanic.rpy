@@ -120,8 +120,24 @@ label battle_mechanic_setup():
     }
 
     $ multiplier_list = [0.5, 1, 2]
+    $ janken_list = ["rock", "paper", "scissor"]
     $ hitona_hp = hitona_stats["hp"]
-
+    $ item_name = 'Flamethrower'
+    $ multiplier = 1.0
+    $ ally_list = [hitona_stats, eve_stats]
+    $ enemy_list = []
+    $ fight_order = [hitona_stats, eve_stats]
+    $ fight_order_temp = [hitona_stats, eve_stats]
+    $ self = hitona_stats
+    $ spell_name = 'Wind Lance'
+    $ target = hitona_stats
+    $ atk, heal, burn, par, sfx = 0, 0, 0, 0, "audio/sfx/fire_ball.mp3"
+    $ my_janken = 'rock'
+    $ self_name = 'Hitona'
+    $ opp_janken = 'rock'
+    $ hit = 0
+    $ heal = 0
+    $ x = 1
     return
 
 screen single_stat(name, hp, hp_max, ypos):
@@ -410,7 +426,6 @@ label handle_rps_pick(what):
     return
 
 label do_janken(reverse):
-    $ janken_list = ["rock", "paper", "scissor"]
     $ opp_janken = janken_list[renpy.random.randint(0,2)]
 
     $ _skipping = False

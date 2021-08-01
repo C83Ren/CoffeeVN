@@ -15,6 +15,8 @@ label r2_tranquility_setup():
     $ t_bfish = False
     $ t_forest = 0
     $ t_pond2 = 0
+    $ fish_string = _("Big Fish")
+    $ bait_name = _("frog")
     return
 
 label r2_tranquility:

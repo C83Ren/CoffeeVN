@@ -1,5 +1,6 @@
 label r1_movie_init():
     $ movieflag = 0
+    $ mov = 'horror'
     return
 
 label r1_movie:

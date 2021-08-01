@@ -1,4 +1,5 @@
 label r1_7_11_init():
+    $ conbini_food = "7/*1 P*young Sobameshi"
     $ combiniflag = 0
     return
 

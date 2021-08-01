@@ -1,4 +1,5 @@
 label r1_famres_init():
+    $ famires_food = "Omurice"
     $ famresflag = 0
     return
 

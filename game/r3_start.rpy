@@ -1,3 +1,7 @@
+label r3_start_init():
+    $ passcode_r3 = '0000'
+    return
+
 label r3_start:
     scene bg room with fade
 

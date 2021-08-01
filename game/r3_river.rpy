@@ -1,5 +1,6 @@
 label r3_river_init():
     $ affection = 0
+    $ animal_route = 1
     return
 
 label r3_river:
@@ -458,7 +459,6 @@ label river_menu3:
         "“Let’s be friends~”":
             jump river_friend
         "“Go out with me!”":
-            $ add_choice_to_history("Be my girlfriend!")
             jump river_girlfriend
 
 label river_friend:
