@@ -70,10 +70,10 @@ translate japanese r1_start_b8c7d923:
     # p "Are you perhaps lost?"
     p "「あなた、もしかして迷ってるんですか？」"
 
-# game/r1_start.rpy:39
-translate japanese r1_start_8b9df42e:
+# game/r1_start.rpy:41
+translate japanese r1_start_1634ad1a:
 
-    # "？？？" "Not at all! I was just waiting for someone to play with!”"
+    # "???" "Not at all! I was just waiting for someone to play with!"
     "？？？" "「ぜーんぜん！いっしょにあそぶだれかをまってただけ！」"
 
 # game/r1_start.rpy:41

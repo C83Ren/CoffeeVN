@@ -16,7 +16,7 @@ define credits_names = {
     'dova': _('DOVA-SYNDROME'),
     'zap': _('ZapSplat'),
 
-    'kohi': _('kohi'),
+    'kohi': _('Hitona Kohigashi'),
 
     'artist0': _('かくうさこ'),
     'artist1': _('ナッツ'),
@@ -99,10 +99,6 @@ screen credits_display():
         use credits_entry(_("Sound"), ["zap"])
         use credits_entry(_("Programming"), ["rabbit", "cryo", "xn"])
         use credits_entry(_("Support"), ["pupu"])
-        use credits_entry(_("Messages"), ["message%d" % i for i in range(18)])
-        fixed xsize 1920 ysize 1080:
-            vbox xalign 0.5 yalign 0.5:
-                use credits_entry(_("Special Thanks"), ["kohi"], trailing_spaces=False)
         fixed xsize 1920 ysize 1080:
             vbox xalign 0.5 yalign 0.5:
                 image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
@@ -116,11 +112,11 @@ define credits_messages = [
     ('wari', '60歳になるまでここにいてください！', 'images/credits/wari.png'),
     ('gabu', 'Dont forget to eat healthy food!\n\n健康的な食べ物もお忘れずに！', 'images/credits/gabu.png'),
     ('kosa', 'kohisuki', 'images/credits/kosa.png'),
-    ('nep', 'Kohi is a good girl and always trying hard; I hope you taking care of yourself and take some rest whenever you feel tired.\n\nいつも頑張ってるいい子のこっひーは', 'images/credits/nep.png'),
-    ('lobster', 'Let\'s continue having fun together!\n\nこれからも一緒に楽しましょうね！', 'images/credits/lobster.png'),
-    ('lemon', 'I wanted to thank you for keeping us entertained and making our day brighter with your smile, best wishes for your future!\n\nいつも楽しませてくれて、笑顔で一日一日明るくしてくれて、ありがとうございます。これからもよろしくお願いしますね！', 'images/credits/lemon.png'),
-    ('xn', '２週年', None),
-    ('cryo', 'Congratulations on your second anniversary! May your health, your day, and your gacha blessed.\n\n２週年おめでとうございます！これからのお仕事と日々の生活、健康、そして、ガチャにも、祝福がありますように。', None), # todo fix
+    ('nep', 'Kohi is a good girl and always trying hard; I hope you\'re taking care of yourself and taking some rest whenever you feel tired.\n\nこっひーはいい子ですし、いつも頑張ってますね。お体お大事にして、疲れた時に休んでくださいね！', 'images/credits/nep.png'),
+    ('lobster', 'Let\'s continue having fun together!\n\nこれからも一緒に楽しましょう！', 'images/credits/lobster.png'),
+    ('lemon', 'I wanted to thank you for keeping us entertained and making our day brighter with your smile, best wishes for your future!\n\nいつも楽しませてくれて、笑顔で一日一日明るくしてくれて、ありがとうございます。これからもよろしくお願いします！', 'images/credits/lemon.png'),
+    ('xn', '宇宙一可愛いひとなちゃんがいつも幸せでいられますように。', None),
+    ('cryo', 'Congratulations on your second anniversary! May all your works, your daily life, your health, and your gacha, always be blessed\n\n２週年おめでとうございます！これからのお仕事や日々の生活、健康、ガチャにも、永久に祝福がありますように。', None),
     ('luttii', 'G G A G C B\nG G A G D C', None),
     # ('pupu', 'kohisuki', None),
     ('rabbit', 'A selfish present that I hoped you\'d like.\n\nわがままなプレゼントなんでしたが、気に入っていただけたら嬉しいです。', None),
@@ -130,9 +126,9 @@ default credits_message_index = 0
 screen credits_message_display():
     use credits_message(*credits_messages[credits_message_index])
 
-define credits_scroll_time = 60.0
+define credits_scroll_time = 1.0
 define credits_message_display_time = 7.5
-define credits_height = 8678
+define credits_height = 6178
 
 transform credits_scroll:
     xalign 0.5

@@ -57,10 +57,6 @@ translate japanese strings:
     new "ZapSplat様"
 
     # game/credits.rpy:1
-    old "kohi"
-    new ""
-
-    # game/credits.rpy:1
     old "かくうさこ"
     new "かくうさこ様"
 
@@ -74,45 +70,40 @@ translate japanese strings:
 
     # game/credits.rpy:86
     old "Planning"
-    new ""
+    new "企画"
 
     # game/credits.rpy:87
     old "Scenario"
-    new ""
+    new "シナリオ"
 
     # game/credits.rpy:88
     old "Translation"
-    new ""
+    new "翻訳"
 
     # game/credits.rpy:89
     old "Editing"
-    new ""
+    new "編集"
 
     # game/credits.rpy:90
     old "Illustration"
-    new ""
+    new "イラスト"
 
     # game/credits.rpy:91
     old "Music"
-    new ""
+    new "音楽"
 
     # game/credits.rpy:92
     old "Sound"
-    new ""
+    new "効果音"
 
     # game/credits.rpy:93
     old "Programming"
-    new ""
-
-    # game/credits.rpy:95
-    old "Messages"
-    new ""
-
-    # game/credits.rpy:98
-    old "Special Thanks"
-    new ""
+    new "プログラム"
 
     # game/credits.rpy:101
     old "Congratulations on your second anniversary!"
     new "２周年、おめでとうございます！"
 
+    # game/credits.rpy:1
+    old "Hitona Kohigashi"
+    new "小東ひとな"
