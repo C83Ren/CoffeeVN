@@ -169,7 +169,7 @@ label drawing_fail:
     stop music fadeout 1.0
 
     scene bg room with Fade(1.0, 1.0, 1.0)
-    play music room_bgm fadein 1.0 volume 0.2
+    play music room_bgm fadein 1.0
     play sound phonecall
 
     p "Huh?!"

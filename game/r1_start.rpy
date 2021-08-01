@@ -18,7 +18,7 @@ label r1_start:
 
     "While thinking that, the young girl approached me."
 
-    play music hitona_theme fadein 1.0 volume 0.2
+    play music hitona_theme fadein 1.0
 
     show hitona1 idle1 with dissolve
 
@@ -148,7 +148,7 @@ label r1_start:
 
     scene bg gamecenter with Fade(0.5, 0.5, 0.5)
 
-    play music game_arcade fadein 1.0 volume 0.2
+    play music game_arcade fadein 1.0
 
     p "And here we are, the game center~"
 

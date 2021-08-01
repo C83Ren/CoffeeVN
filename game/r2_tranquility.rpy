@@ -62,14 +62,14 @@ label r2_tranquility:
         fight_label = "r2_tranquility_after_battle"
         x = 0
 
-    play music battletheme_bgm fadein 1.0 volume 0.5
+    play music battletheme_bgm fadein 1.0
 
     jump r2_fight
 
 label r2_tranquility_after_battle:
     $ save_enabled = True
     scene bg map with fade
-    play music adventure_bgm fadein 1.0 volume 0.5
+    play music adventure_bgm fadein 1.0
 
     hide screen multi_stat
     hide screen multi_sprite

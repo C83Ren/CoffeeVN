@@ -150,7 +150,7 @@ label r2_start:
     The fastest way to learn is to just try it, so let’s go!
     """
 
-    play music battletheme_bgm fadein 3.0 volume 0.5
+    play music battletheme_bgm fadein 3.0
 
     #angry3 during fight
 
@@ -238,6 +238,6 @@ label r2_start_after_battle:
 
     "Things may change if you visit the same place a second time. Be sure to check them all!"
 
-    play music adventure_bgm fadein 1.0 volume 0.3
+    play music adventure_bgm fadein 1.0
 
     jump r2_forest

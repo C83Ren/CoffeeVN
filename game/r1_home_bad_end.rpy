@@ -23,7 +23,7 @@ label r1_home_bad_end:
 
     scene bg intersection day with Fade(0.5, 0.5, 0.5)
 
-    play music r2bad_bgm fadein 1.0 volume 0.2
+    play music r2bad_bgm fadein 1.0
 
     "We walked for quite a long time."
 

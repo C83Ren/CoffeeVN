@@ -336,7 +336,7 @@ label r3_secret_ending:
         nvl clear
 
         scene bg room with fade
-        play music room_bgm fadein 1.0 volume 0.2
+        play music room_bgm fadein 1.0 
         play sound apeirosiris loop
 
         "I’ve been hearing noises from my fridge for a while now."

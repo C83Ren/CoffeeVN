@@ -68,7 +68,7 @@ label quiz_fail:
 
     scene bg room with Fade(1.0, 1.0, 1.0)
 
-    play music room_bgm fadein 3.0 volume 0.2
+    play music room_bgm fadein 3.0
 
     p "{i}Eh? I’m in...my room? On my bed...{/i}"
 

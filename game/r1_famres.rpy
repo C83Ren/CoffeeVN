@@ -26,7 +26,7 @@ label r1_famres:
     stop music fadeout 1.0
     scene bg famres with Fade(0.5, 0.5, 0.5)
 
-    play music hitona_theme volume 0.2 fadein 1.0
+    play music hitona_theme fadein 1.0
 
     "We took our seats and looked at the menu."
 

@@ -22,7 +22,7 @@ label start:
     call r3_bomb_init() from _call_r3_bomb_init
 
     scene bg room with dissolve
-    play music room_bgm fadein 1.0 volume 0.2
+    play music room_bgm fadein 1.0
     #play music "room_bgm.wav"
 
     p "{i}Sigh…{/i}"
@@ -251,7 +251,7 @@ label start:
     "I picked up the phone; it was senpai calling."
 
     stop sound channel 0
-    play music ["<silence 1.0 loop 1.0>", room_bgm] fadein 3.0 volume 0.2
+    play music ["<silence 1.0 loop 1.0>", room_bgm] fadein 3.0
 
     p "…Hello…Morning…"
 
@@ -277,11 +277,12 @@ label start:
     p "{i}Let’s go then!{/i}"
 
     play sound dooropen
-    stop music fadeout 1.0
+
 
     if route == 1:
         jump r1_start
     elif route == 2:
+        stop music fadeout 1.0
         jump r2_start
     elif route == 3:
         jump r3_start

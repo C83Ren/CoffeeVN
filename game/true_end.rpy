@@ -62,7 +62,7 @@ label end_14: # lazy and don't want to fix tl tags
     "…my phone started to ring."
 
     stop sound channel 0
-    play music hitona_theme fadein 1.0 volume 0.2
+    play music hitona_theme fadein 1.0
 
     sn "Kohi~"
 
@@ -137,7 +137,7 @@ label true_end_combination:
         $ lock_active = False
         p "Oh it opened!"
         hide screen lock_buttons with dissolve
-        play music last_end fadein 1.0 volume 0.2
+        play music last_end fadein 1.0
 
 
 label true_end_combination_unlocked:
@@ -150,7 +150,7 @@ label true_end_combination_unlocked:
     nvl_narrator "Open each safe with each key!”"
 
     call handle_key_lock(1) from _call_handle_key_lock
-    
+
     call show_cg("hitonadress", True) from _call_show_cg_3
     call show_cg("anniv", True) from _call_show_cg_4
     call show_cg("regret1", True) from _call_show_cg_5

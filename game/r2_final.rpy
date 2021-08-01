@@ -8,8 +8,8 @@ label r2_final:
     p "Huh?"
 
     scene bg castle room with Fade(1.0, 1.0, 2.0)
-    play music beforefinal_intro_bgm noloop fadein 2.0 volume 0.5
-    queue music beforefinal_loop_bgm volume 0.5
+    play music beforefinal_intro_bgm noloop fadein 2.0
+    queue music beforefinal_loop_bgm
 
     p "Why are we here..."
 
@@ -94,8 +94,8 @@ label r2_final:
         fight_label = "r2_final_after_battle"
         x = 0
 
-    play music king_intro_bgm noloop fadein 1.0 volume 0.4
-    queue music king_loop_bgm loop volume 0.4
+    play music king_intro_bgm noloop fadein 1.0
+    queue music king_loop_bgm loop
 
     jump r2_fight
 
@@ -235,7 +235,7 @@ label final_grand_spell:
 
 label final_bad_end:
     scene black with dissolve
-    play music r2bad_bgm fadein 1.0 volume 0.4
+    play music r2bad_bgm fadein 1.0
 
     "...was lying motionlessly on the ground."
 
@@ -260,7 +260,7 @@ label end_2:
 
     e "Eh?"
 
-    play music r2end_bgm fadein 2.0 volume 0.4
+    play music r2end_bgm fadein 2.0
 
     p "You’re alive!"
 

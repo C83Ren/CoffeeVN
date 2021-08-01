@@ -117,7 +117,7 @@ label r3_bomb:
 
     $ save_enabled = False
 
-    play music bomb_loop_bgm loop volume 0.2 fadein 3.0
+    play music bomb_loop_bgm loop fadein 3.0
 
     jump bomb_mechanic
 
@@ -134,7 +134,7 @@ label bomb_fail:
 
     scene bg hub with fade
 
-    play music lios_bgm fadein 1.0 volume 0.1
+    play music lios_bgm fadein 1.0
 
     "We got sent back to the first room."
 
@@ -176,7 +176,7 @@ label bomb_fail:
 
     scene bg room with Fade(1.0, 1.0, 1.0)
 
-    play music room_bgm fadein 3.0 volume 0.2
+    play music room_bgm fadein 3.0
 
     "{i}Eh? I’m in...my room? On my bed...{/i}"
 

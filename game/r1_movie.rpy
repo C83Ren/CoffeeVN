@@ -117,7 +117,7 @@ label r1_movie:
 
         show hitona1 happy1 with dissolve
 
-        play music hitona_theme fadein 1.0 volume 0.2
+        play music hitona_theme fadein 1.0
 
         s "That was so fun!!"
 
@@ -178,7 +178,7 @@ label r1_movie:
 
         show hitona1 happy1 with dissolve
 
-        play music hitona_theme fadein 1.0 volume 0.2
+        play music hitona_theme fadein 1.0
 
         s "That was so fun!!"
 

@@ -26,7 +26,7 @@ label r3_hub:
     p "Huh? Where... am I..."
 
     scene bg hub with Fade(1.0, 1.0, 2.0)
-    play music lios_bgm fadein 3.0 fadeout 3.0 volume 0.1
+    play music lios_bgm fadein 3.0 fadeout 3.0
 
     "I woke up in an enclosed room."
 

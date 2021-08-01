@@ -17,7 +17,7 @@ label r1_7_11:
     stop music fadeout 1.0
     scene bg konbini with Fade(0.5, 0.5, 0.5)
 
-    play music hitona_theme volume 0.2 fadein 1.0
+    play music hitona_theme fadein 1.0
 
     $ conbiniflag = 1
 

@@ -223,7 +223,7 @@ label map_rage_1:
 
     p "No thanks, there’s no need for that."
 
-    play music adventure_bgm fadein 1.0 volume 0.5
+    play music adventure_bgm fadein 1.0
 
     jump map_menu
 
@@ -248,7 +248,7 @@ label map_rage_2:
 
     e "Let’s go."
 
-    play music adventure_bgm fadein 1.0 volume 0.5
+    play music adventure_bgm fadein 1.0 
 
     jump map_menu
 

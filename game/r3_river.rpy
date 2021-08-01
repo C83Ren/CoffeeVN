@@ -8,7 +8,7 @@ label r3_river:
     scene bg hub with fade
 
     stop music fadeout 1.0
-    play music lios_bgm fadein 2.0 volume 0.1
+    play music lios_bgm fadein 2.0
 
     show hitona3 laugh hat at hitona_left with dissolve
 
@@ -634,7 +634,7 @@ label river_fail:
 
     scene bg room with Fade(1.0, 1.0, 1.0)
 
-    play music room_bgm fadein 3.0 volume 0.2
+    play music room_bgm fadein 3.0 
 
     "When I opened my eyes, I was holding the doorknob of my own room."
 

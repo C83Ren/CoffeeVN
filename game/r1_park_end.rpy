@@ -6,7 +6,7 @@ label end_1:
     "We walked for quite a while, and finally arrived at the park."
 
     # bgm 泣いて泣いて泣き止んだら
-    play music r1end_bgm volume 0.2 fadein 1.0
+    play music r1end_bgm fadein 1.0
 
     show hitona1 smile1 with dissolve
 
@@ -154,7 +154,7 @@ label end_1:
         "I pulled it out. It was the photo we took."
 
         hide hitona1
-        
+
         call show_cg("anniv", False) from _call_show_cg_33
         $ persistent.room = 'room 2'
 

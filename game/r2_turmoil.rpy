@@ -1,6 +1,6 @@
 label r2_turmoil:
-    play music storm fadein 1.0 volume 0.2
-    play sound thunder loop volume 0.2
+    play music storm fadein 1.0
+    play sound thunder loop
     call show_cg("spreg2", False) from _call_show_cg_2
 
     scene bg turmoil with dissolve
@@ -64,7 +64,7 @@ label turmoil_tablet:
     jump turmoil_menu
 
 label turmoil_world_map:
-    play music adventure_bgm fadein 1.0 volume 0.5
+    play music adventure_bgm fadein 1.0
     stop sound
 
     jump map_menu
