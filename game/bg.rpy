@@ -36,6 +36,7 @@ image bg secret_pudding = "images/bg r3 pudding.png"
 
 #Miscellaneous
 image black = "#000"
+image honmono_sign = "images/honmono no sign.png"
 
 #Art Reel
 image art_1 = "images/r3_art_reel/art_1.png"

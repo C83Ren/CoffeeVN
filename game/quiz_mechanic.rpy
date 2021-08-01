@@ -115,7 +115,7 @@ label quiz_4:
             jump quiz_check
 
 label quiz_5:
-    image honmono_sign = "images/honmono no sign.png"
+    #image honmono_sign = "images/honmono no sign.png"
     window hide
     show honmono_sign with dissolve:
         yalign 0.5
