@@ -420,170 +420,170 @@ translate japanese final_bad_end_ac6677e0:
     "アクノスト王を倒すことができたが、新たな王もいなくなってしまった。"
 
 # game/r2_final.rpy:239
-translate japanese end_2_143e6df8:
+translate japanese final_good_end_143e6df8:
 
     # p "Eh?"
     p "「え？」"
 
 # game/r2_final.rpy:243
-translate japanese end_2_d593d4b0:
+translate japanese final_good_end_d593d4b0:
 
     # e "Eh?"
     e "「え？」"
 
 # game/r2_final.rpy:247
-translate japanese end_2_17d403f4:
+translate japanese final_good_end_17d403f4:
 
     # p "You’re alive!"
     p "「生きてる！」"
 
 # game/r2_final.rpy:251
-translate japanese end_2_1b25c41d:
+translate japanese final_good_end_1b25c41d:
 
     # e "Yeah...somehow..."
     e "「まぁね、なんとなく」"
 
 # game/r2_final.rpy:255
-translate japanese end_2_015d3dc2:
+translate japanese final_good_end_015d3dc2:
 
     # e "Ah, it’s probably because of the catalyst."
     e "「あ、触媒のお陰かも」"
 
 # game/r2_final.rpy:257
-translate japanese end_2_fd81ac0a:
+translate japanese final_good_end_fd81ac0a:
 
     # p "Whatever it is, you’re alive!!! I’m just happy you’re alive!!"
     p "「いずれにしても、生きてる！！！生きてるだけでよかったぁ」"
 
 # game/r2_final.rpy:259
-translate japanese end_2_b06907eb:
+translate japanese final_good_end_b06907eb:
 
     # "I hugged Eve, who, even though she used Void, was still alive, tightly."
     "《空》を使ったのに、まだ生き残しているイーブを強く抱きしめた。"
 
 # game/r2_final.rpy:263
-translate japanese end_2_850ff8b9:
+translate japanese final_good_end_850ff8b9:
 
     # e "Haha...yeah..."
     e "「あはは、そうだね…」"
 
 # game/r2_final.rpy:265
-translate japanese end_2_6c4b8a2e:
+translate japanese final_good_end_6c4b8a2e:
 
     # "The feeling of exhaustion finally sunk in, and we both fell onto our knees."
     "疲れがついに出てき、一緒にひざをついた。"
 
 # game/r2_final.rpy:267
-translate japanese end_2_f11e976f:
+translate japanese final_good_end_f11e976f:
 
     # "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..."
     "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "「「あはははは…はあ…」」"
 
 # game/r2_final.rpy:269
-translate japanese end_2_4081c499:
+translate japanese final_good_end_4081c499:
 
     # e "Thank you, Hitona...truly..."
     e "「ありがとう、ひとな…本当に…」"
 
 # game/r2_final.rpy:271
-translate japanese end_2_a70348ae:
+translate japanese final_good_end_a70348ae:
 
     # p "Hey...I had a lot of fun too"
     p "「いや、いっぱい楽しんだよ」"
 
 # game/r2_final.rpy:275
-translate japanese end_2_f4dd13f5:
+translate japanese final_good_end_f4dd13f5:
 
     # e "And don’t worry about this, I’ll be a good NEET King okay."
     e "「心配しないで、いいニートキングになるからね」"
 
 # game/r2_final.rpy:277
-translate japanese end_2_b02cc129:
+translate japanese final_good_end_b02cc129:
 
     # p "Hahaha yeah...ugh..."
     p "「はははは…うう…」"
 
 # game/r2_final.rpy:279
-translate japanese end_2_65a5aff0:
+translate japanese final_good_end_65a5aff0:
 
     # "I suddenly felt very dizzy, and then everything went black..."
     "頭がグルグルとし、視界が真っ暗になった……"
 
 # game/r2_final.rpy:283
-translate japanese end_2_8107aff0:
+translate japanese final_good_end_8107aff0:
 
     # p "{i}Huh? Where am I...{/i}"
     p "（あれ？ここ…どこ？）"
 
 # game/r2_final.rpy:285
-translate japanese end_2_401b0790:
+translate japanese final_good_end_401b0790:
 
     # p "{i}On my bed...lying down...?{/i}"
     p "（布団に…横になってる…？）"
 
 # game/r2_final.rpy:287
-translate japanese end_2_90bed455:
+translate japanese final_good_end_90bed455:
 
     # p "{i}What a dream that was...{/i}"
     p "（すごい夢だった、あれ…）"
 
 # game/r2_final.rpy:291
-translate japanese end_2_4bd07237:
+translate japanese final_good_end_4bd07237:
 
     # p "{i}A text?{/i}"
     p "（メール？）"
 
 # game/r2_final.rpy:293
-translate japanese end_2_ad28576a:
+translate japanese final_good_end_ad28576a:
 
     # nvl_narrator "You got back safely right?"
     nvl_narrator "『無事に戻ったよね？"
 
 # game/r2_final.rpy:295
-translate japanese end_2_6133d45d:
+translate japanese final_good_end_6133d45d:
 
     # nvl_narrator "Wahahahaha! You should trust The Great Majna Eden Bat Azuma Nula Sedun more!"
     nvl_narrator "　わははははは！この偉大な壱々零漆（マジュナ・エデン・バット・アズマ・ヌラ・セドゥン）をもっと信じて！"
     nvl_narrator "　このニートキングはこの王国を栄えるように頑張るね〜"
 
 # game/r2_final.rpy:297
-translate japanese end_2_63a0452a:
+translate japanese final_good_end_63a0452a:
 
     # nvl_narrator "By the way, the wind says {b}‘it resembles thy name, but one digit differs’{/b}"
     nvl_narrator "　ところで、東の風が伝えたがったけど、「君の名と似るが、一桁が異なり。」と"
 
 # game/r2_final.rpy:299
-translate japanese end_2_80e0b882:
+translate japanese final_good_end_80e0b882:
 
     # nvl_narrator "Until next time!"
     nvl_narrator "　じゃ、またね！』"
 
 # game/r2_final.rpy:301
-translate japanese end_2_d2d428e1:
+translate japanese final_good_end_d2d428e1:
 
     # p "{i}Hahahahahaha{/i}"
     p "（あははははははは）"
 
 # game/r2_final.rpy:303
-translate japanese end_2_7e96f30e:
+translate japanese final_good_end_7e96f30e:
 
     # p "{i}If you’re a king you’re not a NEET anymore, Eve!{/i}"
     p "（王になってるならもうニートじゃないよ、イーブ！）"
 
 # game/r2_final.rpy:307
-translate japanese end_2_3b9977b6:
+translate japanese final_good_end_3b9977b6:
 
     # "On the ground there was something..."
     pass
 
 # game/r2_final.rpy:309
-translate japanese end_2_38a985db:
+translate japanese final_good_end_38a985db:
 
     # p "{i}Huh? What’s this...? a key{/i}"
     p "（え？なにこれ…鍵？）"
 
 # game/r2_final.rpy:311
-translate japanese end_2_bcaf170d:
+translate japanese final_good_end_bcaf170d:
 
     # p "{i}And also a note with the number 7?{/i}"
     p "（『７』を書いてあるノートも…？）"

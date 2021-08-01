@@ -195,6 +195,7 @@ label final_grand_spell:
             $ catalyst = False
             "Hearing my response, Eve looked resigned."
 
+label end_2 hide:
     show hitona2 idle
 
     e "Okay let’s do it!" id final_grand_spell_4470a325
@@ -228,7 +229,7 @@ label final_grand_spell:
 
     "Eve..."
 
-    if catalyst:
+    if _in_replay or catalyst:
         jump final_good_end
     else:
         jump final_bad_end
@@ -250,7 +251,6 @@ label final_bad_end:
     jump bad_end
 
 label final_good_end:
-label end_2:
     stop music fadeout 1.0
     scene bg castle room with dissolve
 
@@ -282,7 +282,7 @@ label end_2:
 
     "The feeling of exhaustion finally sunk in, and we both fell onto our knees."
 
-    "{color=[p.who_args[color]]}[p]{/color} & {color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..." id end_2_f11e976f
+    "{color=[p.who_args[color]]}[p]{/color} & {color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..." id final_good_end_f11e976f
 
     e "Thank you, Hitona...truly..."
 
