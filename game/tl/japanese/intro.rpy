@@ -397,11 +397,17 @@ translate japanese start_f2c34ee7:
     # "“You believe that no one is truly guilty of anything. All actions are predetermined, thus no one can be guilty.”"
     "『あなたはみんなが無罪だと思っています。運命が予定されたものなので、有罪であるのは不可能です。その既定な運命を辿っているだけです。』"
 
-# game/intro.rpy:200
-translate japanese start_df163b8b:
+# game/intro.rpy:218
+translate japanese start_860aaef6:
 
-    # "“You believe that everyone in this world is innocent. Of course, including yourself. As long as everyone is able to forgive each other and not repeat their mistakes, the world will be as pure as the driven snow.”"
-    "『あなたは誰もが無罪だと信じています。もちろん、自分も抜かずに。みんながお互いに許し合えて、失敗を繰り返さず生けるとすれば、この世が吹きだまりの雪のように純粋になれます。』"
+    # "“You believe that everyone in this world is innocent. Of course, including yourself."
+    "『あなたは誰もが無罪だと信じています。もちろん、自分も抜かずに。』"
+
+# game/intro.rpy:219
+translate japanese start_938818d9:
+
+    # "As long as everyone is able to forgive each other and not repeat their mistakes, the world will be as pure as the driven snow.”"
+    "『みんながお互いに許し合えて、失敗を繰り返さず生けるとすれば、この世が吹きだまりの雪のように純粋になれます。』"
 
 # game/intro.rpy:203
 translate japanese start_e4c8dde6:
@@ -427,11 +433,17 @@ translate japanese start_62554d0a:
     # "“You are a very calm person. When it involves you, you are able to think calmly without panicking, and quickly reach a solution without struggle.”"
     "『あなたはとても冷静な人です。あなたに関係があれば何かに携わっても問題ない！慌てず冷静に考えて解決を見つけることができます！』"
 
-# game/intro.rpy:212
-translate japanese start_4b9a2fb0:
+# game/intro.rpy:231
+translate japanese start_f58189b3:
 
-    # "“You are very calm when it comes to the predicaments of others. You are able to solve their problems without breaking a sweat. But the opposite is true when it comes to yourself. Perhaps it’s because you are putting yourself out of the equation?”"
-    "『あなたは他の人の難波に関して冷静に考えられます。朝飯前に解決できます。でも自分の難波に関したら逆に役に立たない人になります。なぜだろうか？もしかすると自分のことを含めずに考えがちかもしれません。』"
+    # "“You are very calm when it comes to the predicaments of others. You are able to solve their problems without breaking a sweat."
+    "『あなたは他の人の難波に関して冷静に考えられます。朝飯前に解決できます。でも自分の難波に関したら逆に役に立たない人になります。』"
+
+# game/intro.rpy:232
+translate japanese start_289524e1:
+
+    # "But the opposite is true when it comes to yourself. Perhaps it’s because you are putting yourself out of the equation?”"
+    "『なぜだろうか？もしかすると自分のことを含めずに考えがちかもしれません。』"
 
 # game/intro.rpy:214
 translate japanese start_690f00c2:

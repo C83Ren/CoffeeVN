@@ -215,7 +215,8 @@ label start:
         elif intro_food == "Yakiniku":
             "“You believe that no one is truly guilty of anything. All actions are predetermined, thus no one can be guilty.”"
         else:
-            "“You believe that everyone in this world is innocent. Of course, including yourself. As long as everyone is able to forgive each other and not repeat their mistakes, the world will be as pure as the driven snow.”"
+            "“You believe that everyone in this world is innocent. Of course, including yourself."
+            "As long as everyone is able to forgive each other and not repeat their mistakes, the world will be as pure as the driven snow.”"
     elif intro_color == "Red":
         if intro_food == "Pasta":
             "“You are very ambitious about your goals. Nothing in this world can stop you once you start working.”"
@@ -227,7 +228,8 @@ label start:
         if intro_food == "Pasta":
             "“You are a very calm person. When it involves you, you are able to think calmly without panicking, and quickly reach a solution without struggle.”"
         elif intro_food == "Yakiniku":
-            "“You are very calm when it comes to the predicaments of others. You are able to solve their problems without breaking a sweat. But the opposite is true when it comes to yourself. Perhaps it’s because you are putting yourself out of the equation?”"
+            "“You are very calm when it comes to the predicaments of others. You are able to solve their problems without breaking a sweat."
+            "But the opposite is true when it comes to yourself. Perhaps it’s because you are putting yourself out of the equation?”"
         else:
             "“You are a very calm person. The most calm person in the world. Nothing in the world can perturb you.”"
 
