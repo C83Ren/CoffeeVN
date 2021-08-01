@@ -68,23 +68,23 @@ init 0:
     image cg spreg3 = "cg 16 unscaled"
     define cg_hint_16 = _("Visit the Rage Region during the Joy Route.")
 
-    image cg 17 unscaled = "images/r3_art_reel/art_4.png"
+    image cg 17 unscaled = "images/r3_art_reel/art_4_thumb.png"
     image cg 17 = Transform(Image("images/r3_art_reel/art_4.png"), zoom=0.8)
     define cg_hint_17 = _("Finish the Memories Route.")
     image cg artreel1 = "cg 17"
-    image cg 18 unscaled = Image("images/r3_art_reel/art_7.png")
+    image cg 18 unscaled = Image("images/r3_art_reel/art_7_thumb.png")
     image cg 18 = Transform(Image("images/r3_art_reel/art_7.png"), zoom=0.8)
     define cg_hint_18 = _("Finish the Memories Route.")
     image cg artreel2 = "cg 18"
-    image cg 19 unscaled = Image("images/r3_art_reel/art_11.png")
+    image cg 19 unscaled = Image("images/r3_art_reel/art_11_thumb.png")
     image cg 19 = Transform(Image("images/r3_art_reel/art_11.png"), zoom=0.7)
     define cg_hint_19 = _("Finish the Memories Route.")
     image cg artreel3 = "cg 19"
-    image cg 20 unscaled = Image("images/r3_art_reel/art_13.png")
+    image cg 20 unscaled = Image("images/r3_art_reel/art_13_thumb.png")
     image cg 20 = Transform(Image("images/r3_art_reel/art_13.png"), zoom=0.5)
     define cg_hint_20 = _("Finish the Memories Route.")
     image cg artreel4 = "cg 20"
-    image cg 21 unscaled = Image("images/r3_art_reel/art_20.png")
+    image cg 21 unscaled = Image("images/r3_art_reel/art_20_thumb.png")
     image cg 21 = Transform(Image("images/r3_art_reel/art_20.png"), zoom=0.8)
     define cg_hint_21 = _("Finish the Memories Route.")
     image cg artreel5 = "cg 21"
