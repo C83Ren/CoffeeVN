@@ -28,7 +28,7 @@ label quiz_pic_check:
     else:
         play sound challengecomplete
         "Congratulations! You got all 3 correct!"
-        jump r3_sing
+        jump r3_bomb
 
     python:
         img_str = drawing_list[quiz_num][0]
