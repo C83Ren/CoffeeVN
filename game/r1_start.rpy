@@ -38,7 +38,7 @@ label r1_start:
 
     show hitona1 idle1
 
-    "???" "Not at all! I was just waiting for someone to play with!”"
+    "???" "Not at all! I was just waiting for someone to play with!"
 
     p "Ehhh?"
 
@@ -294,7 +294,7 @@ label r1_start:
     play sound falsechoice_long
     $renpy.pause(2.0, hard=True)
     #Crane sfx
-    
+
     "...but the crane didn’t even touch the prize."
 
     show hitona1 happy2
