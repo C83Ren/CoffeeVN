@@ -305,6 +305,8 @@ label end_3:
 
 label end_5:
 label r3_secret_ending:
+    if_in_replay:
+        scene black
 
     if True:
         nvl_narrator "Hello, this is BlackRabbit13."
@@ -336,7 +338,7 @@ label r3_secret_ending:
         nvl clear
 
         scene bg room with fade
-        play music room_bgm fadein 1.0 
+        play music room_bgm fadein 1.0
         play sound apeirosiris loop
 
         "I’ve been hearing noises from my fridge for a while now."

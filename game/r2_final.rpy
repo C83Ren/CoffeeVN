@@ -196,6 +196,12 @@ label final_grand_spell:
             "Hearing my response, Eve looked resigned."
 
 label end_2 hide:
+    if _in_replay:
+        scene bg castle
+        play music king_intro_bgm noloop fadein 1.0
+        queue music king_loop_bgm loop
+        show king
+
     show hitona2 idle
 
     e "Okay let’s do it!" id final_grand_spell_4470a325

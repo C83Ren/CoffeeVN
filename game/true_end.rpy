@@ -51,8 +51,10 @@ label true_end:
 label end_4:
 label end_14: # lazy and don't want to fix tl tags
     $ persistent.ed_unlocked_4 = True
-
-    scene bg shop with dissolve
+    if _in_replay:
+        play music room_bgm
+        
+    scene bg intersection day with dissolve
 
     "While heading to the park…"
 
