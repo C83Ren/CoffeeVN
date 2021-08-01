@@ -40,7 +40,7 @@ label quiz_check:
             jump quiz_6
     else:
         play sound challengecomplete
-        "Congratulations! You got all 3 correct!"
+        "Congratulations! You got all 6 correct!" id quiz_check_2eaaa4a4
         jump r3_sing
 
 label quiz_1:

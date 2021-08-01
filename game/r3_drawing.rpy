@@ -103,7 +103,7 @@ label r3_drawing:
 
     l "Shut it."
 
-    l "Just like last time, 3 out of 3."
+    l "Just like last time, 6 out of 6." id r3_drawing_da46fbfd
 
     l "Like Pierrot said, it should be easy."
 

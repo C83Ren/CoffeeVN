@@ -205,8 +205,8 @@ translate japanese r3_drawing_a130984b:
 # game/r3_drawing.rpy:105
 translate japanese r3_drawing_da46fbfd:
 
-    # l "Just like last time, 3 out of 3."
-    l "「先と同じ、３問中３問を正解したら」"
+    # l "Just like last time, 6 out of 6."
+    l "「先と同じ、６問中６問を正解したら」"
 
 # game/r3_drawing.rpy:107
 translate japanese r3_drawing_b35a74ac:

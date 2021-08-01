@@ -1,7 +1,7 @@
 # game/quiz_pic_mechanic.rpy:29
 translate japanese quiz_pic_check_2eaaa4a4:
 
-    # "Congratulations! You got all 3 correct!"
+    # "Congratulations! You got all 6 correct!"
     "おめでとうございます！"
 
 # game/quiz_pic_mechanic.rpy:61

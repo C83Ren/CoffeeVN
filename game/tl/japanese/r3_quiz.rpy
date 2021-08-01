@@ -7,8 +7,8 @@ translate japanese r3_quiz_fec68933:
 # game/r3_quiz.rpy:11
 translate japanese r3_quiz_f446efa5:
 
-    # l "First up is the quiz challenge! Get 3 out of 3 correct to continue!"
-    l "「まずはクイズチャレンジ！３問中３問を正解したら進める！」"
+    # l "First up is the quiz challenge! Get 6 out of 6 correct to continue!"
+    l "「まずはクイズチャレンジ！６問中６問を正解したら進める！」"
 
 # game/r3_quiz.rpy:13
 translate japanese r3_quiz_f5d88007:

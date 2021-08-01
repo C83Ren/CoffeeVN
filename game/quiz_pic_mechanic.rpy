@@ -27,7 +27,7 @@ label quiz_pic_check:
         $ quiz_count = quiz_count + 1
     else:
         play sound challengecomplete
-        "Congratulations! You got all 3 correct!"
+        "Congratulations! You got all 6 correct!" id quiz_pic_check_2eaaa4a4
         jump r3_bomb
 
     python:

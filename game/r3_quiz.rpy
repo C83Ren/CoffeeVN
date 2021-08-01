@@ -8,7 +8,7 @@ label r3_quiz:
 
     "A moment later, the lights returned, and the room had become like a quiz corner."
 
-    l "First up is the quiz challenge! Get 3 out of 3 correct to continue!"
+    l "First up is the quiz challenge! Get 6 out of 6 correct to continue!" id r3_quiz_f446efa5
 
     l "If you miss even one...well, you don’t want to know what will happen."
 
