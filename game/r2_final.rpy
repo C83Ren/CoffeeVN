@@ -201,7 +201,7 @@ label final_grand_spell:
 
 label end_2 hide:
     if _in_replay:
-        scene bg castle
+        scene bg castle room
         play music king_intro_bgm noloop fadein 1.0
         queue music king_loop_bgm loop
         show king
