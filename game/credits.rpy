@@ -115,7 +115,7 @@ define credits_messages = [
     ('nep', 'Kohi is a good girl and always trying hard; I hope you\'re taking care of yourself and taking some rest whenever you feel tired.\n\nこっひーはいい子ですし、いつも頑張ってますね。お体お大事にして、疲れた時に休んでくださいね！', 'images/credits/nep.png'),
     ('lobster', 'Let\'s continue having fun together!\n\nこれからも一緒に楽しましょう！', 'images/credits/lobster.png'),
     ('lemon', 'I wanted to thank you for keeping us entertained and making our day brighter with your smile, best wishes for your future!\n\nいつも楽しませてくれて、笑顔で一日一日明るくしてくれて、ありがとうございます。これからもよろしくお願いします！', 'images/credits/lemon.png'),
-    ('xn', '宇宙一可愛いひとなちゃんがいつも幸せでいられますように。', 'images/credits/xn.png'),
+    ('xn', '宇宙一可愛いひとなちゃんがずっと幸せでいられますように。', 'images/credits/xn.png'),
     ('cryo', 'Congratulations on your second anniversary! May all your works, your daily life, your health, and your gacha, always be blessed\n\n２週年おめでとうございます！これからのお仕事や日々の生活、健康、ガチャにも、永久に祝福がありますように。', None),
     ('luttii', 'G G A G C B\nG G A G D C', None),
     # ('pupu', 'kohisuki', None),
