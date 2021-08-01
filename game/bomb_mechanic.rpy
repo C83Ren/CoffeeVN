@@ -167,7 +167,7 @@ label bomb_mechanic:
             player_x, player_y = 17, 11
         elif maze_num == 2:
             maze = maze2
-            player_x, player_y = 15, 2
+            player_x, player_y = 14, 2
         elif maze_num == 3:
             maze = maze3
             player_x, player_y = 11, 8
