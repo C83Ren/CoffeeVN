@@ -528,10 +528,12 @@ translate japanese r3_secret_ending_aaef21d6:
     # nvl_narrator "So, just as a little gift, enjoy the extra scenario after this note."
     nvl_narrator "ちょったしたご褒美として、このノートの後のおまけシナリオをお楽しみくださいね。"
 
-# game/r3_end.rpy:232
-translate japanese r3_secret_ending_0472faf9:
+# game/r3_end.rpy:326
+translate japanese r3_secret_ending_92f4c98f:
 
+    # nvl clear
     # nvl_narrator "If you have already finished the Support and Joy routes, please also enjoy the true ending that has just been unlocked."
+    nvl clear
     nvl_narrator "もし「応援」と「喜び」のルートももう遊んだのならば、この後に解放する最後のエンディングも是非是非お楽しみください！"
 
 # game/r3_end.rpy:234

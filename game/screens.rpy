@@ -1176,6 +1176,37 @@ screen confirm(message, yes_action, no_action):
     key "game_menu" action no_action
 
 
+screen alert(message):
+
+    ## Ensure other screens do not get input while this screen is displayed.
+    modal True
+
+    zorder 200
+
+    style_prefix "confirm"
+
+    add "gui/overlay/confirm.png"
+
+    frame:
+
+        vbox:
+            xalign .5
+            yalign .5
+            spacing 45
+
+            label _(message):
+                style "confirm_prompt"
+                xalign 0.5
+
+            hbox:
+                xalign 0.5
+                spacing 150
+
+                textbutton _("Close") action Function(renpy.hide_screen, "alert")
+
+    key "game_menu" action Function(renpy.hide_screen, "alert")
+
+
 style confirm_frame is gui_frame
 style confirm_prompt is gui_prompt
 style confirm_prompt_text is gui_prompt_text
@@ -1574,7 +1605,18 @@ screen cg():
                 for i in range(cols * rows):
                     $ slot = page * 6 + i + 1
                     $ s = "cg %d" % slot
-                    add g.make_button(s, s + " thumbnail", "cg locked", xalign=0.5, style="slot_button")
+                    button:
+                        if getattr(persistent, 'cg_unlocked_%d' % slot):
+                            action g.Action(s)
+                        else:
+                            action Function(renpy.show_screen, 'alert', message=globals()['cg_hint_%d' % slot])
+
+                        has vbox
+
+                        if getattr(persistent, 'cg_unlocked_%d' % slot):
+                            add ImageReference(s + " thumbnail") xalign 0.5
+                        else:
+                            add ImageReference("cg locked") xalign 0.5
 
                 for i in range(cols * rows):
                     $ slot = page * 6 + i + 1
@@ -1623,6 +1665,7 @@ init python:
         def __init__(self, mx):
             super(EDPageNext, self).__init__(persistent.ed_page + 1 if persistent.ed_page and persistent.ed_page < mx else None)
 
+
 screen ed():
 
     tag menu
@@ -1646,7 +1689,11 @@ screen ed():
                     $ slot = 0 * 6 + i + 1
                     $ s = "ed %d thumbnail" % slot
                     button:
-                        action Replay('end_%d' % slot, locked=not getattr(persistent, 'ed_unlocked_%d' % slot))
+                        if getattr(persistent, 'ed_unlocked_%d' % slot):
+                            action Replay('end_%d' % slot)
+                        else:
+                            action Function(renpy.show_screen, 'alert', message=globals()['ed_hint_%d' % slot])
+
                         has vbox
 
                         if getattr(persistent, 'ed_unlocked_%d' % slot):
@@ -1674,7 +1721,11 @@ screen ed():
                     $ slot = 0 * 6 + i + 1
                     $ s = "ed %d thumbnail" % slot
                     button:
-                        action Replay('end_%d' % slot, locked=not getattr(persistent, 'ed_unlocked_%d' % slot))
+                        if getattr(persistent, 'ed_unlocked_%d' % slot):
+                            action Replay('end_%d' % slot)
+                        else:
+                            action Function(renpy.show_screen, 'alert', message=globals()['ed_hint_%d' % slot])
+
                         has vbox
 
                         if getattr(persistent, 'ed_unlocked_%d' % slot):
@@ -1683,6 +1734,7 @@ screen ed():
                         else:
                             add ImageReference("ed locked") xalign 0.5
                             text _("???") style "slot_time_text"
+
 
             #hbox:
                 #style_prefix "page"

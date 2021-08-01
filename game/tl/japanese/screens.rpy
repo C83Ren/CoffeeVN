@@ -296,3 +296,6 @@
     old "???"
     new "？？？"
 
+    # game/screens.rpy:1205
+    old "Close"
+    new "閉じる"
