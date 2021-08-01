@@ -22,7 +22,7 @@ label quiz_pic_default:
 label quiz_pic_check:
     $ quiz_num = custom_random(quiz_done)
 
-    if quiz_count < 3:
+    if quiz_count < 6:
         $ quiz_done.append(quiz_num)
         $ quiz_count = quiz_count + 1
     else:

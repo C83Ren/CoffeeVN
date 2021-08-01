@@ -1,10 +1,13 @@
 init python:
     def custom_random(exclude):
 
-        randInt = renpy.random.randint(0,5)
-
-        while randInt in exclude:
+        if len(exclude) == 6:
+            randInt = 6
+        else:
             randInt = renpy.random.randint(0,5)
+
+            while randInt in exclude:
+                randInt = renpy.random.randint(0,5)
 
         return randInt
 
@@ -23,7 +26,7 @@ label quiz_default:
 label quiz_check:
     $ quiz_num = custom_random(quiz_done)
 
-    if quiz_count < 3:
+    if quiz_count < 6:
         $ quiz_done.append(quiz_num)
         $ quiz_count = quiz_count + 1
         if quiz_num == 0:
@@ -117,7 +120,8 @@ label quiz_5:
     show honmono_sign with dissolve:
         yalign 0.5
         xalign 0.5
-    $ renpy.pause(5.0)
+    $ renpy.pause(3.0)
+    hide honmono_sign with dissolve
     menu:
         "What is the name of this famous piece of art?"
         "Honmono no Sign":

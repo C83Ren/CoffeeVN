@@ -29,8 +29,8 @@ label r3_drawing:
 
     play audio messagetone
 
-    $ renpy.pause(1.0)
     window hide
+    $ renpy.pause(1.0)
 
     "It seems like I received some texts."
 
@@ -114,8 +114,10 @@ label r3_drawing:
     $ save_enabled = False
 
     hide hitona3 with dissolve
+    hide lios
 
     play sound quizstart
+    $ renpy.pause(3.0, hard=True)
 
     "START"
 
