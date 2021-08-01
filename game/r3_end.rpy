@@ -145,7 +145,7 @@ label end_3:
         #zoom 0.8
         #xalign 0.5
         #yalign 0.3
-    call show_cg("artreel1", False)
+    call show_cg("artreel1", False) from _call_show_cg_26
 
     p "Altered?"
 
@@ -162,7 +162,7 @@ label end_3:
     p "You’re telling me...you’re giving me back altered memories?!"
 
     hide art_6 with dissolve
-    call show_cg("artreel2", False)
+    call show_cg("artreel2", False) from _call_show_cg_27
 
     pi "Don’t worry, don’t worry."
 
@@ -183,7 +183,7 @@ label end_3:
     p "But why though..."
 
     hide art_10 with dissolve
-    call show_cg("artreel3", False)
+    call show_cg("artreel3", False) from _call_show_cg_28
 
     pi "To make things more interesting."
 
@@ -195,7 +195,7 @@ label end_3:
     pi "Probably yeah."
 
     hide art_12 with dissolve
-    call show_cg("artreel4", False)
+    call show_cg("artreel4", False) from _call_show_cg_29
 
     p "Oi, you two sound so unsure about it!?"
 
@@ -248,7 +248,7 @@ label end_3:
     p "Oh so that’s what you mean..."
 
     hide art_19 with dissolve
-    call show_cg("artreel5", False)
+    call show_cg("artreel5", False) from _call_show_cg_30
 
     l "No, like, in the truest sense; we’re the one managing your memories."
 
@@ -262,7 +262,7 @@ label end_3:
 
     l "See you."
 
-    call show_cg("hitonamemory", False)
+    call show_cg("hitonamemory", False) from _call_show_cg_31
 
     $ renpy.pause(10.0)
 

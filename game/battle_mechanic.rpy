@@ -315,19 +315,19 @@ label spell_option:
         set set(spell_list.keys()).difference(hitona_stats["spell"])
         "What spell to use?"
         "Wind Blast":
-            call load_spell("Wind Blast")
+            call load_spell("Wind Blast") from _call_load_spell
         "Wind Cutter":
-            call load_spell("Wind Cutter")
+            call load_spell("Wind Cutter") from _call_load_spell_1
         "Fire Ball":
-            call load_spell("Fire Ball")
+            call load_spell("Fire Ball") from _call_load_spell_2
         "Electric Bolt":
-            call load_spell("Electric Bolt")
+            call load_spell("Electric Bolt") from _call_load_spell_3
         "Wind Lance":
-            call load_spell("Wind Lance")
+            call load_spell("Wind Lance") from _call_load_spell_4
         "Fire Wall":
-            call load_spell("Fire Wall")
+            call load_spell("Fire Wall") from _call_load_spell_5
         "Lightning Strike":
-            call load_spell("Lightning Strike")
+            call load_spell("Lightning Strike") from _call_load_spell_6
         "Cancel":
             jump fight_option
     jump target_action
@@ -342,15 +342,15 @@ label item_option:
         set set(item_list.keys()).difference(hitona_stats["item"])
         "What item to use?"
         "Heal Orb":
-            call load_item("Heal Orb")
+            call load_item("Heal Orb") from _call_load_item
         "Flamethrower":
-            call load_item("Flamethrower")
+            call load_item("Flamethrower") from _call_load_item_1
         "Heal Aura":
-            call load_item("Heal Aura")
+            call load_item("Heal Aura") from _call_load_item_2
         "God Blessing":
-            call load_item("God Blessing")
+            call load_item("God Blessing") from _call_load_item_3
         "Paralyzing Spark":
-            call load_item("Paralyzing Spark")
+            call load_item("Paralyzing Spark") from _call_load_item_4
         "Cancel":
             jump fight_option
     jump target_action
@@ -396,13 +396,13 @@ label decide_rock_paper_scissor:
 
 label rock_paper_scissor:
     "Let's double the damage!"
-    call do_janken(False)
+    call do_janken(False) from _call_do_janken
     jump fight_log
 
 label rock_paper_scissor_enemy:
     $ self_name = self["name"]
     "{color=#00c}[self_name]{/color} is targeting {color=#00c}Hitona{/color}! Let's defend!"
-    call do_janken(True)
+    call do_janken(True) from _call_do_janken_1
     jump fight_log
 
 label handle_rps_pick(what):

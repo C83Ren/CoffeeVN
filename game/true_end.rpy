@@ -147,18 +147,18 @@ label true_end_combination_unlocked:
     nvl_narrator "This is our gift to you."
     nvl_narrator "Open each safe with each key!”"
 
-    call handle_key_lock(1)
+    call handle_key_lock(1) from _call_handle_key_lock
     
-    call show_cg("hitonadress", True)
-    call show_cg("anniv", True)
-    call show_cg("regret1", True)
-    call show_cg("regret2", True)
-    call show_cg("regret3", True)
-    call show_cg("regret4", True)
-    call show_cg("noregret1", True)
-    call show_cg("noregret2", True)
-    call show_cg("noregret3", True)
-    call show_cg("noregret4", True)
+    call show_cg("hitonadress", True) from _call_show_cg_3
+    call show_cg("anniv", True) from _call_show_cg_4
+    call show_cg("regret1", True) from _call_show_cg_5
+    call show_cg("regret2", True) from _call_show_cg_6
+    call show_cg("regret3", True) from _call_show_cg_7
+    call show_cg("regret4", True) from _call_show_cg_8
+    call show_cg("noregret1", True) from _call_show_cg_9
+    call show_cg("noregret2", True) from _call_show_cg_10
+    call show_cg("noregret3", True) from _call_show_cg_11
+    call show_cg("noregret4", True) from _call_show_cg_12
 
     #^ Or show just one from regret CG and one from Not Regret CG
 
@@ -169,11 +169,11 @@ label true_end_combination_unlocked:
 
     "There’s another locked safe inside, and there are three keys left."
 
-    call handle_key_lock(2)
-    call show_cg("spreg1", True)
-    call show_cg("spreg2", True)
-    call show_cg("spreg3", True)
-    call show_cg("grandspell", True)
+    call handle_key_lock(2) from _call_handle_key_lock_1
+    call show_cg("spreg1", True) from _call_show_cg_13
+    call show_cg("spreg2", True) from _call_show_cg_14
+    call show_cg("spreg3", True) from _call_show_cg_15
+    call show_cg("grandspell", True) from _call_show_cg_16
 
     nvl_narrator "“Second!"
     nvl_narrator "Keep being yourself!"
@@ -182,13 +182,13 @@ label true_end_combination_unlocked:
 
     "There’s another locked safe inside, and there are two keys left."
 
-    call handle_key_lock(3)
-    call show_cg("artreel1", True)
-    call show_cg("artreel2", True)
-    call show_cg("artreel3", True)
-    call show_cg("artreel4", True)
-    call show_cg("artreel5", True)
-    call show_cg("hitonamemory", True)
+    call handle_key_lock(3) from _call_handle_key_lock_2
+    call show_cg("artreel1", True) from _call_show_cg_17
+    call show_cg("artreel2", True) from _call_show_cg_18
+    call show_cg("artreel3", True) from _call_show_cg_19
+    call show_cg("artreel4", True) from _call_show_cg_20
+    call show_cg("artreel5", True) from _call_show_cg_21
+    call show_cg("hitonamemory", True) from _call_show_cg_22
 
 
     nvl_narrator "“Third!"
@@ -197,11 +197,11 @@ label true_end_combination_unlocked:
 
     "There’s another locked safe inside, and there is one key left."
 
-    call handle_key_lock(4)
-    call show_cg("truehitona", False)
+    call handle_key_lock(4) from _call_handle_key_lock_3
+    call show_cg("truehitona", False) from _call_show_cg_23
     $ renpy.pause(10.0)
 
-    call credits()
+    call credits() from _call_credits
 
     window hide
     $ _skipping = False

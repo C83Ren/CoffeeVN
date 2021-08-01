@@ -103,7 +103,7 @@ label r2_tranquility_after_battle:
 
     "We walked into the forest filled with a serene and sublime atmosphere."
 
-    call show_cg("spreg1", False)
+    call show_cg("spreg1", False) from _call_show_cg_1
     play music waterfall fadein 2.0
 
     $ renpy.pause(3.0)

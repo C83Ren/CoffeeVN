@@ -1,17 +1,17 @@
 label start:
-    call r1_purikuri_init()
-    call r1_7_11_init()
-    call r1_famres_init()
-    call r1_movie_init()
-    call r1_shopping_init()
-    call battle_mechanic_setup()
-    call r2_forest_init()
-    call r2_village_init()
-    call r2_tranquility_setup()
-    call quiz_mechanic_init()
-    call quiz_pic_mechanic_init()
-    call r3_river_init()
-    call r3_bomb_init()
+    call r1_purikuri_init() from _call_r1_purikuri_init
+    call r1_7_11_init() from _call_r1_7_11_init
+    call r1_famres_init() from _call_r1_famres_init
+    call r1_movie_init() from _call_r1_movie_init
+    call r1_shopping_init() from _call_r1_shopping_init
+    call battle_mechanic_setup() from _call_battle_mechanic_setup
+    call r2_forest_init() from _call_r2_forest_init
+    call r2_village_init() from _call_r2_village_init
+    call r2_tranquility_setup() from _call_r2_tranquility_setup
+    call quiz_mechanic_init() from _call_quiz_mechanic_init
+    call quiz_pic_mechanic_init() from _call_quiz_pic_mechanic_init
+    call r3_river_init() from _call_r3_river_init
+    call r3_bomb_init() from _call_r3_bomb_init
 
     scene bg room with dissolve
     play music room_bgm fadein 1.0 volume 0.2

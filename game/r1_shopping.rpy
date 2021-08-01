@@ -207,7 +207,7 @@ label r1_shopping_dress:
 
     "After changing, I met up with Shiraishi again, and..."
 
-    call show_cg("hitonadress", False)
+    call show_cg("hitonadress", False) from _call_show_cg
 
     p "AAAAAAH!!! SHIRAISHI, YOU’RE SO CUUUTE!!!!"
 

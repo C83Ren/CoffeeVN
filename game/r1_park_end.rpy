@@ -155,7 +155,8 @@ label end_1:
 
         hide hitona1
         
-        call show_cg("anniv", False)
+        call show_cg("anniv", False) from _call_show_cg_33
+        $ persistent.room = 'room 2'
 
         p "Huh...? Where is Shiraishi?"
 
@@ -199,16 +200,16 @@ label end_1:
 
     if ('regret_choice' in globals()) and regret_choice == "Yeah, I regret something":
         window hide
-        call show_cg("regret1", False)
-        call show_cg("regret2", False)
-        call show_cg("regret3", False)
-        call show_cg("regret4", False)
+        call show_cg("regret1", False) from _call_show_cg_34
+        call show_cg("regret2", False) from _call_show_cg_35
+        call show_cg("regret3", False) from _call_show_cg_36
+        call show_cg("regret4", False) from _call_show_cg_37
     else:
         window hide
-        call show_cg("noregret1", False)
-        call show_cg("noregret2", False)
-        call show_cg("noregret3", False)
-        call show_cg("noregret4", False)
+        call show_cg("noregret1", False) from _call_show_cg_38
+        call show_cg("noregret2", False) from _call_show_cg_39
+        call show_cg("noregret3", False) from _call_show_cg_40
+        call show_cg("noregret4", False) from _call_show_cg_41
 
     window hide
     $ _skipping = False

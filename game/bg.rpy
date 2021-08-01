@@ -1,5 +1,8 @@
 #Route 1
-image bg room = "images/bg room.png"
+init python:
+    if not persistent.room:
+        persistent.room = 'room'
+image bg room = "images/bg [persistent.room].png"
 image bg room_2 = "images/bg room 2.png"
 image bg intersection day = "images/bg street day.png"
 image bg intersection evening = "images/bg street evening.png"

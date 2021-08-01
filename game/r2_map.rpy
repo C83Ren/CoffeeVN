@@ -190,7 +190,7 @@ label map_castle:
 
 label map_rage_1:
 
-    call show_cg("spreg3", False)
+    call show_cg("spreg3", False) from _call_show_cg_24
 
     play music volcano fadein 1.0
 
@@ -226,7 +226,7 @@ label map_rage_1:
 
 label map_rage_2:
 
-    call show_cg("spreg3", False)
+    call show_cg("spreg3", False) from _call_show_cg_25
 
     play music volcano fadein 1.0
 
