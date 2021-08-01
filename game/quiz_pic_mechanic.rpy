@@ -3,6 +3,13 @@ label quiz_pic_mechanic_init():
     $ quiz_done = []
     $ quiz_num = 0
 
+    #image quiz_image1 = "images/r3_drawing/1.png"
+    #image quiz_image2 = "images/r3_drawing/1.png"
+    #image quiz_image3 = "images/r3_drawing/1.png"
+    #image quiz_image4 = "images/r3_drawing/1.png"
+    #image quiz_image5 = "images/r3_drawing/1.png"
+    #image quiz_image6 = "images/r3_drawing/1.png"
+
     $ drawing_list = [
     ["1.png", _("Asking for help"), _("Distributing flyers"), _("Food delivery"), 2, _("This one’s actually not that bad."), _("Flattery won’t get you anywhere, you know.")],
     ["2.png", _("Jiangshi"), _("Vampire"), _("Dracula"), 1, _("I really couldn’t remember its name last time."), _("Well now you do, good for you.")],
@@ -11,6 +18,13 @@ label quiz_pic_mechanic_init():
     ["5.png", _("Taking an exam"), _("Focus power"), _("Studying"), 2, _("That answer is way too specific..."), _("I do wish it wasn’t this specific as well.")],
     ["6.png", _("Gyudon shop"), _("Izakaya"), _("Ramen shop"), 1, _("If it weren’t for the waiter I would’ve thought it was about just the food."), _("Even I almost forgot it wasn’t about the food.")]
     ]
+
+    $ img_str = drawing_list[quiz_num][0]
+    $ quiz_opt1 = drawing_list[quiz_num][1]
+    $ quiz_opt2 = drawing_list[quiz_num][2]
+    $ quiz_opt3 = drawing_list[quiz_num][3]
+    $ user_answer = 0
+
     return
 
 label quiz_pic_default:
