@@ -179,6 +179,8 @@ label bomb_mechanic:
     image bomb map = "images/maze/bomb map[maze_num] " + str(_preferences.language) + ".png"
 
     play sound takecard
+    $ _skipping = False
+    $ old_game_menu_screen, _game_menu_screen = _game_menu_screen, None
     show bomb map:
         zoom 0.75, xalign 0.5, yalign 0.5
     l "Memorize it well~"
@@ -186,7 +188,7 @@ label bomb_mechanic:
     hide bomb map
 
     show countdown at Position(xalign=.1, yalign=.1)
-    $ _skipping = False
+    #$ _skipping = False
     $ time_remain = 120
     $ sleep_time = 0
     $ bomb_choice_counter = 0
@@ -240,11 +242,13 @@ label bomb_choice:
     if at_finish(maze, player_x, player_y):
         hide countdown
         $ _skipping = True
+        $ _game_menu_screen = old_game_menu_screen
         jump r3_end
     elif at_finish_secret(maze, player_x, player_y):
         hide countdown
         $ _skipping = True
         $ r3_secret = True
+        $ _game_menu_screen = old_game_menu_screen
         jump r3_end
     else:
         jump bomb_choice
@@ -261,4 +265,5 @@ label handle_bomb_movement(what):
 label bomb_mechanic_exit:
     hide screen bomb_movement with dissolve
     $ _skipping = True
+    $ _game_menu_screen = old_game_menu_screen
     jump bomb_fail
