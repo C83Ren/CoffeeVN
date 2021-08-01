@@ -98,7 +98,7 @@ label r3_sing:
     l "Did your best to make things harder~"
     "{b}NEXT{/b}"
 
-    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next." sing_retry "あのほしにかさねて" "anohoshinikasanete" "あのほしにかさねて" "anohoshinikasanete"
+    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next." sing_retry "ぼくのなまえ" "bokunonamae"
     play sound correctchoice
     "{b}CORRECT{/b}" id r3_sing_a403d1d8
     pi "What was this song's name again?" id r3_sing_fb37f0d8
