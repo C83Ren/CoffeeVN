@@ -214,6 +214,9 @@ label end_1:
     window hide
     $ _skipping = False
     show image 'images/r1_end.png' with dissolve
+    if (not persistent.ed_unlocked_1) and persistent.ed_unlocked_3 and persistent.ed_unlocked_2:
+        $ renpy.notify(__("A new route has been unlocked!"))
+    $ persistent.ed_unlocked_1 = True
     $ renpy.pause(1.0, hard=True)
     pause
     $ _skipping = True
@@ -224,5 +227,4 @@ label end_1:
 
     p "{i}And also a note with “0” written on it...?{/i}" id end_1_1abb9b93
 
-    $ persistent.ed_unlocked_1 = True
     return

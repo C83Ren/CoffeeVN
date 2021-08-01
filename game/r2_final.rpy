@@ -245,8 +245,6 @@ label final_bad_end:
 
 label final_good_end:
 label end_2:
-    $ persistent.ed_unlocked_2 = True
-
     scene bg castle room with dissolve
 
     p "Eh?"
@@ -318,6 +316,9 @@ label end_2:
     window hide
     $ _skipping = False
     show image 'images/r2_end.png' with dissolve
+    if (not persistent.ed_unlocked_2) and persistent.ed_unlocked_3 and persistent.ed_unlocked_1:
+        $ renpy.notify(__("A new route has been unlocked!"))
+    $ persistent.ed_unlocked_2 = True
     $ renpy.pause(1.0, hard=True)
     pause
     $ _skipping = True

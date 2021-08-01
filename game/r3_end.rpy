@@ -1,7 +1,6 @@
 label r3_end:
 label end_3:
     $ save_enabled = True
-    $ persistent.ed_unlocked_3 = True
     scene bg hub with Fade(1.0, 1.0, 1.0)
 
     play music r3end_bgm fadein 2.0
@@ -270,6 +269,9 @@ label end_3:
     window hide
     $ _skipping = False
     show image 'images/r3_end.png' with dissolve
+    if (not persistent.ed_unlocked_3) and persistent.ed_unlocked_1 and persistent.ed_unlocked_2:
+        $ renpy.notify(__("A new route has been unlocked!"))
+    $ persistent.ed_unlocked_3 = True
     $ renpy.pause(1.0, hard=True)
     pause
     $ _skipping = True

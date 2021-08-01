@@ -369,3 +369,9 @@ translate japanese end_1_1abb9b93:
 
     # p "And also a note with “0” written on it...?"
     p "（『０』を書いてあるノートも…？）"
+
+translate japanese strings:
+
+    # game/r1_park_end.rpy:218
+    old "A new route has been unlocked!"
+    new "新たなルートが解放された！"
