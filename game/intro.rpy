@@ -11,15 +11,15 @@ label start:
     call r1_famres_init() from _call_r1_famres_init
     call r1_movie_init() from _call_r1_movie_init
     call r1_shopping_init() from _call_r1_shopping_init
-    call r1_regret_choice_init()
+    call r1_regret_choice_init() from _call_r1_regret_choice_init
     call battle_mechanic_setup() from _call_battle_mechanic_setup
     call r2_forest_init() from _call_r2_forest_init
     call r2_village_init() from _call_r2_village_init
     call r2_map_init() from _call_r2_map_init
     call r2_tranquility_setup() from _call_r2_tranquility_setup
-    call r2_final_init()
-    call r3_start_init()
-    call bomb_mechanic_init()
+    call r2_final_init() from _call_r2_final_init
+    call r3_start_init() from _call_r3_start_init
+    call bomb_mechanic_init() from _call_bomb_mechanic_init
     call quiz_mechanic_init() from _call_quiz_mechanic_init
     call quiz_pic_mechanic_init() from _call_quiz_pic_mechanic_init
     call r3_river_init() from _call_r3_river_init
