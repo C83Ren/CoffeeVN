@@ -1,3 +1,10 @@
+label before_main_menu:
+    if persistent.ed_unlocked_4:
+        $ renpy.music.play("audio/true_end.mp3", channel="music", loop=True)
+    else:
+        $ renpy.music.play("audio/Route_1_-_movie_theme.mp3", channel="music", loop=True)
+    return
+
 label start:
     call r1_purikuri_init() from _call_r1_purikuri_init
     call r1_7_11_init() from _call_r1_7_11_init
