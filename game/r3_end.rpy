@@ -323,6 +323,8 @@ label r3_secret_ending:
 
         nvl_narrator "So, just as a little gift, enjoy the extra scenario after this note."
 
+        nvl clear
+
         nvl_narrator "If you have already finished the Support and Joy routes, please also enjoy the true ending that has just been unlocked."
 
         nvl_narrator "And if not, please enjoy the remaining routes as well!"
