@@ -56,12 +56,12 @@ label end_14: # lazy and don't want to fix tl tags
 
     "While heading to the park…"
 
-    play audio phonecall loop
+    play sound phonecall loop
     pause 3.0
 
     "…my phone started to ring."
 
-    stop audio
+    stop sound channel 0
 
     sn "Kohi~"
 

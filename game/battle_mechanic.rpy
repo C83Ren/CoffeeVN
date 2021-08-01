@@ -242,6 +242,7 @@ label r2_fight:
     show screen multi_sprite
     python:
         textbox_menu = True
+        save_enabled = False
         item_name = 0
         multiplier = 1.0
         if len(ally_list) > 0 and len(enemy_list) > 0:
@@ -290,9 +291,11 @@ label r2_fight:
                 renpy.jump("r2_fight")
         elif len(ally_list) == 0:
             textbox_menu = False
+            save_enabled = True
             renpy.jump("fight_fail")
         else:
             textbox_menu = False
+            save_enabled = True
             renpy.jump(fight_label)
 
 label fight_option:

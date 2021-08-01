@@ -226,7 +226,7 @@ label start:
 
     "I picked up the phone; it was senpai calling."
 
-    stop sound
+    stop sound channel 0
     play music ["<silence 1.0 loop 1.0>", room_bgm] fadein 3.0 volume 0.2
 
     p "…Hello…Morning…"

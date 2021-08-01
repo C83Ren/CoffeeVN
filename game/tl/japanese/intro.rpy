@@ -20,7 +20,8 @@ translate japanese start_406a25a4:
 translate japanese start_a42e3439:
 
     # p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining! The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
-    p "（だって、ちょっとお腹空いたからコンビ二に行こうかなーと思ってせーっかく家から出かけたのに急に雨が降るなんて！天気予報が「今日は晴れです！」って元気よく言ってたのに！あの速い車の泥はねで服も汚れちゃった…）"
+    p "（だって、ちょっとお腹空いたからコンビ二に行こうかなーと思ってせーっかく家から出かけたのに急に雨が降るなんて！）"
+    p "（天気予報が「今日は晴れです！」って元気よく言ってたのに！あの速い車の泥はねで服も汚れちゃった…）"
 
 # game/intro.rpy:14
 translate japanese start_c4072197:
