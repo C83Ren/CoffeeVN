@@ -41,8 +41,8 @@ translate japanese strings:
     new "Lobsteranian"
 
     # game/credits.rpy:1
-    old "xn"
-    new "xn"
+    old "名前はなんだっけ"
+    new "名前はなんだっけ"
 
     # game/credits.rpy:1
     old "Black Rabbit Black Company"

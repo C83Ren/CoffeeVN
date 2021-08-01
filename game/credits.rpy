@@ -9,7 +9,7 @@ define credits_names = {
     'nep': _('Nepelz_AR'),
     'lemon': _('ILLimN'),
     'lobster': _('Lobsteranian'),
-    'xn': _('xn'),
+    'xn': _('名前はなんだっけ'),
 
     'company': _('Black Rabbit Black Company'),
 
