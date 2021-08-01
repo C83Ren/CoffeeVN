@@ -62,6 +62,7 @@ label end_14: # lazy and don't want to fix tl tags
     "…my phone started to ring."
 
     stop sound channel 0
+    play music hitona_theme fadein 1.0 volume 0.2
 
     sn "Kohi~"
 
@@ -136,6 +137,7 @@ label true_end_combination:
         $ lock_active = False
         p "Oh it opened!"
         hide screen lock_buttons with dissolve
+        play music last_end fadein 1.0 volume 0.2
 
 
 label true_end_combination_unlocked:

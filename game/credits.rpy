@@ -143,7 +143,6 @@ screen credits_scroll_screen():
 image credits_bg = 'images/credits/bg.png'
 
 label credits:
-    stop music
     stop sound
     $ _skipping = False
     $ _game_menu_screen, _old_game_menu_screen = None, _game_menu_screen
