@@ -305,7 +305,7 @@ label end_3:
 
 label end_5:
 label r3_secret_ending:
-    if_in_replay:
+    if _in_replay:
         scene black
 
     if True:
