@@ -1,5 +1,6 @@
 label r3_end:
 label end_3:
+    $ save_enabled = True
     $ persistent.ed_unlocked_3 = True
     scene bg hub with Fade(1.0, 1.0, 1.0)
 
@@ -140,7 +141,7 @@ label end_3:
     pi "Albeit altered."
 
     hide art_3 with dissolve
-    
+
     #show art_4 with dissolve:
         #zoom 0.8
         #xalign 0.5

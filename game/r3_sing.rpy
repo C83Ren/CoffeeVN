@@ -1,4 +1,6 @@
 label r3_sing:
+    $ save_enabled = True
+
     scene bg quiz
 
     show lios front at lios_right with dissolve
@@ -63,6 +65,8 @@ label r3_sing:
     pi "This should be easy~"
     hide hitona3 with dissolve
 
+    $ save_enabled = False
+
     play sound quizstart
     "{b}LET'S START{/b}"
 
@@ -119,6 +123,8 @@ label r3_sing:
 label sing_retry(hint=False):
     scene bg sing
 
+    play sound falsechoice_short
+
     show lios front at lios_right
     show hitona3 sad hat at hitona_left
 
@@ -144,11 +150,18 @@ label sing_retry(hint=False):
     menu:
         "What should I do?"
         "Try again":
+            hide hitona3
+            hide lios
             return ""
         "Give up":
+            hide hitona3
+            hide lios
             return "sing_fail"
 
 label sing_fail:
+
+    $ save_enabled = True
+
     stop music fadeout 1.0
 
     scene bg room with Fade(1.0, 1.0, 1.0)

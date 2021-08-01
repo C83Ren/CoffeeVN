@@ -28,6 +28,8 @@ label r3_quiz:
 
     l "Let’s start!"
 
+    $ save_enabled = False
+
     play sound quizstart
 
     "{b}QUIZ START{/b}" id r3_quiz_5362ee96
@@ -37,6 +39,8 @@ label r3_quiz:
     jump quiz_default
 
 label quiz_fail:
+    $ save_enabled = True
+
     scene bg quiz
 
     show lios front at lios_right with dissolve

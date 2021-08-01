@@ -1,4 +1,5 @@
 label r3_bomb:
+    $ save_enabled = True
 
     scene bg quiz with fade
 
@@ -110,6 +111,8 @@ label r3_bomb:
 
     pi "WHAT? This is not part of the plan LIOOOS!"
 
+    $ save_enabled = False
+
     play music bomb_loop_bgm loop volume 0.2 fadein 3.0
 
     jump bomb_mechanic
@@ -118,6 +121,7 @@ label r3_bomb:
         r3_secret = False
 
 label bomb_fail:
+    $ save_enabled = True
     hide countdown
     scene black
     stop music

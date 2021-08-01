@@ -1,4 +1,5 @@
 label r3_drawing:
+    $ save_enabled = True
     scene bg river
 
     p "Just as expected~"
@@ -110,6 +111,8 @@ label r3_drawing:
 
     pi "Now that you put it that way, I’m not so sure anymore..."
 
+    $ save_enabled = False
+
     hide hitona3 with dissolve
 
     play sound quizstart
@@ -126,6 +129,8 @@ label r3_drawing:
             #jump drawing_fail
 
 label drawing_fail:
+    $ save_enabled = True
+
     scene bg computer with Fade(1.0, 1.0, 1.0)
 
     show lios front at lios_right with dissolve

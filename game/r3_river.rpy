@@ -1,4 +1,5 @@
 label r3_river:
+    $ save_enabled = True
 
     init python:
         affection = 0
@@ -40,6 +41,8 @@ label r3_river:
     p "How does he change the setting so easily..."
 
     pi "Trust me, he can do much stranger things if he wants to."
+
+    $ save_enabled = False
 
     $ animal_route = renpy.random.randint(1,3)
 
@@ -613,6 +616,7 @@ label river_final:
         jump river_fail
 
 label river_fail:
+    $ save_enabled = True
     scene bg river
 
     p "Well that was heartbreaking..."

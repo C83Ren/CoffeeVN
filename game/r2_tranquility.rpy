@@ -42,6 +42,8 @@ label r2_tranquility:
 
     p "..."
 
+    $ save_enabled = False
+
     hide hitona2
     hide soldier
     hide soldier_s
@@ -64,6 +66,7 @@ label r2_tranquility:
     jump r2_fight
 
 label r2_tranquility_after_battle:
+    $ save_enabled = True
     scene bg map with Fade(0.5, 0.5, 0.5)
     play music adventure_bgm fadein 1.0 volume 0.5
 
