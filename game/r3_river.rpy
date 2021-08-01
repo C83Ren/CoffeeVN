@@ -1,8 +1,9 @@
+label r3_river_init():
+    $ affection = 0
+    return
+
 label r3_river:
     $ save_enabled = True
-
-    init python:
-        affection = 0
 
     scene bg hub with fade
 

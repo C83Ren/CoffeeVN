@@ -27,8 +27,9 @@ init python:
         else:
             return float(0.5)
 
+label battle_mechanic_setup():
     #ATK, Heal, Burn, Paralyze
-    spell_list = {
+    $ spell_list = {
     "Wind Blast": [10, 0, 0, 0, "audio/sfx/wind_blast.mp3"],
     "Wind Cutter": [15, 0, 0, 0, "audio/sfx/wind_cutter.mp3"],
     "Fire Ball": [10, 0, 2, 0, "audio/sfx/fire_ball.mp3"],
@@ -38,7 +39,7 @@ init python:
     "Lightning Strike": [12, 0, 0, 5, "audio/sfx/lightning_strike.mp3"]
     }
 
-    item_list = {
+    $ item_list = {
     "Heal Orb": [0, 20, 0, 0, "audio/sfx/heal.mp3"],
     "Flamethrower": [50, 0, 5, 0, "audio/sfx/flamethrower.mp3"],
     "Heal Aura": [0, 50, 0, 0, "audio/sfx/heal.mp3"],
@@ -46,7 +47,7 @@ init python:
     "Paralyzing Spark": [30, 0, 0, 5, "audio/sfx/paralyzing_spark.mp3"]
     }
 
-    hitona_stats = {
+    $ hitona_stats = {
     "name": "Hitona",
     "hp": 100,
     "hp_max": 100,
@@ -58,7 +59,7 @@ init python:
     "silent_death": False,
     }
 
-    eve_stats = {
+    $ eve_stats = {
     "name": "Eve",
     "hp": 300,
     "hp_max": 300,
@@ -70,7 +71,7 @@ init python:
     "silent_death": False,
     }
 
-    soldier1_stats = {
+    $ soldier1_stats = {
     "name": "Soldier",
     "hp": 100,
     "hp_max": 100,
@@ -82,7 +83,7 @@ init python:
     "silent_death": False,
     }
 
-    soldier2_stats = {
+    $ soldier2_stats = {
     "name": "Soldier 1",
     "hp": 100,
     "hp_max": 100,
@@ -94,7 +95,7 @@ init python:
     "silent_death": False,
     }
 
-    soldier3_stats = {
+    $ soldier3_stats = {
     "name": "Soldier 2",
     "hp": 100,
     "hp_max": 100,
@@ -106,7 +107,7 @@ init python:
     "silent_death": False,
     }
 
-    king_stats = {
+    $ king_stats = {
     "name": "King Achnost",
     "hp": 500,
     "hp_max": 500,
@@ -118,8 +119,10 @@ init python:
     "silent_death": True,
     }
 
-    multiplier_list = [0.5, 1, 2]
-    hitona_hp = hitona_stats["hp"]
+    $ multiplier_list = [0.5, 1, 2]
+    $ hitona_hp = hitona_stats["hp"]
+
+    return
 
 screen single_stat(name, hp, hp_max, ypos):
     frame xsize 400 ysize 110 xpadding 20 ypadding 13:

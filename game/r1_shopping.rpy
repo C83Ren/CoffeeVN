@@ -1,5 +1,6 @@
-init python:
-    shoppingflag = None
+label r1_shopping_init():
+    $ shoppingflag = None
+    return
 
 label r1_shopping:
     scene bg shop with fade

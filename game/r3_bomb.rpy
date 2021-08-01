@@ -1,3 +1,7 @@
+label r3_bomb_init():
+    $ r3_secret = False
+    return
+
 label r3_bomb:
     $ save_enabled = True
 
@@ -116,9 +120,6 @@ label r3_bomb:
     play music bomb_loop_bgm loop volume 0.2 fadein 3.0
 
     jump bomb_mechanic
-
-    init python:
-        r3_secret = False
 
 label bomb_fail:
     $ save_enabled = True

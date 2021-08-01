@@ -1,5 +1,6 @@
-init python:
-    famresflag = 0
+label r1_famres_init():
+    $ famresflag = 0
+    return
 
 label r1_famres:
     # Family Restaurant

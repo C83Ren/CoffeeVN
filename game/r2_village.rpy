@@ -1,9 +1,10 @@
-init python:
-    v_house1 = 0
-    v_house2 = 0
-    v_house3 = 0
-    v_house4 = 0
-    v_talk = 0
+label r2_village_init():
+    $ v_house1 = 0
+    $ v_house2 = 0
+    $ v_house3 = 0
+    $ v_house4 = 0
+    $ v_talk = 0
+    return
 
 label r2_village:
     scene bg village with Fade(1.0, 1.0, 1.0)

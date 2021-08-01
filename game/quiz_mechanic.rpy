@@ -8,9 +8,11 @@ init python:
 
         return randInt
 
-    quiz_count = 0
-    quiz_done = []
-    quiz_num = 0
+label quiz_mechanic_init():
+    $ quiz_count = 0
+    $ quiz_done = []
+    $ quiz_num = 0
+    return
 
 label quiz_default:
     python:

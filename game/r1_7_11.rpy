@@ -1,5 +1,6 @@
-init python:
-    combiniflag = 0
+label r1_7_11_init():
+    $ combiniflag = 0
+    return
 
 label r1_7_11:
     # 7/11

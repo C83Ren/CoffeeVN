@@ -1,5 +1,6 @@
-init python:
-    movieflag = 0
+label r1_movie_init():
+    $ movieflag = 0
+    return
 
 label r1_movie:
     # Go to the movie

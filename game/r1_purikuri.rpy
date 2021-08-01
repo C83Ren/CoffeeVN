@@ -1,5 +1,6 @@
-init python:
-   purikuri_flag = False
+label r1_purikuri_init():
+    $ purikuri_flag = False
+    return
 
 label r1_purikuri:
     # Take Purikuri

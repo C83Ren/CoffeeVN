@@ -1,4 +1,18 @@
 label start:
+    call r1_purikuri_init()
+    call r1_7_11_init()
+    call r1_famres_init()
+    call r1_movie_init()
+    call r1_shopping_init()
+    call battle_mechanic_setup()
+    call r2_forest_init()
+    call r2_village_init()
+    call r2_tranquility_setup()
+    call quiz_mechanic_init()
+    call quiz_pic_mechanic_init()
+    call r3_river_init()
+    call r3_bomb_init()
+
     scene bg room with dissolve
     play music room_bgm fadein 1.0 volume 0.2
     #play music "room_bgm.wav"

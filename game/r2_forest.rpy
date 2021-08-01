@@ -1,8 +1,9 @@
-init python:
-    f_spot1 = 0
-    f_spot2 = 0
-    f_hut1 = 0
-    f_hut2 = 0
+label r2_forest_init():
+    $ f_spot1 = 0
+    $ f_spot2 = 0
+    $ f_hut1 = 0
+    $ f_hut2 = 0
+    return
 
 label r2_forest:
 

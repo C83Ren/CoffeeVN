@@ -1,9 +1,9 @@
-init python:
-    quiz_count = 0
-    quiz_done = []
-    quiz_num = 0
+label quiz_pic_mechanic_init():
+    $ quiz_count = 0
+    $ quiz_done = []
+    $ quiz_num = 0
 
-    drawing_list = [
+    $ drawing_list = [
     ["1.png", _("Asking for help"), _("Distributing flyers"), _("Food delivery"), 2, _("This one’s actually not that bad."), _("Flattery won’t get you anywhere, you know.")],
     ["2.png", _("Jiangshi"), _("Vampire"), _("Dracula"), 1, _("I really couldn’t remember its name last time."), _("Well now you do, good for you.")],
     ["3.png", _("Bath"), _("Hot Springs"), _("Soap"), 3, _("You’re saying the one above his head is soap as well?"), _("I’ll leave it to your imagination.")],
@@ -11,6 +11,7 @@ init python:
     ["5.png", _("Taking an exam"), _("Focus power"), _("Studying"), 2, _("That answer is way too specific..."), _("I do wish it wasn’t this specific as well.")],
     ["6.png", _("Gyudon shop"), _("Izakaya"), _("Ramen shop"), 1, _("If it weren’t for the waiter I would’ve thought it was about just the food."), _("Even I almost forgot it wasn’t about the food.")]
     ]
+    return
 
 label quiz_pic_default:
     python:
