@@ -91,9 +91,9 @@ screen credits_display():
     vbox:
         use credits_space(125)
         use credits_entry(_("Planning"), ["company"])
-        use credits_entry(_("Scenario"), ["rabbit"])
+        use credits_entry(_("Scenario"), ["rabbit", "wari"])
         use credits_entry(_("Translation"), ["kosa", "xn"])
-        use credits_entry(_("Editing"), ["xn"])
+        use credits_entry(_("Editing"), ["rabbit", "xn"])
         use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2"])
         use credits_entry(_("Music"), ["luttii", "dova"])
         use credits_entry(_("Sound"), ["zap"])
@@ -126,9 +126,9 @@ default credits_message_index = 0
 screen credits_message_display():
     use credits_message(*credits_messages[credits_message_index])
 
-define credits_scroll_time = 1.0
+define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
-define credits_height = 6178
+define credits_height = 6308
 
 transform credits_scroll:
     xalign 0.5
