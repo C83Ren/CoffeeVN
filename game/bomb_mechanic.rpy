@@ -235,7 +235,7 @@ label bomb_choice:
         $ sleep_time = 0.25 + 0.015 * (bomb_choice_counter - 10) ** 1.6
     else:
         $ sleep_time = 2.84 + 0.1 * (bomb_choice_counter - 35) ** 0.9
-    $ bomb_choice_counter = 1
+    $ bomb_choice_counter += 1
 
     if at_finish(maze, player_x, player_y):
         hide countdown
