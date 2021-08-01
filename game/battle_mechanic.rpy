@@ -61,8 +61,8 @@ label battle_mechanic_setup():
 
     $ eve_stats = {
     "name": "Eve",
-    "hp": 300,
-    "hp_max": 300,
+    "hp": 200,
+    "hp_max": 200,
     "spell": ["Wind Blast", "Fire Ball"],
     "item": ["Heal Orb"],
     "burn": 0,
@@ -112,7 +112,7 @@ label battle_mechanic_setup():
     "hp": 500,
     "hp_max": 500,
     "spell": ["Wind Lance", "Fire Wall", "Lightning Strike"],
-    "item": ["God Blessing", "Flamethrower", "Paralyzing Spark", "Flamethrower", "Paralyzing Spark"],
+    "item": ["God Blessing", "Flamethrower", "Paralyzing Spark", "Flamethrower", "Paralyzing Spark", "Paralyzing Spark", "Flamethrower"],
     "burn": 0,
     "par": 0,
     "img":["images/king_idle.png", "images/king_ko.png", 0],
@@ -503,7 +503,7 @@ label fight_log:
             window hide
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(1.0, hard=True)
-            $ hit = target
+            $ hit = self
             "{color=#00c}[self_name]{/color} took {color=#d00}5{/color} damage from the burn!"
             $ hit = 0
     else:
