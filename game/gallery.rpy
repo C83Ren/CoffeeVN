@@ -1,27 +1,41 @@
 init +1 python:
     g = Gallery()
 
-    for i in range(10):
+    for i in range(21):
         g.button("cg %d" % (i + 1))
         g.condition("persistent.cg_unlocked_%d" % (i + 1))
         g.image(ImageReference("cg %d" % (i + 1)))
 
 init +2 python:
-    for i in range(10):
+    for i in range(21):
         renpy.image("cg %d thumbnail" % (i + 1), im.Scale(ImageReference("cg %d unscaled" % (i + 1)), 384, 216))
     renpy.image("cg locked", im.Scale(Image("cg locked.png"), 384, 216))
 
-label show_cg(which):
+transform cg_center:
+    xalign 0.5 yalign 0.5 xanchor 0.5 yanchor 0.5
+
+label show_cg(which, if_unlocked):
     $ i = cg_list.index(which) + 1
     $ _which_cg = which
+    if if_unlocked and not getattr(persistent, 'cg_unlocked_%d' % i):
+        return
     $ setattr(persistent, 'cg_unlocked_%d' % i, True)
-    image cg = "cg [i]"
+    image cg:
+        xsize 1920
+        ysize 1080
+        contains:
+            "#000"
+        contains:
+            "cg [i]"
+            cg_center
     scene cg
 
     $ quick_menu = False
+    $ _skipping = False
     with Dissolve(0.5)
     pause
     $ quick_menu = True
+    $ _skipping = True
 
     return
 

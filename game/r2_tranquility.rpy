@@ -99,7 +99,7 @@ label r2_tranquility_after_battle:
 
     "We walked into the forest filled with a serene and sublime atmosphere."
 
-    scene bg tranquility_front with Fade(1.0, 0.5, 1.0)
+    call show_cg("spreg1", False)
     play music waterfall fadein 2.0
 
     $ renpy.pause(3.0)

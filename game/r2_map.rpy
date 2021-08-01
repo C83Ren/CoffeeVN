@@ -190,7 +190,7 @@ label map_castle:
 
 label map_rage_1:
 
-    scene bg rage with fade
+    call show_cg("spreg3", False)
 
     play music volcano fadein 1.0
 
@@ -226,7 +226,7 @@ label map_rage_1:
 
 label map_rage_2:
 
-    scene bg rage with fade
+    call show_cg("spreg3", False)
 
     play music volcano fadein 1.0
 

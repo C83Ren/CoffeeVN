@@ -114,23 +114,23 @@ screen credits_final():
 
 define credits_messages = [
     ('wari', '60歳になるまでここにいてください！', 'images/credits/wari.png'),
-    ('gabu', 'Dont forget to eat healthy food', 'images/credits/gabu.png'),
+    ('gabu', 'Dont forget to eat healthy food!\n\n健康的な食べ物もお忘れずに！', 'images/credits/gabu.png'),
     ('kosa', 'kohisuki', 'images/credits/kosa.png'),
-    ('nep', 'kohi is a good girl and always trying hard, i hope you taking care of yourself and take some rest whenever you feel tired', 'images/credits/nep.png'),
-    ('lobster', 'let\'s continue having fun together', 'images/credits/lobster.png'),
-    ('lemon', 'kohisuki', 'images/credits/lemon.png'),
-    ('xn', 'kohisuki', None),
-    ('cryo', 'kohisuki', None),
+    ('nep', 'Kohi is a good girl and always trying hard; I hope you taking care of yourself and take some rest whenever you feel tired.\n\nいつも頑張ってるいい子のこっひーは', 'images/credits/nep.png'),
+    ('lobster', 'Let\'s continue having fun together!\n\nこれからも一緒に楽しましょうね！', 'images/credits/lobster.png'),
+    ('lemon', 'I wanted to thank you for keeping us entertained and making our day brighter with your smile, best wishes for your future!\n\nいつも楽しませてくれて、笑顔で一日一日明るくしてくれて、ありがとうございます。これからもよろしくお願いしますね！', 'images/credits/lemon.png'),
+    ('xn', '２週年', None),
+    ('cryo', 'Congratulations on your second anniversary! May your health, your day, and your gacha blessed.\n\n２週年おめでとうございます！これからのお仕事と日々の生活、健康、そして、ガチャにも、祝福がありますように。', None), # todo fix
     ('luttii', 'G G A G C B\nG G A G D C', None),
     # ('pupu', 'kohisuki', None),
-    ('rabbit', 'Test Test Test\n\nテストテストテスト', None),
+    ('rabbit', 'A selfish present that I hoped you\'d like.\n\nわがままなプレゼントなんでしたが、気に入っていただけたら嬉しいです。', None),
 ]
 
 default credits_message_index = 0
 screen credits_message_display():
     use credits_message(*credits_messages[credits_message_index])
 
-define credits_scroll_time = 1.0
+define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
 define credits_height = 8678
 

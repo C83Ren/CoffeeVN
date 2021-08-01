@@ -140,17 +140,19 @@ label end_3:
     pi "Albeit altered."
 
     hide art_3 with dissolve
-    show art_4 with dissolve:
-        zoom 0.8
-        xalign 0.5
-        yalign 0.3
+    
+    #show art_4 with dissolve:
+        #zoom 0.8
+        #xalign 0.5
+        #yalign 0.3
+    call show_cg("artreel1", False)
 
     p "Altered?"
 
     l "What’s shown here has been a bit altered, that’s all."
 
     window hide
-    hide art_4 with dissolve
+    scene black with dissolve
     show art_5 with dissolve
     $ renpy.pause(3.0)
     hide art_5 with dissolve
@@ -160,16 +162,13 @@ label end_3:
     p "You’re telling me...you’re giving me back altered memories?!"
 
     hide art_6 with dissolve
-    show art_7 with dissolve:
-        zoom 0.8
-        xalign 0.5
-        yalign 0.3
+    call show_cg("artreel2", False)
 
     pi "Don’t worry, don’t worry."
 
     p "I should worry!"
 
-    hide art_7 with dissolve
+    scene black with dissolve
     show art_8 with dissolve
 
     l "She meant that the memories you got back are not altered. Only what’s being shown here is altered."
@@ -184,29 +183,23 @@ label end_3:
     p "But why though..."
 
     hide art_10 with dissolve
-    show art_11 with dissolve:
-        zoom 0.7
-        xalign 0.5
-        yalign 0.3
+    call show_cg("artreel3", False)
 
     pi "To make things more interesting."
 
     l "So it becomes more memorable?"
 
-    hide art_11 with dissolve
+    scene black with dissolve
     show art_12 with dissolve
 
     pi "Probably yeah."
 
     hide art_12 with dissolve
-    show art_13 with dissolve:
-        zoom 0.5
-        xalign 0.5
-        yalign 0.3
+    call show_cg("artreel4", False)
 
     p "Oi, you two sound so unsure about it!?"
 
-    hide art_13 with dissolve
+    scene black with dissolve
     show art_14 with dissolve:
         zoom 0.5
         xalign 0.5
@@ -255,10 +248,7 @@ label end_3:
     p "Oh so that’s what you mean..."
 
     hide art_19 with dissolve
-    show art_20 with dissolve:
-        zoom 0.7
-        xalign 0.5
-        yalign 0.3
+    call show_cg("artreel5", False)
 
     l "No, like, in the truest sense; we’re the one managing your memories."
 
@@ -266,13 +256,13 @@ label end_3:
 
     p "What...?"
 
-    hide art_20 with dissolve
+    scene black with dissolve
 
     pi "Well that’s how it is, see you!"
 
     l "See you."
 
-    scene cg hitonamemory with Fade(1.0, 1.0, 1.0)
+    call show_cg("hitonamemory", False)
 
     $ renpy.pause(10.0)
 

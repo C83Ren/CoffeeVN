@@ -148,16 +148,17 @@ label true_end_combination_unlocked:
     nvl_narrator "Open each safe with each key!”"
 
     call handle_key_lock(1)
-    #call show_cg("hitonadress")
-    call show_cg("anniv")
-    #call show_cg("regret1")
-    #call show_cg("regret2")
-    #call show_cg("regret3")
-    #call show_cg("regret4")
-    #call show_cg("noregret1")
-    #call show_cg("noregret2")
-    #call show_cg("noregret3")
-    #call show_cg("noregret4")
+    
+    call show_cg("hitonadress", True)
+    call show_cg("anniv", True)
+    call show_cg("regret1", True)
+    call show_cg("regret2", True)
+    call show_cg("regret3", True)
+    call show_cg("regret4", True)
+    call show_cg("noregret1", True)
+    call show_cg("noregret2", True)
+    call show_cg("noregret3", True)
+    call show_cg("noregret4", True)
 
     #^ Or show just one from regret CG and one from Not Regret CG
 
@@ -169,10 +170,10 @@ label true_end_combination_unlocked:
     "There’s another locked safe inside, and there are three keys left."
 
     call handle_key_lock(2)
-    # call show_cg("spreg1")
-    # call show_cg("spreg2")
-    # call show_cg("spreg3")
-    # call show_cg("grandspell")
+    call show_cg("spreg1", True)
+    call show_cg("spreg2", True)
+    call show_cg("spreg3", True)
+    call show_cg("grandspell", True)
 
     nvl_narrator "“Second!"
     nvl_narrator "Keep being yourself!"
@@ -182,14 +183,13 @@ label true_end_combination_unlocked:
     "There’s another locked safe inside, and there are two keys left."
 
     call handle_key_lock(3)
-    # call show_cg("artreel1")
-    # call show_cg("artreel2")
-    # call show_cg("artreel3")
-    # call show_cg("artreel4")
-    # call show_cg("artreel5")
-    # call show_cg("hitonamemories")
+    call show_cg("artreel1", True)
+    call show_cg("artreel2", True)
+    call show_cg("artreel3", True)
+    call show_cg("artreel4", True)
+    call show_cg("artreel5", True)
+    call show_cg("hitonamemory", True)
 
-    #^ art most are not full HD
 
     nvl_narrator "“Third!"
     nvl_narrator "The memories that you have made all this time are irreplaceable!"
@@ -198,10 +198,17 @@ label true_end_combination_unlocked:
     "There’s another locked safe inside, and there is one key left."
 
     call handle_key_lock(4)
-    # call show_cg("truehitona")
+    call show_cg("truehitona", False)
     $ renpy.pause(10.0)
 
     call credits()
+
+    window hide
+    $ _skipping = False
+    show image 'images/true_end.png' with dissolve
+    $ renpy.pause(1.0, hard=True)
+    pause
+    $ _skipping = True
 
     return
 

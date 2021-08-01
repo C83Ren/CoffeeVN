@@ -201,7 +201,7 @@ label final_grand_spell:
 
     "In response to the king casting the same spell again, we began to chant the Grand Spell!"
 
-    scene cg grandspell with dissolve
+    call show_cg("grandspell", False)
 
     $ renpy.pause(3.0)
 

@@ -435,6 +435,7 @@ style main_menu_version:
 screen main_menu_background():
     if persistent.ed_unlocked_4:
         add gui.main_menu_background_final
+        add gui.main_menu_background_final xpos 0.15
     else:
         add gui.main_menu_background_initial
         fixed xalign 1.0 yalign 1.0 ysize 300 xsize 800:
@@ -1559,8 +1560,8 @@ screen cg():
             order_reverse True
 
             $ page = int(persistent.cg_page) - 1
-            $ rows = 2
-            $ cols = (3 if page == 0 else 2)
+            $ rows = 2 if page < 3 else 1
+            $ cols = 3
 
             grid cols rows:
                 style_prefix "slot"
@@ -1588,10 +1589,10 @@ screen cg():
 
                 textbutton "<" action CGPagePrevious()
 
-                for page in range(1, 3):
+                for page in range(1, 5):
                     textbutton "[page]" action CGPage(page)
 
-                textbutton ">" action CGPageNext(2)
+                textbutton ">" action CGPageNext(4)
 
 ################################################################################
 ## End List

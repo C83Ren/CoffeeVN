@@ -154,8 +154,8 @@ label end_1:
         "I pulled it out. It was the photo we took."
 
         hide hitona1
-
-        scene cg anniv with dissolve
+        
+        call show_cg("anniv", False)
 
         p "Huh...? Where is Shiraishi?"
 
@@ -200,30 +200,16 @@ label end_1:
 
     if ('regret_choice' in globals()) and regret_choice == "Yeah, I regret something":
         window hide
-        scene cg regret1 with dissolve
-        $ renpy.pause(60.0)
-        scene cg regret2 with dissolve
-        $ renpy.pause(60.0)
-        scene cg regret3 with dissolve
-        $ renpy.pause(60.0)
-        scene cg regret4 with dissolve
-        $ renpy.pause(60.0)
-
-        #CG Message I (If Regret decision)
-        #pass
-
+        call show_cg("regret1", False)
+        call show_cg("regret2", False)
+        call show_cg("regret3", False)
+        call show_cg("regret4", False)
     else:
         window hide
-        scene cg noregret1 with dissolve
-        $ renpy.pause(60.0)
-        scene cg noregret2 with dissolve
-        $ renpy.pause(60.0)
-        scene cg noregret3 with dissolve
-        $ renpy.pause(60.0)
-        scene cg noregret4 with dissolve
-        $ renpy.pause(60.0)
-        #CG Message II (If No Regret decision)
-        #pass
+        call show_cg("noregret1", False)
+        call show_cg("noregret2", False)
+        call show_cg("noregret3", False)
+        call show_cg("noregret4", False)
 
     window hide
     $ _skipping = False

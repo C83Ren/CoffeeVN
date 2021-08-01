@@ -206,8 +206,7 @@ label r1_shopping_dress:
 
     "After changing, I met up with Shiraishi again, and..."
 
-    scene cg hitonadress with Fade(1.0, 2.0, 1.0)
-    $ renpy.pause(2.0)
+    call show_cg("hitonadress", False)
 
     p "AAAAAAH!!! SHIRAISHI, YOU’RE SO CUUUTE!!!!"
 

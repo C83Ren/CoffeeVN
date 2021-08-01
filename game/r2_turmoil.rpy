@@ -1,5 +1,5 @@
 label r2_turmoil:
-    scene bg turmoil_front with fade
+    call show_cg("spreg2", False)
     play music storm fadein 1.0 volume 0.2
     play sound thunder loop volume 0.2
 

@@ -14,7 +14,7 @@ init 0:
     image cg 3= "cg 3 unscaled"
     image cg grandspell = "cg 3 unscaled"
     image cg 4 unscaled = Image("images/CG/hitona_memory.png")
-    image cg 5 = "cg 4 unscaled"
+    image cg 4 = "cg 4 unscaled"
     image cg hitonamemory = "cg 4 unscaled"
     image cg 5 unscaled = Image("images/CG/truehitona.png")
     image cg 5 = "cg 5 unscaled"
@@ -36,7 +36,7 @@ init 0:
     image cg 10 = "cg 10 unscaled"
     image cg noregret1 = "cg 10 unscaled"
     image cg 11 unscaled = Image("images/CG/lastCG_Blue_2.png")
-    image cg 12 = "cg 11 unscaled"
+    image cg 11 = "cg 11 unscaled"
     image cg noregret2 = "cg 11 unscaled"
     image cg 12 unscaled = Image("images/CG/lastCG_Blue_3.png")
     image cg 12 = "cg 12 unscaled"
@@ -55,21 +55,21 @@ init 0:
     image cg 16 = "cg 16 unscaled"
     image cg spreg3 = "cg 16 unscaled"
 
-    image cg 17 unscaled = Image("images/r3_art_reel/art_4.png")
-    image cg 17 = "cg 17 unscaled"
-    image cg artreel1 = "cg 17 unscaled"
+    image cg 17 unscaled = "images/r3_art_reel/art_4.png"
+    image cg 17 = Transform(Image("images/r3_art_reel/art_4.png"), zoom=0.8)
+    image cg artreel1 = "cg 17"
     image cg 18 unscaled = Image("images/r3_art_reel/art_7.png")
-    image cg 18 = "cg 18 unscaled"
-    image cg artreel2 = "cg 18 unscaled"
+    image cg 18 = Transform(Image("images/r3_art_reel/art_7.png"), zoom=0.8)
+    image cg artreel2 = "cg 18"
     image cg 19 unscaled = Image("images/r3_art_reel/art_11.png")
-    image cg 19 = "cg 19 unscaled"
-    image cg artreel3 = "cg 19 unscaled"
+    image cg 19 = Transform(Image("images/r3_art_reel/art_11.png"), zoom=0.7)
+    image cg artreel3 = "cg 19"
     image cg 20 unscaled = Image("images/r3_art_reel/art_13.png")
-    image cg 20 = "cg 20 unscaled"
-    image cg artreel4 = "cg 20 unscaled"
+    image cg 20 = Transform(Image("images/r3_art_reel/art_13.png"), zoom=0.5)
+    image cg artreel4 = "cg 20"
     image cg 21 unscaled = Image("images/r3_art_reel/art_20.png")
-    image cg 21 = "cg 21 unscaled"
-    image cg artreel5 = "cg 21 unscaled"
+    image cg 21 = Transform(Image("images/r3_art_reel/art_20.png"), zoom=0.8)
+    image cg artreel5 = "cg 21"
 
 
-    define cg_list = ["hitonadress", "anniv", "fanmessage", "grandspell", "hitonamemory", "truehitona", "regret1", "regret2", "regret3", "regret4", "noregret1", "noregret2", "noregret3", "noregret4", "spreg1", "spreg2", "spreg3", "artreel1", "artreel2", "artreel3", "artreel4", "artreel5"]
+    define cg_list = ["hitonadress", "anniv", "grandspell", "hitonamemory", "truehitona", "regret1", "regret2", "regret3", "regret4", "noregret1", "noregret2", "noregret3", "noregret4", "spreg1", "spreg2", "spreg3", "artreel1", "artreel2", "artreel3", "artreel4", "artreel5"]
