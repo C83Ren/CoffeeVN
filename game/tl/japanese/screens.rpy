@@ -46,7 +46,7 @@
 
     # game/screens.rpy:316
     old "Preferences"
-    new "環境設定"
+    new "設定"
 
     # game/screens.rpy:320
     old "End Replay"

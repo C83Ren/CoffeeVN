@@ -332,9 +332,10 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load") style "nav_button"
 
-        textbutton _("CG") action ShowMenu("cg") style "nav_button"
+        if main_menu:
+            textbutton _("CG") action ShowMenu("cg") style "nav_button"
 
-        textbutton _("Endings") action ShowMenu("ed") style "nav_button"
+            textbutton _("Endings") action ShowMenu("ed") style "nav_button"
 
         textbutton _("Preferences") action ShowMenu("preferences") style "nav_button"
 
@@ -346,7 +347,8 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu() style "nav_button"
 
-        textbutton _("About") action ShowMenu("about") style "nav_button"
+        if main_menu:
+            textbutton _("About") action ShowMenu("about") style "nav_button"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
