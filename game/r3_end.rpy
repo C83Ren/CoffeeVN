@@ -300,7 +300,7 @@ label end_3:
 
     scene black with fade
 
-    if 'r3_secret' not in globals() or not r3_secret:
+    if _in_replay or not r3_secret:
         return
 
 label end_5:

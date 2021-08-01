@@ -26,7 +26,7 @@ label end_1:
 
     p "Yeah, we even got a prize at our second try! I was so surprised!"
 
-    if ('conbiniflag' not in globals()) or combiniflag == 1 and movieflag == 1:
+    if _in_replay or combiniflag == 1 and movieflag == 1:
 
         show hitona1 happy2
         s "And then after that, we went to get food at the best place ever!"
@@ -147,7 +147,7 @@ label end_1:
 
     p "Eh? Shiraishi, you look a little pale...?"
 
-    if ('purikuri_flag' in globals()) and purikuri_flag:
+    if (not _in_replay) and purikuri_flag:
 
         "Something is starting to heat up inside my pocket."
 
@@ -198,7 +198,7 @@ label end_1:
 
         "I looked around frantically, but she was nowhere to be found. In her place appeared messages dancing lightly through the air."
 
-    if ('regret_choice' in globals()) and regret_choice == "Yeah, I regret something":
+    if (_in_replay and persistent.cg_unlocked_9) or (not _in_replay and regret_choice == "Yeah, I regret something"):
         window hide
         call show_cg("regret1", False) from _call_show_cg_34
         call show_cg("regret2", False) from _call_show_cg_35
