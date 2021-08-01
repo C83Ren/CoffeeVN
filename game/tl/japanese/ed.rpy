@@ -35,7 +35,6 @@ translate japanese strings:
     # game/ed.rpy:15
     old "Play through all three routes, then select {color=#00c}All of the above{/color}\nduring the poll at the start of the game."
     new "３つのルートを全部クリアしてから、ゲームの序盤のアンケートで、{color=#00c}全て{/color}を選ぶ"
-    new ""
 
     # game/ed.rpy:18
     old "During the Memories route, escape the maze using the\nexit marked {color=#707}???{/color} instead of the normal exit."
