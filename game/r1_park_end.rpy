@@ -26,7 +26,7 @@ label end_1:
 
     p "Yeah, we even got a prize at our second try! I was so surprised!"
 
-    if combiniflag == 1 and movieflag == 1:
+    if ('conbiniflag' not in globals()) or combiniflag == 1 and movieflag == 1:
 
         show hitona1 happy2
         s "And then after that, we went to get food at the best place ever!"
@@ -147,7 +147,7 @@ label end_1:
 
     p "Eh? Shiraishi, you look a little pale...?"
 
-    if purikuri_flag:
+    if ('purikuri_flag' in globals()) and purikuri_flag:
 
         "Something is starting to heat up inside my pocket."
 
@@ -166,7 +166,6 @@ label end_1:
         "I look back up towards Shiraishi, but..."
 
         scene bg park
-        show hitona1 smile2
 
         "...she wasn’t there."
 
