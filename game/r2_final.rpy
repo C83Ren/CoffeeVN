@@ -77,10 +77,14 @@ label r2_final:
     hide king
 
     python:
-        hitona_stats["hp"] = 200
-        hitona_stats["hp_max"] = 200
+        hitona_stats["hp"] = 250
+        hitona_stats["hp_max"] = 250
         hitona_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
-        eve_stats["hp"] = 300
+        hitona_stats["item"].append("Paralyzing Spark")
+        hitona_stats["item"].append("Flamethrower")
+        hitona_stats["item"].append("God Blessing")
+        hitona_stats["item"].append("Heal Aura")
+        eve_stats["hp"] = 200
         eve_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
         eve_stats["item"] = ["Heal Aura", "Flamethrower", "God Blessing"]
         fight_order = [hitona_stats, eve_stats, king_stats]
@@ -159,6 +163,8 @@ label final_no_grand_spell:
 
     play sound absolutespell
 
+    $ renpy.pause(2.0, hard=True)
+
     "Eve barely managed to block the magic ball with her last barrier spell."
 
     show hitona2 angry
@@ -195,6 +201,8 @@ label final_grand_spell:
 
     play sound absolutespell
 
+    $ renpy.pause(2.0, hard=True)
+
     "Eve barely managed to block the magic ball with her last barrier spell."
 
     k "Wahahahaha, there’s more where that came from!"
@@ -202,8 +210,6 @@ label final_grand_spell:
     "In response to the king casting the same spell again, we began to chant the Grand Spell!"
 
     call show_cg("grandspell", False) from _call_show_cg_32
-
-    $ renpy.pause(3.0)
 
     p "Tranquility, Turmoil, Rage! I, Hitona, the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
 
@@ -245,6 +251,7 @@ label final_bad_end:
 
 label final_good_end:
 label end_2:
+    stop music fadeout 1.0
     scene bg castle room with dissolve
 
     p "Eh?"

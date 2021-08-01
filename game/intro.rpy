@@ -14,6 +14,7 @@ label start:
     call battle_mechanic_setup() from _call_battle_mechanic_setup
     call r2_forest_init() from _call_r2_forest_init
     call r2_village_init() from _call_r2_village_init
+    call r2_map_init() from _call_r2_map_init
     call r2_tranquility_setup() from _call_r2_tranquility_setup
     call quiz_mechanic_init() from _call_quiz_mechanic_init
     call quiz_pic_mechanic_init() from _call_quiz_pic_mechanic_init
@@ -276,6 +277,7 @@ label start:
     p "{i}Let’s go then!{/i}"
 
     play sound dooropen
+    stop music fadeout 1.0
 
     if route == 1:
         jump r1_start

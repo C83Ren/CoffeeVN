@@ -50,9 +50,9 @@ label r2_tranquility:
     hide soldier_s
 
     python:
-        hitona_stats["hp"] = 200
-        hitona_stats["hp_max"] = 200
-        eve_stats["hp"] = 300
+        hitona_stats["hp"] = 150
+        hitona_stats["hp_max"] = 150
+        eve_stats["hp"] = 200
         eve_stats["spell"] = ["Wind Cutter", "Fire Ball", "Electric Bolt"]
         eve_stats["item"] = ["Heal Aura", "Flamethrower"]
         fight_order = [hitona_stats, eve_stats, soldier2_stats, soldier3_stats]
@@ -68,15 +68,13 @@ label r2_tranquility:
 
 label r2_tranquility_after_battle:
     $ save_enabled = True
-    scene bg map with Fade(0.5, 0.5, 0.5)
+    scene bg map with fade
     play music adventure_bgm fadein 1.0 volume 0.5
 
     hide screen multi_stat
     hide screen multi_sprite
 
     window hide
-    $ renpy.pause(3.0)
-
     $ hitona_stats["item"].append("Paralyzing Spark")
 
     $ hitona_stats["item"].append("Heal Aura")
@@ -103,10 +101,8 @@ label r2_tranquility_after_battle:
 
     "We walked into the forest filled with a serene and sublime atmosphere."
 
-    call show_cg("spreg1", False) from _call_show_cg_1
     play music waterfall fadein 2.0
-
-    $ renpy.pause(3.0)
+    call show_cg("spreg1", False) from _call_show_cg_1
 
     scene bg tranquility with dissolve
 

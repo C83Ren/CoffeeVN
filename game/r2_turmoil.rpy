@@ -1,9 +1,7 @@
 label r2_turmoil:
-    call show_cg("spreg2", False) from _call_show_cg_2
     play music storm fadein 1.0 volume 0.2
     play sound thunder loop volume 0.2
-
-    $ renpy.pause(3.0)
+    call show_cg("spreg2", False) from _call_show_cg_2
 
     scene bg turmoil with dissolve
 

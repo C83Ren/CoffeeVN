@@ -1,3 +1,8 @@
+label r2_map_init():
+    $ m_turmoil = 0
+    $ m_rage = 0
+    return
+
 label r2_map_1:
     scene bg map with Fade(1.0, 1.0, 1.0)
     $ renpy.pause(3.0)
@@ -75,10 +80,10 @@ label on_to_village:
     jump r2_village
 
 label r2_map_2:
-    scene bg map with dissolve
-    python:
-        m_turmoil = 0
-        m_rage = 0
+    #scene bg map with dissolve
+    #python:
+        #m_turmoil = 0
+        #m_rage = 0
 
 label map_menu:
     scene bg map with fade
@@ -190,11 +195,9 @@ label map_castle:
 
 label map_rage_1:
 
-    call show_cg("spreg3", False) from _call_show_cg_24
-
     play music volcano fadein 1.0
 
-    $ renpy.pause(3.0)
+    call show_cg("spreg3", False) from _call_show_cg_24
 
     show hitona2 idle with dissolve
 
@@ -225,10 +228,9 @@ label map_rage_1:
     jump map_menu
 
 label map_rage_2:
+    play music volcano fadein 1.0
 
     call show_cg("spreg3", False) from _call_show_cg_25
-
-    play music volcano fadein 1.0
 
     p "Rage sound kinda cool don’t you think?"
 

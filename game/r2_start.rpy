@@ -104,9 +104,11 @@ label r2_start:
 
     "{i}Wow...{/i}"
 
-    play sound footstepforest
+    play sound footstepforest loop
 
     "{i}Now that think about it...there was someone running in this direction earlier wasn’t there...{/i}"
+
+    stop sound
 
     "{i}Ah, here they are.{/i}"
 
@@ -148,7 +150,7 @@ label r2_start:
     The fastest way to learn is to just try it, so let’s go!
     """
 
-    play music battletheme_bgm fadein 1.0 volume 0.5
+    play music battletheme_bgm fadein 3.0 volume 0.5
 
     #angry3 during fight
 
@@ -236,6 +238,6 @@ label r2_start_after_battle:
 
     "Things may change if you visit the same place a second time. Be sure to check them all!"
 
-    play music adventure_bgm fadein 1.0 volume 0.5
+    play music adventure_bgm fadein 1.0 volume 0.3
 
     jump r2_forest
