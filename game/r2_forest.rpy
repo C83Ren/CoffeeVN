@@ -17,7 +17,7 @@ label forest_spot_1:
 
         show hitona2 idle with dissolve
 
-        e "Why are you going there Hitona?"
+        e "Why are you going there [player_name]?" id forest_spot_1_46eaf765
 
         p "Hey I don’t go to these types of places very often you know."
 
@@ -96,7 +96,7 @@ label forest_spot_2:
 
         e "Look, over there! It’s shining! It’s a healing spell orb!"
 
-        e "Oh, it’s one time use, but still useful to have. Take it Hitona!"
+        e "Oh, it’s one time use, but still useful to have. Take it [player_name]!" id forest_spot_2_2b2870c7
 
         play sound correctchoice
 
@@ -146,7 +146,7 @@ label forest_hut_1:
 
         show hitona2 idle
 
-        e "No one lives here, Hitona dear."
+        e "No one lives here, [player_name] dear." id forest_hut_1_a75df0d8
 
         e "This place is wiped out as you can see."
 
@@ -168,7 +168,7 @@ label forest_hut_1:
 
         e "This place was one of the places where the rebels fought the army."
 
-        e "While there are many useful magics, there are also scary ones, young Hitona."
+        e "While there are many useful magics, there are also scary ones, young [player_name]." id forest_hut_1_c5422492
 
         e "Like the one that was used here."
 
@@ -188,7 +188,7 @@ label forest_hut_2:
 
         play sound dooropen
 
-        e "Look, look, Hitona! I found a rare item! A spell orb!"
+        e "Look, look, [player_name]! I found a rare item! A spell orb!" id forest_hut_2_0ed097b3
 
         e "I think the spell in this one spews fire or something."
 

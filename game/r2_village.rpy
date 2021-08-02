@@ -186,9 +186,9 @@ label village_house_1_1:
 
     show hitona2 idle
 
-    e "Anyways, this is our second salvation, her name is Hitona. Found her in the forest."
+    e "Anyways, this is our second salvation, her name is [player_name]. Found her in the forest." id village_house_1_1_d0d441c3
 
-    p "Nice to meet you, I’m Hitona Kohigashi."
+    p "Nice to meet you, I’m [player_name] Kohigashi." id village_house_1_1_4ac634e1
 
     hn "Nice to meet you."
 
@@ -196,7 +196,7 @@ label village_house_1_1:
 
     e "Show us your spell selection!"
 
-    e "Hitona only has Wind Blast right now."
+    e "[player_name] only has Wind Blast right now." id village_house_1_1_913add89
 
     p "Huh? He has spells? I thought only the army could use magic?"
 
@@ -280,7 +280,7 @@ label village_house_2_2:
 
     hs "What do you wa... oh it’s you. I didn’t catch your name last time."
 
-    p "It’s Hitona Kohigashi."
+    p "It’s [player_name] Kohigashi." id village_house_2_2_ca928913
 
     hs "Kohigashi hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
 
@@ -304,9 +304,9 @@ label village_house_3_1:
 
     show hitona2 smile1
 
-    e "Yep, she’s Hitona."
+    e "Yep, she’s [player_name]." id village_house_3_1_d24acfd4
 
-    p "Nice to meet you, I’m Hitona Kohigashi."
+    p "Nice to meet you, I’m [player_name] Kohigashi." id village_house_3_1_4ac634e1
 
     "???" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation."
 
@@ -314,7 +314,7 @@ label village_house_3_1:
 
     show hitona2 idle
 
-    e "Well then, I will leave Hitona to you, Captain! I’ll be waiting outside."
+    e "Well then, I will leave [player_name] to you, Captain! I’ll be waiting outside." id village_house_3_1_dea3fd8a
 
     hide hitona2 with dissolve
 

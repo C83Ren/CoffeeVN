@@ -8,7 +8,7 @@ translate japanese r3_drawing_b59970b3:
 translate japanese r3_drawing_eb3d397d:
 
     # p "Don’t underestimate me, the romance master!"
-    p "「恋愛マスターなんですよ、ひとなは」"
+    p "「恋愛マスターなんですよ、[player_name]は」"
 
 # game/r3_drawing.rpy:10
 translate japanese r3_drawing_2eb5fd9f:

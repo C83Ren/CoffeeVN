@@ -3,7 +3,7 @@ label r1_after_movie:
 
     show hitona1 happy1
 
-    s "Yaaay! It’s a promise okay, Hitona onee-chan!"
+    s "Yaaay! It’s a promise okay, [player_name] onee-chan!" id r1_after_movie_460a966d
 
     p "Yeah! It’s a promise!"
 

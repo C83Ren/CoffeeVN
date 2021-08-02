@@ -50,7 +50,7 @@ translate japanese r1_purikuri_921cd50c:
 translate japanese r1_purikuri_677459f6:
 
     # p "Ah, then I want an afro for my hair!"
-    p "「じゃあ、ひとなはアフロにしたい！」"
+    p "「じゃあ、[player_name]はアフロにしたい！」"
 
 # game/r1_purikuri.rpy:42
 translate japanese r1_purikuri_495d59ea:

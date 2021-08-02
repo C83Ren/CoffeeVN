@@ -16,7 +16,7 @@ label end_1:
 
     show hitona1 smile2
 
-    s "Today was fun, Hitona onee-chan!"
+    s "Today was fun, [player_name] onee-chan!" id end_1_6b4f7a76
 
     p "Yeah, it really was!"
 
@@ -35,7 +35,7 @@ label end_1:
 
         show hitona1 happy1
 
-        s "Shiraishi got to eat Hitona onee-chan’s recommendation!"
+        s "Shiraishi got to eat [player_name] onee-chan’s recommendation!" id end_1_7dcd5bba
 
         p "Hehehe, now can I get a sponsor from them?"
 
@@ -67,7 +67,7 @@ label end_1:
 
         show hitona1 happy1
 
-        s "Shiraishi got to eat Hitona onee-chan’s recommendation!"
+        s "Shiraishi got to eat [player_name] onee-chan’s recommendation!" id end_1_7dcd5bba_1
 
         p "Hehehe, now can I get a sponsor from them?"
 
@@ -81,10 +81,10 @@ label end_1:
 
         if shoppingflag == "suit":
 
-            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a cool suit!"
+            s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a cool suit!" id end_1_de4f0b86
         else:
 
-            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a beautiful dress!"
+            s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a beautiful dress!" id end_1_1c2a8e3d
 
         p "Shiraishi was really cute in that witch outfit too!"
 
@@ -126,10 +126,10 @@ label end_1:
 
         if shoppingflag == "suit":
 
-            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a cool suit!"
+            s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a cool suit!" id end_1_de4f0b86_1
         else:
 
-            s "What’s more, Shiraishi even got to see Hitona onee-chan in such a beautiful dress!"
+            s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a beautiful dress!" id end_1_1c2a8e3d_1
 
         p "Shiraishi was really cute in that witch outfit too!"
 
@@ -139,7 +139,7 @@ label end_1:
 
     show hitona1 smile2
 
-    s "Hey, Hitona onee-chan, thank you for today."
+    s "Hey, [player_name] onee-chan, thank you for today." id end_1_70904dbc
 
     s "I really had a lot of fun!"
 
@@ -172,7 +172,7 @@ label end_1:
 
     else:
 
-        s "Hehehe, it’s okay, Hitona onee-chan."
+        s "Hehehe, it’s okay, [player_name] onee-chan." id end_1_b8559320
 
         p "We should go back soon."
 

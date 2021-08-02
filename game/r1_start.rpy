@@ -112,7 +112,7 @@ label r1_start:
 
     show hitona1 happy1
 
-    s "Yaaay! Let’s play, Hitona onee-chan!"
+    s "Yaaay! Let’s play, [player_name] onee-chan!" id r1_start_e2940143
 
     p "Eh...? Huh...? Yeah...so do you want to play in the park?"
 
@@ -182,7 +182,7 @@ label r1_start:
 
     p "We haven’t even tried anything though..."
 
-    s "It’s still fun! Hitona onee-chan, let’s play something!"
+    s "It’s still fun! [player_name] onee-chan, let’s play something!" id r1_start_d42765e6
 
     p "What should we play then?"
 
@@ -208,7 +208,7 @@ label r1_start:
 
     "As soon as I said that, Shiraishi was smiling ear to ear."
 
-    s "Yess! Shiraishi wants to try that with Hitona onee-chan!"
+    s "Yess! Shiraishi wants to try that with [player_name] onee-chan!" id r1_start_631fed18
 
     show hitona1 smile1
 
@@ -299,11 +299,11 @@ label r1_start:
 
     show hitona1 happy2
 
-    s "Don’t worry, Hitona onee-chan! You’ll definitely get it next time!"
+    s "Don’t worry, [player_name] onee-chan! You’ll definitely get it next time!" id r1_start_2136fc24
 
     "Shiraishi looks so sure that I’ll get it; I must not disappoint!"
 
-    p "Yes! Hitona nee-chan will get it this time!"
+    p "Yes! [player_name] nee-chan will get it this time!" id r1_start_ea796bbf
 
     hide hitona1
 
@@ -326,7 +326,7 @@ label r1_start:
 
     $renpy.pause(3.0, hard=True)
 
-    s "Hitona onee-chan! We got it!!! Yaaaaaay!"
+    s "[player_name] onee-chan! We got it!!! Yaaaaaay!" id r1_start_dc7811d2
 
     p "Huh?! We got it???"
 
@@ -334,7 +334,7 @@ label r1_start:
 
     show hitona1 happy1
 
-    s "Yaaay! Yaaaay! Thank you, Hitona onee-chan!"
+    s "Yaaay! Yaaaay! Thank you, [player_name] onee-chan!" id r1_start_dffc0e4f
 
     p "{i}Wow... even though I was prepared to do this for another 60 times.{/i}"
 
@@ -348,7 +348,7 @@ label r1_start:
 
     "Shiraishi was looking at the popular purikura booth."
 
-    s "Hitona onee-chan, how does that thing work?"
+    s "[player_name] onee-chan, how does that thing work?" id r1_start_73c7baad
 
     p "Ah that, you can take a picture of yourself there, then decorate it with cute and funny things!"
 

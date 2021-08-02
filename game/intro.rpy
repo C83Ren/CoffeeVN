@@ -64,7 +64,7 @@ label start:
 
     p "{i}A delivery? I wonder what it is.{/i}"
 
-    "Mailman" "Here is your delivery. For ummm, Hitona Kohigashi, correct? Please sign here."
+    "Mailman" "Here is your delivery. For ummm, Kohigashi, correct? Please sign here." id start_fe4e8d19
 
     p "Ah yes, okay…"
 

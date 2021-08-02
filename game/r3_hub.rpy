@@ -50,7 +50,7 @@ label r3_hub:
 
     "???" "Oh right, sorry, I haven’t introduced myself. I’m Pierrot! No, not Poirot but Pierrot! The Master Detective Pierrot!"
 
-    p "Okay...uhh...I’m Hitona, Hitona Kohigashi."
+    p "Okay...uhh...I’m [player_name], [player_name] Kohigashi." id r3_hub_7e235c7e
 
     p "But...you somehow knew that, it seems."
 

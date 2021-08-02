@@ -23,7 +23,7 @@ label r2_turmoil:
 
     e "That’s plenty enough to defeat small fries like the soldiers, no need to use a fancier spell."
 
-    e "If Hitona can defeat them, why bother using such a flashy spell?"
+    e "If [player_name] can defeat them, why bother using such a flashy spell?" id r2_turmoil_5cd70a7b
 
     p "You’re mocking me, aren’t you?"
 

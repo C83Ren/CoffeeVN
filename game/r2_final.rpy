@@ -5,9 +5,9 @@ label r2_final_init():
 label r2_final:
     scene black with dissolve
 
-    e "Hitona!"
+    e "[player_name]!" id r2_final_7f21cf64
 
-    e "Hey, Hitona!"
+    e "Hey, [player_name]!" id r2_final_a5f5e9ba
 
     p "Huh?"
 
@@ -222,7 +222,7 @@ label end_2 hide:
 
     call show_cg("grandspell", False) from _call_show_cg_32
 
-    p "Tranquility, Turmoil, Rage! I, Hitona, the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
+    p "Tranquility, Turmoil, Rage! I, [player_name], the ruler of the composition of emotions, order you. Combine, and unleash your true power!" id final_grand_spell_3513c7b8
 
     e "I am Majna Eden Bat Azuma Nula Sedun, ruler of the Void! To allow the power of the emotions to be fully unleashed, use this life, expand the void, and create an infinite space!"
 
@@ -294,7 +294,7 @@ label final_good_end:
 
     "{color=[p.who_args[color]]}[p]{/color} & {color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..." id final_good_end_f11e976f
 
-    e "Thank you, Hitona...truly..."
+    e "Thank you, [player_name]...truly..." id final_good_end_4081c499
 
     p "Hey...I had a lot of fun too"
 

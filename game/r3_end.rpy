@@ -395,13 +395,13 @@ label r3_secret_ending:
 
         r "Who art thou? State thy business this present moment, for thou hast intruded upon these holy grounds of our only goddess!"
 
-        p "I’m Hitona Kohigashi."
+        p "I’m [player_name] Kohigashi." id r3_secret_ending_8291af07
 
         p " I don’t know if you’ll believe me, but it seems that I was cursed by the pudding god and sent here haha..."
 
         p "{i}For whatever reasons, I don’t feel anxious being sent into another world anymore.{/i}"
 
-        r "Fie?! O’ Goddess Hitona! Please forgive this worthless rabbit for her sinful rudeness!"
+        r "Fie?! O’ Goddess [player_name]! Please forgive this worthless rabbit for her sinful rudeness!" id r3_secret_ending_4e4cd7fc
 
         show rabbit together
 

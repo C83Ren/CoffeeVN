@@ -98,8 +98,8 @@ translate japanese start_f8869760:
 # game/intro.rpy:41
 translate japanese start_fe4e8d19:
 
-    # "Mailman" "Here is your delivery. For ummm, Hitona Kohigashi, correct? Please sign here."
-    "配達人" "「はい、配達の荷物です。えっと…小東ひとな様ですよね？ここにサインしてください。」"
+    # "Mailman" "Here is your delivery. For ummm, Kohigashi, correct? Please sign here."
+    "配達人" "「はい、配達の荷物です。えっと…小東様ですよね？ここにサインしてください。」"
 
 # game/intro.rpy:43
 translate japanese start_055bce01:
@@ -455,7 +455,7 @@ translate japanese start_690f00c2:
 translate japanese start_bb0ddf5c:
 
     # p "{i}…That’s it??? After all those questions, that’s it???? Give me back my time!{/i}"
-    p "（…え？そんなにたくさんの質問の結果はこれだけ？ひとなの時間、返してよ！）"
+    p "（…え？そんなにたくさんの質問の結果はこれだけ？[player_name]の時間、返してよ！）"
 
 # game/intro.rpy:218
 translate japanese start_7766d36a:

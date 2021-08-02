@@ -28,13 +28,13 @@ label r1_7_11:
 
     "Shiraishi was always very excited, but she was now even more excited than ever, happily grasping onto my hand."
 
-    s "Hitona onee-chan what will we be having for lunch?"
+    s "[player_name] onee-chan what will we be having for lunch?" id r1_7_11_19b38c5f
 
     p "Anything you want! Pick whatever you like!"
 
     show hitona1 happy2
 
-    s "I want Hitona onee-chan’s recommendation!"
+    s "I want [player_name] onee-chan’s recommendation!" id r1_7_11_9d9ee28a
 
     p "Is that so? Shiraishi wants the opinion of the (not) official 7/11 ambassador? Understood!"
 
@@ -131,27 +131,25 @@ label r1_7_11:
 
     show hitona1 idle2
 
-    s "Come to think of it, Hitona onee-chan tried eating this in a stream before~!"
+    s "Come to think of it, [player_name] onee-chan tried eating this in a stream before~!" id r1_7_11_d0ab1a5f
 
     p "Eh? In a stream? What do you mean?"
 
     show hitona1 happy3
 
-    s "Hitona onee-chan streams food reviews, right?"
+    s "[player_name] onee-chan streams food reviews, right?" id r1_7_11_f7d3e7b4
 
     s "I love those streams!"
 
-    s """
-    Whenever Shiraishi watches those streams, Shiraishi always thinks about how many snacks Shiraishi hasn’t tried yet!
+    s "Whenever Shiraishi watches those streams, Shiraishi always thinks about how many snacks Shiraishi hasn’t tried yet!"
 
-    Everything always looks so delicious! And Hitona onee-chan’s reactions are priceless! It makes Shiraishi want to watch it over and over again!
+    s "Everything always looks so delicious! And [player_name] onee-chan’s reactions are priceless! It makes Shiraishi want to watch it over and over again!" id r1_7_11_456b5af9
 
-    With how some snacks make Hitona onee-chan really excited, while others oddly have no taste, Shiraishi can never wait for Hitona onee-chan’s rating!
+    s "With how some snacks make [player_name] onee-chan really excited, while others oddly have no taste, Shiraishi can never wait for [player_name] onee-chan’s rating!" id r1_7_11_60cc16d3
 
-    It’s also funny how the rating sometimes is out of 5 stars while other times it’s out of 3 stars!
+    s "It’s also funny how the rating sometimes is out of 5 stars while other times it’s out of 3 stars!"
 
-    It’s always a fun stream!
-    """
+    s "It’s always a fun stream!"
 
     p "{i}Eh? Did I ever mention anything about streaming...?{/i}"
 

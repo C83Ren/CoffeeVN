@@ -108,7 +108,7 @@ label r1_shopping:
 
     p "Are you perhaps choosing a wedding dress for me?"
 
-    s "Yes, Hitona onee-chan!"
+    s "Yes, [player_name] onee-chan!" id r1_shopping_0d85cde7
 
     s "But I don’t know which one to pick, they all look so good!"
 
@@ -116,7 +116,7 @@ label r1_shopping:
 
     p "Shiraishi, how about you let me choose from these?"
 
-    s "Ehhh? But Shiraishi wanted to choose for Hitona onee-chan!"
+    s "Ehhh? But Shiraishi wanted to choose for [player_name] onee-chan!" id r1_shopping_c07a25f8
 
     "I showed the outfit I picked for Shiraishi."
 
@@ -130,7 +130,7 @@ label r1_shopping:
 
     show hitona1 pout2
 
-    s "If Hitona onee-chan says so..."
+    s "If [player_name] onee-chan says so..." id r1_shopping_245e4de6
 
     hide hitona1 with dissolve
 
@@ -170,7 +170,7 @@ label r1_shopping_suit:
 
     show hitona1 stareyes1
 
-    s "Hitona onee-chan?!"
+    s "[player_name] onee-chan?!" id r1_shopping_suit_39b1a3d7
 
     p "Was I so cool that you lost your memory?"
 
@@ -180,7 +180,7 @@ label r1_shopping_suit:
 
     p "How was it?"
 
-    s "Hitona onee-chan is so cool!"
+    s "[player_name] onee-chan is so cool!" id r1_shopping_suit_6a632731
 
     p "Right~?"
 
@@ -217,7 +217,7 @@ label r1_shopping_dress:
 
     p "{i}Ahh! She’s really so cute...{/i}"
 
-    s "Hitona onee-chan is so beautiful..."
+    s "[player_name] onee-chan is so beautiful..." id r1_shopping_dress_b1314e1e
 
     p "Hehe, right!"
 
@@ -225,7 +225,7 @@ label r1_shopping_dress:
 
     p "Don’t underestimate my fashion sense!"
 
-    s "I want Hitona onee-chan to pick all of my outfits from now on!"
+    s "I want [player_name] onee-chan to pick all of my outfits from now on!" id r1_shopping_dress_ab9200c8
 
     p "Haha that’s a bit much."
 

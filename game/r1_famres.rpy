@@ -77,11 +77,11 @@ label r1_famres:
 
     show hitona1 idle2
 
-    s "Hitona onee-chan~"
+    s "[player_name] onee-chan~" id r1_famres_62e97dc8
 
     p "Hmmm?"
 
-    s "Can Hitona onee-chan eat one of these?"
+    s "Can [player_name] onee-chan eat one of these?" id r1_famres_39f5ca62
 
     p "..."
 
@@ -99,7 +99,7 @@ label r1_famres:
 
     show hitona1 happy3
 
-    s "Pick one, Hitona onee-chan!"
+    s "Pick one, [player_name] onee-chan!" id r1_famres_b22520bd
 
     menu:
         "Which dish should I eat?"
@@ -115,7 +115,7 @@ label r1_famres:
     show hitona1 idle2
 
     if famires_food == "Omurice":
-        s "Hitona onee-chan, Shiraishi has something to ask."
+        s "[player_name] onee-chan, Shiraishi has something to ask." id r1_famres_1e487da6
 
         p "What is it?"
 
@@ -131,11 +131,11 @@ label r1_famres:
 
         show hitona1 idle1
 
-        s "Yes! Shiraishi wants to become tall and beautiful just like Hitona onee-chan!"
+        s "Yes! Shiraishi wants to become tall and beautiful just like [player_name] onee-chan!" id r1_famres_afec076c
 
         p "{i}Ahh, what a precious response...{/i}"
     elif famires_food == "Hamburger Steak":
-        s "Hitona onee-chan, does Hamburger Steak make you more energetic?"
+        s "[player_name] onee-chan, does Hamburger Steak make you more energetic?" id r1_famres_119a1574
 
         p "It’s meat... so I guess so? Why?"
 
@@ -151,21 +151,21 @@ label r1_famres:
 
         show hitona1 idle2
 
-        s "Does that mean that hamburger steak is Hitona onee-chan’s favourite food?"
+        s "Does that mean that hamburger steak is [player_name] onee-chan’s favourite food?" id r1_famres_c650c2d1
 
         p "Uhhh... no, not really..."
 
         s "Is that so?"
     else:
-        s "Hitona onee-chan, are you planning to play something tonight?"
+        s "[player_name] onee-chan, are you planning to play something tonight?" id r1_famres_e23771d2
 
         p "Uhh... I don’t have any plans, so not really."
 
-        s "Hitona onee-chan, do you like beef bowls?"
+        s "[player_name] onee-chan, do you like beef bowls?" id r1_famres_e00a9e6c
 
         p "I guess so?"
 
-        s "When Hitona onee-chan chose the beef bowl, Shiraishi thought that Hitona onee-chan was planning to play a horror game tonight!"
+        s "When [player_name] onee-chan chose the beef bowl, Shiraishi thought that [player_name] onee-chan was planning to play a horror game tonight!" id r1_famres_98a23b1f
 
         p "That’s oddly specific, why did you think so?"
 
@@ -189,7 +189,7 @@ label r1_famres:
 
     show hitona1 smile2
 
-    s "No way! Shiraishi can’t eat three; it’s because of Hitona onee-chan that we finished!"
+    s "No way! Shiraishi can’t eat three; it’s because of [player_name] onee-chan that we finished!" id r1_famres_9a7605ec
 
     p "{i}Then don’t order three in the first place...{/i}"
 

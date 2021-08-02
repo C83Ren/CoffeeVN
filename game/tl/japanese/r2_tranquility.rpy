@@ -211,8 +211,8 @@ translate japanese r2_tranquility_after_battle_0f70df5a:
 # game/r2_tranquility.rpy:148
 translate japanese r2_tranquility_after_battle_a7321d59:
 
-    # e "Well don’t mind him, Hitona. Let’s just find that thing."
-    e "「気にすんな、ひとな。とりあえずあれを探そう」"
+    # e "Well don’t mind him, [player_name]. Let’s just find that thing."
+    e "「気にすんな、[player_name]。とりあえずあれを探そう」"
 
 # game/r2_tranquility.rpy:150
 translate japanese r2_tranquility_after_battle_c614283b:
@@ -367,8 +367,8 @@ translate japanese tranquility_pond_1_4d6c1801:
 # game/r2_tranquility.rpy:308
 translate japanese tranquility_pond_1_370fa0b0:
 
-    # e "You can’t swim, can you, Hitona?"
-    e "「ひとなも泳げないよね」"
+    # e "You can’t swim, can you, [player_name]?"
+    e "「[player_name]も泳げないよね」"
 
 # game/r2_tranquility.rpy:310
 translate japanese tranquility_pond_1_c8ea8a4a_1:
@@ -500,7 +500,7 @@ translate japanese tranquility_spot_1_2_a616ed59:
 translate japanese tranquility_spot_1_2_09c38e64:
 
     # e "Are you sure you don’t love frogs?"
-    e "「ひとなはカエルが本当に好きなんだね」"
+    e "「[player_name]はカエルが本当に好きなんだね」"
 
 # game/r2_tranquility.rpy:421
 translate japanese tranquility_spot_1_2_5cbae1f6:
@@ -716,8 +716,8 @@ translate japanese tranquility_spot_3_1_fbc564f8:
 # game/r2_tranquility.rpy:564
 translate japanese tranquility_spot_3_1_58ad90db:
 
-    # e "Hitona, do you really think that’s a wall?"
-    e "「ひとな、それは壁だと本当に思ってる？」"
+    # e "[player_name], do you really think that’s a wall?"
+    e "「[player_name]、それは壁だと本当に思ってる？」"
 
 # game/r2_tranquility.rpy:566
 translate japanese tranquility_spot_3_1_17da7206:
@@ -746,7 +746,7 @@ translate japanese tranquility_spot_3_1_c8ea8a4a_1:
 # game/r2_tranquility.rpy:576
 translate japanese tranquility_spot_3_1_c8a4df07:
 
-    # e "Catch one Hitona! We can use it as bait!"
+    # e "Catch one [player_name]! We can use it as bait!"
     e "「一匹を捕れ！餌にできるよ！」"
 
 # game/r2_tranquility.rpy:578
@@ -771,7 +771,7 @@ translate japanese tranquility_spot_3_1_0ee5fd22:
 translate japanese tranquility_spot_3_1_a19064f8:
 
     # p "Why did you push me!?"
-    p "「なんでひとなを押したの！？」"
+    p "「なんで[player_name]を押したの！？」"
 
 # game/r2_tranquility.rpy:588
 translate japanese tranquility_spot_3_1_368519f0:
@@ -800,8 +800,8 @@ translate japanese tranquility_spot_3_1_fbc564f8_1:
 # game/r2_tranquility.rpy:603
 translate japanese tranquility_spot_3_1_58ad90db_1:
 
-    # e "Hitona, do you really think that’s a wall?"
-    e "「ひとな、それは壁だと本当に思ってる？」"
+    # e "[player_name], do you really think that’s a wall?"
+    e "「[player_name]、それは壁だと本当に思ってる？」"
 
 # game/r2_tranquility.rpy:605
 translate japanese tranquility_spot_3_1_17da7206_1:
@@ -854,7 +854,7 @@ translate japanese tranquility_spot_3_1_46a7300e:
 # game/r2_tranquility.rpy:628
 translate japanese tranquility_spot_3_2_be0c066e:
 
-    # e "Surely now you know that isn’t a black wall, right Hitona?"
+    # e "Surely now you know that isn’t a black wall, right [player_name]?"
     e "「きっと今度こそもう分かってるよね、あれは壁じゃないことを」"
 
 # game/r2_tranquility.rpy:632
@@ -879,7 +879,7 @@ translate japanese tranquility_spot_3_2_468eb27a:
 translate japanese tranquility_spot_3_2_336cadd5:
 
     # p "I never knew you could use cockroaches as a fishing bait..."
-    p "「ひとなにゴキブリを餌にできることが初耳ですが…」"
+    p "「[player_name]にゴキブリを餌にできることが初耳ですが…」"
 
 # game/r2_tranquility.rpy:650
 translate japanese tranquility_spot_3_2_e09e1905:
@@ -902,7 +902,7 @@ translate japanese tranquility_spot_3_2_7e5be565:
 # game/r2_tranquility.rpy:662
 translate japanese tranquility_spot_3_2_06d12f3f:
 
-    # e "Are you testing your luck again hoping that there won’t be any cockroaches, Hitona?"
+    # e "Are you testing your luck again hoping that there won’t be any cockroaches, [player_name]?"
     e "「もうゴキブリが残ってないって運試し？」"
 
 # game/r2_tranquility.rpy:664
@@ -1046,8 +1046,8 @@ translate japanese tranquility_after_fishing_714a67aa:
 # game/r2_tranquility.rpy:753
 translate japanese tranquility_after_fishing_faaaff0d:
 
-    # e "Yeah I can see that Hitona, calm down."
-    e "「分かってる、分かってる、落ち付け、ひとな」"
+    # e "Yeah I can see that [player_name], calm down."
+    e "「分かってる、分かってる、落ち付け、[player_name]」"
 
 # game/r2_tranquility.rpy:755
 translate japanese tranquility_after_fishing_91457e3f:
@@ -1299,7 +1299,7 @@ translate japanese tranquility_pond_after_2_bbd23f89:
 translate japanese tranquility_pond_after_2_cc352ad3:
 
     # e "I can cast a spell that makes you huge as well, want to try?"
-    e "「ひとなに巨人にする魔法をかけられるよ、やってみる？」"
+    e "「[player_name]に巨人にする魔法をかけられるよ、やってみる？」"
 
 # game/r2_tranquility.rpy:890
 translate japanese tranquility_pond_after_2_4953cf02:
@@ -1412,8 +1412,8 @@ translate japanese tranquility_waterfall_0ccdd9eb:
 # game/r2_tranquility.rpy:942
 translate japanese tranquility_waterfall_4d270a6e:
 
-    # e "You are indeed the second salvation that will save this world, Hitona."
-    e "「この世界を救う第二救世主は貴方だよ、ひとな」"
+    # e "You are indeed the second salvation that will save this world, [player_name]."
+    e "「この世界を救う第二救世主は貴方だよ、[player_name]」"
 
 # game/r2_tranquility.rpy:944
 translate japanese tranquility_waterfall_c8ea8a4a:

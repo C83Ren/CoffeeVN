@@ -49,7 +49,7 @@ label r3_start:
 
     play sound takecard
 
-    nvl_narrator "“Hitona Kohigashi!”"
+    nvl_narrator "“[player_name] Kohigashi!”" id r3_start_9ec02c2e
 
     nvl_narrator "“I, Phantom Thief Lios, have stolen one of your most precious possessions!”"
 

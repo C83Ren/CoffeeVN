@@ -56,7 +56,7 @@ label r2_start:
 
     show hitona2 angry
 
-    e "I see, I see, so your name is Hitona Kohigashi, and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
+    e "I see, I see, so your name is [player_name] Kohigashi, and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..." id r2_start_9159ad52
 
     p "What in the world are you talking about..."
 
@@ -121,7 +121,7 @@ label r2_start:
 
     e "Geeeh, it’s a soldier..."
 
-    e "Well, it’s no good having Hitona go deeper into the forest, so I guess we just have to stop him here!"
+    e "Well, it’s no good having [player_name] go deeper into the forest, so I guess we just have to stop him here!" id r2_start_ba635e0c
 
     p "W...What!?"
 
@@ -218,7 +218,7 @@ label r2_start_after_battle:
 
     e "So here I am being a wanted person~"
 
-    e "Well either way, come with me Hitona!"
+    e "Well either way, come with me [player_name]!" id r2_start_after_battle_cd9e784d
 
     p "Ehh, why?"
 

@@ -32,7 +32,7 @@ label r1_movie:
 
     s "Nope, Shiraishi has never been to a cinema before!"
 
-    p "Really? Then Hitona onee-chan here will make this your best cinema experience ever!"
+    p "Really? Then [player_name] onee-chan here will make this your best cinema experience ever!" id r1_movie_98e61a25
 
     show hitona1 happy2
 
@@ -44,7 +44,7 @@ label r1_movie:
 
     show hitona1 smile1
 
-    s "I’ll leave it to Hitona onee-chan!"
+    s "I’ll leave it to [player_name] onee-chan!" id r1_movie_5352266c
 
     menu:
         "Looking at the selection, it’s pretty obvious which one we’re watching! Which movie do we watch?"
@@ -198,7 +198,7 @@ label r1_movie:
     "Shiraishi suddenly asked a question."
 
     menu:
-        s "Hitona onee-chan, would you like to watch a movie with Shiraishi again someday?"
+        s "[player_name] onee-chan, would you like to watch a movie with Shiraishi again someday?"
         "I don’t know... I’m not sure if we can meet again later, so I can’t promise.":
             jump r1_movie_bad_end
         "Yeah, definitely!":

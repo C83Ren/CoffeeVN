@@ -115,8 +115,8 @@ translate japanese r3_start_b86f8c70:
 # game/r3_start.rpy:48
 translate japanese r3_start_9ec02c2e:
 
-    # nvl_narrator "“Hitona Kohigashi!”"
-    nvl_narrator "『小東ひとな！"
+    # nvl_narrator "“[player_name] Kohigashi!”"
+    nvl_narrator "『小東[player_name]！"
 
 # game/r3_start.rpy:50
 translate japanese r3_start_a40cc8d4:

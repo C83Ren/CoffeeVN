@@ -648,7 +648,7 @@ translate japanese r3_secret_ending_9f2b6613:
 translate japanese r3_secret_ending_e26bc284:
 
     # p "{i}Really? Is my house an isekai portal now?{/i}"
-    p "（まじか…？ひとなの家、異世界へのポータルなの？）"
+    p "（まじか…？[player_name]の家、異世界へのポータルなの？）"
 
 # game/r3_end.rpy:282
 translate japanese r3_secret_ending_29ea5e88:
@@ -683,8 +683,8 @@ translate japanese r3_secret_ending_7dea0491:
 # game/r3_end.rpy:298
 translate japanese r3_secret_ending_8291af07:
 
-    # p "I’m Hitona Kohigashi."
-    p "「小東ひとなといいます」"
+    # p "I’m [player_name] Kohigashi."
+    p "「小東[player_name]といいます」"
 
 # game/r3_end.rpy:300
 translate japanese r3_secret_ending_df2f1c90:
@@ -701,8 +701,8 @@ translate japanese r3_secret_ending_b834deb4:
 # game/r3_end.rpy:304
 translate japanese r3_secret_ending_4e4cd7fc:
 
-    # r "Fie?! O’ Goddess Hitona! Please forgive this worthless rabbit for her sinful rudeness!"
-    r "「ふぇ？！ああ、 ひとな女神様よ、この下らぬウサギの無礼の罪をさりとてはゆるさせ給へ！」"
+    # r "Fie?! O’ Goddess [player_name]! Please forgive this worthless rabbit for her sinful rudeness!"
+    r "「ふぇ？！ああ、 [player_name]女神様よ、この下らぬウサギの無礼の罪をさりとてはゆるさせ給へ！」"
 
 # game/r3_end.rpy:308
 translate japanese r3_secret_ending_495bc1a7:
@@ -720,13 +720,13 @@ translate japanese r3_secret_ending_3a241af9:
 translate japanese r3_secret_ending_05ed7610:
 
     # p "{i}No matter how you look at it...that statue is me isn’t it...{/i}"
-    p "（どこからどう見たって…あの像はひとなでしょ…）"
+    p "（どこからどう見たって…あの像は[player_name]でしょ…）"
 
 # game/r3_end.rpy:314
 translate japanese r3_secret_ending_9374ba77:
 
     # p "{i}It’s me with a ponytail, in a waitress uniform with stockings...{/i}"
-    p "（ウェイトレスの衣装を着て、ストッキングを履いてるポニーテールのひとなだ…）"
+    p "（ウェイトレスの衣装を着て、ストッキングを履いてるポニーテールの[player_name]だ…）"
 
 # game/r3_end.rpy:316
 translate japanese r3_secret_ending_4213c639:
@@ -846,7 +846,7 @@ translate japanese r3_secret_ending_efa2cf80:
 translate japanese r3_secret_ending_6f25da39:
 
     # p "ARREST ALL OF THEM!! I WILL--"
-    p "「全員逮捕！！！確保！！ひとなはー」"
+    p "「全員逮捕！！！確保！！[player_name]はー」"
 
 # game/r3_end.rpy:344
 translate japanese r3_secret_ending_2a6f948c:
@@ -948,7 +948,7 @@ translate japanese r3_secret_ending_dbe06883:
 translate japanese r3_secret_ending_5fe34f3e:
 
     # p "Well at least you found me quickly and I can go back. All’s well that ends well!"
-    p "「まぁ、少なくとも、早速ひとなをみつけてくれました！終わりよければすべて良し！」"
+    p "「まぁ、少なくとも、早速[player_name]をみつけてくれました！終わりよければすべて良し！」"
 
 # game/r3_end.rpy:387
 translate japanese r3_secret_ending_24869065:

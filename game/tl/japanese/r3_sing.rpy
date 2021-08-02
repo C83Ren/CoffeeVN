@@ -32,7 +32,7 @@ translate japanese r3_sing_ea01059e:
 translate japanese r3_sing_208c7311:
 
     # p "But I was the one answering..."
-    p "「答えるのはひとなだけですけど…」"
+    p "「答えるのは[player_name]だけですけど…」"
 
 # game/r3_sing.rpy:23
 translate japanese r3_sing_9a39e9bd:
@@ -98,7 +98,7 @@ translate japanese r3_sing_ff4c1f28:
 translate japanese r3_sing_ad9ac304:
 
     # p "So you want me to...sing?"
-    p "「つまり…ひとなが…歌ってほしいですか？」"
+    p "「つまり…[player_name]が…歌ってほしいですか？」"
 
 # game/r3_sing.rpy:56
 translate japanese r3_sing_a04ab603:

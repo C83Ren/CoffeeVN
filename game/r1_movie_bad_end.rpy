@@ -11,7 +11,7 @@ label r1_movie_bad_end:
 
     "Shiraishi smiled warmly."
 
-    s "Hitona onee-chan is such a caring person."
+    s "[player_name] onee-chan is such a caring person." id r1_movie_bad_end_b29abf8f
 
     s "One day, when I grow up, I want to become someone just like you."
 

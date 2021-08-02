@@ -1,14 +1,14 @@
 # game/r2_final.rpy:4
 translate japanese r2_final_7f21cf64:
 
-    # e "Hitona!"
-    e "「ひとなー！」"
+    # e "[player_name]!"
+    e "「[player_name]ー！」"
 
 # game/r2_final.rpy:6
 translate japanese r2_final_a5f5e9ba:
 
-    # e "Hey, Hitona!"
-    e "「おーい、ひとな！」"
+    # e "Hey, [player_name]!"
+    e "「おーい、[player_name]！」"
 
 # game/r2_final.rpy:8
 translate japanese r2_final_3d6763b4:
@@ -62,7 +62,7 @@ translate japanese r2_final_946ee8cd:
 translate japanese r2_final_6e9b1746:
 
     # e "I see...must be a spell from a soldier in the courtyard earlier that’s making you so confused."
-    e "「成程…城の庭にいる兵士が掛けた魔法の所為で今ひとなが化かされたかも」"
+    e "「成程…城の庭にいる兵士が掛けた魔法の所為で今[player_name]が化かされたかも」"
 
 # game/r2_final.rpy:36
 translate japanese r2_final_0772147f:
@@ -355,8 +355,8 @@ translate japanese final_grand_spell_9fa3259e:
 # game/r2_final.rpy:198
 translate japanese final_grand_spell_3513c7b8:
 
-    # p "Tranquility, Turmoil, Rage! I, Hitona, the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
-    p "「静穏よ、騒動よ、怒りよ！感情の構成の君主たる我、ひとな、が命じる！結べ、真の力を解放しろ！」"
+    # p "Tranquility, Turmoil, Rage! I, [player_name], the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
+    p "「静穏よ、騒動よ、怒りよ！感情の構成の君主たる我、[player_name]、が命じる！結べ、真の力を解放しろ！」"
 
 # game/r2_final.rpy:200
 translate japanese final_grand_spell_67990cda:
@@ -482,8 +482,8 @@ translate japanese final_good_end_f11e976f:
 # game/r2_final.rpy:269
 translate japanese final_good_end_4081c499:
 
-    # e "Thank you, Hitona...truly..."
-    e "「ありがとう、ひとな…本当に…」"
+    # e "Thank you, [player_name]...truly..."
+    e "「ありがとう、[player_name]…本当に…」"
 
 # game/r2_final.rpy:271
 translate japanese final_good_end_a70348ae:

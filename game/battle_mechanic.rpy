@@ -146,7 +146,10 @@ screen single_stat(name, hp, hp_max, ypos):
 
         vbox:
             hbox:
-                text "[name!t]"
+                if name != 'Hitona':
+                    text "[name!t]"
+                else:
+                    text player_name
 
             hbox:
                 text "HP":
@@ -271,7 +274,7 @@ label r2_fight:
             if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
                 self = fight_order_temp[x]
                 x = x + 1
-                renpy.say(narrator, __("It's {color=#00c}%s{/color}'s turn.") % __(self["name"]))
+                renpy.say(narrator, __("It's {color=#00c}%s{/color}'s turn.") % __(self["name"] if self["name"] != 'Hitona' else player_name))
                 if self["name"] == "Hitona":
                     renpy.jump("fight_option")
                 else:
@@ -380,7 +383,7 @@ label target_action:
     menu:
         set {"Hitona", "Eve", "Soldier", "Soldier 1", "Soldier 2", "King Achnost"}.difference([s["name"] for s in ally_list + enemy_list])
         "Who are you targeting?"
-        "Hitona":
+        "[player_name]":
             $ target = [s for s in ally_list if s["name"] == "Hitona" ][0]
         "Eve":
             $ target = [s for s in ally_list if s["name"] == "Eve"][0]
@@ -416,8 +419,8 @@ label rock_paper_scissor:
     jump fight_log
 
 label rock_paper_scissor_enemy:
-    $ self_name = self["name"]
-    "{color=#00c}[self_name]{/color} is targeting {color=#00c}Hitona{/color}! Let's defend!"
+    $ self_name = __(self["name"]) if self["name"] != 'Hitona' else player_name
+    "{color=#00c}[self_name]{/color} is targeting {color=#00c}[player_name]{/color}! Let's defend!" id rock_paper_scissor_enemy_1c5d07bd
     call do_janken(True) from _call_do_janken_1
     jump fight_log
 
@@ -458,8 +461,8 @@ label do_janken(reverse):
 
 label fight_log:
     python:
-        target_name = target["name"]
-        self_name = self["name"]
+        target_name = __(target["name"]) if target["name"] != 'Hitona' else player_name
+        self_name = __(self["name"]) if self["name"] != 'Hitona' else player_name
 
     if self["par"] == 0:
         if item_name != 0:
@@ -467,7 +470,7 @@ label fight_log:
             $ hitona_stats["item"].remove(spell_name)
             $ item_name = 0
 
-        "{color=#00c}[self_name]{/color} casted {color=#909}[spell_name]{/color} on {color=#00c}[target_name]{/color}!"
+        "{color=#00c}[self_name]{/color} casted {color=#909}[spell_name]{/color} on {color=#00c}[target_name]{/color}!" id fight_log_3c965ad1
 
         if atk > 0:
             $ atk = min(target["hp"], int(atk * multiplier))

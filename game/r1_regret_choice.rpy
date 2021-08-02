@@ -4,7 +4,7 @@ label r1_regret_choice_init():
 
 label r1_regret_choice:
 
-    s "Hitona onee-chan, do you have any regrets today?"
+    s "[player_name] onee-chan, do you have any regrets today?" id r1_regret_choice_3bfec0a0
 
     p "{i}What’s this girl is asking about... she asked the weirdest things.{/i}"
 
@@ -52,7 +52,7 @@ label r1_regret_choice:
     else:
         show hitona1 idle3 with dissolve
 
-    s "Hitona nee-chan! Let’s go to the park!"
+    s "[player_name] nee-chan! Let’s go to the park!" id r1_regret_choice_de5812ac
 
     p "{i}Well, there’s still some time before nightfall.{/i}"
 

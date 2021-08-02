@@ -13,8 +13,8 @@ translate japanese r1_7_11_eb4ff0af:
 # game/r1_7_11.rpy:26
 translate japanese r1_7_11_19b38c5f:
 
-    # s "Hitona onee-chan what will we be having for lunch?"
-    s "「ひとなおねえちゃん、ひるごはんはなにを食べる？」"
+    # s "[player_name] onee-chan what will we be having for lunch?"
+    s "「[player_name]おねえちゃん、ひるごはんはなにを食べる？」"
 
 # game/r1_7_11.rpy:28
 translate japanese r1_7_11_9fec83aa:
@@ -25,8 +25,8 @@ translate japanese r1_7_11_9fec83aa:
 # game/r1_7_11.rpy:32
 translate japanese r1_7_11_9d9ee28a:
 
-    # s "I want Hitona onee-chan’s recommendation!"
-    s "「ひとなおねえちゃんのおすすめがほしい！」"
+    # s "I want [player_name] onee-chan’s recommendation!"
+    s "「[player_name]おねえちゃんのおすすめがほしい！」"
 
 # game/r1_7_11.rpy:34
 translate japanese r1_7_11_de5a71f4:
@@ -213,7 +213,7 @@ translate japanese r1_7_11_3e600504:
 translate japanese r1_7_11_b181a86b:
 
     # p "I love the tomato flavor!"
-    p "「ひとな、トマト味が好きだね」"
+    p "「[player_name]、トマト味が好きだね」"
 
 # game/r1_7_11.rpy:119
 translate japanese r1_7_11_5e033509:
@@ -230,8 +230,8 @@ translate japanese r1_7_11_ae32a261:
 # game/r1_7_11.rpy:134
 translate japanese r1_7_11_d0ab1a5f:
 
-    # s "Come to think of it, Hitona onee-chan tried eating this in a stream before~!"
-    s "「そういえば、これはかこのひとなおねえちゃんの配信で食べてみたものだね〜！」"
+    # s "Come to think of it, [player_name] onee-chan tried eating this in a stream before~!"
+    s "「そういえば、これはかこの[player_name]おねえちゃんの配信で食べてみたものだね〜！」"
 
 # game/r1_7_11.rpy:136
 translate japanese r1_7_11_be230182:
@@ -242,8 +242,8 @@ translate japanese r1_7_11_be230182:
 # game/r1_7_11.rpy:140
 translate japanese r1_7_11_f7d3e7b4:
 
-    # s "Hitona onee-chan streams food reviews, right?"
-    s "「ひとなおねえちゃんはコンビニレビュー配信をやってるんだよね？」"
+    # s "[player_name] onee-chan streams food reviews, right?"
+    s "「[player_name]おねえちゃんはコンビニレビュー配信をやってるんだよね？」"
 
 # game/r1_7_11.rpy:142
 translate japanese r1_7_11_c3a8fcf1:
@@ -255,19 +255,19 @@ translate japanese r1_7_11_c3a8fcf1:
 translate japanese r1_7_11_3c6a4b02:
 
     # s "Whenever Shiraishi watches those streams, Shiraishi always thinks about how many snacks Shiraishi hasn’t tried yet!"
-    s "「ひとなお姉ちゃんの配信を見る度ね、白石はまだ食べたことないお菓子が幾つかなってよく考えるんだ！」"
+    s "「[player_name]お姉ちゃんの配信を見る度ね、白石はまだ食べたことないお菓子が幾つかなってよく考えるんだ！」"
 
 # game/r1_7_11.rpy:144
 translate japanese r1_7_11_456b5af9:
 
-    # s "Everything always looks so delicious! And Hitona onee-chan’s reactions are priceless! It makes Shiraishi want to watch it over and over again!"
-    s "「全部すごく美味そう！それにひとなお姉ちゃんの反応は二つと無く尊い！一再ならず見たくなる！」"
+    # s "Everything always looks so delicious! And [player_name] onee-chan’s reactions are priceless! It makes Shiraishi want to watch it over and over again!"
+    s "「全部すごく美味そう！それに[player_name]お姉ちゃんの反応は二つと無く尊い！一再ならず見たくなる！」"
 
 # game/r1_7_11.rpy:144
 translate japanese r1_7_11_60cc16d3:
 
-    # s "With how some snacks make Hitona onee-chan really excited, while others oddly have no taste, Shiraishi can never wait for Hitona onee-chan’s rating!"
-    s "「味のないお菓子もあればひとなお姉ちゃんをわくわくさせるお菓子もあるなんて、どんなお菓子でもいつも評価を待ちきれない！」"
+    # s "With how some snacks make [player_name] onee-chan really excited, while others oddly have no taste, Shiraishi can never wait for [player_name] onee-chan’s rating!"
+    s "「味のないお菓子もあれば[player_name]お姉ちゃんをわくわくさせるお菓子もあるなんて、どんなお菓子でもいつも評価を待ちきれない！」"
 
 # game/r1_7_11.rpy:144
 translate japanese r1_7_11_9feee21e:

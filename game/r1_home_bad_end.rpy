@@ -17,7 +17,7 @@ label r1_home_bad_end:
 
     p "Let’s go then. Which way do we go?"
 
-    s "Don’t worry, Hitona onee-chan. Just, follow me."
+    s "Don’t worry, [player_name] onee-chan. Just, follow me." id r1_home_bad_end_5929b738
 
     "Saying that, Shiraishi stood up and led the way."
 
@@ -31,7 +31,7 @@ label r1_home_bad_end:
 
     show hitona1 smile1 with dissolve
 
-    s "It’s okay, Hitona onee-chan. We’ll be there soon."
+    s "It’s okay, [player_name] onee-chan. We’ll be there soon." id r1_home_bad_end_fb854112
 
     scene bg intersection evening with dissolve
 
@@ -43,7 +43,7 @@ label r1_home_bad_end:
 
     "Without turning around, she stopped in place."
 
-    s "Hitona onee-chan, I really had a lot of fun today."
+    s "[player_name] onee-chan, I really had a lot of fun today." id r1_home_bad_end_53a1cc0b
 
     s "I hope we can do something again, someday! See you!"
 

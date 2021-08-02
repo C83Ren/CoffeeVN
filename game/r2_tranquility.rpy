@@ -158,7 +158,7 @@ label r2_tranquility_after_battle:
 
     show hitona2 idle
 
-    e "Well don’t mind him, Hitona. Let’s just find that thing."
+    e "Well don’t mind him, [player_name]. Let’s just find that thing." id r2_tranquility_after_battle_a7321d59
 
     e "Remember, {b}“What you seek lies deep in the water.”{/b}"
 
@@ -292,7 +292,7 @@ label tranquility_pond_1:
 
     p "You can’t swim, can you?"
 
-    e "You can’t swim, can you, Hitona?"
+    e "You can’t swim, can you, [player_name]?" id tranquility_pond_1_370fa0b0
 
     p "..."
 
@@ -547,7 +547,7 @@ label tranquility_spot_3_1:
 
         show hitona2 angry with dissolve
 
-        e "Hitona, do you really think that’s a wall?"
+        e "[player_name], do you really think that’s a wall?" id tranquility_spot_3_1_58ad90db
 
         "Saying that, Eve pushed me from behind towards the black wall."
 
@@ -559,7 +559,7 @@ label tranquility_spot_3_1:
 
         show hitona2 smile1
 
-        e "Catch one Hitona! We can use it as bait!"
+        e "Catch one [player_name]! We can use it as bait!" id tranquility_spot_3_1_c8a4df07
 
         p "..."
 
@@ -586,7 +586,7 @@ label tranquility_spot_3_1:
 
         show hitona2 angry with dissolve
 
-        e "Hitona, do you really think that’s a wall?"
+        e "[player_name], do you really think that’s a wall?" id tranquility_spot_3_1_58ad90db_1
 
         "Saying that, Eve pushed me from behind towards the black wall."
 
@@ -613,7 +613,7 @@ label tranquility_spot_3_2:
 
         show hitona2 idle with dissolve
 
-        e "Surely now you know that isn’t a black wall, right Hitona?"
+        e "Surely now you know that isn’t a black wall, right [player_name]?" id tranquility_spot_3_2_be0c066e
 
         p "I know!"
 
@@ -645,7 +645,7 @@ label tranquility_spot_3_2:
 
         show hitona2 angry with dissolve
 
-        e "Are you testing your luck again hoping that there won’t be any cockroaches, Hitona?"
+        e "Are you testing your luck again hoping that there won’t be any cockroaches, [player_name]?" id tranquility_spot_3_2_06d12f3f
 
         p "Shut up will you!"
 
@@ -738,7 +738,7 @@ label tranquility_after_fishing:
 
     show hitona2 angry with dissolve
 
-    e "Yeah I can see that Hitona, calm down."
+    e "Yeah I can see that [player_name], calm down." id tranquility_after_fishing_faaaff0d
 
     p "You’re always so crazy, so why are you suddenly calm now?"
 
@@ -929,7 +929,7 @@ label tranquility_waterfall:
 
     e "Congratulations, the wind didn’t lie this time."
 
-    e "You are indeed the second salvation that will save this world, Hitona."
+    e "You are indeed the second salvation that will save this world, [player_name]." id tranquility_waterfall_4d270a6e
 
     p "..."
 

@@ -109,8 +109,8 @@ translate japanese r3_hub_5751978d:
 # game/r3_hub.rpy:53
 translate japanese r3_hub_7e235c7e:
 
-    # p "Okay...uhh...I’m Hitona, Hitona Kohigashi."
-    p "「はい…えっと…ひとな…小東ひとなですけど」"
+    # p "Okay...uhh...I’m [player_name], [player_name] Kohigashi."
+    p "「はい…えっと…[player_name]…小東[player_name]ですけど」"
 
 # game/r3_hub.rpy:55
 translate japanese r3_hub_48ed2eca:
@@ -195,7 +195,7 @@ translate japanese r3_hub_a0813b78:
 
     # p "What did you steal from me anyways?"
     p "「えっと、リオスさん、質問がありますが」"
-    p "「ひとなに何を奪ったのですか？」"
+    p "「[player_name]に何を奪ったのですか？」"
 
 # game/r3_hub.rpy:89
 translate japanese r3_hub_3f86d1be:

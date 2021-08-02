@@ -14,7 +14,7 @@ translate japanese r3_river_f60cede2:
 translate japanese r3_river_96b07c9d:
 
     # p "Eh? Me?"
-    p "「えぇ？ひとなのこと？」"
+    p "「えぇ？[player_name]のこと？」"
 
 # game/r3_river.rpy:22
 translate japanese r3_river_934c81e0:
@@ -764,7 +764,7 @@ translate japanese river_date_399568dc:
 translate japanese river_date_bff49f4b:
 
     # p "I can’t believe I said that...but at least she looks happy"
-    p "「ひとな、今、本当にそれを言いましたの？でも嬉しそうですね」"
+    p "「[player_name]、今、本当にそれを言いましたの？でも嬉しそうですね」"
 
 # game/r3_river.rpy:416
 translate japanese river_date_64e3eab6:
@@ -1004,7 +1004,7 @@ translate japanese river_girlfriend_0b0ba5e7:
 translate japanese river_girlfriend_48a4f283:
 
     # p "I put my everything on that confession!"
-    p "「ひとなの全てを込めた告白だよ！」"
+    p "「[player_name]の全てを込めた告白だよ！」"
 
 # game/r3_river.rpy:546
 translate japanese river_girlfriend_6f48042c:
@@ -1220,4 +1220,4 @@ translate japanese strings:
 
     # game/r3_river.rpy:452
     old "“Go out with me!”"
-    new "「ひとなと付き合ってください！」"
+    new "「[player_name]と付き合ってください！」"
