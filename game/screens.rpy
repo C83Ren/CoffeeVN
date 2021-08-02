@@ -782,6 +782,7 @@ screen preferences():
                     label _("Language")
                     textbutton "{font=DejaVuSans.ttf}English{/font}" action Language(None)
                     textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}" action Language("japanese")
+                    textbutton "{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action Language("simplified_chinese")
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
