@@ -1609,7 +1609,7 @@ screen cg():
                     $ s = "cg %d" % slot
                     button:
                         if getattr(persistent, 'cg_unlocked_%d' % slot):
-                            action g.Action(s)
+                            action Function(renpy.show_screen, 'replay_cg', which=slot)
                         else:
                             action Function(renpy.show_screen, 'alert', message=globals()['cg_hint_%d' % slot])
 
