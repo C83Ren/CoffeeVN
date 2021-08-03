@@ -29,7 +29,7 @@
     new "応援のルートで、後悔しない"
 
     # game/cg.rpy:61
-    old "Visit the Tranqulity Region during the Joy Route."
+    old "Visit the Tranquility Region during the Joy Route."
     new "喜びのルートで、静穏地域に行く"
 
     # game/cg.rpy:65

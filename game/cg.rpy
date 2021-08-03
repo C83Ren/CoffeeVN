@@ -58,7 +58,7 @@ init 0:
     image cg 14 unscaled = Image("images/bg tranquility front.png")
     image cg 14 = "cg 14 unscaled"
     image cg spreg1 = "cg 14 unscaled"
-    define cg_hint_14 = _("Visit the Tranqulity Region during the Joy Route.")
+    define cg_hint_14 = _("Visit the Tranquility Region during the Joy Route.")
     image cg 15 unscaled = Image("images/bg turmoil front.png")
     image cg 15 = "cg 15 unscaled"
     image cg spreg2 = "cg 15 unscaled"
