@@ -228,7 +228,10 @@ label bomb_choice:
     image bomb_maze = "images/maze/[img_maze].png"
     show bomb_maze behind countdown:
         truecenter zoom 1.5
-    with Fade(0.3, sleep_time, 0.3)
+    if sleep_time > 0.6:
+        $ renpy.transition(Fade(0.3, sleep_time - 0.6, 0.3))
+    else:
+        $ renpy.transition(Dissolve(sleep_time))
     $ renpy.pause(delay=sleep_time, hard=True)
     stop sound
 
