@@ -1,13 +1,13 @@
 init +1 python:
     g = Gallery()
 
-    for i in range(21):
+    for i in range(22):
         g.button("cg %d" % (i + 1))
         g.condition("persistent.cg_unlocked_%d" % (i + 1))
         g.image(ImageReference("cg %d" % (i + 1)))
 
 init +2 python:
-    for i in range(21):
+    for i in range(22):
         renpy.image("cg %d thumbnail" % (i + 1), im.Scale(ImageReference("cg %d unscaled" % (i + 1)), 384, 216))
     renpy.image("cg locked", im.Scale(Image("cg locked.png"), 384, 216))
 
@@ -38,4 +38,3 @@ label show_cg(which, if_unlocked):
     $ _skipping = True
 
     return
-

@@ -1593,8 +1593,8 @@ screen cg():
             order_reverse True
 
             $ page = int(persistent.cg_page) - 1
-            $ rows = 2 if page < 3 else 1
-            $ cols = 3
+            $ rows = 2
+            $ cols = 3 if page < 3 else 2
 
             grid cols rows:
                 style_prefix "slot"

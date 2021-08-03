@@ -84,10 +84,14 @@ init 0:
     image cg 20 = Transform(Image("images/r3_art_reel/art_13.png"), zoom=0.5)
     define cg_hint_20 = _("Finish the Memories Route.")
     image cg artreel4 = "cg 20"
-    image cg 21 unscaled = Image("images/r3_art_reel/art_20_thumb.png")
-    image cg 21 = Transform(Image("images/r3_art_reel/art_20.png"), zoom=0.8)
+    image cg 21 unscaled = Image("images/r3_art_reel/art_19_thumb.png")
+    image cg 21 = Transform(Image("images/r3_art_reel/art_19.png"), zoom=0.8)
     define cg_hint_21 = _("Finish the Memories Route.")
     image cg artreel5 = "cg 21"
+    image cg 22 unscaled = Image("images/r3_art_reel/art_20_thumb.png")
+    image cg 22 = Transform(Image("images/r3_art_reel/art_20.png"), zoom=0.8)
+    define cg_hint_22 = _("Finish the Memories Route.")
+    image cg artreel6 = "cg 22"
 
 
-    define cg_list = ["hitonadress", "anniv", "grandspell", "hitonamemory", "truehitona", "regret1", "regret2", "regret3", "regret4", "noregret1", "noregret2", "noregret3", "noregret4", "spreg1", "spreg2", "spreg3", "artreel1", "artreel2", "artreel3", "artreel4", "artreel5"]
+    define cg_list = ["hitonadress", "anniv", "grandspell", "hitonamemory", "truehitona", "regret1", "regret2", "regret3", "regret4", "noregret1", "noregret2", "noregret3", "noregret4", "spreg1", "spreg2", "spreg3", "artreel1", "artreel2", "artreel3", "artreel4", "artreel5", "artreel6"]

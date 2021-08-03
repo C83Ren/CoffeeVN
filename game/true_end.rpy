@@ -53,7 +53,7 @@ label end_14: # lazy and don't want to fix tl tags
     $ persistent.ed_unlocked_4 = True
     if _in_replay:
         play music room_bgm
-        
+
     scene bg intersection day with dissolve
 
     "While heading to the park…"
@@ -192,6 +192,7 @@ label true_end_combination_unlocked:
     call show_cg("artreel3", True) from _call_show_cg_19
     call show_cg("artreel4", True) from _call_show_cg_20
     call show_cg("artreel5", True) from _call_show_cg_21
+    call show_cg("artreel6", True) from _call_show_cg_42
     call show_cg("hitonamemory", True) from _call_show_cg_22
 
 
