@@ -3,7 +3,7 @@ label end_3:
     $ save_enabled = True
     scene bg hub with Fade(1.0, 1.0, 1.0)
 
-    play music r3end_bgm fadein 2.0
+    stop music fadeout 1.0
 
     show lios front at lios_right with dissolve
     show hitona3 smile hat at hitona_left with dissolve
@@ -27,6 +27,8 @@ label end_3:
     pi "I leave the rest to you, Lios."
 
     p "What’s happening?? I did finish the challenge...right?"
+
+    play music r3end_bgm fadein 2.0
 
     l "Yeah, don’t worry, congratulations on finishing every challenge there is~"
 
