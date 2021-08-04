@@ -315,6 +315,8 @@ label final_good_end:
     p "{i}What a dream that was...{/i}"
 
     play sound messagetone
+    window hide
+    $ renpy.pause(2.0, hard=True)
 
     p "{i}A text?{/i}"
 
