@@ -37,7 +37,7 @@
     new "喜び　最後の戦い"
 
     # game/music.rpy:1
-    old "Joy - King"
+    old "Joy - King Theme"
     new "喜び　王のテーマ"
 
     # game/music.rpy:1
