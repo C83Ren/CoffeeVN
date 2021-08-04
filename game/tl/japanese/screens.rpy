@@ -299,3 +299,7 @@
     # game/screens.rpy:1205
     old "Close"
     new "閉じる"
+
+    # game/screens.rpy:1786
+    old "Now Playing"
+    new "現在再生中"

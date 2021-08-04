@@ -337,6 +337,8 @@ screen navigation():
 
             textbutton _("Endings") action ShowMenu("ed") style "nav_button"
 
+            textbutton _("Music") action ShowMenu("music_room") style "nav_button"
+
         textbutton _("Preferences") action ShowMenu("preferences") style "nav_button"
 
         if _in_replay:
@@ -1752,6 +1754,43 @@ screen ed():
                     #textbutton "[page]" action EDPage(page)
 
                 #textbutton ">" action EDPageNext(1)
+
+################################################################################
+## Music Room
+################################################################################
+
+screen music_room():
+
+    tag menu
+    use game_menu(_("Music")):
+        style_prefix "about"
+
+        vbox:
+
+            label "[config.name!t]"
+            text _("Version [config.version!t]\n")
+
+            if gui.about:
+                text "[gui.about!t]\n"
+
+            hbox:
+                vbox xsize 700:
+                    for tag, author, file in tracks[:9]:
+                        textbutton tag action mr.Play(file)
+                vbox xsize 700:
+                    for tag, author, file in tracks[9:]:
+                        textbutton tag action mr.Play(file)
+
+            null height 40
+            hbox:
+                text _("Now Playing")
+                null width 40
+                text [tag for tag, author, file in tracks if renpy.music.get_playing('music').replace('_loop.', '_intro.') == file][0]:
+                    color gui.selected_color
+                null width 40
+                text '(' + __([author for tag, author, file in tracks if renpy.music.get_playing('music').replace('_loop.', '_intro.') == file][0]) + ')'
+
+        on "replace" action mr.Play()
 
 ################################################################################
 ## Combination Lock
