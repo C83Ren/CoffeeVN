@@ -67,11 +67,3 @@
     # game/music.rpy:1
     old "True End - Present"
     new "TRUE END　プレゼント"
-# TODO: Translation updated at 2021-08-03 18:48
-
-translate japanese strings:
-
-    # game/music.rpy:1
-    old "Joy - King Theme"
-    new "Joy - King Theme"
-
