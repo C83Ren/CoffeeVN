@@ -230,7 +230,6 @@ label handle_key_lock(index):
     return
 
 label handle_key_lock_click(index, expected):
-    $ print(index, expected)
     if index == expected:
         $ key_lock_active = False
         play sound keyunlock
