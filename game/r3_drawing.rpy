@@ -117,6 +117,7 @@ label r3_drawing:
     hide lios
 
     play sound quizstart
+    window hide
     $ renpy.pause(3.0, hard=True)
 
     "START"

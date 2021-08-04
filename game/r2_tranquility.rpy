@@ -915,10 +915,10 @@ label tranquility_waterfall:
 
     show hitona2 idle
 
-    play sound magiccasting
-
     e "Wind among us, elevate!"
 
+    window hide
+    play sound magiccasting
     $ renpy.pause(2.0, hard=True)
 
     "As Eve cast her the spell, a shining blue orb flew up from the hole, and landed gently in my open hands."

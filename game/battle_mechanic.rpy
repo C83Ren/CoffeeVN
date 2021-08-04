@@ -539,6 +539,7 @@ label fight_log:
                 $ self["hp"] = 0
             show screen multi_stat
             #play sound fireball
+            window hide
             $ renpy.play(audio.fireball, channel='sound')
             $ renpy.pause(2.0, hard=True)
             $ hit = self
