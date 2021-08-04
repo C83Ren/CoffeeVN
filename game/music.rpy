@@ -1,6 +1,6 @@
 define tracks = [
     (_('Main Theme'), _('DOVA-SYNDROME'), 'audio/Route_1_-_movie_theme.mp3'),
-    (_('Support - Room'), _('DOVA-SYNDROME'), 'audio/Route_1_-_Track_1.ogg'),
+    (_('Support - Room'), _('Luttii'), 'audio/Route_1_-_Track_1.ogg'),
     (_('Support - Shiraishi Theme'), _('DOVA-SYNDROME'), 'audio/Route_1_-_hitona_theme.mp3'),
     (_('Support - Game Arcade'), _('DOVA-SYNDROME'), 'audio/Route_1_-_game_arcade.mp3'),
     (_('Support - Horror'), _('DOVA-SYNDROME'), 'audio/Route_1_-_horror_theme.mp3'),
