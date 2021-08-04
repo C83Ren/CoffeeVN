@@ -186,7 +186,7 @@ screen input(prompt):
             ypos gui.dialogue_ypos
 
             text prompt style "input_prompt"
-            input id "input"
+            input id "input" copypaste True
 
 style input_prompt is default
 
