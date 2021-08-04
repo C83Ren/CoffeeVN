@@ -10,6 +10,7 @@ define credits_names = {
     'lemon': _('ILLimN'),
     'lobster': _('Lobsteranian'),
     'xn': _('名前はなんだっけ'),
+    'kimagure': _('きまぐれアフター'),
 
     'company': _('Black Rabbit Black Company'),
 
@@ -94,7 +95,7 @@ screen credits_display():
         use credits_entry(_("Scenario"), ["rabbit", "wari"])
         use credits_entry(_("Translation"), ["kosa", "xn"])
         use credits_entry(_("Editing"), ["rabbit", "xn"])
-        use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2"])
+        use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2", "kimagure"])
         use credits_entry(_("Music"), ["luttii", "dova"])
         use credits_entry(_("Sound"), ["zap"])
         use credits_entry(_("Programming"), ["rabbit", "cryo", "xn"])
@@ -136,7 +137,7 @@ screen credits_message_display():
 define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
 # use show screen credits_offset(x) until the red bar is just not visible
-define credits_height = 6326
+define credits_height = 6383
 
 transform credits_scroll:
     xalign 0.5
