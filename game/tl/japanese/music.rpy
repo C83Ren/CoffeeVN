@@ -5,12 +5,12 @@
     new "メインテーマ"
 
     # game/music.rpy:1
-    old "Support - Shiraishi Theme"
-    new "応援　白石のテーマ"
+    old "Support - Room"
+    new "応援　部屋"
 
     # game/music.rpy:1
-    old "Support - Hitona Theme"
-    new "応援　ひとなのテーマ"
+    old "Support - Shiraishi Theme"
+    new "応援　白石のテーマ"
 
     # game/music.rpy:1
     old "Support - Game Arcade"
