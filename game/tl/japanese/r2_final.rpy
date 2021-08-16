@@ -543,7 +543,7 @@ translate japanese final_good_end_ad28576a:
 translate japanese final_good_end_6133d45d:
 
     # nvl_narrator "Wahahahaha! You should trust The Great Majna Eden Bat Azuma Nula Sedun more!"
-    nvl_narrator "　わははははは！この偉大な壱々零漆（マジュナ・エデン・バット・アズマ・ヌラ・セドゥン）をもっと信じて！"
+    nvl_narrator "　わははははは！この偉大な{rb}　\ \ \ \ 壱　々　零　漆\ \ \ \ \ \ 　{/rb}{rt}マジュナ・エデン・バット・アズマ・ヌラ・セドゥン{/rt}をもっと信じて！"
     nvl_narrator "　このニートキングはこの王国を栄えるように頑張るね〜"
 
 # game/r2_final.rpy:297

@@ -107,3 +107,7 @@ translate japanese strings:
     # game/credits.rpy:1
     old "Hitona Kohigashi"
     new "小東ひとな"
+
+    # game/credits.rpy:1
+    old "きまぐれアフター"
+    new "きまぐれアフター様"

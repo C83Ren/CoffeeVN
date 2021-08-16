@@ -314,7 +314,7 @@ translate japanese bomb_fail_b00bb0a4:
 translate japanese bomb_fail_381b67cc:
 
     # p "After all that, you still have the energy to get angry huh, Pierrot."
-    p 「まだ怒る気力がありますよね、ピエロさん」""
+    p "「まだ怒る気力がありますよね、ピエロさん」"
 
 # game/r3_bomb.rpy:164
 translate japanese bomb_fail_a6c69716:

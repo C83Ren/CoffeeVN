@@ -21,7 +21,7 @@ translate japanese r1_regret_choice_e9e4f952:
 translate japanese r1_regret_choice_cc9956f1:
 
     # p "[regret_choice!t]"
-    p "[regret_choice!t]"
+    p "「[regret_choice!t]」"
 
 # game/r1_regret_choice.rpy:20
 translate japanese r1_regret_choice_584030bd:

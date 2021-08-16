@@ -49,6 +49,7 @@ label r1_home_bad_end:
 
     p "Eh?"
 
+    window hide
     play sound phonecall
     $ renpy.pause(2.0, hard=True)
 

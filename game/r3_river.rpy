@@ -631,10 +631,11 @@ label river_fail:
     l "Well, a fail is a fail, so off you go."
 
     stop music fadeout 1.0
+    stop sound fadeout 1.0
 
     scene bg room with Fade(1.0, 1.0, 1.0)
 
-    play music room_bgm fadein 3.0 
+    play music room_bgm fadein 3.0
 
     "When I opened my eyes, I was holding the doorknob of my own room."
 

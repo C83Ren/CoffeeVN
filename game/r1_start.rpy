@@ -280,6 +280,7 @@ label r1_start:
 
     "I put the first coin in."
 
+    window hide
     play sound quizquestion
     $ renpy.pause(2.0, hard=True)
 
@@ -291,6 +292,7 @@ label r1_start:
 
     "As the crane went down, Shiraishi was beside me, fidgeting and staring with hopeful eyes..."
 
+    window hide
     play sound falsechoice_long
     $renpy.pause(2.0, hard=True)
     #Crane sfx
@@ -309,6 +311,7 @@ label r1_start:
 
     "I put a second coin in."
 
+    window hide
     play sound quizquestion
     $ renpy.pause(2.0, hard=True)
 
@@ -320,6 +323,7 @@ label r1_start:
 
     p "{i}Ahh, doesn’t seem like it’s gonna work... sigh...{/i}"
 
+    window hide
     play sound cranegame
     queue sound cranegame
     queue sound cranegame

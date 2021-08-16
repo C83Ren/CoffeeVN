@@ -165,6 +165,7 @@ label final_no_grand_spell:
 
     e "Then, let’s try our best"
 
+    window hide
     play sound absolutespell
 
     $ renpy.pause(2.0, hard=True)
@@ -210,6 +211,7 @@ label end_2 hide:
 
     e "Okay let’s do it!" id final_grand_spell_4470a325
 
+    window hide
     play sound absolutespell
 
     $ renpy.pause(2.0, hard=True)
@@ -233,7 +235,7 @@ label end_2 hide:
     "As we cast the Grand Spell, a rainbow ball of magic from me and pitch black ball of magic from Eve combined together, and filled the castle with a blinding light."
 
     window hide
-    $ renpy.pause(2.0)
+    scene bg castle room with Fade(0.5, 3.0, 0.5, color='#fff')
 
     "When the light faded away, King Achnost had already been sent away to the afterlife, but..."
 
@@ -245,7 +247,6 @@ label end_2 hide:
         jump final_bad_end
 
 label final_bad_end:
-    scene black with dissolve
     play music r2bad_bgm fadein 1.0
 
     "...was lying motionlessly on the ground."
@@ -262,7 +263,6 @@ label final_bad_end:
 
 label final_good_end:
     stop music fadeout 1.0
-    scene bg castle room with dissolve
 
     p "Eh?"
 
@@ -315,6 +315,8 @@ label final_good_end:
     p "{i}What a dream that was...{/i}"
 
     play sound messagetone
+    window hide
+    $ renpy.pause(2.0, hard=True)
 
     p "{i}A text?{/i}"
 

@@ -10,6 +10,7 @@ define credits_names = {
     'lemon': _('ILLimN'),
     'lobster': _('Lobsteranian'),
     'xn': _('名前はなんだっけ'),
+    'kimagure': _('きまぐれアフター'),
 
     'company': _('Black Rabbit Black Company'),
 
@@ -94,7 +95,7 @@ screen credits_display():
         use credits_entry(_("Scenario"), ["rabbit", "wari"])
         use credits_entry(_("Translation"), ["kosa", "xn"])
         use credits_entry(_("Editing"), ["rabbit", "xn"])
-        use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2"])
+        use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2", "kimagure"])
         use credits_entry(_("Music"), ["luttii", "dova"])
         use credits_entry(_("Sound"), ["zap"])
         use credits_entry(_("Programming"), ["rabbit", "cryo", "xn"])
@@ -102,6 +103,13 @@ screen credits_display():
         fixed xsize 1920 ysize 1080:
             vbox xalign 0.5 yalign 0.5:
                 image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
+        frame xsize 1920 ysize 10 background '#f00' xpadding 0 ypadding 0
+
+# for figuring out height
+screen credits_offset(offset):
+    fixed:
+        use credits_display()
+        ypos -offset+1080
 
 screen credits_final():
     fixed xsize 1920 ysize 1080:
@@ -128,7 +136,8 @@ screen credits_message_display():
 
 define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
-define credits_height = 6308
+# use show screen credits_offset(x) until the red bar is just not visible
+define credits_height = 6383
 
 transform credits_scroll:
     xalign 0.5
@@ -165,7 +174,6 @@ label credits:
     show screen credits_final with dissolve
     pause
     hide screen credits_final with dissolve
-    scene black with Dissolve(2.0)
 
     $ _game_menu_screen = _old_game_menu_screen
     $ _skipping = True

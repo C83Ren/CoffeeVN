@@ -186,7 +186,7 @@ screen input(prompt):
             ypos gui.dialogue_ypos
 
             text prompt style "input_prompt"
-            input id "input"
+            input id "input" copypaste True
 
 style input_prompt is default
 
@@ -336,6 +336,8 @@ screen navigation():
             textbutton _("CG") action ShowMenu("cg") style "nav_button"
 
             textbutton _("Endings") action ShowMenu("ed") style "nav_button"
+
+            textbutton _("Music") action ShowMenu("music_room") style "nav_button"
 
         textbutton _("Preferences") action ShowMenu("preferences") style "nav_button"
 
@@ -1597,8 +1599,8 @@ screen cg():
             order_reverse True
 
             $ page = int(persistent.cg_page) - 1
-            $ rows = 2 if page < 3 else 1
-            $ cols = 3
+            $ rows = 2
+            $ cols = 3 if page < 3 else 2
 
             grid cols rows:
                 style_prefix "slot"
@@ -1613,7 +1615,7 @@ screen cg():
                     $ s = "cg %d" % slot
                     button:
                         if getattr(persistent, 'cg_unlocked_%d' % slot):
-                            action g.Action(s)
+                            action Function(renpy.show_screen, 'replay_cg', which=slot)
                         else:
                             action Function(renpy.show_screen, 'alert', message=globals()['cg_hint_%d' % slot])
 
@@ -1756,6 +1758,43 @@ screen ed():
                     #textbutton "[page]" action EDPage(page)
 
                 #textbutton ">" action EDPageNext(1)
+
+################################################################################
+## Music Room
+################################################################################
+
+screen music_room():
+
+    tag menu
+    use game_menu(_("Music")):
+        style_prefix "about"
+
+        vbox:
+
+            label "[config.name!t]"
+            text _("Version [config.version!t]\n")
+
+            if gui.about:
+                text "[gui.about!t]\n"
+
+            hbox:
+                vbox xsize 700:
+                    for tag, author, file in tracks[:9]:
+                        textbutton tag action mr.Play(file)
+                vbox xsize 700:
+                    for tag, author, file in tracks[9:]:
+                        textbutton tag action mr.Play(file)
+
+            null height 40
+            hbox:
+                text _("Now Playing")
+                null width 40
+                text [tag for tag, author, file in tracks if renpy.music.get_playing('music').replace('_loop.', '_intro.') == file][0]:
+                    color gui.selected_color
+                null width 40
+                text '(' + __([author for tag, author, file in tracks if renpy.music.get_playing('music').replace('_loop.', '_intro.') == file][0]) + ')'
+
+        on "replace" action mr.Play()
 
 ################################################################################
 ## Combination Lock
