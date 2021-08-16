@@ -447,7 +447,10 @@ screen main_menu_background():
                         image Transform(Image('images/keys/note_r%d.png' % i), rotate=-10, xpos=120, ypos=110)
                         image Transform(Image('images/keys/key_r%d hover.png' % i), zoom=0.3, rotate=35)
 
-    image Transform(Image(gui.title_image), zoom=0.3) xalign 1.0 yalign 0.0
+    if _preferences.language == 'simplified_chinese':
+        image Transform(Image(gui.title_image_zh), zoom=0.3) xalign 1.0 yalign 0.0
+    else:
+        image Transform(Image(gui.title_image), zoom=0.3) xalign 1.0 yalign 0.0
 
 ## Game Menu screen ############################################################
 ##
