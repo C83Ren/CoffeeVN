@@ -164,7 +164,7 @@ translate simplified_chinese r3_bomb_221ac56d:
 translate simplified_chinese r3_bomb_efd1cc3d:
 
     # pi "It can cause you to forget even the most obvious things."
-    pi "「{b}就算是理所当然的东西{/b}也一样会忘记」"
+    pi "「{b}就算是理所当然的事情{/b}也一样会忘记」"
 
 # game/r3_bomb.rpy:74
 translate simplified_chinese r3_bomb_3d2e3340:
@@ -206,7 +206,7 @@ translate simplified_chinese r3_bomb_dcb325c3:
 translate simplified_chinese r3_bomb_fbe65a74:
 
     # l "You have to escape from the maze within the time limit. If you’re too slow..."
-    l "「要在时间限制内逃离这个迷宫，要是失败的话…」"
+    l "「规则是时间限制内逃离这个迷宫，要是失败的话…」"
 
 # game/r3_bomb.rpy:98
 translate simplified_chinese r3_bomb_1b3c8a5e:
@@ -249,7 +249,7 @@ translate simplified_chinese bomb_fail_7e87a815:
 
     # "{size=100}BOOM!{/size}"
     "{size=100}爆炸！！{/size}"
- 
+
 # game/r3_bomb.rpy:134
 translate simplified_chinese bomb_fail_1d30bea9:
 

@@ -68,7 +68,7 @@ translate simplified_chinese end_14_a9422ad8:
 translate simplified_chinese end_14_71024505:
 
     # "When I returned, I found senpai standing outside my door waiting for me."
-    "一回去就看到前辈在门前站着。"
+    "人鱼一回去就看到前辈在门前站着。"
 
 # game/true_end.rpy:38
 translate simplified_chinese end_14_257b0f9e:
@@ -116,7 +116,7 @@ translate simplified_chinese end_14_12c09cec:
 translate simplified_chinese end_14_b7ae9a6b:
 
     # "I opened the door, and the two of us went inside."
-    "总之我们先进屋子里吧。"
+    "人鱼打开了门，两人走进了家中。"
 
 # game/true_end.rpy:56
 translate simplified_chinese end_14_6ea2015d:

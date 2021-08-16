@@ -8,13 +8,13 @@ translate simplified_chinese quiz_pic_check_2eaaa4a4:
 translate simplified_chinese quiz_pic_showing_c98c589d:
 
     # "CORRECT"
-    "正确"
+    "正 确"
 
 # game/quiz_pic_mechanic.rpy:67
 translate simplified_chinese quiz_pic_showing_f2efa84f:
 
     # "WRONG"
-    "错误"
+    "错 误"
 
 translate simplified_chinese strings:
 

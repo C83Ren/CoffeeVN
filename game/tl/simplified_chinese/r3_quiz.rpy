@@ -104,19 +104,19 @@ translate simplified_chinese quiz_fail_1c51c64f:
 translate simplified_chinese quiz_fail_020c556b:
 
     # p "{i}Eh? I’m in...my room? On my bed...{/i}"
-    p "（咦，这里是…人鱼的房间？还在床上…）"
+    p "（咦，这里是…人鱼的房间？为什么人鱼会在床上…）"
 
 # game/r3_quiz.rpy:71
 translate simplified_chinese quiz_fail_15d6f95a:
 
     # p "{i}Even if that was a dream, I wonder what was stolen...{/i}"
-    p "（虽说是个梦，可到底是什么被偷走了呢…）"
+    p "（就算那是个梦，人鱼也想知道到底是什么东西被偷了…）"
 
 # game/r3_quiz.rpy:73
 translate simplified_chinese quiz_fail_c453ade6:
 
     # "I looked up at my phone screen."
-    "看了看手机。"
+    "看了看手机画面。"
 
 # game/r3_quiz.rpy:75
 translate simplified_chinese quiz_fail_c8ea8a4a:
@@ -128,13 +128,13 @@ translate simplified_chinese quiz_fail_c8ea8a4a:
 translate simplified_chinese quiz_fail_fa5738e3:
 
     # p "AAAAAAA I’M SO SORRY SENPAI!"
-    p "「啊啊啊，前辈对不住了！！！！」"
+    p "「啊啊啊，前辈对不起！！！！」"
 
 # game/r3_quiz.rpy:79
 translate simplified_chinese quiz_fail_c98675fc:
 
     # "I rushed out of my room in a hurry to meet senpai."
-    "冲出房间向公园跑去。一路上那个梦?一直盘旋在脑海中。"
+    "从房间跑去公园的途中，那个梦？一直盘旋在人鱼的脑海里。"
 
 # game/r3_quiz.rpy:83
 translate simplified_chinese quiz_fail_62f7d1de:

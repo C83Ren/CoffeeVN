@@ -8,13 +8,13 @@ translate simplified_chinese quiz_check_2eaaa4a4:
 translate simplified_chinese quiz_1_0bb6e3a3:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:53
 translate simplified_chinese quiz_1_fd44eb4a:
 
     # "{b}CORRECT{/b}"
-    "正确"
+    "正 确"
 
 # game/quiz_mechanic.rpy:54
 translate simplified_chinese quiz_1_c88cc264:
@@ -26,13 +26,13 @@ translate simplified_chinese quiz_1_c88cc264:
 translate simplified_chinese quiz_1_0bb6e3a3_1:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:66
 translate simplified_chinese quiz_2_fd44eb4a:
 
     # "{b}CORRECT{/b}"
-    "正确"
+    "正 确"
 
 # game/quiz_mechanic.rpy:67
 translate simplified_chinese quiz_2_f77ee973:
@@ -44,25 +44,25 @@ translate simplified_chinese quiz_2_f77ee973:
 translate simplified_chinese quiz_2_0bb6e3a3:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:75
 translate simplified_chinese quiz_2_0bb6e3a3_1:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:83
 translate simplified_chinese quiz_3_0bb6e3a3:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:87
 translate simplified_chinese quiz_3_fd44eb4a:
 
     # "{b}CORRECT{/b}"
-    "正确"
+    "正 确"
 
 # game/quiz_mechanic.rpy:88
 translate simplified_chinese quiz_3_a1e88344:
@@ -74,25 +74,25 @@ translate simplified_chinese quiz_3_a1e88344:
 translate simplified_chinese quiz_3_0bb6e3a3_1:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:100
 translate simplified_chinese quiz_4_0bb6e3a3:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:104
 translate simplified_chinese quiz_4_0bb6e3a3_1:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:108
 translate simplified_chinese quiz_4_fd44eb4a:
 
     # "{b}CORRECT{/b}"
-    "正确"
+    "正 确"
 
 # game/quiz_mechanic.rpy:109
 translate simplified_chinese quiz_4_e483b867:
@@ -104,7 +104,7 @@ translate simplified_chinese quiz_4_e483b867:
 translate simplified_chinese quiz_5_fd44eb4a:
 
     # "{b}CORRECT{/b}"
-    "正确"
+    "正 确"
 
 # game/quiz_mechanic.rpy:124
 translate simplified_chinese quiz_5_10877260:
@@ -116,25 +116,25 @@ translate simplified_chinese quiz_5_10877260:
 translate simplified_chinese quiz_5_0bb6e3a3:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:132
 translate simplified_chinese quiz_5_0bb6e3a3_1:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:142
 translate simplified_chinese quiz_6_0bb6e3a3:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 # game/quiz_mechanic.rpy:146
 translate simplified_chinese quiz_6_fd44eb4a:
 
     # "{b}CORRECT{/b}"
-    "正确"
+    "正 确"
 
 # game/quiz_mechanic.rpy:147
 translate simplified_chinese quiz_6_643d194a:
@@ -146,7 +146,7 @@ translate simplified_chinese quiz_6_643d194a:
 translate simplified_chinese quiz_6_0bb6e3a3_1:
 
     # "{b}WRONG{/b}"
-    "错误"
+    "错 误"
 
 translate simplified_chinese strings:
 
@@ -188,11 +188,11 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:79
     old "2nd"
-    new "第二次"
+    new "第2次"
 
     # game/quiz_mechanic.rpy:79
     old "6th"
-    new "第六次"
+    new "第6次"
 
     # game/quiz_mechanic.rpy:79
     old "11th"
@@ -200,7 +200,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:96
     old "What was the prize in the very first online crane machine Hitona Kohigashi attempted?"
-    new "小东人鱼最先挑战的抓娃娃机游戏的奖品是什么"
+    new "小东人鱼最先挑战的抓娃娃机游戏的奖品是什么？"
 
     # game/quiz_mechanic.rpy:96
     old "Hatsune Miku Birthday Figure 2020~Pop idol ver~"
@@ -220,7 +220,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:119
     old "Honmono no Sign"
-    new "『真人的签名』"
+    new "『真正的签名』"
 
     # game/quiz_mechanic.rpy:119
     old "Honjin no Sign"
@@ -236,7 +236,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:138
     old "In the game called Uma Musume, during the first time that Hitona Kohigashi tried to raise Maruzensky, she came in 5th place during the Nippon Derby. Who came in first place?"
-    new "在马娘里、小东人鱼第一次养成的丸善斯基在日本德比赛中获得第五名、获得第一名的是谁？"
+    new "在赛马娘里、小东人鱼第一次养成的丸善斯基在日本德比中获得第五名、那么获得第一名的是谁？"
 
     # game/quiz_mechanic.rpy:138
     old "Narita Taishin"

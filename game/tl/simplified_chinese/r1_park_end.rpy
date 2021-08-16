@@ -332,7 +332,7 @@ translate simplified_chinese end_1_41b7f039:
 translate simplified_chinese end_1_ce9d976d:
 
     # "Rather, I can’t really make out Shiraishi’s figure."
-    "过了一会儿，人鱼甚至快要看不到白石的身影了。"
+    "不如说，人鱼快要看不到白石的身影了。"
 
 # game/r1_park_end.rpy:185
 translate simplified_chinese end_1_eb9d1a01:
@@ -350,7 +350,7 @@ translate simplified_chinese end_1_6161b825:
 translate simplified_chinese end_1_3ed0e5b8:
 
     # "My vision returned to normal, but Shiraishi was no longer there."
-    "人鱼的视野恢复了正常，可是白石已经不见了。"
+    "人鱼的视线恢复了正常，可是白石已经不见了。"
 
 # game/r1_park_end.rpy:197
 translate simplified_chinese end_1_0a1efa5e:
