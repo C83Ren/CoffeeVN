@@ -2,37 +2,37 @@
 translate simplified_chinese r2_tranquility_4f52f33c:
 
     # e "Huh? Why is the army here?"
-    e "「あれ？なんで軍隊がここに？」"
+    e "「咦，为什么军队会在这里？」"
 
 # game/r2_tranquility.rpy:26
 translate simplified_chinese r2_tranquility_55ab18bf:
 
     # p "Eh really? They are probably searching for you..."
-    p "「え、マジ？イーブちゃんを探してるかも…」"
+    p "「诶，是真的吗？或许是在找小伊芙…」"
 
 # game/r2_tranquility.rpy:28
 translate simplified_chinese r2_tranquility_0639e16b:
 
     # "But as I said that, Eve had already left to greet the soldiers."
-    "と言ったが、イーブはもう挨拶に行ってしまった。"
+    "话音未落，伊芙就上去打招呼了。"
 
 # game/r2_tranquility.rpy:32
 translate simplified_chinese r2_tranquility_06decfeb:
 
     # e "Hello soldiers!"
-    e "「こんにちは、兵士たち！」"
+    e "「诸位士兵，你们好呀！」"
 
 # game/r2_tranquility.rpy:34
 translate simplified_chinese r2_tranquility_7b36c5e7:
 
     # p "Idiot! Why would you do that!?"
-    p "「バカ！なんでそんなことをやったの！？」"
+    p "「笨蛋！为什么要搞这一出？！」"
 
 # game/r2_tranquility.rpy:36
 translate simplified_chinese r2_tranquility_d2e09111:
 
     # so "It’s her! Get her!"
-    so "「その子だ！捕まえろ！」"
+    so "「就是她！快把她抓住！」"
 
 # game/r2_tranquility.rpy:38
 translate simplified_chinese r2_tranquility_c8ea8a4a:
@@ -44,289 +44,289 @@ translate simplified_chinese r2_tranquility_c8ea8a4a:
 translate simplified_chinese r2_tranquility_after_battle_09659c86:
 
     # "{b}You have obtained a Paralyzing Spark!{/b}"
-    "{b}《麻痺のスパーク》を獲得した！{/b}"
+    "{b}获得了《麻痹之电光》！{/b}"
 
 # game/r2_tranquility.rpy:77
 translate simplified_chinese r2_tranquility_after_battle_00ad6d0d:
 
     # "{b}You have obtained a Heal Aura!{/b}"
-    "{b}《回復オーラ》を獲得した！{/b}"
+    "{b}获得了《回复灵光》！{/b}"
 
 # game/r2_tranquility.rpy:81
 translate simplified_chinese r2_tranquility_after_battle_7361d1ae:
 
     # e "Ooh, you’re getting better!"
-    e "「おお、中々やるじゃん」"
+    e "「哦，挺能干的嘛」"
 
 # game/r2_tranquility.rpy:83
 translate simplified_chinese r2_tranquility_after_battle_eb42c3d2:
 
     # e "Still far compared to this great Eve, but progress is progress!"
-    e "「この偉大なイーブにとってはまだ遠い存在だが、成長は成長！」"
+    e "「虽然还远不及我伟大的伊芙大人，但确确实实成长了！」"
 
 # game/r2_tranquility.rpy:85
 translate simplified_chinese r2_tranquility_after_battle_6494ec0c:
 
     # p "I thought the army doesn’t even come here anymore..."
-    p "「軍隊はもうここに来ないよって言ったのに…」"
+    p "「明明说军队已经不会再来这里的…」"
 
 # game/r2_tranquility.rpy:87
 translate simplified_chinese r2_tranquility_after_battle_9c01ae39:
 
     # e "Something might be going on in the castle."
-    e "「城で何かが起こってるかもしれない」"
+    e "「或许城堡那边发生了什么」"
 
 # game/r2_tranquility.rpy:89
 translate simplified_chinese r2_tranquility_after_battle_6a4e49d7:
 
     # e "Well, no need to worry about it, let’s go into the forest!"
-    e "「まぁ、どうでもいい、森に入ろう！」"
+    e "「不过，无所谓了。进入森林吧！」"
 
 # game/r2_tranquility.rpy:91
 translate simplified_chinese r2_tranquility_after_battle_c0d4f2f3:
 
     # "We walked into the forest filled with a serene and sublime atmosphere."
-    "心静かで荘厳な雰囲気のある森に入った。"
+    "进入到寂静而肃穆的森林之中。"
 
 # game/r2_tranquility.rpy:98
 translate simplified_chinese r2_tranquility_after_battle_62185816:
 
     # p "Such a peaceful place..."
-    p "「平和的な場所…」"
+    p "「真是个安宁的地方呢…」"
 
 # game/r2_tranquility.rpy:102
 translate simplified_chinese r2_tranquility_after_battle_12ca5bdb:
 
     # e "It is called Tranquility after all."
-    e "「静穏地域なんだから」"
+    e "「毕竟是平静地区」"
 
 # game/r2_tranquility.rpy:104
 translate simplified_chinese r2_tranquility_after_battle_7090a363:
 
     # p "The forest is so thick though..."
-    p "「森がすごく濃いけど…」"
+    p "「虽然森林非常茂密…」"
 
 # game/r2_tranquility.rpy:108
 translate simplified_chinese r2_tranquility_after_battle_7d5c1ebb:
 
     # e "Shh..."
-    e "「シーッ」"
+    e "「盯——」"
 
 # game/r2_tranquility.rpy:110
 translate simplified_chinese r2_tranquility_after_battle_3d6763b4:
 
     # p "Huh?"
-    p "「え？」"
+    p "「嗯？」"
 
 # game/r2_tranquility.rpy:112
 translate simplified_chinese r2_tranquility_after_battle_ba4492fc:
 
     # e "There’s someone there, prepare your staff."
-    e "「誰かがいる、杖を用意して」"
+    e "「有人在那里，准备好手杖」"
 
 # game/r2_tranquility.rpy:114
 translate simplified_chinese r2_tranquility_after_battle_a569beef:
 
     # "???" "Don’t be alarmed young ones, I ain’t no bad guy."
-    "???" "「安心して、若者たち、儂は悪い人じゃないぞ」"
+    "???" "「放心吧年轻人，老夫可不是什么坏人」"
 
 # game/r2_tranquility.rpy:116
 translate simplified_chinese r2_tranquility_after_battle_56923d26:
 
     # "It’s an old man fishing in a pond."
-    "池で釣っているおじさん。"
+    "是一位在池塘边垂钓的老爷爷。"
 
 # game/r2_tranquility.rpy:118
 translate simplified_chinese r2_tranquility_after_battle_eca8f306:
 
     # p "What’s with this place..."
-    p "「なんだ、この場所」"
+    p "「这里是什么情况…」"
 
 # game/r2_tranquility.rpy:122
 translate simplified_chinese r2_tranquility_after_battle_2f18bb52:
 
     # "The forest was too thick."
-    "森も濃すぎる。"
+    "森林广袤无垠。"
 
 # game/r2_tranquility.rpy:124
 translate simplified_chinese r2_tranquility_after_battle_c41ab758:
 
     # "The amount of greenery was overwhelming."
-    "緑も多すぎる。"
+    "绿色一望无际。"
 
 # game/r2_tranquility.rpy:126
 translate simplified_chinese r2_tranquility_after_battle_58d0da86:
 
     # "The waterfall is enormous."
-    "滝もでかすぎる。"
+    "瀑布气势恢弘。"
 
 # game/r2_tranquility.rpy:128
 translate simplified_chinese r2_tranquility_after_battle_50e26d4a:
 
     # "The river flowing above the waterfall is way too wide."
-    "上に流れる川も広すぎる。"
+    "上方的河流也烟波浩淼。"
 
 # game/r2_tranquility.rpy:130
 translate simplified_chinese r2_tranquility_after_battle_bf0874e3:
 
     # "But..."
-    "だが…"
+    "然而…"
 
 # game/r2_tranquility.rpy:132
 translate simplified_chinese r2_tranquility_after_battle_92f58436:
 
     # p "ISN’T THAT POND TOO SMALL?!!!"
-    p "「この池、小さすぎない？！！！」"
+    p "「池塘却小得可怜？！！！」"
 
 # game/r2_tranquility.rpy:134
 translate simplified_chinese r2_tranquility_after_battle_119f6e9e:
 
     # p "I’ve seen bathtubs larger than that?!"
-    p "「風呂桶より小さいじゃない？！」"
+    p "「比洗澡盆还要小吧？！」"
 
 # game/r2_tranquility.rpy:138
 translate simplified_chinese r2_tranquility_after_battle_33d269c7:
 
     # p "Where the heck is all that water from the waterfall going to?!"
-    p "「滝からの水はいったいどこに行きますか？！」"
+    p "「顺着瀑布流过来的水都去哪儿了？！」"
 
 # game/r2_tranquility.rpy:140
 translate simplified_chinese r2_tranquility_after_battle_9272d339:
 
     # e "Old man, what are you doing here?"
-    e "「おじさん、ここで何してるの？」"
+    e "「老爷爷在这里干什么呢？」"
 
 # game/r2_tranquility.rpy:142
 translate simplified_chinese r2_tranquility_after_battle_b7e00dd4:
 
     # om "As you can see, I’m just fishing."
-    om "「見た通り、儂は釣っておるのじゃ」"
+    om "「如你所见，老夫正在垂钓」"
 
 # game/r2_tranquility.rpy:144
 translate simplified_chinese r2_tranquility_after_battle_0f70df5a:
 
     # p "The pond is so small, there can’t be any fish in there though?!"
-    p "「池はそんなに小さくて、魚とか全然いませんの？！」"
+    p "「尽管池塘这么小，里面也没有一条鱼？」"
 
 # game/r2_tranquility.rpy:148
 translate simplified_chinese r2_tranquility_after_battle_a7321d59:
 
     # e "Well don’t mind him, Hitona. Let’s just find that thing."
-    e "「気にすんな、ひとな。とりあえずあれを探そう」"
+    e "「人鱼，就别管他了，总之先去寻找那个东西吧」"
 
 # game/r2_tranquility.rpy:150
 translate simplified_chinese r2_tranquility_after_battle_c614283b:
 
     # e "Remember, {b}“What you seek lies deep in the water.”{/b}"
-    e "「覚えて、{b}『探し物は水の中で眠っている』{/b}」"
+    e "「记好了，{b}『找寻之物于水中沉眠』{/b}」"
 
 # game/r2_tranquility.rpy:240
 translate simplified_chinese tranquility_talk_1_8751ad15:
 
     # p "That pond is really so small..."
-    p "「あの池はほんっとにちっちゃいなぁ…」"
+    p "「那池塘可真叫一个小啊…」"
 
 # game/r2_tranquility.rpy:242
 translate simplified_chinese tranquility_talk_1_abef9321:
 
     # p "I’m pretty sure I’ve seen puddles larger than that..."
-    p "「より大きな水たまりが見たことあるはず…」"
+    p "「人鱼都见过更大的水洼…」"
 
 # game/r2_tranquility.rpy:246
 translate simplified_chinese tranquility_talk_1_cfc06fa9:
 
     # e "While that waterfall is massive, right?"
-    e "「滝も巨大なのにね」"
+    e "「明明瀑布那么壮观…」"
 
 # game/r2_tranquility.rpy:248
 translate simplified_chinese tranquility_talk_1_9044c872:
 
     # p "Haven’t you been here before, Eve?"
-    p "「前にもここに来たことないですか？」"
+    p "「小伊芙之前没有来过这里吗？」"
 
 # game/r2_tranquility.rpy:250
 translate simplified_chinese tranquility_talk_1_ac967615:
 
     # e "Believe it or not, the special regions changes over time."
-    e "「信じようと信じまいと、特別な地域は時間とともに変化してるんだ」"
+    e "「你或许不信，但特别地区的会随着时间发生些变化」"
 
 # game/r2_tranquility.rpy:252
 translate simplified_chinese tranquility_talk_1_20b7e534:
 
     # e "So yes, I have been here before, but it’s my first time seeing this pond."
-    e "「で、確かに静穏地域に来たことがあるのだが、この池は初めて見た」"
+    e "「也因此，尽管我来过平静地区，却也是第一次见到这个池塘」"
 
 # game/r2_tranquility.rpy:254
 translate simplified_chinese tranquility_talk_1_10cc9c95:
 
     # p "What was it when you were here in the past?"
-    p "「以前の静穏地域はどんな場所でした？」"
+    p "「以前的平静地区是一个怎样的地方呢？」"
 
 # game/r2_tranquility.rpy:256
 translate simplified_chinese tranquility_talk_1_3988277d:
 
     # e "It was surrounded by forest like this, but in the middle there was a ring of waterfalls dropping out of nowhere."
-    e "「あの時も森に囲まれてるけど、中にはどこからともなく流す滝の輪があった」"
+    e "「那时虽然也是被森林环绕着，但里面有不知从何而来的水形成的环形瀑布」"
 
 # game/r2_tranquility.rpy:258
 translate simplified_chinese tranquility_talk_1_bc2bd2bc:
 
     # e "And in the middle of that ring of waterfalls was a huge lake."
-    e "「滝の輪その中にすごく大きな湖があった」"
+    e "「而瀑布里则有一个巨大的湖泊」"
 
 # game/r2_tranquility.rpy:260
 translate simplified_chinese tranquility_talk_1_22651879:
 
     # p "I can’t picture that at all."
-    p "「それは想像つかないです」"
+    p "「难以想象啊」"
 
 # game/r2_tranquility.rpy:262
 translate simplified_chinese tranquility_talk_1_410e8c3f:
 
     # e "Well, this is much more tame than what I saw back then, we should be grateful."
-    e "「まぁ、今はあの頃よりおだやかでありがたいな」"
+    e "「不过比起那时现在要安稳许多，也是谢天谢地了」"
 
 # game/r2_tranquility.rpy:266
 translate simplified_chinese tranquility_talk_1_cb160501:
 
     # e "Anyway remember, {b}“What you seek lies deep in the water.”{/b}"
-    e "「とにかく、覚えてね、{b}『探し物は水の中で眠っている』{/b}」"
+    e "「总之要记好了，{b}『找寻之物于水中沉眠』{/b}」"
 
 # game/r2_tranquility.rpy:274
 translate simplified_chinese tranquility_talk_2_7b0d9d10:
 
     # e "Did you forget the hint already?"
-    e "「ヒントはもう忘れたの？」"
+    e "「已经不记得提示了吗？」"
 
 # game/r2_tranquility.rpy:276
 translate simplified_chinese tranquility_talk_2_24802ff9:
 
     # e "It’s {b}“What you seek lies deep in the water.”{/b}"
-    e "「{b}『探し物は水の中で眠っている』{/b}って」"
+    e "「{b}『找寻之物于水中沉眠』{/b}哦」"
 
 # game/r2_tranquility.rpy:278
 translate simplified_chinese tranquility_talk_2_6e4f740d:
 
     # p "Yes, yes, you’ve been repeating it nonstop that there’s no way I could forget it."
-    p "「はいはい、再三再四繰り返し言ってくれてたから忘れられるわけないでしょ」"
+    p "「知道了知道了，都听了无数遍了怎么会忘记呢」"
 
 # game/r2_tranquility.rpy:286
 translate simplified_chinese tranquility_pond_1_7dd3bafe:
 
     # p "You think the ultimate spell is down there?"
-    p "「極大魔法がこの池の底にあると思ってますか？」"
+    p "「你觉得极大魔法会在这个池塘的底部吗」"
 
 # game/r2_tranquility.rpy:288
 translate simplified_chinese tranquility_pond_1_c3314d77:
 
     # e "Probably, yeah."
-    e "「多分そうだ」"
+    e "「应该在吧」"
 
 # game/r2_tranquility.rpy:290
 translate simplified_chinese tranquility_pond_1_25f96b91:
 
     # p "Use your magic Eve!"
-    p "「じゃぁ、イーブちゃん、魔法を使って！」"
+    p "「那小伊芙，使用魔法吧！」"
 
 # game/r2_tranquility.rpy:294
 translate simplified_chinese tranquility_pond_1_60ffa04e:
@@ -338,7 +338,7 @@ translate simplified_chinese tranquility_pond_1_60ffa04e:
 translate simplified_chinese tranquility_pond_1_98068e53:
 
     # p "Of course not! To swim!"
-    p "「もちろん違うよ、水泳魔法です、水泳魔法！」"
+    p "「当然不是了，是游泳魔法啊，游泳魔法！」"
 
 # game/r2_tranquility.rpy:300
 translate simplified_chinese tranquility_pond_1_72a33094:
@@ -350,7 +350,7 @@ translate simplified_chinese tranquility_pond_1_72a33094:
 translate simplified_chinese tranquility_pond_1_6836f1f0:
 
     # e "The great Eve has been forbidden from swimming ever since she was born."
-    e "「生まれてからこの偉大なイーブは水泳が禁止されている」"
+    e "「我伟大的伊芙大人自打出生起就被禁止下水游泳了」"
 
 # game/r2_tranquility.rpy:304
 translate simplified_chinese tranquility_pond_1_c8ea8a4a:
@@ -362,13 +362,13 @@ translate simplified_chinese tranquility_pond_1_c8ea8a4a:
 translate simplified_chinese tranquility_pond_1_4d6c1801:
 
     # p "You can’t swim, can you?"
-    p "「泳げないですね」"
+    p "「不会游是吧」"
 
 # game/r2_tranquility.rpy:308
 translate simplified_chinese tranquility_pond_1_370fa0b0:
 
     # e "You can’t swim, can you, Hitona?"
-    e "「ひとなも泳げないよね」"
+    e "「人鱼也不会游吧？」"
 
 # game/r2_tranquility.rpy:310
 translate simplified_chinese tranquility_pond_1_c8ea8a4a_1:
@@ -386,344 +386,344 @@ translate simplified_chinese tranquility_pond_1_72a33094_1:
 translate simplified_chinese tranquility_pond_2_1cee29c7:
 
     # e "So you’re gonna swim??" nointeract
-    e "「泳ぐか？」" nointeract
+    e "「要游进去吗？」" nointeract
 
 # game/r2_tranquility.rpy:324
 translate simplified_chinese tranquility_pond_2_aa4b2ca1:
 
     # p "Of course!"
-    p "「もちろん！」"
+    p "「当然了！」"
 
 # game/r2_tranquility.rpy:326
 translate simplified_chinese tranquility_pond_2_3b4c3878:
 
     # e "Well, go on."
-    e "「じゃあ、行っておいで」"
+    e "「那行，去吧」"
 
 # game/r2_tranquility.rpy:330
 translate simplified_chinese tranquility_pond_2_f222ecae:
 
     # "I jumped into the pond"
-    "池に飛び込んだ。"
+    "纵身跳入池塘。"
 
 # game/r2_tranquility.rpy:332
 translate simplified_chinese tranquility_pond_2_ccbe6da9:
 
     # "The pressure from the waterfall is overwhelming."
-    "滝は圧がすごい。"
+    "来自瀑布的水压很强。"
 
 # game/r2_tranquility.rpy:334
 translate simplified_chinese tranquility_pond_2_40e676b1:
 
     # "I’m being pushed down and down."
-    "押し下げられている。"
+    "被一直往下推。"
 
 # game/r2_tranquility.rpy:336
 translate simplified_chinese tranquility_pond_2_b5473f61:
 
     # "I keep sinking further and further down."
-    "落ち続けている。"
+    "继续下沉。"
 
 # game/r2_tranquility.rpy:338
 translate simplified_chinese tranquility_pond_2_4a1c658c:
 
     # "There doesn’t seem to be a bottom to this lake."
-    "池の底がなさそう。"
+    "仿佛是无底的池塘。"
 
 # game/r2_tranquility.rpy:340
 translate simplified_chinese tranquility_pond_2_635c8243:
 
     # "I...can’t...move..."
-    "体動…け…な…い……"
+    "（身体…动…不了…）"
 
 # game/r2_tranquility.rpy:347
 translate simplified_chinese tranquility_pond_2_843f807c:
 
     # p "Of course not..."
-    p "「もちろん泳ぎませんよ」"
+    p "「当然不会游泳了」"
 
 # game/r2_tranquility.rpy:351
 translate simplified_chinese tranquility_pond_2_8a9ebc8e:
 
     # e "Yeah, thought so"
-    e "「やっぱりな」"
+    e "「果然啊」"
 
 # game/r2_tranquility.rpy:364
 translate simplified_chinese tranquility_spot_1_1_3af2fb24:
 
     # p "There’s a disturbing amount of frogs here..."
-    p "「カエルが不安ほど多いですね」"
+    p "「青蛙多得让人感到不安呢」"
 
 # game/r2_tranquility.rpy:366
 translate simplified_chinese tranquility_spot_1_1_7c510315:
 
     # e "Well, we can use it as bait, let’s grab one."
-    e "「まぁ、餌にできるから、一匹を捕りなさい」"
+    e "「不过能当做饵料的，去抓一只吧」"
 
 # game/r2_tranquility.rpy:370
 translate simplified_chinese tranquility_spot_1_1_a616ed59:
 
     # "{b}You have obtained a slimy frog!{/b}"
-    "{b}一匹のぬるぬるカエルを獲得した！{/b}"
+    "{b}获得了一只滑溜溜的青蛙！{/b}"
 
 # game/r2_tranquility.rpy:384
 translate simplified_chinese tranquility_spot_1_1_3af2fb24_1:
 
     # "There’s a disturbing amount of frogs here..."
-    "「カエルが不安ほど多いですね」"
+    "「青蛙多得让人感到不安呢」"
 
 # game/r2_tranquility.rpy:397
 translate simplified_chinese tranquility_spot_1_2_8c78089c:
 
     # e "Do you love frogs or something?"
-    e "「カエルが好きなの？」"
+    e "「喜欢青蛙吗？」"
 
 # game/r2_tranquility.rpy:399
 translate simplified_chinese tranquility_spot_1_2_00d3c225:
 
     # p "Uuuh not really?"
-    p "「いや、別に」"
+    p "「倒也不是」"
 
 # game/r2_tranquility.rpy:401
 translate simplified_chinese tranquility_spot_1_2_83abdaee:
 
     # p "I just thought that we could use it as bait, so we should grab one."
-    p "「ただ餌にできるから、一匹を捕ろうと思いまして」"
+    p "「不过能当做饵料，就想抓一只来」"
 
 # game/r2_tranquility.rpy:405
 translate simplified_chinese tranquility_spot_1_2_a616ed59:
 
     # "{b}You have obtained a slimy frog!{/b}"
-    "{b}一匹のぬるぬるカエルを獲得した！{/b}"
+    "{b}获得了一只滑溜溜的青蛙！{/b}"
 
 # game/r2_tranquility.rpy:419
 translate simplified_chinese tranquility_spot_1_2_09c38e64:
 
     # e "Are you sure you don’t love frogs?"
-    e "「ひとなはカエルが本当に好きなんだね」"
+    e "「人鱼也真是喜欢青蛙呢！」"
 
 # game/r2_tranquility.rpy:421
 translate simplified_chinese tranquility_spot_1_2_5cbae1f6:
 
     # p "Now I’m not so sure anymore..."
-    p "「どうかな…」"
+    p "「那可不见得…」"
 
 # game/r2_tranquility.rpy:433
 translate simplified_chinese tranquility_spot_1_2_8c78089c_1:
 
     # e "Do you love frogs or something?"
-    e "「カエルが好きなの？」"
+    e "「喜欢青蛙吗？」"
 
 # game/r2_tranquility.rpy:435
 translate simplified_chinese tranquility_spot_1_2_6c4d0c4c:
 
     # p "Uhhh not really?"
-    p "「いや、別に」"
+    p "「倒也不是」"
 
 # game/r2_tranquility.rpy:448
 translate simplified_chinese tranquility_spot_2_1_b8f0523b:
 
     # e "That’s a weird space for those to gather."
-    e "「あいつ、あそこで集めるのおかしいな」"
+    e "「好奇怪啊，那些家伙怎么会聚集在那里呢」"
 
 # game/r2_tranquility.rpy:450
 translate simplified_chinese tranquility_spot_2_1_a3b7c522:
 
     # p "What are you talking about?"
-    p "「どういうこと？」"
+    p "「是说什么？」"
 
 # game/r2_tranquility.rpy:452
 translate simplified_chinese tranquility_spot_2_1_b92796dc:
 
     # "Eve pointed to a certain spot."
-    "イーブはある場所を指差した。"
+    "伊芙指向了一个地方。"
 
 translate simplified_chinese tranquility_spot_2_1_33713e6b:
 
     # p "What is that pink thing...It’s...moving..."
-    p "「あのピンクの物は何？なんか…動い…てる…」"
+    p "「那个粉色的东西是什么？好像…在…在动啊…」"
 
 # game/r2_tranquility.rpy:456
 translate simplified_chinese tranquility_spot_2_1_143e6df8:
 
     # p "Eh?"
-    p "「えっ？」"
+    p "「诶？」"
 
 # game/r2_tranquility.rpy:460
 translate simplified_chinese tranquility_spot_2_1_89a54822:
 
     # "Eve pushed me from behind into the pink...something."
-    "後ろからあのピンクの…何かの方に押しているイーブ。"
+    "伊芙从背后一推，把人鱼推向了那团粉色的东西。"
 
 # game/r2_tranquility.rpy:462
 translate simplified_chinese tranquility_spot_2_1_49cedcb2:
 
     # p "What are you doooo-aaaaaAAAAAAAAAAAA"
-    p "「何してんだぁぁぁあああああああ」"
-    "あのぬるぬるピンクの塊に落ちてしまった。"
+    p "「搞啥呢——」"
+    "黏糊糊的粉色块状物开始一块一块往下掉。"
 
 # game/r2_tranquility.rpy:466
 translate simplified_chinese tranquility_spot_2_1_a17f34e5:
 
     # e "Yeah, what are such a massive amount of worms doing over there~"
-    e "「さぁ、なんでこんなに膨大な数のウジ虫がそこで集めるのかな〜」"
+    e "「那么，到底为什么会有如此多的蛆聚集在这里呢～」"
 
 # game/r2_tranquility.rpy:468
 translate simplified_chinese tranquility_spot_2_1_75695c47:
 
     # p "EEEEVEEEE!!!!!"
-    p "「イィィィィィィブゥゥゥゥゥッ！！！！」"
+    p "「伊——芙——！！！！」"
 
 # game/r2_tranquility.rpy:470
 translate simplified_chinese tranquility_spot_2_1_e1a893a1:
 
     # e "Well calm down, we can use it as bait, so go grab one."
-    e "「まぁ、まぁ、落ち着け、餌にできるから、一匹を捕りなさい」"
+    e "「算了算了，冷静下。能当做饵料的，去抓一只吧」"
 
 # game/r2_tranquility.rpy:474
 translate simplified_chinese tranquility_spot_2_1_4e4254e7:
 
     # "{b}You have obtained a slimy worm!{/b}"
-    "{b}一匹のぬるぬるウジ虫を獲得した！{/b}"
+    "{b}获得了一只黏糊糊的蛆！{/b}"
 
 # game/r2_tranquility.rpy:484
 translate simplified_chinese tranquility_spot_2_1_b8f0523b_1:
 
     # e "That’s a weird space for those to gather."
-    e "「あいつ、あそこで集めるのおかしいな」"
+    e "「好奇怪啊，那些家伙怎么会聚集在那里呢」"
 
 # game/r2_tranquility.rpy:486
 translate simplified_chinese tranquility_spot_2_1_a3b7c522_1:
 
     # p "What are you talking about?"
-    p "「どういうこと？」"
+    p "「是说什么？」"
 
 # game/r2_tranquility.rpy:488
 translate simplified_chinese tranquility_spot_2_1_b92796dc_1:
 
     # "Eve pointed to a certain spot."
-    "イーブはある場所を指差した。"
+    "伊芙指向了一个地方。"
 
 # game/r2_tranquility.rpy:488
 translate simplified_chinese tranquility_spot_2_1_33713e6b_1:
 
     # p "What is that pink thing...It’s...moving..."
-    p "「あのピンクの物は何？なんか…動い…てる…」"
+    p "「那个粉色的东西是什么？好像…在…在动啊…」"
 
 # game/r2_tranquility.rpy:492
 translate simplified_chinese tranquility_spot_2_1_88aaa662:
 
     # "{i}Eh?{/i}"
-    p "「えっ？」"
+    p "「诶？」"
 
 # game/r2_tranquility.rpy:496
 translate simplified_chinese tranquility_spot_2_1_89a54822_1:
 
     # "Eve pushed me from behind into the pink...something."
-    "後ろからあのピンクの…何かの方に押しているイーブ。"
+    "伊芙从背后一推，把人鱼推向了那团粉色的东西。"
 
 # game/r2_tranquility.rpy:498
 translate simplified_chinese tranquility_spot_2_1_49cedcb2_1:
 
     # p "What are you doooo-aaaaaAAAAAAAAAAAA"
-    p "「何してんだぁぁぁあああああああ」"
-    "あのぬるぬるピンクの塊に落ちてしまった。"
+    p "「搞啥呢——」"
+    "黏糊糊的粉色块状物开始一块一块往下掉。"
 
 # game/r2_tranquility.rpy:502
 translate simplified_chinese tranquility_spot_2_1_a17f34e5_1:
 
     # e "Yeah, what are such a massive amount of worms doing over there~"
-    e "「さぁ、なんでこんなに膨大な数のウジ虫がそこで集めるのかな〜」"
+    e "「那么，到底为什么会有如此多的蛆聚集在这里呢～」"
 
 # game/r2_tranquility.rpy:504
 translate simplified_chinese tranquility_spot_2_1_75695c47_1:
 
     # p "EEEEVEEEE!!!!!"
-    p "「イィィィィィィブゥゥゥゥゥッ！！！！」"
+    p "「伊——芙——！！！！」"
 
 # game/r2_tranquility.rpy:513
 translate simplified_chinese tranquility_spot_2_2_706f7dd7:
 
     # p "You remember that place, Eve?"
-    p "「ねぇ、イーブちゃん、あの場所を覚えてますか？」"
+    p "「小伊芙啊，还记得那个地方吗？」"
 
 # game/r2_tranquility.rpy:515
 translate simplified_chinese tranquility_spot_2_2_44b8316f:
 
     # "I put on my biggest smile"
-    "一番大きな笑顔をした。"
+    "露出了最灿烂的笑容。"
 
 # game/r2_tranquility.rpy:517
 translate simplified_chinese tranquility_spot_2_2_16e49fc1:
 
     # e "Yeah...let’s take one as bait and go..."
-    e "「お、おう…い、一匹を捕って餌にしよう…」"
+    e "「当、当然…抓、抓一只当饵料…」"
 
 # game/r2_tranquility.rpy:523
 translate simplified_chinese tranquility_spot_2_2_4e4254e7:
 
     # "{b}You have obtained a slimy worm!{/b}"
-    "{b}一匹のぬるぬるウジ虫を獲得した！{/b}"
+    "{b}获得了一只黏糊糊的蛆！{/b}"
 
 # game/r2_tranquility.rpy:531
 translate simplified_chinese tranquility_spot_2_2_16ea766d:
 
     # p "Do we have to go there again...?"
-    p "「またあそこに行かなきゃ？」"
+    p "「还得再去那里一次吗…？」"
 
 # game/r2_tranquility.rpy:535
 translate simplified_chinese tranquility_spot_2_2_d2a721e2:
 
     # e "You might start liking them, you know."
-    e "「時間が経てば好きになるかもしれない」"
+    e "「说不定过段时间就喜欢上了呢」"
 
 # game/r2_tranquility.rpy:537
 translate simplified_chinese tranquility_spot_2_2_1522270f:
 
     # p "I could say the same back to you..."
-    p "「そちらこそ…」"
+    p "「原话奉还…」"
 
 # game/r2_tranquility.rpy:541
 translate simplified_chinese tranquility_spot_2_2_4c575fe2:
 
     # e "Y...Yeah, let’s go back..."
-    e "「う、うん、戻ろう…」"
+    e "「嗯…回去吧…」"
 
 # game/r2_tranquility.rpy:546
 translate simplified_chinese tranquility_spot_2_2_c9a4060d:
 
     # p "Want to go there again, Eve?"
-    p "「ねぇ、イーブちゃん、またあそこに行きましょうね？」"
+    p "「小伊芙啊，还要再去那里一次吗？」"
 
 # game/r2_tranquility.rpy:550
 translate simplified_chinese tranquility_spot_2_2_2732eb41:
 
     # e "That smile on your face makes me say no."
-    e "「その笑顔を見ていると、お断りします」"
+    e "「看你这脸上的笑容，我拒绝」"
 
 # game/r2_tranquility.rpy:558
 translate simplified_chinese tranquility_spot_3_1_a31e3f67:
 
     # "There was a black wall at this part of the forest."
-    "森の場に黒い壁があった。"
+    "森林里有一面黑色的墙壁。"
 
 # game/r2_tranquility.rpy:560
 translate simplified_chinese tranquility_spot_3_1_fbc564f8:
 
     # p "What’s this weird big black wall doing in the middle of this forest?"
-    p "「なんで森にこの変な黒い壁が？」"
+    p "「为什么森林里会有这么奇怪的黑色墙壁？」"
 
 # game/r2_tranquility.rpy:564
 translate simplified_chinese tranquility_spot_3_1_58ad90db:
 
     # e "Hitona, do you really think that’s a wall?"
-    e "「ひとな、それは壁だと本当に思ってる？」"
+    e "「人鱼，你该不会真以为那是墙壁吧？」"
 
 # game/r2_tranquility.rpy:566
 translate simplified_chinese tranquility_spot_3_1_17da7206:
 
     # "Saying that, Eve pushed me from behind towards the black wall."
-    "と言い、後ろから黒いの壁の方に押しているイーブ。"
+    "话音未落，伊芙从背后把人鱼推向了黑色墙壁。"
 
 # game/r2_tranquility.rpy:568
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a:
@@ -735,7 +735,7 @@ translate simplified_chinese tranquility_spot_3_1_c8ea8a4a:
 translate simplified_chinese tranquility_spot_3_1_d090563c:
 
     # "The black wall dispersed."
-    "黒い壁が分かれた。"
+    "黑色墙壁分解开来。"
 
 # game/r2_tranquility.rpy:572
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_1:
@@ -747,7 +747,7 @@ translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_1:
 translate simplified_chinese tranquility_spot_3_1_c8a4df07:
 
     # e "Catch one Hitona! We can use it as bait!"
-    e "「一匹を捕れ！餌にできるよ！」"
+    e "「快抓住一只！能当做饵料的！」"
 
 # game/r2_tranquility.rpy:578
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_2:
@@ -759,55 +759,55 @@ translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_2:
 translate simplified_chinese tranquility_spot_3_1_468eb27a:
 
     # "{b}You have obtained a cockroach!{/b}"
-    "{b}一匹のゴキブリを獲得した！{/b}"
+    "{b}获得了一只小强！{/b}"
 
 # game/r2_tranquility.rpy:584
 translate simplified_chinese tranquility_spot_3_1_0ee5fd22:
 
     # p "I got one...cockroach..."
-    p "「一匹…捕れました…」"
+    p "「抓到…一只了…」"
 
 # game/r2_tranquility.rpy:586
 translate simplified_chinese tranquility_spot_3_1_a19064f8:
 
     # p "Why did you push me!?"
-    p "「なんでひとなを押したの！？」"
+    p "「为什么要推人鱼啊？！」"
 
 # game/r2_tranquility.rpy:588
 translate simplified_chinese tranquility_spot_3_1_368519f0:
 
     # e "So that you wouldn’t have any second thoughts about it."
-    e "「考え直すことのないように」"
+    e "「为了让你不再多想」"
 
 # game/r2_tranquility.rpy:590
 translate simplified_chinese tranquility_spot_3_1_2dd6fd9c:
 
     # p "I should note that tactic down..."
-    p "「その策略をメモにすべき…」"
+    p "「得把这条计策记下来…」"
 
 # game/r2_tranquility.rpy:597
 translate simplified_chinese tranquility_spot_3_1_a31e3f67_1:
 
     # "There was a black wall at this part of the forest."
-    "森の場に黒い壁があった。"
+    "森林里有一面黑色的墙壁。"
 
 # game/r2_tranquility.rpy:599
 translate simplified_chinese tranquility_spot_3_1_fbc564f8_1:
 
     # p "What’s this weird big black wall doing in the middle of this forest?"
-    p "「なんで森にこの変な黒い壁が？」"
+    p "「为什么森林里会有这么奇怪的黑色墙壁？」"
 
 # game/r2_tranquility.rpy:603
 translate simplified_chinese tranquility_spot_3_1_58ad90db_1:
 
     # e "Hitona, do you really think that’s a wall?"
-    e "「ひとな、それは壁だと本当に思ってる？」"
+    e "「人鱼，你该不会真以为那是墙壁吧？」"
 
 # game/r2_tranquility.rpy:605
 translate simplified_chinese tranquility_spot_3_1_17da7206_1:
 
     # "Saying that, Eve pushed me from behind towards the black wall."
-    "と言い、後ろから黒いの壁の方に押しているイーブ。"
+    "话音未落，伊芙从背后把人鱼推向了黑色墙壁。"
 
 # game/r2_tranquility.rpy:607
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_3:
@@ -819,7 +819,7 @@ translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_3:
 translate simplified_chinese tranquility_spot_3_1_d090563c_1:
 
     # "The black wall dispersed."
-    "黒い壁が分かれた。"
+    "黑色墙壁分解开来。"
 
 # game/r2_tranquility.rpy:611
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_4:
@@ -831,61 +831,61 @@ translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_4:
 translate simplified_chinese tranquility_spot_3_1_17da9592:
 
     # p "Let’s go back..."
-    p "「戻ろう…」"
+    p "「回去吧…」"
 
 # game/r2_tranquility.rpy:617
 translate simplified_chinese tranquility_spot_3_1_57c8ed76:
 
     # "Eve patted my head"
-    "イーブに頭を撫でられた。"
+    "伊芙摸了摸人鱼的头。"
 
 # game/r2_tranquility.rpy:619
 translate simplified_chinese tranquility_spot_3_1_80c88b79:
 
     # e "How did you see a massive amount of cockroaches as a wall?"
-    e "「どうやって膨大な数のゴキブリは壁に見間違えた？」"
+    e "「得怎么看才能把这么多小强错看成一面墙的？」"
 
 # game/r2_tranquility.rpy:619
 translate simplified_chinese tranquility_spot_3_1_46a7300e:
 
     # p "Don’t comment on it..."
-    p "「何も言わないで…」"
+    p "「什么都别说了…」"
 
 # game/r2_tranquility.rpy:628
 translate simplified_chinese tranquility_spot_3_2_be0c066e:
 
     # e "Surely now you know that isn’t a black wall, right Hitona?"
-    e "「きっと今度こそもう分かってるよね、あれは壁じゃないことを」"
+    e "「这下总该明白了吧，那可不是一面墙」"
 
 # game/r2_tranquility.rpy:632
 translate simplified_chinese tranquility_spot_3_2_798bd3e5:
 
     # p "I know!"
-    p "「分かってますよ！」"
+    p "「知道了啦！」"
 
 # game/r2_tranquility.rpy:634
 translate simplified_chinese tranquility_spot_3_2_624aa2d4:
 
     # e "We can use it as a bait, so go catch one."
-    e "「まぁ、餌にできるから、一匹を捕りなさい」"
+    e "「不过，能当做饵料的，去抓一只吧」"
 
 # game/r2_tranquility.rpy:638
 translate simplified_chinese tranquility_spot_3_2_468eb27a:
 
     # "{b}You have obtained a cockroach!{/b}"
-    "{b}一匹のゴキブリを獲得した！{/b}"
+    "{b}获得了一只小强！{/b}"
 
 # game/r2_tranquility.rpy:648
 translate simplified_chinese tranquility_spot_3_2_336cadd5:
 
     # p "I never knew you could use cockroaches as a fishing bait..."
-    p "「ひとなにゴキブリを餌にできることが初耳ですが…」"
+    p "「人鱼还是第一次听说小强也能当饵料的」"
 
 # game/r2_tranquility.rpy:650
 translate simplified_chinese tranquility_spot_3_2_e09e1905:
 
     # e "Yeah me neither..."
-    e "「イーブにも」"
+    e "「我也是」"
 
 # game/r2_tranquility.rpy:652
 translate simplified_chinese tranquility_spot_3_2_c8ea8a4a:
@@ -897,67 +897,67 @@ translate simplified_chinese tranquility_spot_3_2_c8ea8a4a:
 translate simplified_chinese tranquility_spot_3_2_7e5be565:
 
     # e "What?"
-    e "「何よ？」"
+    e "「怎么了？」"
 
 # game/r2_tranquility.rpy:662
 translate simplified_chinese tranquility_spot_3_2_06d12f3f:
 
     # e "Are you testing your luck again hoping that there won’t be any cockroaches, Hitona?"
-    e "「もうゴキブリが残ってないって運試し？」"
+    e "「想去碰碰运气，看下是不是已经没有小强了？」"
 
 # game/r2_tranquility.rpy:664
 translate simplified_chinese tranquility_spot_3_2_92f9ab36:
 
     # p "Shut up will you!"
-    p "「何も言わないで！！！」"
+    p "「什么都别说了！！！」"
 
 # game/r2_tranquility.rpy:672
 translate simplified_chinese tranquility_oldman_1_7e761dea:
 
     # e "So old man, can you help us out?"
-    e "「ねぇ、おじさん、イーブたちを手伝ってくれないの？」"
+    e "「老爷爷啊，能帮帮我们吗？」"
 
 # game/r2_tranquility.rpy:674
 translate simplified_chinese tranquility_oldman_1_6fdb1d9e:
 
     # e "We’re trying to find something that’s probably at the bottom of this small pond."
-    e "「この小さい池の底にある何かを探そうとしてる」"
+    e "「我们在寻找池塘底部的某个东西」"
 
 # game/r2_tranquility.rpy:676
 translate simplified_chinese tranquility_oldman_1_ec2aa007:
 
     # e "Any idea how?"
-    e "「方法とか知ってるの？」"
+    e "「有什么好办法吗？」"
 
 # game/r2_tranquility.rpy:676
 translate simplified_chinese tranquility_oldman_1_9e8e3cc3:
 
     # p "Huh? We’re asking him?!"
-    p "「え！？このおじさんに訊いてますか！？」"
+    p "「诶，要问这老爷爷吗？！」"
 
 # game/r2_tranquility.rpy:680
 translate simplified_chinese tranquility_oldman_1_74552a34:
 
     # om "Under the water? Easy! You fish it!"
-    om "「池の底に？簡単じゃ！釣るよ！」"
+    om "「池塘底部？那简单啊！钓就是了！」"
 
 # game/r2_tranquility.rpy:682
 translate simplified_chinese tranquility_oldman_1_eafd5110:
 
     # p "Seriously...?"
-    p "「マジか…？」"
+    p "「当真吗…」"
 
 # game/r2_tranquility.rpy:682
 translate simplified_chinese tranquility_oldman_1_4a24e0bf:
 
     # e "I’ll try using magic then!"
-    e "「じゃぁ、魔法を使ってみる！」"
+    e "「那就用魔法试试看吧！」"
 
 # game/r2_tranquility.rpy:688
 translate simplified_chinese tranquility_oldman_1_2abd840d:
 
     # e "I call the mana of aquos, break free!"
-    e "「水の霊よ！此の池を引っ繰り返したまえ！」"
+    e "「水之灵力啊！把池塘翻个底朝天吧！」"
 
 # game/r2_tranquility.rpy:690
 translate simplified_chinese tranquility_oldman_1_c8ea8a4a:
@@ -969,451 +969,451 @@ translate simplified_chinese tranquility_oldman_1_c8ea8a4a:
 translate simplified_chinese tranquility_oldman_1_a37ef08e:
 
     # "Nothing happened."
-    "何も起こらなかった。"
+    "无事发生。"
 
 # game/r2_tranquility.rpy:694
 translate simplified_chinese tranquility_oldman_1_013aabbe:
 
     # p "Umm nothing happened though?”"
-    p "「えっと…何も起こらなかったんですけど…」"
+    p "「那个…无事发生啊…」"
 
 # game/r2_tranquility.rpy:698
 translate simplified_chinese tranquility_oldman_1_4840fb43:
 
     # e "This pond...is blocking magic..."
-    e "「此の池は…魔法を遮断している…」"
+    e "「这个池塘…把魔法屏蔽掉了…」"
 
 # game/r2_tranquility.rpy:700
 translate simplified_chinese tranquility_oldman_1_7aa8be34:
 
     # om "Didn’t I say? You fish it!"
-    om "「言ったんじゃろ？釣れ！」"
+    om "「说过了吧？就硬钓！」"
 
 # game/r2_tranquility.rpy:702
 translate simplified_chinese tranquility_oldman_1_1364c2a4:
 
     # e "I guess we have no choice..."
-    e "「仕方がないな…」"
+    e "「别无它法呢…」"
 
 # game/r2_tranquility.rpy:704
 translate simplified_chinese tranquility_oldman_1_3d08dbea:
 
     # om "Well, if you bring me the bait, I can help you fish."
-    om "「まぁ、餌を持ってきてくれたら、儂は釣ってあげるんじゃ」"
+    om "「好吧，要是你们能拿来饵料的话，老夫来帮你们钓吧」"
 
 # game/r2_tranquility.rpy:706
 translate simplified_chinese tranquility_oldman_1_be44b460:
 
     # p "Time to find some bait I guess."
-    p "「じゃぁ、餌を探しに行きましょうか」"
+    p "「那就出发去寻找饵料吧」"
 
 # game/r2_tranquility.rpy:711
 translate simplified_chinese tranquility_oldman_2_6f3642a7:
 
     # om "You got some bait?"
-    om "「餌を持ってきたのじゃ？」"
+    om "「拿来饵料了吗？」"
 
 # game/r2_tranquility.rpy:733
 translate simplified_chinese tranquility_oldman_2_b0640703:
 
     # om "This is a nice bait."
-    om "「これはいい餌じゃな」"
+    om "「这可是上好的饵料啊」"
 
 # game/r2_tranquility.rpy:735
 translate simplified_chinese tranquility_oldman_2_dee155ee:
 
     # "The old man tried to fish with the [bait_name!t] bait."
-    "おじさんは{color=#909}[bait_name!t]{/color}の餌で釣ってみた。"
+    "老爷爷用{color=#909}[bait_name!t]{/color}作饵进行了垂钓。"
 
 # game/r2_tranquility.rpy:739
 translate simplified_chinese tranquility_oldman_2_72f0a626:
 
     # "A [fish_string!t] was fished out!"
-    "{color=#909}[fish_string!t]{/color}を釣った！"
+    "钓到了{color=#909}[fish_string!t]{/color}！"
 
 # game/r2_tranquility.rpy:747
 translate simplified_chinese tranquility_after_fishing_92832243:
 
     # p "We got no spell..."
-    p "「極大魔法を釣ってない…」"
+    p "「钓不到极大魔法…」"
 
 # game/r2_tranquility.rpy:749
 translate simplified_chinese tranquility_after_fishing_714a67aa:
 
     # p "WE GOT NO SPELL!"
-    p "「極大魔法を釣ってないよ！」"
+    p "「钓不到极大魔法啊！」"
 
 # game/r2_tranquility.rpy:753
 translate simplified_chinese tranquility_after_fishing_faaaff0d:
 
     # e "Yeah I can see that Hitona, calm down."
-    e "「分かってる、分かってる、落ち付け、ひとな」"
+    e "「知道了知道了，人鱼你冷静点」"
 
 # game/r2_tranquility.rpy:755
 translate simplified_chinese tranquility_after_fishing_91457e3f:
 
     # p "You’re always so crazy, so why are you suddenly calm now?"
-    p "「いつも頭おかしいくせに、なんで今冷静ですか？」"
+    p "「明明平时脑回路清奇，为什么这会儿这么冷静啊？」"
 
 # game/r2_tranquility.rpy:757
 translate simplified_chinese tranquility_after_fishing_b0a57008:
 
     # om "Are you two going to eat the fish?"
-    om "「二人とも、魚たちを食うのじゃ？」"
+    om "「你们两个，要吃鱼吗？」"
 
 # game/r2_tranquility.rpy:759
 translate simplified_chinese tranquility_after_fishing_19dd8a81:
 
     # p "No, probably not."
-    p "「いや、多分食べません」"
+    p "「大概是不吃的」"
 
 # game/r2_tranquility.rpy:761
 translate simplified_chinese tranquility_after_fishing_762ac4c0:
 
     # om "Then you should release it back to the pond."
-    om "「それじゃ、池に放せよ」"
+    om "「那就把鱼放归池塘吧」"
 
 # game/r2_tranquility.rpy:763
 translate simplified_chinese tranquility_after_fishing_70eb1245:
 
     # om "‘Tis the way of fishers."
-    om "「それは漁師道ということじゃ」"
+    om "「这就是钓鱼者的规矩」"
 
 # game/r2_tranquility.rpy:771
 translate simplified_chinese tranquility_release_fishes_34ebbdaa:
 
     # om "The god of fish will surely bless you."
-    om "「きっと魚神の恵みを与えられるのじゃ」"
+    om "「肯定会受到鱼神的眷顾的」"
 
 # game/r2_tranquility.rpy:773
 translate simplified_chinese tranquility_release_fishes_995d41ec:
 
     # p "I sure hope so..."
-    p "「本当ならいいですね」"
+    p "「希望如此吧」"
 
 # game/r2_tranquility.rpy:775
 translate simplified_chinese tranquility_release_fishes_f8708c94:
 
     # "When I released the fish..."
-    "魚を放すと……"
+    "把鱼放生后…"
 
 # game/r2_tranquility.rpy:779
 translate simplified_chinese tranquility_release_fishes_34c39398:
 
     # "...the pond suddenly lit up, and from the bottom jumped out a massive fish."
-    "……池は光り、底からすごく巨大な魚がやってきた！"
+    "…池塘突然亮了起来，从底下跳出了一条巨大的鱼！"
 
 # game/r2_tranquility.rpy:781
 translate simplified_chinese tranquility_release_fishes_a53dbeae:
 
     # "So massive, that it was surely impossible for it to have fit in that small pond."
-    "一体どうやってあの小さい池に入ってたのか理解はできないくらい大きな魚だった！"
+    "这条鱼的体型大到让人无法理解它是怎么来到这小池塘里来的。"
 
 # game/r2_tranquility.rpy:783
 translate simplified_chinese tranquility_release_fishes_620df46a:
 
     # p "Fish..."
-    p "「魚…」"
+    p "「是鱼…」"
 
 # game/r2_tranquility.rpy:785
 translate simplified_chinese tranquility_release_fishes_63ba3249:
 
     # "I just stood there in awe"
-    "恐懼して動かずに立っていることしかできなかったのだ。"
+    "人鱼被吓得在原地动弹不得。"
 
 # game/r2_tranquility.rpy:795
 translate simplified_chinese tranquility_release_fishes_96d54fb4:
 
     # e "That fish, it’s not the ultimate spell, but it still holds an amazing amount of magical power."
-    e "「あの魚は極大魔法ではないが膨大な魔力を持っている、結構強力なんだ」"
+    e "「虽然那条鱼不是极大魔法，但是拥有着庞大的魔力，相当强力呢」"
 
 # game/r2_tranquility.rpy:797
 translate simplified_chinese tranquility_release_fishes_de22576f:
 
     # p "What are we going to do with this fish..."
-    p "「どうすればいいの、この魚を…」"
+    p "「该拿这条鱼怎么办呢…」"
 
 # game/r2_tranquility.rpy:799
 translate simplified_chinese tranquility_release_fishes_8244af01:
 
     # "For now, we decided to put it in the dimensional storage."
-    "とりあえず、《次元収納》に入れることにした。"
+    "总之，先把这条鱼收纳进了《次元收纳》之中。"
 
 # game/r2_tranquility.rpy:801
 translate simplified_chinese tranquility_release_fishes_35f3df28:
 
     # "{b}You have obtained a massive fish!{/b}"
-    "{b}一頭のすごくでかい魚を獲得した！{/b}"
+    "{b}获得了一条巨大的鱼！{/b}"
 
 # game/r2_tranquility.rpy:806
 translate simplified_chinese tranquility_release_fishes_6adf49f3:
 
     # p "I need more time to think..."
-    p "「えっと、少し考える時間をください…」"
+    p "「稍等，让我想想…」"
 
 # game/r2_tranquility.rpy:815
 translate simplified_chinese tranquility_forest_1_b965f762:
 
     # e "Are you going to use the fish here in the forest...?"
-    e "「森で使うの、この魚…？」"
+    e "「这是准备在森林里把鱼儿用掉？」"
 
 # game/r2_tranquility.rpy:817
 translate simplified_chinese tranquility_forest_1_872ea46c:
 
     # p "The clue might be a trick to make us look away from the forest!"
-    p "「あのヒントは森を見逃す罠かもしれないって」"
+    p "「说不定那个提示是想让我们无视掉森林的圈套」"
 
 # game/r2_tranquility.rpy:817
 translate simplified_chinese tranquility_forest_1_04f10a46:
 
     # e "Okay let’s try releasing the fish there!"
-    e "「オッケー、ここで魚を放してみよう！」"
+    e "「好的，那就把鱼放在这里试试吧！」"
 
 # game/r2_tranquility.rpy:821
 translate simplified_chinese tranquility_forest_1_2f2a6fb5:
 
     # "We released the fish right in the middle of the forest"
-    "森の真ん中であの魚が放した。"
+    "把鱼放在了森林的正中央。"
 
 # game/r2_tranquility.rpy:823
 translate simplified_chinese tranquility_forest_1_7e87a815:
 
     # "{size=100}BOOM!{/size}"
-    "{size=100}ボンッ！{/size}"
+    "{size=100}嘭！{/size}"
 
 # game/r2_tranquility.rpy:827
 translate simplified_chinese tranquility_forest_1_65b6fed1:
 
     # "It fell with a loud thump onto the ground..."
-    "地面に落ち、鼓膜を破るほど大きな音をした……"
+    "随着一阵震耳欲聋的响声，鱼落到了地上…"
 
 # game/r2_tranquility.rpy:831
 translate simplified_chinese tranquility_forest_1_7bba2ab9:
 
     # "...and now it’s flailing and bouncing up and down."
-    "……そして、魚が地面で跳ね回り、足掻いている。"
+    "然后鱼在地面上不停地蹦跶、挣扎着。"
 
 # game/r2_tranquility.rpy:833
 translate simplified_chinese tranquility_forest_1_2a3dd19b:
 
     # p "Nothing happened..."
-    p "「何も起こってないですね…」"
+    p "「无事发生啊…」"
 
 # game/r2_tranquility.rpy:835
 translate simplified_chinese tranquility_forest_1_b779004f:
 
     # e "I even feel sorry for the fish."
-    e "「可哀想な魚…ちょっと申し訳ない気持ちもある」"
+    e "「好可怜的一条鱼…有点抱歉呢」"
 
 # game/r2_tranquility.rpy:837
 translate simplified_chinese tranquility_forest_1_0d63a433:
 
     # e "Okay, Amafi, come back here to the dimensional storage."
-    e "「はいはい、アマフィ、《次元収納》に戻ってきて」"
+    e "「来来，阿玛菲，回到《次元收纳》中吧」"
 
 # game/r2_tranquility.rpy:839
 translate simplified_chinese tranquility_forest_1_17d09bb1:
 
     # p "You even named it?!"
-    p "「名付けまで？！」"
+    p "「名字都起好了？！」"
 
 # game/r2_tranquility.rpy:849
 translate simplified_chinese tranquility_forest_2_94657e95:
 
     # e "You’re gonna let Amafi go through that kind of experience again?"
-    e "「アマフィにはまたそんなにひどいことを？」"
+    e "「还准备对阿玛菲施以暴行吗？」"
 
 # game/r2_tranquility.rpy:851
 translate simplified_chinese tranquility_forest_2_165793cb:
 
     # p "No I wasn’t! Don’t make me look like I’m the bad guy here!"
-    p "「いや、そんなことないよ！勝手に悪者にしたりしないで！」"
+    p "「才不是呢！别擅自把人鱼当成带恶人啊！」"
 
 # game/r2_tranquility.rpy:860
 translate simplified_chinese tranquility_pond_after_1_c9f53157:
 
     # p "Let’s try releasing this fish in the pond."
-    p "「じゃぁ、池に放してみましょうか」"
+    p "「那就把试试它放归池塘吧」"
 
 # game/r2_tranquility.rpy:862
 translate simplified_chinese tranquility_pond_after_1_40f1d15c:
 
     # e "Umm...I really doubt the fish can fit into that pond...it’s too big."
-    e "「あの…この池に入ることは無理かも…あの魚はでかすぎて」"
+    e "「那啥…这条鱼这么大，可能放不进这池塘了…」"
 
 # game/r2_tranquility.rpy:864
 translate simplified_chinese tranquility_pond_after_1_7f99167a:
 
     # p "Wait, hold on, but it came from this very pond!"
-    p "「いや、待って、まさにこの池から出てきましたが！」"
+    p "「不是等下，它不就是从这个池塘里出来的吗！」"
 
 # game/r2_tranquility.rpy:866
 translate simplified_chinese tranquility_pond_after_1_663984c1:
 
     # e "This is one magical pond after all."
-    e "「この池はとても呪術的なんだ」"
+    e "「这是一个具有神秘色彩的池塘呢」"
 
 # game/r2_tranquility.rpy:868
 translate simplified_chinese tranquility_pond_after_1_999f59b3:
 
     # p "Ah, whatever, let’s just try it."
-    p "「あぁ、もう、とりあえずやってみて」"
+    p "「唉真没办法，总之先试试看吧」"
 
 # game/r2_tranquility.rpy:870
 translate simplified_chinese tranquility_pond_after_1_8d2c6d64:
 
     # "We dropped the fish back into the pond but..."
-    "魚は池に放したが……"
+    "尝试着把鱼放归池塘，然而…"
 
 # game/r2_tranquility.rpy:870
 translate simplified_chinese tranquility_pond_after_1_666b5da8:
 
     # p "It’s stuck..."
-    p "「入られない…」"
+    p "「塞不进去…」"
 
 # game/r2_tranquility.rpy:874
 translate simplified_chinese tranquility_pond_after_1_69b21b4a:
 
     # e "Yeah, it’s stuck..."
-    e "「入られないよね…」"
+    e "「确实是塞不进去…」"
 
 # game/r2_tranquility.rpy:876
 translate simplified_chinese tranquility_pond_after_1_cbdbd5f0:
 
     # "...it was so big, it covered the entire pond instead."
-    "……さすがに大きすぎて、池をかぶることしかできなかったのだ。"
+    "鱼实在是太大了，直接盖在了池塘上。"
 
 # game/r2_tranquility.rpy:878
 translate simplified_chinese tranquility_pond_after_1_641399c4:
 
     # p "Let’s put it back into the dimensional storage."
-    p "「《次元収納》に戻しましょう」"
+    p "「收回《次元收纳》中吧」"
 
 # game/r2_tranquility.rpy:884
 translate simplified_chinese tranquility_pond_after_2_bbd23f89:
 
     # p "How the hell did that fish come out from that pond?"
-    p "「あの魚一体どうやってあの池から出てきましたの？」"
+    p "「那条鱼到底是怎么从池塘里出来的？」"
 
 # game/r2_tranquility.rpy:888
 translate simplified_chinese tranquility_pond_after_2_cc352ad3:
 
     # e "I can cast a spell that makes you huge as well, want to try?"
-    e "「ひとなに巨人にする魔法をかけられるよ、やってみる？」"
+    e "「我可以施一个魔法让人鱼变成巨人，要试试吗？」"
 
 # game/r2_tranquility.rpy:890
 translate simplified_chinese tranquility_pond_after_2_4953cf02:
 
     # p "That sounds kind of useful."
-    p "「それは便利そうですが」"
+    p "「感觉能派上用场呢」"
 
 # game/r2_tranquility.rpy:892
 translate simplified_chinese tranquility_pond_after_2_c68dd519:
 
     # e "Only for half a second though."
-    e "「半秒後で元に戻るけど」"
+    e "「虽然半秒后就变回来了」"
 
 # game/r2_tranquility.rpy:894
 translate simplified_chinese tranquility_pond_after_2_c9882c7b:
 
     # p "Give me back the admiration I just gave you!"
-    p "「今の感心を返してよ！」"
+    p "「把刚才的感动还给人鱼啊！」"
 
 # game/r2_tranquility.rpy:902
 translate simplified_chinese tranquility_waterfall_0a05a7eb:
 
     # p "How about we let the fish swim up the waterfall?"
-    p "「滝に魚を泳がせるのはどうですか？」"
+    p "「让鱼顺着瀑布游上去怎么样？」"
 
 # game/r2_tranquility.rpy:904
 translate simplified_chinese tranquility_waterfall_d00d2e3d:
 
     # e "That...actually might work?"
-    e "「それ…うまくいけるかも？」"
+    e "「感觉…这招或许能行？」"
 
 # game/r2_tranquility.rpy:906
 translate simplified_chinese tranquility_waterfall_ee181f55:
 
     # "We released the fish into the waterfall and let it swim in the waterfall..."
-    "あの魚は滝に放し、滝に泳がせることにした。そして……"
+    "把鱼放进瀑布里，让它顺着瀑布往上游。然后…"
 
 # game/r2_tranquility.rpy:908
 translate simplified_chinese tranquility_waterfall_c5f8ca7f:
 
     # p "It’s actually swimming up there..."
-    p "「本当に滝の上を泳いでます…」"
+    p "「真的游到瀑布上面去了呢…」"
 
 # game/r2_tranquility.rpy:910
 translate simplified_chinese tranquility_waterfall_82ac5d58:
 
     # "...and it reached the top of the waterfall without problems, blocking the flow of water."
-    "……無事に滝の頂点に到着し、川の流れをせき止めた。"
+    "顺利到达了瀑布顶端，阻断了水流。"
 
 # game/r2_tranquility.rpy:912
 translate simplified_chinese tranquility_waterfall_607e74db:
 
     # p "The waterfall disappeared..."
-    p "「滝が消えました…」"
+    p "「瀑布消失了…」"
 
 # game/r2_tranquility.rpy:918
 translate simplified_chinese tranquility_waterfall_25df73bd:
 
     # e "That fish is surely huge, huh."
-    e "「あの魚は本当にでかすぎるよね」"
+    e "「那鱼也实在太大个儿了」"
 
 # game/r2_tranquility.rpy:920
 translate simplified_chinese tranquility_waterfall_8d6b422c:
 
     # "We looked at the pond and it too had dried up."
-    "池を見ると、それも干上がった。"
+    "看向池塘，池塘也已经干涸了。"
 
 # game/r2_tranquility.rpy:922
 translate simplified_chinese tranquility_waterfall_e8748299:
 
     # "The hole left behind was so deep, the bottom could not be seen. But in the hole..."
-    "残った穴は深すぎて、底が見えない。あの穴には……"
+    "剩下一个深不见底的洞穴。而在洞穴内…"
 
 # game/r2_tranquility.rpy:924
 translate simplified_chinese tranquility_waterfall_af26f87a:
 
     # p "There! Something is shining!"
-    p "「あそこ！何かがピカピカしています！」"
+    p "「那里！有什么在闪闪发光！」"
 
 # game/r2_tranquility.rpy:926
 translate simplified_chinese tranquility_waterfall_1beca18c:
 
     # "Something was shining."
-    "光っている何かがある。"
+    "有一个闪着光的物体。"
 
 # game/r2_tranquility.rpy:932
 translate simplified_chinese tranquility_waterfall_3ff0354c:
 
     # e "Wind among us, elevate!"
-    e "「風よ！持ち上げたまえ！」"
+    e "「风啊！将它带上来吧！」"
 
 # game/r2_tranquility.rpy:934
 translate simplified_chinese tranquility_waterfall_a09f0633:
 
     # "As Eve cast her the spell, a shining blue orb flew up from the hole, and landed gently in my open hands."
-    "とイーブが唱え、青い光っている玉が浮き上がり、私の平手にそっと止まり、置かられたままになった。"
+    "随着伊芙的咏唱，发出青色光芒的宝珠浮上空中，最后停在了人鱼的手心里。"
 
 # game/r2_tranquility.rpy:936
 translate simplified_chinese tranquility_waterfall_32f8ab5e:
 
     # "Then, the orb entered my body on its own."
-    "そして、あの青い玉は勝手に体に入った。"
+    "然后，青色宝珠进入了人鱼的体内。"
 
 # game/r2_tranquility.rpy:940
 translate simplified_chinese tranquility_waterfall_0ccdd9eb:
 
     # e "Congratulations, the wind didn’t lie this time."
-    e "「御目出度う、今度こそ風が嘘を付か無かった」"
+    e "「太好了！这次风没有骗人呢」"
 
 # game/r2_tranquility.rpy:942
 translate simplified_chinese tranquility_waterfall_4d270a6e:
 
     # e "You are indeed the second salvation that will save this world, Hitona."
-    e "「この世界を救う第二救世主は貴方だよ、ひとな」"
+    e "「人鱼，你就是拯救这个世界的第二位救世主啊」"
 
 # game/r2_tranquility.rpy:944
 translate simplified_chinese tranquility_waterfall_c8ea8a4a:
@@ -1425,88 +1425,88 @@ translate simplified_chinese strings:
 
     # game/r2_tranquility.rpy:154
     old "Where should I use this fish?"
-    new "すごくでかい魚はどこに連れて行く？"
+    new "要把这条巨大的鱼带到哪里去呢？"
 
     # game/r2_tranquility.rpy:154
     old "Forest"
-    new "森"
+    new "森林"
 
     # game/r2_tranquility.rpy:154
     old "Pond"
-    new "池"
+    new "池塘"
 
     # game/r2_tranquility.rpy:154
     old "Waterfall"
-    new "滝"
+    new "瀑布"
 
     # game/r2_tranquility.rpy:167
     old "Where should I go?"
-    new "どこに向く？"
+    new "要去哪里呢？"
 
     # game/r2_tranquility.rpy:167
     old "Forest Spot 1"
-    new "森の場１"
+    new "森林地点1"
 
     # game/r2_tranquility.rpy:167
     old "Forest Spot 2"
-    new "森の場２"
+    new "森林地点2"
 
     # game/r2_tranquility.rpy:167
     old "Forest Spot 3"
-    new "森の場３"
+    new "森林地点3"
 
     # game/r2_tranquility.rpy:713
     old "Which bait to give?"
-    new "どの餌をあげる？"
+    new "要给他哪一种饵料呢？"
 
     # game/r2_tranquility.rpy:713
     old "Frog"
-    new "ぬるぬるカエル"
+    new "滑溜溜的青蛙"
 
     # game/r2_tranquility.rpy:713
     old "Slimy Worm"
-    new "ぬるぬるウジ虫"
+    new "黏糊糊的蛆"
 
     # game/r2_tranquility.rpy:713
     old "Cockroach"
-    new "ゴキブリ"
+    new "小强"
 
     # game/r2_tranquility.rpy:716
     old "Big Fish"
-    new "大魚"
+    new "大鱼"
 
     # game/r2_tranquility.rpy:719
     old "frog"
-    new "ぬるぬるカエル"
+    new "滑溜溜的青蛙"
 
     # game/r2_tranquility.rpy:721
     old "Medium Fish"
-    new "中魚"
+    new "中等大小的鱼"
 
     # game/r2_tranquility.rpy:724
     old "slimy worm"
-    new "ぬるぬるウジ虫"
+    new "黏糊糊的蛆"
 
     # game/r2_tranquility.rpy:726
     old "Small Fish"
-    new "小魚"
+    new "小鱼"
 
     # game/r2_tranquility.rpy:729
     old "cockroach"
-    new "ゴキブリ"
+    new "小强"
 
     # game/r2_tranquility.rpy:768
     old "Release the fish"
-    new "魚を放す"
+    new "把鱼放生"
 
     # game/r2_tranquility.rpy:766
     old "Don’t release the fish"
-    new "魚を放さない"
+    new "不放生"
 
     # game/r2_tranquility.rpy:295
     old "Of course!"
-    new "もちろん！"
+    new "当然了！"
 
     # game/r2_tranquility.rpy:295
     old "Of course not..."
-    new "「もちろん泳ぎませんよ」"
+    new "「当然不去泳了」"

@@ -14,7 +14,7 @@ translate simplified_chinese strings:
 
     # game/characters.rpy:6
     old "Eve"
-    new "イーブ"
+    new "伊芙"
 
     # game/characters.rpy:7
     old "Soldier"
@@ -22,44 +22,44 @@ translate simplified_chinese strings:
 
     # game/characters.rpy:8
     old "Hitoni"
-    new "ひとに"
+    new "人仁"
 
     # game/characters.rpy:9
     old "Hitoshi"
-    new "ひとし"
+    new "人司"
 
     # game/characters.rpy:10
     old "Hitoju"
-    new "ひとじゅ"
+    new "人茹"
 
     # game/characters.rpy:11
     old "Old Man"
-    new "おじさん"
+    new "老爷爷"
 
     # game/characters.rpy:12
     old "King"
-    new "王"
+    new "国王"
 
     # game/characters.rpy:13
     old "Pierrot"
-    new "ピエロ"
+    new "皮埃罗"
 
     # game/characters.rpy:14
     old "Lios"
-    new "リオス"
+    new "里奥斯"
 
     # game/characters.rpy:15
     old "Cat"
-    new "ネコ"
+    new "猫"
 
     # game/characters.rpy:16
     old "Dog"
-    new "イヌ"
+    new "狗"
 
     # game/characters.rpy:17
     old "Deer"
-    new "シカ"
+    new "鹿"
 
     # game/characters.rpy:18
     old "Rabbit"
-    new "ウサギ"
+    new "兔子"

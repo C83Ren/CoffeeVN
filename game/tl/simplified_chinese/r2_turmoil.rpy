@@ -2,106 +2,106 @@
 translate simplified_chinese r2_turmoil_058ca139:
 
     # p "This is such a heavy rain..."
-    p "「雨はすごく激しいっ」"
+    p "「倾盆大雨啊…」"
 
 # game/r2_turmoil.rpy:13
 translate simplified_chinese r2_turmoil_e6c534d9:
 
     # e "With lightning striking the ground so frequently as well."
-    e "「雷もよく落ちるね」"
+    e "「而且雷鸣不断呢」"
 
 # game/r2_turmoil.rpy:15
 translate simplified_chinese r2_turmoil_0ae04ad9:
 
     # e "We don’t have any clue about what to do here; we probably can’t pass through here..."
-    e "「どうすればいいのか全くわからないから、多分ここには前進できない…」"
+    e "「该怎么做也毫无头绪，大概不能走这里吧…」"
 
 # game/r2_turmoil.rpy:17
 translate simplified_chinese r2_turmoil_e2f5dc98:
 
     # p "Can you make a storm like this with magic, Eve?"
-    p "「魔法でこのような嵐を使えますか？」"
+    p "「能用魔法做出这样的狂风吗？」"
 
 # game/r2_turmoil.rpy:19
 translate simplified_chinese r2_turmoil_a7b50339:
 
     # e "At a smaller scale, yeah."
-    e "「より小さい規模なら」"
+    e "「规模小一点的话是可以的」"
 
 # game/r2_turmoil.rpy:21
 translate simplified_chinese r2_turmoil_5abab136:
 
     # p "That’s oddly humble from you"
-    p "「意外と謙虚ですね、あなたって」"
+    p "「以小伊芙来说还挺谦虚的呢」"
 
 # game/r2_turmoil.rpy:23
 translate simplified_chinese r2_turmoil_b4ac3d88:
 
     # e "That’s plenty enough to defeat small fries like the soldiers, no need to use a fancier spell."
-    e "「兵士みたいな雑魚なら十分、豪華な魔法は必要がない」"
+    e "「对付杂兵已经足够了，不需要那么豪华的魔法」"
 
 # game/r2_turmoil.rpy:25
 translate simplified_chinese r2_turmoil_5cd70a7b:
 
     # e "If Hitona can defeat them, why bother using such a flashy spell?"
-    e "「ひとなが倒せたら、わざわざ使う理由はないんだ」"
+    e "「要是人鱼就能打倒他们，也不必让我费心用这么浮夸的魔法了」"
 
 # game/r2_turmoil.rpy:27
 translate simplified_chinese r2_turmoil_cd79995c:
 
     # p "You’re mocking me, aren’t you?"
-    p "「ひとなを見下してますよね？ね？」"
+    p "「是不是小看人鱼啊喂！喂！」"
 
 # game/r2_turmoil.rpy:29
 translate simplified_chinese r2_turmoil_1f57ac14:
 
     # "For some reason, Eve started patting me on the head."
-    "何故か、イーブが頭を撫で始めた。"
+    "不知为何，伊芙抚摸起人鱼的头。"
 
 # game/r2_turmoil.rpy:31
 translate simplified_chinese r2_turmoil_318ca35f:
 
     # p "I’ll get you back later for this!"
-    p "「これを覚えるんですよ」"
+    p "「可记好了啊！」"
 
 # game/r2_turmoil.rpy:43
 translate simplified_chinese turmoil_pillar_d4fa34c9:
 
     # "It’s a normal-looking stone pillar."
-    "普通に見える石柱だ。"
+    "随处可见的石柱。"
 
 # game/r2_turmoil.rpy:45
 translate simplified_chinese turmoil_pillar_3ed0ec05:
 
     # e "Be careful not to get close to it."
-    e "「近づかないように気をつけて」"
+    e "「注意不要靠近哦」"
 
 # game/r2_turmoil.rpy:47
 translate simplified_chinese turmoil_pillar_e46eeac8:
 
     # e "Lightning might strike it at any moment."
-    e "「落雷がありそう」"
+    e "「感觉会有落雷」"
 
 # game/r2_turmoil.rpy:52
 translate simplified_chinese turmoil_tablet_76020dae:
 
     # "It’s a stone tablet with no inscription."
-    "撰文のない石版だ。"
+    "未撰有文书的石板。"
 
 # game/r2_turmoil.rpy:54
 translate simplified_chinese turmoil_tablet_736dcbd7:
 
     # p "What’s this doing here?"
-    p "「なんでこんな所にあるの、この石版」"
+    p "「这块石板为什么会在这里呢？」"
 
 # game/r2_turmoil.rpy:56
 translate simplified_chinese turmoil_tablet_ee192b31:
 
     # e "Might have to do with how we get the ultimate spell."
-    e "「極大魔法と関係があるかも」"
+    e "「或许与极大魔法有关吧」"
 
 # game/r2_turmoil.rpy:58
 translate simplified_chinese turmoil_tablet_f81aab05:
 
     # e "Just remember it for now."
-    e "「とりあえず覚えといてね」"
+    e "「总之先记下来吧」"

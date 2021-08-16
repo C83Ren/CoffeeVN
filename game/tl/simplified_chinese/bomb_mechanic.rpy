@@ -2,4 +2,4 @@
 translate simplified_chinese bomb_mechanic_c5bf2879:
 
     # l "Memorize it well~"
-    l "「ちゃんと覚えてね〜」"
+    l "「给我好好记着！」"

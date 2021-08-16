@@ -107,3 +107,7 @@ translate simplified_chinese strings:
     # game/credits.rpy:1
     old "Hitona Kohigashi"
     new "小东人鱼"
+
+    # game/credits.rpy:1
+    old "きまぐれアフター"
+    new "きまぐれアフター"
