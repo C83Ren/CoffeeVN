@@ -14,7 +14,7 @@ translate simplified_chinese r3_bomb_0bb08116:
 translate simplified_chinese r3_bomb_44e47dbe:
 
     # pi "It reminds me of when Kohigashi was playing XXXXXX and she drew XXXX."
-    pi "「让我记想起小东女士玩XXXX，画XX的时候呢」"
+    pi "「让我记想起[player_last_name]女士玩XXXX，画XX的时候呢」"
 
 # game/r3_bomb.rpy:14
 translate simplified_chinese r3_bomb_891536a3:
@@ -98,7 +98,7 @@ translate simplified_chinese r3_bomb_9b39f757:
 translate simplified_chinese r3_bomb_b3c6c5ec:
 
     # p "I can’t believe it..."
-    p "「人鱼可不敢信…」"
+    p "「[player_name]可不敢信…」"
 
 # game/r3_bomb.rpy:48
 translate simplified_chinese r3_bomb_92e64f74:
@@ -110,7 +110,7 @@ translate simplified_chinese r3_bomb_92e64f74:
 translate simplified_chinese r3_bomb_8c2bd38f:
 
     # "Pierrot pulled my hands and led me on a search for the last challenge."
-    "皮埃罗牵起人鱼的手，带着人鱼去找最后的挑战了。"
+    "皮埃罗牵起[player_name]的手，带着人鱼去找最后的挑战了。"
 
 # game/r3_bomb.rpy:54
 translate simplified_chinese r3_bomb_3f03656f:
@@ -176,7 +176,7 @@ translate simplified_chinese r3_bomb_3d2e3340:
 translate simplified_chinese r3_bomb_b296efe0:
 
     # "While I was still processing what Pierrot said, the scene suddenly changed again."
-    "人鱼还在思考皮埃罗说的话，场景就又一次发生了变化"
+    "[player_name]还在思考皮埃罗说的话，场景就又一次发生了变化"
 
 # game/r3_bomb.rpy:88
 translate simplified_chinese r3_bomb_88f782c2:
@@ -200,7 +200,7 @@ translate simplified_chinese r3_bomb_eedc6fa2:
 translate simplified_chinese r3_bomb_dcb325c3:
 
     # pi "Don’t falter, Kohigashi! You can do it!"
-    pi "「小东女士！不要害怕，上吧…！」"
+    pi "「[player_last_name]女士！不要害怕，上吧…！」"
 
 # game/r3_bomb.rpy:96
 translate simplified_chinese r3_bomb_fbe65a74:
@@ -338,13 +338,13 @@ translate simplified_chinese bomb_fail_8226ad13:
 translate simplified_chinese bomb_fail_8df8a758:
 
     # "{i}Eh? I’m in...my room? On my bed...{/i}"
-    "（诶？这里是…人鱼的房间？为什么人鱼会在床上…）"
+    "（诶？这里是…[player_name]的房间？为什么人鱼会在床上…）"
 
 # game/r3_bomb.rpy:178
 translate simplified_chinese bomb_fail_66721ea5:
 
     # "{i}Even if that was a dream, I wonder what was stolen...{/i}"
-    "（就算那是个梦，人鱼也想知道到底是什么东西被偷了…）"
+    "（就算那是个梦，[player_name]也想知道到底是什么东西被偷了…）"
 
 # game/r3_bomb.rpy:180
 translate simplified_chinese bomb_fail_c453ade6:
@@ -374,7 +374,7 @@ translate simplified_chinese bomb_fail_c98675fc:
 translate simplified_chinese bomb_fail_62f7d1de:
 
     # "While running towards the park, that dream? kept spinning in my mind."
-    "从房间跑去公园的途中，那个梦？一直盘旋在人鱼的脑海里。"
+    "从房间跑去公园的途中，那个梦？一直盘旋在[player_name]的脑海里。"
 
 # game/r3_bomb.rpy:192
 translate simplified_chinese bomb_fail_4181f155:

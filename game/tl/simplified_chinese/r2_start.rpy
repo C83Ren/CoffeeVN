@@ -117,7 +117,7 @@ translate simplified_chinese r2_start_339fa61e:
 translate simplified_chinese r2_start_9159ad52:
 
     # e "I see, I see, so your name is Hitona Kohigashi, and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
-    e "「「原来如此，原来如此。你是小东人鱼，而将你召唤至此的是…那个…名字怎么读来着…莉斯…莉兹娜…呃…搞不懂了就算了吧！不过之后要好好传达感谢之情…」"
+    e "「「原来如此，原来如此。你是[player_full_name]，而将你召唤至此的是…那个…名字怎么读来着…莉斯…莉兹娜…呃…搞不懂了就算了吧！不过之后要好好传达感谢之情…」"
 
 # game/r2_start.rpy:61
 translate simplified_chinese r2_start_70682ee9:
@@ -249,7 +249,7 @@ translate simplified_chinese r2_start_6aeae3f0:
 translate simplified_chinese r2_start_ba635e0c:
 
     # e "Well, it’s no good having Hitona go deeper into the forest, so I guess we just have to stop him here!"
-    e "「不过，也不能让人鱼再往森林深处走了，那就只能在这里把士兵打倒了！」"
+    e "「不过，也不能让[player_name]再往森林深处走了，那就只能在这里把士兵打倒了！」"
 
 # game/r2_start.rpy:124
 translate simplified_chinese r2_start_a9ff53b4:
@@ -321,7 +321,7 @@ translate simplified_chinese r2_start_after_battle_03af76a7:
 translate simplified_chinese r2_start_after_battle_777b0858:
 
     # p "Wait no, to begin with, I shouldn’t even be able to use magic right?"
-    p "「话又说回来，人鱼不可能用得来魔法的吧？」"
+    p "「话又说回来，[player_name]不可能用得来魔法的吧？」"
 
 # game/r2_start.rpy:181
 translate simplified_chinese r2_start_after_battle_9a0d5a5b:

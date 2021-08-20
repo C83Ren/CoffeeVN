@@ -8,7 +8,7 @@ translate simplified_chinese r2_map_1_31851aac:
 translate simplified_chinese r2_map_1_a1ae2553:
 
     # p "How do you do that!? I don’t want to carry anything either!"
-    p "「这是怎么做到的？人鱼也不想提着东西了！」"
+    p "「这是怎么做到的？[player_name]也不想提着东西了！」"
 
 # game/r2_map.rpy:15
 translate simplified_chinese r2_map_1_181252c0:
@@ -176,7 +176,7 @@ translate simplified_chinese map_talk_1cf54bad:
 translate simplified_chinese map_talk_389a6ba9:
 
     # p "To be honest, I’m really excited!"
-    p "「说真的人鱼也很期待呢！」"
+    p "「说真的[player_name]也很期待呢！」"
 
 # game/r2_map.rpy:143
 translate simplified_chinese map_talk_94ebf013:

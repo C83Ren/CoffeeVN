@@ -68,7 +68,7 @@ translate simplified_chinese village_talk_1_68deeebf:
 translate simplified_chinese village_talk_2_6d84b35a:
 
     # p "You called me second salvation, so who was the first?"
-    p "「既然把人鱼称作第二位救世主，那第一位是谁？」"
+    p "「既然把[player_name]称作第二位救世主，那第一位是谁？」"
 
 # game/r2_village.rpy:104
 translate simplified_chinese village_talk_2_165210e1:
@@ -110,7 +110,7 @@ translate simplified_chinese village_talk_3_3a84d10b:
 translate simplified_chinese village_talk_3_5ef51b65:
 
     # p "That doesn’t explain anything at all..."
-    p "「光这么说人鱼也不懂啊…」"
+    p "「光这么说[player_name]也不懂啊…」"
 
 # game/r2_village.rpy:128
 translate simplified_chinese village_talk_3_c9e41093:
@@ -231,13 +231,13 @@ translate simplified_chinese village_house_1_1_85af4a38:
 translate simplified_chinese village_house_1_1_d0d441c3:
 
     # e "Anyways, this is our second salvation, her name is Hitona. Found her in the forest."
-    e "「总之，她就是第二位救世主人鱼了。是我在森林里找到的」"
+    e "「总之，她就是第二位救世主[player_name]了。是我在森林里找到的」"
 
 # game/r2_village.rpy:191
 translate simplified_chinese village_house_1_1_4ac634e1:
 
     # p "Nice to meet you, I’m Hitona Kohigashi."
-    p "「初次见面，我是小东人鱼」"
+    p "「初次见面，我是[player_full_name]」"
 
 # game/r2_village.rpy:193
 translate simplified_chinese village_house_1_1_5df01ba1:
@@ -261,7 +261,7 @@ translate simplified_chinese village_house_1_1_bc5a3cb5:
 translate simplified_chinese village_house_1_1_913add89:
 
     # e "Hitona only has Wind Blast right now."
-    e "「毕竟人鱼只有《暴风》这一个魔法」"
+    e "「毕竟[player_name]只有《暴风》这一个魔法」"
 
 # game/r2_village.rpy:201
 translate simplified_chinese village_house_1_1_c2a0d7bf:
@@ -303,7 +303,7 @@ translate simplified_chinese village_house_1_2_04fc6565:
 translate simplified_chinese village_house_1_2_e09f3d0b:
 
     # p "No nothing, just wondering what’s your relation with Eve."
-    p "「没有，人鱼只是在想您和小伊芙是什么关系」"
+    p "「没有，[player_name]只是在想您和小伊芙是什么关系」"
 
 # game/r2_village.rpy:229
 translate simplified_chinese village_house_1_2_c340c691:
@@ -411,19 +411,19 @@ translate simplified_chinese village_house_2_2_e8d1815a:
 translate simplified_chinese village_house_2_2_ca928913:
 
     # p "It’s Hitona Kohigashi."
-    p "「我叫做小东人鱼」"
+    p "「我叫做[player_full_name]」"
 
 # game/r2_village.rpy:285
 translate simplified_chinese village_house_2_2_509080dd:
 
     # hs "Kohigashi hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
-    hs "「小东啊。要是正如伊芙所说，你就是这个世界的救世主就好了呢…」"
+    hs "「[player_last_name]啊。要是正如伊芙所说，你就是这个世界的救世主就好了呢…」"
 
 # game/r2_village.rpy:287
 translate simplified_chinese village_house_2_2_744470eb:
 
     # p "I have no idea what you two are talking about, but I doubt it..."
-    p "「虽然不知道你们在讲什么，人鱼觉得大概不是那样的…」"
+    p "「虽然不知道你们在讲什么，[player_name]觉得大概不是那样的…」"
 
 # game/r2_village.rpy:289
 translate simplified_chinese village_house_2_2_9c5d8b6f:
@@ -453,13 +453,13 @@ translate simplified_chinese village_house_3_1_20dafd1c:
 translate simplified_chinese village_house_3_1_d24acfd4:
 
     # e "Yep, she’s Hitona."
-    e "「对对，她叫人鱼」"
+    e "「对对，她叫[player_name]」"
 
 # game/r2_village.rpy:309
 translate simplified_chinese village_house_3_1_4ac634e1:
 
     # p "Nice to meet you, I’m Hitona Kohigashi."
-    p "「初次见面，我是小东人鱼」"
+    p "「初次见面，我是[player_full_name]」"
     "队长" "「初次见面」"
 
 # game/r2_village.rpy:311
@@ -472,13 +472,13 @@ translate simplified_chinese village_house_3_1_ae8b0862:
 translate simplified_chinese village_house_3_1_70c32e8c:
 
     # p "You got that right, I have no idea why I am here."
-    p "「是这样的，人鱼现在也完全不明白为什么到这里来了」"
+    p "「是这样的，[player_name]现在也完全不明白为什么到这里来了」"
 
 # game/r2_village.rpy:317
 translate simplified_chinese village_house_3_1_dea3fd8a:
 
     # e "Well then, I will leave Hitona to you, Captain! I’ll be waiting outside."
-    e "「那人鱼就先交给你了！我在外面等着哦」"
+    e "「那[player_name]就先交给你了！我在外面等着哦」"
 
 # game/r2_village.rpy:323
 translate simplified_chinese village_house_3_1_98b85375:
@@ -496,7 +496,7 @@ translate simplified_chinese village_house_3_1_b5d5d6c1:
 translate simplified_chinese village_house_3_1_a635d19c:
 
     # p "You tell me...I somehow got suddenly dragged into this world, somehow fought a soldier with magic, and got dragged around by that weird girl."
-    p "「人鱼也不太明白…出门后不知为何就来到了这个世界，还用魔法和士兵打了一场…」"
+    p "「[player_name]也不太明白…出门后不知为何就来到了这个世界，还用魔法和士兵打了一场…」"
     p "「…再就被那个脑回路清奇的孩子带到这里来了」"
 
 # game/r2_village.rpy:329
@@ -551,7 +551,7 @@ translate simplified_chinese village_house_3_1_6aad8a07:
 translate simplified_chinese village_house_3_1_e07eddb6:
 
     # "I summarized everything Eve had told me up until now."
-    "人鱼把从伊芙那里听到的说明进行了简单总结。"
+    "[player_name]把从伊芙那里听到的说明进行了简单总结。"
 
 # game/r2_village.rpy:347
 translate simplified_chinese village_house_3_1_2d1baf47:
@@ -569,7 +569,7 @@ translate simplified_chinese village_house_3_1_859faafc:
 translate simplified_chinese village_house_3_1_7c0cad1e:
 
     # p "I don’t see how someone who doesn’t know anything can help you reach that goal."
-    p "「可是对这个世界的状况一无所知的人鱼，只会阻碍这个目标的达成吧」"
+    p "「可是对这个世界的状况一无所知的[player_name]，只会阻碍这个目标的达成吧」"
 
 # game/r2_village.rpy:353
 translate simplified_chinese village_house_3_1_aa7ee42e:
@@ -623,7 +623,7 @@ translate simplified_chinese village_house_3_1_0e0e53c8:
 translate simplified_chinese village_house_3_1_56413598:
 
     # p "And you’re saying I’m chosen?"
-    p "「是说人鱼就是被选中的人吗？」"
+    p "「是说[player_name]就是被选中的人吗？」"
 
 # game/r2_village.rpy:371
 translate simplified_chinese village_house_3_1_3ff2baed:
@@ -809,7 +809,7 @@ translate simplified_chinese village_house_4_2_10d1e5bf:
 translate simplified_chinese village_house_4_2_9bb11519:
 
     # "I tried flipping some books as well."
-    "人鱼也试着翻了翻书，但是…"
+    "[player_name]也试着翻了翻书，但是…"
 
 # game/r2_village.rpy:471
 translate simplified_chinese village_house_4_2_c201af73:
@@ -899,7 +899,7 @@ translate simplified_chinese strings:
 
     # game/r2_village.rpy:378
     old "I’ll go collect the ultimate spells for you"
-    new "那人鱼就为了大家去收集极大魔法吧"
+    new "那[player_name]就为了大家去收集极大魔法吧"
 
     # game/r2_village.rpy:378
     old "Nope, it sounds too annoying"

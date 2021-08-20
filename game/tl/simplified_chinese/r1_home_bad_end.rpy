@@ -2,7 +2,7 @@
 translate simplified_chinese r1_home_bad_end_99b6e88e:
 
     # p "It’s getting late, Shiraishi; you should go home now. I’ll accompany you."
-    p "「小白石，时间也不早了，还是回家比较好哦。人鱼会送你回去的」"
+    p "「小白石，时间也不早了，还是回家比较好哦。[player_name]会送你回去的」"
 
 # game/r1_home_bad_end.rpy:8
 translate simplified_chinese r1_home_bad_end_95c7b24a:
@@ -38,13 +38,13 @@ translate simplified_chinese r1_home_bad_end_894c7279:
 translate simplified_chinese r1_home_bad_end_5929b738:
 
     # s "Don’t worry, Hitona onee-chan. Just, follow me."
-    s "「没事的人鱼姐姐。跟着白石走吧」"
+    s "「没事的[player_name]姐姐。跟着白石走吧」"
 
 # game/r1_home_bad_end.rpy:22
 translate simplified_chinese r1_home_bad_end_a9e92f94:
 
     # "Saying that, Shiraishi stood up and led the way."
-    "说着，白石站起身来，开始带着人鱼走了起来。"
+    "说着，白石站起身来，开始带着[player_name]走了起来。"
 
 # game/r1_home_bad_end.rpy:28
 translate simplified_chinese r1_home_bad_end_6cb549db:
@@ -62,7 +62,7 @@ translate simplified_chinese r1_home_bad_end_d7635d53:
 translate simplified_chinese r1_home_bad_end_fb854112:
 
     # s "It’s okay, Hitona onee-chan. We’ll be there soon."
-    s "「没事的人鱼姐姐。再走多一下就到了」"
+    s "「没事的[player_name]姐姐。再走多一下就到了」"
 
 # game/r1_home_bad_end.rpy:40
 translate simplified_chinese r1_home_bad_end_c12c89e7:
@@ -92,7 +92,7 @@ translate simplified_chinese r1_home_bad_end_f6928974:
 translate simplified_chinese r1_home_bad_end_53a1cc0b:
 
     # s "Hitona onee-chan, I really had a lot of fun today."
-    s "「人鱼姐姐，今天真的非常开心」"
+    s "「[player_name]姐姐，今天真的非常开心」"
 
 # game/r1_home_bad_end.rpy:50
 translate simplified_chinese r1_home_bad_end_e976e4d1:

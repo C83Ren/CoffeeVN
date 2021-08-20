@@ -8,7 +8,7 @@ translate simplified_chinese end_14_0f6ee6ab:
 translate simplified_chinese end_14_d6dc5645:
 
     # "…my phone started to ring."
-    "…人鱼的手机响了起来。"
+    "…[player_name]的手机响了起来。"
 
 # game/true_end.rpy:16
 translate simplified_chinese end_14_633dc7b3:
@@ -20,7 +20,7 @@ translate simplified_chinese end_14_633dc7b3:
 translate simplified_chinese end_14_453b9644:
 
     # p "Ah senpai, I’m on my way there now!"
-    p "「啊，是前辈啊！人鱼在去的路上了！」"
+    p "「啊，是前辈啊！[player_name]在去的路上了！」"
 
 # game/true_end.rpy:20
 translate simplified_chinese end_14_53eddfa1:
@@ -56,7 +56,7 @@ translate simplified_chinese end_14_ad683dd1:
 translate simplified_chinese end_14_4e218e8e:
 
     # p "I…okay, I’ll head back now then."
-    p "「嗯…嗯，那人鱼现在就回去」"
+    p "「嗯…嗯，那[player_name]现在就回去」"
 
 # game/true_end.rpy:32
 translate simplified_chinese end_14_a9422ad8:
@@ -68,7 +68,7 @@ translate simplified_chinese end_14_a9422ad8:
 translate simplified_chinese end_14_71024505:
 
     # "When I returned, I found senpai standing outside my door waiting for me."
-    "人鱼一回去，就看到前辈正站在门前等待着。"
+    "[player_name]一回去，就看到前辈正站在门前等待着。"
 
 # game/true_end.rpy:38
 translate simplified_chinese end_14_257b0f9e:
@@ -86,7 +86,7 @@ translate simplified_chinese end_14_11a65885:
 translate simplified_chinese end_14_436e320f:
 
     # p "You should’ve told me you were coming!"
-    p "「来了的话早点跟人鱼说嘛！」"
+    p "「来了的话早点跟[player_name]说嘛！」"
 
 # game/true_end.rpy:44
 translate simplified_chinese end_14_ad0a2050:
@@ -98,7 +98,7 @@ translate simplified_chinese end_14_ad0a2050:
 translate simplified_chinese end_14_542c6768:
 
     # p "But…I headed straight for the park right after you called!"
-    p "「诶…人鱼可是和前辈通完电话就径直去了公园呢！」"
+    p "「诶…[player_name]可是和前辈通完电话就径直去了公园呢！」"
 
 # game/true_end.rpy:48
 translate simplified_chinese end_14_9661ec56:
@@ -116,7 +116,7 @@ translate simplified_chinese end_14_12c09cec:
 translate simplified_chinese end_14_b7ae9a6b:
 
     # "I opened the door, and the two of us went inside."
-    "人鱼打开了门，两人走进了家中。"
+    "[player_name]打开了门，两人走进了家中。"
 
 # game/true_end.rpy:56
 translate simplified_chinese end_14_6ea2015d:
@@ -142,7 +142,7 @@ translate simplified_chinese end_14_c1c2bbd3:
 translate simplified_chinese end_14_d482a1c9:
 
     # "I took three keys and slips of paper out from my drawer."
-    "人鱼拿出了那三张纸条和三把钥匙。"
+    "[player_name]拿出了那三张纸条和三把钥匙。"
 
 # game/true_end.rpy:64
 translate simplified_chinese end_14_f8f9ecf9:

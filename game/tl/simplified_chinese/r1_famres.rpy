@@ -51,7 +51,7 @@ translate simplified_chinese r1_famres_d207e06f:
 translate simplified_chinese r1_famres_06a71942:
 
     # p "Let’s call the waitress then."
-    p "「那人鱼去叫店员了哦」"
+    p "「那[player_name]去叫店员了哦」"
 
 # game/r1_famres.rpy:49
 translate simplified_chinese r1_famres_0968cd71:
@@ -63,7 +63,7 @@ translate simplified_chinese r1_famres_0968cd71:
 translate simplified_chinese r1_famres_f3e2da6e:
 
     # p "I’d like the carbonara pasta and fries. What about you, Shiraishi?"
-    p "「人鱼要培根蛋酱意面和薯条。小白石要点什么呢？」"
+    p "「[player_name]要培根蛋酱意面和薯条。小白石要点什么呢？」"
 
 # game/r1_famres.rpy:55
 translate simplified_chinese r1_famres_c736f63b:
@@ -105,7 +105,7 @@ translate simplified_chinese r1_famres_ba3a7a1e:
 translate simplified_chinese r1_famres_016e969e:
 
     # "Shiraishi just replied with a bright smile."
-    "白石只给人鱼回了个笑容。"
+    "白石只给[player_name]回了个笑容。"
 
 # game/r1_famres.rpy:69
 translate simplified_chinese r1_famres_39f79847:
@@ -123,7 +123,7 @@ translate simplified_chinese r1_famres_34f34641:
 translate simplified_chinese r1_famres_62e97dc8:
 
     # s "Hitona onee-chan~"
-    s "「人鱼姐姐～」"
+    s "「[player_name]姐姐～」"
 
 # game/r1_famres.rpy:77
 translate simplified_chinese r1_famres_58ee35ab:
@@ -135,7 +135,7 @@ translate simplified_chinese r1_famres_58ee35ab:
 translate simplified_chinese r1_famres_39f5ca62:
 
     # s "Can Hitona onee-chan eat one of these?"
-    s "「人鱼姐姐能帮我吃一道菜吗？」"
+    s "「[player_name]姐姐能帮我吃一道菜吗？」"
 
 # game/r1_famres.rpy:81
 translate simplified_chinese r1_famres_c8ea8a4a_2:
@@ -165,7 +165,7 @@ translate simplified_chinese r1_famres_7e51760b:
 translate simplified_chinese r1_famres_39827c3a:
 
     # "Shiraishi looked at me pleadingly with eyes full of hope."
-    "白石用充满了希望和强烈愿望的眼神看着人鱼。"
+    "白石用充满了希望和强烈愿望的眼神看着[player_name]。"
 
 # game/r1_famres.rpy:93
 translate simplified_chinese r1_famres_5b9bcfd4:
@@ -177,20 +177,20 @@ translate simplified_chinese r1_famres_5b9bcfd4:
 translate simplified_chinese r1_famres_b22520bd:
 
     # s "Pick one, Hitona onee-chan!"
-    s "「人鱼姐姐，选一个喜欢的吧！」"
+    s "「[player_name]姐姐，选一个喜欢的吧！」"
 
 # game/r1_famres.rpy:109
 translate simplified_chinese r1_famres_91182f92:
 
     # p "I’ll have the [famires_food!t] then."
-    p "「那，人鱼选[famires_food!t]吧」"
+    p "「那，[player_name]选[famires_food!t]吧」"
     "{color=[p.who_args[color]]}[p]{/color}＆{color=[s.who_args[color]]}[s]{/color}" "「「我开动了！」」"
 
 # game/r1_famres.rpy:114
 translate simplified_chinese r1_famres_1e487da6:
 
     # s "Hitona onee-chan, Shiraishi has something to ask."
-    s "「那个，人鱼姐姐。白石呢，想问点东西」"
+    s "「那个，[player_name]姐姐。白石呢，想问点东西」"
 
 # game/r1_famres.rpy:116
 translate simplified_chinese r1_famres_90e99cb4:
@@ -214,13 +214,13 @@ translate simplified_chinese r1_famres_d0430a98:
 translate simplified_chinese r1_famres_9b0cc0d2:
 
     # p "Eh? I don’t think so."
-    p "「诶？人鱼觉得大概不会长高吧」"
+    p "「诶？[player_name]觉得大概不会长高吧」"
 
 # game/r1_famres.rpy:124
 translate simplified_chinese r1_famres_9d38d428:
 
     # p "Usually people ask if drinking milk makes you grow taller, but omurice? That’s a new one."
-    p "「想长高的话一般是喝牛奶吧？人鱼是第一次听说吃了蛋包饭会长高呢！」"
+    p "「想长高的话一般是喝牛奶吧？[player_name]是第一次听说吃了蛋包饭会长高呢！」"
 
 # game/r1_famres.rpy:126
 translate simplified_chinese r1_famres_762888f1:
@@ -232,7 +232,7 @@ translate simplified_chinese r1_famres_762888f1:
 translate simplified_chinese r1_famres_afec076c:
 
     # s "Yes! Shiraishi wants to become tall and beautiful just like Hitona onee-chan!"
-    s "「嗯！白石想成为像人鱼姐姐这样高挑的美少女！」"
+    s "「嗯！白石想成为像[player_name]姐姐这样高挑的美少女！」"
 
 # game/r1_famres.rpy:132
 translate simplified_chinese r1_famres_112c383c:
@@ -244,7 +244,7 @@ translate simplified_chinese r1_famres_112c383c:
 translate simplified_chinese r1_famres_119a1574:
 
     # s "Hitona onee-chan, does Hamburger Steak make you more energetic?"
-    s "「话说人鱼姐姐，每次吃汉堡肉都会变得更有精神吗？」"
+    s "「话说[player_name]姐姐，每次吃汉堡肉都会变得更有精神吗？」"
 
 # game/r1_famres.rpy:136
 translate simplified_chinese r1_famres_53b3e489:
@@ -268,7 +268,7 @@ translate simplified_chinese r1_famres_270125b9:
 translate simplified_chinese r1_famres_b155b637:
 
     # p "{i}What a cute thought... for some reason, it reminds me of a certain someone though.{/i}"
-    p "（好可爱的想法啊…但为何会让人鱼想起某个人呢）"
+    p "（好可爱的想法啊…但为何会让[player_name]想起某个人呢）"
 
 # game/r1_famres.rpy:146
 translate simplified_chinese r1_famres_5973bd1e:
@@ -280,13 +280,13 @@ translate simplified_chinese r1_famres_5973bd1e:
 translate simplified_chinese r1_famres_c650c2d1:
 
     # s "Does that mean that hamburger steak is Hitona onee-chan’s favourite food?"
-    s "「那，人鱼姐姐也是最喜欢吃汉堡肉吗？」"
+    s "「那，[player_name]姐姐也是最喜欢吃汉堡肉吗？」"
 
 # game/r1_famres.rpy:152
 translate simplified_chinese r1_famres_7ba718b3:
 
     # p "Uhhh... no, not really..."
-    p "「嗯…人鱼觉得没那么喜欢吧…」"
+    p "「嗯…[player_name]觉得没那么喜欢吧…」"
 
 # game/r1_famres.rpy:154
 translate simplified_chinese r1_famres_584030bd:
@@ -298,7 +298,7 @@ translate simplified_chinese r1_famres_584030bd:
 translate simplified_chinese r1_famres_e23771d2:
 
     # s "Hitona onee-chan, are you planning to play something tonight?"
-    s "「那人鱼姐姐，今晚要玩恐怖游戏吗？」"
+    s "「那[player_name]姐姐，今晚要玩恐怖游戏吗？」"
 
 # game/r1_famres.rpy:158
 translate simplified_chinese r1_famres_81c9bb11:
@@ -310,7 +310,7 @@ translate simplified_chinese r1_famres_81c9bb11:
 translate simplified_chinese r1_famres_e00a9e6c:
 
     # s "Hitona onee-chan, do you like beef bowls?"
-    s "「人鱼姐姐喜欢牛肉饭吗？」"
+    s "「[player_name]姐姐喜欢牛肉饭吗？」"
 
 # game/r1_famres.rpy:162
 translate simplified_chinese r1_famres_a445ee32:
@@ -322,7 +322,7 @@ translate simplified_chinese r1_famres_a445ee32:
 translate simplified_chinese r1_famres_98a23b1f:
 
     # s "When Hitona onee-chan chose the beef bowl, Shiraishi thought that Hitona onee-chan was planning to play a horror game tonight!"
-    s "「这样啊，白石还以为人鱼姐姐选了牛肉饭就是准备今晚要玩恐怖游戏呢」"
+    s "「这样啊，白石还以为[player_name]姐姐选了牛肉饭就是准备今晚要玩恐怖游戏呢」"
 
 # game/r1_famres.rpy:166
 translate simplified_chinese r1_famres_acd253e0:
@@ -346,7 +346,7 @@ translate simplified_chinese r1_famres_56b902e5:
 translate simplified_chinese r1_famres_6cf7da62:
 
     # "We somehow managed to finish eating the mountain of food that we (Shiraishi) ordered."
-    "{rb}人鱼和白石{/rb}{rt}主要是白石{/rt}勉强把点的大量菜品吃完了。"
+    "{rb}[player_name]和白石{/rb}{rt}主要是白石{/rt}勉强把点的大量菜品吃完了。"
     p "「我吃饱了…」"
     s "「我吃饱了！」"
 
@@ -378,7 +378,7 @@ translate simplified_chinese r1_famres_45f30740:
 translate simplified_chinese r1_famres_9a7605ec:
 
     # s "No way! Shiraishi can’t eat three; it’s because of Hitona onee-chan that we finished!"
-    s "「不可能！白石一个人的话不可能吃完三道菜的！是多亏了人鱼姐姐才吃完的！」"
+    s "「不可能！白石一个人的话不可能吃完三道菜的！是多亏了[player_name]姐姐才吃完的！」"
 
 # game/r1_famres.rpy:190
 translate simplified_chinese r1_famres_c50ea97f:

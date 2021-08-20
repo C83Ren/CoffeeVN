@@ -20,13 +20,13 @@ translate simplified_chinese r1_movie_bad_end_680b997e:
 translate simplified_chinese r1_movie_bad_end_b29abf8f:
 
     # s "Hitona onee-chan is such a caring person."
-    s "「人鱼姐姐好温柔啊！」"
+    s "「[player_name]姐姐好温柔啊！」"
 
 # game/r1_movie_bad_end.rpy:14
 translate simplified_chinese r1_movie_bad_end_ab1bb3d8:
 
     # s "One day, when I grow up, I want to become someone just like you."
-    s "「等白石长大了，想要成为像人鱼姐姐一样的人呢」"
+    s "「等白石长大了，想要成为像[player_name]姐姐一样的人呢」"
 
 # game/r1_movie_bad_end.rpy:18
 translate simplified_chinese r1_movie_bad_end_189b4c2a:

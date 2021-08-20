@@ -50,19 +50,19 @@ translate simplified_chinese r3_start_cd3ee912:
 translate simplified_chinese r3_start_7d3583a1:
 
     # "The suspicious person wearing a detective costume looked carefully at me."
-    "这个侦探打扮的可疑人物正仔细地打量着人鱼。"
+    "这个侦探打扮的可疑人物正仔细地打量着[player_name]。"
 
 # game/r3_start.rpy:24
 translate simplified_chinese r3_start_cf304bae:
 
     # p "Huh? Can I help you?"
-    p "「呃，是找人鱼有事吗？」"
+    p "「呃，是找[player_name]有事吗？」"
 
 # game/r3_start.rpy:26
 translate simplified_chinese r3_start_612502a4:
 
     # "？？？" "Kohigashi! Phantom Thief Lios has stolen something from you!"
-    "？？？" "「小东女士！怪盗里奥斯从你这里偷了东西！」"
+    "？？？" "「[player_last_name]女士！怪盗里奥斯从你这里偷了东西！」"
 
 # game/r3_start.rpy:28
 translate simplified_chinese r3_start_dddb1a61:
@@ -92,7 +92,7 @@ translate simplified_chinese r3_start_44ae8396:
 translate simplified_chinese r3_start_7a106a26:
 
     # "？？？" "Lios has stolen something that’s very important to you!"
-    "？？？" "「里奥斯偷走了对小东女士很重要的东西！」"
+    "？？？" "「里奥斯偷走了对[player_last_name]女士很重要的东西！」"
 
 # game/r3_start.rpy:38
 translate simplified_chinese r3_start_5c134204:
@@ -110,13 +110,13 @@ translate simplified_chinese r3_start_17fd5722:
 translate simplified_chinese r3_start_b86f8c70:
 
     # "Completely ignoring what I said, she instead took out and showed me a card."
-    "对方把人鱼说的话都当成了耳旁风，取出一张卡片展示了出来。"
+    "对方把[player_name]说的话都当成了耳旁风，取出一张卡片展示了出来。"
 
 # game/r3_start.rpy:48
 translate simplified_chinese r3_start_9ec02c2e:
 
     # nvl_narrator "“Hitona Kohigashi!”"
-    nvl_narrator "『小东人鱼！"
+    nvl_narrator "『[player_full_name]！"
 
 # game/r3_start.rpy:50
 translate simplified_chinese r3_start_a40cc8d4:
@@ -128,7 +128,7 @@ translate simplified_chinese r3_start_a40cc8d4:
 translate simplified_chinese r3_start_2be1f584:
 
     # nvl_narrator "“If you wish to take it back, type in the month and day when the mermaid princess has her yearly celebration!”"
-    nvl_narrator "　要是想拿回来，就去输入每年一度为人鱼公主庆祝的日期吧！』"
+    nvl_narrator "　要是想拿回来，就去输入每年一度为[player_name]公主庆祝的日期吧！』"
 
 # game/r3_start.rpy:54
 translate simplified_chinese r3_start_76b2fe88:
@@ -152,7 +152,7 @@ translate simplified_chinese r3_start_af311b7b:
 translate simplified_chinese r3_start_c6d2fcac:
 
     # "I looked at my computer, and on the screen, it prompted me to enter a 4 digit passcode."
-    "人鱼走向电脑，发现有一个要输入4位密码的界面。"
+    "[player_name]走向电脑，发现有一个要输入4位密码的界面。"
 
 # game/r3_start.rpy:66
 translate simplified_chinese r3_start_2a712443:
@@ -326,7 +326,7 @@ translate simplified_chinese room_passcode_badend_1126cec4:
 translate simplified_chinese room_passcode_badend_c98675fc:
 
     # "I rushed out of my room in a hurry to meet senpai."
-    "为了和前辈见面，人鱼冲出了房间。"
+    "为了和前辈见面，[player_name]冲出了房间。"
 
 # game/r3_start.rpy:177
 translate simplified_chinese room_passcode_badend_9a40f336:

@@ -56,7 +56,7 @@ translate simplified_chinese forest_spot_1_38646903:
 translate simplified_chinese forest_spot_1_0f21d916:
 
     # "I picked it up."
-    "人鱼举起了眼前的东西。"
+    "[player_name]举起了眼前的东西。"
 
 # game/r2_forest.rpy:40
 translate simplified_chinese forest_spot_1_a20cefa7:
@@ -68,7 +68,7 @@ translate simplified_chinese forest_spot_1_a20cefa7:
 translate simplified_chinese forest_spot_1_87bb6f24:
 
     # "I put it back down."
-    "人鱼放下了手中的东西。"
+    "[player_name]放下了手中的东西。"
 
 # game/r2_forest.rpy:44
 translate simplified_chinese forest_spot_1_ea42b739:
@@ -104,7 +104,7 @@ translate simplified_chinese forest_spot_1_b6f7d8c4:
 translate simplified_chinese forest_spot_1_8e1b7daf:
 
     # "Eve casted a spell to create water so I could wash my hand."
-    "为了让人鱼洗手，伊芙咏唱出咒文，变出了水。"
+    "为了让[player_name]洗手，伊芙咏唱出咒文，变出了水。"
 
 # game/r2_forest.rpy:62
 translate simplified_chinese forest_spot_1_bf3c188b:
@@ -146,7 +146,7 @@ translate simplified_chinese forest_spot_1_9de51321:
 translate simplified_chinese forest_spot_1_7c542be5:
 
     # p "If I weren’t so exhausted I would slice you to pieces with this staff! Not using magic, just hitting you with this staff!"
-    p "「要不是人鱼累坏了，定要用这手杖暴打你一顿！不用魔法，就光用这手杖来锤！」"
+    p "「要不是[player_name]累坏了，定要用这手杖暴打你一顿！不用魔法，就光用这手杖来锤！」"
 
 # game/r2_forest.rpy:87
 translate simplified_chinese forest_spot_2_0bb632b8:
@@ -254,7 +254,7 @@ translate simplified_chinese forest_hut_1_548620ba:
 translate simplified_chinese forest_hut_1_a75df0d8:
 
     # e "No one lives here, Hitona dear."
-    e "「没有人住在这里呢，人鱼」"
+    e "「没有人住在这里呢，[player_name]」"
 
 # game/r2_forest.rpy:151
 translate simplified_chinese forest_hut_1_84656976:
@@ -302,7 +302,7 @@ translate simplified_chinese forest_hut_1_13ad4dde:
 translate simplified_chinese forest_hut_1_c5422492:
 
     # e "While there are many useful magics, there are also scary ones, young Hitona."
-    e "「人鱼啊，既然有便利的魔法，也自然有可怕的魔法哦」"
+    e "「[player_name]啊，既然有便利的魔法，也自然有可怕的魔法哦」"
 
 # game/r2_forest.rpy:173
 translate simplified_chinese forest_hut_1_3aad89c0:
@@ -332,7 +332,7 @@ translate simplified_chinese forest_hut_1_25a9365a:
 translate simplified_chinese forest_hut_2_0ed097b3:
 
     # e "Look, look, Hitona! I found a rare item! A spell orb!"
-    e "「人鱼，快看快看！找到了稀有道具了，是魔法珠！」"
+    e "「[player_name]，快看快看！找到了稀有道具了，是魔法珠！」"
 
 # game/r2_forest.rpy:193
 translate simplified_chinese forest_hut_2_cc38cbe4:
@@ -362,7 +362,7 @@ translate simplified_chinese forest_hut_2_e8115642:
 translate simplified_chinese forest_hut_2_e212e8a2:
 
     # p "Can I try using that spell orb?"
-    p "「人鱼能试着用一下那颗魔法珠吗？」"
+    p "「[player_name]能试着用一下那颗魔法珠吗？」"
 
 # game/r2_forest.rpy:215
 translate simplified_chinese forest_hut_2_581d9fb6:
@@ -392,7 +392,7 @@ translate simplified_chinese forest_hut_2_fd060590:
 translate simplified_chinese forest_hut_2_cc54b388:
 
     # p "Give me some!"
-    p "「也给人鱼一些吧！」"
+    p "「也给[player_name]一些吧！」"
 
 # game/r2_forest.rpy:229
 translate simplified_chinese forest_hut_2_7eea27dd:

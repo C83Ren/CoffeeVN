@@ -14,7 +14,7 @@ translate simplified_chinese r3_river_f60cede2:
 translate simplified_chinese r3_river_96b07c9d:
 
     # p "Eh? Me?"
-    p "「诶，是在说人鱼吗？」"
+    p "「诶，是在说[player_name]吗？」"
 
 # game/r3_river.rpy:22
 translate simplified_chinese r3_river_934c81e0:
@@ -32,7 +32,7 @@ translate simplified_chinese r3_river_9161669b:
 translate simplified_chinese r3_river_8a2de425:
 
     # p "Let’s just move on to the next challenge, Kohigashi."
-    p "「总之，小东女士，我们去下一个挑战吧」"
+    p "「总之，[player_last_name]女士，我们去下一个挑战吧」"
 
 # game/r3_river.rpy:30
 translate simplified_chinese r3_river_20e64d10:
@@ -68,7 +68,7 @@ translate simplified_chinese river_cat_db3fec9b:
 translate simplified_chinese river_cat_295367dc:
 
     # "Though it’s a cat, it’s about the same height as me."
-    "虽说是猫，但身高和人鱼差不多。"
+    "虽说是猫，但身高和[player_name]差不多。"
 
 # game/r3_river.rpy:61
 translate simplified_chinese river_cat_1390b42a:
@@ -146,7 +146,7 @@ translate simplified_chinese river_dog_7ad29bb8:
 translate simplified_chinese river_dog_952af172:
 
     # "Though it’s a dog, it’s about the same height as me."
-    "虽说是狗，但身高和人鱼差不多。"
+    "虽说是狗，但身高和[player_name]差不多。"
 
 # game/r3_river.rpy:91
 translate simplified_chinese river_dog_1390b42a:
@@ -224,7 +224,7 @@ translate simplified_chinese river_deer_872b8fe1:
 translate simplified_chinese river_deer_adf87dfc:
 
     # "Though it’s a deer, it’s about the same height as me."
-    "虽说是鹿，但身高和人鱼差不多。"
+    "虽说是鹿，但身高和[player_name]差不多。"
 
 # game/r3_river.rpy:121
 translate simplified_chinese river_deer_1390b42a:
@@ -494,13 +494,13 @@ translate simplified_chinese river_love_5fd3a49a:
 translate simplified_chinese river_love_73bd2e40:
 
     # p "What kind of reaction I was expecting..."
-    p "「人鱼到底是在期待怎样的反应呢…」"
+    p "「[player_name]到底是在期待怎样的反应呢…」"
 
 # game/r3_river.rpy:266
 translate simplified_chinese river_love_e2ed523e:
 
     # pi "You got her good!"
-    pi "「小东女士很有一手嘛！」"
+    pi "「[player_last_name]女士很有一手嘛！」"
 
 # game/r3_river.rpy:268
 translate simplified_chinese river_love_a0d83d9b:
@@ -764,7 +764,7 @@ translate simplified_chinese river_date_399568dc:
 translate simplified_chinese river_date_bff49f4b:
 
     # p "I can’t believe I said that...but at least she looks happy"
-    p "「人鱼刚才真的把那句话说出口了吗？不过看起来很开心呢」"
+    p "「[player_name]刚才真的把那句话说出口了吗？不过看起来很开心呢」"
 
 # game/r3_river.rpy:416
 translate simplified_chinese river_date_64e3eab6:
@@ -842,7 +842,7 @@ translate simplified_chinese river_date_3d3a002d:
 translate simplified_chinese river_date_84acef4c:
 
     # p "I know, geez!"
-    p "「人鱼当然知道啦！真是的！」"
+    p "「[player_name]当然知道啦！真是的！」"
 
 # game/r3_river.rpy:466
 translate simplified_chinese river_friend_bfef6984:
@@ -1004,13 +1004,13 @@ translate simplified_chinese river_girlfriend_0b0ba5e7:
 translate simplified_chinese river_girlfriend_48a4f283:
 
     # p "I put my everything on that confession!"
-    p "「这是倾注了人鱼全部心意的告白哦！」"
+    p "「这是倾注了[player_name]全部心意的告白哦！」"
 
 # game/r3_river.rpy:546
 translate simplified_chinese river_girlfriend_6f48042c:
 
     # pi "I guess your everything wasn’t enough."
-    pi "「恐怕小东女士的全部心意也不够呢」"
+    pi "「恐怕[player_last_name]女士的全部心意也不够呢」"
 
 # game/r3_river.rpy:548
 translate simplified_chinese river_girlfriend_f71bfc0f:
@@ -1118,7 +1118,7 @@ translate simplified_chinese river_fail_c3d6c439:
 translate simplified_chinese river_fail_7981c063:
 
     # p "I mean...trying to make an animal to fall in love with you is a bit..."
-    p "「毕竟…让动物爱上人鱼这种事…」"
+    p "「毕竟…让动物爱上[player_name]这种事…」"
 
 # game/r3_river.rpy:622
 translate simplified_chinese river_fail_4abb234e:
@@ -1136,7 +1136,7 @@ translate simplified_chinese river_fail_ae64a262:
 translate simplified_chinese river_fail_a74e9442:
 
     # "When I opened my eyes, I was holding the doorknob of my own room."
-    "醒来后，发现人鱼的手还握着房间的门把手。"
+    "醒来后，发现[player_name]的手还握着房间的门把手。"
 
 # game/r3_river.rpy:636
 translate simplified_chinese river_fail_29d5d16d:
@@ -1166,7 +1166,7 @@ translate simplified_chinese river_fail_e3f102ca:
 translate simplified_chinese river_fail_62f7d1de:
 
     # "While running towards the park, that dream? kept spinning in my mind."
-    "从房间跑去公园的途中，那个梦？一直盘旋在人鱼的脑海里。"
+    "从房间跑去公园的途中，那个梦？一直盘旋在[player_name]的脑海里。"
 
 # game/r3_river.rpy:648
 translate simplified_chinese river_fail_4181f155:
@@ -1220,4 +1220,4 @@ translate simplified_chinese strings:
 
     # game/r3_river.rpy:452
     old "“Go out with me!”"
-    new "「请和人鱼交往吧！」"
+    new "「请和[player_name]交往吧！」"

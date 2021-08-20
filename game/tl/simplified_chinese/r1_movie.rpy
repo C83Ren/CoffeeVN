@@ -2,7 +2,7 @@
 translate simplified_chinese r1_movie_20e14613:
 
     # "I paid for the meal, and then we went to a nearby cinema."
-    "人鱼为午饭买过单后，两人一起走向了附近的电影院。"
+    "[player_name]为午饭买过单后，两人一起走向了附近的电影院。"
 
 # game/r1_movie.rpy:23
 translate simplified_chinese r1_movie_25f9aaec:
@@ -56,13 +56,13 @@ translate simplified_chinese r1_movie_2bc2776a:
 translate simplified_chinese r1_movie_5352266c:
 
     # s "I’ll leave it to Hitona onee-chan!"
-    s "「人鱼姐姐来决定吧〜」"
+    s "「[player_name]姐姐来决定吧〜」"
 
 # game/r1_movie.rpy:64
 translate simplified_chinese r1_movie_f35dbfd0:
 
     # "I bought some W*bMoney, then used it to buy a ticket."
-    "人鱼充值了一些账户余额，用这些钱买了电影票。"
+    "[player_name]充值了一些账户余额，用这些钱买了电影票。"
 
 # game/r1_movie.rpy:66
 translate simplified_chinese r1_movie_e594a3ac:
@@ -158,13 +158,13 @@ translate simplified_chinese r1_movie_2dd6923f:
 translate simplified_chinese r1_movie_a69f01eb:
 
     # "Suddenly, I felt something grabbing my hand!"
-    "突然人鱼感觉到手被紧紧地握住了！"
+    "突然[player_name]感觉到手被紧紧地握住了！"
 
 # game/r1_movie.rpy:107
 translate simplified_chinese r1_movie_f31d9df9:
 
     # "I was so surprised I was about to jump up in the air, but it was Shiraishi."
-    "人鱼被吓得差点跳起来，结果发现是白石。"
+    "[player_name]被吓得差点跳起来，结果发现是白石。"
 
 # game/r1_movie.rpy:109
 translate simplified_chinese r1_movie_81bb2a9a:
@@ -200,7 +200,7 @@ translate simplified_chinese r1_movie_02f9d20c:
 translate simplified_chinese r1_movie_614971c8:
 
     # "Rather, it seems like she held my hand during the movie just to comfort me."
-    "（倒不如说，像是为了安抚人鱼才握住了手）"
+    "（倒不如说，像是为了安抚[player_name]才握住了手）"
 
 # game/r1_movie.rpy:124
 translate simplified_chinese r1_movie_ca09d4fa:
@@ -326,7 +326,7 @@ translate simplified_chinese r1_movie_7cc31279:
 translate simplified_chinese r1_movie_64519bb0:
 
     # "While the credits were playing, I patted Shiraishi’s head."
-    "在播放演员表的时候，人鱼摸了摸白石的头。"
+    "在播放演员表的时候，[player_name]摸了摸白石的头。"
 
 # game/r1_movie.rpy:184
 translate simplified_chinese r1_movie_94bb62a8:
@@ -338,7 +338,7 @@ translate simplified_chinese r1_movie_94bb62a8:
 translate simplified_chinese r1_movie_a8084069:
 
     # s "Hitona onee-chan, would you like to watch a movie with Shiraishi again someday?" nointeract
-    s "「那个…人鱼姐姐，以后再来一起看电影吧？」" nointeract
+    s "「那个…[player_name]姐姐，以后再来一起看电影吧？」" nointeract
 
 translate simplified_chinese strings:
 
@@ -356,7 +356,7 @@ translate simplified_chinese strings:
 
     # game/r1_movie.rpy:58
     old "I went to buy the ticket, but for some reason the cinema only accepts W*bMoney."
-    new "人鱼准备去买电影票，但好像因为一些原因，电影院只支持线上支付。"
+    new "[player_name]准备去买电影票，但好像因为一些原因，电影院只支持线上支付。"
 
     # game/r1_movie.rpy:58
     old "Buy some W*bMoney"

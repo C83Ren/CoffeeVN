@@ -44,19 +44,19 @@ translate simplified_chinese r2_turmoil_b4ac3d88:
 translate simplified_chinese r2_turmoil_5cd70a7b:
 
     # e "If Hitona can defeat them, why bother using such a flashy spell?"
-    e "「要是人鱼就能打倒他们，也不必让我费心用这么浮夸的魔法了」"
+    e "「要是[player_name]就能打倒他们，也不必让我费心用这么浮夸的魔法了」"
 
 # game/r2_turmoil.rpy:27
 translate simplified_chinese r2_turmoil_cd79995c:
 
     # p "You’re mocking me, aren’t you?"
-    p "「是不是小看人鱼啊喂！喂！」"
+    p "「是不是小看[player_name]啊喂！喂！」"
 
 # game/r2_turmoil.rpy:29
 translate simplified_chinese r2_turmoil_1f57ac14:
 
     # "For some reason, Eve started patting me on the head."
-    "不知为何，伊芙抚摸起人鱼的头。"
+    "不知为何，伊芙抚摸起[player_name]的头。"
 
 # game/r2_turmoil.rpy:31
 translate simplified_chinese r2_turmoil_318ca35f:

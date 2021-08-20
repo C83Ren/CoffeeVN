@@ -8,19 +8,19 @@ translate simplified_chinese end_1_716b1d53:
 translate simplified_chinese end_1_27109644:
 
     # "Shiraishi pointed at the swings, and I understood."
-    "白石指了指秋千。即使她没说什么，人鱼也明白了。"
+    "白石指了指秋千。即使她没说什么，[player_name]也明白了。"
 
 # game/r1_park_end.rpy:14
 translate simplified_chinese end_1_7c073a9b:
 
     # "She hopped on the swings, and I pushed it from behind."
-    "白石坐在秋千上，人鱼在后面推着。"
+    "白石坐在秋千上，[player_name]在后面推着。"
 
 # game/r1_park_end.rpy:18
 translate simplified_chinese end_1_6b4f7a76:
 
     # s "Today was fun, Hitona onee-chan!"
-    s "「今天玩得很开心呢，人鱼姐姐！」"
+    s "「今天玩得很开心呢，[player_name]姐姐！」"
 
 # game/r1_park_end.rpy:20
 translate simplified_chinese end_1_78432cb6:
@@ -62,7 +62,7 @@ translate simplified_chinese end_1_d19831f3:
 translate simplified_chinese end_1_7dcd5bba:
 
     # s "Shiraishi got to eat Hitona onee-chan’s recommendation!"
-    s "「还吃了人鱼姐姐推荐的食物呢！」"
+    s "「还吃了[player_name]姐姐推荐的食物呢！」"
 
 # game/r1_park_end.rpy:39
 translate simplified_chinese end_1_13382f7f:
@@ -122,7 +122,7 @@ translate simplified_chinese end_1_d19831f3_1:
 translate simplified_chinese end_1_7dcd5bba_1:
 
     # s "Shiraishi got to eat Hitona onee-chan’s recommendation!"
-    s "「还吃了人鱼姐姐推荐的食物呢！」"
+    s "「还吃了[player_name]姐姐推荐的食物呢！」"
 
 # game/r1_park_end.rpy:71
 translate simplified_chinese end_1_13382f7f_1:
@@ -146,13 +146,13 @@ translate simplified_chinese end_1_2faa194a_1:
 translate simplified_chinese end_1_de4f0b86:
 
     # s "What’s more, Shiraishi even got to see Hitona onee-chan in such a cool suit!"
-    s "「还看到了人鱼姐姐穿着帅气西装的样子了呢！」"
+    s "「还看到了[player_name]姐姐穿着帅气西装的样子了呢！」"
 
 # game/r1_park_end.rpy:86
 translate simplified_chinese end_1_1c2a8e3d:
 
     # s "What’s more, Shiraishi even got to see Hitona onee-chan in such a beautiful dress!"
-    s "「还看到了人鱼姐姐穿着漂亮婚纱的样子了呢！」"
+    s "「还看到了[player_name]姐姐穿着漂亮婚纱的样子了呢！」"
 
 # game/r1_park_end.rpy:88
 translate simplified_chinese end_1_cc147c24:
@@ -224,13 +224,13 @@ translate simplified_chinese end_1_22243979:
 translate simplified_chinese end_1_de4f0b86_1:
 
     # s "What’s more, Shiraishi even got to see Hitona onee-chan in such a cool suit!"
-    s "「还看到了人鱼姐姐穿着帅气西装的样子了呢！」"
+    s "「还看到了[player_name]姐姐穿着帅气西装的样子了呢！」"
 
 # game/r1_park_end.rpy:131
 translate simplified_chinese end_1_1c2a8e3d_1:
 
     # s "What’s more, Shiraishi even got to see Hitona onee-chan in such a beautiful dress!"
-    s "「还看到了人鱼姐姐穿着漂亮婚纱的样子了呢！」"
+    s "「还看到了[player_name]姐姐穿着漂亮婚纱的样子了呢！」"
 
 # game/r1_park_end.rpy:133
 translate simplified_chinese end_1_cc147c24_1:
@@ -248,7 +248,7 @@ translate simplified_chinese end_1_44af4bdd:
 translate simplified_chinese end_1_70904dbc:
 
     # s "Hey, Hitona onee-chan, thank you for today."
-    s "「那个…人鱼姐姐，今天谢谢你啦！」"
+    s "「那个…[player_name]姐姐，今天谢谢你啦！」"
 
 # game/r1_park_end.rpy:143
 translate simplified_chinese end_1_e6931d7e:
@@ -272,7 +272,7 @@ translate simplified_chinese end_1_13c4b07e:
 translate simplified_chinese end_1_4328aefc:
 
     # "Something is starting to heat up inside my pocket."
-    "在人鱼的口袋中有什么东西正变得越来越热。"
+    "在[player_name]的口袋中有什么东西正变得越来越热。"
 
 # game/r1_park_end.rpy:153
 translate simplified_chinese end_1_917d650d:
@@ -290,7 +290,7 @@ translate simplified_chinese end_1_57d5174c:
 translate simplified_chinese end_1_4e783a23:
 
     # "The photo was just me and...a congratulatory message."
-    "照片上只有人鱼，以及一句祝福的话语。"
+    "照片上只有[player_name]，以及一句祝福的话语。"
 
 # game/r1_park_end.rpy:163
 translate simplified_chinese end_1_ce15bafb:
@@ -302,7 +302,7 @@ translate simplified_chinese end_1_ce15bafb:
 translate simplified_chinese end_1_0e2bf2ab:
 
     # "I look back up towards Shiraishi, but..."
-    "人鱼往白石所在的位置看去…"
+    "[player_name]往白石所在的位置看去…"
 
 # game/r1_park_end.rpy:169
 translate simplified_chinese end_1_a6af3867:
@@ -314,7 +314,7 @@ translate simplified_chinese end_1_a6af3867:
 translate simplified_chinese end_1_b8559320:
 
     # s "Hehehe, it’s okay, Hitona onee-chan."
-    s "「嘿嘿，没关系的，人鱼姐姐」"
+    s "「嘿嘿，没关系的，[player_name]姐姐」"
 
 # game/r1_park_end.rpy:175
 translate simplified_chinese end_1_dea7c200:
@@ -326,7 +326,7 @@ translate simplified_chinese end_1_dea7c200:
 translate simplified_chinese end_1_41b7f039:
 
     # "As I said that, my vision started to get blurry."
-    "正说着，人鱼的视线就变得模糊起来。"
+    "正说着，[player_name]的视线就变得模糊起来。"
 
 # game/r1_park_end.rpy:181
 translate simplified_chinese end_1_ce9d976d:
@@ -338,7 +338,7 @@ translate simplified_chinese end_1_ce9d976d:
 translate simplified_chinese end_1_eb9d1a01:
 
     # "The blurriness got worse and worse, and I can’t see Shiraishi anymore."
-    "人鱼的视线变得越来越模糊，最后完全看不到白石的身影了。"
+    "[player_name]的视线变得越来越模糊，最后完全看不到白石的身影了。"
 
 # game/r1_park_end.rpy:189
 translate simplified_chinese end_1_6161b825:
@@ -356,7 +356,7 @@ translate simplified_chinese end_1_3ed0e5b8:
 translate simplified_chinese end_1_0a1efa5e:
 
     # "I looked around frantically, but she was nowhere to be found. In her place appeared messages dancing lightly through the air."
-    "人鱼着急地环顾四周，却再也找不到白石了。取而代之的是在空中轻盈地飞舞着的信息。"
+    "[player_name]着急地环顾四周，却再也找不到白石了。取而代之的是在空中轻盈地飞舞着的信息。"
 
 # game/r1_park_end.rpy:211
 translate simplified_chinese end_1_2071b73a:

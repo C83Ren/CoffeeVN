@@ -212,7 +212,7 @@ translate simplified_chinese r2_tranquility_after_battle_0f70df5a:
 translate simplified_chinese r2_tranquility_after_battle_a7321d59:
 
     # e "Well don’t mind him, Hitona. Let’s just find that thing."
-    e "「人鱼，就别管他了，总之先去寻找那个东西吧」"
+    e "「[player_name]，就别管他了，总之先去寻找那个东西吧」"
 
 # game/r2_tranquility.rpy:150
 translate simplified_chinese r2_tranquility_after_battle_c614283b:
@@ -230,7 +230,7 @@ translate simplified_chinese tranquility_talk_1_8751ad15:
 translate simplified_chinese tranquility_talk_1_abef9321:
 
     # p "I’m pretty sure I’ve seen puddles larger than that..."
-    p "「人鱼都见过更大的水洼…」"
+    p "「[player_name]都见过更大的水洼…」"
 
 # game/r2_tranquility.rpy:246
 translate simplified_chinese tranquility_talk_1_cfc06fa9:
@@ -368,7 +368,7 @@ translate simplified_chinese tranquility_pond_1_4d6c1801:
 translate simplified_chinese tranquility_pond_1_370fa0b0:
 
     # e "You can’t swim, can you, Hitona?"
-    e "「人鱼也不会游吧？」"
+    e "「[player_name]也不会游吧？」"
 
 # game/r2_tranquility.rpy:310
 translate simplified_chinese tranquility_pond_1_c8ea8a4a_1:
@@ -500,7 +500,7 @@ translate simplified_chinese tranquility_spot_1_2_a616ed59:
 translate simplified_chinese tranquility_spot_1_2_09c38e64:
 
     # e "Are you sure you don’t love frogs?"
-    e "「人鱼也真是喜欢青蛙呢！」"
+    e "「[player_name]也真是喜欢青蛙呢！」"
 
 # game/r2_tranquility.rpy:421
 translate simplified_chinese tranquility_spot_1_2_5cbae1f6:
@@ -553,7 +553,7 @@ translate simplified_chinese tranquility_spot_2_1_143e6df8:
 translate simplified_chinese tranquility_spot_2_1_89a54822:
 
     # "Eve pushed me from behind into the pink...something."
-    "伊芙从背后一推，把人鱼推向了那团粉色的东西。"
+    "伊芙从背后一推，把[player_name]推向了那团粉色的东西。"
 
 # game/r2_tranquility.rpy:462
 translate simplified_chinese tranquility_spot_2_1_49cedcb2:
@@ -620,7 +620,7 @@ translate simplified_chinese tranquility_spot_2_1_88aaa662:
 translate simplified_chinese tranquility_spot_2_1_89a54822_1:
 
     # "Eve pushed me from behind into the pink...something."
-    "伊芙从背后一推，把人鱼推向了那团粉色的东西。"
+    "伊芙从背后一推，把[player_name]推向了那团粉色的东西。"
 
 # game/r2_tranquility.rpy:498
 translate simplified_chinese tranquility_spot_2_1_49cedcb2_1:
@@ -717,13 +717,13 @@ translate simplified_chinese tranquility_spot_3_1_fbc564f8:
 translate simplified_chinese tranquility_spot_3_1_58ad90db:
 
     # e "Hitona, do you really think that’s a wall?"
-    e "「人鱼，你该不会真以为那是墙壁吧？」"
+    e "「[player_name]，你该不会真以为那是墙壁吧？」"
 
 # game/r2_tranquility.rpy:566
 translate simplified_chinese tranquility_spot_3_1_17da7206:
 
     # "Saying that, Eve pushed me from behind towards the black wall."
-    "话音未落，伊芙从背后把人鱼推向了黑色墙壁。"
+    "话音未落，伊芙从背后把[player_name]推向了黑色墙壁。"
 
 # game/r2_tranquility.rpy:568
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a:
@@ -771,7 +771,7 @@ translate simplified_chinese tranquility_spot_3_1_0ee5fd22:
 translate simplified_chinese tranquility_spot_3_1_a19064f8:
 
     # p "Why did you push me!?"
-    p "「为什么要推人鱼啊？！」"
+    p "「为什么要推[player_name]啊？！」"
 
 # game/r2_tranquility.rpy:588
 translate simplified_chinese tranquility_spot_3_1_368519f0:
@@ -801,13 +801,13 @@ translate simplified_chinese tranquility_spot_3_1_fbc564f8_1:
 translate simplified_chinese tranquility_spot_3_1_58ad90db_1:
 
     # e "Hitona, do you really think that’s a wall?"
-    e "「人鱼，你该不会真以为那是墙壁吧？」"
+    e "「[player_name]，你该不会真以为那是墙壁吧？」"
 
 # game/r2_tranquility.rpy:605
 translate simplified_chinese tranquility_spot_3_1_17da7206_1:
 
     # "Saying that, Eve pushed me from behind towards the black wall."
-    "话音未落，伊芙从背后把人鱼推向了黑色墙壁。"
+    "话音未落，伊芙从背后把[player_name]推向了黑色墙壁。"
 
 # game/r2_tranquility.rpy:607
 translate simplified_chinese tranquility_spot_3_1_c8ea8a4a_3:
@@ -837,7 +837,7 @@ translate simplified_chinese tranquility_spot_3_1_17da9592:
 translate simplified_chinese tranquility_spot_3_1_57c8ed76:
 
     # "Eve patted my head"
-    "伊芙摸了摸人鱼的头。"
+    "伊芙摸了摸[player_name]的头。"
 
 # game/r2_tranquility.rpy:619
 translate simplified_chinese tranquility_spot_3_1_80c88b79:
@@ -879,7 +879,7 @@ translate simplified_chinese tranquility_spot_3_2_468eb27a:
 translate simplified_chinese tranquility_spot_3_2_336cadd5:
 
     # p "I never knew you could use cockroaches as a fishing bait..."
-    p "「人鱼还是第一次听说小强也能当饵料的」"
+    p "「[player_name]还是第一次听说小强也能当饵料的」"
 
 # game/r2_tranquility.rpy:650
 translate simplified_chinese tranquility_spot_3_2_e09e1905:
@@ -1047,7 +1047,7 @@ translate simplified_chinese tranquility_after_fishing_714a67aa:
 translate simplified_chinese tranquility_after_fishing_faaaff0d:
 
     # e "Yeah I can see that Hitona, calm down."
-    e "「知道了知道了，人鱼你冷静点」"
+    e "「知道了知道了，[player_name]你冷静点」"
 
 # game/r2_tranquility.rpy:755
 translate simplified_chinese tranquility_after_fishing_91457e3f:
@@ -1119,7 +1119,7 @@ translate simplified_chinese tranquility_release_fishes_620df46a:
 translate simplified_chinese tranquility_release_fishes_63ba3249:
 
     # "I just stood there in awe"
-    "人鱼被吓得在原地动弹不得。"
+    "[player_name]被吓得在原地动弹不得。"
 
 # game/r2_tranquility.rpy:795
 translate simplified_chinese tranquility_release_fishes_96d54fb4:
@@ -1227,7 +1227,7 @@ translate simplified_chinese tranquility_forest_2_94657e95:
 translate simplified_chinese tranquility_forest_2_165793cb:
 
     # p "No I wasn’t! Don’t make me look like I’m the bad guy here!"
-    p "「才不是呢！别擅自把人鱼当成带恶人啊！」"
+    p "「才不是呢！别擅自把[player_name]当成带恶人啊！」"
 
 # game/r2_tranquility.rpy:860
 translate simplified_chinese tranquility_pond_after_1_c9f53157:
@@ -1299,7 +1299,7 @@ translate simplified_chinese tranquility_pond_after_2_bbd23f89:
 translate simplified_chinese tranquility_pond_after_2_cc352ad3:
 
     # e "I can cast a spell that makes you huge as well, want to try?"
-    e "「我可以施一个魔法让人鱼变成巨人，要试试吗？」"
+    e "「我可以施一个魔法让[player_name]变成巨人，要试试吗？」"
 
 # game/r2_tranquility.rpy:890
 translate simplified_chinese tranquility_pond_after_2_4953cf02:
@@ -1317,7 +1317,7 @@ translate simplified_chinese tranquility_pond_after_2_c68dd519:
 translate simplified_chinese tranquility_pond_after_2_c9882c7b:
 
     # p "Give me back the admiration I just gave you!"
-    p "「把刚才的感动还给人鱼啊！」"
+    p "「把刚才的感动还给[player_name]啊！」"
 
 # game/r2_tranquility.rpy:902
 translate simplified_chinese tranquility_waterfall_0a05a7eb:
@@ -1395,13 +1395,13 @@ translate simplified_chinese tranquility_waterfall_3ff0354c:
 translate simplified_chinese tranquility_waterfall_a09f0633:
 
     # "As Eve cast her the spell, a shining blue orb flew up from the hole, and landed gently in my open hands."
-    "随着伊芙的咏唱，发出青色光芒的宝珠浮上空中，最后停在了人鱼的手心里。"
+    "随着伊芙的咏唱，发出青色光芒的宝珠浮上空中，最后停在了[player_name]的手心里。"
 
 # game/r2_tranquility.rpy:936
 translate simplified_chinese tranquility_waterfall_32f8ab5e:
 
     # "Then, the orb entered my body on its own."
-    "然后，青色宝珠进入了人鱼的体内。"
+    "然后，青色宝珠进入了[player_name]的体内。"
 
 # game/r2_tranquility.rpy:940
 translate simplified_chinese tranquility_waterfall_0ccdd9eb:
@@ -1413,7 +1413,7 @@ translate simplified_chinese tranquility_waterfall_0ccdd9eb:
 translate simplified_chinese tranquility_waterfall_4d270a6e:
 
     # e "You are indeed the second salvation that will save this world, Hitona."
-    e "「人鱼，你就是拯救这个世界的第二位救世主啊」"
+    e "「[player_name]，你就是拯救这个世界的第二位救世主啊」"
 
 # game/r2_tranquility.rpy:944
 translate simplified_chinese tranquility_waterfall_c8ea8a4a:
