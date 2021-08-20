@@ -348,13 +348,13 @@ define gui.history_height = 150
 ## speaking character.
 define gui.history_name_xpos = 250
 define gui.history_name_ypos = 0
-define gui.history_name_width = 250
+define gui.history_name_width = 280
 define gui.history_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
 define gui.history_text_xpos = 272
 define gui.history_text_ypos = 3
-define gui.history_text_width = 1150
+define gui.history_text_width = 1120
 define gui.history_text_xalign = 0.0
 
 
