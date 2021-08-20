@@ -122,21 +122,21 @@ label start:
     menu:
         "1. Enter your name."
         "Hitona":
-            $ player_name, player_full_name, player_last_name = __('Hitona'), __('Hitona Kohigashi'), __('Kohigashi')
+            $ player_name, player_full_name, player_last_name = 'Hitona', 'Hitona Kohigashi', 'Kohigashi'
         "Koppi":
-            $ player_name, player_full_name, player_last_name = __('Koppi'), __('Koppi'), __('Koppi')
+            $ player_name, player_full_name, player_last_name = 'Koppi', 'Koppi', 'Koppi'
         "Kohi":
-            $ player_name, player_full_name, player_last_name = __('Kohi'), __('Kohi'), __('Kohi')
+            $ player_name, player_full_name, player_last_name = 'Kohi', 'Kohi', 'Kohi'
         "Hitoo":
-            $ player_name, player_full_name, player_last_name = __('Hitoo'), __('Hitoo Kohigashi'), __('Kohigashi')
+            $ player_name, player_full_name, player_last_name = 'Hitoo', 'Hitoo Kohigashi', 'Kohigashi'
         "Hitopi":
-            $ player_name, player_full_name, player_last_name = __('Hitopi'), __('Hitopi Kohigashi'), __('Kohigashi')
+            $ player_name, player_full_name, player_last_name = 'Hitopi', 'Hitopi Kohigashi', 'Kohigashi'
         "HitonaP":
-            $ player_name, player_full_name, player_last_name = __('HitonaP'), __('HitonaP'), __('HitonaP')
+            $ player_name, player_full_name, player_last_name = 'HitonaP', 'HitonaP', 'HitonaP'
         "GashiP":
-            $ player_name, player_full_name, player_last_name = __('GashiP'), __('GashiP'), __('GashiP')
+            $ player_name, player_full_name, player_last_name = 'GashiP', 'GashiP', 'GashiP'
         "P":
-            $ player_name, player_full_name, player_last_name = __('P'), __('KohigashiP'), __('KohigashiP')
+            $ player_name, player_full_name, player_last_name = 'P', 'KohigashiP', 'KohigashiP'
 
     menu:
         "2. Of the following, what is your most favourite color?"

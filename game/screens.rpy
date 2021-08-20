@@ -110,7 +110,29 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        if textbox_menu:
+            hbox:
+                fixed xsize 0.3:
+                    text what id "what":
+                        line_spacing -5
+
+                $ alt_tl = get_alt_tl(what)
+                $ alt_tl = '(%s)' % alt_tl if alt_tl else ''
+                fixed :
+                    text "[alt_tl]":
+                        style "say_dialogue"
+                        slow_cps preferences.text_cps
+                        line_spacing -5
+        else:
+            text what id "what":
+                line_spacing -5
+
+            $ alt_tl = get_alt_tl(what)
+            text alt_tl:
+                style "say_dialogue"
+                slow_cps preferences.text_cps
+                line_spacing -5
+                yoffset 105
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -1339,8 +1361,27 @@ style notify_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#nvl
 
+init python:
+    def get_alt_tl_nvl(entry):
+        who, what, who_id, what_id, window_id = entry
+        print(what)
+        what = get_alt_tl(what)
+        new_entry = _NVLEntry((who, what, who_id, 'what_' if what_id == 'what' else what_id, window_id))
+        new_entry.current = entry.current
+        new_entry.who = who
+        new_entry.what = what
+        new_entry.who_id = who_id
+        new_entry.what_id = 'what_' if what_id == 'what' else what_id
+        new_entry.window_id = window_id
+        new_entry.who_args = entry.who_args
+        new_entry.what_args = entry.what_args
+        new_entry.window_args = entry.window_args
+        new_entry.properties = entry.properties
+        new_entry.multiple = entry.multiple
+        print(entry, new_entry)
+        return new_entry
 
-screen nvl(dialogue, items=None):
+screen nvl(dialogue, dialogue_tl, items=None):
 
     window:
         style "nvl_window"
@@ -1350,16 +1391,21 @@ screen nvl(dialogue, items=None):
 
         ## Displays dialogue in either a vpgrid or the vbox.
         if gui.nvl_height:
-
+            # TODO dual tl not supported
             vpgrid:
                 cols 1
                 yinitial 1.0
 
                 use nvl_dialogue(dialogue)
-
         else:
-
-            use nvl_dialogue(dialogue)
+            vbox:
+                fixed ysize 540:
+                    vbox spacing gui.nvl_spacing:
+                        use nvl_dialogue(dialogue)
+                fixed ysize 540:
+                    vbox spacing gui.nvl_spacing:
+                        use nvl_dialogue(dialogue_tl)
+                # (None, u'\u201cKohi!', u'who', u'what', u'window')
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True, as it is above.
@@ -1389,6 +1435,8 @@ screen nvl_dialogue(dialogue):
 
                 text d.what:
                     id d.what_id
+                    if d.what_id == 'what_tl':
+                        slow_cps preferences.text_cps
 
 
 ## This controls the maximum number of NVL-mode entries that can be displayed at
