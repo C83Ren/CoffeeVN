@@ -28,7 +28,7 @@ label r3_river:
 
     pi "She’ll get it eventually, especially when you give it back to her."
 
-    p  "Let’s just move on to the next challenge, Kohigashi."
+    p  "Let’s just move on to the next challenge, [player_last_name]." id r3_river_8a2de425
 
     l "You won’t be that optimistic when you see the next one."
 

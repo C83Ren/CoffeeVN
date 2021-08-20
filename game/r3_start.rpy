@@ -27,7 +27,7 @@ label r3_start:
 
     p "Huh? Can I help you?"
 
-    "???" "Kohigashi! Phantom Thief Lios has stolen something from you!"
+    "???" "[player_last_name]! Phantom Thief Lios has stolen something from you!" id r3_start_612502a4
 
     p "Ehhhhh?"
 
@@ -49,7 +49,7 @@ label r3_start:
 
     play sound takecard
 
-    nvl_narrator "“[player_name] Kohigashi!”" id r3_start_9ec02c2e
+    nvl_narrator "“[player_full_name]!”" id r3_start_9ec02c2e
 
     nvl_narrator "“I, Phantom Thief Lios, have stolen one of your most precious possessions!”"
 

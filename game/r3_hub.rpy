@@ -19,7 +19,7 @@ label r3_hub:
 
     "Before I could finish my words, I lost consciousness."
 
-    "???" "Ooooi, Kohigashi!"
+    "???" "Ooooi, [player_last_name]!" id r3_hub_1abc0be7
 
     "???" "Ooooi, wake up already!"
 
@@ -50,7 +50,7 @@ label r3_hub:
 
     "???" "Oh right, sorry, I haven’t introduced myself. I’m Pierrot! No, not Poirot but Pierrot! The Master Detective Pierrot!"
 
-    p "Okay...uhh...I’m [player_name], [player_name] Kohigashi." id r3_hub_7e235c7e
+    p "Okay...uhh...I’m [player_name], [player_full_name]." id r3_hub_7e235c7e
 
     p "But...you somehow knew that, it seems."
 
@@ -92,7 +92,7 @@ label r3_hub:
 
     show hitona3 laugh hat
 
-    pi "Let’s go, Kohigashi, let’s go!"
+    pi "Let’s go, [player_last_name], let’s go!" id r3_hub_bb65e94c
 
     "This is all so confusing but...it seems a bit fun, so might as well follow along."
 
@@ -108,7 +108,7 @@ label r3_hub:
 
     pi "Wahahahaha! Lios, underestimating me now is the worst mistake you can possibly make!"
 
-    pi "I have grown, this time for sure Kohigashi will get back what you have stolen!"
+    pi "I have grown, this time for sure [player_last_name] will get back what you have stolen!" id r3_hub_f2051d80
 
     hide hitona3
 
@@ -128,7 +128,7 @@ label r3_hub:
 
     show hitona3 smug hat
 
-    pi "Don’t worry, Kohigashi! The great detective Pierrot is here by your side!"
+    pi "Don’t worry, [player_last_name]! The great detective Pierrot is here by your side!" id r3_hub_f3845a1d
 
     play sound lightswitch
 

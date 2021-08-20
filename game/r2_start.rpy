@@ -56,7 +56,7 @@ label r2_start:
 
     show hitona2 angry
 
-    e "I see, I see, so your name is [player_name] Kohigashi, and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..." id r2_start_9159ad52
+    e "I see, I see, so your name is [player_full_name], and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..." id r2_start_9159ad52
 
     p "What in the world are you talking about..."
 

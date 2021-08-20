@@ -14,7 +14,7 @@ label end_3:
 
     pi "Worst enemy? Yeah, because it was too easy, Lios!"
 
-    pi "Don’t you think so too, Kohigashi?"
+    pi "Don’t you think so too, [player_last_name]?" id end_3_307d4a53
 
     p "Huff...what part was easy...huff"
 
@@ -235,7 +235,7 @@ label end_3:
 
     "As if they had heard me..."
 
-    pi "Don’t be sad, we’ll still be with you, Kohigashi."
+    pi "Don’t be sad, we’ll still be with you, [player_last_name]." id end_3_098db7b4
 
     hide art_18 with dissolve
     call show_cg("artreel5", False) from _call_show_cg_30
@@ -394,7 +394,7 @@ label r3_secret_ending:
 
         r "Who art thou? State thy business this present moment, for thou hast intruded upon these holy grounds of our only goddess!"
 
-        p "I’m [player_name] Kohigashi." id r3_secret_ending_8291af07
+        p "I’m [player_full_name]." id r3_secret_ending_8291af07
 
         p " I don’t know if you’ll believe me, but it seems that I was cursed by the pudding god and sent here haha..."
 
@@ -461,7 +461,7 @@ label r3_secret_ending:
         show lios front at lios_right
         show hitona3 sad hat at hitona_left
 
-        pi "Sorry, Kohigashi! Lios mistakenly left the gateway to this world when he was setting up the maze!"
+        pi "Sorry, [player_last_name]! Lios mistakenly left the gateway to this world when he was setting up the maze!" id r3_secret_ending_64b9cd4d
 
         pi "We’ll bring you back to your own world now!"
 

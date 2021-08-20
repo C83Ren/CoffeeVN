@@ -14,7 +14,7 @@ label r3_bomb:
 
     l "Amazes me that you still remember those drawings, Pierrot."
 
-    pi "It reminds me of when Kohigashi was playing XXXXXX and she drew XXXX."
+    pi "It reminds me of when [player_last_name] was playing XXXXXX and she drew XXXX." id r3_bomb_44e47dbe
 
     p "Yeah, that’s right!"
 
@@ -96,7 +96,7 @@ label r3_bomb:
 
     p "Eh? Worst enemy??"
 
-    pi "Don’t falter, Kohigashi! You can do it!"
+    pi "Don’t falter, [player_last_name]! You can do it!" id r3_bomb_dcb325c3
 
     l "You have to escape from the maze within the time limit. If you’re too slow..."
 
