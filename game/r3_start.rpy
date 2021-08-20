@@ -79,7 +79,7 @@ label r3_start:
 
 label room_passcode1:
     python:
-        passcode_r3 = renpy.input(__("Please type in the passcode."), length=4, allow="0123456789")
+        passcode_r3 = input_with_history("Please type in the passcode.", length=4, allow="0123456789")
 
     if passcode_r3 == "0504":
         play sound correctchoice
