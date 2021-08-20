@@ -126,7 +126,7 @@ label start:
         "Koppi":
             $ player_name, player_full_name, player_last_name = __('Koppi'), __('Koppi'), __('Koppi')
         "Kohi":
-            $ player_name, player_full_name, player_last_name = __('Kohii'), __('Kohi'), __('Kohi')
+            $ player_name, player_full_name, player_last_name = __('Kohi'), __('Kohi'), __('Kohi')
         "Hitoo":
             $ player_name, player_full_name, player_last_name = __('Hitoo'), __('Hitoo Kohigashi'), __('Kohigashi')
         "Hitopi":
