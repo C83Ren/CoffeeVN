@@ -368,7 +368,7 @@ translate japanese bomb_fail_fa5738e3:
 translate japanese bomb_fail_c98675fc:
 
     # "I rushed out of my room in a hurry to meet senpai."
-    p "I rushed out of my room in a hurry to meet senpai."
+    pass
 
 # game/r3_bomb.rpy:190
 translate japanese bomb_fail_62f7d1de:

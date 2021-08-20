@@ -87,7 +87,7 @@ label r3_sing:
     check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next." sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji"
     play sound correctchoice
     "{b}CORRECT{/b}"
-    pi "Lios don’t be such a tsundere, if you like Kohigashi, just say so."
+    pi "Lios don’t be such a tsundere, if you like [player_last_name], just say so." id r3_sing_b1138583
     l "You’re definitely tired. aren’t you..."
     "{b}NEXT{/b}"
 

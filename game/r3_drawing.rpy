@@ -54,7 +54,7 @@ label r3_drawing:
 
     l "Anyways, keep moving."
 
-    pi "Let’s go, Kohigashi!"
+    pi "Let’s go, [player_last_name]!" id r3_drawing_358edc28
 
     pi "To the next challenge!"
 

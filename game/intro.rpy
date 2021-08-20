@@ -64,7 +64,7 @@ label start:
 
     p "{i}A delivery? I wonder what it is.{/i}"
 
-    "Mailman" "Here is your delivery. For ummm, Kohigashi, correct? Please sign here." id start_fe4e8d19
+    "Mailman" "Here is your delivery. For ummm, [player_last_name], correct? Please sign here." id start_fe4e8d19
 
     p "Ah yes, okay…"
 
@@ -119,7 +119,24 @@ label start:
     # disable save until after questionnaire
     $ save_enabled = False
 
-    $ player_name = input_with_history("1. Enter your name.", default="Hitona")
+    menu:
+        "1. Enter your name."
+        "Hitona":
+            $ player_name, player_full_name, player_last_name = __('Hitona'), __('Hitona Kohigashi'), __('Kohigashi')
+        "Koppi":
+            $ player_name, player_full_name, player_last_name = __('Koppi'), __('Koppi'), __('Koppi')
+        "Kohi":
+            $ player_name, player_full_name, player_last_name = __('Kohii'), __('Kohi'), __('Kohi')
+        "Hitoo":
+            $ player_name, player_full_name, player_last_name = __('Hitoo'), __('Hitoo Kohigashi'), __('Kohigashi')
+        "Hitopi":
+            $ player_name, player_full_name, player_last_name = __('Hitopi'), __('Hitopi Kohigashi'), __('Kohigashi')
+        "HitonaP":
+            $ player_name, player_full_name, player_last_name = __('HitonaP'), __('HitonaP'), __('HitonaP')
+        "GashiP":
+            $ player_name, player_full_name, player_last_name = __('GashiP'), __('GashiP'), __('GashiP')
+        "P":
+            $ player_name, player_full_name, player_last_name = __('P'), __('KohigashiP'), __('KohigashiP')
 
     menu:
         "2. Of the following, what is your most favourite color?"

@@ -78,7 +78,7 @@ label r1_7_11:
 
         p "What does that even... anyways, I’m glad you like it!"
 
-    elif conbini_food == "7/11 Seven Premium Gold Hamburger Steak":
+    elif conbini_food == "Sev*n Pr*mium Gold Hamburg Steak":
         s "It’s so delicious!"
 
         s "The sauce is amazing!"

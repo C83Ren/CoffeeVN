@@ -1,5 +1,7 @@
 #List of Characters will be defined here
 default player_name = __('Hitona')
+default player_full_name = __('Hitona Kohigashi')
+default player_last_name = __('Kohigashi')
 define p = Character("player_name", dynamic=True, color="#880088") #Player a.k.a KohigashiActual
 define sn = Character(_('Senpai'), color="#880000")
 define s = Character(_('Shiraishi'), color="#338833", image="hitona1") #KohiLO

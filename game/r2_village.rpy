@@ -188,7 +188,7 @@ label village_house_1_1:
 
     e "Anyways, this is our second salvation, her name is [player_name]. Found her in the forest." id village_house_1_1_d0d441c3
 
-    p "Nice to meet you, I’m [player_name] Kohigashi." id village_house_1_1_4ac634e1
+    p "Nice to meet you, I’m [player_full_name]." id village_house_1_1_4ac634e1
 
     hn "Nice to meet you."
 
@@ -280,9 +280,9 @@ label village_house_2_2:
 
     hs "What do you wa... oh it’s you. I didn’t catch your name last time."
 
-    p "It’s [player_name] Kohigashi." id village_house_2_2_ca928913
+    p "It’s [player_full_name]." id village_house_2_2_ca928913
 
-    hs "Kohigashi hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
+    hs "[player_last_name] hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..." id village_house_2_2_509080dd
 
     p "I have no idea what you two are talking about, but I doubt it..."
 
@@ -306,7 +306,7 @@ label village_house_3_1:
 
     e "Yep, she’s [player_name]." id village_house_3_1_d24acfd4
 
-    p "Nice to meet you, I’m [player_name] Kohigashi." id village_house_3_1_4ac634e1
+    p "Nice to meet you, I’m [player_full_name]." id village_house_3_1_4ac634e1
 
     "???" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation."
 

@@ -14,7 +14,7 @@ label r3_quiz:
 
     show hitona3 smile hat
 
-    pi "Don’t worry, Kohigashi! This first part is usually really easy!"
+    pi "Don’t worry, [player_last_name]! This first part is usually really easy!" id r3_quiz_e81ee560
 
     p "Huh? You’ve done this before?"
 
@@ -54,7 +54,7 @@ label quiz_fail:
     show hitona3 pout hat at hitona_left with dissolve
     #show lios front at lios_right behind hitona3
 
-    pi "Hey don’t blame me! Kohigashi was the only one answering!"
+    pi "Hey don’t blame me! [player_last_name] was the only one answering!" id quiz_fail_bed06378
 
     l "You kept quiet because you didn’t know the answer either though."
 
