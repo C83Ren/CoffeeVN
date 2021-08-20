@@ -66,15 +66,15 @@ translate simplified_chinese strings:
 
     # game/credits.rpy:1
     old "omurice"
-    new "omuric"
+    new "omurice"
 
     # game/credits.rpy:86
     old "Planning"
-    new "策划"
+    new "企划"
 
     # game/credits.rpy:87
     old "Scenario"
-    new "场景"
+    new "剧本"
 
     # game/credits.rpy:88
     old "Translation"
@@ -102,7 +102,7 @@ translate simplified_chinese strings:
 
     # game/credits.rpy:101
     old "Congratulations on your second anniversary!"
-    new "恭喜你出道２周年！"
+    new "恭喜出道２周年！"
 
     # game/credits.rpy:1
     old "Hitona Kohigashi"

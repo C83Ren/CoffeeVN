@@ -38,7 +38,7 @@ translate simplified_chinese quiz_2_fd44eb4a:
 translate simplified_chinese quiz_2_f77ee973:
 
     # pi "Vanilla scent is too sweet for me too. I like the smell of fresh yakiniku though!"
-    pi "「香草对我来说也太甜了。我喜欢新鲜的烤肉的香味」"
+    pi "「香草对我来说太甜了。我喜欢刚烤好的烤肉的香味」"
 
 # game/quiz_mechanic.rpy:71
 translate simplified_chinese quiz_2_0bb6e3a3:
@@ -68,7 +68,7 @@ translate simplified_chinese quiz_3_fd44eb4a:
 translate simplified_chinese quiz_3_a1e88344:
 
     # pi "Believe in the power of your pinky!"
-    pi "「相信你小拇指的力量！」"
+    pi "「相信小拇指的力量！」"
 
 # game/quiz_mechanic.rpy:92
 translate simplified_chinese quiz_3_0bb6e3a3_1:
@@ -98,7 +98,7 @@ translate simplified_chinese quiz_4_fd44eb4a:
 translate simplified_chinese quiz_4_e483b867:
 
     # pi "This game is a money sink...I need to be careful."
-    pi "「这个游戏太骗氪了...得注意点」"
+    pi "「这个游戏太骗氪了…得注意点」"
 
 # game/quiz_mechanic.rpy:123
 translate simplified_chinese quiz_5_fd44eb4a:
@@ -140,7 +140,7 @@ translate simplified_chinese quiz_6_fd44eb4a:
 translate simplified_chinese quiz_6_643d194a:
 
     # pi "It’s always sad to see someone failing even though they've tried so hard."
-    pi "「看到明明很努力了却还是失败的人的身影总是会很难过呢」"
+    pi "「看到明明很努力了却还是失败的人的身影总会感到很难过呢」"
 
 # game/quiz_mechanic.rpy:151
 translate simplified_chinese quiz_6_0bb6e3a3_1:
@@ -152,7 +152,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:45
     old "Who is the very first heroine that Hitona Kohigashi conquered?"
-    new "小东人鱼最先攻略的主角是？"
+    new "小东人鱼最先攻略的女主是？"
 
     # game/quiz_mechanic.rpy:45
     old "Ayatsuji"
@@ -184,7 +184,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:79
     old "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of the following four from gacha: Kaavi, Aihara Mai, Suzumiya Anju, and Yagi Yui. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
-    new "在雀魂里、小东人鱼希望从卡维、相原舞、凉宫杏树和八木唯之中至少抽到一个。11次十连抽到了其中两个、八木唯是第几次十连抽到的？"
+    new "在雀魂中，小东人鱼希望从卡维、相原舞、凉宫杏树和八木唯之中至少抽到一个。11次十连抽到了其中两个，八木唯是第几次十连抽到的？"
 
     # game/quiz_mechanic.rpy:79
     old "2nd"
@@ -200,7 +200,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:96
     old "What was the prize in the very first online crane machine Hitona Kohigashi attempted?"
-    new "小东人鱼最先挑战的抓娃娃机游戏的奖品是什么？"
+    new "小东人鱼最先挑战的抓娃娃机游戏的景品是什么？"
 
     # game/quiz_mechanic.rpy:96
     old "Hatsune Miku Birthday Figure 2020~Pop idol ver~"
@@ -236,7 +236,7 @@ translate simplified_chinese strings:
 
     # game/quiz_mechanic.rpy:138
     old "In the game called Uma Musume, during the first time that Hitona Kohigashi tried to raise Maruzensky, she came in 5th place during the Nippon Derby. Who came in first place?"
-    new "在赛马娘里、小东人鱼第一次养成的丸善斯基在日本德比中获得第五名、那么获得第一名的是谁？"
+    new "在赛马娘中，小东人鱼第一次养成的丸善斯基在日本德比中获得第五名，那么获得第一名的是谁？"
 
     # game/quiz_mechanic.rpy:138
     old "Narita Taishin"

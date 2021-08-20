@@ -420,170 +420,170 @@ translate simplified_chinese final_bad_end_ac6677e0:
     "虽然阿克诺斯特王被打倒了，但本应成为新王的人也已然不在。"
 
 # game/r2_final.rpy:239
-translate simplified_chinese end_2_143e6df8:
+translate simplified_chinese final_good_end_143e6df8:
 
     # p "Eh?"
     p "「诶？」"
 
 # game/r2_final.rpy:243
-translate simplified_chinese end_2_d593d4b0:
+translate simplified_chinese final_good_end_d593d4b0:
 
     # e "Eh?"
     e "「诶？」"
 
 # game/r2_final.rpy:247
-translate simplified_chinese end_2_17d403f4:
+translate simplified_chinese final_good_end_17d403f4:
 
     # p "You’re alive!"
     p "「还活着！」"
 
 # game/r2_final.rpy:251
-translate simplified_chinese end_2_1b25c41d:
+translate simplified_chinese final_good_end_1b25c41d:
 
     # e "Yeah...somehow..."
     e "「是呢…总算活下来了…」"
 
 # game/r2_final.rpy:255
-translate simplified_chinese end_2_015d3dc2:
+translate simplified_chinese final_good_end_015d3dc2:
 
     # e "Ah, it’s probably because of the catalyst."
     e "「啊，或许是多亏了触媒」"
 
 # game/r2_final.rpy:257
-translate simplified_chinese end_2_fd81ac0a:
+translate simplified_chinese final_good_end_fd81ac0a:
 
     # p "Whatever it is, you’re alive!!! I’m just happy you’re alive!!"
     p "「不论如何，活下来了呢！！！能活着就好！」"
 
 # game/r2_final.rpy:259
-translate simplified_chinese end_2_b06907eb:
+translate simplified_chinese final_good_end_b06907eb:
 
     # "I hugged Eve, who, even though she used Void, was still alive, tightly."
     "尽管使用了《空》，伊芙还是活了下来。人鱼紧紧地抱紧了她。"
 
 # game/r2_final.rpy:263
-translate simplified_chinese end_2_850ff8b9:
+translate simplified_chinese final_good_end_850ff8b9:
 
     # e "Haha...yeah..."
     e "「哈哈，确实呢…」"
 
 # game/r2_final.rpy:265
-translate simplified_chinese end_2_6c4b8a2e:
+translate simplified_chinese final_good_end_6c4b8a2e:
 
     # "The feeling of exhaustion finally sunk in, and we both fell onto our knees."
     "疲惫涌了上来，两人一起跪坐在了地上。"
 
 # game/r2_final.rpy:267
-translate simplified_chinese end_2_f11e976f:
+translate simplified_chinese final_good_end_f11e976f:
 
     # "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..."
     "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "「哈哈哈…呼～」"
 
 # game/r2_final.rpy:269
-translate simplified_chinese end_2_4081c499:
+translate simplified_chinese final_good_end_4081c499:
 
     # e "Thank you, Hitona...truly..."
     e "「人鱼，真的很感谢你…」"
 
 # game/r2_final.rpy:271
-translate simplified_chinese end_2_a70348ae:
+translate simplified_chinese final_good_end_a70348ae:
 
     # p "Hey...I had a lot of fun too"
     p "「没什么，人鱼也很开心哦」"
 
 # game/r2_final.rpy:275
-translate simplified_chinese end_2_f4dd13f5:
+translate simplified_chinese final_good_end_f4dd13f5:
 
     # e "And don’t worry about this, I’ll be a good NEET King okay."
     e "「别担心，我会成为一个贤明的家里蹲国王的」"
 
 # game/r2_final.rpy:277
-translate simplified_chinese end_2_b02cc129:
+translate simplified_chinese final_good_end_b02cc129:
 
     # p "Hahaha yeah...ugh..."
     p "「哈哈哈…呜…」"
 
 # game/r2_final.rpy:279
-translate simplified_chinese end_2_65a5aff0:
+translate simplified_chinese final_good_end_65a5aff0:
 
     # "I suddenly felt very dizzy, and then everything went black..."
     "人鱼突然感到一阵头晕目眩，紧接着眼前一黑…"
 
 # game/r2_final.rpy:283
-translate simplified_chinese end_2_8107aff0:
+translate simplified_chinese final_good_end_8107aff0:
 
     # p "{i}Huh? Where am I...{/i}"
     p "（咦，这是…哪儿啊？）"
 
 # game/r2_final.rpy:285
-translate simplified_chinese end_2_401b0790:
+translate simplified_chinese final_good_end_401b0790:
 
     # p "{i}On my bed...lying down...?{/i}"
     p "（是躺在…被窝里面吗…？）"
 
 # game/r2_final.rpy:287
-translate simplified_chinese end_2_90bed455:
+translate simplified_chinese final_good_end_90bed455:
 
     # p "{i}What a dream that was...{/i}"
     p "（可真是个不得了的梦啊…）"
 
 # game/r2_final.rpy:291
-translate simplified_chinese end_2_4bd07237:
+translate simplified_chinese final_good_end_4bd07237:
 
     # p "{i}A text?{/i}"
     p "（有邮件？）"
 
 # game/r2_final.rpy:293
-translate simplified_chinese end_2_ad28576a:
+translate simplified_chinese final_good_end_ad28576a:
 
     # nvl_narrator "You got back safely right?"
     nvl_narrator "『平安回去了吧？"
 
 # game/r2_final.rpy:295
-translate simplified_chinese end_2_6133d45d:
+translate simplified_chinese final_good_end_6133d45d:
 
     # nvl_narrator "Wahahahaha! You should trust The Great Majna Eden Bat Azuma Nula Sedun more!"
     nvl_narrator "　哇——哈哈哈哈！要更加相信我伟大的{rb}　\ \ \ \ 壹壹零柒\ \ \ \ \ \ 　{/rb}{rt}（咲・依・弋・冬・绫・琪）{/rt}大人啊！"
     nvl_narrator "　本家里蹲国王会为了王国的繁荣昌盛励精图治的～"
 
 # game/r2_final.rpy:297
-translate simplified_chinese end_2_63a0452a:
+translate simplified_chinese final_good_end_63a0452a:
 
     # nvl_narrator "By the way, the wind says {b}‘it resembles thy name, but one digit differs’{/b}"
     nvl_narrator "　说起来，东风向我传达了一条消息，说「虽然和你的名字很相似，但是有一位数字有所不同」"
 
 # game/r2_final.rpy:299
-translate simplified_chinese end_2_80e0b882:
+translate simplified_chinese final_good_end_80e0b882:
 
     # nvl_narrator "Until next time!"
     nvl_narrator "　那就再见啦！』"
 
 # game/r2_final.rpy:301
-translate simplified_chinese end_2_d2d428e1:
+translate simplified_chinese final_good_end_d2d428e1:
 
     # p "{i}Hahahahahaha{/i}"
     p "（哈哈哈哈哈）"
 
 # game/r2_final.rpy:303
-translate simplified_chinese end_2_7e96f30e:
+translate simplified_chinese final_good_end_7e96f30e:
 
     # p "{i}If you’re a king you’re not a NEET anymore, Eve!{/i}"
     p "（小伊芙，当了国王可就不再是家里蹲了啊！）"
 
 # game/r2_final.rpy:307
-translate simplified_chinese end_2_3b9977b6:
+translate simplified_chinese final_good_end_3b9977b6:
 
     # "On the ground there was something..."
     pass
 
 # game/r2_final.rpy:309
-translate simplified_chinese end_2_38a985db:
+translate simplified_chinese final_good_end_38a985db:
 
     # p "{i}Huh? What’s this...? a key{/i}"
     p "（咦，这是什么…钥匙吗？）"
 
 # game/r2_final.rpy:311
-translate simplified_chinese end_2_bcaf170d:
+translate simplified_chinese final_good_end_bcaf170d:
 
     # p "{i}And also a note with the number 7?{/i}"
     p "（还有一张写有『7』的纸条…？）"

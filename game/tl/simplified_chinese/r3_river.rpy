@@ -134,7 +134,7 @@ translate simplified_chinese river_cat_908d189c:
 translate simplified_chinese river_cat_ec012af7:
 
     # "What should I do?"
-    "要怎么做？"
+    "要怎么做呢？"
 
 # game/r3_river.rpy:87
 translate simplified_chinese river_dog_7ad29bb8:
@@ -212,7 +212,7 @@ translate simplified_chinese river_dog_908d189c:
 translate simplified_chinese river_dog_ec012af7:
 
     # "What should I do?"
-    "要怎么做？"
+    "要怎么做呢？"
 
 # game/r3_river.rpy:117
 translate simplified_chinese river_deer_872b8fe1:
@@ -290,7 +290,7 @@ translate simplified_chinese river_deer_908d189c:
 translate simplified_chinese river_deer_ec012af7:
 
     # "What should I do?"
-    "要怎么做？"
+    "要怎么做呢？"
 
 # game/r3_river.rpy:145
 translate simplified_chinese river_menu1_11fdb519:
@@ -1196,7 +1196,7 @@ translate simplified_chinese strings:
 
     # game/r3_river.rpy:303
     old "What should I do next?"
-    new "接下来要怎么做？"
+    new "接下来要怎么做呢？"
 
     # game/r3_river.rpy:303
     old "Rub its chin"

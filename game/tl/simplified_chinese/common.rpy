@@ -1,4 +1,4 @@
-﻿
+
 translate simplified_chinese strings:
 
     # renpy/common/00accessibility.rpy:28
@@ -327,7 +327,7 @@ translate simplified_chinese strings:
 
     # renpy/common/00director.rpy:708
     old "The interactive director is not enabled here."
-    new "ここではインタラクティブディレクターは使えません"
+    new "此处未启用交互式控制器"
 
     # renpy/common/00director.rpy:1481
     old "⬆"
@@ -959,7 +959,7 @@ translate simplified_chinese strings:
 
     # renpy/common/_errorhandling.rpym:614
     old "Ignores the exception, allowing you to continue. This often leads to additional errors."
-    new "忽略这个异常，并继续。这可能有可能继续导致其它错误。"
+    new "忽略这个异常，并继续。这可能继续导致其它错误。"
 
     # renpy/common/_errorhandling.rpym:618
     old "Reload"

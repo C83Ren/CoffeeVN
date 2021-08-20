@@ -52,11 +52,11 @@ translate simplified_chinese strings:
 
     # game/quiz_pic_mechanic.rpy:6
     old "I really couldn’t remember its name last time."
-    new "「我之前都没记住他的名字」"
+    new "「以前完全记不住这个叫法呢」"
 
     # game/quiz_pic_mechanic.rpy:6
     old "Well now you do, good for you."
-    new "「但是你现在记住了，鼓掌鼓掌」"
+    new "「不过现在记住了呢，鼓掌鼓掌」"
 
     # game/quiz_pic_mechanic.rpy:6
     old "Bath"
@@ -76,7 +76,7 @@ translate simplified_chinese strings:
 
     # game/quiz_pic_mechanic.rpy:6
     old "I’ll leave it to your imagination."
-    new "「你猜」"
+    new "「任你想象了」"
 
     # game/quiz_pic_mechanic.rpy:6
     old "Barrel"
@@ -92,11 +92,11 @@ translate simplified_chinese strings:
 
     # game/quiz_pic_mechanic.rpy:6
     old "Is the food above it really necessary...?"
-    new "「上面的饭真的有必要吗...」"
+    new "「上面的食物真的有必要吗...」"
 
     # game/quiz_pic_mechanic.rpy:6
     old "It’s the most important part."
-    new "「那可是最重要的」"
+    new "「那可是最重要的部分了」"
 
     # game/quiz_pic_mechanic.rpy:6
     old "Taking an exam"

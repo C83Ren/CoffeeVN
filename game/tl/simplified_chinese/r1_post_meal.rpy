@@ -2,7 +2,7 @@
 translate simplified_chinese r1_post_meal_8d5490f9:
 
     # "Shiraishi looks very satisfied after that meal. It’s still noon, but Shiraishi looks a bit sleepy."
-    "吃完饭之后白石一脸满足，虽说是中午，但是白石看起来有些困。"
+    "吃完饭后白石看上去一脸满足。虽然才中午，不过白石看起来有些困了。"
 
 # game/r1_post_meal.rpy:10
 translate simplified_chinese r1_post_meal_e98494c4:
@@ -32,7 +32,7 @@ translate simplified_chinese strings:
 
     # game/r1_post_meal.rpy:5
     old "What should we do?"
-    new "该做什么呢？"
+    new "要怎么做呢？"
 
     # game/r1_post_meal.rpy:5
     old "Go to the movies"

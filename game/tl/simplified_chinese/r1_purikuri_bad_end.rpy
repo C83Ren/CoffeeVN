@@ -2,25 +2,25 @@
 translate simplified_chinese r1_purikuri_bad_end_f7e78e57:
 
     # "I looked at the photo, but it was still black."
-    "那张照片依然还是黑色。"
+    "看了看照片，可照片依然是黑色的。"
 
 # game/r1_purikuri_bad_end.rpy:7
 translate simplified_chinese r1_purikuri_bad_end_33e5e5a6:
 
     # p "{i}Ah, it’s starting to get clearer now! I can see it!{/i}"
-    p "（啊！稍微看得见了！看得见了！）"
+    p "（啊，逐渐看得见了！能看见了！）"
 
 # game/r1_purikuri_bad_end.rpy:9
 translate simplified_chinese r1_purikuri_bad_end_2dfb6100:
 
     # "The photo started to get more and more clear."
-    "照片变得越来越清晰了。"
+    "照片变得越来越清晰。"
 
 # game/r1_purikuri_bad_end.rpy:11
 translate simplified_chinese r1_purikuri_bad_end_51543876:
 
     # p "{i}Huh...?{/i}"
-    p "（怎么了…？）"
+    p "（咦…？）"
 
 # game/r1_purikuri_bad_end.rpy:13
 translate simplified_chinese r1_purikuri_bad_end_a20cefa7:
@@ -56,19 +56,19 @@ translate simplified_chinese r1_purikuri_bad_end_a20cefa7_2:
 translate simplified_chinese r1_purikuri_bad_end_3d7625bb:
 
     # "When I opened my eyes, I was lying on my bed."
-    "人鱼在房间里的被子上，睁开了眼睛"
+    "睁开双眼，发现人鱼在房间里，正躺在被子上。"
 
 # game/r1_purikuri_bad_end.rpy:31
 translate simplified_chinese r1_purikuri_bad_end_bf15b4bb:
 
     # p "What... was that..."
-    p "「嗯…怎么了…」"
+    p "「咦…是怎么回事…」"
 
 # game/r1_purikuri_bad_end.rpy:35
 translate simplified_chinese r1_purikuri_bad_end_d156de0a:
 
     # "My phone is ringing."
-    "手机的铃声正在响着。"
+    "手机正响着。"
 
 # game/r1_purikuri_bad_end.rpy:37
 translate simplified_chinese r1_purikuri_bad_end_dbe9e473:
@@ -80,7 +80,7 @@ translate simplified_chinese r1_purikuri_bad_end_dbe9e473:
 translate simplified_chinese r1_purikuri_bad_end_3a59c82c:
 
     # sn "Kohiii! Morning~! So about today..."
-    sn "「小东～！早上好～！然后，今天呢…」"
+    sn "「小东～！早啊～！那么今天呢…」"
 
 # game/r1_purikuri_bad_end.rpy:41
 translate simplified_chinese r1_purikuri_bad_end_473499c8:
@@ -98,16 +98,16 @@ translate simplified_chinese r1_purikuri_bad_end_cd945149:
 translate simplified_chinese r1_purikuri_bad_end_7d0fc8b8:
 
     # p "Oh, okay, I see. See you then."
-    p "「嗯嗯，这样啊。那么，下次见」"
+    p "「嗯嗯，这样啊。那么下次见吧」"
 
 # game/r1_purikuri_bad_end.rpy:47
 translate simplified_chinese r1_purikuri_bad_end_e24c6dc3:
 
     # "I hung up."
-    "人鱼挂了电话。"
+    "人鱼挂断了电话。"
 
 # game/r1_purikuri_bad_end.rpy:49
 translate simplified_chinese r1_purikuri_bad_end_5675ca13:
 
     # p "Guess I’ll go stream or something then."
-    p "「好了，去直播吧」"
+    p "「算乐，去直播吧」"

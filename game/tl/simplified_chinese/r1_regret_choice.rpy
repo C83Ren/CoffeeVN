@@ -1,9 +1,9 @@
-﻿# game/r1_regret_choice.rpy:3
+# game/r1_regret_choice.rpy:3
 translate simplified_chinese r1_regret_choice_3bfec0a0:
 
     # s "Hitona onee-chan, do you have any regrets today?"
-    s "「人鱼姐姐，今天陪我出来玩有没有后悔呢？」"
-    "白石又是很突然地问了一个问题。"
+    s "「话说人鱼姐姐，今天有什么后悔的事吗？」"
+    "又被白石问了一个很突然的问题。"
 
 # game/r1_regret_choice.rpy:5
 translate simplified_chinese r1_regret_choice_3fd9311a:
@@ -33,37 +33,37 @@ translate simplified_chinese r1_regret_choice_584030bd:
 translate simplified_chinese r1_regret_choice_bd5d39d2:
 
     # "After a while, I changed back and we left the shop."
-    "过了一会，人鱼把衣服还了回去，两个人离开了服装店。"
+    "没过多久，两人把衣服还了回去，离开了服装店。"
 
 # game/r1_regret_choice.rpy:27
 translate simplified_chinese r1_regret_choice_051c9ba9:
 
     # p "{i}It feels like I’m forgetting something...{/i}"
-    p "（总感觉忘了什么东西...）"
+    p "（总感觉忘了什么东西，不过…）"
 
 # game/r1_regret_choice.rpy:29
 translate simplified_chinese r1_regret_choice_ec4c06e3:
 
     # p "{i}Oh well.{/i}"
-    p "（不过算了就这样吧）"
+    p "（就这样吧）"
 
 # game/r1_regret_choice.rpy:34
 translate simplified_chinese r1_regret_choice_52169ae5:
 
     # "We changed back to our clothes and left the shop."
-    "两个人把衣服还回去之后离开了商店。"
+    "两人把衣服还了回去，离开了服装店。"
 
 # game/r1_regret_choice.rpy:38
 translate simplified_chinese r1_regret_choice_bcc692b0:
 
     # "The sun is starting to set."
-    "天已经开始变黑了。"
+    "太阳正逐渐西沉。"
 
 # game/r1_regret_choice.rpy:40
 translate simplified_chinese r1_regret_choice_94966302:
 
     # p "{i}We better start heading back.{/i}"
-    p "（我们差不多要回家了呢）"
+    p "（差不多也该回家了呢）"
 
 # game/r1_regret_choice.rpy:47
 translate simplified_chinese r1_regret_choice_de5812ac:
@@ -75,7 +75,7 @@ translate simplified_chinese r1_regret_choice_de5812ac:
 translate simplified_chinese r1_regret_choice_0166ae7e:
 
     # p "{i}Well, there’s still some time before nightfall.{/i}"
-    p "（不过，距离天黑还有点时间）"
+    p "（不过，距离天黑还有些时间）"
 
 # game/r1_regret_choice.rpy:51
 translate simplified_chinese r1_regret_choice_f52ce142:
@@ -87,12 +87,12 @@ translate simplified_chinese strings:
 
     # game/r1_regret_choice.rpy:9
     old "Do I have any regrets?"
-    new "今天有后悔吗？"
+    new "今天有什么后悔的事吗？"
 
     # game/r1_regret_choice.rpy:9
     old "Yeah, I regret something"
-    new "说实话是有些后悔"
+    new "是啊，有后悔过哦"
 
     # game/r1_regret_choice.rpy:9
     old "Nope, nothing at all"
-    new "没有后悔哦"
+    new "没有后悔过呢"

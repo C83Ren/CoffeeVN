@@ -20,19 +20,19 @@ translate simplified_chinese r1_food_choice_no_purikuri_583ffda7:
 translate simplified_chinese r1_food_choice_no_purikuri_8c67307a:
 
     # p "Let’s play another game! Like... the guitar game over there."
-    p "「我们去玩玩其他游戏吧！比如那边的吉他游戏之类的」"
+    p "「来玩点别的游戏吧！比如说…就那边的吉他游戏吧」"
 
 # game/r1_food_choice.rpy:40
 translate simplified_chinese r1_food_choice_no_purikuri_a2f0f740:
 
     # "Shiraishi nodded and smiled, but right as we were going to move again..."
-    "白石点了点头微笑了一下、但是正当我们准备走的时候..."
+    "白石点了点头微笑了一下、但是正当我们准备走的时候…"
 
 # game/r1_food_choice.rpy:53
 translate simplified_chinese r1_food_choice_ff0c9e55:
 
     # "{i}Grumbleee{/i}"
-    "（咕————）"
+    "（咕——）"
 
 # game/r1_food_choice.rpy:55
 translate simplified_chinese r1_food_choice_4d2b456d:
@@ -44,7 +44,7 @@ translate simplified_chinese r1_food_choice_4d2b456d:
 translate simplified_chinese r1_food_choice_ee24def4:
 
     # p "Ahaha. Let’s go eat then?"
-    p "「哈哈哈，那么我们接下来去吃点东西？」"
+    p "「哈哈，那就去吃点东西吧？」"
 
 # game/r1_food_choice.rpy:59
 translate simplified_chinese r1_food_choice_a69d98bc:
@@ -56,11 +56,11 @@ translate simplified_chinese strings:
 
     # game/r1_food_choice.rpy:61
     old "Where should we go to eat?"
-    new "我们去哪吃呢？"
+    new "去哪里吃呢？"
 
     # game/r1_food_choice.rpy:61
     old "7/*1"
-    new "7-□1"
+    new "7-〇1"
 
     # game/r1_food_choice.rpy:61
     old "Family Restaurant"

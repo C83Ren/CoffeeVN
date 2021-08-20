@@ -1,64 +1,64 @@
-﻿translate simplified_chinese strings:
+translate simplified_chinese strings:
 
     # game/music.rpy:1
     old "Main Theme"
-    new "メインテーマ"
+    new "主题曲"
 
     # game/music.rpy:1
     old "Support - Room"
-    new "応援　部屋"
+    new "应援　房间"
 
     # game/music.rpy:1
     old "Support - Shiraishi Theme"
-    new "応援　白石のテーマ"
+    new "应援　白石主题曲"
 
     # game/music.rpy:1
     old "Support - Game Arcade"
-    new "応援　ゲーセン"
+    new "应援　游戏厅"
 
     # game/music.rpy:1
     old "Support - Horror"
-    new "応援　ホラー"
+    new "应援　恐怖电影"
 
     # game/music.rpy:1
     old "Support - End"
-    new "応援　END"
+    new "应援　END"
 
     # game/music.rpy:1
     old "Joy - Adventure"
-    new "喜び　冒険"
+    new "喜悦　冒险"
 
     # game/music.rpy:1
     old "Joy - Battle"
-    new "喜び　戦い"
+    new "喜悦　战斗"
 
     # game/music.rpy:1
     old "Joy - Final Battle"
-    new "喜び　最後の戦い"
+    new "喜悦　最终决战"
 
     # game/music.rpy:1
     old "Joy - King Theme"
-    new "喜び　王のテーマ"
+    new "喜悦　国王主题曲"
 
     # game/music.rpy:1
     old "Joy - End"
-    new "喜び　END"
+    new "喜悦　END"
 
     # game/music.rpy:1
     old "Memories - Lios Theme"
-    new "想い出　リオスのテーマ"
+    new "回忆　里奥斯主题曲"
 
     # game/music.rpy:1
     old "Memories - Final Challenge"
-    new "想い出　最後のチャレンジ"
+    new "回忆　最后的挑战"
 
     # game/music.rpy:1
     old "Memories - Labyrinth"
-    new "想い出　迷路"
+    new "回忆　迷宫"
 
     # game/music.rpy:1
     old "Memories - End"
-    new "想い出　END"
+    new "回忆　END"
 
     # game/music.rpy:1
     old "Bad End"
@@ -66,4 +66,4 @@
 
     # game/music.rpy:1
     old "True End - Present"
-    new "TRUE END　プレゼント"
+    new "真结局　礼物"

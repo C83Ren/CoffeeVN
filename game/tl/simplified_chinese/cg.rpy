@@ -22,7 +22,7 @@ translate simplified_chinese strings:
 
     # game/cg.rpy:28
     old "Have something to regret during the Support Route."
-    new "在「应援线」选择曾后悔过"
+    new "在「应援线」选择后悔过"
 
     # game/cg.rpy:44
     old "Have no regrets during the Support Route."
