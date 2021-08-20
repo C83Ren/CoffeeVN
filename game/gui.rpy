@@ -90,7 +90,6 @@ define gui.game_menu_header_text_size = 45
 define gui.main_menu_background_initial = "images/bg [persistent.room].png"
 define gui.main_menu_background_final = "images/CG/truehitona.png"
 define gui.title_image = "gui/title.png"
-define gui.title_image_zh = "gui/title_zh.png"
 
 ## Dialogue ####################################################################
 ##

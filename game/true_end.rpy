@@ -210,10 +210,7 @@ label true_end_combination_unlocked:
 
     window hide
     $ _skipping = False
-    if _preferences.language == 'simplified_chinese':
-        show image 'images/true_end_c.png' with dissolve
-    else:
-        show image 'images/true_end.png' with dissolve
+    show image 'images/true_end.png' with dissolve
     $ renpy.pause(1.0, hard=True)
     pause
     $ _skipping = True

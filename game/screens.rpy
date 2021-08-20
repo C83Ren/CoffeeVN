@@ -449,10 +449,7 @@ screen main_menu_background():
                         image Transform(Image('images/keys/note_r%d.png' % i), rotate=-10, xpos=120, ypos=110)
                         image Transform(Image('images/keys/key_r%d hover.png' % i), zoom=0.3, rotate=35)
 
-    if _preferences.language == 'simplified_chinese':
-        image Transform(Image(gui.title_image_zh), zoom=0.3) xalign 1.0 yalign 0.0
-    else:
-        image Transform(Image(gui.title_image), zoom=0.3) xalign 1.0 yalign 0.0
+    image Transform(Image(gui.title_image), zoom=0.3) xalign 1.0 yalign 0.0
 
 ## Game Menu screen ############################################################
 ##
@@ -787,7 +784,6 @@ screen preferences():
                     label _("Language")
                     textbutton "{font=DejaVuSans.ttf}English{/font}" action Language(None)
                     textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}" action Language("japanese")
-                    textbutton "{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action Language("simplified_chinese")
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.

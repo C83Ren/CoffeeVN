@@ -334,10 +334,7 @@ label final_good_end:
 
     window hide
     $ _skipping = False
-    if _preferences.language == 'simplified_chinese':
-        show image 'images/r2_end_c.png' with dissolve
-    else:
-        show image 'images/r2_end.png' with dissolve
+    show image 'images/r2_end.png' with dissolve
     if (not persistent.ed_unlocked_2) and persistent.ed_unlocked_3 and persistent.ed_unlocked_1:
         $ renpy.notify(__("A new route has been unlocked!"))
     $ persistent.ed_unlocked_2 = True
