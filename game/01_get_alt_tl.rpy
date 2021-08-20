@@ -13,6 +13,35 @@ init python:
     def expand_string(what):
         return renpy.substitutions.substitute(what, scope=None, force=False, translate=False)[0]
 
+    # tl from None language -> language
+    def tl_string(what, language = 'simplified_chinese'):
+        tl_what = renpy.translation.translate_string(what, language)
+        old_language, renpy.game.preferences.language = renpy.game.preferences.language, language
+        tl_what = expand_string(tl_what)
+        renpy.game.preferences.language = old_language
+        return tl_what
+
+    # parenthesized tl (input in None language)
+    def tl_paren(what, alt_language = 'simplified_chinese'):
+        alt_tl = tl_string(what, alt_language)
+        if alt_tl:
+            # will be double tl-ed but shouldn't match anything.. hopefully.
+            return tl_string(what, renpy.game.preferences.language) + ' (' + alt_tl + ')'
+        else:
+            return what
+
+    # tl from current language -> another language
+    # get translation for a string (does not work for block tl)
+    def get_alt_string_tl(what, alt_language = 'simplified_chinese'):
+        # what is translated, so reverse translate to None language, then translate to new language
+        rtl_map = reverse_tl_map(renpy.game.preferences.language)
+        if what in rtl_map:
+            what = rtl_map[what]
+            alt_tl_what = tl_string(what, alt_language)
+        else:
+            alt_tl_what = ''
+        return alt_tl_what
+
     # get tl in another language **for the current position only**
     def get_alt_tl(what, alt_language = 'simplified_chinese'):
         if renpy.game.context().translate_identifier:
@@ -44,14 +73,5 @@ init python:
                 alt_tl_what = ''
         else:
             # if there's no translation id, this is translated through strings rather than tl blocks
-            # what is translated, so reverse translate to None language, then translate to new language
-            rtl_map = reverse_tl_map(renpy.game.preferences.language)
-            if what in rtl_map:
-                what = rtl_map[what]
-                alt_tl_what = renpy.translation.translate_string(what, alt_language)
-                old_language, renpy.game.preferences.language = renpy.game.preferences.language, alt_language
-                alt_tl_what = expand_string(alt_tl_what)
-                renpy.game.preferences.language = old_language
-            else:
-                alt_tl_what = ''
+            alt_tl_what = get_alt_string_tl(what)
         return alt_tl_what

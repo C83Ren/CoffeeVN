@@ -56,16 +56,14 @@ translate simplified_chinese fight_log_3c965ad1:
 translate simplified_chinese fight_log_a97f6bbd:
 
     # "{color=#00c}[target_name]{/color} took {color=#d00}[atk]{/color} damage!"
-    $ fw_atk = to_full_width(atk)
-    "{color=#00c}[target_name!t]{/color}受到了{color=#d00}[fw_atk]{/color}点伤害！"
+    "{color=#00c}[target_name!t]{/color}受到了{color=#d00}[atk]{/color}点伤害！"
 
 
 # game/battle_mechanic.rpy:465
 translate simplified_chinese fight_log_c0cbab48:
 
     # "{color=#00c}[target_name]{/color} has been healed {color=#090}[heal]{/color} HP!"
-    $ fw_heal = to_full_width(heal)
-    "{color=#00c}[target_name!t]{/color}回复了{color=#090}[fw_heal]{/color}点HP！"
+    "{color=#00c}[target_name!t]{/color}回复了{color=#090}[heal]{/color}点HP！"
 
 # game/battle_mechanic.rpy:474
 translate simplified_chinese fight_log_47106935:
@@ -83,7 +81,7 @@ translate simplified_chinese fight_log_80481860:
 translate simplified_chinese fight_log_4db3e0b0_1:
 
     # "{color=#00c}[self_name]{/color} took {color=#d00}5{/color} damage from the burn!"
-    "{color=#00c}[self_name!t]{/color}由于{color=#a30}《烧伤》{/color}受到了{color=#d00}５{/color}点伤害！"
+    "{color=#00c}[self_name!t]{/color}由于{color=#a30}《烧伤》{/color}受到了{color=#d00}5{/color}点伤害！"
 
 # game/battle_mechanic.rpy:506
 translate simplified_chinese fight_log_e2b8eb5b:
@@ -95,7 +93,7 @@ translate simplified_chinese fight_log_e2b8eb5b:
 translate simplified_chinese fight_log_4db3e0b0:
 
     # "{color=#00c}[self_name]{/color} took {color=#d00}5{/color} damage from the burn!"
-    "{color=#00c}[self_name!t]{/color}由于{color=#a30}《火傷》{/color}受到了{color=#d00}５{/color}点伤害！"
+    "{color=#00c}[self_name!t]{/color}由于{color=#a30}《火傷》{/color}受到了{color=#d00}5{/color}点伤害！"
 
 # game/battle_mechanic.rpy:529
 translate simplified_chinese fight_log_cf1d9358:
@@ -117,9 +115,9 @@ translate simplified_chinese fight_fail_9e95cf3b:
 
 translate simplified_chinese strings:
 
-    # game/battle_mechanic.rpy:248
-    old "It's {color=#00c}%s{/color}'s turn."
-    new "到{color=#00c}%s{/color}的回合了。"
+    # game/battle_mechanic.rpy:280
+    old "It's {color=#00c}[active_name]{/color}'s turn."
+    new "到{color=#00c}[active_name]{/color}的回合了。"
 
     # game/battle_mechanic.rpy:294
     old "What to do?"
@@ -212,7 +210,3 @@ translate simplified_chinese strings:
     # game/battle_mechanic.rpy:383
     old "[player_name!t]"
     new "[player_name!t]"
-
-init python:
-    def to_full_width(n):
-        return (''.join(list('０１２３４５６７８９')[int(x)] for x in str(n)))

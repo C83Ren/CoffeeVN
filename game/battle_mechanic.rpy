@@ -138,6 +138,7 @@ label battle_mechanic_setup():
     $ hit = 0
     $ heal = 0
     $ x = 1
+    $ active_name = 'Hitona'
     return
 
 screen single_stat(name, hp, hp_max, ypos):
@@ -147,9 +148,10 @@ screen single_stat(name, hp, hp_max, ypos):
         vbox:
             hbox:
                 if name != 'Hitona':
-                    text "[name!t]"
+                    $ display_name = name
                 else:
-                    text player_name
+                    $ display_name = player_name
+                text tl_paren(display_name)
 
             hbox:
                 text "HP":
@@ -274,7 +276,8 @@ label r2_fight:
             if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
                 self = fight_order_temp[x]
                 x = x + 1
-                renpy.say(narrator, __("It's {color=#00c}%s{/color}'s turn.") % __(self["name"] if self["name"] != 'Hitona' else player_name))
+                active_name = __(self["name"] if self["name"] != 'Hitona' else player_name)
+                renpy.say(narrator, _("It's {color=#00c}[active_name]{/color}'s turn."))
                 if self["name"] == "Hitona":
                     renpy.jump("fight_option")
                 else:
@@ -383,7 +386,7 @@ label target_action:
     menu:
         set {"Hitona", "Eve", "Soldier", "Soldier 1", "Soldier 2", "King Achnost"}.difference([s["name"] for s in ally_list + enemy_list])
         "Who are you targeting?"
-        "[player_name]":
+        "[player_name!t]":
             $ target = [s for s in ally_list if s["name"] == "Hitona" ][0]
         "Eve":
             $ target = [s for s in ally_list if s["name"] == "Eve"][0]

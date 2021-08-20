@@ -237,21 +237,26 @@ screen choice(items):
             ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
             hbox:
                 for i, item in enumerate(items[::2]):
-                    textbutton item.caption:
+                    $ caption = tl_paren(item.caption)
+                    textbutton caption:
                         action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
                         xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
+                        text_size gui.choice_button_text_size
                         text_xalign gui.dialogue_text_xalign
             hbox:
                 for i, item in enumerate(items[1::2]):
-                    textbutton item.caption:
+                    $ caption = tl_paren(item.caption)
+                    textbutton caption:
                         action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
                         xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
+                        text_size gui.choice_button_text_size
                         text_xalign gui.dialogue_text_xalign
     else:
         style_prefix "choice"
         vbox:
             for i in items:
-                textbutton i.caption action [Function(add_choice_to_history, expand_string(i.caption)), i.action]
+                $ caption = tl_paren(i.caption)
+                textbutton caption action [Function(add_choice_to_history, expand_string(i.caption)), i.action]
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
