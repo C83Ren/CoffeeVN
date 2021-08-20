@@ -8,7 +8,7 @@ translate japanese r3_drawing_b59970b3:
 translate japanese r3_drawing_eb3d397d:
 
     # p "Don’t underestimate me, the romance master!"
-    p "「恋愛マスターなんですよ、[player_name]は」"
+    p "「恋愛マスターなんですよ、[player_name!t]は」"
 
 # game/r3_drawing.rpy:10
 translate japanese r3_drawing_2eb5fd9f:
@@ -103,8 +103,8 @@ translate japanese r3_drawing_65285ca1:
 # game/r3_drawing.rpy:56
 translate japanese r3_drawing_358edc28:
 
-    # pi "Let’s go, [player_last_name]!"
-    pi "「行きましょう、[player_last_name]さん！」"
+    # pi "Let’s go, [player_last_name!t]!"
+    pi "「行きましょう、[player_last_name!t]さん！」"
 
 # game/r3_drawing.rpy:58
 translate japanese r3_drawing_01a85f83:

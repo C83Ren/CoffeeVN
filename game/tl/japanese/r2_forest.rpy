@@ -7,7 +7,7 @@ translate japanese forest_menu_73f9f43d:
 # game/r2_forest.rpy:20
 translate japanese forest_spot_1_46eaf765:
 
-    # e "Why are you going there [player_name]?"
+    # e "Why are you going there [player_name!t]?"
     e "「どうしてそこに行きたいの？」"
 
 # game/r2_forest.rpy:22
@@ -175,7 +175,7 @@ translate japanese forest_spot_2_85925568:
 # game/r2_forest.rpy:99
 translate japanese forest_spot_2_2b2870c7:
 
-    # e "Oh, it’s one time use, but still useful to have. Take it [player_name]!"
+    # e "Oh, it’s one time use, but still useful to have. Take it [player_name!t]!"
     e "「あ、一回しか使えないけど、便利だ。受け取って！」"
 
 # game/r2_forest.rpy:103
@@ -253,8 +253,8 @@ translate japanese forest_hut_1_548620ba:
 # game/r2_forest.rpy:149
 translate japanese forest_hut_1_a75df0d8:
 
-    # e "No one lives here, [player_name] dear."
-    e "「ここには誰も住んでない、[player_name]ちゃん」"
+    # e "No one lives here, [player_name!t] dear."
+    e "「ここには誰も住んでない、[player_name!t]ちゃん」"
 
 # game/r2_forest.rpy:151
 translate japanese forest_hut_1_84656976:
@@ -301,8 +301,8 @@ translate japanese forest_hut_1_13ad4dde:
 # game/r2_forest.rpy:171
 translate japanese forest_hut_1_c5422492:
 
-    # e "While there are many useful magics, there are also scary ones, young [player_name]."
-    e "「便利な魔法はもちろんあるけど、怖い魔法もあるよ、[player_name]ちゃん」"
+    # e "While there are many useful magics, there are also scary ones, young [player_name!t]."
+    e "「便利な魔法はもちろんあるけど、怖い魔法もあるよ、[player_name!t]ちゃん」"
 
 # game/r2_forest.rpy:173
 translate japanese forest_hut_1_3aad89c0:
@@ -331,8 +331,8 @@ translate japanese forest_hut_1_25a9365a:
 # game/r2_forest.rpy:191
 translate japanese forest_hut_2_0ed097b3:
 
-    # e "Look, look, [player_name]! I found a rare item! A spell orb!"
-    e "「[player_name]、見て見て！レアアイテムを見つけた！魔法玉だ！」"
+    # e "Look, look, [player_name!t]! I found a rare item! A spell orb!"
+    e "「[player_name!t]、見て見て！レアアイテムを見つけた！魔法玉だ！」"
 
 # game/r2_forest.rpy:193
 translate japanese forest_hut_2_cc38cbe4:
@@ -380,7 +380,7 @@ translate japanese forest_hut_2_c18f3955:
 translate japanese forest_hut_2_cc97cd08:
 
     # e "Haaa...I’ll get you another spell orb later, okay."
-    e "「はぁ、後で[player_name]ちゃんに他の魔法玉をあげるから」"
+    e "「はぁ、後で[player_name!t]ちゃんに他の魔法玉をあげるから」"
 
 # game/r2_forest.rpy:223
 translate japanese forest_hut_2_fd060590:
@@ -392,7 +392,7 @@ translate japanese forest_hut_2_fd060590:
 translate japanese forest_hut_2_cc54b388:
 
     # p "Give me some!"
-    p "「[player_name]にもください！」"
+    p "「[player_name!t]にもください！」"
 
 # game/r2_forest.rpy:229
 translate japanese forest_hut_2_7eea27dd:

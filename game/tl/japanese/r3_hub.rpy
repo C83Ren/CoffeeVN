@@ -37,8 +37,8 @@ translate japanese r3_hub_c63e5550:
 # game/r3_hub.rpy:22
 translate japanese r3_hub_1abc0be7:
 
-    # "？？？" "Ooooi, [player_last_name]!"
-    "？？？" "「おーい、[player_last_name]さん！」"
+    # "？？？" "Ooooi, [player_last_name!t]!"
+    "？？？" "「おーい、[player_last_name!t]さん！」"
 
 # game/r3_hub.rpy:24
 translate japanese r3_hub_79879727:
@@ -109,8 +109,8 @@ translate japanese r3_hub_5751978d:
 # game/r3_hub.rpy:53
 translate japanese r3_hub_7e235c7e:
 
-    # p "Okay...uhh...I’m [player_name], [player_full_name]."
-    p "「はい…えっと…[player_name]…[player_full_name]ですけど」"
+    # p "Okay...uhh...I’m [player_name!t], [player_full_name!t]."
+    p "「はい…えっと…[player_name!t]…[player_full_name!t]ですけど」"
 
 # game/r3_hub.rpy:55
 translate japanese r3_hub_48ed2eca:
@@ -195,7 +195,7 @@ translate japanese r3_hub_a0813b78:
 
     # p "What did you steal from me anyways?"
     p "「えっと、リオスさん、質問がありますが」"
-    p "「[player_name]に何を奪ったのですか？」"
+    p "「[player_name!t]に何を奪ったのですか？」"
 
 # game/r3_hub.rpy:89
 translate japanese r3_hub_3f86d1be:
@@ -212,8 +212,8 @@ translate japanese r3_hub_39eb58d7:
 # game/r3_hub.rpy:95
 translate japanese r3_hub_bb65e94c:
 
-    # pi "Let’s go, [player_last_name], let’s go!"
-    pi "「[player_last_name]さん、行きましょう、行きましょう！」"
+    # pi "Let’s go, [player_last_name!t], let’s go!"
+    pi "「[player_last_name!t]さん、行きましょう、行きましょう！」"
 
 # game/r3_hub.rpy:97
 translate japanese r3_hub_151e6af1:
@@ -248,8 +248,8 @@ translate japanese r3_hub_771c736d:
 # game/r3_hub.rpy:111
 translate japanese r3_hub_f2051d80:
 
-    # pi "I have grown, this time for sure [player_last_name] will get back what you have stolen!"
-    pi "「私は成長してたよ！今度こそ[player_last_name]さんは奪われたものを取り戻す！」"
+    # pi "I have grown, this time for sure [player_last_name!t] will get back what you have stolen!"
+    pi "「私は成長してたよ！今度こそ[player_last_name!t]さんは奪われたものを取り戻す！」"
 
 # game/r3_hub.rpy:115
 translate japanese r3_hub_04fc6e18:
@@ -296,8 +296,8 @@ translate japanese r3_hub_fc4d5733:
 # game/r3_hub.rpy:131
 translate japanese r3_hub_f3845a1d:
 
-    # pi "Don’t worry, [player_last_name]! The great detective Pierrot is here by your side!"
-    pi "「安心して、[player_last_name]さん！なぜならこの名探偵ピエロがそばにいるんですよ！」"
+    # pi "Don’t worry, [player_last_name!t]! The great detective Pierrot is here by your side!"
+    pi "「安心して、[player_last_name!t]さん！なぜならこの名探偵ピエロがそばにいるんですよ！」"
 
 # game/r3_hub.rpy:139
 translate japanese r3_hub_3fd55d7a:

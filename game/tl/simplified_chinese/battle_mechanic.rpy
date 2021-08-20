@@ -8,7 +8,7 @@ translate simplified_chinese rock_paper_scissor_0e7c8ad7:
 translate simplified_chinese rock_paper_scissor_enemy_1c5d07bd:
 
     # "{color=#00c}[self_name]{/color} is targeting {color=#00c}Hitona{/color}! Let's defend!"
-    "{color=#00c}[self_name!t]{/color}对[player_name]发起了攻击！做好防御吧！"
+    "{color=#00c}[self_name!t]{/color}对[player_name!t]发起了攻击！做好防御吧！"
 
 # game/battle_mechanic.rpy:414
 translate simplified_chinese do_janken_85daf20e:
@@ -210,8 +210,8 @@ translate simplified_chinese strings:
     new "要通过猜拳让伤害加倍吗？"
 
     # game/battle_mechanic.rpy:383
-    old "[player_name]"
-    new "[player_name]"
+    old "[player_name!t]"
+    new "[player_name!t]"
 
 init python:
     def to_full_width(n):

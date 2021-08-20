@@ -20,7 +20,7 @@ translate simplified_chinese end_3_a0f52526:
 translate simplified_chinese end_3_307d4a53:
 
     # pi "Don’t you think so too, Kohigashi?"
-    pi "「[player_last_name]女士也是这么想的吧？」"
+    pi "「[player_last_name!t]女士也是这么想的吧？」"
 
 # game/r3_end.rpy:19
 translate simplified_chinese end_3_76a54290:
@@ -254,7 +254,7 @@ translate simplified_chinese end_3_912aee29:
 translate simplified_chinese end_3_9c02f85f:
 
     # p "Get what back?!"
-    p "「要把什么还给[player_name]？！」"
+    p "「要把什么还给[player_name!t]？！」"
 
 # game/r3_end.rpy:127
 translate simplified_chinese end_3_00e66b4c:
@@ -362,7 +362,7 @@ translate simplified_chinese end_3_50642f89:
 translate simplified_chinese end_3_b652d4c6:
 
     # "While watching the scene, a thought came to mind."
-    "看着风景，[player_name]想起了一件事情。"
+    "看着风景，[player_name!t]想起了一件事情。"
 
 # game/r3_end.rpy:165
 translate simplified_chinese end_3_009cb85b:
@@ -564,13 +564,13 @@ translate simplified_chinese r3_secret_ending_33baa529:
 translate simplified_chinese r3_secret_ending_3a7ec449:
 
     # "And I’ve been afraid to open it."
-    "[player_name]害怕得没敢打开。"
+    "[player_name!t]害怕得没敢打开。"
 
 # game/r3_end.rpy:248
 translate simplified_chinese r3_secret_ending_d3031f79:
 
     # "But the constant noise has been really annoying, and so I mustered up my courage to open it up."
-    "但不停的咚咚声实在是太吵了，于是[player_name]鼓起勇气，决定要打开它。"
+    "但不停的咚咚声实在是太吵了，于是[player_name!t]鼓起勇气，决定要打开它。"
 
 # game/r3_end.rpy:252
 translate simplified_chinese r3_secret_ending_55b4f84c:
@@ -606,7 +606,7 @@ translate simplified_chinese r3_secret_ending_4b4a8f4b:
 translate simplified_chinese r3_secret_ending_d761be6d:
 
     # "But, recalling events from last time..."
-    "但是，[player_name]一想到之前发生的事…"
+    "但是，[player_name!t]一想到之前发生的事…"
 
 # game/r3_end.rpy:264
 translate simplified_chinese r3_secret_ending_0da801f1:
@@ -648,7 +648,7 @@ translate simplified_chinese r3_secret_ending_9f2b6613:
 translate simplified_chinese r3_secret_ending_e26bc284:
 
     # p "{i}Really? Is my house an isekai portal now?{/i}"
-    p "（不是吧…？[player_name]的家是通向异世界的入口吗？）"
+    p "（不是吧…？[player_name!t]的家是通向异世界的入口吗？）"
 
 # game/r3_end.rpy:282
 translate simplified_chinese r3_secret_ending_29ea5e88:
@@ -660,7 +660,7 @@ translate simplified_chinese r3_secret_ending_29ea5e88:
 translate simplified_chinese r3_secret_ending_21b6a774:
 
     # "After that flash of thought came to me, I finally realized there was a crowd standing in front of me."
-    "[player_name]刚这么想了一下，就发现前方有一个集群。"
+    "[player_name!t]刚这么想了一下，就发现前方有一个集群。"
 
 # game/r3_end.rpy:290
 translate simplified_chinese r3_secret_ending_d7b04d36:
@@ -684,13 +684,13 @@ translate simplified_chinese r3_secret_ending_7dea0491:
 translate simplified_chinese r3_secret_ending_8291af07:
 
     # p "I’m Hitona Kohigashi."
-    p "「我叫[player_full_name]」"
+    p "「我叫[player_full_name!t]」"
 
 # game/r3_end.rpy:300
 translate simplified_chinese r3_secret_ending_df2f1c90:
 
     # p " I don’t know if you’ll believe me, but it seems that I was cursed by the pudding god and sent here haha..."
-    p "「说出来你可能不信，[player_name]好像是受到布丁之神诅咒，被传送到这里来的」"
+    p "「说出来你可能不信，[player_name!t]好像是受到布丁之神诅咒，被传送到这里来的」"
 
 # game/r3_end.rpy:302
 translate simplified_chinese r3_secret_ending_b834deb4:
@@ -702,31 +702,31 @@ translate simplified_chinese r3_secret_ending_b834deb4:
 translate simplified_chinese r3_secret_ending_4e4cd7fc:
 
     # r "Fie?! O’ Goddess Hitona! Please forgive this worthless rabbit for her sinful rudeness!"
-    r "「诶？！啊啊，[player_name]女神啊，请原谅我这无用的兔子所犯下的这般无礼之罪！」"
+    r "「诶？！啊啊，[player_name!t]女神啊，请原谅我这无用的兔子所犯下的这般无礼之罪！」"
 
 # game/r3_end.rpy:308
 translate simplified_chinese r3_secret_ending_495bc1a7:
 
     # "The crowd was visibly shocked, and immediately prostrated before me."
-    "聚集在一起的大家看起来非常震惊，马上跪拜在[player_name]面前。"
+    "聚集在一起的大家看起来非常震惊，马上跪拜在[player_name!t]面前。"
 
 # game/r3_end.rpy:310
 translate simplified_chinese r3_secret_ending_3a241af9:
 
     # "At that moment, I finally noticed the statue that they called their goddess."
-    "就在那一瞬间，[player_name]终于看到了被称为女神的那座神像。"
+    "就在那一瞬间，[player_name!t]终于看到了被称为女神的那座神像。"
 
 # game/r3_end.rpy:312
 translate simplified_chinese r3_secret_ending_05ed7610:
 
     # p "{i}No matter how you look at it...that statue is me isn’t it...{/i}"
-    p "（无论怎么看…那个雕像就是[player_name]吧…）"
+    p "（无论怎么看…那个雕像就是[player_name!t]吧…）"
 
 # game/r3_end.rpy:314
 translate simplified_chinese r3_secret_ending_9374ba77:
 
     # p "{i}It’s me with a ponytail, in a waitress uniform with stockings...{/i}"
-    p "（是穿着服务生制服和长筒袜还扎着马尾辫的[player_name]啊…）"
+    p "（是穿着服务生制服和长筒袜还扎着马尾辫的[player_name!t]啊…）"
 
 # game/r3_end.rpy:316
 translate simplified_chinese r3_secret_ending_4213c639:
@@ -846,13 +846,13 @@ translate simplified_chinese r3_secret_ending_efa2cf80:
 translate simplified_chinese r3_secret_ending_6f25da39:
 
     # p "ARREST ALL OF THEM!! I WILL--"
-    p "「全员逮捕！！！[player_name]要——」"
+    p "「全员逮捕！！！[player_name!t]要——」"
 
 # game/r3_end.rpy:344
 translate simplified_chinese r3_secret_ending_2a6f948c:
 
     # "Before I finished my judgement, a familiar voice called for me from the sky."
-    "在[player_name]下达完判决之前，一个熟悉的声音从天上呼唤着人鱼。"
+    "在[player_name!t]下达完判决之前，一个熟悉的声音从天上呼唤着人鱼。"
 
 # game/r3_end.rpy:346
 translate simplified_chinese r3_secret_ending_91813989:
@@ -870,7 +870,7 @@ translate simplified_chinese r3_secret_ending_7f4be270:
 translate simplified_chinese r3_secret_ending_011f0ae0:
 
     # "Grabbing my hand, the three of us went off into the sky."
-    "名侦探抓起[player_name]的手，３人一起飞到了空中。"
+    "名侦探抓起[player_name!t]的手，３人一起飞到了空中。"
 
 # game/r3_end.rpy:352
 translate simplified_chinese r3_secret_ending_8e69e701:
@@ -894,7 +894,7 @@ translate simplified_chinese r3_secret_ending_1301593f:
 translate simplified_chinese r3_secret_ending_64b9cd4d:
 
     # pi "Sorry, Kohigashi! Lios mistakenly left the gateway to this world when he was setting up the maze!"
-    pi "「抱歉，[player_last_name]女士！制作迷宫的时候里奥斯无意中打开并留下了通往这个世界的入口！」"
+    pi "「抱歉，[player_last_name!t]女士！制作迷宫的时候里奥斯无意中打开并留下了通往这个世界的入口！」"
 
 # game/r3_end.rpy:367
 translate simplified_chinese r3_secret_ending_accec14b:
@@ -912,13 +912,13 @@ translate simplified_chinese r3_secret_ending_94983c1f:
 translate simplified_chinese r3_secret_ending_ab7cb44f:
 
     # p "Long time no see! That explains how I entered this weird world."
-    p "「好久不见了呢！原来如此，[player_name]知道被传送到这个奇怪的世界的理由了」"
+    p "「好久不见了呢！原来如此，[player_name!t]知道被传送到这个奇怪的世界的理由了」"
 
 # game/r3_end.rpy:373
 translate simplified_chinese r3_secret_ending_3b31cc52:
 
     # p "Speaking of which, I do recall something being weird about the exit in that maze..."
-    p "「话说回来，[player_name]就觉得那个迷宫的出口有些奇怪…」"
+    p "「话说回来，[player_name!t]就觉得那个迷宫的出口有些奇怪…」"
 
 # game/r3_end.rpy:377
 translate simplified_chinese r3_secret_ending_7ad957c0:
@@ -948,7 +948,7 @@ translate simplified_chinese r3_secret_ending_dbe06883:
 translate simplified_chinese r3_secret_ending_5fe34f3e:
 
     # p "Well at least you found me quickly and I can go back. All’s well that ends well!"
-    p "「不过，至少你们很快就找到了[player_name]呢！结局好的话一切都好」"
+    p "「不过，至少你们很快就找到了[player_name!t]呢！结局好的话一切都好」"
 
 # game/r3_end.rpy:387
 translate simplified_chinese r3_secret_ending_24869065:
@@ -972,7 +972,7 @@ translate simplified_chinese r3_secret_ending_c58daf0a:
 translate simplified_chinese r3_secret_ending_e30bd0cf:
 
     # pi "I’m also glad we get to see each other again! It’s actually a little bit lonely after all the fun we had."
-    pi "「我也觉得能和[player_last_name]女士再次见面真是太好了！那段时间真的很开心，以至于最近都感到有些寂寞了！」"
+    pi "「我也觉得能和[player_last_name!t]女士再次见面真是太好了！那段时间真的很开心，以至于最近都感到有些寂寞了！」"
 
 # game/r3_end.rpy:399
 translate simplified_chinese r3_secret_ending_bf776f74:
@@ -1004,13 +1004,13 @@ translate simplified_chinese r3_secret_ending_9f647674:
 translate simplified_chinese r3_secret_ending_c63a8139:
 
     # p "Thanks for the help! See you lat--"
-    p "「谢谢你们带[player_name]回来！那么，再——」"
+    p "「谢谢你们带[player_name!t]回来！那么，再——」"
 
 # game/r3_end.rpy:413
 translate simplified_chinese r3_secret_ending_f8791c8f:
 
     # "I suddenly remembered."
-    "那时，[player_name]突然想起来了！"
+    "那时，[player_name!t]突然想起来了！"
 
 # game/r3_end.rpy:415
 translate simplified_chinese r3_secret_ending_2f8975a5:
@@ -1034,4 +1034,4 @@ translate simplified_chinese r3_secret_ending_6931df65:
 translate simplified_chinese r3_secret_ending_a0d477c6:
 
     # "I gave them the brightest smile I could, and sent them off with their “gift”."
-    "[player_name]用最灿烂的笑容送上纪念品，和他们道别了。"
+    "[player_name!t]用最灿烂的笑容送上纪念品，和他们道别了。"

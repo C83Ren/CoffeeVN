@@ -455,7 +455,7 @@ translate japanese start_690f00c2:
 translate japanese start_bb0ddf5c:
 
     # p "{i}…That’s it??? After all those questions, that’s it???? Give me back my time!{/i}"
-    p "（…え？そんなにたくさんの質問の結果はこれだけ？[player_name]の時間、返してよ！）"
+    p "（…え？そんなにたくさんの質問の結果はこれだけ？[player_name!t]の時間、返してよ！）"
 
 # game/intro.rpy:218
 translate japanese start_7766d36a:

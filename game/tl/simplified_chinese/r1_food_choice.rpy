@@ -14,7 +14,7 @@ translate simplified_chinese r1_food_choice_purikuri_7279bd05:
 translate simplified_chinese r1_food_choice_no_purikuri_583ffda7:
 
     # "I patted Shiraishi."
-    "[player_name]摸了摸白石的头。"
+    "[player_name!t]摸了摸白石的头。"
 
 # game/r1_food_choice.rpy:36
 translate simplified_chinese r1_food_choice_no_purikuri_8c67307a:

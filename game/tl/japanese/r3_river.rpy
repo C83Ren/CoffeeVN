@@ -14,7 +14,7 @@ translate japanese r3_river_f60cede2:
 translate japanese r3_river_96b07c9d:
 
     # p "Eh? Me?"
-    p "「えぇ？[player_name]のこと？」"
+    p "「えぇ？[player_name!t]のこと？」"
 
 # game/r3_river.rpy:22
 translate japanese r3_river_934c81e0:
@@ -31,8 +31,8 @@ translate japanese r3_river_9161669b:
 # game/r3_river.rpy:28
 translate japanese r3_river_8a2de425:
 
-    # p "Let’s just move on to the next challenge, [player_last_name]."
-    p "「とりあえず、次のチャレンジに行きましょう、[player_last_name]さん」"
+    # p "Let’s just move on to the next challenge, [player_last_name!t]."
+    p "「とりあえず、次のチャレンジに行きましょう、[player_last_name!t]さん」"
 
 # game/r3_river.rpy:30
 translate japanese r3_river_20e64d10:
@@ -500,7 +500,7 @@ translate japanese river_love_73bd2e40:
 translate japanese river_love_e2ed523e:
 
     # pi "You got her good!"
-    pi "「[player_last_name]さん、なかなかやりますね！」"
+    pi "「[player_last_name!t]さん、なかなかやりますね！」"
 
 # game/r3_river.rpy:268
 translate japanese river_love_a0d83d9b:
@@ -764,7 +764,7 @@ translate japanese river_date_399568dc:
 translate japanese river_date_bff49f4b:
 
     # p "I can’t believe I said that...but at least she looks happy"
-    p "「[player_name]、今、本当にそれを言いましたの？でも嬉しそうですね」"
+    p "「[player_name!t]、今、本当にそれを言いましたの？でも嬉しそうですね」"
 
 # game/r3_river.rpy:416
 translate japanese river_date_64e3eab6:
@@ -1004,13 +1004,13 @@ translate japanese river_girlfriend_0b0ba5e7:
 translate japanese river_girlfriend_48a4f283:
 
     # p "I put my everything on that confession!"
-    p "「[player_name]の全てを込めた告白だよ！」"
+    p "「[player_name!t]の全てを込めた告白だよ！」"
 
 # game/r3_river.rpy:546
 translate japanese river_girlfriend_6f48042c:
 
     # pi "I guess your everything wasn’t enough."
-    pi "「[player_last_name]さんのすべては足りてないかもですね」"
+    pi "「[player_last_name!t]さんのすべては足りてないかもですね」"
 
 # game/r3_river.rpy:548
 translate japanese river_girlfriend_f71bfc0f:
@@ -1220,4 +1220,4 @@ translate japanese strings:
 
     # game/r3_river.rpy:452
     old "“Go out with me!”"
-    new "「[player_name]と付き合ってください！」"
+    new "「[player_name!t]と付き合ってください！」"

@@ -14,7 +14,7 @@ translate simplified_chinese r1_purikuri_26cf8cb0:
 translate simplified_chinese r1_purikuri_dcca16a3:
 
     # "I went into the booth with a very happy Shiraishi holding the bishoujo figure."
-    "[player_name]和拿着美少女手办，看起来很开心的白石一起进了拍大头贴的地方。"
+    "[player_name!t]和拿着美少女手办，看起来很开心的白石一起进了拍大头贴的地方。"
 
 # game/r1_purikuri.rpy:23
 translate simplified_chinese r1_purikuri_75d88767:
@@ -50,7 +50,7 @@ translate simplified_chinese r1_purikuri_921cd50c:
 translate simplified_chinese r1_purikuri_677459f6:
 
     # p "Ah, then I want an afro for my hair!"
-    p "「那[player_name]要用这个爆炸头！」"
+    p "「那[player_name!t]要用这个爆炸头！」"
 
 # game/r1_purikuri.rpy:42
 translate simplified_chinese r1_purikuri_495d59ea:
@@ -98,7 +98,7 @@ translate simplified_chinese r1_purikuri_02230dd0:
 translate simplified_chinese r1_purikuri_8bb00a5e:
 
     # "I thought of taking a look at the printed picture, but when I looked at Shiraishi, I felt a bit reluctant."
-    "[player_name]本想看看照片的，可是看了看白石，又有些犹豫了。"
+    "[player_name!t]本想看看照片的，可是看了看白石，又有些犹豫了。"
 
 translate simplified_chinese strings:
 

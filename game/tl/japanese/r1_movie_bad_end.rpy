@@ -19,8 +19,8 @@ translate japanese r1_movie_bad_end_680b997e:
 # game/r1_movie_bad_end.rpy:12
 translate japanese r1_movie_bad_end_b29abf8f:
 
-    # s "[player_name] onee-chan is such a caring person."
-    s "「[player_name]お姉ちゃんは優しいですね」"
+    # s "[player_name!t] onee-chan is such a caring person."
+    s "「[player_name!t]お姉ちゃんは優しいですね」"
 
 # game/r1_movie_bad_end.rpy:14
 translate japanese r1_movie_bad_end_ab1bb3d8:

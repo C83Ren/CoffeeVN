@@ -32,8 +32,8 @@ translate japanese r1_movie_aed08b9e:
 # game/r1_movie.rpy:33
 translate japanese r1_movie_98e61a25:
 
-    # p "Really? Then [player_name] onee-chan here will make this your best cinema experience ever!"
-    p "「そうなの？じゃあ、この[player_name]お姉ちゃんは最高の映画経験を作ってみせてあげるわ！」"
+    # p "Really? Then [player_name!t] onee-chan here will make this your best cinema experience ever!"
+    p "「そうなの？じゃあ、この[player_name!t]お姉ちゃんは最高の映画経験を作ってみせてあげるわ！」"
 
 # game/r1_movie.rpy:37
 translate japanese r1_movie_6bb3680a:
@@ -57,8 +57,8 @@ translate japanese r1_movie_2bc2776a:
 # game/r1_movie.rpy:45
 translate japanese r1_movie_5352266c:
 
-    # s "I’ll leave it to [player_name] onee-chan!"
-    s "「[player_name]おねえちゃんにおまかせ〜」"
+    # s "I’ll leave it to [player_name!t] onee-chan!"
+    s "「[player_name!t]おねえちゃんにおまかせ〜」"
 
 # game/r1_movie.rpy:64
 translate japanese r1_movie_f35dbfd0:
@@ -340,8 +340,8 @@ translate japanese r1_movie_94bb62a8:
 # game/r1_movie.rpy:200
 translate japanese r1_movie_a8084069:
 
-    # s "[player_name] onee-chan, would you like to watch a movie with Shiraishi again someday?" nointeract
-    s "「ねぇ[player_name]おねえちゃん、またいつか、いっしょにえいがとかみにいこう？」" nointeract
+    # s "[player_name!t] onee-chan, would you like to watch a movie with Shiraishi again someday?" nointeract
+    s "「ねぇ[player_name!t]おねえちゃん、またいつか、いっしょにえいがとかみにいこう？」" nointeract
 
 translate japanese strings:
 

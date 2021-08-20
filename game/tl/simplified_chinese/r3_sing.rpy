@@ -32,7 +32,7 @@ translate simplified_chinese r3_sing_ea01059e:
 translate simplified_chinese r3_sing_208c7311:
 
     # p "But I was the one answering..."
-    p "「虽然都是[player_name]回答的…」"
+    p "「虽然都是[player_name!t]回答的…」"
 
 # game/r3_sing.rpy:23
 translate simplified_chinese r3_sing_9a39e9bd:
@@ -92,13 +92,13 @@ translate simplified_chinese r3_sing_bf475599:
 translate simplified_chinese r3_sing_ff4c1f28:
 
     # "Grabbing the microphone, I went up to the stage."
-    "[player_name]拿着麦克风，站上了舞台。"
+    "[player_name!t]拿着麦克风，站上了舞台。"
 
 # game/r3_sing.rpy:54
 translate simplified_chinese r3_sing_ad9ac304:
 
     # p "So you want me to...sing?"
-    p "「也就是说…想要[player_name]唱歌吗？」"
+    p "「也就是说…想要[player_name!t]唱歌吗？」"
 
 # game/r3_sing.rpy:56
 translate simplified_chinese r3_sing_a04ab603:
@@ -182,7 +182,7 @@ translate simplified_chinese r3_sing_fd44eb4a_2:
 translate simplified_chinese r3_sing_b1138583:
 
     # pi "Lios don’t be such a tsundere, if you like Kohigashi, just say so."
-    pi "「里奥斯，别傲娇了，喜欢[player_last_name]女士的话就说出来吧」"
+    pi "「里奥斯，别傲娇了，喜欢[player_last_name!t]女士的话就说出来吧」"
 
 # game/r3_sing.rpy:87
 translate simplified_chinese r3_sing_006a941f:
@@ -303,7 +303,7 @@ translate simplified_chinese sing_retry_42018e78:
 translate simplified_chinese sing_retry_b45c71c5:
 
     # pi "Let’s try again!"
-    pi "「我们再从来一遍吧，[player_last_name]女士！」"
+    pi "「我们再从来一遍吧，[player_last_name!t]女士！」"
 
 # game/r3_sing.rpy:135
 translate simplified_chinese sing_retry_83d42ed8:
@@ -315,13 +315,13 @@ translate simplified_chinese sing_retry_83d42ed8:
 translate simplified_chinese sing_fail_020c556b:
 
     # p "{i}Eh? I’m in...my room? On my bed...{/i}"
-    p "（诶？这里是…[player_name]的房间？为什么人鱼会在床上…）"
+    p "（诶？这里是…[player_name!t]的房间？为什么人鱼会在床上…）"
 
 # game/r3_sing.rpy:153
 translate simplified_chinese sing_fail_15d6f95a:
 
     # p "{i}Even if that was a dream, I wonder what was stolen...{/i}"
-    p "（就算那是个梦，[player_name]也想知道到底是什么东西被偷了…）"
+    p "（就算那是个梦，[player_name!t]也想知道到底是什么东西被偷了…）"
 
 # game/r3_sing.rpy:155
 translate simplified_chinese sing_fail_c453ade6:
@@ -351,7 +351,7 @@ translate simplified_chinese sing_fail_c98675fc:
 translate simplified_chinese sing_fail_62f7d1de:
 
     # "While running towards the park, that dream? kept spinning in my mind."
-    "从房间跑去公园的途中，那个梦？一直盘旋在[player_name]的脑海里。"
+    "从房间跑去公园的途中，那个梦？一直盘旋在[player_name!t]的脑海里。"
 
 # game/r3_sing.rpy:167
 translate simplified_chinese sing_fail_4181f155:

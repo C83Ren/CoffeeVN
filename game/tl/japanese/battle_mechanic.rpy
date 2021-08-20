@@ -7,8 +7,8 @@ translate japanese rock_paper_scissor_0e7c8ad7:
 # game/battle_mechanic.rpy:392
 translate japanese rock_paper_scissor_enemy_1c5d07bd:
 
-    # "{color=#00c}[self_name]{/color} is targeting {color=#00c}[player_name]{/color}! Let's defend!"
-    "{color=#00c}[self_name]{/color}は{color=#00c}[player_name]{/color}を狙っている！防御しよう！"
+    # "{color=#00c}[self_name]{/color} is targeting {color=#00c}[player_name!t]{/color}! Let's defend!"
+    "{color=#00c}[self_name]{/color}は{color=#00c}[player_name!t]{/color}を狙っている！防御しよう！"
 
 # game/battle_mechanic.rpy:414
 translate japanese do_janken_85daf20e:
@@ -210,8 +210,8 @@ translate japanese strings:
     new "じゃんけんでダメージを倍しようとする？"
 
     # game/battle_mechanic.rpy:383
-    old "[player_name]"
-    new "[player_name]"
+    old "[player_name!t]"
+    new "[player_name!t]"
 
 init python:
     def to_full_width(n):

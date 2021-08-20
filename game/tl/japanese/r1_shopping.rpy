@@ -56,7 +56,7 @@ translate japanese r1_shopping_e5372d37:
 translate japanese r1_shopping_1c9c0e1f:
 
     # p "{i}Now that I look closely, Shiraishi really looks like me, doesn’t she...{/i}"
-    p "（今更なんだけど、ちゃんと見ると、白石ちゃんは本当に[player_name]に似てるよね）"
+    p "（今更なんだけど、ちゃんと見ると、白石ちゃんは本当に[player_name!t]に似てるよね）"
 
 # game/r1_shopping.rpy:33
 translate japanese r1_shopping_b813977d:
@@ -218,7 +218,7 @@ translate japanese r1_shopping_8702e8ae:
 translate japanese r1_shopping_ef3b10b1:
 
     # s "I’ve decided!"
-    s "「うん、[player_name]おねえちゃん、きめた！」"
+    s "「うん、[player_name!t]おねえちゃん、きめた！」"
 
 # game/r1_shopping.rpy:102
 translate japanese r1_shopping_76c3f83b:
@@ -241,7 +241,7 @@ translate japanese r1_shopping_1103fce6:
 # game/r1_shopping.rpy:110
 translate japanese r1_shopping_0d85cde7:
 
-    # s "Yes, [player_name] onee-chan!"
+    # s "Yes, [player_name!t] onee-chan!"
     s "「うん！」"
 
 # game/r1_shopping.rpy:112
@@ -260,12 +260,12 @@ translate japanese r1_shopping_f5d42a7e:
 translate japanese r1_shopping_8ec40d7f:
 
     # p "Shiraishi, how about you let me choose from these?"
-    p "「ねぇ、白石ちゃん。衣装選びは[player_name]に任せてどう？」"
+    p "「ねぇ、白石ちゃん。衣装選びは[player_name!t]に任せてどう？」"
 
 # game/r1_shopping.rpy:118
 translate japanese r1_shopping_c07a25f8:
 
-    # s "Ehhh? But Shiraishi wanted to choose for [player_name] onee-chan!"
+    # s "Ehhh? But Shiraishi wanted to choose for [player_name!t] onee-chan!"
     s "「えーー！でも白石えらんであげたいの！」"
 
 # game/r1_shopping.rpy:120
@@ -284,7 +284,7 @@ translate japanese r1_shopping_bf6ed80d:
 translate japanese r1_shopping_14442a44:
 
     # p "Don’t worry, I’ll make sure to pick something as good as this, okay?"
-    p "「大丈夫、[player_name]姉ちゃんはこの程のいい衣装を選ぶよ！」"
+    p "「大丈夫、[player_name!t]姉ちゃんはこの程のいい衣装を選ぶよ！」"
 
 # game/r1_shopping.rpy:128
 translate japanese r1_shopping_e02e882c:
@@ -295,7 +295,7 @@ translate japanese r1_shopping_e02e882c:
 # game/r1_shopping.rpy:132
 translate japanese r1_shopping_245e4de6:
 
-    # s "If [player_name] onee-chan says so..."
+    # s "If [player_name!t] onee-chan says so..."
     s "「むー、わかった…」"
 
 # game/r1_shopping.rpy:136
@@ -361,8 +361,8 @@ translate japanese r1_shopping_suit_b6397b16:
 # game/r1_shopping.rpy:174
 translate japanese r1_shopping_suit_39b1a3d7:
 
-    # s "[player_name] onee-chan?!"
-    s "「[player_name]おねえちゃん？！」"
+    # s "[player_name!t] onee-chan?!"
+    s "「[player_name!t]おねえちゃん？！」"
 
 # game/r1_shopping.rpy:176
 translate japanese r1_shopping_suit_80c63239:
@@ -391,8 +391,8 @@ translate japanese r1_shopping_suit_f7a86c8b:
 # game/r1_shopping.rpy:184
 translate japanese r1_shopping_suit_6a632731:
 
-    # s "[player_name] onee-chan is so cool!"
-    s "「[player_name]おねえちゃんかっこいい！」"
+    # s "[player_name!t] onee-chan is so cool!"
+    s "「[player_name!t]おねえちゃんかっこいい！」"
 
 # game/r1_shopping.rpy:186
 translate japanese r1_shopping_suit_1acb0827:
@@ -481,8 +481,8 @@ translate japanese r1_shopping_dress_e5631076:
 # game/r1_shopping.rpy:221
 translate japanese r1_shopping_dress_b1314e1e:
 
-    # s "[player_name] onee-chan is so beautiful..."
-    s "「[player_name]おねえちゃんきれいー…」"
+    # s "[player_name!t] onee-chan is so beautiful..."
+    s "「[player_name!t]おねえちゃんきれいー…」"
 
 # game/r1_shopping.rpy:223
 translate japanese r1_shopping_dress_78bff50f:
@@ -500,13 +500,13 @@ translate japanese r1_shopping_dress_c88cf403:
 translate japanese r1_shopping_dress_44bc70bc:
 
     # p "Don’t underestimate my fashion sense!"
-    p "「[player_name]のファションセンスを見くびらないで！」"
+    p "「[player_name!t]のファションセンスを見くびらないで！」"
 
 # game/r1_shopping.rpy:229
 translate japanese r1_shopping_dress_ab9200c8:
 
-    # s "I want [player_name] onee-chan to pick all of my outfits from now on!"
-    s "「これから白石のいしょうをぜんぶ[player_name]おねえちゃんにまかせる！」"
+    # s "I want [player_name!t] onee-chan to pick all of my outfits from now on!"
+    s "「これから白石のいしょうをぜんぶ[player_name!t]おねえちゃんにまかせる！」"
 
 
 # game/r1_shopping.rpy:231

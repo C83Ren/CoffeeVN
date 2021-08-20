@@ -13,8 +13,8 @@ translate japanese r3_bomb_0bb08116:
 # game/r3_bomb.rpy:12
 translate japanese r3_bomb_44e47dbe:
 
-    # pi "It reminds me of when [player_last_name] was playing XXXXXX and she drew XXXX."
-    pi "「[player_last_name]さんが☓☓☓☓☓☓を遊んで☓☓☓☓を描いてみた時をが思い出したよ」"
+    # pi "It reminds me of when [player_last_name!t] was playing XXXXXX and she drew XXXX."
+    pi "「[player_last_name!t]さんが☓☓☓☓☓☓を遊んで☓☓☓☓を描いてみた時をが思い出したよ」"
 
 # game/r3_bomb.rpy:14
 translate japanese r3_bomb_891536a3:
@@ -199,8 +199,8 @@ translate japanese r3_bomb_eedc6fa2:
 # game/r3_bomb.rpy:94
 translate japanese r3_bomb_dcb325c3:
 
-    # pi "Don’t falter, [player_last_name]! You can do it!"
-    pi "「怯まないで、[player_last_name]さん！行け―！」"
+    # pi "Don’t falter, [player_last_name!t]! You can do it!"
+    pi "「怯まないで、[player_last_name!t]さん！行け―！」"
 
 # game/r3_bomb.rpy:96
 translate japanese r3_bomb_fbe65a74:

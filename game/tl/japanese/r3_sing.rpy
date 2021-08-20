@@ -32,7 +32,7 @@ translate japanese r3_sing_ea01059e:
 translate japanese r3_sing_208c7311:
 
     # p "But I was the one answering..."
-    p "「答えるのは[player_name]だけですけど…」"
+    p "「答えるのは[player_name!t]だけですけど…」"
 
 # game/r3_sing.rpy:23
 translate japanese r3_sing_9a39e9bd:
@@ -98,7 +98,7 @@ translate japanese r3_sing_ff4c1f28:
 translate japanese r3_sing_ad9ac304:
 
     # p "So you want me to...sing?"
-    p "「つまり…[player_name]が…歌ってほしいですか？」"
+    p "「つまり…[player_name!t]が…歌ってほしいですか？」"
 
 # game/r3_sing.rpy:56
 translate japanese r3_sing_a04ab603:
@@ -181,8 +181,8 @@ translate japanese r3_sing_fd44eb4a_2:
 # game/r3_sing.rpy:86
 translate japanese r3_sing_b1138583:
 
-    # pi "Lios don’t be such a tsundere, if you like [player_last_name], just say so."
-    pi "「リオス、ツンデレするな、[player_last_name]さんが好きならはっきりと言えよ」"
+    # pi "Lios don’t be such a tsundere, if you like [player_last_name!t], just say so."
+    pi "「リオス、ツンデレするな、[player_last_name!t]さんが好きならはっきりと言えよ」"
 
 # game/r3_sing.rpy:87
 translate japanese r3_sing_006a941f:
@@ -303,7 +303,7 @@ translate japanese sing_retry_42018e78:
 translate japanese sing_retry_b45c71c5:
 
     # pi "Let’s try again!"
-    pi "「もう一度やってみましょう、[player_last_name]さん！」"
+    pi "「もう一度やってみましょう、[player_last_name!t]さん！」"
 
 # game/r3_sing.rpy:135
 translate japanese sing_retry_83d42ed8:

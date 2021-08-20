@@ -19,8 +19,8 @@ translate japanese end_3_a0f52526:
 # game/r3_end.rpy:17
 translate japanese end_3_307d4a53:
 
-    # pi "Don’t you think so too, [player_last_name]?"
-    pi "「そう思いませんか、[player_last_name]さん？」"
+    # pi "Don’t you think so too, [player_last_name!t]?"
+    pi "「そう思いませんか、[player_last_name!t]さん？」"
 
 # game/r3_end.rpy:19
 translate japanese end_3_76a54290:
@@ -379,7 +379,7 @@ translate japanese end_3_dadae54b:
 # game/r3_end.rpy:169
 translate japanese end_3_098db7b4:
 
-    # pi "Don’t be sad, we’ll still be with you, [player_last_name]."
+    # pi "Don’t be sad, we’ll still be with you, [player_last_name!t]."
     pi "「落ち込まないで、これからも一緒にいますから」"
 
 # game/r3_end.rpy:171
@@ -648,7 +648,7 @@ translate japanese r3_secret_ending_9f2b6613:
 translate japanese r3_secret_ending_e26bc284:
 
     # p "{i}Really? Is my house an isekai portal now?{/i}"
-    p "（まじか…？[player_name]の家、異世界へのポータルなの？）"
+    p "（まじか…？[player_name!t]の家、異世界へのポータルなの？）"
 
 # game/r3_end.rpy:282
 translate japanese r3_secret_ending_29ea5e88:
@@ -683,8 +683,8 @@ translate japanese r3_secret_ending_7dea0491:
 # game/r3_end.rpy:298
 translate japanese r3_secret_ending_8291af07:
 
-    # p "I’m [player_full_name]."
-    p "「[player_full_name]といいます」"
+    # p "I’m [player_full_name!t]."
+    p "「[player_full_name!t]といいます」"
 
 # game/r3_end.rpy:300
 translate japanese r3_secret_ending_df2f1c90:
@@ -701,8 +701,8 @@ translate japanese r3_secret_ending_b834deb4:
 # game/r3_end.rpy:304
 translate japanese r3_secret_ending_4e4cd7fc:
 
-    # r "Fie?! O’ Goddess [player_name]! Please forgive this worthless rabbit for her sinful rudeness!"
-    r "「ふぇ？！ああ、 [player_name]女神様よ、この下らぬウサギの無礼の罪をさりとてはゆるさせ給へ！」"
+    # r "Fie?! O’ Goddess [player_name!t]! Please forgive this worthless rabbit for her sinful rudeness!"
+    r "「ふぇ？！ああ、 [player_name!t]女神様よ、この下らぬウサギの無礼の罪をさりとてはゆるさせ給へ！」"
 
 # game/r3_end.rpy:308
 translate japanese r3_secret_ending_495bc1a7:
@@ -720,13 +720,13 @@ translate japanese r3_secret_ending_3a241af9:
 translate japanese r3_secret_ending_05ed7610:
 
     # p "{i}No matter how you look at it...that statue is me isn’t it...{/i}"
-    p "（どこからどう見たって…あの像は[player_name]でしょ…）"
+    p "（どこからどう見たって…あの像は[player_name!t]でしょ…）"
 
 # game/r3_end.rpy:314
 translate japanese r3_secret_ending_9374ba77:
 
     # p "{i}It’s me with a ponytail, in a waitress uniform with stockings...{/i}"
-    p "（ウェイトレスの衣装を着て、ストッキングを履いてるポニーテールの[player_name]だ…）"
+    p "（ウェイトレスの衣装を着て、ストッキングを履いてるポニーテールの[player_name!t]だ…）"
 
 # game/r3_end.rpy:316
 translate japanese r3_secret_ending_4213c639:
@@ -846,7 +846,7 @@ translate japanese r3_secret_ending_efa2cf80:
 translate japanese r3_secret_ending_6f25da39:
 
     # p "ARREST ALL OF THEM!! I WILL--"
-    p "「全員逮捕！！！確保！！[player_name]はー」"
+    p "「全員逮捕！！！確保！！[player_name!t]はー」"
 
 # game/r3_end.rpy:344
 translate japanese r3_secret_ending_2a6f948c:
@@ -893,8 +893,8 @@ translate japanese r3_secret_ending_1301593f:
 # game/r3_end.rpy:365
 translate japanese r3_secret_ending_64b9cd4d:
 
-    # pi "Sorry, [player_last_name]! Lios mistakenly left the gateway to this world when he was setting up the maze!"
-    pi "「ごめんなさい、[player_last_name]さん！迷路を作るときにリオスがこの世界に通じるポータルをつい開き残ってしまいました！」"
+    # pi "Sorry, [player_last_name!t]! Lios mistakenly left the gateway to this world when he was setting up the maze!"
+    pi "「ごめんなさい、[player_last_name!t]さん！迷路を作るときにリオスがこの世界に通じるポータルをつい開き残ってしまいました！」"
 
 # game/r3_end.rpy:367
 translate japanese r3_secret_ending_accec14b:
@@ -948,7 +948,7 @@ translate japanese r3_secret_ending_dbe06883:
 translate japanese r3_secret_ending_5fe34f3e:
 
     # p "Well at least you found me quickly and I can go back. All’s well that ends well!"
-    p "「まぁ、少なくとも、早速[player_name]をみつけてくれました！終わりよければすべて良し！」"
+    p "「まぁ、少なくとも、早速[player_name!t]をみつけてくれました！終わりよければすべて良し！」"
 
 # game/r3_end.rpy:387
 translate japanese r3_secret_ending_24869065:
@@ -972,7 +972,7 @@ translate japanese r3_secret_ending_c58daf0a:
 translate japanese r3_secret_ending_e30bd0cf:
 
     # pi "I’m also glad we get to see each other again! It’s actually a little bit lonely after all the fun we had."
-    pi "「私も[player_last_name]さんとまた会えてよかったですよ！あの時間はとても楽しかったし、最近少し寂しくなってしまったんです！」"
+    pi "「私も[player_last_name!t]さんとまた会えてよかったですよ！あの時間はとても楽しかったし、最近少し寂しくなってしまったんです！」"
 
 # game/r3_end.rpy:399
 translate japanese r3_secret_ending_bf776f74:

@@ -44,7 +44,7 @@ translate simplified_chinese r1_purikuri_bad_end_cdcafb1e:
 translate simplified_chinese r1_purikuri_bad_end_bd9c7a32:
 
     # "While still looking at the photo, I took out my phone."
-    "[player_name]边看着照片边拿出手机。"
+    "[player_name!t]边看着照片边拿出手机。"
 
 # game/r1_purikuri_bad_end.rpy:25
 translate simplified_chinese r1_purikuri_bad_end_a20cefa7_2:
@@ -56,7 +56,7 @@ translate simplified_chinese r1_purikuri_bad_end_a20cefa7_2:
 translate simplified_chinese r1_purikuri_bad_end_3d7625bb:
 
     # "When I opened my eyes, I was lying on my bed."
-    "睁开双眼，发现[player_name]在房间里，正躺在被子上。"
+    "睁开双眼，发现[player_name!t]在房间里，正躺在被子上。"
 
 # game/r1_purikuri_bad_end.rpy:31
 translate simplified_chinese r1_purikuri_bad_end_bf15b4bb:
@@ -104,7 +104,7 @@ translate simplified_chinese r1_purikuri_bad_end_7d0fc8b8:
 translate simplified_chinese r1_purikuri_bad_end_e24c6dc3:
 
     # "I hung up."
-    "[player_name]挂断了电话。"
+    "[player_name!t]挂断了电话。"
 
 # game/r1_purikuri_bad_end.rpy:49
 translate simplified_chinese r1_purikuri_bad_end_5675ca13:

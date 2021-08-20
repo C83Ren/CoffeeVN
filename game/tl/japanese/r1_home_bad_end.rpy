@@ -37,8 +37,8 @@ translate japanese r1_home_bad_end_894c7279:
 # game/r1_home_bad_end.rpy:20
 translate japanese r1_home_bad_end_5929b738:
 
-    # s "Don’t worry, [player_name] onee-chan. Just, follow me."
-    s "「大丈夫、[player_name]お姉ちゃん。白石に、付いてきて。」"
+    # s "Don’t worry, [player_name!t] onee-chan. Just, follow me."
+    s "「大丈夫、[player_name!t]お姉ちゃん。白石に、付いてきて。」"
 
 # game/r1_home_bad_end.rpy:22
 translate japanese r1_home_bad_end_a9e92f94:
@@ -61,8 +61,8 @@ translate japanese r1_home_bad_end_d7635d53:
 # game/r1_home_bad_end.rpy:34
 translate japanese r1_home_bad_end_fb854112:
 
-    # s "It’s okay, [player_name] onee-chan. We’ll be there soon."
-    s "「大丈夫、[player_name]お姉ちゃん。あともうちょっとです。」"
+    # s "It’s okay, [player_name!t] onee-chan. We’ll be there soon."
+    s "「大丈夫、[player_name!t]お姉ちゃん。あともうちょっとです。」"
 
 # game/r1_home_bad_end.rpy:40
 translate japanese r1_home_bad_end_c12c89e7:
@@ -91,8 +91,8 @@ translate japanese r1_home_bad_end_f6928974:
 # game/r1_home_bad_end.rpy:48
 translate japanese r1_home_bad_end_53a1cc0b:
 
-    # s "[player_name] onee-chan, I really had a lot of fun today."
-    s "「[player_name]お姉ちゃん、今日は本当に楽しかったです。」"
+    # s "[player_name!t] onee-chan, I really had a lot of fun today."
+    s "「[player_name!t]お姉ちゃん、今日は本当に楽しかったです。」"
 
 # game/r1_home_bad_end.rpy:50
 translate japanese r1_home_bad_end_e976e4d1:

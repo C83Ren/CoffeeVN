@@ -19,8 +19,8 @@ translate japanese r3_quiz_f5d88007:
 # game/r3_quiz.rpy:17
 translate japanese r3_quiz_e81ee560:
 
-    # pi "Don’t worry, [player_last_name]! This first part is usually really easy!"
-    pi "「大丈夫です、[player_last_name]さん！最初のチャレンジは普段簡単ですよ」"
+    # pi "Don’t worry, [player_last_name!t]! This first part is usually really easy!"
+    pi "「大丈夫です、[player_last_name!t]さん！最初のチャレンジは普段簡単ですよ」"
 
 # game/r3_quiz.rpy:19
 translate japanese r3_quiz_2e4695e5:
@@ -79,8 +79,8 @@ translate japanese quiz_fail_e120ef52:
 # game/r3_quiz.rpy:53
 translate japanese quiz_fail_bed06378:
 
-    # pi "Hey don’t blame me! [player_last_name] was the only one answering!"
-    pi "「悪口をすんな！答えるのは[player_last_name]さんのみですよ！」"
+    # pi "Hey don’t blame me! [player_last_name!t] was the only one answering!"
+    pi "「悪口をすんな！答えるのは[player_last_name!t]さんのみですよ！」"
 
 # game/r3_quiz.rpy:55
 translate japanese quiz_fail_55e230ba:

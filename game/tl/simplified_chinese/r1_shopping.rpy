@@ -2,7 +2,7 @@
 translate simplified_chinese r1_shopping_5cceecf4:
 
     # "I paid for the meal, and then we went to the shopping district."
-    "[player_name]为午饭买过单后，两人一起走向了商业街。"
+    "[player_name!t]为午饭买过单后，两人一起走向了商业街。"
 
 # game/r1_shopping.rpy:11
 translate simplified_chinese r1_shopping_07908378:
@@ -56,7 +56,7 @@ translate simplified_chinese r1_shopping_e5372d37:
 translate simplified_chinese r1_shopping_1c9c0e1f:
 
     # p "{i}Now that I look closely, Shiraishi really looks like me, doesn’t she...{/i}"
-    p "（虽然都现在了，不过仔细一看，小白石真的很像[player_name]呢）"
+    p "（虽然都现在了，不过仔细一看，小白石真的很像[player_name!t]呢）"
 
 # game/r1_shopping.rpy:33
 translate simplified_chinese r1_shopping_b813977d:
@@ -68,7 +68,7 @@ translate simplified_chinese r1_shopping_b813977d:
 translate simplified_chinese r1_shopping_3395ecce:
 
     # "Shiraishi turned and looked at me with hopeful eyes."
-    "然后用充满期待的眼神看向了[player_name]。"
+    "然后用充满期待的眼神看向了[player_name!t]。"
 
 # game/r1_shopping.rpy:39
 translate simplified_chinese r1_shopping_66171bf2:
@@ -110,7 +110,7 @@ translate simplified_chinese r1_shopping_0c6dba66:
 translate simplified_chinese r1_shopping_6345c050:
 
     # "I am fired up!"
-    "[player_name]燃起来了。"
+    "[player_name!t]燃起来了。"
 
 # game/r1_shopping.rpy:57
 translate simplified_chinese r1_shopping_37cb329c:
@@ -218,7 +218,7 @@ translate simplified_chinese r1_shopping_8702e8ae:
 translate simplified_chinese r1_shopping_ef3b10b1:
 
     # s "I’ve decided!"
-    s "「嗯！[player_name]姐姐，白石选好了！」"
+    s "「嗯！[player_name!t]姐姐，白石选好了！」"
 
 # game/r1_shopping.rpy:102
 translate simplified_chinese r1_shopping_76c3f83b:
@@ -248,13 +248,13 @@ translate simplified_chinese r1_shopping_0d85cde7:
 translate simplified_chinese r1_shopping_6958f3b8:
 
     # s "But I don’t know which one to pick, they all look so good!"
-    s "「但是很难选择呢！看起来都很适合[player_name]姐姐！」"
+    s "「但是很难选择呢！看起来都很适合[player_name!t]姐姐！」"
 
 # game/r1_shopping.rpy:114
 translate simplified_chinese r1_shopping_f5d42a7e:
 
     # "Suddenly, I got an idea..."
-    "突然，[player_name]想到了一个主意…"
+    "突然，[player_name!t]想到了一个主意…"
 
 # game/r1_shopping.rpy:116
 translate simplified_chinese r1_shopping_8ec40d7f:
@@ -266,13 +266,13 @@ translate simplified_chinese r1_shopping_8ec40d7f:
 translate simplified_chinese r1_shopping_c07a25f8:
 
     # s "Ehhh? But Shiraishi wanted to choose for Hitona onee-chan!"
-    s "「诶——！可白石想给[player_name]姐姐选嘛！」"
+    s "「诶——！可白石想给[player_name!t]姐姐选嘛！」"
 
 # game/r1_shopping.rpy:120
 translate simplified_chinese r1_shopping_dce288a1:
 
     # "I showed the outfit I picked for Shiraishi."
-    "[player_name]给白石展示了选好的衣服。"
+    "[player_name!t]给白石展示了选好的衣服。"
 
 # game/r1_shopping.rpy:124
 translate simplified_chinese r1_shopping_bf6ed80d:
@@ -314,7 +314,7 @@ translate simplified_chinese r1_shopping_2246818e:
 translate simplified_chinese r1_shopping_suit_31282dc8:
 
     # "I picked up a black suit and changed into it."
-    "[player_name]取了一件黑色西装，也走进了试衣间。"
+    "[player_name!t]取了一件黑色西装，也走进了试衣间。"
 
 # game/r1_shopping.rpy:156
 translate simplified_chinese r1_shopping_suit_bff3ecc7:
@@ -332,13 +332,13 @@ translate simplified_chinese r1_shopping_suit_81f90719:
 translate simplified_chinese r1_shopping_suit_797eb255:
 
     # "Well, it doesn’t seem like she noticed me yet."
-    "白石好像还没注意到[player_name]。"
+    "白石好像还没注意到[player_name!t]。"
 
 # game/r1_shopping.rpy:164
 translate simplified_chinese r1_shopping_suit_be1c1a6c:
 
     # "I prepared my deeper voice and called out to her."
-    "[player_name]清了清嗓子，用帅哥声线叫了白石一声。"
+    "[player_name!t]清了清嗓子，用帅哥声线叫了白石一声。"
 
 # game/r1_shopping.rpy:166
 translate simplified_chinese r1_shopping_suit_3ea98195:
@@ -362,7 +362,7 @@ translate simplified_chinese r1_shopping_suit_b6397b16:
 translate simplified_chinese r1_shopping_suit_39b1a3d7:
 
     # s "Hitona onee-chan?!"
-    s "「[player_name]姐姐？！」"
+    s "「[player_name!t]姐姐？！」"
 
 # game/r1_shopping.rpy:176
 translate simplified_chinese r1_shopping_suit_80c63239:
@@ -374,13 +374,13 @@ translate simplified_chinese r1_shopping_suit_80c63239:
 translate simplified_chinese r1_shopping_suit_764e0c51:
 
     # "Shiraishi looks amused."
-    "白石被[player_name]逗得捂腹大笑。"
+    "白石被[player_name!t]逗得捂腹大笑。"
 
 # game/r1_shopping.rpy:180
 translate simplified_chinese r1_shopping_suit_2a309b65:
 
     # "Using this voice hurts my throat a bit, so I dropped the act."
-    "（帅哥声线说得[player_name]喉咙有点疼了，就此打住吧）"
+    "（帅哥声线说得[player_name!t]喉咙有点疼了，就此打住吧）"
 
 # game/r1_shopping.rpy:182
 translate simplified_chinese r1_shopping_suit_f7a86c8b:
@@ -392,7 +392,7 @@ translate simplified_chinese r1_shopping_suit_f7a86c8b:
 translate simplified_chinese r1_shopping_suit_6a632731:
 
     # s "Hitona onee-chan is so cool!"
-    s "「[player_name]姐姐好帅！」"
+    s "「[player_name!t]姐姐好帅！」"
 
 # game/r1_shopping.rpy:186
 translate simplified_chinese r1_shopping_suit_1acb0827:
@@ -428,13 +428,13 @@ translate simplified_chinese r1_shopping_suit_33b8fb60:
 translate simplified_chinese r1_shopping_suit_65cc89e5:
 
     # s "Shiraishi wants to be patted!"
-    s "「白石想让[player_name]姐姐摸摸头！」"
+    s "「白石想让[player_name!t]姐姐摸摸头！」"
 
 # game/r1_shopping.rpy:198
 translate simplified_chinese r1_shopping_suit_fcdb89e8:
 
     # "I decided to go along with her sudden request, and patted her head."
-    "[player_name]听从了这突然的请求，摸了摸白石的脑袋。"
+    "[player_name!t]听从了这突然的请求，摸了摸白石的脑袋。"
 
 # game/r1_shopping.rpy:202
 translate simplified_chinese r1_shopping_suit_c772364b:
@@ -446,7 +446,7 @@ translate simplified_chinese r1_shopping_suit_c772364b:
 translate simplified_chinese r1_shopping_dress_ac12b7af:
 
     # "I picked up a beautiful wedding dress, and went into a changing room."
-    "[player_name]拿起漂亮的婚纱，走进试衣间换衣服了。"
+    "[player_name!t]拿起漂亮的婚纱，走进试衣间换衣服了。"
 
 # game/r1_shopping.rpy:209
 translate simplified_chinese r1_shopping_dress_6c2341d8:
@@ -482,7 +482,7 @@ translate simplified_chinese r1_shopping_dress_e5631076:
 translate simplified_chinese r1_shopping_dress_b1314e1e:
 
     # s "Hitona onee-chan is so beautiful..."
-    s "「[player_name]姐姐好漂亮————！」"
+    s "「[player_name!t]姐姐好漂亮————！」"
 
 # game/r1_shopping.rpy:223
 translate simplified_chinese r1_shopping_dress_78bff50f:
@@ -506,7 +506,7 @@ translate simplified_chinese r1_shopping_dress_44bc70bc:
 translate simplified_chinese r1_shopping_dress_ab9200c8:
 
     # s "I want Hitona onee-chan to pick all of my outfits from now on!"
-    s "「那白石以后买衣服就全交给[player_name]姐姐了！」"
+    s "「那白石以后买衣服就全交给[player_name!t]姐姐了！」"
 
 
 # game/r1_shopping.rpy:231
@@ -537,7 +537,7 @@ translate simplified_chinese r1_shopping_dress_a7b65014:
 translate simplified_chinese r1_shopping_dress_a11e2668:
 
     # "Seeing Shiraishi so happy, I couldn’t help but smile."
-    "看到这么开心的白石，[player_name]也不禁露出了笑容。"
+    "看到这么开心的白石，[player_name!t]也不禁露出了笑容。"
 
 translate simplified_chinese strings:
 

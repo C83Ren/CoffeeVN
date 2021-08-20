@@ -235,8 +235,8 @@ translate japanese r1_start_a7c73df2:
 # game/r1_start.rpy:107
 translate japanese r1_start_e2940143:
 
-    # s "Yaaay! Let’s play, [player_name] onee-chan!"
-    s "「やったー！やろう、[player_name]おねえちゃん！」"
+    # s "Yaaay! Let’s play, [player_name!t] onee-chan!"
+    s "「やったー！やろう、[player_name!t]おねえちゃん！」"
 
 # game/r1_start.rpy:109
 translate japanese r1_start_4debe4de:
@@ -314,7 +314,7 @@ translate japanese r1_start_a4265819:
 translate japanese r1_start_7e8d5a1e:
 
     # p "{i}I wonder if I was that cheerful and innocent back when I was 10 years old...{/i}"
-    p "（十歳の[player_name]は、そんなに明るくて無邪気だったのかな？）"
+    p "（十歳の[player_name!t]は、そんなに明るくて無邪気だったのかな？）"
 
 # game/r1_start.rpy:141
 translate japanese r1_start_17e7b08f:
@@ -397,8 +397,8 @@ translate japanese r1_start_f9035723:
 # game/r1_start.rpy:173
 translate japanese r1_start_d42765e6:
 
-    # s "It’s still fun! [player_name] onee-chan, let’s play something!"
-    s "「それでもほんとおにたのしいよ！[player_name]おねえちゃん、なにかあそぼー！」"
+    # s "It’s still fun! [player_name!t] onee-chan, let’s play something!"
+    s "「それでもほんとおにたのしいよ！[player_name!t]おねえちゃん、なにかあそぼー！」"
 
 # game/r1_start.rpy:175
 translate japanese r1_start_4779cfe1:
@@ -463,8 +463,8 @@ translate japanese r1_start_a9666c24:
 # game/r1_start.rpy:199
 translate japanese r1_start_631fed18:
 
-    # s "Yess! Shiraishi wants to try that with [player_name] onee-chan!"
-    s "「やろう！白石は[player_name]おねえちゃんとやってみたい！」"
+    # s "Yess! Shiraishi wants to try that with [player_name!t] onee-chan!"
+    s "「やろう！白石は[player_name!t]おねえちゃんとやってみたい！」"
 
 # game/r1_start.rpy:203
 translate japanese r1_start_ffd8d473:
@@ -673,8 +673,8 @@ translate japanese r1_start_a54ee381:
 # game/r1_start.rpy:285
 translate japanese r1_start_2136fc24:
 
-    # s "Don’t worry, [player_name] onee-chan! You’ll definitely get it next time!"
-    s "「大丈夫、[player_name]おねえちゃん！つぎこそとるから！」"
+    # s "Don’t worry, [player_name!t] onee-chan! You’ll definitely get it next time!"
+    s "「大丈夫、[player_name!t]おねえちゃん！つぎこそとるから！」"
 
 # game/r1_start.rpy:287
 translate japanese r1_start_c6f1517a:
@@ -685,8 +685,8 @@ translate japanese r1_start_c6f1517a:
 # game/r1_start.rpy:289
 translate japanese r1_start_ea796bbf:
 
-    # p "Yes! [player_name] nee-chan will get it this time!"
-    p "「うん！今度こそ[player_name]姉ちゃん獲ってあげるよ！」"
+    # p "Yes! [player_name!t] nee-chan will get it this time!"
+    p "「うん！今度こそ[player_name!t]姉ちゃん獲ってあげるよ！」"
 
 # game/r1_start.rpy:293
 translate japanese r1_start_6ef268ac:
@@ -715,8 +715,8 @@ translate japanese r1_start_094880a1:
 # game/r1_start.rpy:303
 translate japanese r1_start_dc7811d2:
 
-    # s "[player_name] onee-chan! We got it!!! Yaaaaaay!"
-    s "「[player_name]おねえちゃん、やった！とったよ！」"
+    # s "[player_name!t] onee-chan! We got it!!! Yaaaaaay!"
+    s "「[player_name!t]おねえちゃん、やった！とったよ！」"
 
 # game/r1_start.rpy:305
 translate japanese r1_start_f46e8c1f:
@@ -733,8 +733,8 @@ translate japanese r1_start_e06a40ff:
 # game/r1_start.rpy:311
 translate japanese r1_start_dffc0e4f:
 
-    # s "Yaaay! Yaaaay! Thank you, [player_name] onee-chan!"
-    s "「わーい！わーい！ありがとお、[player_name]おねえちゃん！」"
+    # s "Yaaay! Yaaaay! Thank you, [player_name!t] onee-chan!"
+    s "「わーい！わーい！ありがとお、[player_name!t]おねえちゃん！」"
 
 # game/r1_start.rpy:313
 translate japanese r1_start_a2119bec:
@@ -770,8 +770,8 @@ translate japanese r1_start_df95e24d:
 # game/r1_start.rpy:325
 translate japanese r1_start_73c7baad:
 
-    # s "[player_name] onee-chan, how does that thing work?"
-    s "「ねぇ、[player_name]おねえちゃん、あれはどうあそぶの？」"
+    # s "[player_name!t] onee-chan, how does that thing work?"
+    s "「ねぇ、[player_name!t]おねえちゃん、あれはどうあそぶの？」"
 
 # game/r1_start.rpy:327
 translate japanese r1_start_60de4173:

@@ -2,7 +2,7 @@
 translate simplified_chinese r1_regret_choice_3bfec0a0:
 
     # s "Hitona onee-chan, do you have any regrets today?"
-    s "「话说[player_name]姐姐，今天有什么后悔的事吗？」"
+    s "「话说[player_name!t]姐姐，今天有什么后悔的事吗？」"
     "又被白石问了一个很突然的问题。"
 
 # game/r1_regret_choice.rpy:5
@@ -69,7 +69,7 @@ translate simplified_chinese r1_regret_choice_94966302:
 translate simplified_chinese r1_regret_choice_de5812ac:
 
     # s "Hitona nee-chan! Let’s go to the park!"
-    s "「[player_name]姐姐！我们去公园吧！」"
+    s "「[player_name!t]姐姐！我们去公园吧！」"
 
 # game/r1_regret_choice.rpy:49
 translate simplified_chinese r1_regret_choice_0166ae7e:

@@ -8,7 +8,7 @@ translate simplified_chinese r1_after_movie_545cb68f:
 translate simplified_chinese r1_after_movie_460a966d:
 
     # s "Yaaay! It’s a promise okay, Hitona onee-chan!"
-    s "「哇！！约好了哦，[player_name]姐姐！！」"
+    s "「哇！！约好了哦，[player_name!t]姐姐！！」"
 
 # game/r1_after_movie.rpy:8
 translate simplified_chinese r1_after_movie_909d30dc:
@@ -20,4 +20,4 @@ translate simplified_chinese r1_after_movie_909d30dc:
 translate simplified_chinese r1_after_movie_bfc9caff:
 
     # "I walked out of the cinema with a happy Shiraishi."
-    "[player_name]和看上去非常开心的白石一起离开了电影院。"
+    "[player_name!t]和看上去非常开心的白石一起离开了电影院。"

@@ -1,8 +1,8 @@
 ﻿# game/r1_regret_choice.rpy:3
 translate japanese r1_regret_choice_3bfec0a0:
 
-    # s "[player_name] onee-chan, do you have any regrets today?"
-    s "「ねぇ[player_name]おねえちゃん、今日はこうかいしたことがある？」"
+    # s "[player_name!t] onee-chan, do you have any regrets today?"
+    s "「ねぇ[player_name!t]おねえちゃん、今日はこうかいしたことがある？」"
     "またいきなりの質問を問いかけた。"
 
 # game/r1_regret_choice.rpy:5
@@ -68,8 +68,8 @@ translate japanese r1_regret_choice_94966302:
 # game/r1_regret_choice.rpy:47
 translate japanese r1_regret_choice_de5812ac:
 
-    # s "[player_name] nee-chan! Let’s go to the park!"
-    s "「[player_name]おねえちゃん！こうえんにいこう！」"
+    # s "[player_name!t] nee-chan! Let’s go to the park!"
+    s "「[player_name!t]おねえちゃん！こうえんにいこう！」"
 
 # game/r1_regret_choice.rpy:49
 translate japanese r1_regret_choice_0166ae7e:

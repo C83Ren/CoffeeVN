@@ -43,14 +43,14 @@ translate japanese r2_turmoil_b4ac3d88:
 # game/r2_turmoil.rpy:25
 translate japanese r2_turmoil_5cd70a7b:
 
-    # e "If [player_name] can defeat them, why bother using such a flashy spell?"
-    e "「[player_name]が倒せたら、わざわざ使う理由はないんだ」"
+    # e "If [player_name!t] can defeat them, why bother using such a flashy spell?"
+    e "「[player_name!t]が倒せたら、わざわざ使う理由はないんだ」"
 
 # game/r2_turmoil.rpy:27
 translate japanese r2_turmoil_cd79995c:
 
     # p "You’re mocking me, aren’t you?"
-    p "「[player_name]を見下してますよね？ね？」"
+    p "「[player_name!t]を見下してますよね？ね？」"
 
 # game/r2_turmoil.rpy:29
 translate japanese r2_turmoil_1f57ac14:

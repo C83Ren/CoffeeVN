@@ -2,19 +2,19 @@
 translate simplified_chinese r1_7_11_1b75b6a2:
 
     # "We walked to the best place ever for getting food! Of course, it’s 7/*1!"
-    "[player_name]和白石一起走向了世界上最适合美餐一顿的地方，也就是7-〇1了！"
+    "[player_name!t]和白石一起走向了世界上最适合美餐一顿的地方，也就是7-〇1了！"
 
 # game/r1_7_11.rpy:24
 translate simplified_chinese r1_7_11_eb4ff0af:
 
     # "Shiraishi was always very excited, but she was now even more excited than ever, happily grasping onto my hand."
-    "总是兴致勃勃的白石看起来更加激动了，兴奋地紧握着[player_name]的手。"
+    "总是兴致勃勃的白石看起来更加激动了，兴奋地紧握着[player_name!t]的手。"
 
 # game/r1_7_11.rpy:26
 translate simplified_chinese r1_7_11_19b38c5f:
 
     # s "Hitona onee-chan what will we be having for lunch?"
-    s "「[player_name]姐姐，咱们午饭吃什么呀？」"
+    s "「[player_name!t]姐姐，咱们午饭吃什么呀？」"
 
 # game/r1_7_11.rpy:28
 translate simplified_chinese r1_7_11_9fec83aa:
@@ -26,7 +26,7 @@ translate simplified_chinese r1_7_11_9fec83aa:
 translate simplified_chinese r1_7_11_9d9ee28a:
 
     # s "I want Hitona onee-chan’s recommendation!"
-    s "「想吃[player_name]姐姐推荐的东西！」"
+    s "「想吃[player_name!t]姐姐推荐的东西！」"
 
 # game/r1_7_11.rpy:34
 translate simplified_chinese r1_7_11_de5a71f4:
@@ -231,7 +231,7 @@ translate simplified_chinese r1_7_11_ae32a261:
 translate simplified_chinese r1_7_11_d0ab1a5f:
 
     # s "Come to think of it, Hitona onee-chan tried eating this in a stream before~!"
-    s "「说起来，这是以前[player_name]姐姐直播里吃过的东西呢～」"
+    s "「说起来，这是以前[player_name!t]姐姐直播里吃过的东西呢～」"
 
 # game/r1_7_11.rpy:136
 translate simplified_chinese r1_7_11_be230182:
@@ -243,7 +243,7 @@ translate simplified_chinese r1_7_11_be230182:
 translate simplified_chinese r1_7_11_f7d3e7b4:
 
     # s "Hitona onee-chan streams food reviews, right?"
-    s "「[player_name]姐姐在做便利店试吃直播吧？」"
+    s "「[player_name!t]姐姐在做便利店试吃直播吧？」"
 
 # game/r1_7_11.rpy:142
 translate simplified_chinese r1_7_11_c3a8fcf1:
@@ -255,19 +255,19 @@ translate simplified_chinese r1_7_11_c3a8fcf1:
 translate simplified_chinese r1_7_11_3c6a4b02:
 
     # s "Whenever Shiraishi watches those streams, Shiraishi always thinks about how many snacks Shiraishi hasn’t tried yet!"
-    s "「每次看[player_name]姐姐直播之前，白石都在想会有多少从没吃过的零食！」"
+    s "「每次看[player_name!t]姐姐直播之前，白石都在想会有多少从没吃过的零食！」"
 
 # game/r1_7_11.rpy:144
 translate simplified_chinese r1_7_11_456b5af9:
 
     # s "Everything always looks so delicious! And Hitona onee-chan’s reactions are priceless! It makes Shiraishi want to watch it over and over again!"
-    s "「每一种看上去都好好吃的样子！而且[player_name]姐姐的反应总是那么激萌！百看不厌！」"
+    s "「每一种看上去都好好吃的样子！而且[player_name!t]姐姐的反应总是那么激萌！百看不厌！」"
 
 # game/r1_7_11.rpy:144
 translate simplified_chinese r1_7_11_60cc16d3:
 
     # s "With how some snacks make Hitona onee-chan really excited, while others oddly have no taste, Shiraishi can never wait for Hitona onee-chan’s rating!"
-    s "「尽管有味道很好的食品，也有一些相对一般的食品，但白石每次都很期待[player_name]姐姐的评价环节！」"
+    s "「尽管有味道很好的食品，也有一些相对一般的食品，但白石每次都很期待[player_name!t]姐姐的评价环节！」"
 
 # game/r1_7_11.rpy:144
 translate simplified_chinese r1_7_11_9feee21e:
@@ -285,7 +285,7 @@ translate simplified_chinese r1_7_11_bfeafccf:
 translate simplified_chinese r1_7_11_f46c504c:
 
     # p "{i}Eh? Did I ever mention anything about streaming...?{/i}"
-    p "（诶，[player_name]有说过在做直播的吗…？）"
+    p "（诶，[player_name!t]有说过在做直播的吗…？）"
 
 # game/r1_7_11.rpy:160
 translate simplified_chinese r1_7_11_fe32f022:

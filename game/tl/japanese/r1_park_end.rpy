@@ -19,8 +19,8 @@ translate japanese end_1_7c073a9b:
 # game/r1_park_end.rpy:18
 translate japanese end_1_6b4f7a76:
 
-    # s "Today was fun, [player_name] onee-chan!"
-    s "「今日はたのしかった、[player_name]おねえちゃん！」"
+    # s "Today was fun, [player_name!t] onee-chan!"
+    s "「今日はたのしかった、[player_name!t]おねえちゃん！」"
 
 # game/r1_park_end.rpy:20
 translate japanese end_1_78432cb6:
@@ -61,8 +61,8 @@ translate japanese end_1_d19831f3:
 # game/r1_park_end.rpy:37
 translate japanese end_1_7dcd5bba:
 
-    # s "Shiraishi got to eat [player_name] onee-chan’s recommendation!"
-    s "「[player_name]おねえちゃんのおすすめを食べられた！」"
+    # s "Shiraishi got to eat [player_name!t] onee-chan’s recommendation!"
+    s "「[player_name!t]おねえちゃんのおすすめを食べられた！」"
 
 # game/r1_park_end.rpy:39
 translate japanese end_1_13382f7f:
@@ -121,8 +121,8 @@ translate japanese end_1_d19831f3_1:
 # game/r1_park_end.rpy:69
 translate japanese end_1_7dcd5bba_1:
 
-    # s "Shiraishi got to eat [player_name] onee-chan’s recommendation!"
-    s "「[player_name]おねえちゃんのおすすめを食べられた！」"
+    # s "Shiraishi got to eat [player_name!t] onee-chan’s recommendation!"
+    s "「[player_name!t]おねえちゃんのおすすめを食べられた！」"
 
 # game/r1_park_end.rpy:71
 translate japanese end_1_13382f7f_1:
@@ -145,14 +145,14 @@ translate japanese end_1_2faa194a_1:
 # game/r1_park_end.rpy:83
 translate japanese end_1_de4f0b86:
 
-    # s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a cool suit!"
-    s "「それに、あんなにかっこいいスーツをきる[player_name]おねえちゃんもみることができた！」"
+    # s "What’s more, Shiraishi even got to see [player_name!t] onee-chan in such a cool suit!"
+    s "「それに、あんなにかっこいいスーツをきる[player_name!t]おねえちゃんもみることができた！」"
 
 # game/r1_park_end.rpy:86
 translate japanese end_1_1c2a8e3d:
 
-    # s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a beautiful dress!"
-    s "「それに、あんなにきれいなドレスをきる[player_name]おねえちゃんもみることができた！」"
+    # s "What’s more, Shiraishi even got to see [player_name!t] onee-chan in such a beautiful dress!"
+    s "「それに、あんなにきれいなドレスをきる[player_name!t]おねえちゃんもみることができた！」"
 
 # game/r1_park_end.rpy:88
 translate japanese end_1_cc147c24:
@@ -223,14 +223,14 @@ translate japanese end_1_22243979:
 # game/r1_park_end.rpy:128
 translate japanese end_1_de4f0b86_1:
 
-    # s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a cool suit!"
-    s "「それに、あんなにかっこいいスーツをきる[player_name]おねえちゃんもみることができた！」"
+    # s "What’s more, Shiraishi even got to see [player_name!t] onee-chan in such a cool suit!"
+    s "「それに、あんなにかっこいいスーツをきる[player_name!t]おねえちゃんもみることができた！」"
 
 # game/r1_park_end.rpy:131
 translate japanese end_1_1c2a8e3d_1:
 
-    # s "What’s more, Shiraishi even got to see [player_name] onee-chan in such a beautiful dress!"
-    s "「それに、あんなにきれいなドレスをきる[player_name]おねえちゃんもみることができた！」"
+    # s "What’s more, Shiraishi even got to see [player_name!t] onee-chan in such a beautiful dress!"
+    s "「それに、あんなにきれいなドレスをきる[player_name!t]おねえちゃんもみることができた！」"
 
 # game/r1_park_end.rpy:133
 translate japanese end_1_cc147c24_1:
@@ -247,8 +247,8 @@ translate japanese end_1_44af4bdd:
 # game/r1_park_end.rpy:141
 translate japanese end_1_70904dbc:
 
-    # s "Hey, [player_name] onee-chan, thank you for today."
-    s "「ねぇ、[player_name]お姉ちゃん、今日はありがとうね」"
+    # s "Hey, [player_name!t] onee-chan, thank you for today."
+    s "「ねぇ、[player_name!t]お姉ちゃん、今日はありがとうね」"
 
 # game/r1_park_end.rpy:143
 translate japanese end_1_e6931d7e:
@@ -313,8 +313,8 @@ translate japanese end_1_a6af3867:
 # game/r1_park_end.rpy:173
 translate japanese end_1_b8559320:
 
-    # s "Hehehe, it’s okay, [player_name] onee-chan."
-    s "「へへへ、大丈夫、[player_name]お姉ちゃん」"
+    # s "Hehehe, it’s okay, [player_name!t] onee-chan."
+    s "「へへへ、大丈夫、[player_name!t]お姉ちゃん」"
 
 # game/r1_park_end.rpy:175
 translate japanese end_1_dea7c200:

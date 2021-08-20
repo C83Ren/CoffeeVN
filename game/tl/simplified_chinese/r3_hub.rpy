@@ -14,7 +14,7 @@ translate simplified_chinese r3_hub_1971f41a:
 translate simplified_chinese r3_hub_9692c6d4:
 
     # "The girl standing next to me grabbed my arm."
-    "站在身旁的女孩子抓住了[player_name]的手臂。"
+    "站在身旁的女孩子抓住了[player_name!t]的手臂。"
 
 # game/r3_hub.rpy:14
 translate simplified_chinese r3_hub_1144015c:
@@ -32,13 +32,13 @@ translate simplified_chinese r3_hub_1209b141:
 translate simplified_chinese r3_hub_c63e5550:
 
     # "Before I could finish my words, I lost consciousness."
-    "话还没说完，[player_name]就失去了意识。"
+    "话还没说完，[player_name!t]就失去了意识。"
 
 # game/r3_hub.rpy:22
 translate simplified_chinese r3_hub_1abc0be7:
 
     # "？？？" "Ooooi, Kohigashi!"
-    "？？？" "「喂，[player_last_name]女士！」"
+    "？？？" "「喂，[player_last_name!t]女士！」"
 
 # game/r3_hub.rpy:24
 translate simplified_chinese r3_hub_79879727:
@@ -56,7 +56,7 @@ translate simplified_chinese r3_hub_44a01053:
 translate simplified_chinese r3_hub_4b9f17b6:
 
     # "I woke up in an enclosed room."
-    "[player_name]在一个封闭的房间中醒了过来。"
+    "[player_name!t]在一个封闭的房间中醒了过来。"
 
 # game/r3_hub.rpy:33
 translate simplified_chinese r3_hub_eec19188:
@@ -110,7 +110,7 @@ translate simplified_chinese r3_hub_5751978d:
 translate simplified_chinese r3_hub_7e235c7e:
 
     # p "Okay...uhh...I’m Hitona, Hitona Kohigashi."
-    p "「哦…呃…我叫[player_name]…[player_full_name]」"
+    p "「哦…呃…我叫[player_name!t]…[player_full_name!t]」"
 
 # game/r3_hub.rpy:55
 translate simplified_chinese r3_hub_48ed2eca:
@@ -195,7 +195,7 @@ translate simplified_chinese r3_hub_a0813b78:
 
     # p "What did you steal from me anyways?"
     p "「那个，里奥斯先生，有件事想问你」"
-    p "「你从[player_name]这里夺走了什么呢？」"
+    p "「你从[player_name!t]这里夺走了什么呢？」"
 
 # game/r3_hub.rpy:89
 translate simplified_chinese r3_hub_3f86d1be:
@@ -213,13 +213,13 @@ translate simplified_chinese r3_hub_39eb58d7:
 translate simplified_chinese r3_hub_bb65e94c:
 
     # pi "Let’s go, Kohigashi, let’s go!"
-    pi "「[player_last_name]女士，我们出发吧！」"
+    pi "「[player_last_name!t]女士，我们出发吧！」"
 
 # game/r3_hub.rpy:97
 translate simplified_chinese r3_hub_151e6af1:
 
     # "This is all so confusing but...it seems a bit fun, so might as well follow along."
-    "虽然[player_name]也还是一头雾水，不过好像会比较有趣，就跟着皮埃罗一起走了。"
+    "虽然[player_name!t]也还是一头雾水，不过好像会比较有趣，就跟着皮埃罗一起走了。"
 
 # game/r3_hub.rpy:101
 translate simplified_chinese r3_hub_ec501979:
@@ -249,7 +249,7 @@ translate simplified_chinese r3_hub_771c736d:
 translate simplified_chinese r3_hub_f2051d80:
 
     # pi "I have grown, this time for sure Kohigashi will get back what you have stolen!"
-    pi "「我也有所成长了！这次[player_last_name]女士一定能取回被夺走的东西的！」"
+    pi "「我也有所成长了！这次[player_last_name!t]女士一定能取回被夺走的东西的！」"
 
 # game/r3_hub.rpy:115
 translate simplified_chinese r3_hub_04fc6e18:
@@ -297,7 +297,7 @@ translate simplified_chinese r3_hub_fc4d5733:
 translate simplified_chinese r3_hub_f3845a1d:
 
     # pi "Don’t worry, Kohigashi! The great detective Pierrot is here by your side!"
-    pi "「[player_last_name]女士你放心！有我名侦探皮埃罗跟在你身旁呢！」"
+    pi "「[player_last_name!t]女士你放心！有我名侦探皮埃罗跟在你身旁呢！」"
 
 # game/r3_hub.rpy:139
 translate simplified_chinese r3_hub_3fd55d7a:

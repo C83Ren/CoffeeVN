@@ -63,7 +63,7 @@ translate japanese r1_famres_0968cd71:
 translate japanese r1_famres_f3e2da6e:
 
     # p "I’d like the carbonara pasta and fries. What about you, Shiraishi?"
-    p "「[player_name]はカルボナーラとポテトをください。白石は？」"
+    p "「[player_name!t]はカルボナーラとポテトをください。白石は？」"
 
 # game/r1_famres.rpy:55
 translate japanese r1_famres_c736f63b:
@@ -122,8 +122,8 @@ translate japanese r1_famres_34f34641:
 # game/r1_famres.rpy:75
 translate japanese r1_famres_62e97dc8:
 
-    # s "[player_name] onee-chan~"
-    s "「[player_name]おねえちゃん〜」"
+    # s "[player_name!t] onee-chan~"
+    s "「[player_name!t]おねえちゃん〜」"
 
 # game/r1_famres.rpy:77
 translate japanese r1_famres_58ee35ab:
@@ -134,8 +134,8 @@ translate japanese r1_famres_58ee35ab:
 # game/r1_famres.rpy:79
 translate japanese r1_famres_39f5ca62:
 
-    # s "Can [player_name] onee-chan eat one of these?"
-    s "「[player_name]おねえちゃん１つたべてくれないの？」"
+    # s "Can [player_name!t] onee-chan eat one of these?"
+    s "「[player_name!t]おねえちゃん１つたべてくれないの？」"
 
 # game/r1_famres.rpy:81
 translate japanese r1_famres_c8ea8a4a_2:
@@ -176,8 +176,8 @@ translate japanese r1_famres_5b9bcfd4:
 # game/r1_famres.rpy:97
 translate japanese r1_famres_b22520bd:
 
-    # s "Pick one, [player_name] onee-chan!"
-    s "「１つえらんで、[player_name]おねえちゃん！」"
+    # s "Pick one, [player_name!t] onee-chan!"
+    s "「１つえらんで、[player_name!t]おねえちゃん！」"
 
 # game/r1_famres.rpy:109
 translate japanese r1_famres_91182f92:
@@ -189,8 +189,8 @@ translate japanese r1_famres_91182f92:
 # game/r1_famres.rpy:114
 translate japanese r1_famres_1e487da6:
 
-    # s "[player_name] onee-chan, Shiraishi has something to ask."
-    s "「ねぇ、[player_name]おねえちゃん。白石は、ききたいことがあるけど」"
+    # s "[player_name!t] onee-chan, Shiraishi has something to ask."
+    s "「ねぇ、[player_name!t]おねえちゃん。白石は、ききたいことがあるけど」"
 
 # game/r1_famres.rpy:116
 translate japanese r1_famres_90e99cb4:
@@ -231,8 +231,8 @@ translate japanese r1_famres_762888f1:
 # game/r1_famres.rpy:130
 translate japanese r1_famres_afec076c:
 
-    # s "Yes! Shiraishi wants to become tall and beautiful just like [player_name] onee-chan!"
-    s "「うん！白石は[player_name]おねえちゃんのようにせがたかい美少女になりたいから！」"
+    # s "Yes! Shiraishi wants to become tall and beautiful just like [player_name!t] onee-chan!"
+    s "「うん！白石は[player_name!t]おねえちゃんのようにせがたかい美少女になりたいから！」"
 
 # game/r1_famres.rpy:132
 translate japanese r1_famres_112c383c:
@@ -243,8 +243,8 @@ translate japanese r1_famres_112c383c:
 # game/r1_famres.rpy:134
 translate japanese r1_famres_119a1574:
 
-    # s "[player_name] onee-chan, does Hamburger Steak make you more energetic?"
-    s "「ねぇ、[player_name]おねえちゃん。ハーンバグを食べるたびに元気になるの？」"
+    # s "[player_name!t] onee-chan, does Hamburger Steak make you more energetic?"
+    s "「ねぇ、[player_name!t]おねえちゃん。ハーンバグを食べるたびに元気になるの？」"
 
 # game/r1_famres.rpy:136
 translate japanese r1_famres_53b3e489:
@@ -279,8 +279,8 @@ translate japanese r1_famres_5973bd1e:
 # game/r1_famres.rpy:150
 translate japanese r1_famres_c650c2d1:
 
-    # s "Does that mean that hamburger steak is [player_name] onee-chan’s favourite food?"
-    s "「じゃあ、[player_name]おねえちゃんはハーンバグが大好きなの？」"
+    # s "Does that mean that hamburger steak is [player_name!t] onee-chan’s favourite food?"
+    s "「じゃあ、[player_name!t]おねえちゃんはハーンバグが大好きなの？」"
 
 # game/r1_famres.rpy:152
 translate japanese r1_famres_7ba718b3:
@@ -297,8 +297,8 @@ translate japanese r1_famres_584030bd:
 # game/r1_famres.rpy:156
 translate japanese r1_famres_e23771d2:
 
-    # s "[player_name] onee-chan, are you planning to play something tonight?"
-    s "「ねぇ、[player_name]おねえちゃん、今夜ホラゲーを遊んだりする？」"
+    # s "[player_name!t] onee-chan, are you planning to play something tonight?"
+    s "「ねぇ、[player_name!t]おねえちゃん、今夜ホラゲーを遊んだりする？」"
 
 # game/r1_famres.rpy:158
 translate japanese r1_famres_81c9bb11:
@@ -309,8 +309,8 @@ translate japanese r1_famres_81c9bb11:
 # game/r1_famres.rpy:160
 translate japanese r1_famres_e00a9e6c:
 
-    # s "[player_name] onee-chan, do you like beef bowls?"
-    s "「[player_name]おねえちゃん、ぎゅうにくどんが好き？」"
+    # s "[player_name!t] onee-chan, do you like beef bowls?"
+    s "「[player_name!t]おねえちゃん、ぎゅうにくどんが好き？」"
 
 # game/r1_famres.rpy:162
 translate japanese r1_famres_a445ee32:
@@ -321,8 +321,8 @@ translate japanese r1_famres_a445ee32:
 # game/r1_famres.rpy:164
 translate japanese r1_famres_98a23b1f:
 
-    # s "When [player_name] onee-chan chose the beef bowl, Shiraishi thought that [player_name] onee-chan was planning to play a horror game tonight!"
-    s "「むー、[player_name]おねえちゃんがぎゅうにくどんをえらんだときにはね、[player_name]おねえちゃんは今夜ホラゲーをやるつもりだ！とおもって」"
+    # s "When [player_name!t] onee-chan chose the beef bowl, Shiraishi thought that [player_name] onee-chan was planning to play a horror game tonight!"
+    s "「むー、[player_name!t]おねえちゃんがぎゅうにくどんをえらんだときにはね、[player_name]おねえちゃんは今夜ホラゲーをやるつもりだ！とおもって」"
 
 # game/r1_famres.rpy:166
 translate japanese r1_famres_acd253e0:
@@ -377,8 +377,8 @@ translate japanese r1_famres_45f30740:
 # game/r1_famres.rpy:188
 translate japanese r1_famres_9a7605ec:
 
-    # s "No way! Shiraishi can’t eat three; it’s because of [player_name] onee-chan that we finished!"
-    s "「むりー！白石なら３つはむりー！[player_name]おねえちゃんのおかげでたべきれたんだ！」"
+    # s "No way! Shiraishi can’t eat three; it’s because of [player_name!t] onee-chan that we finished!"
+    s "「むりー！白石なら３つはむりー！[player_name!t]おねえちゃんのおかげでたべきれたんだ！」"
 
 # game/r1_famres.rpy:190
 translate japanese r1_famres_c50ea97f:

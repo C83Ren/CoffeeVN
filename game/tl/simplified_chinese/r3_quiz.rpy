@@ -20,7 +20,7 @@ translate simplified_chinese r3_quiz_f5d88007:
 translate simplified_chinese r3_quiz_e81ee560:
 
     # pi "Don’t worry, Kohigashi! This first part is usually really easy!"
-    pi "「没问题的，[player_last_name]女士！最开始的挑战一般都很简单的啦！」"
+    pi "「没问题的，[player_last_name!t]女士！最开始的挑战一般都很简单的啦！」"
 
 # game/r3_quiz.rpy:19
 translate simplified_chinese r3_quiz_2e4695e5:
@@ -44,7 +44,7 @@ translate simplified_chinese r3_quiz_ab6cbe49:
 translate simplified_chinese r3_quiz_d8483828:
 
     # "Not understanding what was going on, I decided to just head over to the podium anyways."
-    "在还没搞清状况的情况下，[player_name]决定先走向桌台。"
+    "在还没搞清状况的情况下，[player_name!t]决定先走向桌台。"
 
 # game/r3_quiz.rpy:29
 translate simplified_chinese r3_quiz_b564cbc1:
@@ -80,7 +80,7 @@ translate simplified_chinese quiz_fail_e120ef52:
 translate simplified_chinese quiz_fail_bed06378:
 
     # pi "Hey don’t blame me! Kohigashi was the only one answering!"
-    pi "「别怪我啊！只有[player_last_name]女士要回答啊！」"
+    pi "「别怪我啊！只有[player_last_name!t]女士要回答啊！」"
 
 # game/r3_quiz.rpy:55
 translate simplified_chinese quiz_fail_55e230ba:
@@ -104,13 +104,13 @@ translate simplified_chinese quiz_fail_1c51c64f:
 translate simplified_chinese quiz_fail_020c556b:
 
     # p "{i}Eh? I’m in...my room? On my bed...{/i}"
-    p "（咦，这里是…[player_name]的房间？为什么人鱼会在床上…）"
+    p "（咦，这里是…[player_name!t]的房间？为什么人鱼会在床上…）"
 
 # game/r3_quiz.rpy:71
 translate simplified_chinese quiz_fail_15d6f95a:
 
     # p "{i}Even if that was a dream, I wonder what was stolen...{/i}"
-    p "（就算那是个梦，[player_name]也想知道到底是什么东西被偷了…）"
+    p "（就算那是个梦，[player_name!t]也想知道到底是什么东西被偷了…）"
 
 # game/r3_quiz.rpy:73
 translate simplified_chinese quiz_fail_c453ade6:
@@ -134,7 +134,7 @@ translate simplified_chinese quiz_fail_fa5738e3:
 translate simplified_chinese quiz_fail_c98675fc:
 
     # "I rushed out of my room in a hurry to meet senpai."
-    "从房间跑去公园的途中，那个梦？一直盘旋在[player_name]的脑海里。"
+    "从房间跑去公园的途中，那个梦？一直盘旋在[player_name!t]的脑海里。"
 
 # game/r3_quiz.rpy:83
 translate simplified_chinese quiz_fail_62f7d1de:

@@ -98,7 +98,7 @@ translate simplified_chinese start_f8869760:
 # game/intro.rpy:41
 translate simplified_chinese start_fe4e8d19:
 
-    # "Mailman" "Here is your delivery. For ummm, [player_last_name], correct? Please sign here."
+    # "Mailman" "Here is your delivery. For ummm, [player_last_name!t], correct? Please sign here."
     "快递员" "「这个就是你的快递。那个…「小东」是吗？请在这里签字」"
 
 # game/intro.rpy:43
@@ -293,7 +293,7 @@ translate simplified_chinese start_9b2ece79:
 translate simplified_chinese start_f995123e:
 
     # p "{i}Why am I even still doing this…{/i}"
-    p "（真是的，[player_name]为什么还在做这个啊...）"
+    p "（真是的，[player_name!t]为什么还在做这个啊...）"
 
 # game/intro.rpy:146
 translate simplified_chinese start_b9e7965e:
@@ -455,7 +455,7 @@ translate simplified_chinese start_690f00c2:
 translate simplified_chinese start_bb0ddf5c:
 
     # p "{i}…That’s it??? After all those questions, that’s it???? Give me back my time!{/i}"
-    p "（…诶？这么多问题的结果就这？把[player_name]的时间还回来啊！）"
+    p "（…诶？这么多问题的结果就这？把[player_name!t]的时间还回来啊！）"
 
 # game/intro.rpy:218
 translate simplified_chinese start_7766d36a:
@@ -533,7 +533,7 @@ translate simplified_chinese start_86e99581:
 translate simplified_chinese start_fb2e0ffc:
 
     # "Before leaving, I looked around the place a bit, and caught sight of the safe."
-    "出发前，[player_name]环顾了一下四周，看到了那个保险箱。"
+    "出发前，[player_name!t]环顾了一下四周，看到了那个保险箱。"
 
 # game/intro.rpy:254
 translate simplified_chinese start_b7652f4f_1:

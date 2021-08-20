@@ -68,7 +68,7 @@ translate japanese village_talk_1_68deeebf:
 translate japanese village_talk_2_6d84b35a:
 
     # p "You called me second salvation, so who was the first?"
-    p "「[player_name]を第二救世主と呼びましたが、第一は誰？」"
+    p "「[player_name!t]を第二救世主と呼びましたが、第一は誰？」"
 
 # game/r2_village.rpy:104
 translate japanese village_talk_2_165210e1:
@@ -230,14 +230,14 @@ translate japanese village_house_1_1_85af4a38:
 # game/r2_village.rpy:189
 translate japanese village_house_1_1_d0d441c3:
 
-    # e "Anyways, this is our second salvation, her name is [player_name]. Found her in the forest."
-    e "「とにかく、第二救世主の[player_name]。森で見つかった」"
+    # e "Anyways, this is our second salvation, her name is [player_name!t]. Found her in the forest."
+    e "「とにかく、第二救世主の[player_name!t]。森で見つかった」"
 
 # game/r2_village.rpy:191
 translate japanese village_house_1_1_4ac634e1:
 
-    # p "Nice to meet you, I’m [player_full_name]."
-    p "「初めまして、[player_full_name]です」"
+    # p "Nice to meet you, I’m [player_full_name!t]."
+    p "「初めまして、[player_full_name!t]です」"
 
 # game/r2_village.rpy:193
 translate japanese village_house_1_1_5df01ba1:
@@ -260,8 +260,8 @@ translate japanese village_house_1_1_bc5a3cb5:
 # game/r2_village.rpy:199
 translate japanese village_house_1_1_913add89:
 
-    # e "[player_name] only has Wind Blast right now."
-    e "「[player_name]は《爆風》しか持ってないから」"
+    # e "[player_name!t] only has Wind Blast right now."
+    e "「[player_name!t]は《爆風》しか持ってないから」"
 
 # game/r2_village.rpy:201
 translate japanese village_house_1_1_c2a0d7bf:
@@ -410,14 +410,14 @@ translate japanese village_house_2_2_e8d1815a:
 # game/r2_village.rpy:283
 translate japanese village_house_2_2_ca928913:
 
-    # p "It’s [player_full_name]."
-    p "「[player_full_name]と申します」"
+    # p "It’s [player_full_name!t]."
+    p "「[player_full_name!t]と申します」"
 
 # game/r2_village.rpy:285
 translate japanese village_house_2_2_509080dd:
 
-    # hs "[player_last_name] hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
-    hs "「[player_last_name]さん？イーブが言った通り、あなたが救済者では本当だったら…と思います」"
+    # hs "[player_last_name!t] hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
+    hs "「[player_last_name!t]さん？イーブが言った通り、あなたが救済者では本当だったら…と思います」"
 
 # game/r2_village.rpy:287
 translate japanese village_house_2_2_744470eb:
@@ -452,14 +452,14 @@ translate japanese village_house_3_1_20dafd1c:
 # game/r2_village.rpy:307
 translate japanese village_house_3_1_d24acfd4:
 
-    # e "Yep, she’s [player_name]."
-    e "「そうそう、[player_name]だ」"
+    # e "Yep, she’s [player_name!t]."
+    e "「そうそう、[player_name!t]だ」"
 
 # game/r2_village.rpy:309
 translate japanese village_house_3_1_4ac634e1:
 
-    # p "Nice to meet you, I’m [player_full_name]."
-    p "「初めまして、[player_full_name]です」"
+    # p "Nice to meet you, I’m [player_full_name!t]."
+    p "「初めまして、[player_full_name!t]です」"
     "隊長" "「初めまして」"
 
 # game/r2_village.rpy:311
@@ -477,8 +477,8 @@ translate japanese village_house_3_1_70c32e8c:
 # game/r2_village.rpy:317
 translate japanese village_house_3_1_dea3fd8a:
 
-    # e "Well then, I will leave [player_name] to you, Captain! I’ll be waiting outside."
-    e "「じゃぁ、[player_name]のことを任せてね！外で待ってるよ」"
+    # e "Well then, I will leave [player_name!t] to you, Captain! I’ll be waiting outside."
+    e "「じゃぁ、[player_name!t]のことを任せてね！外で待ってるよ」"
 
 # game/r2_village.rpy:323
 translate japanese village_house_3_1_98b85375:
@@ -496,7 +496,7 @@ translate japanese village_house_3_1_b5d5d6c1:
 translate japanese village_house_3_1_a635d19c:
 
     # p "You tell me...I somehow got suddenly dragged into this world, somehow fought a soldier with magic, and got dragged around by that weird girl."
-    p "「[player_name]もあまりわからない…なんとなくお出かけると突然この世界に行っちゃってから、どうやら魔法で兵士を戦ったり…」"
+    p "「[player_name!t]もあまりわからない…なんとなくお出かけると突然この世界に行っちゃってから、どうやら魔法で兵士を戦ったり…」"
     p "「…あの頭のおかしい子にそこここに連れてこられちゃったりしました」"
 
 # game/r2_village.rpy:329
@@ -521,7 +521,7 @@ translate japanese village_house_3_1_e1a20e9b:
 translate japanese village_house_3_1_8596d752:
 
     # p "Well I don’t!"
-    p "「[player_name]はまだ分かってないですけど！」"
+    p "「[player_name!t]はまだ分かってないですけど！」"
 
 # game/r2_village.rpy:337
 translate japanese village_house_3_1_889838ae:
@@ -569,7 +569,7 @@ translate japanese village_house_3_1_859faafc:
 translate japanese village_house_3_1_7c0cad1e:
 
     # p "I don’t see how someone who doesn’t know anything can help you reach that goal."
-    p "「いや、その目的を達成するのを邪魔しかならないでしょ、この世界の状況など何も知らない[player_name]は」"
+    p "「いや、その目的を達成するのを邪魔しかならないでしょ、この世界の状況など何も知らない[player_name!t]は」"
 
 # game/r2_village.rpy:353
 translate japanese village_house_3_1_aa7ee42e:
@@ -623,7 +623,7 @@ translate japanese village_house_3_1_0e0e53c8:
 translate japanese village_house_3_1_56413598:
 
     # p "And you’re saying I’m chosen?"
-    p "「で、選ばれし者は[player_name]、ということ？」"
+    p "「で、選ばれし者は[player_name!t]、ということ？」"
 
 # game/r2_village.rpy:371
 translate japanese village_house_3_1_3ff2baed:
@@ -767,7 +767,7 @@ translate japanese village_house_3_3_04372881:
 translate japanese village_house_3_3_6df8d477:
 
     # e "Yeah we got places to go, let’s go."
-    e "「そう、行くべき場所があるから行こう、[player_name]」"
+    e "「そう、行くべき場所があるから行こう、[player_name!t]」"
 
 # game/r2_village.rpy:449
 translate japanese village_house_4_1_374e488e:

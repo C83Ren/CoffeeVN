@@ -20,7 +20,7 @@ translate simplified_chinese r1_start_28d854fc:
 translate simplified_chinese r1_start_4b1a3b4f:
 
     # "While enjoying my walk, I noticed a young girl just standing there at the intersection."
-    "正享受着散步的[player_name]，发现了一位站在路口的小女孩。"
+    "正享受着散步的[player_name!t]，发现了一位站在路口的小女孩。"
 
 # game/r1_start.rpy:17
 translate simplified_chinese r1_start_9adc6d0e:
@@ -152,7 +152,7 @@ translate simplified_chinese r1_start_53becca7:
 translate simplified_chinese r1_start_ee4fc951:
 
     # p "Senpai, I might be a bit late."
-    p "「前辈，[player_name]可能会稍晚一点到」"
+    p "「前辈，[player_name!t]可能会稍晚一点到」"
 
 # game/r1_start.rpy:75
 translate simplified_chinese r1_start_061a6165:
@@ -236,7 +236,7 @@ translate simplified_chinese r1_start_a7c73df2:
 translate simplified_chinese r1_start_e2940143:
 
     # s "Yaaay! Let’s play, Hitona onee-chan!"
-    s "「太好了！[player_name]姐姐，来一起玩吧！」"
+    s "「太好了！[player_name!t]姐姐，来一起玩吧！」"
 
 # game/r1_start.rpy:109
 translate simplified_chinese r1_start_4debe4de:
@@ -308,13 +308,13 @@ translate simplified_chinese r1_start_2513b712:
 translate simplified_chinese r1_start_a4265819:
 
     # "I could only smile at her innocent response."
-    "听到了如此天真烂漫的回答，[player_name]也不禁微笑起来。"
+    "听到了如此天真烂漫的回答，[player_name!t]也不禁微笑起来。"
 
 # game/r1_start.rpy:137
 translate simplified_chinese r1_start_7e8d5a1e:
 
     # p "{i}I wonder if I was that cheerful and innocent back when I was 10 years old...{/i}"
-    p "（十岁的[player_name]也曾是这样开朗而又天真无邪的吗？）"
+    p "（十岁的[player_name!t]也曾是这样开朗而又天真无邪的吗？）"
 
 # game/r1_start.rpy:141
 translate simplified_chinese r1_start_17e7b08f:
@@ -326,7 +326,7 @@ translate simplified_chinese r1_start_17e7b08f:
 translate simplified_chinese r1_start_aed1b612:
 
     # "Shiraishi was standing by my side; her eyes were filled with excitement."
-    "站在身旁的白石两眼放光，放开了[player_name]的手，迫不及待地先走进了游戏厅。"
+    "站在身旁的白石两眼放光，放开了[player_name!t]的手，迫不及待地先走进了游戏厅。"
 
 # game/r1_start.rpy:147
 translate simplified_chinese r1_start_3426dd34:
@@ -350,7 +350,7 @@ translate simplified_chinese r1_start_ee6d5c2a:
 translate simplified_chinese r1_start_50b62929:
 
     # "Shiraishi walked around the game center, admiring every machine there was."
-    "[player_name]在稍远处跟着在游戏厅里四处转来转去，对着各种街机观察的白石。"
+    "[player_name!t]在稍远处跟着在游戏厅里四处转来转去，对着各种街机观察的白石。"
 
 # game/r1_start.rpy:155
 translate simplified_chinese r1_start_5b5cbd68:
@@ -362,19 +362,19 @@ translate simplified_chinese r1_start_5b5cbd68:
 translate simplified_chinese r1_start_fb7087fa:
 
     # "She took a full round around the game center before finally realizing that I wasn’t walking beside her."
-    "白石逛了一整圈，才终于发现[player_name]没有跟在身旁。"
+    "白石逛了一整圈，才终于发现[player_name!t]没有跟在身旁。"
 
 # game/r1_start.rpy:161
 translate simplified_chinese r1_start_152fe1de:
 
     # "Realizing this, she stopped and looked around worriedly, but smiled again when our eyes met."
-    "她站在原地，担心地看了看四周，和[player_name]的目光交汇之后才又展露出笑容。"
+    "她站在原地，担心地看了看四周，和[player_name!t]的目光交汇之后才又展露出笑容。"
 
 # game/r1_start.rpy:165
 translate simplified_chinese r1_start_da862df3:
 
     # "She tottered back to me and held my hand again."
-    "白石摇摇摆摆地回到[player_name]身边，又握住了人鱼的手。"
+    "白石摇摇摆摆地回到[player_name!t]身边，又握住了人鱼的手。"
 
 # game/r1_start.rpy:167
 translate simplified_chinese r1_start_1c939d3f:
@@ -398,7 +398,7 @@ translate simplified_chinese r1_start_f9035723:
 translate simplified_chinese r1_start_d42765e6:
 
     # s "It’s still fun! Hitona onee-chan, let’s play something!"
-    s "「就这样也很好玩哦！[player_name]姐姐，来玩点什么吧！」"
+    s "「就这样也很好玩哦！[player_name!t]姐姐，来玩点什么吧！」"
 
 # game/r1_start.rpy:175
 translate simplified_chinese r1_start_4779cfe1:
@@ -446,7 +446,7 @@ translate simplified_chinese r1_start_5c00b798:
 translate simplified_chinese r1_start_bb26dc81:
 
     # p "{i}Oh well, I’m not that good at those games anyways.{/i}"
-    p "（不过，刚才那些也不是[player_name]擅长的游戏）"
+    p "（不过，刚才那些也不是[player_name!t]擅长的游戏）"
 
 # game/r1_start.rpy:193
 translate simplified_chinese r1_start_bcaf3edd:
@@ -464,7 +464,7 @@ translate simplified_chinese r1_start_a9666c24:
 translate simplified_chinese r1_start_631fed18:
 
     # s "Yess! Shiraishi wants to try that with Hitona onee-chan!"
-    s "「来玩吧！白石想和[player_name]姐姐来玩玩看！」"
+    s "「来玩吧！白石想和[player_name!t]姐姐来玩玩看！」"
 
 # game/r1_start.rpy:203
 translate simplified_chinese r1_start_ffd8d473:
@@ -674,13 +674,13 @@ translate simplified_chinese r1_start_a54ee381:
 translate simplified_chinese r1_start_2136fc24:
 
     # s "Don’t worry, Hitona onee-chan! You’ll definitely get it next time!"
-    s "「没关系的，[player_name]姐姐！下次一定能抓到的！」"
+    s "「没关系的，[player_name!t]姐姐！下次一定能抓到的！」"
 
 # game/r1_start.rpy:287
 translate simplified_chinese r1_start_c6f1517a:
 
     # "Shiraishi looks so sure that I’ll get it; I must not disappoint!"
-    "（小白石这么相信[player_name]，一定要回应她的期待！）"
+    "（小白石这么相信[player_name!t]，一定要回应她的期待！）"
 
 # game/r1_start.rpy:289
 translate simplified_chinese r1_start_ea796bbf:
@@ -716,7 +716,7 @@ translate simplified_chinese r1_start_094880a1:
 translate simplified_chinese r1_start_dc7811d2:
 
     # s "Hitona onee-chan! We got it!!! Yaaaaaay!"
-    s "「太好啦[player_name]姐姐！抓到了哦！」"
+    s "「太好啦[player_name!t]姐姐！抓到了哦！」"
 
 # game/r1_start.rpy:305
 translate simplified_chinese r1_start_f46e8c1f:
@@ -728,13 +728,13 @@ translate simplified_chinese r1_start_f46e8c1f:
 translate simplified_chinese r1_start_e06a40ff:
 
     # "There it is, the prize. Shiraishi took it and showed it to me happily."
-    "正如白石所说，抓到的景品就在那里。白石取出了手办，满脸幸福地展示给[player_name]看。"
+    "正如白石所说，抓到的景品就在那里。白石取出了手办，满脸幸福地展示给[player_name!t]看。"
 
 # game/r1_start.rpy:311
 translate simplified_chinese r1_start_dffc0e4f:
 
     # s "Yaaay! Yaaaay! Thank you, Hitona onee-chan!"
-    s "「哇——！谢谢[player_name]姐姐！」"
+    s "「哇——！谢谢[player_name!t]姐姐！」"
 
 # game/r1_start.rpy:313
 translate simplified_chinese r1_start_a2119bec:
@@ -771,7 +771,7 @@ translate simplified_chinese r1_start_df95e24d:
 translate simplified_chinese r1_start_73c7baad:
 
     # s "Hitona onee-chan, how does that thing work?"
-    s "「[player_name]姐姐啊，那个是要怎么玩呢？」"
+    s "「[player_name!t]姐姐啊，那个是要怎么玩呢？」"
 
 # game/r1_start.rpy:327
 translate simplified_chinese r1_start_60de4173:

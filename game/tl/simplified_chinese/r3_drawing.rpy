@@ -8,7 +8,7 @@ translate simplified_chinese r3_drawing_b59970b3:
 translate simplified_chinese r3_drawing_eb3d397d:
 
     # p "Don’t underestimate me, the romance master!"
-    p "「[player_name]可是恋爱大师啊」"
+    p "「[player_name!t]可是恋爱大师啊」"
 
 # game/r3_drawing.rpy:10
 translate simplified_chinese r3_drawing_2eb5fd9f:
@@ -38,7 +38,7 @@ translate simplified_chinese r3_drawing_56b80ce5:
 translate simplified_chinese r3_drawing_caa0da88:
 
     # "Without really thinking about it, I checked my phone."
-    "[player_name]下意识地取出手机看了一眼。"
+    "[player_name!t]下意识地取出手机看了一眼。"
 
 # game/r3_drawing.rpy:24
 translate simplified_chinese r3_drawing_3d6763b4:
@@ -104,7 +104,7 @@ translate simplified_chinese r3_drawing_65285ca1:
 translate simplified_chinese r3_drawing_358edc28:
 
     # pi "Let’s go, Kohigashi!"
-    pi "「[player_last_name]女士，我们走吧！」"
+    pi "「[player_last_name!t]女士，我们走吧！」"
 
 # game/r3_drawing.rpy:58
 translate simplified_chinese r3_drawing_01a85f83:
@@ -164,7 +164,7 @@ translate simplified_chinese r3_drawing_a531f687:
 translate simplified_chinese r3_drawing_3ee217ff:
 
     # "I looked at the monitor. On the screen, “Just a little bit more!” was displayed in large font."
-    "[player_name]坐到了电脑前的椅子上。屏幕上显示着「只剩最后一点了」这７个字。"
+    "[player_name!t]坐到了电脑前的椅子上。屏幕上显示着「只剩最后一点了」这７个字。"
 
 # game/r3_drawing.rpy:90
 translate simplified_chinese r3_drawing_c8ea8a4a:
@@ -314,7 +314,7 @@ translate simplified_chinese drawing_fail_243410c3:
 translate simplified_chinese drawing_fail_555bd038:
 
     # "I suddenly woke up on my bed. My phone was ringing."
-    "[player_name]突然从床上醒了过来。手机响了好一阵了。"
+    "[player_name!t]突然从床上醒了过来。手机响了好一阵了。"
     "接起电话。"
 
 # game/r3_drawing.rpy:174
@@ -339,7 +339,7 @@ translate simplified_chinese drawing_fail_31b5096d:
 translate simplified_chinese drawing_fail_62f7d1de:
 
     # "While running towards the park, that dream? kept spinning in my mind."
-    "[player_name]立刻挂断了电话，从房间里冲了出去。跑去公园的途中，那个梦？一直盘旋在人鱼的脑海里。"
+    "[player_name!t]立刻挂断了电话，从房间里冲了出去。跑去公园的途中，那个梦？一直盘旋在人鱼的脑海里。"
 
 # game/r3_drawing.rpy:184
 translate simplified_chinese drawing_fail_4181f155:

@@ -2,13 +2,13 @@
 translate simplified_chinese r2_final_7f21cf64:
 
     # e "Hitona!"
-    e "「[player_name]——」"
+    e "「[player_name!t]——」"
 
 # game/r2_final.rpy:6
 translate simplified_chinese r2_final_a5f5e9ba:
 
     # e "Hey, Hitona!"
-    e "「喂，[player_name]——」"
+    e "「喂，[player_name!t]——」"
 
 # game/r2_final.rpy:8
 translate simplified_chinese r2_final_3d6763b4:
@@ -86,7 +86,7 @@ translate simplified_chinese r2_final_9331098c:
 translate simplified_chinese r2_final_d8f52e55:
 
     # "At that moment, a great number of memories suddenly surfaced in my mind like a storm."
-    "这时，[player_name]的脑海中突然掀起了一阵记忆风暴。"
+    "这时，[player_name!t]的脑海中突然掀起了一阵记忆风暴。"
 
 # game/r2_final.rpy:44
 translate simplified_chinese r2_final_0978a9a5:
@@ -248,7 +248,7 @@ translate simplified_chinese r2_final_after_battle_ce21acb3:
 translate simplified_chinese final_no_grand_spell_9a87a4a2:
 
     # p "I won’t use it! I don’t want to use it!"
-    p "「不使用魔法！[player_name]不想用！」"
+    p "「不使用魔法！[player_name!t]不想用！」"
 
 # game/r2_final.rpy:139
 translate simplified_chinese final_no_grand_spell_ecc951e5:
@@ -356,7 +356,7 @@ translate simplified_chinese final_grand_spell_9fa3259e:
 translate simplified_chinese final_grand_spell_3513c7b8:
 
     # p "Tranquility, Turmoil, Rage! I, Hitona, the ruler of the composition of emotions, order you. Combine, and unleash your true power!"
-    p "「平静啊、混乱啊、愤怒啊！[player_name]作为统领一切情感构成之人，在此下令！凝结、并解放出真正的力量吧！」"
+    p "「平静啊、混乱啊、愤怒啊！[player_name!t]作为统领一切情感构成之人，在此下令！凝结、并解放出真正的力量吧！」"
 
 # game/r2_final.rpy:200
 translate simplified_chinese final_grand_spell_67990cda:
@@ -375,7 +375,7 @@ translate simplified_chinese final_grand_spell_70ac1851:
 translate simplified_chinese final_grand_spell_74150a5b:
 
     # "As we cast the Grand Spell, a rainbow ball of magic from me and pitch black ball of magic from Eve combined together, and filled the castle with a blinding light."
-    "咏唱出《创成破灭魔法》的咒文后，来自[player_name]的粉红色魔法球和来自伊芙的黑色魔法球相互融合，炫目的光芒充斥了整座城堡。"
+    "咏唱出《创成破灭魔法》的咒文后，来自[player_name!t]的粉红色魔法球和来自伊芙的黑色魔法球相互融合，炫目的光芒充斥了整座城堡。"
 
 # game/r2_final.rpy:208
 translate simplified_chinese final_grand_spell_05ccd92c:
@@ -459,7 +459,7 @@ translate simplified_chinese final_good_end_fd81ac0a:
 translate simplified_chinese final_good_end_b06907eb:
 
     # "I hugged Eve, who, even though she used Void, was still alive, tightly."
-    "尽管使用了《空》，伊芙还是活了下来。[player_name]紧紧地抱紧了她。"
+    "尽管使用了《空》，伊芙还是活了下来。[player_name!t]紧紧地抱紧了她。"
 
 # game/r2_final.rpy:263
 translate simplified_chinese final_good_end_850ff8b9:
@@ -483,13 +483,13 @@ translate simplified_chinese final_good_end_f11e976f:
 translate simplified_chinese final_good_end_4081c499:
 
     # e "Thank you, Hitona...truly..."
-    e "「[player_name]，真的很感谢你…」"
+    e "「[player_name!t]，真的很感谢你…」"
 
 # game/r2_final.rpy:271
 translate simplified_chinese final_good_end_a70348ae:
 
     # p "Hey...I had a lot of fun too"
-    p "「没什么，[player_name]也很开心哦」"
+    p "「没什么，[player_name!t]也很开心哦」"
 
 # game/r2_final.rpy:275
 translate simplified_chinese final_good_end_f4dd13f5:
@@ -507,7 +507,7 @@ translate simplified_chinese final_good_end_b02cc129:
 translate simplified_chinese final_good_end_65a5aff0:
 
     # "I suddenly felt very dizzy, and then everything went black..."
-    "[player_name]突然感到一阵头晕目眩，紧接着眼前一黑…"
+    "[player_name!t]突然感到一阵头晕目眩，紧接着眼前一黑…"
 
 # game/r2_final.rpy:283
 translate simplified_chinese final_good_end_8107aff0:

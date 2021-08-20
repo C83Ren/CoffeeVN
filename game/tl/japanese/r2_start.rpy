@@ -116,8 +116,8 @@ translate japanese r2_start_339fa61e:
 # game/r2_start.rpy:59
 translate japanese r2_start_9159ad52:
 
-    # e "I see, I see, so your name is [player_full_name], and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
-    e "「成程、成程。貴方は[player_full_name]、遠方から此処に召還した人は…えっっと…この名前の読み方は…リス…リズナ…えっと…ああ、もう、わかんない！でも後で感謝をちゃんと伝えるべき…」"
+    # e "I see, I see, so your name is [player_full_name!t], and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
+    e "「成程、成程。貴方は[player_full_name!t]、遠方から此処に召還した人は…えっっと…この名前の読み方は…リス…リズナ…えっと…ああ、もう、わかんない！でも後で感謝をちゃんと伝えるべき…」"
 
 # game/r2_start.rpy:61
 translate japanese r2_start_70682ee9:
@@ -248,8 +248,8 @@ translate japanese r2_start_6aeae3f0:
 # game/r2_start.rpy:122
 translate japanese r2_start_ba635e0c:
 
-    # e "Well, it’s no good having [player_name] go deeper into the forest, so I guess we just have to stop him here!"
-    e "「まぁ、[player_name]が森の奥に行ってはいけないのでここで倒すしかない！」"
+    # e "Well, it’s no good having [player_name!t] go deeper into the forest, so I guess we just have to stop him here!"
+    e "「まぁ、[player_name!t]が森の奥に行ってはいけないのでここで倒すしかない！」"
 
 # game/r2_start.rpy:124
 translate japanese r2_start_a9ff53b4:
@@ -321,7 +321,7 @@ translate japanese r2_start_after_battle_03af76a7:
 translate japanese r2_start_after_battle_777b0858:
 
     # p "Wait no, to begin with, I shouldn’t even be able to use magic right?"
-    p "「いや、そもそも、魔法を使えるはずがないでしょ、[player_name]は？」"
+    p "「いや、そもそも、魔法を使えるはずがないでしょ、[player_name!t]は？」"
 
 # game/r2_start.rpy:181
 translate japanese r2_start_after_battle_9a0d5a5b:
@@ -363,7 +363,7 @@ translate japanese r2_start_after_battle_7938ff9d:
 translate japanese r2_start_after_battle_e6357b4f:
 
     # p "So anyways, why did that soldier attack us again?"
-    p "「で、なんであの兵士が[player_name]たちを攻めたんですか？」"
+    p "「で、なんであの兵士が[player_name!t]たちを攻めたんですか？」"
 
 # game/r2_start.rpy:197
 translate japanese r2_start_after_battle_010d00e4:
@@ -416,7 +416,7 @@ translate japanese r2_start_after_battle_51cd79b1:
 # game/r2_start.rpy:219
 translate japanese r2_start_after_battle_cd9e784d:
 
-    # e "Well either way, come with me [player_name]!"
+    # e "Well either way, come with me [player_name!t]!"
     e "「とにかく、付いてきて！」"
 
 # game/r2_start.rpy:221

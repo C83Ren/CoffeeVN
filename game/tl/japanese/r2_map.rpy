@@ -8,7 +8,7 @@ translate japanese r2_map_1_31851aac:
 translate japanese r2_map_1_a1ae2553:
 
     # p "How do you do that!? I don’t want to carry anything either!"
-    p "「それどうするの？[player_name]も何も持ちたいです！」"
+    p "「それどうするの？[player_name!t]も何も持ちたいです！」"
 
 # game/r2_map.rpy:15
 translate japanese r2_map_1_181252c0:
@@ -176,7 +176,7 @@ translate japanese map_talk_1cf54bad:
 translate japanese map_talk_389a6ba9:
 
     # p "To be honest, I’m really excited!"
-    p "「正直に[player_name]も楽しみにしてますね」"
+    p "「正直に[player_name!t]も楽しみにしてますね」"
 
 # game/r2_map.rpy:143
 translate japanese map_talk_94ebf013:

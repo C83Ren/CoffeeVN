@@ -7,8 +7,8 @@ translate japanese r1_after_movie_545cb68f:
 # game/r1_after_movie.rpy:6
 translate japanese r1_after_movie_460a966d:
 
-    # s "Yaaay! It’s a promise okay, [player_name] onee-chan!"
-    s "「わーい！やくそくだよ、[player_name]おねえちゃん！」"
+    # s "Yaaay! It’s a promise okay, [player_name!t] onee-chan!"
+    s "「わーい！やくそくだよ、[player_name!t]おねえちゃん！」"
 
 # game/r1_after_movie.rpy:8
 translate japanese r1_after_movie_909d30dc:
