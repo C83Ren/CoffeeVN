@@ -25,7 +25,10 @@ init +1 python:
 label bad_end:
     window hide
     $ _skipping = False
-    show image 'images/bad_end.png' with dissolve
+    if _preferences.language == 'simplified_chinese':
+        show image 'images/bad_end_c.png' with dissolve
+    else:
+        show image 'images/bad_end.png' with dissolve
     $ renpy.pause(1.0, hard=True)
     pause
     $ _skipping = True
