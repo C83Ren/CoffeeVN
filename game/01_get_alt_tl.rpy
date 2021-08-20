@@ -9,6 +9,10 @@ init python:
             _rtl_maps[language] = {v: k for k, v in renpy.game.script.translator.strings[language].translations.items()}
         return _rtl_maps[language]
 
+    # expand variables, etc.
+    def expand_string(what):
+        return renpy.substitutions.substitute(what, scope=None, force=False, translate=False)[0]
+
     # get tl in another language **for the current position only**
     def get_alt_tl(what, alt_language = 'simplified_chinese'):
         if renpy.game.context().translate_identifier:
@@ -18,7 +22,7 @@ init python:
             index = 0
             node = renpy.game.script.translator.lookup_translate(renpy.game.context().translate_identifier)
             # what already has variables substituted in but node.what doesn't
-            while not isinstance(node, renpy.ast.EndTranslate) and (not isinstance(node, renpy.ast.Say) or renpy.substitutions.substitute(node.what, scope=None, force=False, translate=False)[0] != what):
+            while not isinstance(node, renpy.ast.EndTranslate) and (not isinstance(node, renpy.ast.Say) or expand_string(node.what) != what):
                 node = node.next
                 index += 1
             if isinstance(node, renpy.ast.EndTranslate):
@@ -34,7 +38,7 @@ init python:
                     alt_tl_what = ''
                 else:
                     alt_tl_what = alt_tl.what
-                alt_tl_what = renpy.substitutions.substitute(alt_tl_what, scope=None, force=False, translate=False)[0]
+                alt_tl_what = expand_string(alt_tl_what)
                 renpy.game.preferences.language = old_language
             else:
                 alt_tl_what = ''
@@ -46,7 +50,7 @@ init python:
                 what = rtl_map[what]
                 alt_tl_what = renpy.translation.translate_string(what, alt_language)
                 old_language, renpy.game.preferences.language = renpy.game.preferences.language, alt_language
-                alt_tl_what = renpy.substitutions.substitute(alt_tl_what, scope=None, force=False, translate=False)[0]
+                alt_tl_what = expand_string(alt_tl_what)
                 renpy.game.preferences.language = old_language
             else:
                 alt_tl_what = ''
