@@ -209,6 +209,10 @@ translate simplified_chinese strings:
     old "Attempt to double your damage by playing rock paper scissors?"
     new "要通过猜拳让伤害加倍吗？"
 
+    # game/battle_mechanic.rpy:383
+    old "[player_name]"
+    new "[player_name]"
+
 init python:
     def to_full_width(n):
         return (''.join(list('０１２３４５６７８９')[int(x)] for x in str(n)))

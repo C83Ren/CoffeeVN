@@ -63,3 +63,7 @@ translate simplified_chinese strings:
     # game/characters.rpy:18
     old "Rabbit"
     new "兔子"
+
+    # game/characters.rpy:4
+    old "Kohigashi"
+    new "小东"

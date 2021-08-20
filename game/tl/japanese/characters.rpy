@@ -63,3 +63,7 @@ translate japanese strings:
     # game/characters.rpy:18
     old "Rabbit"
     new "ウサギ"
+
+    # game/characters.rpy:4
+    old "Kohigashi"
+    new "小東"

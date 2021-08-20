@@ -620,3 +620,43 @@ translate japanese strings:
     # game/intro.rpy:150
     old "All of them"
     new "全て"
+
+    # game/intro.rpy:122
+    old "Koppi"
+    new "こっぴー"
+
+    # game/intro.rpy:122
+    old "Kohi"
+    new "こっひー"
+
+    # game/intro.rpy:122
+    old "Hitoo"
+    new "ひとお"
+
+    # game/intro.rpy:122
+    old "Hitopi"
+    new "ひとぴ"
+
+    # game/intro.rpy:122
+    old "HitonaP"
+    new "ひとなＰ"
+
+    # game/intro.rpy:122
+    old "GashiP"
+    new "がしＰ"
+
+    # game/intro.rpy:122
+    old "P"
+    new "Ｐ"
+
+    # game/intro.rpy:131
+    old "Hitoo Kohigashi"
+    new "小東ひとお"
+
+    # game/intro.rpy:133
+    old "Hitopi Kohigashi"
+    new "小東ひとぴ"
+
+    # game/intro.rpy:139
+    old "KohigashiP"
+    new "小東Ｐ"

@@ -620,3 +620,43 @@ translate simplified_chinese strings:
     # game/intro.rpy:150
     old "All of them"
     new "以上全部"
+
+    # game/intro.rpy:122
+    old "Koppi"
+    new "小墩儿"
+
+    # game/intro.rpy:122
+    old "Kohi"
+    new "小东"
+
+    # game/intro.rpy:122
+    old "Hitoo"
+    new "人雄"
+
+    # game/intro.rpy:122
+    old "Hitopi"
+    new "人鱼儿"
+
+    # game/intro.rpy:122
+    old "HitonaP"
+    new "人鱼P"
+
+    # game/intro.rpy:122
+    old "GashiP"
+    new "小东P"
+
+    # game/intro.rpy:122
+    old "P"
+    new "P"
+
+    # game/intro.rpy:131
+    old "Hitoo Kohigashi"
+    new "小东人雄"
+
+    # game/intro.rpy:133
+    old "Hitopi Kohigashi"
+    new "小东人鱼儿"
+
+    # game/intro.rpy:139
+    old "KohigashiP"
+    new "小东P"
