@@ -425,7 +425,7 @@ translate simplified_chinese start_0e96fbb6:
 translate simplified_chinese start_b49418a7:
 
     # "“You are a very ambitious person. No matter what it is, you always want to give it 100%%, no, 200%% effort!”"
-    "『你是一位拥有野心的人。你会用100%，不，甚至用200%的精力去挑战一切事物！』"
+    "『你是一位拥有野心的人。你会用100%%，不，甚至用200%的精力去挑战一切事物！』"
 
 # game/intro.rpy:210
 translate simplified_chinese start_62554d0a:

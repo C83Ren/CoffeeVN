@@ -773,7 +773,7 @@ translate simplified_chinese village_house_3_3_6df8d477:
 translate simplified_chinese village_house_4_1_374e488e:
 
     # e "This a very dangerous domain; let’s explore somewhere else first!"
-    e "「此処は非常に危険な領域である、先ずは他の場所に訪れよう！」"
+    e "「这个地方非常危险，我们先探索其他地方吧！」"
 
 # game/r2_village.rpy:451
 translate simplified_chinese village_house_4_1_20fb6438:

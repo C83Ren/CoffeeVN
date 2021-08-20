@@ -458,7 +458,7 @@ translate simplified_chinese end_3_236ec950:
 translate simplified_chinese end_3_aa9c918b:
 
     # nvl_narrator "“{b}How many cards are there in a suit in a deck of cards? The answer appears in the passcode.{/b}”"
-    nvl_narrator "　{b}「扑克牌中每种花色各有几张牌？答案会出现在四位密码中。」{/b}{/b}"
+    nvl_narrator "　{b}「扑克牌中每种花色各有几张牌？答案会出现在四位密码中。」{/b}"
 
 # game/r3_end.rpy:203
 translate simplified_chinese end_3_03f92b7f:
