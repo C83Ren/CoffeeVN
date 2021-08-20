@@ -70,49 +70,49 @@ label r3_sing:
     play sound quizstart
     "{b}LET'S START{/b}"
 
-    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics that come next." sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku"
+    check_lyrics l "audio/Hana_ni_Bourei.mp3" "Type in the lyrics that come next." sing_retry "あせをぬぐってなつめく" "aseonuguttenatsumeku" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}"
     pi "What a fitting song...this was on purpose wasn’t it?"
     l "I have no idea what you’re talking about."
     "{b}NEXT{/b}"
 
-    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics that come next." sing_retry "でかいけつさせましょう" "dekaiketsusasemashou"
+    check_lyrics l "audio/mousouzei.mp3" "Type in the lyrics that come next." sing_retry "でかいけつさせましょう" "dekaiketsusasemashou" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}"
     pi "I never really understood this song."
     l "Just shows how young you are."
     "{b}NEXT{/b}"
 
-    check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next." sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji"
+    check_lyrics l "audio/cherry.mp3" "Type in the lyrics that come next." sing_retry "ゆびさきでおくるきみへのめっせーじ" "yubisakideokurukimienomesseeji" "yubisakideokurukimienomesse-ji" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}"
     pi "Lios don’t be such a tsundere, if you like Kohigashi, just say so."
     l "You’re definitely tired. aren’t you..."
     "{b}NEXT{/b}"
 
-    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics that come next." sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta" "きょうのためいっしょうけんめいがんばった" "kyounotameisshoukenmeiganbatta"
+    check_lyrics l "audio/jikoshoukai.mp3" "Type in the lyrics that come next." sing_retry "きょうのためいっしょけんめいがんばった" "kyounotameisshokenmeiganbatta" "きょうのためいっしょうけんめいがんばった" "kyounotameisshoukenmeiganbatta" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}"
     pi "Pierrot also did her best!"
     l "Did your best to make things harder~"
     "{b}NEXT{/b}"
 
-    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next." sing_retry "ぼくのなまえ" "bokunonamae"
+    check_lyrics l "audio/futariboshi.mp3" "Type in the lyrics that come next." sing_retry "ぼくのなまえ" "bokunonamae" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}" id r3_sing_a403d1d8
     pi "What was this song's name again?" id r3_sing_fb37f0d8
     l "Pretty sure it's Hitoriboshi...but now that you ask, I'm not so sure anymore." id r3_sing_4aa33a81
     "{b}NEXT{/b}" id r3_sing_4454a96a
 
-    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next." sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo"
+    check_lyrics l "audio/SAKURA.mp3" "Type in the lyrics that come next." sing_retry "いまはるにつつまれていくよ" "imawarunitsutsumareteikuyo" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}"
     pi "Spring is such a bittersweet season."
     l "You’re right, just like right now, when it all ends, you can only reminisce."
     "{b}NEXT{/b}"
 
-    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics that come next." sing_retry "でもぼくにはそんざいしないからじゃあせめてここにきてよ" "demobokuniwasonzaishinaikarajaasemetekokonikiteyo"
+    check_lyrics l "audio/Kokoronashi.mp3" "Type in the lyrics that come next." sing_retry "でもぼくにはそんざいしないからじゃあせめてここにきてよ" "demobokuniwasonzaishinaikarajaasemetekokonikiteyo" "俺不知道"
     play sound correctchoice
     "{b}CORRECT{/b}"
     pi "Listening to this always makes me shiver, don’t you Lios?"
