@@ -236,8 +236,8 @@ translate japanese village_house_1_1_d0d441c3:
 # game/r2_village.rpy:191
 translate japanese village_house_1_1_4ac634e1:
 
-    # p "Nice to meet you, I’m [player_name] Kohigashi."
-    p "「初めまして、小東[player_name]です」"
+    # p "Nice to meet you, I’m [player_full_name]."
+    p "「初めまして、[player_full_name]です」"
 
 # game/r2_village.rpy:193
 translate japanese village_house_1_1_5df01ba1:
@@ -410,14 +410,14 @@ translate japanese village_house_2_2_e8d1815a:
 # game/r2_village.rpy:283
 translate japanese village_house_2_2_ca928913:
 
-    # p "It’s [player_name] Kohigashi."
-    p "「小東[player_name]と申します」"
+    # p "It’s [player_full_name]."
+    p "「[player_full_name]と申します」"
 
 # game/r2_village.rpy:285
 translate japanese village_house_2_2_509080dd:
 
-    # hs "Kohigashi hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
-    hs "「小東さん？イーブが言った通り、あなたが救済者では本当だったら…と思います」"
+    # hs "[player_last_name] hmm? It would be nice if what Eve said, about you being the world’s salvation, is true..."
+    hs "「[player_last_name]さん？イーブが言った通り、あなたが救済者では本当だったら…と思います」"
 
 # game/r2_village.rpy:287
 translate japanese village_house_2_2_744470eb:
@@ -458,8 +458,8 @@ translate japanese village_house_3_1_d24acfd4:
 # game/r2_village.rpy:309
 translate japanese village_house_3_1_4ac634e1:
 
-    # p "Nice to meet you, I’m [player_name] Kohigashi."
-    p "「初めまして、小東[player_name]です」"
+    # p "Nice to meet you, I’m [player_full_name]."
+    p "「初めまして、[player_full_name]です」"
     "隊長" "「初めまして」"
 
 # game/r2_village.rpy:311

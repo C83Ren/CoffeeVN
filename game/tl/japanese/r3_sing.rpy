@@ -181,8 +181,8 @@ translate japanese r3_sing_fd44eb4a_2:
 # game/r3_sing.rpy:86
 translate japanese r3_sing_b1138583:
 
-    # pi "Lios don’t be such a tsundere, if you like Kohigashi, just say so."
-    pi "「リオス、ツンデレするな、小東さんが好きならはっきりと言えよ」"
+    # pi "Lios don’t be such a tsundere, if you like [player_last_name], just say so."
+    pi "「リオス、ツンデレするな、[player_last_name]さんが好きならはっきりと言えよ」"
 
 # game/r3_sing.rpy:87
 translate japanese r3_sing_006a941f:
@@ -303,7 +303,7 @@ translate japanese sing_retry_42018e78:
 translate japanese sing_retry_b45c71c5:
 
     # pi "Let’s try again!"
-    pi "「もう一度やってみましょう、小東さん！」"
+    pi "「もう一度やってみましょう、[player_last_name]さん！」"
 
 # game/r3_sing.rpy:135
 translate japanese sing_retry_83d42ed8:

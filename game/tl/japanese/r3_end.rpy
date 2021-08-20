@@ -19,8 +19,8 @@ translate japanese end_3_a0f52526:
 # game/r3_end.rpy:17
 translate japanese end_3_307d4a53:
 
-    # pi "Don’t you think so too, Kohigashi?"
-    pi "「そう思いませんか、小東さん？」"
+    # pi "Don’t you think so too, [player_last_name]?"
+    pi "「そう思いませんか、[player_last_name]さん？」"
 
 # game/r3_end.rpy:19
 translate japanese end_3_76a54290:
@@ -379,7 +379,7 @@ translate japanese end_3_dadae54b:
 # game/r3_end.rpy:169
 translate japanese end_3_098db7b4:
 
-    # pi "Don’t be sad, we’ll still be with you, Kohigashi."
+    # pi "Don’t be sad, we’ll still be with you, [player_last_name]."
     pi "「落ち込まないで、これからも一緒にいますから」"
 
 # game/r3_end.rpy:171
@@ -683,8 +683,8 @@ translate japanese r3_secret_ending_7dea0491:
 # game/r3_end.rpy:298
 translate japanese r3_secret_ending_8291af07:
 
-    # p "I’m [player_name] Kohigashi."
-    p "「小東[player_name]といいます」"
+    # p "I’m [player_full_name]."
+    p "「[player_full_name]といいます」"
 
 # game/r3_end.rpy:300
 translate japanese r3_secret_ending_df2f1c90:
@@ -893,8 +893,8 @@ translate japanese r3_secret_ending_1301593f:
 # game/r3_end.rpy:365
 translate japanese r3_secret_ending_64b9cd4d:
 
-    # pi "Sorry, Kohigashi! Lios mistakenly left the gateway to this world when he was setting up the maze!"
-    pi "「ごめんなさい、小東さん！迷路を作るときにリオスがこの世界に通じるポータルをつい開き残ってしまいました！」"
+    # pi "Sorry, [player_last_name]! Lios mistakenly left the gateway to this world when he was setting up the maze!"
+    pi "「ごめんなさい、[player_last_name]さん！迷路を作るときにリオスがこの世界に通じるポータルをつい開き残ってしまいました！」"
 
 # game/r3_end.rpy:367
 translate japanese r3_secret_ending_accec14b:
@@ -972,7 +972,7 @@ translate japanese r3_secret_ending_c58daf0a:
 translate japanese r3_secret_ending_e30bd0cf:
 
     # pi "I’m also glad we get to see each other again! It’s actually a little bit lonely after all the fun we had."
-    pi "「私も小東さんとまた会えてよかったですよ！あの時間はとても楽しかったし、最近少し寂しくなってしまったんです！」"
+    pi "「私も[player_last_name]さんとまた会えてよかったですよ！あの時間はとても楽しかったし、最近少し寂しくなってしまったんです！」"
 
 # game/r3_end.rpy:399
 translate japanese r3_secret_ending_bf776f74:

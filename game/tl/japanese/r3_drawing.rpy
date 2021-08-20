@@ -103,8 +103,8 @@ translate japanese r3_drawing_65285ca1:
 # game/r3_drawing.rpy:56
 translate japanese r3_drawing_358edc28:
 
-    # pi "Let’s go, Kohigashi!"
-    pi "「行きましょう、小東さん！」"
+    # pi "Let’s go, [player_last_name]!"
+    pi "「行きましょう、[player_last_name]さん！」"
 
 # game/r3_drawing.rpy:58
 translate japanese r3_drawing_01a85f83:

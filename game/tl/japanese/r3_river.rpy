@@ -31,8 +31,8 @@ translate japanese r3_river_9161669b:
 # game/r3_river.rpy:28
 translate japanese r3_river_8a2de425:
 
-    # p "Let’s just move on to the next challenge, Kohigashi."
-    p "「とりあえず、次のチャレンジに行きましょう、小東さん」"
+    # p "Let’s just move on to the next challenge, [player_last_name]."
+    p "「とりあえず、次のチャレンジに行きましょう、[player_last_name]さん」"
 
 # game/r3_river.rpy:30
 translate japanese r3_river_20e64d10:
@@ -500,7 +500,7 @@ translate japanese river_love_73bd2e40:
 translate japanese river_love_e2ed523e:
 
     # pi "You got her good!"
-    pi "「小東さん、なかなかやりますね！」"
+    pi "「[player_last_name]さん、なかなかやりますね！」"
 
 # game/r3_river.rpy:268
 translate japanese river_love_a0d83d9b:
@@ -1010,7 +1010,7 @@ translate japanese river_girlfriend_48a4f283:
 translate japanese river_girlfriend_6f48042c:
 
     # pi "I guess your everything wasn’t enough."
-    pi "「小東さんのすべては足りてないかもですね」"
+    pi "「[player_last_name]さんのすべては足りてないかもですね」"
 
 # game/r3_river.rpy:548
 translate japanese river_girlfriend_f71bfc0f:

@@ -61,8 +61,8 @@ translate japanese r3_start_cf304bae:
 # game/r3_start.rpy:26
 translate japanese r3_start_612502a4:
 
-    # "？？？" "Kohigashi! Phantom Thief Lios has stolen something from you!"
-    "？？？" "「小東さん！怪盗リオスがあなたから盗みました！」"
+    # "？？？" "[player_last_name]! Phantom Thief Lios has stolen something from you!"
+    "？？？" "「[player_last_name]さん！怪盗リオスがあなたから盗みました！」"
 
 # game/r3_start.rpy:28
 translate japanese r3_start_dddb1a61:
@@ -92,7 +92,7 @@ translate japanese r3_start_44ae8396:
 translate japanese r3_start_7a106a26:
 
     # "？？？" "Lios has stolen something that’s very important to you!"
-    "？？？" "「リオスが小東さんにとって大切なものを盗みました！」"
+    "？？？" "「リオスが[player_last_name]さんにとって大切なものを盗みました！」"
 
 # game/r3_start.rpy:38
 translate japanese r3_start_5c134204:
@@ -115,8 +115,8 @@ translate japanese r3_start_b86f8c70:
 # game/r3_start.rpy:48
 translate japanese r3_start_9ec02c2e:
 
-    # nvl_narrator "“[player_name] Kohigashi!”"
-    nvl_narrator "『小東[player_name]！"
+    # nvl_narrator "“[player_full_name]!”"
+    nvl_narrator "『[player_full_name]！"
 
 # game/r3_start.rpy:50
 translate japanese r3_start_a40cc8d4:
