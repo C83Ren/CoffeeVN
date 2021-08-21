@@ -84,6 +84,11 @@ define gui.notify_text_size = 24
 ## The size of the headers in game menu.
 define gui.game_menu_header_text_size = 45
 
+define gui.tl_fonts = {
+    None: "DejaVuSans.ttf",
+    "japanese": "tl/japanese/SourceHanSansLite.ttf",
+    "simplified_chinese": "tl/simplified_chinese/ui.ttf",
+}
 
 ## Main and Game Menus #########################################################
 

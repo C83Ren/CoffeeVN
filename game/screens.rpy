@@ -124,6 +124,7 @@ screen say(who, what):
                     fixed:
                         text "[alt_tl]":
                             style "say_dialogue"
+                            font gui.tl_fonts[persistent.alt_language]
                             slow_cps preferences.text_cps
                             line_spacing -5
         else:
@@ -134,6 +135,7 @@ screen say(who, what):
                 $ alt_tl = get_alt_tl(what)
                 text alt_tl:
                     style "say_dialogue"
+                    font gui.tl_fonts[persistent.alt_language]
                     slow_cps preferences.text_cps
                     line_spacing -5
                     yoffset 105
@@ -1407,17 +1409,17 @@ screen nvl(dialogue, dialogue_tl, items=None):
                 cols 1
                 yinitial 1.0
 
-                use nvl_dialogue(dialogue)
+                use nvl_dialogue(dialogue, is_tl=False)
         elif persistent.alt_language:
             vbox:
                 fixed ysize 540:
                     vbox spacing gui.nvl_spacing:
-                        use nvl_dialogue(dialogue)
+                        use nvl_dialogue(dialogue, is_tl=False)
                 fixed ysize 540:
                     vbox spacing gui.nvl_spacing:
-                        use nvl_dialogue(dialogue_tl)
+                        use nvl_dialogue(dialogue_tl, is_tl=True)
         else:
-            use nvl_dialogue(dialogue)
+            use nvl_dialogue(dialogue, is_tl=False)
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True, as it is above.
@@ -1430,7 +1432,7 @@ screen nvl(dialogue, dialogue_tl, items=None):
     add SideImage() xalign 0.0 yalign 1.0
 
 
-screen nvl_dialogue(dialogue):
+screen nvl_dialogue(dialogue, is_tl=False):
 
     for d in dialogue:
 
@@ -1449,6 +1451,8 @@ screen nvl_dialogue(dialogue):
                     id d.what_id
                     if d.what_id == 'what_tl':
                         slow_cps preferences.text_cps
+                    if is_tl:
+                        font gui.tl_fonts[persistent.alt_language]
 
 
 ## This controls the maximum number of NVL-mode entries that can be displayed at
