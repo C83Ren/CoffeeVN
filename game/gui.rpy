@@ -68,10 +68,10 @@ define gui.combination_lock_text_font = "DejaVuSans.ttf"
 ## The size of normal dialogue text.
 define gui.text_size_single = 33
 define gui.text_size_dual = 30
-define gui.text_size = gui.preference("text_size", gui.text_size_single)
+define gui.text_size = gui.preference("text_size", gui.text_size_single if not persistent.alt_language else gui.text_size_dual)
 
 ## The size of character names.
-define gui.name_text_size = gui.preference("text_size", gui.text_size_single)
+define gui.name_text_size = gui.text_size
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
@@ -115,7 +115,9 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 644
+define gui.name_xpos_single = 644
+define gui.name_xpos_dual = 644
+define gui.name_xpos = gui.preference("name_xpos", gui.name_xpos_single if not persistent.alt_language else gui.name_xpos_dual)
 define gui.name_ypos = -22
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
@@ -124,7 +126,9 @@ define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = 398
+define gui.namebox_width_single = 398
+define gui.namebox_width_dual = 398
+define gui.namebox_width = gui.preference("namebox_width", gui.namebox_width_single if not persistent.alt_language else gui.namebox_width_dual)
 define gui.namebox_height = 54
 
 ## The borders of the box containing the character's name, in left, top, right,

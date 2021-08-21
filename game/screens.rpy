@@ -177,7 +177,7 @@ style namebox:
     ypos gui.name_ypos
     ysize gui.namebox_height
 
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame("gui/namebox" + ("" if persistent.alt_language else "") + ".png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -804,9 +804,13 @@ init python:
             if persistent.alt_language and not self.alt_language:
                 actions.append(gui.SetPreference('text_size', gui.text_size_single))
                 actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_single))
+                actions.append(gui.SetPreference('namebox_width', gui.namebox_width_single))
+                actions.append(gui.SetPreference('name_xpos', gui.name_xpos_single))
             elif not persistent.alt_language and self.alt_language:
                 actions.append(gui.SetPreference('text_size', gui.text_size_dual))
                 actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_dual))
+                actions.append(gui.SetPreference('namebox_width', gui.namebox_width_dual))
+                actions.append(gui.SetPreference('name_xpos', gui.name_xpos_dual))
                 resize_action = gui.SetPreference('text_size', gui.text_size_dual)
             renpy.change_language(self.language)
             persistent.alt_language = self.alt_language
