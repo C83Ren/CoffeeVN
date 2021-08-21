@@ -122,7 +122,7 @@ translate japanese r2_final_d8b5b1da:
 translate japanese r2_final_4a605b58:
 
     # "And finally, how, in order to cast Void even just one more time, a terrible price would be required from Eve."
-    "そして、《空（から）》をまた一度すらも使うため、イーブに、ある恐ろしい代償が必要のこと。"
+    "そして、《{rb}空{/rb}{rt}から{/rt}》をまた一度すらも使うため、イーブに、ある恐ろしい代償が必要のこと。"
 
 # game/r2_final.rpy:44
 translate japanese r2_final_dc6eb786:
