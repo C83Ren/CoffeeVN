@@ -1,8 +1,8 @@
 #List of Characters will be defined here
-default player_name = __('Hitona')
-default player_full_name = __('Hitona Kohigashi')
-default player_last_name = __('Kohigashi')
-define p = Character("player_name", dynamic=True, color="#880088") #Player a.k.a KohigashiActual
+default player_name = _('Hitona')
+default player_full_name = _('Hitona Kohigashi')
+default player_last_name = _('Kohigashi')
+define p = Character("tl_paren(player_name)", dynamic=True, color="#880088") #Player a.k.a KohigashiActual
 define sn = Character(_('Senpai'), color="#880000")
 define s = Character(_('Shiraishi'), color="#338833", image="hitona1") #KohiLO
 define e = Character(_('Eve'), color="#338833") #KohiC2
