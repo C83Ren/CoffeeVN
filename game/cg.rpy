@@ -112,7 +112,7 @@ init 0:
     image cg 16 unscaled japanese = Image("images/bg rage front.png")
     image cg 16 unscaled simplified_chinese = Image("images/bg rage front.png")
     image cg 16 None = "cg 16 unscaled None"
-    image cg 15 japanese = "cg 16 unscaled japanese"
+    image cg 16 japanese = "cg 16 unscaled japanese"
     image cg 16 simplified_chinese = "cg 16 unscaled simplified_chinese"
     define cg_hint_16 = _("Visit the Rage Region during the Joy Route.")
 
