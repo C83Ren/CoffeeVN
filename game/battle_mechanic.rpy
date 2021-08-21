@@ -603,6 +603,11 @@ label fight_log:
     jump r2_fight
 
 label fight_fail:
+    hide screen multi_stat with dissolve
+    hide screen multi_sprite with dissolve
+    scene black with dissolve
     "Having lost the fight, you’ve become unable to save the kingdom."
 
-    return
+    $ textbox_menu = False
+    $ save_enabled = True
+    jump bad_end
