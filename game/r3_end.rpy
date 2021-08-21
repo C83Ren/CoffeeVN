@@ -321,7 +321,9 @@ label r3_secret_ending:
 
         nvl_narrator "Did you have fun?"
 
-        nvl_narrator "What would you like as a reward for reaching the secret exit?"
+        nvl clear
+
+        nvl_narrator "What would you like as a reward for reaching the secret exit?" id r3_secret_ending_f48ead93
 
         nvl_narrator "Would you like to see a 10 page essay on how cute Hitona is?"
 

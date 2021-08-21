@@ -365,7 +365,7 @@ translate japanese start_6832af1f:
 translate japanese start_6d8a74d3:
 
     # "“You are an infinite source of cheerfulness. Everyone around you immediately becomes cheerful just being near you. I have no idea how, but I want one of you right here in my home!”"
-    "『あなたは無限大の元気に満ち溢れる人です。あなたがいると、周りの人たちはまっすぐに元気になります。方法がわかりませんが、1つのあなたをお持ち帰りぃ〜』"
+    "『あなたは無限大の元気に満ち溢れる人です。あなたがいると、周りの人たちはすぐに元気になります。方法がわかりませんが、１つのあなたをお持ち帰りぃ〜』"
 
 # game/intro.rpy:189
 translate japanese start_85507afc:

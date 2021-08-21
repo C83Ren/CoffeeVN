@@ -117,7 +117,8 @@ translate japanese r2_start_339fa61e:
 translate japanese r2_start_9159ad52:
 
     # e "I see, I see, so your name is [player_full_name!t], and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
-    e "「成程、成程。貴方は[player_full_name!t]、遠方から此処に召還した人は…えっっと…この名前の読み方は…リス…リズナ…えっと…ああ、もう、わかんない！でも後で感謝をちゃんと伝えるべき…」"
+    e "「成程、成程。貴方は[player_full_name!t]、遠方から此処に召還した人は…えっっと…」"
+    e "「この名前の読み方は…リス…リズナ…えっと…ああ、もう、わかんない！でも後で感謝をちゃんと伝えるべき…」"
 
 # game/r2_start.rpy:61
 translate japanese r2_start_70682ee9:

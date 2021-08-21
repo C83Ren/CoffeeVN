@@ -117,7 +117,8 @@ translate simplified_chinese r2_start_339fa61e:
 translate simplified_chinese r2_start_9159ad52:
 
     # e "I see, I see, so your name is Hitona Kohigashi, and you were summoned here by...hmm how do I say this name...List...Lizen...uh...ahh, geez I can’t read this! But I should say my thanks to them later..."
-    e "「「原来如此，原来如此。你是[player_full_name!t]，而将你召唤至此的是…那个…名字怎么读来着…莉斯…莉兹娜…呃…搞不懂了就算了吧！不过之后要好好传达感谢之情…」"
+    e "「原来如此，原来如此。你是[player_full_name!t]，而将你召唤至此的是…那个…」"
+    e "「名字怎么读来着…莉斯…莉兹娜…呃…搞不懂了就算了吧！不过之后要好好传达感谢之情…」"
 
 # game/r2_start.rpy:61
 translate simplified_chinese r2_start_70682ee9:
