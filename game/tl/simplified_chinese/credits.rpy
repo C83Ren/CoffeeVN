@@ -78,7 +78,7 @@ translate simplified_chinese strings:
 
     # game/credits.rpy:88
     old "Japanese Translation"
-    new "翻译" # TODO
+    new "日语翻译"
 
     # game/credits.rpy:89
     old "Editing"

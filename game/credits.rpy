@@ -52,7 +52,7 @@ define credits_names = {
 define credits_font = 'tl/japanese/SourceHanSansLite.ttf'
 
 screen credits_centered_text(t):
-    text t xalign 0.5 color '#FFF' font credits_font
+    text t xalign 0.5 color '#FFF' font credits_font size gui.text_size_single
 
 screen credits_space(space):
     fixed xsize 1920 ysize space
@@ -78,21 +78,21 @@ screen credits_message(who, message, img):
         if img:
             fixed xsize 1000 ysize 400 xalign 0.5:
                 vbox xalign 0.5 yalign 0.5 xsize 1000:
-                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_font
+                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_font size gui.text_size_single
                     fixed ysize 70
                     vbox xalign 1.0 yalign 0.5:
                         $ t = '———' + __(credits_names[who])
-                        text t xalign 1.0 color '#FFF' font credits_font
+                        text t xalign 1.0 color '#FFF' font credits_font size gui.text_size_single
             fixed xalign 0.5 ysize 400:
                 image img xalign 0.5 yalign 0.0 xsize 350 ysize 350
         else:
             fixed xsize 1000 ysize 800 xalign 0.5:
                 vbox xalign 0.5 yalign 0.5 xsize 1000:
-                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_font
+                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_fon size gui.text_size_singlet
                     fixed ysize 70
                     vbox xalign 1.0 yalign 0.5:
                         $ t = '———' + __(credits_names[who])
-                        text t xalign 1.0 color '#FFF' font credits_font
+                        text t xalign 1.0 color '#FFF' font credits_font size gui.text_size_single
 
 screen credits_display():
     predict False
@@ -100,18 +100,21 @@ screen credits_display():
         use credits_space(125)
         use credits_entry(_("Planning"), ["company"])
         use credits_entry(_("Scenario"), ["rabbit", "wari"])
-        use credits_entry(_("Japanese Translation"), ["kosa", "xn"])
         use credits_entry(_("Editing"), ["rabbit", "xn"])
         use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2", "kimagure"])
         use credits_entry(_("Music"), ["luttii", "dova"])
         use credits_entry(_("Sound"), ["zap"])
         use credits_entry(_("Programming"), ["rabbit", "cryo", "xn", "saki"])
+        use credits_entry(_("Japanese Translation"), ["kosa", "xn"])
         use credits_entry(_("Chinese Translation"), ["cc", "gk", "lnusyaha", "suteki", "saki"])
         use credits_entry(_("Chinese Translation Proofreading"), ["cc"])
         use credits_entry(_("Support"), ["pupu"])
         fixed xsize 1920 ysize 1080:
             vbox xalign 0.5 yalign 0.5:
-                image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
+                if _preferences.language == 'simplified_chinese':
+                    image Transform(Image('gui/title_zh.png'), zoom=0.35) xalign 0.5 yalign 0.5
+                else:
+                    image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
         frame xsize 1920 ysize 10 background '#f00' xpadding 0 ypadding 0
 
 # for figuring out height
@@ -149,7 +152,7 @@ screen credits_message_display():
 define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
 # use show screen credits_offset(x) until the red bar is just not visible
-define credits_height = 7444
+define credits_height = 7616
 
 transform credits_scroll:
     xalign 0.5
