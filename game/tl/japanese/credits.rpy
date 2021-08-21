@@ -77,8 +77,8 @@ translate japanese strings:
     new "シナリオ"
 
     # game/credits.rpy:88
-    old "Translation"
-    new "翻訳"
+    old "Japanese Translation"
+    new "日本語翻訳"
 
     # game/credits.rpy:89
     old "Editing"

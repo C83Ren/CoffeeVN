@@ -100,7 +100,7 @@ screen credits_display():
         use credits_space(125)
         use credits_entry(_("Planning"), ["company"])
         use credits_entry(_("Scenario"), ["rabbit", "wari"])
-        use credits_entry(_("Translation"), ["kosa", "xn"])
+        use credits_entry(_("Japanese Translation"), ["kosa", "xn"])
         use credits_entry(_("Editing"), ["rabbit", "xn"])
         use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2", "kimagure"])
         use credits_entry(_("Music"), ["luttii", "dova"])
