@@ -82,9 +82,11 @@ label r1_movie:
 
         hide hitona1
 
+        scene black
+
         "The movie is starting."
 
-        play music horror_theme
+        play music horror_theme fadein 1.0
 
         "As expected from a horror movie, it’s quite dark."
 
@@ -114,9 +116,11 @@ label r1_movie:
 
         "Holding hands, we were able to finish watching the movie."
 
-        stop music
+        stop music fadeout 1.0
 
         "After the movie ended..."
+
+        scene bg cinema with fade
 
         show hitona1 happy1 with dissolve
 
@@ -145,9 +149,11 @@ label r1_movie:
 
         hide hitona1
 
+        scene black with fade
+
         "The movie is starting."
 
-        play music movie_theme
+        play music movie_theme fadein 1.0
 
         "The main character is a middle schooler."
 
@@ -175,9 +181,11 @@ label r1_movie:
 
         hide hitona1
 
-        stop music
+        stop music fadeout 1.0
 
         "After the movie ended..."
+
+        scene bg cinema with fade
 
         show hitona1 happy1 with dissolve
 
