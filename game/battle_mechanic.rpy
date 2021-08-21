@@ -144,17 +144,28 @@ label battle_mechanic_setup():
     $ active_name = 'Hitona'
     return
 
-screen single_stat(name, hp, hp_max, ypos):
+screen single_stat(name, hp, hp_max, ypos, par, burn):
     frame xsize 400 ysize 110 xpadding 20 ypadding 13:
         ypos ypos
 
-        vbox:
-            hbox:
+        vbox xsize 360:
+            hbox xsize 360:
                 if name != 'Hitona':
                     $ display_name = name
                 else:
                     $ display_name = player_name
-                text tl_paren(display_name)
+                text tl_paren(display_name) xalign 0.0
+
+                fixed xsize 90 ysize 45 xalign 1.0:
+                    hbox:
+                        if par:
+                            image "images/shock.png" xsize 45 ysize 45
+                        else:
+                            fixed xsize 45 ysize 45
+                        if burn:
+                            image "images/burn.png" xsize 45 ysize 45
+                        else:
+                            fixed xsize 45 ysize 45
 
             hbox:
                 text "HP":
@@ -185,10 +196,10 @@ screen single_stat(name, hp, hp_max, ypos):
                         color '#f00'
 screen multi_stat():
     $ screen_num = 0
-    use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0)
+    use single_stat("Hitona", hitona_stats["hp"], hitona_stats["hp_max"], 0, hitona_stats["par"], hitona_stats["burn"])
     hbox xalign 0.5 spacing 90:
         for someone in fight_list:
-            use single_stat(someone["name"], someone["hp"], someone["hp_max"], someone["img"][2])
+            use single_stat(someone["name"], someone["hp"], someone["hp_max"], someone["img"][2], someone["par"], someone["burn"])
 
 
 screen single_sprite(image_name_idle, image_name_hover, stats):
