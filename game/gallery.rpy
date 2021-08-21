@@ -8,7 +8,9 @@ init +1 python:
 
 init +2 python:
     for i in range(22):
-        renpy.image("cg %d thumbnail" % (i + 1), im.Scale(ImageReference("cg %d unscaled" % (i + 1)), 384, 216))
+        for language in renpy.known_languages():
+            renpy.image("cg %d thumbnail %s" % (i + 1, language), im.Scale(ImageReference("cg %d unscaled %s" % (i + 1, language)), 384, 216))
+        renpy.image("cg %d thumbnail None" % (i + 1), im.Scale(ImageReference("cg %d unscaled None" % (i + 1)), 384, 216))
     renpy.image("cg locked", im.Scale(Image("cg locked.png"), 384, 216))
 
 transform cg_center:
@@ -26,7 +28,7 @@ label show_cg(which, if_unlocked):
         contains:
             "#000"
         contains:
-            "cg [i]"
+            "cg [i] [_preferences.language]"
             cg_center
     scene cg
 
@@ -54,7 +56,7 @@ screen replay_cg(which):
         at cg_fade_in
         frame xsize 1920 ysize 1080 xpadding 0 ypadding 0:
             background "#000"
-            image "cg [which]":
+            image "cg [which] [_preferences.language]":
                 xalign 0.5
                 yalign 0.5
                 xanchor 0.5

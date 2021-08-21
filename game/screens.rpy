@@ -1698,7 +1698,7 @@ screen cg():
                         has vbox
 
                         if getattr(persistent, 'cg_unlocked_%d' % slot):
-                            add ImageReference(s + " thumbnail") xalign 0.5
+                            add ImageReference(s + " thumbnail " + _preferences.language) xalign 0.5
                         else:
                             add ImageReference("cg locked") xalign 0.5
 
