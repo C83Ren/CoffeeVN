@@ -543,7 +543,7 @@ translate simplified_chinese final_good_end_ad28576a:
 translate simplified_chinese final_good_end_6133d45d:
 
     # nvl_narrator "Wahahahaha! You should trust The Great Majna Eden Bat Azuma Nula Sedun more!"
-    nvl_narrator "　哇——哈哈哈哈！要更加相信我伟大的{rb}　\ \ \ \ 壹壹零柒\ \ \ \ \ \ 　{/rb}{rt}（咲・依・弋・冬・绫・琪）{/rt}大人啊！"
+    nvl_narrator "　哇——哈哈哈哈！要更加相信我伟大的{rb}　\ \ \ \ 壹　壹　零　柒\ \ \ \ \ \ 　{/rb}{rt}咲・依・弋・冬・绫・琪{/rt}大人啊！"
     nvl_narrator "　本家里蹲国王会为了王国的繁荣昌盛励精图治的～"
 
 # game/r2_final.rpy:297
