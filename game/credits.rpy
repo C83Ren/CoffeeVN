@@ -23,6 +23,12 @@ define credits_names = {
     'artist1': _('ナッツ'),
     'artist2': _('omurice'),
 
+    'cc': _('CloneCapule'),
+    'gk': _('五更耗纸'),
+    'lnusyaha': _('Lnusyaha'),
+    'suteki': _('素敵'),
+    'saki': _('Saki Tojo'),
+
     'message0': _('???'),
     'message1': _('???'),
     'message2': _('???'),
@@ -100,6 +106,12 @@ screen credits_display():
         use credits_entry(_("Sound"), ["zap"])
         use credits_entry(_("Programming"), ["rabbit", "cryo", "xn"])
         use credits_entry(_("Support"), ["pupu"])
+        use credits_space(125)
+        use credits_centered_text(_("Chinese Translation"))
+        use credits_space(200)
+        use credits_entry(_("Translation"), ["cc", "gk", "lnusyaha", "suteki", "saki"])
+        use credits_entry(_("Programming"), ["saki", "xn"])
+        use credits_entry(_("Proofreading"), ["cc"])
         fixed xsize 1920 ysize 1080:
             vbox xalign 0.5 yalign 0.5:
                 image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
@@ -137,7 +149,7 @@ screen credits_message_display():
 define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
 # use show screen credits_offset(x) until the red bar is just not visible
-define credits_height = 6383
+define credits_height = 8273
 
 transform credits_scroll:
     xalign 0.5

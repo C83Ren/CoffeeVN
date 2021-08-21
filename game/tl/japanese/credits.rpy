@@ -111,3 +111,31 @@ translate japanese strings:
     # game/credits.rpy:1
     old "きまぐれアフター"
     new "きまぐれアフター様"
+
+    # game/credits.rpy:1
+    old "CloneCapule"
+    new "CloneCapule"
+
+    # game/credits.rpy:1
+    old "五更耗纸"
+    new "五更耗纸"
+
+    # game/credits.rpy:1
+    old "Lnusyaha"
+    new "Lnusyaha"
+
+    # game/credits.rpy:1
+    old "素敵"
+    new "素敵"
+
+    # game/credits.rpy:1
+    old "Saki Tojo"
+    new "Saki Tojo"
+
+    # game/credits.rpy:110
+    old "Chinese Translation"
+    new "中国語翻訳"
+
+    # game/credits.rpy:114
+    old "Proofreading"
+    new "構成"
