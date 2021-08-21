@@ -259,8 +259,8 @@ translate simplified_chinese end_3_9c02f85f:
 # game/r3_end.rpy:127
 translate simplified_chinese end_3_00e66b4c:
 
-    # "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Your memories."
-    "{color=[l.who_args[color]]}[l]{/color}＆{color=[pi.who_args[color]]}[pi]{/color}" "「你的回忆」"
+    # l_and_pi "Your memories."
+    l_and_pi "「你的回忆」"
 
 # game/r3_end.rpy:131
 translate simplified_chinese end_3_59392237:
@@ -750,38 +750,38 @@ translate simplified_chinese r3_secret_ending_7282e1bf:
 # game/r3_end.rpy:322
 translate simplified_chinese r3_secret_ending_c5b78bf9:
 
-    # "Everyone" "First of all of course is the ponytail!"
-    "聚集在一起的大家" "「「「「「「「最先值得称道的自然是马尾辫了！」」」」」」」"
+    # everyone "First of all of course is the ponytail!"
+    everyone "「「「「「「「最先值得称道的自然是马尾辫了！」」」」」」」"
 
 # game/r3_end.rpy:323
 translate simplified_chinese r3_secret_ending_bf0edb7b:
 
-    # "Everyone" "Her elegant long purple hair tied up!"
-    "聚集在一起的大家" "「「「「「「「女神大人扎起的优雅紫色长发！」」」」」」」"
+    # everyone "Her elegant long purple hair tied up!"
+    everyone "「「「「「「「女神大人扎起的优雅紫色长发！」」」」」」」"
 
 # game/r3_end.rpy:324
 translate simplified_chinese r3_secret_ending_9a61b082:
 
-    # "Everyone" "It emphasizes that unmatched beautiful face more!"
-    "聚集在一起的大家" "「「「「「「「更突显出那独一无二的如花似玉的容颜！」」」」」」」"
+    # everyone "It emphasizes that unmatched beautiful face more!"
+    everyone "「「「「「「「更突显出那独一无二的如花似玉的容颜！」」」」」」」"
 
 # game/r3_end.rpy:325
 translate simplified_chinese r3_secret_ending_9772017b:
 
-    # "Everyone" "The slight blue hair in front makes it even more noticeable!"
-    "聚集在一起的大家" "「「「「「「「前面略带青色的发丝也越发引人注目！」」」」」」」"
+    # everyone "The slight blue hair in front makes it even more noticeable!"
+    everyone "「「「「「「「前面略带青色的发丝也越发引人注目！」」」」」」」"
 
 # game/r3_end.rpy:326
 translate simplified_chinese r3_secret_ending_b224c0d3:
 
-    # "Everyone" "While the blue hair that is only behind her neck becomes much more attractive thanks to the sudden change of color from purple to blue!"
-    "聚集在一起的大家" "「「「「「「「由紫至青的渐变更令后面的青色发丝魅力大增！」」」」」」」"
+    # everyone "While the blue hair that is only behind her neck becomes much more attractive thanks to the sudden change of color from purple to blue!"
+    everyone "「「「「「「「由紫至青的渐变更令后面的青色发丝魅力大增！」」」」」」」"
 
 # game/r3_end.rpy:327
 translate simplified_chinese r3_secret_ending_d48a0817:
 
-    # "Everyone" "In a 3D setting, the blue hair in front also makes a critical foreshadowing of what you’re going to see when you see the whole hair!"
-    "聚集在一起的大家" "「「「「「「「3D形象中，仅从前面的青发便能感受到还不得见全貌的头发的美妙之处！」」」」」」」"
+    # everyone "In a 3D setting, the blue hair in front also makes a critical foreshadowing of what you’re going to see when you see the whole hair!"
+    everyone "「「「「「「「3D形象中，仅从前面的青发便能感受到还不得见全貌的头发的美妙之处！」」」」」」」"
 
 # game/r3_end.rpy:329
 translate simplified_chinese r3_secret_ending_c8ea8a4a:
@@ -792,50 +792,50 @@ translate simplified_chinese r3_secret_ending_c8ea8a4a:
 # game/r3_end.rpy:331
 translate simplified_chinese r3_secret_ending_76916197:
 
-    # "Everyone" "Next is the clothing!"
-    "聚集在一起的大家" "「「「「「「「接下来要说说女神的绝世服装！」」」」」」」"
+    # everyone "Next is the clothing!"
+    everyone "「「「「「「「接下来要说说女神的绝世服装！」」」」」」」"
 
 # game/r3_end.rpy:332
 translate simplified_chinese r3_secret_ending_22dbdffc:
 
-    # "Everyone" "WHITE UNIFORM!"
-    "聚集在一起的大家" "「「「「「「「就是那身白色的制服！」」」」」」」"
+    # everyone "WHITE UNIFORM!"
+    everyone "「「「「「「「就是那身白色的制服！」」」」」」」"
 
 # game/r3_end.rpy:333
 translate simplified_chinese r3_secret_ending_b31c77af:
 
-    # "Everyone" "You expect to see purity radiating from her clothing given her personality, but in reality you see quite a lot of mischievous clothes instead!"
-    "聚集在一起的大家" "「「「「「「「依照性格，你会以为服装也散发着清纯感，但实际上更具俏皮感！」」」」」」」"
+    # everyone "You expect to see purity radiating from her clothing given her personality, but in reality you see quite a lot of mischievous clothes instead!"
+    everyone "「「「「「「「依照性格，你会以为服装也散发着清纯感，但实际上更具俏皮感！」」」」」」」"
 
 # game/r3_end.rpy:334
 translate simplified_chinese r3_secret_ending_30062762:
 
-    # "Everyone" "For example, her uniform without the frills!"
-    "聚集在一起的大家" "「「「「「「「就如同那不带褶边的制服！」」」」」」」"
+    # everyone "For example, her uniform without the frills!"
+    everyone "「「「「「「「就如同那不带褶边的制服！」」」」」」」"
 
 # game/r3_end.rpy:335
 translate simplified_chinese r3_secret_ending_b4688ba5:
 
-    # "Everyone" "Her cat costume is a no brainer!"
-    "聚集在一起的大家" "「「「「「「「更不必说那身猫咪服装！」」」」」」」"
+    # everyone "Her cat costume is a no brainer!"
+    everyone "「「「「「「「更不必说那身猫咪服装！」」」」」」」"
 
 # game/r3_end.rpy:336
 translate simplified_chinese r3_secret_ending_0ffbe69f:
 
-    # "Everyone" "Her black jacket emphasizes the mischievous part!"
-    "聚集在一起的大家" "「「「「「「「她黑色的上衣放大了俏皮感！」」」」」」」"
+    # everyone "Her black jacket emphasizes the mischievous part!"
+    everyone "「「「「「「「她黑色的上衣放大了俏皮感！」」」」」」」"
 
 # game/r3_end.rpy:337
 translate simplified_chinese r3_secret_ending_cba3429c:
 
-    # "Everyone" "In the video for “Indoor kei nara Trackmaker” she has open shoulders and that skirt and that pose!"
-    "聚集在一起的大家" "「「「「「「「在『室内系的TrackMaker』的视频里穿着时髦的裙子，把香肩裸露在外，摆出那可爱的姿势！」」」」」」」"
+    # everyone "In the video for “Indoor kei nara Trackmaker” she has open shoulders and that skirt and that pose!"
+    everyone "「「「「「「「在『室内系的TrackMaker』的视频里穿着时髦的裙子，把香肩裸露在外，摆出那可爱的姿势！」」」」」」」"
 
 # game/r3_end.rpy:338
 translate simplified_chinese r3_secret_ending_147109a3:
 
-    # "Everyone" "SO, pure white clothes are rare and something of a blessing to see...not to mention with that pose!"
-    "聚集在一起的大家" "「「「「「「「也即，穿着纯白的服装已是罕见，可谓幸事…更何况还摆出那个姿势！」」」」」」」"
+    # everyone "SO, pure white clothes are rare and something of a blessing to see...not to mention with that pose!"
+    everyone "「「「「「「「也即，穿着纯白的服装已是罕见，可谓幸事…更何况还摆出那个姿势！」」」」」」」"
 
 # game/r3_end.rpy:340
 translate simplified_chinese r3_secret_ending_efa2cf80:

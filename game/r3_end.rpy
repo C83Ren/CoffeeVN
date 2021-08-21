@@ -121,7 +121,7 @@ label end_3:
 
     p "Get what back?!"
 
-    "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Your memories."
+    l_and_pi "Your memories." id end_3_00e66b4c
 
     scene black
 
@@ -423,23 +423,23 @@ label r3_secret_ending:
 
         p "{i}Now what are they up to...{/i}"
 
-        "Everyone" "First of all of course is the ponytail!"
-        "Everyone" "Her elegant long purple hair tied up!"
-        "Everyone" "It emphasizes that unmatched beautiful face more!"
-        "Everyone" "The slight blue hair in front makes it even more noticeable!"
-        "Everyone" "While the blue hair that is only behind her neck becomes much more attractive thanks to the sudden change of color from purple to blue!"
-        "Everyone" "In a 3D setting, the blue hair in front also makes a critical foreshadowing of what you’re going to see when you see the whole hair!"
+        everyone "First of all of course is the ponytail!" id r3_secret_ending_c5b78bf9
+        everyone "Her elegant long purple hair tied up!" id r3_secret_ending_bf0edb7b
+        everyone "It emphasizes that unmatched beautiful face more!" id r3_secret_ending_9a61b082
+        everyone "The slight blue hair in front makes it even more noticeable!" id r3_secret_ending_9772017b
+        everyone "While the blue hair that is only behind her neck becomes much more attractive thanks to the sudden change of color from purple to blue!" id r3_secret_ending_b224c0d3
+        everyone "In a 3D setting, the blue hair in front also makes a critical foreshadowing of what you’re going to see when you see the whole hair!" id r3_secret_ending_d48a0817
 
         p "..."
 
-        "Everyone" "Next is the clothing!"
-        "Everyone" "WHITE UNIFORM!"
-        "Everyone" "You expect to see purity radiating from her clothing given her personality, but in reality you see quite a lot of mischievous clothes instead!"
-        "Everyone" "For example, her uniform without the frills!"
-        "Everyone" "Her cat costume is a no brainer!"
-        "Everyone" "Her black jacket emphasizes the mischievous part!"
-        "Everyone" "In the video for “Indoor kei nara Trackmaker” she has open shoulders and that skirt and that pose!"
-        "Everyone" "SO, pure white clothes are rare and something of a blessing to see...not to mention with that pose!"
+        everyone "Next is the clothing!" id r3_secret_ending_76916197
+        everyone "WHITE UNIFORM!" id r3_secret_ending_22dbdffc
+        everyone "You expect to see purity radiating from her clothing given her personality, but in reality you see quite a lot of mischievous clothes instead!" id r3_secret_ending_b31c77af
+        everyone "For example, her uniform without the frills!" id r3_secret_ending_30062762
+        everyone "Her cat costume is a no brainer!" id r3_secret_ending_b4688ba5
+        everyone "Her black jacket emphasizes the mischievous part!" id r3_secret_ending_0ffbe69f
+        everyone "In the video for “Indoor kei nara Trackmaker” she has open shoulders and that skirt and that pose!" id r3_secret_ending_cba3429c
+        everyone "SO, pure white clothes are rare and something of a blessing to see...not to mention with that pose!" id r3_secret_ending_147109a3
 
         p "{i}I see, I see...That’s how it is huh...{/i}"
 

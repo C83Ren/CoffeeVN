@@ -98,7 +98,7 @@ label r1_movie:
 
         hide hitona1
 
-        "Cathy" "Come on, let’s go…aaAAAAAH!!! HELP!!!"
+        cathy "Come on, let’s go…aaAAAAAH!!! HELP!!!" id r1_movie_101a609e
 
         "Cathy is being dragged away by something!"
 

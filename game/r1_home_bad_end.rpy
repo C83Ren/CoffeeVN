@@ -73,19 +73,19 @@ label r1_home_bad_end:
 
     scene bg famres with Fade(2.0, 1.0, 2.0)
 
-    "Friend" "OOOOI! KOHIII!"
+    friend "OOOOI! KOHIII!" id r1_home_bad_end_7d8d16b8
 
     p "Eh?"
 
-    "Friend" "You’ve been daydreaming for a while now, is something on your mind?"
+    friend "You’ve been daydreaming for a while now, is something on your mind?" id r1_home_bad_end_71714513
 
     p "Eh... ah... no... nothing at all... nothing... at all."
 
     p "What were we talking about again?"
 
-    "Friend" "I guess I can’t help it..."
+    friend "I guess I can’t help it..." id r1_home_bad_end_e6096707
 
-    "Friend" "So Kohi! I was playing this one game..."
+    friend "So Kohi! I was playing this one game..." id r1_home_bad_end_b868e73e
 
     "What was that all about? Was it a dream?"
 

@@ -74,7 +74,7 @@ translate simplified_chinese quiz_fail_8b98b413:
 translate simplified_chinese quiz_fail_e120ef52:
 
     # "{color=[l.who_args[color]]}[l]{/color} & {color=[p.who_args[color]]}[p]{/color}" "So much for being a great detective..."
-    "{color=[l.who_args[color]]}[l]{/color}＆{color=[p.who_args[color]]}[p]{/color}" "「「明明你自称名侦探…」」"
+    l_and_p "「「明明你自称名侦探…」」"
 
 # game/r3_quiz.rpy:53
 translate simplified_chinese quiz_fail_bed06378:

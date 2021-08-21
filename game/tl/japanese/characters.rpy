@@ -67,3 +67,47 @@ translate japanese strings:
     # game/characters.rpy:4
     old "Kohigashi"
     new "小東"
+
+    # game/characters.rpy:22
+    old "Everyone"
+    new "群集"
+
+    # game/characters.rpy:23
+    old "Waitress"
+    new "店員"
+
+    # game/characters.rpy:24
+    old "Mailman"
+    new "配達人"
+
+    # game/characters.rpy:25
+    old "Friend"
+    new "友"
+
+    # game/characters.rpy:26
+    old "Cathy"
+    new "キャッシー"
+
+    # game/characters.rpy:27
+    old "Captain"
+    new "隊長"
+
+    # game/characters.rpy:28
+    old "{color=[l.who_args[color]]}[l!t]{/color} & {color=[pi.who_args[color]]}[pi!t]{/color}"
+    new "{color=[l.who_args[color]]}[l!t]{/color} & {color=[pi.who_args[color]]}[pi!t]{/color}"
+
+    # game/characters.rpy:29
+    old "{color=[p.who_args[color]]}[p!t]{/color} & {color=[pi.who_args[color]]}[pi!t]{/color}"
+    new "{color=[p.who_args[color]]}[p!t]{/color} & {color=[pi.who_args[color]]}[pi!t]{/color}"
+
+    # game/characters.rpy:30
+    old "{color=[p.who_args[color]]}[p!t]{/color} & {color=[s.who_args[color]]}[s!t]{/color}"
+    new "{color=[p.who_args[color]]}[p!t]{/color} & {color=[s.who_args[color]]}[s!t]{/color}"
+
+    # game/characters.rpy:31
+    old "{color=[p.who_args[color]]}[p!t]{/color} & {color=[e.who_args[color]]}[e!t]{/color}"
+    new "{color=[p.who_args[color]]}[p!t]{/color} & {color=[e.who_args[color]]}[e!t]{/color}"
+
+    # game/characters.rpy:32
+    old "{color=[l.who_args[color]]}[l!t]{/color} & {color=[p.who_args[color]]}[p!t]{/color}"
+    new "{color=[l.who_args[color]]}[l!t]{/color} & {color=[p.who_args[color]]}[p!t]{/color}"

@@ -369,7 +369,7 @@ translate japanese final_grand_spell_67990cda:
 translate japanese final_grand_spell_70ac1851:
 
     # "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Apeiros Iris!"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "「「{rb}《創成破滅魔法》{/rb}{rt}アペイロ・アイリス{/rt}！」」"
+    p_and_e "「「{rb}《創成破滅魔法》{/rb}{rt}アペイロ・アイリス{/rt}！」」"
 
 # game/r2_final.rpy:206
 translate japanese final_grand_spell_74150a5b:
@@ -477,7 +477,7 @@ translate japanese final_good_end_6c4b8a2e:
 translate japanese final_good_end_f11e976f:
 
     # "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..."
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "「「あはははは…はあ…」」"
+    p_and_e "「「あはははは…はあ…」」"
 
 # game/r2_final.rpy:269
 translate japanese final_good_end_4081c499:

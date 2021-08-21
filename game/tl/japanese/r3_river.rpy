@@ -104,7 +104,7 @@ translate japanese river_cat_3c6f1f33:
 translate japanese river_cat_42926c34:
 
     # "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[pi.who_args[color]]}[pi]{/color}" "「もう一回…？」"
+    p_and_pi "「もう一回…？」"
 
 # game/r3_river.rpy:73
 translate japanese river_cat_0ae31432:
@@ -182,7 +182,7 @@ translate japanese river_dog_3c6f1f33:
 translate japanese river_dog_42926c34:
 
     # "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[pi.who_args[color]]}[pi]{/color}" "「もう一回…？」"
+    p_and_pi "「もう一回…？」"
 
 # game/r3_river.rpy:103
 translate japanese river_dog_16bcd3b9:
@@ -260,7 +260,7 @@ translate japanese river_deer_3c6f1f33:
 translate japanese river_deer_42926c34:
 
     # "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[pi.who_args[color]]}[pi]{/color}" "「もう一回…？」"
+    p_and_pi "「もう一回…？」"
 
 # game/r3_river.rpy:133
 translate japanese river_deer_0b0ba5e7:
@@ -1100,7 +1100,7 @@ translate japanese river_final_f5cbdb33:
 translate japanese river_final_f6643236:
 
     # "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Yeah."
-    "{color=[l.who_args[color]]}[l]{/color}＆{color=[pi.who_args[color]]}[pi]{/color}" "「「そうだよ」」"
+    l_and_pi "「「そうだよ」」"
 
 # game/r3_river.rpy:608
 translate japanese river_final_1faef399:

@@ -99,7 +99,7 @@ translate japanese start_f8869760:
 translate japanese start_fe4e8d19:
 
     # "Mailman" "Here is your delivery. For ummm, Kohigashi, correct? Please sign here."
-    "配達人" "「はい、配達の荷物です。えっと…小東様ですよね？ここにサインしてください。」"
+    mailman "「はい、配達の荷物です。えっと…小東様ですよね？ここにサインしてください。」"
 
 # game/intro.rpy:43
 translate japanese start_055bce01:

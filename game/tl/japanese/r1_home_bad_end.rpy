@@ -151,8 +151,8 @@ translate japanese r1_home_bad_end_826343a6:
 # game/r1_home_bad_end.rpy:74
 translate japanese r1_home_bad_end_7d8d16b8:
 
-    # "Friend" "OOOOI! KOHIII!"
-    "友" "「おーい！こっひー！」"
+    # friend "OOOOI! KOHIII!"
+    friend "「おーい！こっひー！」"
 
 # game/r1_home_bad_end.rpy:76
 translate japanese r1_home_bad_end_143e6df8_1:
@@ -163,8 +163,8 @@ translate japanese r1_home_bad_end_143e6df8_1:
 # game/r1_home_bad_end.rpy:78
 translate japanese r1_home_bad_end_71714513:
 
-    # "Friend" "You’ve been daydreaming for a while now, is something on your mind?"
-    "友" "「今ぼーっとしてるけど、何か気になること？」"
+    # friend "You’ve been daydreaming for a while now, is something on your mind?"
+    friend "「今ぼーっとしてるけど、何か気になること？」"
 
 # game/r1_home_bad_end.rpy:80
 translate japanese r1_home_bad_end_687fae70:
@@ -181,14 +181,14 @@ translate japanese r1_home_bad_end_6d3c55cb:
 # game/r1_home_bad_end.rpy:84
 translate japanese r1_home_bad_end_e6096707:
 
-    # "Friend" "I guess I can’t help it..."
-    "友" "「しょうがないなぁ〜」"
+    # friend "I guess I can’t help it..."
+    friend "「しょうがないなぁ〜」"
 
 # game/r1_home_bad_end.rpy:86
 translate japanese r1_home_bad_end_b868e73e:
 
-    # "Friend" "So Kohi! I was playing this one game..."
-    "友" "「で、このゲームはね…」"
+    # friend "So Kohi! I was playing this one game..."
+    friend "「で、このゲームはね…」"
 
 # game/r1_home_bad_end.rpy:88
 translate japanese r1_home_bad_end_f1d1cf11:

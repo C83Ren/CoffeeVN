@@ -441,13 +441,13 @@ translate simplified_chinese village_house_3_1_ded579ba:
 translate simplified_chinese village_house_3_1_a21a8120:
 
     # "???" "Huh, if it isn’t Eve!"
-    "队长" "「咦，这不是伊芙嘛」"
+    captain "「咦，这不是伊芙嘛」"
 
 # game/r2_village.rpy:303
 translate simplified_chinese village_house_3_1_20dafd1c:
 
     # "???" "Second salvation you say? Is she the one beside you right now?"
-    "队长" "「第二位救世主说的就是这孩子？」"
+    captain "「第二位救世主说的就是这孩子？」"
 
 # game/r2_village.rpy:307
 translate simplified_chinese village_house_3_1_d24acfd4:
@@ -460,13 +460,13 @@ translate simplified_chinese village_house_3_1_4ac634e1:
 
     # p "Nice to meet you, I’m Hitona Kohigashi."
     p "「初次见面，我是[player_full_name!t]」"
-    "队长" "「初次见面」"
+    captain "「初次见面」"
 
 # game/r2_village.rpy:311
 translate simplified_chinese village_house_3_1_ae8b0862:
 
     # "???" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation."
-    "队长" "「按伊芙的性格，恐怕没作什么说明就擅自决定把你带到这里来了吧」"
+    captain "「按伊芙的性格，恐怕没作什么说明就擅自决定把你带到这里来了吧」"
 
 # game/r2_village.rpy:313
 translate simplified_chinese village_house_3_1_70c32e8c:
@@ -490,7 +490,7 @@ translate simplified_chinese village_house_3_1_98b85375:
 translate simplified_chinese village_house_3_1_b5d5d6c1:
 
     # "???" "So, how did you end up here?"
-    "队长" "「所以，你是怎么来到这里的呢？」"
+    captain "「所以，你是怎么来到这里的呢？」"
 
 # game/r2_village.rpy:327
 translate simplified_chinese village_house_3_1_a635d19c:
@@ -503,7 +503,7 @@ translate simplified_chinese village_house_3_1_a635d19c:
 translate simplified_chinese village_house_3_1_02a5af8e:
 
     # "???" "Ahahahahaha as expected of Eve!"
-    "队长" "「哈哈哈，真像伊芙的作风！」"
+    captain "「哈哈哈，真像伊芙的作风！」"
 
 # game/r2_village.rpy:331
 translate simplified_chinese village_house_3_1_38848e2e:

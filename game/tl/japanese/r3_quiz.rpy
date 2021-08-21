@@ -74,7 +74,7 @@ translate japanese quiz_fail_8b98b413:
 translate japanese quiz_fail_e120ef52:
 
     # "{color=[l.who_args[color]]}[l]{/color} & {color=[p.who_args[color]]}[p]{/color}" "So much for being a great detective..."
-    "{color=[l.who_args[color]]}[l]{/color}＆{color=[p.who_args[color]]}[p]{/color}" "「「名探偵と呼んだのに…」」"
+    l_and_p "「「名探偵と呼んだのに…」」"
 
 # game/r3_quiz.rpy:53
 translate japanese quiz_fail_bed06378:

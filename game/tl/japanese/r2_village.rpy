@@ -441,13 +441,13 @@ translate japanese village_house_3_1_ded579ba:
 translate japanese village_house_3_1_a21a8120:
 
     # "???" "Huh, if it isn’t Eve!"
-    "隊長" "「あれ、イーブではないか」"
+    captain "「あれ、イーブではないか」"
 
 # game/r2_village.rpy:303
 translate japanese village_house_3_1_20dafd1c:
 
     # "???" "Second salvation you say? Is she the one beside you right now?"
-    "隊長" "「第二救世主ってそこの子？」"
+    captain "「第二救世主ってそこの子？」"
 
 # game/r2_village.rpy:307
 translate japanese village_house_3_1_d24acfd4:
@@ -460,13 +460,13 @@ translate japanese village_house_3_1_4ac634e1:
 
     # p "Nice to meet you, I’m [player_full_name!t]."
     p "「初めまして、[player_full_name!t]です」"
-    "隊長" "「初めまして」"
+    captain "「初めまして」"
 
 # game/r2_village.rpy:311
 translate japanese village_house_3_1_ae8b0862:
 
     # "???" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation."
-    "隊長" "「イーブの性格からして、何の説明もなく勝手にそこここに連れてこられたんだろうな」"
+    captain "「イーブの性格からして、何の説明もなく勝手にそこここに連れてこられたんだろうな」"
 
 # game/r2_village.rpy:313
 translate japanese village_house_3_1_70c32e8c:
@@ -490,7 +490,7 @@ translate japanese village_house_3_1_98b85375:
 translate japanese village_house_3_1_b5d5d6c1:
 
     # "???" "So, how did you end up here?"
-    "隊長" "「で、どのようにここにたどり着いたか？」"
+    captain "「で、どのようにここにたどり着いたか？」"
 
 # game/r2_village.rpy:327
 translate japanese village_house_3_1_a635d19c:
@@ -503,7 +503,7 @@ translate japanese village_house_3_1_a635d19c:
 translate japanese village_house_3_1_02a5af8e:
 
     # "???" "Ahahahahaha as expected of Eve!"
-    "隊長" "「あははは、さすがにイーブらしいな！」"
+    captain "「あははは、さすがにイーブらしいな！」"
 
 # game/r2_village.rpy:331
 translate japanese village_house_3_1_38848e2e:

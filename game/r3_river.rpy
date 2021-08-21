@@ -73,7 +73,7 @@ label river_cat:
 
     pi "..."
 
-    "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
+    p_and_pi "Come again...?" id river_cat_42926c34
 
     c "Meow meow meow meow meow"
 
@@ -105,7 +105,7 @@ label river_dog:
 
     pi "..."
 
-    "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
+    p_and_pi "Come again...?" id river_dog_42926c34
 
     do "Woof Woof woof woof"
 
@@ -137,7 +137,7 @@ label river_deer:
 
     pi "..."
 
-    "{color=[p.who_args[color]]}[p]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Come again...?"
+    p_and_pi "Come again...?" id river_deer_42926c34
 
     de "..."
 
@@ -607,7 +607,7 @@ label river_final:
 
     p "She can talk?????!!!!!"
 
-    "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Yeah."
+    l_and_pi "Yeah." id river_final_f6643236
 
     p "YOU SHOULD’VE SAID SO!"
 

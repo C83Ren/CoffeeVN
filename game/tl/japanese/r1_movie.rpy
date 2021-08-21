@@ -135,8 +135,8 @@ translate japanese r1_movie_1d66195d:
 # game/r1_movie.rpy:97
 translate japanese r1_movie_101a609e:
 
-    # "Cathy" "Come on, let’s go…aaAAAAAH!!! HELP!!!"
-    "キャッシー" "「ほら、行くわ…ぁあああ！！！助けて！！！！」"
+    # cathy "Come on, let’s go…aaAAAAAH!!! HELP!!!"
+    cathy "「ほら、行くわ…ぁあああ！！！助けて！！！！」"
 
 # game/r1_movie.rpy:99
 translate japanese r1_movie_9258cc8e:

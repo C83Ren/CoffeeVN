@@ -57,7 +57,7 @@ translate simplified_chinese r1_7_11_44e3cde3:
 
     # "After buying them, we found empty seats in the eat-in corner."
     "结好账后，又顺利地在店内的就餐区找到了空位。"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[s.who_args[color]]}[s]{/color}" "「「我开动了！」」"
+    p_and_s "「「我开动了！」」"
 
 # game/r1_7_11.rpy:62
 translate simplified_chinese r1_7_11_004bc754:

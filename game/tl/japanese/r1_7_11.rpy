@@ -57,7 +57,7 @@ translate japanese r1_7_11_44e3cde3:
 
     # "After buying them, we found empty seats in the eat-in corner."
     "買った後、無事にイートインコーナーに空席を見つけた。"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[s.who_args[color]]}[s]{/color}" "「「いっただきまーす！」」"
+    p_and_s "「「いっただきまーす！」」"
 
 # game/r1_7_11.rpy:62
 translate japanese r1_7_11_004bc754:

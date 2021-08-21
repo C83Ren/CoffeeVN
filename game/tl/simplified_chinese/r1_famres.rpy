@@ -8,7 +8,7 @@ translate simplified_chinese r1_famres_e3d45387:
 translate simplified_chinese r1_famres_e550cdd7:
 
     # "We took our seats and looked at the menu."
-    "店员" "「欢迎光临」"
+    waitress "「欢迎光临」"
     "找了个位子坐了下来，然后打开菜单。"
 
 # game/r1_famres.rpy:29
@@ -56,8 +56,8 @@ translate simplified_chinese r1_famres_06a71942:
 # game/r1_famres.rpy:49
 translate simplified_chinese r1_famres_0968cd71:
 
-    # "Waitress" "Are you ready to order?"
-    "店员" "「决定好要点什么了吗？」"
+    # waitress "Are you ready to order?"
+    waitress "「决定好要点什么了吗？」"
 
 # game/r1_famres.rpy:51
 translate simplified_chinese r1_famres_f3e2da6e:
@@ -80,8 +80,8 @@ translate simplified_chinese r1_famres_c8ea8a4a:
 # game/r1_famres.rpy:59
 translate simplified_chinese r1_famres_aca929d8:
 
-    # "Waitress" "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit."
-    "店员" "「是培根蛋面和薯条，蛋包饭、牛肉盖饭和汉堡肉吧？感谢两位的惠顾，请稍作等待」"
+    # waitress "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit."
+    waitress "「是培根蛋面和薯条，蛋包饭、牛肉盖饭和汉堡肉吧？感谢两位的惠顾，请稍作等待」"
 
 # game/r1_famres.rpy:61
 translate simplified_chinese r1_famres_07a81442:
@@ -184,7 +184,7 @@ translate simplified_chinese r1_famres_91182f92:
 
     # p "I’ll have the [famires_food!t] then."
     p "「那，[player_name!t]选[famires_food!t]吧」"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[s.who_args[color]]}[s]{/color}" "「「我开动了！」」"
+    p_and_s "「「我开动了！」」"
 
 # game/r1_famres.rpy:114
 translate simplified_chinese r1_famres_1e487da6:

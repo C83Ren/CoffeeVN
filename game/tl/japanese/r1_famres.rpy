@@ -8,7 +8,7 @@ translate japanese r1_famres_e3d45387:
 translate japanese r1_famres_e550cdd7:
 
     # "We took our seats and looked at the menu."
-    "店員" "「いらっしゃいませ」"
+    waitress "「いらっしゃいませ」"
     "席に着き、メニューを見てみた。"
 
 # game/r1_famres.rpy:29
@@ -56,8 +56,8 @@ translate japanese r1_famres_06a71942:
 # game/r1_famres.rpy:49
 translate japanese r1_famres_0968cd71:
 
-    # "Waitress" "Are you ready to order?"
-    "店員" "「ご注文はお決まりですか？」"
+    # waitress "Are you ready to order?"
+    waitress "「ご注文はお決まりですか？」"
 
 # game/r1_famres.rpy:51
 translate japanese r1_famres_f3e2da6e:
@@ -80,8 +80,8 @@ translate japanese r1_famres_c8ea8a4a:
 # game/r1_famres.rpy:59
 translate japanese r1_famres_aca929d8:
 
-    # "Waitress" "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit."
-    "店員" "「カルボナーラとポテト、オムライス、牛肉丼、ハンバーグですね？ありがとうございます。少々お待ちくださいませ」"
+    # waitress "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit."
+    waitress "「カルボナーラとポテト、オムライス、牛肉丼、ハンバーグですね？ありがとうございます。少々お待ちくださいませ」"
 
 # game/r1_famres.rpy:61
 translate japanese r1_famres_07a81442:
@@ -184,7 +184,7 @@ translate japanese r1_famres_91182f92:
 
     # p "I’ll have the [famires_food!t] then."
     p "「じゃあ、[famires_food!t]をいただきます」"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[s.who_args[color]]}[s]{/color}" "「「いっただきまーす！」」"
+    p_and_s "「「いっただきまーす！」」"
 
 # game/r1_famres.rpy:114
 translate japanese r1_famres_1e487da6:

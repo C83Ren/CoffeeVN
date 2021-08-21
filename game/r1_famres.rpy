@@ -51,7 +51,7 @@ label r1_famres:
 
     p "Let’s call the waitress then."
 
-    "Waitress" "Are you ready to order?"
+    waitress "Are you ready to order?" id r1_famres_0968cd71
 
     p "I’d like the carbonara pasta and fries. What about you, Shiraishi?"
 
@@ -61,7 +61,7 @@ label r1_famres:
 
     p "..."
 
-    "Waitress" "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit."
+    waitress "Carbonara pasta, fries, omurice, beef bowl, and hamburger steak, right? Thank you for your order; please wait a bit." id r1_famres_aca929d8
 
     "The waitress left."
 

@@ -49,7 +49,7 @@ label quiz_fail:
 
     "It was Lios."
 
-    "{color=[l.who_args[color]]}[l]{/color} & {color=[p.who_args[color]]}[p]{/color}" "So much for being a great detective..."
+    l_and_p "So much for being a great detective..." id quiz_fail_e120ef52
 
     show hitona3 pout hat at hitona_left with dissolve
     #show lios front at lios_right behind hitona3

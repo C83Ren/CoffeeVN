@@ -133,8 +133,8 @@ translate simplified_chinese r1_movie_1d66195d:
 # game/r1_movie.rpy:97
 translate simplified_chinese r1_movie_101a609e:
 
-    # "Cathy" "Come on, let’s go…aaAAAAAH!!! HELP!!!"
-    "凯西" "「你看着，要开…啊啊啊！！！救命啊！！！！」"
+    # cathy "Come on, let’s go…aaAAAAAH!!! HELP!!!"
+    cathy "「你看着，要开…啊啊啊！！！救命啊！！！！」"
 
 # game/r1_movie.rpy:99
 translate simplified_chinese r1_movie_9258cc8e:

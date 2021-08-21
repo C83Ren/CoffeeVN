@@ -64,7 +64,7 @@ label start:
 
     p "{i}A delivery? I wonder what it is.{/i}"
 
-    "Mailman" "Here is your delivery. For ummm, [player_last_name], correct? Please sign here." id start_fe4e8d19
+    mailman "Here is your delivery. For ummm, [player_last_name], correct? Please sign here." id start_fe4e8d19
 
     p "Ah yes, okay…"
 
@@ -120,7 +120,7 @@ label start:
     $ save_enabled = False
 
     menu:
-        "1. What is your name?"
+        "1. Enter your name."
         "Hitona":
             $ player_name, player_full_name, player_last_name = 'Hitona', 'Hitona Kohigashi', 'Kohigashi'
         "Koppi":

@@ -228,7 +228,7 @@ label end_2 hide:
 
     e "I am Majna Eden Bat Azuma Nula Sedun, ruler of the Void! To allow the power of the emotions to be fully unleashed, use this life, expand the void, and create an infinite space!"
 
-    "{color=[p.who_args[color]]}[p]{/color} & {color=[e.who_args[color]]}[e]{/color}" "Apeiros Iris!" id final_grand_spell_70ac1851
+    p_and_e "Apeiros Iris!" id final_grand_spell_70ac1851
 
     play sound apeirosiris
 
@@ -292,7 +292,7 @@ label final_good_end:
 
     "The feeling of exhaustion finally sunk in, and we both fell onto our knees."
 
-    "{color=[p.who_args[color]]}[p]{/color} & {color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..." id final_good_end_f11e976f
+    p_and_e "Hahahahahaha...Haaaa..." id final_good_end_f11e976f
 
     e "Thank you, [player_name]...truly..." id final_good_end_4081c499
 

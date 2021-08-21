@@ -298,9 +298,9 @@ label village_house_3_1:
 
     e "Captain! The Great Majna has come with the world’s second salvation!"
 
-    "???" "Huh, if it isn’t Eve!"
+    captain "Huh, if it isn’t Eve!" id village_house_3_1_a21a8120
 
-    "???" "Second salvation you say? Is she the one beside you right now?"
+    captain "Second salvation you say? Is she the one beside you right now?" id village_house_3_1_20dafd1c
 
     show hitona2 smile1
 
@@ -308,7 +308,7 @@ label village_house_3_1:
 
     p "Nice to meet you, I’m [player_full_name]." id village_house_3_1_4ac634e1
 
-    "???" "Given Eve’s personality, I guess you probably just got dragged her without any much explanation."
+    captain "Given Eve’s personality, I guess you probably just got dragged her without any much explanation." id village_house_3_1_ae8b0862
 
     p "You got that right, I have no idea why I am here."
 
@@ -322,11 +322,11 @@ label village_house_3_1:
 
     "Saying that, Eve left the house."
 
-    "???" "So, how did you end up here?"
+    captain "So, how did you end up here?" id village_house_3_1_b5d5d6c1
 
     p "You tell me...I somehow got suddenly dragged into this world, somehow fought a soldier with magic, and got dragged around by that weird girl."
 
-    "???" "Ahahahahaha as expected of Eve!"
+    captain "Ahahahahaha as expected of Eve!" id village_house_3_1_02a5af8e
 
     hj "First of all, I am Hitoju."
 

@@ -151,8 +151,8 @@ translate simplified_chinese r1_home_bad_end_826343a6:
 # game/r1_home_bad_end.rpy:74
 translate simplified_chinese r1_home_bad_end_7d8d16b8:
 
-    # "Friend" "OOOOI! KOHIII!"
-    "朋友" "「喂——！小东！」"
+    # friend "OOOOI! KOHIII!"
+    friend "「喂——！小东！」"
 
 # game/r1_home_bad_end.rpy:76
 translate simplified_chinese r1_home_bad_end_143e6df8_1:
@@ -163,8 +163,8 @@ translate simplified_chinese r1_home_bad_end_143e6df8_1:
 # game/r1_home_bad_end.rpy:78
 translate simplified_chinese r1_home_bad_end_71714513:
 
-    # "Friend" "You’ve been daydreaming for a while now, is something on your mind?"
-    "朋友" "「看你刚才在发呆，有什么让你在意的事情吗？」"
+    # friend "You’ve been daydreaming for a while now, is something on your mind?"
+    friend "「看你刚才在发呆，有什么让你在意的事情吗？」"
 
 # game/r1_home_bad_end.rpy:80
 translate simplified_chinese r1_home_bad_end_687fae70:
@@ -181,14 +181,14 @@ translate simplified_chinese r1_home_bad_end_6d3c55cb:
 # game/r1_home_bad_end.rpy:84
 translate simplified_chinese r1_home_bad_end_e6096707:
 
-    # "Friend" "I guess I can’t help it..."
-    "朋友" "「真拿你没办法啊～」"
+    # friend "I guess I can’t help it..."
+    friend "「真拿你没办法啊～」"
 
 # game/r1_home_bad_end.rpy:86
 translate simplified_chinese r1_home_bad_end_b868e73e:
 
-    # "Friend" "So Kohi! I was playing this one game..."
-    "朋友" "「然后，这个游戏啊…」"
+    # friend "So Kohi! I was playing this one game..."
+    friend "「然后，这个游戏啊…」"
 
 # game/r1_home_bad_end.rpy:88
 translate simplified_chinese r1_home_bad_end_f1d1cf11:

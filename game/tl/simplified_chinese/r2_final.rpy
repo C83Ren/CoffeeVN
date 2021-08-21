@@ -369,7 +369,7 @@ translate simplified_chinese final_grand_spell_67990cda:
 translate simplified_chinese final_grand_spell_70ac1851:
 
     # "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Apeiros Iris!"
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "「「{rb}《创成破灭魔法》{/rb}{rt}无限・鸢尾花{/rt}！」」"
+    p_and_e "「「{rb}《创成破灭魔法》{/rb}{rt}无限・鸢尾花{/rt}！」」"
 
 # game/r2_final.rpy:206
 translate simplified_chinese final_grand_spell_74150a5b:
@@ -477,7 +477,7 @@ translate simplified_chinese final_good_end_6c4b8a2e:
 translate simplified_chinese final_good_end_f11e976f:
 
     # "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "Hahahahahaha...Haaaa..."
-    "{color=[p.who_args[color]]}[p]{/color}＆{color=[e.who_args[color]]}[e]{/color}" "「哈哈哈…呼～」"
+    p_and_e "「哈哈哈…呼～」"
 
 # game/r2_final.rpy:269
 translate simplified_chinese final_good_end_4081c499:

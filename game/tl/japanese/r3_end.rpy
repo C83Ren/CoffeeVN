@@ -259,8 +259,8 @@ translate japanese end_3_9c02f85f:
 # game/r3_end.rpy:127
 translate japanese end_3_00e66b4c:
 
-    # "{color=[l.who_args[color]]}[l]{/color} & {color=[pi.who_args[color]]}[pi]{/color}" "Your memories."
-    "{color=[l.who_args[color]]}[l]{/color}＆{color=[pi.who_args[color]]}[pi]{/color}" "「あなたの想い出を」"
+    # l_and_pi "Your memories."
+    l_and_pi "「あなたの想い出を」"
 
 # game/r3_end.rpy:131
 translate japanese end_3_59392237:
@@ -750,38 +750,38 @@ translate japanese r3_secret_ending_7282e1bf:
 # game/r3_end.rpy:322
 translate japanese r3_secret_ending_c5b78bf9:
 
-    # "Everyone" "First of all of course is the ponytail!"
-    "群集のみんな" "「「「「「「「まずはもちろんポニーテールだろう！」」」」」」」"
+    # everyone "First of all of course is the ponytail!"
+    everyone "「「「「「「「まずはもちろんポニーテールだろう！」」」」」」」"
 
 # game/r3_end.rpy:323
 translate japanese r3_secret_ending_bf0edb7b:
 
-    # "Everyone" "Her elegant long purple hair tied up!"
-    "群集のみんな" "「「「「「「「女神様の束ねている優雅な紫長髪！」」」」」」」"
+    # everyone "Her elegant long purple hair tied up!"
+    everyone "「「「「「「「女神様の束ねている優雅な紫長髪！」」」」」」」"
 
 # game/r3_end.rpy:324
 translate japanese r3_secret_ending_9a61b082:
 
-    # "Everyone" "It emphasizes that unmatched beautiful face more!"
-    "群集のみんな" "「「「「「「「あの唯一無二美しい顔を強める！」」」」」」」"
+    # everyone "It emphasizes that unmatched beautiful face more!"
+    everyone "「「「「「「「あの唯一無二美しい顔を強める！」」」」」」」"
 
 # game/r3_end.rpy:325
 translate japanese r3_secret_ending_9772017b:
 
-    # "Everyone" "The slight blue hair in front makes it even more noticeable!"
-    "群集のみんな" "「「「「「「「前方のやや青い髪ももっと目に付くようになっている！」」」」」」」"
+    # everyone "The slight blue hair in front makes it even more noticeable!"
+    everyone "「「「「「「「前方のやや青い髪ももっと目に付くようになっている！」」」」」」」"
 
 # game/r3_end.rpy:326
 translate japanese r3_secret_ending_b224c0d3:
 
-    # "Everyone" "While the blue hair that is only behind her neck becomes much more attractive thanks to the sudden change of color from purple to blue!"
-    "群集のみんな" "「「「「「「「紫色と青色のグラデーションのお陰で後方の青髪の魅力もすごく上がった！」」」」」」」"
+    # everyone "While the blue hair that is only behind her neck becomes much more attractive thanks to the sudden change of color from purple to blue!"
+    everyone "「「「「「「「紫色と青色のグラデーションのお陰で後方の青髪の魅力もすごく上がった！」」」」」」」"
 
 # game/r3_end.rpy:327
 translate japanese r3_secret_ending_d48a0817:
 
-    # "Everyone" "In a 3D setting, the blue hair in front also makes a critical foreshadowing of what you’re going to see when you see the whole hair!"
-    "群集のみんな" "「「「「「「「三次元の場合は、前方のあの青髪がまだ見えてない全髪の素晴らしさを著しくほのめかしている！」」」」」」」"
+    # everyone "In a 3D setting, the blue hair in front also makes a critical foreshadowing of what you’re going to see when you see the whole hair!"
+    everyone "「「「「「「「三次元の場合は、前方のあの青髪がまだ見えてない全髪の素晴らしさを著しくほのめかしている！」」」」」」」"
 
 # game/r3_end.rpy:329
 translate japanese r3_secret_ending_c8ea8a4a:
@@ -792,50 +792,50 @@ translate japanese r3_secret_ending_c8ea8a4a:
 # game/r3_end.rpy:331
 translate japanese r3_secret_ending_76916197:
 
-    # "Everyone" "Next is the clothing!"
-    "群集のみんな" "「「「「「「「次は女神様の絶世の衣装！」」」」」」」"
+    # everyone "Next is the clothing!"
+    everyone "「「「「「「「次は女神様の絶世の衣装！」」」」」」」"
 
 # game/r3_end.rpy:332
 translate japanese r3_secret_ending_22dbdffc:
 
-    # "Everyone" "WHITE UNIFORM!"
-    "群集のみんな" "「「「「「「「あの白い制服だ！」」」」」」」"
+    # everyone "WHITE UNIFORM!"
+    everyone "「「「「「「「あの白い制服だ！」」」」」」」"
 
 # game/r3_end.rpy:333
 translate japanese r3_secret_ending_b31c77af:
 
-    # "Everyone" "You expect to see purity radiating from her clothing given her personality, but in reality you see quite a lot of mischievous clothes instead!"
-    "群集のみんな" "「「「「「「「性格からして、衣装もともに清楚感を放つだろうが、真実はわんぱくな衣装が多いのだ！」」」」」」」"
+    # everyone "You expect to see purity radiating from her clothing given her personality, but in reality you see quite a lot of mischievous clothes instead!"
+    everyone "「「「「「「「性格からして、衣装もともに清楚感を放つだろうが、真実はわんぱくな衣装が多いのだ！」」」」」」」"
 
 # game/r3_end.rpy:334
 translate japanese r3_secret_ending_30062762:
 
-    # "Everyone" "For example, her uniform without the frills!"
-    "群集のみんな" "「「「「「「「たとえ制服でも、フリルがなく！」」」」」」」"
+    # everyone "For example, her uniform without the frills!"
+    everyone "「「「「「「「たとえ制服でも、フリルがなく！」」」」」」」"
 
 # game/r3_end.rpy:335
 translate japanese r3_secret_ending_b4688ba5:
 
-    # "Everyone" "Her cat costume is a no brainer!"
-    "群集のみんな" "「「「「「「「あのネココスも考えずに！」」」」」」」"
+    # everyone "Her cat costume is a no brainer!"
+    everyone "「「「「「「「あのネココスも考えずに！」」」」」」」"
 
 # game/r3_end.rpy:336
 translate japanese r3_secret_ending_0ffbe69f:
 
-    # "Everyone" "Her black jacket emphasizes the mischievous part!"
-    "群集のみんな" "「「「「「「「彼女の黒い上着もお茶目なのを強めている！」」」」」」」"
+    # everyone "Her black jacket emphasizes the mischievous part!"
+    everyone "「「「「「「「彼女の黒い上着もお茶目なのを強めている！」」」」」」」"
 
 # game/r3_end.rpy:337
 translate japanese r3_secret_ending_cba3429c:
 
-    # "Everyone" "In the video for “Indoor kei nara Trackmaker” she has open shoulders and that skirt and that pose!"
-    "群集のみんな" "「「「「「「「『インドア系ならトラックメイカー』の動画にもおしゃれなあのスカートを履いており、裸肩えを見え、あのポーズをしている！」」」」」」」"
+    # everyone "In the video for “Indoor kei nara Trackmaker” she has open shoulders and that skirt and that pose!"
+    everyone "「「「「「「「『インドア系ならトラックメイカー』の動画にもおしゃれなあのスカートを履いており、裸肩えを見え、あのポーズをしている！」」」」」」」"
 
 # game/r3_end.rpy:338
 translate japanese r3_secret_ending_147109a3:
 
-    # "Everyone" "SO, pure white clothes are rare and something of a blessing to see...not to mention with that pose!"
-    "群集のみんな" "「「「「「「「つまり、真っ白な衣装を着る姿は珍しく、祝福とも言えるもの…ましてあのポーズと！」」」」」」」"
+    # everyone "SO, pure white clothes are rare and something of a blessing to see...not to mention with that pose!"
+    everyone "「「「「「「「つまり、真っ白な衣装を着る姿は珍しく、祝福とも言えるもの…ましてあのポーズと！」」」」」」」"
 
 # game/r3_end.rpy:340
 translate japanese r3_secret_ending_efa2cf80:

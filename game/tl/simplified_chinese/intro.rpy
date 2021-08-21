@@ -98,8 +98,8 @@ translate simplified_chinese start_f8869760:
 # game/intro.rpy:41
 translate simplified_chinese start_fe4e8d19:
 
-    # "Mailman" "Here is your delivery. For ummm, [player_last_name!t], correct? Please sign here."
-    "快递员" "「这个就是你的快递。那个…「小东」是吗？请在这里签字」"
+    # mailman "Here is your delivery. For ummm, [player_last_name!t], correct? Please sign here."
+    mailman "「这个就是你的快递。那个…「小东」是吗？请在这里签字」"
 
 # game/intro.rpy:43
 translate simplified_chinese start_055bce01:
