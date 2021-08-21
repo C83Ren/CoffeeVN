@@ -550,8 +550,8 @@ translate simplified_chinese start_9dc7057a:
 translate simplified_chinese strings:
 
     # game/intro.rpy:96
-    old "1. Enter your name."
-    new "1. 请输入你的名字"
+    old "1. What is your name?"
+    new "1. 请选择你的名字"
 
     # game/intro.rpy:98
     old "2. Of the following, what is your most favourite color?"

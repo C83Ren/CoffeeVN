@@ -550,7 +550,7 @@ translate japanese start_9dc7057a:
 translate japanese strings:
 
     # game/intro.rpy:96
-    old "1. Enter your name."
+    old "1. What is your name?"
     new "１．あなたの名前は？"
 
     # game/intro.rpy:98

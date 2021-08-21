@@ -120,7 +120,7 @@ label start:
     $ save_enabled = False
 
     menu:
-        "1. Enter your name."
+        "1. What is your name?"
         "Hitona":
             $ player_name, player_full_name, player_last_name = 'Hitona', 'Hitona Kohigashi', 'Kohigashi'
         "Koppi":
