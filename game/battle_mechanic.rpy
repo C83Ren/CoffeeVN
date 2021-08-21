@@ -288,10 +288,10 @@ label r2_fight:
         if x == 0:
             $ fight_order_temp = fight_order[:]
             $ renpy.random.shuffle(fight_order_temp)
-        if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
+        if x < len(fight_order_temp):
             $ self = fight_order_temp[x]
             $ x = x + 1
-            if self not in fight_order:
+            if self not in fight_order or self['hp'] <= 0:
                 jump r2_fight
             $ active_name = self["name"] if self["name"] != 'Hitona' else player_name
             "It's {color=#00c}[active_name]{/color}'s turn."
