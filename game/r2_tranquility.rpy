@@ -54,9 +54,11 @@ label r2_tranquility:
     python:
         hitona_stats["hp"] = 150
         hitona_stats["hp_max"] = 150
+        hitona_stats["par"] = hitona_stats["burn"] = 0
         eve_stats["hp"] = 200
         eve_stats["spell"] = ["Wind Cutter", "Fire Ball", "Electric Bolt"]
         eve_stats["item"] = ["Heal Aura", "Flamethrower"]
+        eve_stats["par"] = eve_stats["burn"] = 0
         fight_order = [hitona_stats, eve_stats, soldier2_stats, soldier3_stats]
         fight_list = [eve_stats, soldier2_stats, soldier3_stats]
         ally_list = [hitona_stats, eve_stats]

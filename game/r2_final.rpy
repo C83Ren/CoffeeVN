@@ -88,9 +88,11 @@ label r2_final:
         hitona_stats["item"].append("Flamethrower")
         hitona_stats["item"].append("God Blessing")
         hitona_stats["item"].append("Heal Aura")
+        hitona_stats["par"] = hitona_stats["burn"] = 0
         eve_stats["hp"] = 200
         eve_stats["spell"] = ["Wind Lance", "Fire Wall", "Lightning Strike"]
         eve_stats["item"] = ["Heal Aura", "Flamethrower", "God Blessing"]
+        eve_stats["par"] = eve_stats["burn"] = 0
         fight_order = [hitona_stats, eve_stats, king_stats]
         fight_list = [eve_stats, king_stats]
         ally_list = [hitona_stats, eve_stats]
