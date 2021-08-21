@@ -26,17 +26,16 @@ init python:
         return tl_what
 
     # parenthesized tl (input in None language)
-    def tl_paren(what, alt_language = None):
+    def tl_paren(what, alt_language = None, suffix = ''):
         if alt_language is None:
             alt_language = persistent.alt_language
         if alt_language is None:
-            return what
+            return tl_string(what, renpy.game.preferences.language) + suffix
         alt_tl = tl_string(what, alt_language)
         if alt_tl:
-            # will be double tl-ed but shouldn't match anything.. hopefully.
-            return tl_string(what, renpy.game.preferences.language) + ' (' + alt_tl + ')'
+            return tl_string(what, renpy.game.preferences.language) + ' (' + alt_tl + ')' + suffix
         else:
-            return what
+            return tl_string(what, renpy.game.preferences.language) + suffix
 
     # tl from current language -> another language
     # get translation for a string (does not work for block tl)

@@ -145,16 +145,16 @@ label battle_mechanic_setup():
     return
 
 screen single_stat(name, hp, hp_max, ypos, par, burn):
-    frame xsize 400 ysize 110 xpadding 20 ypadding 13:
+    frame xsize 520 ysize 110 xpadding 20 ypadding 13:
         ypos ypos
 
-        vbox xsize 360:
-            hbox xsize 360:
+        vbox xsize 480:
+            hbox xsize 480:
                 if name != 'Hitona':
                     $ display_name = name
                 else:
                     $ display_name = player_name
-                text tl_paren(display_name) xalign 0.0
+                text tl_paren(display_name) xalign 0.0 size gui.text_size
 
                 fixed xsize 90 ysize 45 xalign 1.0:
                     hbox:
@@ -176,7 +176,7 @@ screen single_stat(name, hp, hp_max, ypos, par, burn):
 
                 bar:
                     value AnimatedValue(hp, hp_max, 1.0)
-                    xmaximum 150
+                    xmaximum int(150 + 150 * hp_max / 500)
                     ysize 26
                     yalign 0.5
 
@@ -379,6 +379,13 @@ label load_spell(spell):
     return
 
 label item_option:
+    python:
+        choice_suffix = {}
+        for item in hitona_stats["item"]:
+            if item not in choice_suffix:
+                choice_suffix[item] = 0
+            choice_suffix[item] += 1
+        choice_suffix = {k: "　{color=#a3a}(" + str(v) + "){/color}" for k, v in choice_suffix.items()}
     menu:
         set set(item_list.keys()).difference(hitona_stats["item"])
         "What item to use?"

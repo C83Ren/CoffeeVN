@@ -239,30 +239,51 @@ style input:
 screen choice(items):
     if textbox_menu:
         style_prefix "say"
-        vbox:
-            xpos gui.dialogue_xpos + 20
-            ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
+        if not persistent.alt_language:
+            vbox:
+                xpos gui.dialogue_xpos + 20
+                ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
+                hbox:
+                    for i, item in enumerate(items[::2]):
+                        $ caption = tl_paren(item.caption, suffix=choice_suffix.get(item.caption, ''))
+                        textbutton caption:
+                            action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
+                            xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
+                            text_size gui.choice_button_text_size
+                            text_xalign gui.dialogue_text_xalign
+                hbox:
+                    for i, item in enumerate(items[1::2]):
+                        $ caption = tl_paren(item.caption, suffix=choice_suffix.get(item.caption, ''))
+                        textbutton caption:
+                            action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
+                            xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
+                            text_size gui.choice_button_text_size
+                            text_xalign gui.dialogue_text_xalign
+        else:
             hbox:
-                for i, item in enumerate(items[::2]):
-                    $ caption = tl_paren(item.caption)
-                    textbutton caption:
-                        action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
-                        xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
-                        text_size gui.choice_button_text_size
-                        text_xalign gui.dialogue_text_xalign
-            hbox:
-                for i, item in enumerate(items[1::2]):
-                    $ caption = tl_paren(item.caption)
-                    textbutton caption:
-                        action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
-                        xsize (gui.dialogue_width - 120) / ((len(items) + 1) / 2)
-                        text_size gui.choice_button_text_size
-                        text_xalign gui.dialogue_text_xalign
+                xpos gui.dialogue_xpos + 10
+                ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
+                vbox:
+                    for i, item in enumerate(items[:3]):
+                        $ caption = tl_paren(item.caption, suffix=choice_suffix.get(item.caption, ''))
+                        textbutton caption:
+                            action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
+                            xsize (gui.dialogue_width - 30) / 2
+                            text_size gui.choice_button_text_size - 2
+                            text_xalign gui.dialogue_text_xalign
+                vbox:
+                    for i, item in enumerate(items[3:]):
+                        $ caption = tl_paren(item.caption, suffix=choice_suffix.get(item.caption, ''))
+                        textbutton caption:
+                            action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
+                            xsize (gui.dialogue_width - 30) / 2
+                            text_size gui.choice_button_text_size - 2
+                            text_xalign gui.dialogue_text_xalign
     else:
         style_prefix "choice"
         vbox:
             for i in items:
-                $ caption = tl_paren(i.caption)
+                $ caption = tl_paren(i.caption, suffix=choice_suffix.get(i.caption, ''))
                 textbutton caption action [Function(add_choice_to_history, expand_string(i.caption)), i.action]
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
@@ -272,6 +293,8 @@ define config.narrator_menu = True
 ## When this is true, choices will be displayed in 2x4 layout in the text box.
 default textbox_menu = False
 
+## Choice suffixes
+default choice_suffix = {}
 
 style choice_vbox is vbox
 style choice_button is button
