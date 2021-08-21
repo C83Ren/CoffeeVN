@@ -283,6 +283,7 @@ label r2_fight:
         save_enabled = False
         item_name = 0
         multiplier = 1.0
+        target = None
     if len(ally_list) > 0 and len(enemy_list) > 0:
         if x == 0:
             $ fight_order_temp = fight_order[:]
@@ -490,7 +491,7 @@ label do_janken(reverse):
 
 label fight_log:
     python:
-        target_name = target["name"] if target["name"] != 'Hitona' else player_name
+        target_name = None if target is None else target["name"] if target["name"] != 'Hitona' else player_name
         self_name = self["name"] if self["name"] != 'Hitona' else player_name
 
     if self["par"] == 0:
@@ -577,7 +578,7 @@ label fight_log:
             "{color=#00c}[self_name]{/color} took {color=#d00}5{/color} damage from the burn!"
             $ hit = 0
 
-    if target["hp"] <= 0:
+    if target and target["hp"] <= 0:
         if target in ally_list:
             $ ally_list.remove(target)
         else:
