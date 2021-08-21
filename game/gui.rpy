@@ -116,7 +116,7 @@ define gui.textbox_yalign = 1.0
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos_single = 644
-define gui.name_xpos_dual = 644
+define gui.name_xpos_dual = 742
 define gui.name_xpos = gui.preference("name_xpos", gui.name_xpos_single if not persistent.alt_language else gui.name_xpos_dual)
 define gui.name_ypos = -22
 
@@ -127,7 +127,7 @@ define gui.name_xalign = 0.5
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
 define gui.namebox_width_single = 398
-define gui.namebox_width_dual = 398
+define gui.namebox_width_dual = 596
 define gui.namebox_width = gui.preference("namebox_width", gui.namebox_width_single if not persistent.alt_language else gui.namebox_width_dual)
 define gui.namebox_height = 54
 
