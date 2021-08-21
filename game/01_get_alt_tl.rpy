@@ -14,7 +14,11 @@ init python:
         return renpy.substitutions.substitute(what, scope=None, force=False, translate=False)[0]
 
     # tl from None language -> language
-    def tl_string(what, language = 'simplified_chinese'):
+    def tl_string(what, language = None):
+        if language is None:
+            language = persistent.alt_language
+        if language is None:
+            return what
         tl_what = renpy.translation.translate_string(what, language)
         old_language, renpy.game.preferences.language = renpy.game.preferences.language, language
         tl_what = expand_string(tl_what)
@@ -22,7 +26,11 @@ init python:
         return tl_what
 
     # parenthesized tl (input in None language)
-    def tl_paren(what, alt_language = 'simplified_chinese'):
+    def tl_paren(what, alt_language = None):
+        if alt_language is None:
+            alt_language = persistent.alt_language
+        if alt_language is None:
+            return what
         alt_tl = tl_string(what, alt_language)
         if alt_tl:
             # will be double tl-ed but shouldn't match anything.. hopefully.
@@ -32,7 +40,11 @@ init python:
 
     # tl from current language -> another language
     # get translation for a string (does not work for block tl)
-    def get_alt_string_tl(what, alt_language = 'simplified_chinese'):
+    def get_alt_string_tl(what, alt_language = None):
+        if alt_language is None:
+            alt_language = persistent.alt_language
+        if alt_language is None:
+            return ''
         # what is translated, so reverse translate to None language, then translate to new language
         rtl_map = reverse_tl_map(renpy.game.preferences.language)
         if what in rtl_map:
@@ -43,7 +55,11 @@ init python:
         return alt_tl_what
 
     # get tl in another language **for the current position only**
-    def get_alt_tl(what, alt_language = 'simplified_chinese'):
+    def get_alt_tl(what, alt_language = None):
+        if alt_language is None:
+            alt_language = persistent.alt_language
+        if alt_language is None:
+            return ''
         if renpy.game.context().translate_identifier:
             # translate identifiers map to 0+ say statements for a language
             # so we find the index we're currently at (for current language), and

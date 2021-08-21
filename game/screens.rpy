@@ -112,27 +112,31 @@ screen say(who, what):
 
         if textbox_menu:
             hbox:
-                fixed xsize 0.3:
+                fixed:
+                    if persistent.alt_language:
+                        xsize 0.3
                     text what id "what":
                         line_spacing -5
 
-                $ alt_tl = get_alt_tl(what)
-                $ alt_tl = '(%s)' % alt_tl if alt_tl else ''
-                fixed :
-                    text "[alt_tl]":
-                        style "say_dialogue"
-                        slow_cps preferences.text_cps
-                        line_spacing -5
+                if persistent.alt_language:
+                    $ alt_tl = get_alt_tl(what)
+                    $ alt_tl = '(%s)' % alt_tl if alt_tl else ''
+                    fixed:
+                        text "[alt_tl]":
+                            style "say_dialogue"
+                            slow_cps preferences.text_cps
+                            line_spacing -5
         else:
             text what id "what":
                 line_spacing -5
 
-            $ alt_tl = get_alt_tl(what)
-            text alt_tl:
-                style "say_dialogue"
-                slow_cps preferences.text_cps
-                line_spacing -5
-                yoffset 105
+            if persistent.alt_language:
+                $ alt_tl = get_alt_tl(what)
+                text alt_tl:
+                    style "say_dialogue"
+                    slow_cps preferences.text_cps
+                    line_spacing -5
+                    yoffset 105
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -782,6 +786,27 @@ style slot_button_text:
 ## themselves.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
+init python:
+    @renpy.pure
+    class Language(Action, DictEquality):
+        alt = _("Language [text]")
+
+        def __init__(self, language, alt_language = None):
+            self.language = language
+            self.alt_language = alt_language
+
+        def __call__(self):
+            renpy.change_language(self.language)
+            persistent.alt_language = self.alt_language
+            renpy.restart_interaction()
+
+        def get_selected(self):
+            return _preferences.language == self.language and persistent.alt_language == self.alt_language
+
+        def get_sensitive(self):
+            return (self.language in renpy.known_languages() or self.language is None) and \
+                   (self.alt_language in renpy.known_languages() or self.alt_language is None)
+
 
 screen preferences():
 
@@ -815,6 +840,7 @@ screen preferences():
                     textbutton "{font=DejaVuSans.ttf}English{/font}" action Language(None)
                     textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}" action Language("japanese")
                     textbutton "{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action Language("simplified_chinese")
+                    textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}+{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action [Language("japanese", "simplified_chinese")]
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -1366,26 +1392,6 @@ style notify_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#nvl
 
-init python:
-    def get_alt_tl_nvl(entry):
-        who, what, who_id, what_id, window_id = entry
-        print(what)
-        what = get_alt_tl(what)
-        new_entry = _NVLEntry((who, what, who_id, 'what_' if what_id == 'what' else what_id, window_id))
-        new_entry.current = entry.current
-        new_entry.who = who
-        new_entry.what = what
-        new_entry.who_id = who_id
-        new_entry.what_id = 'what_' if what_id == 'what' else what_id
-        new_entry.window_id = window_id
-        new_entry.who_args = entry.who_args
-        new_entry.what_args = entry.what_args
-        new_entry.window_args = entry.window_args
-        new_entry.properties = entry.properties
-        new_entry.multiple = entry.multiple
-        print(entry, new_entry)
-        return new_entry
-
 screen nvl(dialogue, dialogue_tl, items=None):
 
     window:
@@ -1402,7 +1408,7 @@ screen nvl(dialogue, dialogue_tl, items=None):
                 yinitial 1.0
 
                 use nvl_dialogue(dialogue)
-        else:
+        elif persistent.alt_language:
             vbox:
                 fixed ysize 540:
                     vbox spacing gui.nvl_spacing:
@@ -1410,7 +1416,8 @@ screen nvl(dialogue, dialogue_tl, items=None):
                 fixed ysize 540:
                     vbox spacing gui.nvl_spacing:
                         use nvl_dialogue(dialogue_tl)
-                # (None, u'\u201cKohi!', u'who', u'what', u'window')
+        else:
+            use nvl_dialogue(dialogue)
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True, as it is above.
