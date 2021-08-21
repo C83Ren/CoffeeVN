@@ -1,4 +1,7 @@
 init python:
+    def to_full_width(n):
+        return (''.join(list('０１２３４５６７８９')[int(x)] for x in str(n)))
+
     def store_turn(list, object):
 
         atk = list[object][0]
@@ -269,59 +272,62 @@ label r2_fight:
         save_enabled = False
         item_name = 0
         multiplier = 1.0
-        if len(ally_list) > 0 and len(enemy_list) > 0:
-            if x == 0:
-                fight_order_temp = fight_order
-                renpy.random.shuffle(fight_order_temp)
-            if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
-                self = fight_order_temp[x]
-                x = x + 1
-                active_name = __(self["name"] if self["name"] != 'Hitona' else player_name)
-                renpy.say(narrator, _("It's {color=#00c}[active_name]{/color}'s turn."))
-                if self["name"] == "Hitona":
-                    renpy.jump("fight_option")
+    if len(ally_list) > 0 and len(enemy_list) > 0:
+        if x == 0:
+            $ fight_order_temp = fight_order
+            $ renpy.random.shuffle(fight_order_temp)
+        if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
+            $ self = fight_order_temp[x]
+            $ x = x + 1
+            $ active_name = self["name"] if self["name"] != 'Hitona' else player_name
+            "It's {color=#00c}[active_name]{/color}'s turn."
+
+            if self["par"]:
+                jump fight_log
+
+            if self["name"] == "Hitona":
+                jump fight_option
+            else:
+                if len(self["item"]) > 0:
+                    if renpy.random.randint(1,4) > 1:
+                        $ spell_name = renpy.random.choice(self["spell"])
+                        $ atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
+                    else:
+                        $ spell_name = renpy.random.choice(self["item"])
+                        $ self["item"].remove(spell_name)
+                        $ atk, heal, burn, par, sfx = store_turn(item_list, spell_name)
                 else:
-                    if len(self["item"]) > 0:
-                        if renpy.random.randint(1,4) > 1:
-                            spell_name = renpy.random.choice(self["spell"])
-                            atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
-                        else:
-                            spell_name = renpy.random.choice(self["item"])
-                            self["item"].remove(spell_name)
-                            atk, heal, burn, par, sfx = store_turn(item_list, spell_name)
+                    $ spell_name = renpy.random.choice(self["spell"])
+                    $ atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
+
+                if self["name"] == "Eve":
+                    if atk > 0:
+                        $ target = renpy.random.choice(enemy_list)
+                        $ multiplier = renpy.random.choice(multiplier_list)
                     else:
-                        spell_name = renpy.random.choice(self["spell"])
-                        atk, heal, burn, par, sfx = store_turn(spell_list, spell_name)
+                        $ target = renpy.random.choice(ally_list)
 
-                    if self["name"] == "Eve":
-                        if atk > 0:
-                            target = renpy.random.choice(enemy_list)
-                            multiplier = renpy.random.choice(multiplier_list)
+                else:
+                    if atk > 0:
+                        $ target = renpy.random.choice(ally_list)
+                        if target["name"] == "Hitona":
+                            jump rock_paper_scissor_enemy
                         else:
-                            target = renpy.random.choice(ally_list)
-
+                            $ multiplier = renpy.random.choice(multiplier_list)
                     else:
-                        if atk > 0:
-                            target = renpy.random.choice(ally_list)
-                            if target["name"] == "Hitona":
-                                renpy.jump("rock_paper_scissor_enemy")
-                            else:
-                                multiplier = renpy.random.choice(multiplier_list)
-                        else:
-                            target = renpy.random.choice(enemy_list)
-                    renpy.jump("fight_log")
-
-            elif x >= len(fight_order_temp):
-                x = 0
-                renpy.jump("r2_fight")
-        elif len(ally_list) == 0:
-            textbox_menu = False
-            save_enabled = True
-            renpy.jump("fight_fail")
-        else:
-            textbox_menu = False
-            save_enabled = True
-            renpy.jump(fight_label)
+                        $ target = renpy.random.choice(enemy_list)
+                jump fight_log
+        elif x >= len(fight_order_temp):
+            $ x = 0
+            jump r2_fight
+    elif len(ally_list) == 0:
+        $ textbox_menu = False
+        $ save_enabled = True
+        jump fight_fail
+    else:
+        $ textbox_menu = False
+        $ save_enabled = True
+        $ renpy.jump(fight_label)
 
 label fight_option:
     $ item_name = 0
@@ -422,7 +428,7 @@ label rock_paper_scissor:
     jump fight_log
 
 label rock_paper_scissor_enemy:
-    $ self_name = __(self["name"]) if self["name"] != 'Hitona' else player_name
+    $ self_name = self["name"] if self["name"] != 'Hitona' else player_name
     "{color=#00c}[self_name]{/color} is targeting {color=#00c}[player_name]{/color}! Let's defend!" id rock_paper_scissor_enemy_1c5d07bd
     call do_janken(True) from _call_do_janken_1
     jump fight_log
@@ -464,8 +470,8 @@ label do_janken(reverse):
 
 label fight_log:
     python:
-        target_name = __(target["name"]) if target["name"] != 'Hitona' else player_name
-        self_name = __(self["name"]) if self["name"] != 'Hitona' else player_name
+        target_name = target["name"] if target["name"] != 'Hitona' else player_name
+        self_name = self["name"] if self["name"] != 'Hitona' else player_name
 
     if self["par"] == 0:
         if item_name != 0:
@@ -483,6 +489,7 @@ label fight_log:
             window hide
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
+            $ fw_atk = to_full_width(atk)
             "{color=#00c}[target_name]{/color} took {color=#d00}[atk]{/color} damage!"
             $ hit = 0
         else:
@@ -492,6 +499,7 @@ label fight_log:
             window hide
             $ renpy.play(sfx, channel='sound')
             $ renpy.pause(2.0, hard=True)
+            $ fw_heal = to_full_width(heal)
             "{color=#00c}[target_name]{/color} has been healed {color=#090}[heal]{/color} HP!"
 
         if burn > 0 and target["hp"] > 0:

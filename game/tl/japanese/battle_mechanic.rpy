@@ -56,7 +56,6 @@ translate japanese fight_log_3c965ad1:
 translate japanese fight_log_a97f6bbd:
 
     # "{color=#00c}[target_name]{/color} took {color=#d00}[atk]{/color} damage!"
-    $ fw_atk = to_full_width(atk)
     "{color=#00c}[target_name!t]{/color}が{color=#d00}[fw_atk]{/color}ダメージを受けた！"
 
 
@@ -64,7 +63,6 @@ translate japanese fight_log_a97f6bbd:
 translate japanese fight_log_c0cbab48:
 
     # "{color=#00c}[target_name]{/color} has been healed {color=#090}[heal]{/color} HP!"
-    $ fw_heal = to_full_width(heal)
     "{color=#00c}[target_name!t]{/color}はＨＰが{color=#090}[fw_heal]{/color}回復した！"
 
 # game/battle_mechanic.rpy:474
@@ -115,11 +113,13 @@ translate japanese fight_fail_9e95cf3b:
     # "Having lost the fight, you’ve become unable to save the kingdom."
     "戦闘を負け、王国を救うことができなくなってしまった。"
 
-translate japanese strings:
+# game/battle_mechanic.rpy:280
+translate japanese r2_fight_aeb4a7b8:
 
-    # game/battle_mechanic.rpy:280
-    old "It's {color=#00c}[active_name]{/color}'s turn."
-    new "{color=#00c}[active_name]{/color}のターンだ。"
+    # "It's {color=#00c}[active_name]{/color}'s turn."
+    "{color=#00c}[active_name!t]{/color}のターンだ。"
+
+translate japanese strings:
 
     # game/battle_mechanic.rpy:294
     old "What to do?"
@@ -212,7 +212,3 @@ translate japanese strings:
     # game/battle_mechanic.rpy:383
     old "[player_name!t]"
     new "[player_name!t]"
-
-init python:
-    def to_full_width(n):
-        return (''.join(list('０１２３４５６７８９')[int(x)] for x in str(n)))

@@ -8,7 +8,7 @@ translate simplified_chinese rock_paper_scissor_0e7c8ad7:
 translate simplified_chinese rock_paper_scissor_enemy_1c5d07bd:
 
     # "{color=#00c}[self_name]{/color} is targeting {color=#00c}Hitona{/color}! Let's defend!"
-    "{color=#00c}[self_name!t]{/color}对[player_name!t]发起了攻击！做好防御吧！"
+    "{color=#00c}[self_name!t]{/color}对{color=#00c}[player_name!t]{/color}发起了攻击！做好防御吧！"
 
 # game/battle_mechanic.rpy:414
 translate simplified_chinese do_janken_85daf20e:
@@ -113,11 +113,13 @@ translate simplified_chinese fight_fail_9e95cf3b:
     # "Having lost the fight, you’ve become unable to save the kingdom."
     "战斗失败，没能拯救王国。"
 
-translate simplified_chinese strings:
+# game/battle_mechanic.rpy:280
+translate simplified_chinese r2_fight_aeb4a7b8:
 
-    # game/battle_mechanic.rpy:280
-    old "It's {color=#00c}[active_name]{/color}'s turn."
-    new "到{color=#00c}[active_name]{/color}的回合了。"
+    # "It's {color=#00c}[active_name]{/color}'s turn."
+    "到{color=#00c}[active_name!t]{/color}的回合了。"
+
+translate simplified_chinese strings:
 
     # game/battle_mechanic.rpy:294
     old "What to do?"

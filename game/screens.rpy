@@ -119,9 +119,11 @@ screen say(who, what):
                         line_spacing -5
 
                 if persistent.alt_language:
+                    fixed:
+                        xsize 0.02
                     $ alt_tl = get_alt_tl(what)
                     $ alt_tl = '(%s)' % alt_tl if alt_tl else ''
-                    fixed:
+                    fixed xsize 0.40:
                         text "[alt_tl]":
                             style "say_dialogue"
                             font gui.tl_fonts[persistent.alt_language]
