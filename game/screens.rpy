@@ -342,6 +342,7 @@ style nav_button is button:
     hover_background "gui/nav_button hover.png"
     selected_background "gui/nav_button selected.png"
     xminimum 365
+    ymaximum 50
 
 screen navigation():
 
@@ -928,32 +929,41 @@ style mute_all_button_text is check_button_text
 style pref_label:
     top_margin gui.pref_spacing
     bottom_margin 3
+    ymaximum 60
 
 style pref_label_text:
     yalign 1.0
+    ymaximum 60
 
 style pref_vbox:
     xsize 338
+    ymaximum 60
 
 style radio_vbox:
     spacing gui.pref_button_spacing
+    ymaximum 50
 
 style radio_button:
     properties gui.button_properties("radio_button")
     foreground "gui/button/radio_[prefix_]foreground.png"
+    ymaximum 50
 
 style radio_button_text:
     properties gui.button_text_properties("radio_button")
+    ymaximum 50
 
 style check_vbox:
     spacing gui.pref_button_spacing
+    ymaximum 50
 
 style check_button:
     properties gui.button_properties("check_button")
     foreground "gui/button/check_[prefix_]foreground.png"
+    ymaximum 50
 
 style check_button_text:
     properties gui.button_text_properties("check_button")
+    ymaximum 50
 
 style slider_slider:
     xsize 525
@@ -1844,10 +1854,10 @@ screen music_room():
             hbox:
                 vbox xsize 700:
                     for tag, author, file in tracks[:9]:
-                        textbutton tag action mr.Play(file)
+                        textbutton tag action mr.Play(file) ymaximum 53
                 vbox xsize 700:
                     for tag, author, file in tracks[9:]:
-                        textbutton tag action mr.Play(file)
+                        textbutton tag action mr.Play(file) ymaximum 53
 
             null height 40
             hbox:

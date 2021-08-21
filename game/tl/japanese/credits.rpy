@@ -137,5 +137,5 @@ translate japanese strings:
     new "中国語翻訳"
 
     # game/credits.rpy:114
-    old "Proofreading"
-    new "構成"
+    old "Chinese Translation Proofreading"
+    new "中国語翻訳構成"

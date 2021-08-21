@@ -59,7 +59,7 @@ screen credits_space(space):
 
 screen credits_entry(what, who, trailing_spaces=True):
     vbox:
-        use credits_centered_text(what)
+        use credits_centered_text(tl_paren(what))
         use credits_space(75)
         $ first = True
         for person in who:
@@ -95,6 +95,7 @@ screen credits_message(who, message, img):
                         text t xalign 1.0 color '#FFF' font credits_font
 
 screen credits_display():
+    predict False
     vbox:
         use credits_space(125)
         use credits_entry(_("Planning"), ["company"])
@@ -104,14 +105,10 @@ screen credits_display():
         use credits_entry(_("Illustration"), ["nep", "lobster", "lemon", "gabu", "wari", "rabbit", "kosa", "artist0", "artist1", "artist2", "kimagure"])
         use credits_entry(_("Music"), ["luttii", "dova"])
         use credits_entry(_("Sound"), ["zap"])
-        use credits_entry(_("Programming"), ["rabbit", "cryo", "xn"])
+        use credits_entry(_("Programming"), ["rabbit", "cryo", "xn", "saki"])
+        use credits_entry(_("Chinese Translation"), ["cc", "gk", "lnusyaha", "suteki", "saki"])
+        use credits_entry(_("Chinese Translation Proofreading"), ["cc"])
         use credits_entry(_("Support"), ["pupu"])
-        use credits_space(125)
-        use credits_centered_text(_("Chinese Translation"))
-        use credits_space(200)
-        use credits_entry(_("Translation"), ["cc", "gk", "lnusyaha", "suteki", "saki"])
-        use credits_entry(_("Programming"), ["saki", "xn"])
-        use credits_entry(_("Proofreading"), ["cc"])
         fixed xsize 1920 ysize 1080:
             vbox xalign 0.5 yalign 0.5:
                 image Transform(Image('gui/title.png'), zoom=0.35) xalign 0.5 yalign 0.5
@@ -126,7 +123,10 @@ screen credits_offset(offset):
 screen credits_final():
     fixed xsize 1920 ysize 1080:
         vbox xalign 0.5 yalign 0.5:
-            use credits_centered_text(_("Congratulations on your second anniversary!"))
+            $ anniv_text = _("Congratulations on your second anniversary!")
+            if persistent.alt_language:
+                $ anniv_text = tl_string(anniv_text, _preferences.language) + '\n\n' + tl_string(anniv_text, persistent.alt_language)
+            use credits_centered_text(anniv_text)
 
 define credits_messages = [
     ('wari', '60歳になるまで配信をやめちゃダメですよ！', 'images/credits/wari.png'),
@@ -149,7 +149,7 @@ screen credits_message_display():
 define credits_scroll_time = 60.0
 define credits_message_display_time = 7.5
 # use show screen credits_offset(x) until the red bar is just not visible
-define credits_height = 8273
+define credits_height = 7444
 
 transform credits_scroll:
     xalign 0.5

@@ -137,5 +137,5 @@ translate simplified_chinese strings:
     new "中文翻译"
 
     # game/credits.rpy:114
-    old "Proofreading"
-    new "校对"
+    old "Chinese Translation Proofreading"
+    new "中文翻译校对"
