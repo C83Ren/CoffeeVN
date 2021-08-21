@@ -70,7 +70,7 @@ translate japanese strings:
 
     # game/characters.rpy:22
     old "Everyone"
-    new "群集"
+    new "群集のみんな"
 
     # game/characters.rpy:23
     old "Waitress"

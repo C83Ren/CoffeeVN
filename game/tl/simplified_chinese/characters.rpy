@@ -70,7 +70,7 @@ translate simplified_chinese strings:
 
     # game/characters.rpy:22
     old "Everyone"
-    new "众人"
+    new "聚集在一起的大家"
 
     # game/characters.rpy:23
     old "Waitress"
