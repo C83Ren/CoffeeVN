@@ -228,9 +228,11 @@ translate japanese true_end_combination_unlocked_c8d96d53:
     "箱の中にはまた錠をかけた箱がある。残り３つの鍵。"
 
 # game/true_end.rpy:113
-translate japanese true_end_combination_unlocked_fd8c0b24:
+translate japanese true_end_combination_unlocked_d3ef93c8:
 
+    # nvl clear
     # nvl_narrator "“Second!"
+    nvl clear
     nvl_narrator "『２つ目、"
 
 # game/true_end.rpy:115
@@ -258,9 +260,11 @@ translate japanese true_end_combination_unlocked_92c76bea:
     "箱の中にはまた錠をかけた箱がある。残り２つの鍵。"
 
 # game/true_end.rpy:124
-translate japanese true_end_combination_unlocked_6fdb9230:
+translate japanese true_end_combination_unlocked_82e4a07e:
 
+    # nvl clear
     # nvl_narrator "“Third!"
+    nvl clear
     nvl_narrator "『３つ目、"
 
 # game/true_end.rpy:127

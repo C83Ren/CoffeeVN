@@ -228,9 +228,11 @@ translate simplified_chinese true_end_combination_unlocked_c8d96d53:
     "保险箱内还有一个上了锁的保险箱。还剩三把钥匙。"
 
 # game/true_end.rpy:113
-translate simplified_chinese true_end_combination_unlocked_fd8c0b24:
+translate simplified_chinese true_end_combination_unlocked_d3ef93c8:
 
+    # nvl clear
     # nvl_narrator "“Second!"
+    nvl clear
     nvl_narrator "『第二点！"
 
 # game/true_end.rpy:115
@@ -258,9 +260,11 @@ translate simplified_chinese true_end_combination_unlocked_92c76bea:
     "保险箱内还有一个上了锁的保险箱。还剩两把钥匙。"
 
 # game/true_end.rpy:124
-translate simplified_chinese true_end_combination_unlocked_6fdb9230:
+translate simplified_chinese true_end_combination_unlocked_82e4a07e:
 
+    # nvl clear
     # nvl_narrator "“Third!"
+    nvl clear
     nvl_narrator "『第三点！"
 
 # game/true_end.rpy:127

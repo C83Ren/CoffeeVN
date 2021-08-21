@@ -179,6 +179,7 @@ label true_end_combination_unlocked:
     call show_cg("spreg3", True) from _call_show_cg_15
     call show_cg("grandspell", True) from _call_show_cg_16
 
+    nvl clear
     nvl_narrator "“Second!"
     nvl_narrator "Keep being yourself!"
     nvl_narrator "That is Hitona’s unique charm!"
@@ -195,7 +196,7 @@ label true_end_combination_unlocked:
     call show_cg("artreel6", True) from _call_show_cg_42
     call show_cg("hitonamemory", True) from _call_show_cg_22
 
-
+    nvl clear
     nvl_narrator "“Third!"
     nvl_narrator "The memories that you have made all this time are irreplaceable!"
     nvl_narrator "We want Hitona to keep on making wonderful memories!”"
