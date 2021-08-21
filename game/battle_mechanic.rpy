@@ -603,11 +603,12 @@ label fight_log:
     jump r2_fight
 
 label fight_fail:
-    hide screen multi_stat with dissolve
-    hide screen multi_sprite with dissolve
-    scene black with dissolve
-    "Having lost the fight, you’ve become unable to save the kingdom."
-
     $ textbox_menu = False
     $ save_enabled = True
+    $ renpy.transition(Dissolve(2.5))
+    $ renpy.hide_screen("multi_stat")
+    $ renpy.hide_screen("multi_sprite")
+    scene black with Dissolve(2.5)
+
+    "Having lost the fight, you’ve become unable to save the kingdom."
     jump bad_end
