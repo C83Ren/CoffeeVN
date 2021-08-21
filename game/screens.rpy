@@ -116,7 +116,7 @@ screen say(who, what):
                     if persistent.alt_language:
                         xsize 0.3
                     text what id "what":
-                        line_spacing -5
+                        line_spacing (-5 if persistent.alt_language else 0)
 
                 if persistent.alt_language:
                     fixed:
@@ -126,12 +126,11 @@ screen say(who, what):
                     fixed xsize 0.40:
                         text "[alt_tl]":
                             style "say_dialogue"
-                            font gui.tl_fonts[persistent.alt_language]
                             slow_cps preferences.text_cps
                             line_spacing -5
         else:
             text what id "what":
-                line_spacing -5
+                line_spacing (-5 if persistent.alt_language else 0)
 
             if persistent.alt_language:
                 $ alt_tl = get_alt_tl(what)
@@ -801,8 +800,18 @@ init python:
             self.alt_language = alt_language
 
         def __call__(self):
+            actions = []
+            if persistent.alt_language and not self.alt_language:
+                actions.append(gui.SetPreference('text_size', gui.text_size_single))
+                actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_single))
+            elif not persistent.alt_language and self.alt_language:
+                actions.append(gui.SetPreference('text_size', gui.text_size_dual))
+                actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_dual))
+                resize_action = gui.SetPreference('text_size', gui.text_size_dual)
             renpy.change_language(self.language)
             persistent.alt_language = self.alt_language
+            for action in actions:
+                action()
             renpy.restart_interaction()
 
         def get_selected(self):
@@ -845,7 +854,7 @@ screen preferences():
                     textbutton "{font=DejaVuSans.ttf}English{/font}" action Language(None)
                     textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}" action Language("japanese")
                     textbutton "{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action Language("simplified_chinese")
-                    textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}+{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action [Language("japanese", "simplified_chinese")]
+                    textbutton "{font=tl/japanese/SourceHanSansLite.ttf}日本語{/font}+{font=tl/simplified_chinese/ui.ttf}简体中文{/font}" action Language("japanese", "simplified_chinese")
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.

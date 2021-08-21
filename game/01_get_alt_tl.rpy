@@ -34,7 +34,7 @@ init python:
         alt_tl = tl_string(what, alt_language)
         if alt_tl:
             # will be double tl-ed but shouldn't match anything.. hopefully.
-            return tl_string(what, renpy.game.preferences.language) + ' {font=' + gui.tl_fonts[persistent.alt_language] + '}(' + alt_tl + '){/font}'
+            return tl_string(what, renpy.game.preferences.language) + ' (' + alt_tl + ')'
         else:
             return what
 
