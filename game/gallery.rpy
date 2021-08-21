@@ -2,9 +2,9 @@ init +1 python:
     g = Gallery()
 
     for i in range(22):
-        g.button("cg %d" % (i + 1))
+        g.button("cg %d None" % (i + 1))
         g.condition("persistent.cg_unlocked_%d" % (i + 1))
-        g.image(ImageReference("cg %d" % (i + 1)))
+        g.image(ImageReference("cg %d None" % (i + 1)))
 
 init +2 python:
     for i in range(22):

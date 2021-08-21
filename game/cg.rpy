@@ -7,8 +7,6 @@ init 0:
     image cg 1 None = "cg 1 unscaled None"
     image cg 1 japanese = "cg 1 unscaled japanese"
     image cg 1 simplified_chinese = "cg 1 unscaled simplified_chinese"
-    image cg 1 = "cg 1 unscaled"
-    image cg hitonadress = "cg 1 unscaled"
     define cg_hint_1 = _("Go to the shopping district and wear a dress in the Support Route.")
     image cg 2 unscaled None = Image("images/CG/anniv.png")
     image cg 2 unscaled japanese = Image("images/CG/anniv.png")
@@ -16,8 +14,6 @@ init 0:
     image cg 2 None = "cg 2 unscaled None"
     image cg 2 japanese = "cg 2 unscaled japanese"
     image cg 2 simplified_chinese = "cg 2 unscaled simplified_chinese"
-    image cg 2 = "cg 2 unscaled"
-    image cg anniv = "cg 2 unscaled"
     define cg_hint_2 = _("Take a picture with Shiraishi and finish the Support Route.")
     image cg 3 unscaled None = Image("images/CG/grand_spell.png")
     image cg 3 unscaled japanese = Image("images/CG/grand_spell.png")
@@ -25,8 +21,6 @@ init 0:
     image cg 3 None = "cg 3 unscaled None"
     image cg 3 japanese = "cg 3 unscaled japanese"
     image cg 3 simplified_chinese = "cg 3 unscaled simplified_chinese"
-    image cg 3 = "cg 3 unscaled"
-    image cg grandspell = "cg 3 unscaled"
     define cg_hint_3 = _("Finish the Joy Route.")
     image cg 4 unscaled None = Image("images/CG/hitona_memory.png")
     image cg 4 unscaled japanese = Image("images/CG/hitona_memory.png")
@@ -34,8 +28,6 @@ init 0:
     image cg 4 None = "cg 4 unscaled None"
     image cg 4 japanese = "cg 4 unscaled japanese"
     image cg 4 simplified_chinese = "cg 4 unscaled simplified_chinese"
-    image cg 4 = "cg 4 unscaled"
-    image cg hitonamemory = "cg 4 unscaled"
     define cg_hint_4 = _("Finish the Memories Route.")
     image cg 5 unscaled None = Image("images/CG/truehitona.png")
     image cg 5 unscaled japanese = Image("images/CG/truehitona.png")
@@ -43,8 +35,6 @@ init 0:
     image cg 5 None = "cg 5 unscaled None"
     image cg 5 japanese = "cg 5 unscaled japanese"
     image cg 5 simplified_chinese = "cg 5 unscaled simplified_chinese"
-    image cg 5 = "cg 5 unscaled"
-    image cg truehitona = "cg 5 unscaled"
     define cg_hint_5 = _("Finish the True End.")
 
     image cg 6 unscaled None = Image("images/CG/lastCG_Green_1.png")
@@ -53,8 +43,6 @@ init 0:
     image cg 6 None = "cg 6 unscaled None"
     image cg 6 japanese = "cg 6 unscaled japanese"
     image cg 6 simplified_chinese = "cg 6 unscaled simplified_chinese"
-    image cg 6 = "cg 6 unscaled"
-    image cg regret1 = "cg 6 unscaled"
     define cg_hint_6 = _("Have something to regret during the Support Route.")
     image cg 7 unscaled None = Image("images/CG/lastCG_Green_2.png")
     image cg 7 unscaled japanese = Image("images/CG/lastCG_Green_2.png")
@@ -62,8 +50,6 @@ init 0:
     image cg 7 None = "cg 7 unscaled None"
     image cg 7 japanese = "cg 7 unscaled japanese"
     image cg 7 simplified_chinese = "cg 7 unscaled simplified_chinese"
-    image cg 7 = "cg 7 unscaled"
-    image cg regret2 = "cg 7 unscaled"
     define cg_hint_7 = _("Have something to regret during the Support Route.")
     image cg 8 unscaled None = Image("images/CG/lastCG_Green_3.png")
     image cg 8 unscaled japanese = Image("images/CG/lastCG_Green_3.png")
@@ -71,8 +57,6 @@ init 0:
     image cg 8 None = "cg 8 unscaled None"
     image cg 8 japanese = "cg 8 unscaled japanese"
     image cg 8 simplified_chinese = "cg 8 unscaled simplified_chinese"
-    image cg 8 = "cg 8 unscaled"
-    image cg regret3 = "cg 8 unscaled"
     define cg_hint_8 = _("Have something to regret during the Support Route.")
     image cg 9 unscaled None = Image("images/CG/lastCG_Green_4.png")
     image cg 9 unscaled japanese = Image("images/CG/lastCG_Green_4.png")
@@ -80,8 +64,6 @@ init 0:
     image cg 9 None = "cg 9 unscaled None"
     image cg 9 japanese = "cg 9 unscaled japanese"
     image cg 9 simplified_chinese = "cg 9 unscaled simplified_chinese"
-    image cg 9 = "cg 9 unscaled"
-    image cg regret4 = "cg 9 unscaled"
     define cg_hint_9 = _("Have something to regret during the Support Route.")
     image cg 10 unscaled None = Image("images/CG/lastCG_Blue_1.png")
     image cg 10 unscaled japanese = Image("images/CG/lastCG_Blue_1.png")
@@ -89,8 +71,6 @@ init 0:
     image cg 10 None = "cg 10 unscaled None"
     image cg 10 japanese = "cg 10 unscaled japanese"
     image cg 10 simplified_chinese = "cg 10 unscaled simplified_chinese"
-    image cg 10 = "cg 10 unscaled"
-    image cg noregret1 = "cg 10 unscaled"
     define cg_hint_10 = _("Have no regrets during the Support Route.")
     image cg 11 unscaled None = Image("images/CG/lastCG_Blue_2.png")
     image cg 11 unscaled japanese = Image("images/CG/lastCG_Blue_2.png")
@@ -98,8 +78,6 @@ init 0:
     image cg 11 None = "cg 11 unscaled None"
     image cg 11 japanese = "cg 11 unscaled japanese"
     image cg 11 simplified_chinese = "cg 11 unscaled simplified_chinese"
-    image cg 11 = "cg 11 unscaled"
-    image cg noregret2 = "cg 11 unscaled"
     define cg_hint_11 = _("Have no regrets during the Support Route.")
     image cg 12 unscaled None = Image("images/CG/lastCG_Blue_3.png")
     image cg 12 unscaled japanese = Image("images/CG/lastCG_Blue_3.png")
@@ -107,8 +85,6 @@ init 0:
     image cg 12 None = "cg 12 unscaled None"
     image cg 12 japanese = "cg 12 unscaled japanese"
     image cg 12 simplified_chinese = "cg 12 unscaled simplified_chinese"
-    image cg 12 = "cg 12 unscaled"
-    image cg noregret3 = "cg 12 unscaled"
     define cg_hint_12 = _("Have no regrets during the Support Route.")
     image cg 13 unscaled None = Image("images/CG/lastCG_Blue_4.png")
     image cg 13 unscaled japanese = Image("images/CG/lastCG_Blue_4.png")
@@ -116,8 +92,6 @@ init 0:
     image cg 13 None = "cg 13 unscaled None"
     image cg 13 japanese = "cg 13 unscaled japanese"
     image cg 13 simplified_chinese = "cg 13 unscaled simplified_chinese"
-    image cg 13 = "cg 13 unscaled"
-    image cg noregret4 = "cg 13 unscaled"
     define cg_hint_13 = _("Have no regrets during the Support Route.")
 
     image cg 14 unscaled None = Image("images/bg tranquility front.png")
@@ -126,8 +100,6 @@ init 0:
     image cg 14 None = "cg 14 unscaled None"
     image cg 14 japanese = "cg 14 unscaled japanese"
     image cg 14 simplified_chinese = "cg 14 unscaled simplified_chinese"
-    image cg 14 = "cg 14 unscaled"
-    image cg spreg1 = "cg 14 unscaled"
     define cg_hint_14 = _("Visit the Tranquility Region during the Joy Route.")
     image cg 15 unscaled None = Image("images/bg turmoil front.png")
     image cg 15 unscaled japanese = Image("images/bg turmoil front.png")
@@ -135,8 +107,6 @@ init 0:
     image cg 15 None = "cg 15 unscaled None"
     image cg 15 japanese = "cg 15 unscaled japanese"
     image cg 15 simplified_chinese = "cg 15 unscaled simplified_chinese"
-    image cg 15 = "cg 15 unscaled"
-    image cg spreg2 = "cg 15 unscaled"
     define cg_hint_15 = _("Visit the Turmoil Region during the Joy Route.")
     image cg 16 unscaled None = Image("images/bg rage front.png")
     image cg 16 unscaled japanese = Image("images/bg rage front.png")
@@ -144,8 +114,6 @@ init 0:
     image cg 16 None = "cg 16 unscaled None"
     image cg 15 japanese = "cg 16 unscaled japanese"
     image cg 16 simplified_chinese = "cg 16 unscaled simplified_chinese"
-    image cg 16 = "cg 16 unscaled"
-    image cg spreg3 = "cg 16 unscaled"
     define cg_hint_16 = _("Visit the Rage Region during the Joy Route.")
 
     image cg 17 unscaled None = Image("images/r3_art_reel/art_4_thumb.png")
@@ -155,7 +123,6 @@ init 0:
     image cg 17 japanese = "cg 17 None"
     image cg 17 simplified_chinese = "cg 17 None"
     define cg_hint_17 = _("Finish the Memories Route.")
-    image cg artreel1 = "cg 17"
     image cg 18 unscaled None = Image("images/r3_art_reel/art_7_thumb.png")
     image cg 18 unscaled japanese = Image("images/r3_art_reel/art_7_thumb.png")
     image cg 18 unscaled simplified_chinese = Image("images/r3_art_reel/art_7_thumb.png")
@@ -163,7 +130,6 @@ init 0:
     image cg 18 japanese = "cg 18 None"
     image cg 18 simplified_chinese = "cg 18 None"
     define cg_hint_18 = _("Finish the Memories Route.")
-    image cg artreel2 = "cg 18"
     image cg 19 unscaled None = Image("images/r3_art_reel/art_11_thumb.png")
     image cg 19 unscaled japanese = Image("images/r3_art_reel/art_11_thumb.png")
     image cg 19 unscaled simplified_chinese = Image("images/r3_art_reel/art_11_thumb.png")
@@ -171,7 +137,6 @@ init 0:
     image cg 19 japanese = "cg 19 None"
     image cg 19 simplified_chinese = "cg 19 None"
     define cg_hint_19 = _("Finish the Memories Route.")
-    image cg artreel3 = "cg 19"
     image cg 20 unscaled None = Image("images/r3_art_reel/art_13_thumb.png")
     image cg 20 unscaled japanese = Image("images/r3_art_reel/art_13_thumb.png")
     image cg 20 unscaled simplified_chinese = Image("images/r3_art_reel/art_13_thumb.png")
@@ -179,7 +144,6 @@ init 0:
     image cg 20 japanese = "cg 20 None"
     image cg 20 simplified_chinese = "cg 20 None"
     define cg_hint_20 = _("Finish the Memories Route.")
-    image cg artreel4 = "cg 20"
     image cg 21 unscaled None = Image("images/r3_art_reel/art_19_thumb.png")
     image cg 21 unscaled japanese = Image("images/r3_art_reel/art_19_thumb.png")
     image cg 21 unscaled simplified_chinese = Image("images/r3_art_reel/art_19_thumb.png")
@@ -187,7 +151,6 @@ init 0:
     image cg 21 japanese = "cg 21 None"
     image cg 21 simplified_chinese = "cg 21 None"
     define cg_hint_21 = _("Finish the Memories Route.")
-    image cg artreel5 = "cg 21"
     image cg 22 unscaled None = Image("images/r3_art_reel/art_20_thumb.png")
     image cg 22 unscaled japanese = Image("images/r3_art_reel/art_20_thumb.png")
     image cg 22 unscaled simplified_chinese = Image("images/r3_art_reel/art_20_thumb.png")
@@ -195,7 +158,5 @@ init 0:
     image cg 22 japanese = "cg 22 None"
     image cg 22 simplified_chinese = "cg 22 None"
     define cg_hint_22 = _("Finish the Memories Route.")
-    image cg artreel6 = "cg 22"
-
 
     define cg_list = ["hitonadress", "anniv", "grandspell", "hitonamemory", "truehitona", "regret1", "regret2", "regret3", "regret4", "noregret1", "noregret2", "noregret3", "noregret4", "spreg1", "spreg2", "spreg3", "artreel1", "artreel2", "artreel3", "artreel4", "artreel5", "artreel6"]

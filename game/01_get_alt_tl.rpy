@@ -70,9 +70,7 @@ init python:
             while not isinstance(node, renpy.ast.EndTranslate) and (not isinstance(node, renpy.ast.Say) or expand_string(node.what) != what):
                 node = node.next
                 index += 1
-            if isinstance(node, renpy.ast.EndTranslate):
-                index = -1
-            if index != -1:
+            if not isinstance(node, renpy.ast.EndTranslate):
                 old_language, renpy.game.preferences.language = renpy.game.preferences.language, alt_language
                 alt_tl = renpy.game.script.translator.lookup_translate(renpy.game.context().translate_identifier)
                 for i in range(index):
