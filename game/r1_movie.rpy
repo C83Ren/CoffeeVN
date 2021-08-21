@@ -116,6 +116,8 @@ label r1_movie:
 
         stop music
 
+        "After the movie ended..."
+
         show hitona1 happy1 with dissolve
 
         play music hitona_theme fadein 1.0

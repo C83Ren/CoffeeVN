@@ -178,6 +178,12 @@ translate simplified_chinese r1_movie_9378119c:
     # "Holding hands, we were able to finish watching the movie."
     "两人就这样握着彼此的手看完了电影。"
 
+# game/r1_movie.rpy:180
+translate simplified_chinese r1_movie_865a6536_1:
+
+    # "After the movie ended..."
+    "电影结束后…"
+
 # game/r1_movie.rpy:115
 translate simplified_chinese r1_movie_499347bf:
 

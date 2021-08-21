@@ -180,6 +180,12 @@ translate japanese r1_movie_9378119c:
     # "Holding hands, we were able to finish watching the movie."
     "手を繋いだまま、映画を無事に観終わった。"
 
+# game/r1_movie.rpy:180
+translate japanese r1_movie_865a6536_1:
+
+    # "After the movie ended..."
+    "映画が終わった後……"
+
 # game/r1_movie.rpy:115
 translate japanese r1_movie_499347bf:
 
