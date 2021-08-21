@@ -285,11 +285,13 @@ label r2_fight:
         multiplier = 1.0
     if len(ally_list) > 0 and len(enemy_list) > 0:
         if x == 0:
-            $ fight_order_temp = fight_order
+            $ fight_order_temp = fight_order[:]
             $ renpy.random.shuffle(fight_order_temp)
         if x < len(fight_order_temp) and fight_order_temp[x]["hp"] > 0:
             $ self = fight_order_temp[x]
             $ x = x + 1
+            if self not in fight_order:
+                jump r2_fight
             $ active_name = self["name"] if self["name"] != 'Hitona' else player_name
             "It's {color=#00c}[active_name]{/color}'s turn."
 
@@ -579,7 +581,7 @@ label fight_log:
         if not target["silent_death"]:
             "{color=#00c}[target_name]{/color} has been defeated!"
 
-    if self["hp"] <= 0:
+    if self["hp"] <= 0 and self != target:
         if self in ally_list:
             $ ally_list.remove(self)
         else:
