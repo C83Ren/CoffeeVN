@@ -88,7 +88,7 @@ screen credits_message(who, message, img):
         else:
             fixed xsize 1000 ysize 800 xalign 0.5:
                 vbox xalign 0.5 yalign 0.5 xsize 1000:
-                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_fon size gui.text_size_singlet
+                    text message xalign 0.5 yalign 0.5 xsize 1000 color '#FFF' font credits_font size gui.text_size_single
                     fixed ysize 70
                     vbox xalign 1.0 yalign 0.5:
                         $ t = '———' + __(credits_names[who])
