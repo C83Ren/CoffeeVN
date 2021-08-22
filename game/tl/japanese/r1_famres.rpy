@@ -321,8 +321,8 @@ translate japanese r1_famres_a445ee32:
 # game/r1_famres.rpy:164
 translate japanese r1_famres_98a23b1f:
 
-    # s "When [player_name!t] onee-chan chose the beef bowl, Shiraishi thought that [player_name] onee-chan was planning to play a horror game tonight!"
-    s "「むー、[player_name!t]おねえちゃんがぎゅうにくどんをえらんだときにはね、[player_name]おねえちゃんは今夜ホラゲーをやるつもりだ！とおもって」"
+    # s "When [player_name!t] onee-chan chose the beef bowl, Shiraishi thought that [player_name!t] onee-chan was planning to play a horror game tonight!"
+    s "「むー、[player_name!t]おねえちゃんがぎゅうにくどんをえらんだときにはね、[player_name!t]おねえちゃんは今夜ホラゲーをやるつもりだ！とおもって」"
 
 # game/r1_famres.rpy:166
 translate japanese r1_famres_acd253e0:
