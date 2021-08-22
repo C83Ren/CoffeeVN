@@ -431,8 +431,8 @@ define gui.language = "unicode"
 ################################################################################
 
 style ruby_style is default:
-    size 14
-    yoffset -30
+    size (17 if renpy.variant("small") else 14)
+    yoffset (-40 if renpy.variant("small") else -30)
 
 style say_dialogue:
     line_leading 12
