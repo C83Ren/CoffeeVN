@@ -1161,7 +1161,7 @@ translate japanese tranquility_forest_1_b965f762:
 translate japanese tranquility_forest_1_872ea46c:
 
     # p "The clue might be a trick to make us look away from the forest!"
-    p "「あのヒントは森を見逃す罠かもしれないって」"
+    p "「あのヒントは森を見逃すわなかもしれないって」"
 
 # game/r2_tranquility.rpy:817
 translate japanese tranquility_forest_1_04f10a46:
