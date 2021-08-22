@@ -1,0 +1,5 @@
+<resources>
+    <string name="appName">{{ config.en_name }}</string>
+    <string name="app_name">{{ config.en_name }}</string>
+    <string name="iconName">{{ config.en_icon_name }}</string>
+</resources>

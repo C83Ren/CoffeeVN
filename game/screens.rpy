@@ -114,23 +114,23 @@ screen say(who, what):
             hbox:
                 fixed:
                     if persistent.alt_language:
-                        xsize 0.3
+                        xsize [0.3, 0.42][renpy.variant("small")]
                     text what id "what":
-                        line_spacing (-5 if persistent.alt_language else 0)
+                        line_spacing (gui.textbox_line_spacing_dual if persistent.alt_language else 0)
 
                 if persistent.alt_language:
                     fixed:
-                        xsize 0.02
+                        xsize [0.02, 0.06][renpy.variant("small")]
                     $ alt_tl = get_alt_tl(what)
                     $ alt_tl = '(%s)' % alt_tl if alt_tl else ''
-                    fixed xsize 0.40:
+                    fixed xsize ([0.4, 0.78][renpy.variant("small")]):
                         text "[alt_tl]":
                             style "say_dialogue"
                             slow_cps preferences.text_cps
-                            line_spacing -5
+                            line_spacing gui.textbox_line_spacing_dual
         else:
             text what id "what":
-                line_spacing (-5 if persistent.alt_language else 0)
+                line_spacing (gui.textbox_line_spacing_dual if persistent.alt_language else 0)
 
             if persistent.alt_language:
                 $ alt_tl = get_alt_tl(what)
@@ -138,8 +138,8 @@ screen say(who, what):
                     style "say_dialogue"
                     font gui.tl_fonts[persistent.alt_language]
                     slow_cps preferences.text_cps
-                    line_spacing -5
-                    yoffset 105
+                    line_spacing gui.textbox_line_spacing_dual
+                    yoffset [105, 115][renpy.variant("small")]
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -239,7 +239,7 @@ style input:
 screen choice(items):
     if textbox_menu:
         style_prefix "say"
-        if not persistent.alt_language:
+        if not persistent.alt_language and not renpy.variant("small"):
             vbox:
                 xpos gui.dialogue_xpos + 20
                 ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
@@ -262,26 +262,30 @@ screen choice(items):
         else:
             hbox:
                 xpos gui.dialogue_xpos + 10
-                ypos 1080 - gui.textbox_height + gui.dialogue_ypos + 60
+                ypos 1080 - gui.textbox_height + gui.dialogue_ypos + [60, 75][renpy.variant("small")] - [5, 0][bool(persistent.alt_language)]
                 vbox:
                     for i, item in enumerate(items[:3]):
                         $ caption = tl_paren(item.caption, suffix=choice_suffix.get(item.caption, ''))
                         textbutton caption:
                             action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
                             xsize (gui.dialogue_width - 30) / 2
-                            text_size gui.choice_button_text_size - 2
+                            text_size gui.choice_button_text_size - 2 - [3, 0][bool(persistent.alt_language)]
                             text_xalign gui.dialogue_text_xalign
+                if renpy.variant("small"):
+                    fixed xsize 0.06
                 vbox:
                     for i, item in enumerate(items[3:]):
                         $ caption = tl_paren(item.caption, suffix=choice_suffix.get(item.caption, ''))
                         textbutton caption:
                             action [Function(add_choice_to_history, expand_string(item.caption)), item.action]
                             xsize (gui.dialogue_width - 30) / 2
-                            text_size gui.choice_button_text_size - 2
+                            text_size gui.choice_button_text_size - 2 - [3, 0][bool(persistent.alt_language)]
                             text_xalign gui.dialogue_text_xalign
     else:
         style_prefix "choice"
         vbox:
+            if renpy.variant("small"):
+                yanchor 0.55
             for i in items:
                 $ caption = tl_paren(i.caption, suffix=choice_suffix.get(i.caption, ''))
                 textbutton caption action [Function(add_choice_to_history, expand_string(i.caption)), i.action]
@@ -365,8 +369,9 @@ style nav_button is button:
     # hover_background "#eaffd966"
     hover_background "gui/nav_button hover.png"
     selected_background "gui/nav_button selected.png"
-    xminimum 365
-    ymaximum 50
+    xminimum (438 if renpy.variant("small") else 365)
+    yminimum (65 if renpy.variant("small") else 50)
+    xpadding (30 if renpy.variant("small") else 0)
 
 screen navigation():
 
@@ -824,17 +829,17 @@ init python:
 
         def __call__(self):
             actions = []
+            is_mobile = renpy.variant("small")
             if persistent.alt_language and not self.alt_language:
-                actions.append(gui.SetPreference('text_size', gui.text_size_single))
-                actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_single))
-                actions.append(gui.SetPreference('namebox_width', gui.namebox_width_single))
-                actions.append(gui.SetPreference('name_xpos', gui.name_xpos_single))
+                actions.append(gui.SetPreference('text_size', gui.text_size_single[is_mobile]))
+                actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_single[is_mobile]))
+                actions.append(gui.SetPreference('namebox_width', gui.namebox_width_single[is_mobile]))
+                actions.append(gui.SetPreference('name_xpos', gui.name_xpos_single[is_mobile]))
             elif not persistent.alt_language and self.alt_language:
-                actions.append(gui.SetPreference('text_size', gui.text_size_dual))
-                actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_dual))
-                actions.append(gui.SetPreference('namebox_width', gui.namebox_width_dual))
-                actions.append(gui.SetPreference('name_xpos', gui.name_xpos_dual))
-                resize_action = gui.SetPreference('text_size', gui.text_size_dual)
+                actions.append(gui.SetPreference('text_size', gui.text_size_dual[is_mobile]))
+                actions.append(gui.SetPreference('dialogue_ypos', gui.dialogue_ypos_dual[is_mobile]))
+                actions.append(gui.SetPreference('namebox_width', gui.namebox_width_dual[is_mobile]))
+                actions.append(gui.SetPreference('name_xpos', gui.name_xpos_dual[is_mobile]))
             renpy.change_language(self.language)
             persistent.alt_language = self.alt_language
             for action in actions:
@@ -1015,7 +1020,7 @@ style slider_button_text:
     properties gui.button_text_properties("slider_button")
 
 style slider_vbox:
-    xsize 675
+    xsize [675, 600][renpy.variant("small")]
 
 
 ## History screen ##############################################################
@@ -1596,6 +1601,14 @@ style window:
     variant "small"
     background "gui/phone/textbox.png"
 
+style nav_button is button:
+    variant "small"
+    hover_background "gui/phone/nav_button hover.png"
+    selected_background "gui/phone/nav_button selected.png"
+
+style namebox:
+    background Frame("gui/phone/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+
 style radio_button:
     variant "small"
     foreground "gui/phone/button/radio_[prefix_]foreground.png"
@@ -1883,8 +1896,10 @@ screen music_room():
 
         vbox:
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
+            if not renpy.variant("small"):
+                # no space on mobile
+                label "[config.name!t]"
+                text _("Version [config.version!t]\n")
 
             if gui.about:
                 text "[gui.about!t]\n"
@@ -1892,10 +1907,10 @@ screen music_room():
             hbox:
                 vbox xsize 700:
                     for tag, author, file in tracks[:9]:
-                        textbutton tag action mr.Play(file) ymaximum 53
+                        textbutton tag action mr.Play(file) ymaximum [53, 68][renpy.variant("small")]
                 vbox xsize 700:
                     for tag, author, file in tracks[9:]:
-                        textbutton tag action mr.Play(file) ymaximum 53
+                        textbutton tag action mr.Play(file) ymaximum [53, 68][renpy.variant("small")]
 
             null height 40
             hbox:

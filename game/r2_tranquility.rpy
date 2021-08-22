@@ -165,6 +165,7 @@ label r2_tranquility_after_battle:
     e "Remember, {b}“What you seek lies deep in the water.”{/b}"
 
 label tranquility_menu:
+    $ renpy.choice_for_skipping()
     scene bg tranquility with fade
     call screen tranquility_map
 

@@ -86,6 +86,7 @@ label r2_map_2:
         #m_rage = 0
 
 label map_menu:
+    $ renpy.choice_for_skipping()
     scene bg map with fade
     call screen world_map()
 
@@ -248,7 +249,7 @@ label map_rage_2:
 
     e "Let’s go."
 
-    play music adventure_bgm fadein 1.0 
+    play music adventure_bgm fadein 1.0
 
     jump map_menu
 

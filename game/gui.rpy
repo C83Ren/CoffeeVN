@@ -66,24 +66,24 @@ define gui.interface_text_font = "DejaVuSans.ttf"
 define gui.combination_lock_text_font = "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size_single = 33
-define gui.text_size_dual = 30
-define gui.text_size = gui.preference("text_size", gui.text_size_single if not persistent.alt_language else gui.text_size_dual)
+define gui.text_size_single = [33, 45]
+define gui.text_size_dual = [30, 40]
+define gui.text_size = gui.preference("text_size", (gui.text_size_single if not persistent.alt_language else gui.text_size_dual)[renpy.variant("small")])
 
 ## The size of character names.
 define gui.name_text_size = gui.text_size
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 33
+define gui.interface_text_size = gui.text_size_single[renpy.variant("small")]
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 36
+define gui.label_text_size = [36, 45][renpy.variant("small")]
 
 ## The size of text on the notify screen.
-define gui.notify_text_size = 24
+define gui.notify_text_size = [24, 38][renpy.variant("small")]
 
 ## The size of the headers in game menu.
-define gui.game_menu_header_text_size = 45
+define gui.game_menu_header_text_size = [45, 60][renpy.variant("small")]
 
 define gui.tl_fonts = {
     None: "DejaVuSans.ttf",
@@ -106,19 +106,21 @@ define gui.title_image_zh = "gui/title_zh.png"
 
 ## The height of the textbox containing dialogue.
 # define gui.textbox_height = 278
-define gui.textbox_height = 310
+define gui.textbox_height = [310, 335][renpy.variant("small")]
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
 define gui.textbox_yalign = 1.0
 
+## Textbox line spacing in dual mode.
+define gui.textbox_line_spacing_dual = [-5, -7][renpy.variant("small")]
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos_single = 644
-define gui.name_xpos_dual = 742
-define gui.name_xpos = gui.preference("name_xpos", gui.name_xpos_single if not persistent.alt_language else gui.name_xpos_dual)
-define gui.name_ypos = -22
+define gui.name_xpos_single = [644, 450]
+define gui.name_xpos_dual = [742, 450]
+define gui.name_xpos = gui.preference("name_xpos", (gui.name_xpos_single if not persistent.alt_language else gui.name_xpos_dual)[renpy.variant("small")])
+define gui.name_ypos = [-22, -85][renpy.variant("small")]
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -126,10 +128,10 @@ define gui.name_xalign = 0.5
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width_single = 398
-define gui.namebox_width_dual = 596
-define gui.namebox_width = gui.preference("namebox_width", gui.namebox_width_single if not persistent.alt_language else gui.namebox_width_dual)
-define gui.namebox_height = 54
+define gui.namebox_width_single = [398, 900]
+define gui.namebox_width_dual = [596, 900]
+define gui.namebox_width = gui.preference("namebox_width", (gui.namebox_width_single if not persistent.alt_language else gui.namebox_width_dual)[renpy.variant("small")])
+define gui.namebox_height = [54, 85][renpy.variant("small")]
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
@@ -143,13 +145,13 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 402
-define gui.dialogue_ypos_single = 55
-define gui.dialogue_ypos_dual = 37
-define gui.dialogue_ypos = gui.preference("dialogue_ypos", gui.dialogue_ypos_single if not persistent.alt_language else gui.dialogue_ypos_dual)
+define gui.dialogue_xpos = [402, 115][renpy.variant("small")]
+define gui.dialogue_ypos_single = [55, 20]
+define gui.dialogue_ypos_dual = [37, 5]
+define gui.dialogue_ypos = gui.preference("dialogue_ypos", (gui.dialogue_ypos_single if not persistent.alt_language else gui.dialogue_ypos_dual)[renpy.variant("small")])
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1130
+define gui.dialogue_width = [1130, 1670][renpy.variant("small")]
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
@@ -203,8 +205,8 @@ define gui.confirm_button_text_xalign = 0.5
 
 define gui.page_button_borders = Borders(15, 6, 15, 6)
 
-define gui.quick_button_borders = Borders(15, 6, 15, 0)
-define gui.quick_button_text_size = 25
+define gui.quick_button_borders = [Borders(15, 6, 15, 0), Borders(60, 21, 60, 0)][renpy.variant("touch")]
+define gui.quick_button_text_size = [25, 40][renpy.variant("small")]
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 
@@ -219,7 +221,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Choice buttons are used in the in-game menus.
 
-define gui.choice_button_width = 1185
+define gui.choice_button_width = [1185, 1760][renpy.variant("small")]
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(150, 8, 150, 8)
@@ -241,7 +243,7 @@ define gui.choice_button_text_insensitive_color = "#666666"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 21
+define gui.slot_button_text_size = [21, 30][renpy.variant("small")]
 define gui.slot_button_text_xalign = 0.5
 define gui.slot_button_text_idle_color = gui.idle_small_color
 define gui.slot_button_text_selected_idle_color = gui.selected_color
@@ -263,7 +265,7 @@ define gui.file_slot_rows = 2
 
 ## The position of the left side of the navigation buttons, relative to the left
 ## side of the screen.
-define gui.navigation_xpos = 60
+define gui.navigation_xpos = [60, 61][renpy.variant("small")]
 
 ## The vertical position of the skip indicator.
 define gui.skip_ypos = 15
@@ -272,16 +274,16 @@ define gui.skip_ypos = 15
 define gui.notify_ypos = 68
 
 ## The spacing between menu choices.
-define gui.choice_spacing = 33
+define gui.choice_spacing = [33, 20][renpy.variant("small")]
 
 ## Buttons in the navigation section of the main and game menus.
-define gui.navigation_spacing = 6
+define gui.navigation_spacing = [6, 30][renpy.variant("small")]
 
 ## Controls the amount of spacing between preferences.
 define gui.pref_spacing = 15
 
 ## Controls the amount of spacing between preference buttons.
-define gui.pref_button_spacing = 0
+define gui.pref_button_spacing = [0, 15][renpy.variant("small")]
 
 ## The spacing between file page buttons.
 define gui.page_spacing = 0
@@ -325,7 +327,7 @@ define gui.frame_tile = False
 ## bars, scrollbars, and sliders.
 define gui.bar_size = 38
 define gui.scrollbar_size = 18
-define gui.slider_size = 38
+define gui.slider_size = [38, 54][renpy.variant("small")]
 
 ## True if bar images should be tiled. False if they should be linearly scaled.
 define gui.bar_tile = False
@@ -356,19 +358,19 @@ define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at
 ## the cost of performance.
-define gui.history_height = 150
+define gui.history_height = [150, 300][renpy.variant("small")]
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
-define gui.history_name_xpos = 260
+define gui.history_name_xpos = [260, 330][renpy.variant("small")]
 define gui.history_name_ypos = 0
-define gui.history_name_width = 280
+define gui.history_name_width = [280, 350][renpy.variant("small")]
 define gui.history_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.history_text_xpos = 272
+define gui.history_text_xpos = [272, 352][renpy.variant("small")]
 define gui.history_text_ypos = 3
-define gui.history_text_width = 1120
+define gui.history_text_width = [1120, 950][renpy.variant("small")]
 define gui.history_text_xalign = 0.0
 
 
@@ -406,9 +408,9 @@ define gui.nvl_text_xalign = 0.0
 
 ## The position, width, and alignment of nvl_thought text (the text said by the
 ## nvl_narrator character.)
-define gui.nvl_thought_xpos = 360
+define gui.nvl_thought_xpos = [360, 180][renpy.variant("small")]
 define gui.nvl_thought_ypos = 0
-define gui.nvl_thought_width = 1170
+define gui.nvl_thought_width = [1170, 1530][renpy.variant("small")]
 define gui.nvl_thought_xalign = 0.0
 
 ## The position of nvl menu_buttons.
@@ -423,69 +425,6 @@ define gui.nvl_button_xalign = 0.0
 
 define gui.language = "unicode"
 
-
-################################################################################
-## Mobile devices
-################################################################################
-
-init python:
-
-    ## This increases the size of the quick buttons to make them easier to touch
-    ## on tablets and phones.
-    if renpy.variant("touch"):
-
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
-
-    ## This changes the size and spacing of various GUI elements to ensure they
-    ## are easily visible on phones.
-    if renpy.variant("small"):
-
-        ## Font sizes.
-        gui.text_size = 45
-        gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
-
-        ## Adjust the location of the textbox.
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.dialogue_xpos = 135
-        gui.dialogue_width = 1650
-
-        ## Change the size and spacing of various things.
-        gui.slider_size = 54
-
-        gui.choice_button_width = 1860
-
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
-
-        gui.history_height = 285
-        gui.history_text_width = 1035
-
-        gui.quick_button_text_size = 30
-
-        ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
-
-        ## NVL-mode.
-        gui.nvl_height = 255
-
-        gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
-
-        gui.nvl_text_width = 1373
-        gui.nvl_text_xpos = 518
-        gui.nvl_text_ypos = 8
-
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
-
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
 
 ################################################################################
 ## Furigana

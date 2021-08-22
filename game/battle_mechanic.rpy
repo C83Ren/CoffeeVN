@@ -145,11 +145,15 @@ label battle_mechanic_setup():
     return
 
 screen single_stat(name, hp, hp_max, ypos, par, burn):
-    frame xsize 520 ysize 110 xpadding 20 ypadding 13:
+    frame ysize ([110, 130][renpy.variant("small")]) xpadding 20 ypadding 13:
         ypos ypos
 
-        vbox xsize 480:
-            hbox xsize 480:
+        vbox:
+            hbox:
+                if name == 'King Achnost':
+                    xminimum [480, 555][renpy.variant("small")]
+                else:
+                    xminimum [480, 500][renpy.variant("small")]
                 if name != 'Hitona':
                     $ display_name = name
                 else:

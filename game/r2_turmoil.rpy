@@ -40,6 +40,7 @@ label turmoil_default:
     play sound thunder loop
 
 label turmoil_menu:
+    $ renpy.choice_for_skipping()
     scene bg turmoil with fade
     call screen turmoil_map
 

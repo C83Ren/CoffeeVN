@@ -8,6 +8,7 @@ label r2_forest_init():
 label r2_forest:
 
     label forest_menu:
+        $ renpy.choice_for_skipping()
         scene bg forest with fade
         call screen forest_map
 

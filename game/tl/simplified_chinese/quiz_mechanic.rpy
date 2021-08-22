@@ -183,7 +183,7 @@ translate simplified_chinese strings:
     new "马鞭草清新润手霜"
 
     # game/quiz_mechanic.rpy:79
-    old "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of the following four from gacha: Kaavi, Aihara Mai, Suzumiya Anju, and Yagi Yui. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
+    old "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of four girls from gacha. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
     new "在雀魂中，小东人鱼想在4个想要的角色中抽到至少一个。11次十连抽到了其中两个，八木唯是第几次十连抽到的？"
 
     # game/quiz_mechanic.rpy:79

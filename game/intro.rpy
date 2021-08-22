@@ -35,7 +35,8 @@ label start:
 
     "It was Saturday afternoon. After a series of unfortunate events, I am now just lazing around in my room."
 
-    p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining! The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
+    p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining!{/i}" id start_a42e3439_A
+    p "{i}The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}" id start_a42e3439_B
 
     p "{i}…geez!{/i}"
 

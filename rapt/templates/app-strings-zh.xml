@@ -1,0 +1,5 @@
+<resources>
+    <string name="appName">{{ config.zh_name }}</string>
+    <string name="app_name">{{ config.zh_name }}</string>
+    <string name="iconName">{{ config.zh_icon_name }}</string>
+</resources>

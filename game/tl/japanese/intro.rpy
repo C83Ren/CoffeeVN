@@ -17,10 +17,13 @@ translate japanese start_406a25a4:
     "土曜日、午後。色々不幸な事件が積もるために、今は部屋でゴロゴロしている。"
 
 # game/intro.rpy:12
-translate japanese start_a42e3439:
+translate japanese start_a42e3439_A:
 
-    # p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining! The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
+    # p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining!{/i}"
     p "（だって、ちょっとお腹空いたからコンビ二に行こうかなーと思ってせーっかく家から出かけたのに急に雨が降るなんて！）"
+
+translate japanese start_a42e3439_B:
+    # p "{i}The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
     p "（天気予報が「今日は晴れです！」って元気よく言ってたのに！あの速い車の泥はねで服も汚れちゃった…）"
 
 # game/intro.rpy:14

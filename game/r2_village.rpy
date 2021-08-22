@@ -20,6 +20,7 @@ label r2_village:
 
 
 label village_menu:
+    $ renpy.choice_for_skipping()
     scene bg village with Fade(1.0, 1.0, 1.0)
     call screen village_map
 

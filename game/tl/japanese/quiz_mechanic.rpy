@@ -183,7 +183,7 @@ translate japanese strings:
     new "ヴァーベナアイスハンドクリーム"
 
     # game/quiz_mechanic.rpy:79
-    old "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of the following four from gacha: Kaavi, Aihara Mai, Suzumiya Anju, and Yagi Yui. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
+    old "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of four girls from gacha. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
     new "雀魂というゲームで、小東ひとなの欲しい子の４人のうち少なくとも１つをガチャで引いたがった。１１回で２人を引けたが、八木唯は何回目で引いた？"
 
     # game/quiz_mechanic.rpy:79

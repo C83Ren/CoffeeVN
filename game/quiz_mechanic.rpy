@@ -82,7 +82,7 @@ label quiz_2:
 
 label quiz_3:
     menu:
-        "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of the following four from gacha: Kaavi, Aihara Mai, Suzumiya Anju, and Yagi Yui. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
+        "In the game called Mahjong Soul, Hitona Kohigashi was hoping to get one at least out of four girls from gacha. Within 11 pulls, she pulled two of the four, but on which pull did she get Yagi Yui?"
         "2nd":
             play sound falsechoice_long
             "{b}WRONG{/b}"

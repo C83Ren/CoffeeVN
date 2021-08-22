@@ -17,10 +17,13 @@ translate simplified_chinese start_406a25a4:
     "那是一个星期六的下午。在经历了各种不幸的事件之后，人鱼正在家中无所事事。"
 
 # game/intro.rpy:12
-translate simplified_chinese start_a42e3439:
+translate simplified_chinese start_a42e3439_A:
 
-    # p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining! The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
+    # p "{i}I mean, I was a bit hungry so I went to the convenience store to get some food, but the moment I stepped outside my house it started raining!{/i}"
     p "（没办法，肚子有点饿就想着去趟便利店，结果好不容易出门一趟还突然下起了雨！）"
+
+translate simplified_chinese start_a42e3439_B:
+    # p "{i}The weather said it’s sunny today! Not to mention that speeding car that splashed mud all over me…{/i}"
     p "（明明天气预报中播报员很有精神地说了「今天是晴天」的！还被一辆开得飞快的车溅起的泥弄脏了衣服）"
 
 # game/intro.rpy:14

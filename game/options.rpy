@@ -15,9 +15,19 @@
 define config.name = _("Hitona's Adventure")
 
 init -3 python:
-    if persistent.language_set is None:
+    if not renpy.android and persistent.language_set is None:
         persistent.language_set = True
         _preferences.language = 'japanese'
+
+    if renpy.android and True or persistent.language_set is None:
+        from jnius import autoclass
+        Locale = autoclass('java.util.Locale')
+        _preferences.language = {
+            'en': None,
+            'ja': 'japanese',
+            'zh': 'simplified_chinese',
+        }[str(Locale.getDefault().getLanguage())]
+        persistent.language_set = True
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
@@ -47,7 +57,7 @@ define build.name = "HitonasAdventure"
 
 ## Disable quick save, auto save, and rollback.
 
-define config.has_autosave = False
+define config.has_autosave = renpy.variant("small")
 define config.has_quicksave = False
 define config.rollback_enabled = False
 
