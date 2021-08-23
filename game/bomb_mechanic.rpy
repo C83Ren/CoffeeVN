@@ -151,16 +151,13 @@ screen bomb_movement(can_move_forward, time_left):
             action Call("handle_bomb_movement", what="forward")
         else:
             idle 'images/maze/forward disabled.png'
-        focus_mask 'images/maze/forward idle.png'
         hover 'images/maze/forward hover.png'
     imagebutton xalign 0.2 yalign 0.7:
         idle 'images/maze/left idle.png'
-        focus_mask 'images/maze/left idle.png'
         hover 'images/maze/left hover.png'
         action Call("handle_bomb_movement", what="left")
     imagebutton xalign 0.8 yalign 0.7:
         idle 'images/maze/right idle.png'
-        focus_mask 'images/maze/right idle.png'
         hover 'images/maze/right hover.png'
         action Call("handle_bomb_movement", what="right")
     timer time_left action Jump("bomb_mechanic_exit")
@@ -196,6 +193,8 @@ label bomb_mechanic:
     $ _skipping = False
     show bomb map:
         zoom 0.75, xalign 0.5, yalign 0.5
+    window hide
+    pause
     l "Memorize it well~"
     play sound takecard
     hide bomb map

@@ -1607,6 +1607,7 @@ style nav_button is button:
     selected_background "gui/phone/nav_button selected.png"
 
 style namebox:
+    variant "small"
     background Frame("gui/phone/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
 
 style radio_button:
